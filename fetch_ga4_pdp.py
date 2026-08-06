@@ -1,0 +1,234 @@
+"""GA4 → data/ga4_pdp_history.json 일별 적재.
+
+Clarity(fetch_clarity_pdp.py)와 정반대 규칙이라 헷갈리기 쉽다. 이유까지 적어둔다.
+
+  Clarity : append-only.  API가 최근 3일치만 주므로 한 번 놓치면 영구 소실이다.
+            이미 있는 날짜는 절대 건드리지 않는다.
+  GA4     : 덮어쓰기.    수집 후 약 48시간 동안 수치가 계속 확정된다. 그래서 매 실행마다
+            최근 며칠(기본 D-1~D-3)을 다시 받아 통째로 갈아끼운다.
+
+리포트 4종 (계획서 R1~R4):
+  R1 sections : pdp_section  상품 x 구간 x 기기   → 도달 곡선
+  R2 exits    : pdp_exit     상품 x 이탈구간 x 기기 → 이탈 분포
+  R3 summary  : pdp_exit     상품 x 기기 + 합계 측정항목 → 상품별 KPI
+  R4 events   : 이벤트 x 상품 x 기기            → 퍼널 분모 + 크롤 대상 상품 목록
+
+사용:
+  python fetch_ga4_pdp.py                 # 오늘 + 최근 3일 재수집
+  python fetch_ga4_pdp.py --date 2026-08-06
+  python fetch_ga4_pdp.py --days 7        # 최근 7일 재수집(백필)
+"""
+import argparse
+import sys
+
+import ga4_api
+import pdp_common as C
+
+OUT = "data/ga4_pdp_history.json"
+
+# 맞춤 정의 API 이름. GA4 관리 > 맞춤 정의에 등록된 이벤트 매개변수와 1:1로 대응한다.
+D_PRODUCT = "customEvent:pdp_product_id"
+D_NAME = "customEvent:pdp_product_name"
+D_SECTION = "customEvent:pdp_section_label"
+D_EXIT = "customEvent:pdp_exit_label"
+D_DEVICE = "deviceCategory"
+
+# 합계로 돌아오는 맞춤 측정항목. 평균은 여기서 내지 않고 merge 단계에서 eventCount로 나눈다.
+# (원천에 sum_* 을 그대로 남겨야 기간·기기 합산 시 '평균의 평균' 오류가 안 생긴다.)
+#
+# 이 중 GA4 '맞춤 측정항목'으로 등록되지 않은 것은 요청에 넣는 순간 리포트 전체가 HTTP 400으로
+# 죽는다 — 하나 때문에 그날 수집이 통째로 날아간다. 그래서 첫 실행 때 한 번 걸러낸다.
+M_SUMS = [
+    ("sum_seconds", "customEvent:pdp_seconds"),
+    ("sum_bounce_3s", "customEvent:pdp_bounce_3s"),
+    ("sum_saw_cta", "customEvent:pdp_saw_cta"),
+    ("sum_saw_review", "customEvent:pdp_saw_review"),
+    ("sum_clicked_cart", "customEvent:pdp_clicked_cart"),
+    ("sum_clicked_buy", "customEvent:pdp_clicked_buy"),
+]
+
+_valid_sums = None   # [(name, api)] — probe_metrics() 가 채운다
+
+
+def probe_metrics(date, access, prop):
+    """등록된 맞춤 측정항목만 남긴다. 전체를 한 번에 시도하고, 실패하면 하나씩 확인한다."""
+    global _valid_sums
+    if _valid_sums is not None:
+        return _valid_sums
+    try:
+        _rows([D_DEVICE], ["eventCount"] + [a for _, a in M_SUMS],
+              date, "pdp_exit", access, prop)
+        _valid_sums = list(M_SUMS)
+        return _valid_sums
+
+    except ga4_api.GA4Error:
+        pass
+
+    good, bad = [], []
+    for name, api in M_SUMS:
+        try:
+            _rows([D_DEVICE], ["eventCount", api], date, "pdp_exit", access, prop)
+            good.append((name, api))
+        except ga4_api.GA4Error:
+            bad.append(api.split(":", 1)[1])
+    if bad:
+        print("  ! GA4 맞춤 측정항목 미등록으로 건너뜀: %s" % ", ".join(bad),
+              file=sys.stderr)
+    _valid_sums = good
+    return _valid_sums
+
+PDP_EVENTS = ("pdp_scroll", "pdp_section", "pdp_cta_view",
+              "pdp_cta_click", "pdp_review", "pdp_exit")
+
+
+def _rows(dims, mets, date, event=None, access=None, prop=None):
+    return ga4_api.run_report(dims, mets, date, date, event_name=event,
+                              access=access, prop=prop)
+
+
+def _n(row, key):
+    try:
+        return int(float(row.get(key) or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def fetch_day(date, access=None, prop=None):
+    """하루치를 4개 리포트로 받아 하나의 dict로 만든다."""
+    access = access or ga4_api.token()
+    prop = prop or ga4_api.property_id()
+
+    day = {"date": date, "products": {}, "unknown": {}}
+
+    def bucket(pid, dev):
+        p = day["products"].setdefault(pid, {"name": "", "devices": {}})
+        return p["devices"].setdefault(dev, {
+            "section_reach": {}, "exit_hist": {}, "events": {},
+            "exit_events": 0,
+        })
+
+    # ---- R1 구간 도달 ----
+    for r in _rows([D_PRODUCT, D_NAME, D_SECTION, D_DEVICE], ["eventCount"],
+                   date, "pdp_section", access, prop):
+        pid = r.get(D_PRODUCT) or ""
+        if not pid:
+            day["unknown"]["section_events"] = \
+                day["unknown"].get("section_events", 0) + _n(r, "eventCount")
+            continue
+        b = bucket(pid, r.get(D_DEVICE) or "unknown")
+        day["products"][pid]["name"] = r.get(D_NAME) or ""
+        # 라벨 'S03/20' → 인덱스 3. 키를 정수로 두어야 버전이 바뀌어도 비교가 된다.
+        lab = r.get(D_SECTION) or ""
+        i = _section_index(lab)
+        if i is not None:
+            b["section_reach"][str(i)] = b["section_reach"].get(str(i), 0) + _n(r, "eventCount")
+            tot = _section_total(lab)
+            if tot:
+                day["products"][pid]["section_total"] = tot
+
+    # ---- R2 이탈 분포 ----
+    for r in _rows([D_PRODUCT, D_NAME, D_EXIT, D_DEVICE], ["eventCount"],
+                   date, "pdp_exit", access, prop):
+        pid = r.get(D_PRODUCT) or ""
+        if not pid:
+            day["unknown"]["exit_events"] = \
+                day["unknown"].get("exit_events", 0) + _n(r, "eventCount")
+            continue
+        b = bucket(pid, r.get(D_DEVICE) or "unknown")
+        day["products"][pid]["name"] = r.get(D_NAME) or day["products"][pid]["name"]
+        lab = r.get(D_EXIT) or ""
+        i = _section_index(lab)
+        key = str(i) if i is not None else "?"
+        b["exit_hist"][key] = b["exit_hist"].get(key, 0) + _n(r, "eventCount")
+
+    # ---- R3 상품별 합계 KPI ----
+    sums = probe_metrics(date, access, prop)
+    have = {api for _, api in sums}
+    day["missing_metrics"] = [api.split(":", 1)[1]
+                              for _, api in M_SUMS if api not in have]
+    mets = ["eventCount"] + [api for _, api in sums]
+    for r in _rows([D_PRODUCT, D_DEVICE], mets, date, "pdp_exit", access, prop):
+        pid = r.get(D_PRODUCT) or ""
+        if not pid:
+            continue
+        b = bucket(pid, r.get(D_DEVICE) or "unknown")
+        b["exit_events"] = _n(r, "eventCount")
+        for name, api in sums:
+            b[name] = _n(r, api)
+
+    # ---- R4 이벤트별 카운트 (퍼널 분모) ----
+    for r in _rows(["eventName", D_PRODUCT, D_DEVICE], ["eventCount"],
+                   date, None, access, prop):
+        ev = r.get("eventName") or ""
+        if ev not in PDP_EVENTS:
+            continue
+        pid = r.get(D_PRODUCT) or ""
+        if not pid:
+            continue
+        b = bucket(pid, r.get(D_DEVICE) or "unknown")
+        b["events"][ev] = b["events"].get(ev, 0) + _n(r, "eventCount")
+
+    return day
+
+
+def _section_index(label):
+    """'S03/20' → 3,  'S00/20' → 0,  '' → None."""
+    if not label or not label.startswith("S"):
+        return None
+    head = label.split("/")[0][1:]
+    return int(head) if head.isdigit() else None
+
+
+def _section_total(label):
+    if "/" not in label:
+        return 0
+    tail = label.split("/", 1)[1]
+    return int(tail) if tail.isdigit() else 0
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--date", help="이 날짜만 수집 (YYYY-MM-DD)")
+    ap.add_argument("--days", type=int, default=4,
+                    help="오늘 포함 최근 N일 재수집 (기본 4 = 오늘~D-3)")
+    args = ap.parse_args()
+
+    dates = [args.date] if args.date else [C.kst_date(i) for i in range(args.days)]
+
+    hist = C.load_json(OUT, {"days": {}})
+    hist.setdefault("days", {})
+
+    try:
+        access = ga4_api.token()
+        prop = ga4_api.property_id()
+    except ga4_api.GA4Error as e:
+        print("GA4 인증 실패: %s" % e, file=sys.stderr)
+        return 1
+
+    ok = 0
+    for d in sorted(dates):
+        try:
+            day = fetch_day(d, access, prop)
+        except ga4_api.GA4Error as e:
+            print("  %s 실패: %s" % (d, e), file=sys.stderr)
+            continue
+        # GA4는 덮어쓰기가 정답이다(위 주석 참고).
+        hist["days"][d] = day
+        n_p = len(day["products"])
+        n_e = sum(b.get("exit_events", 0)
+                  for p in day["products"].values()
+                  for b in p["devices"].values())
+        print("  %s  상품 %d개 / 이탈 %d건%s"
+              % (d, n_p, n_e,
+                 ("  (미식별 %d)" % day["unknown"]["exit_events"])
+                 if day["unknown"].get("exit_events") else ""))
+        ok += 1
+
+    hist["updated_at"] = C.kst_now().strftime("%Y-%m-%d %H:%M:%S KST")
+    C.save_json(OUT, hist)
+    print("%s 저장 — 총 %d일치" % (OUT, len(hist["days"])))
+    return 0 if ok else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

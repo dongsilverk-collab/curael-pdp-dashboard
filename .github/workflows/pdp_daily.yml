@@ -1,0 +1,51 @@
+# GA4 + 상세페이지 버전 감지.  Clarity와 달리 시각에 민감하지 않다.
+#
+# GA4는 수집 후 약 48시간 동안 수치가 확정되므로 매 실행마다 최근 4일을 다시 받아 덮어쓴다.
+# (Clarity는 append-only — 두 규칙이 정반대인 점을 fetch_ga4_pdp.py 상단에 적어두었다.)
+#
+# 카페24는 여기 없다. refresh 토큰이 쓸 때마다 교체되는 방식이라 Actions와 로컬이 동시에
+# 토큰을 쓰면 깨진다. 카페24는 로컬 collect_pdp.bat 전용이다.
+name: pdp daily
+
+on:
+  schedule:
+    - cron: "20 22 * * *"     # 22:20 UTC = 07:20 KST
+  workflow_dispatch:
+  push:
+    paths:
+      - "data/cafe24_pdp_history.json"   # 로컬이 카페24 수집분을 push하면 이어서 돈다
+
+concurrency:
+  group: pdp-daily
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install google-auth
+
+      - name: Fetch GA4
+        env:
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+        run: python fetch_ga4_pdp.py
+
+      - name: Detect detail-page versions
+        run: python detect_version.py
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/ || true
+          git diff --cached --quiet && echo "변경 없음" && exit 0
+          git commit -m "PDP data $(TZ=Asia/Seoul date +%F)"
+          git push
