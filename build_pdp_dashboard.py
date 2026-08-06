@@ -1,0 +1,251 @@
+"""data/pdp_daily.json → docs/index.html + docs/product-<번호>.html
+
+화면 두 장으로 나눈다.
+  index        전체 상품을 한눈에 비교 (곡선 모양으로 훑는다)
+  product-N    한 상품의 구간별 상세 (썸네일로 '고칠 이미지'를 특정한다)
+
+상품별로 파일을 나누는 이유: 상품당 이미지가 최대 20장이라 한 페이지에 다 넣으면
+`<img>` 200개가 넘고, 앵커 방식은 뒤로가기가 안 돼 목록↔상세 왕복이 깨진다.
+
+정직성 장치(이게 없으면 화면이 거짓말을 한다):
+  · 모든 비율에 분모를 병기한다
+  · 표본 30세션 미만은 순위에서 빼고 아래 별도 구역에 회색으로 둔다
+  · 미수집(회색 –)과 실제 0(검은 0)을 구분한다
+  · 수집 경과가 7일 미만이면 상단에 배너를 띄우고 처방 문구를 아예 만들지 않는다
+"""
+import os
+import sys
+
+import pdp_charts as G
+import pdp_common as C
+
+SRC = "data/pdp_daily.json"
+OUT = "docs"
+MIN_SESSIONS = 30
+ADVICE_MIN_DAYS = 7      # 이 미만이면 처방 카드를 만들지 않는다
+ADVICE_MIN_PEOPLE = 50   # 손실 인원이 이보다 적으면 고칠 가치가 없다
+
+
+def curve(p, dev="_all"):
+    """구간 도달률을 1..N 순서의 리스트로. 그래프용."""
+    d = p["devices"][dev]
+    pcts = d.get("section_reach_pct") or {}
+    n = p.get("section_total") or 0
+    return [pcts.get(str(i), 0.0) for i in range(1, n + 1)]
+
+
+def build_index(date, rec, days_collected):
+    ps = rec["products"]
+    ranked, low = [], []
+    for pid, p in ps.items():
+        (ranked if p["sample"] == "ok" else low).append((pid, p))
+
+    # 정렬 기준은 '손실 인원'이지 낙차율이 아니다. 낙차 70%라도 세션 20이면
+    # 고칠 가치가 없다. 명 수는 설명 없이 이해되는 유일한 단위다.
+    key = lambda kv: -kv[1]["devices"]["_all"].get("biggest_drop_people", 0)
+    ranked.sort(key=key)
+    low.sort(key=lambda kv: -kv[1]["devices"]["_all"]["sessions"])
+
+    tot_sessions = sum(p["devices"]["_all"]["sessions"] for p in ps.values())
+    s00 = sum(p["devices"]["_all"]["exit_s00"] for p in ps.values())
+    done = sum(p["devices"]["_all"]["completed"] for p in ps.values())
+    scrolls = [p["clarity"]["avg_scroll_depth"] for p in ps.values()
+               if p.get("clarity") and p["clarity"].get("avg_scroll_depth")]
+
+    out = ["<h1>큐라엘몰 상세페이지 이탈 분석</h1>",
+           '<p class="sub">%s 기준 · 수집 %d일차 · 생성 %s</p>'
+           % (date, days_collected, C.kst_now().strftime("%m-%d %H:%M"))]
+
+    if days_collected < ADVICE_MIN_DAYS:
+        out.append(
+            '<div class="note"><b>수집 %d일차입니다.</b> 방향만 참고하세요. '
+            '표본이 쌓이기 전의 숫자로 상세페이지를 고치면 엉뚱한 곳을 고치게 됩니다. '
+            '처방은 7일치가 모이면 표시됩니다.</div>' % days_collected)
+
+    if rec["sources"]["cafe24"] != "ok":
+        out.append('<div class="note">매출 데이터 <b>미수집</b> — 전환율·매출 항목은 '
+                   '아직 비어 있습니다(카페24 수집기 미구축).</div>')
+
+    out.append('<div class="kpis">')
+    out.append(G.kpi("상세페이지 세션", f"{tot_sessions:,}", "pdp_exit 기준"))
+    out.append(G.kpi("상세 미도달", G.pct(s00 / tot_sessions) if tot_sessions else "–",
+                     "%s명 · 이미지를 못 봄" % f"{s00:,}"))
+    out.append(G.kpi("끝까지 봄", G.pct(done / tot_sessions) if tot_sessions else "–",
+                     "%s명" % f"{done:,}"))
+    out.append(G.kpi("Clarity 스크롤", "%.0f%%" % (sum(scrolls) / len(scrolls))
+                     if scrolls else "–", "상품 평균"))
+    out.append("</div>")
+
+    out.append("<h2>상품별 이탈 프로필</h2>")
+    out.append('<div class="scroll"><table><tr>'
+               '<th></th><th>상품</th><th class="num">세션</th>'
+               '<th>구간 도달 곡선</th><th class="num">미도달</th>'
+               '<th class="num">첫 구간 이탈</th><th class="num">완독</th>'
+               '<th class="num">최대 낙차</th></tr>')
+
+    def row(pid, p, dim=False):
+        a = p["devices"]["_all"]
+        n = a["sessions"]
+        thumb = ('<img class="thumb" loading="lazy" src="%s" alt="">' % G.esc(p["images"][0])
+                 if p.get("images") else '<div class="thumb"></div>')
+        drop = ("S%02d <span class='muted'>-%s</span>"
+                % (a["biggest_drop_section"], G.pct(a["biggest_drop_rate"]))
+                if a.get("biggest_drop_section") else '<span class="muted">–</span>')
+        return (
+            '<tr class="%s"><td>%s</td>'
+            '<td><a href="product-%s.html">%s</a>%s<br>'
+            '<span class="muted">%s번 · 이미지 %s장 · %s</span></td>'
+            '<td class="num">%s</td><td>%s</td>'
+            '<td class="num">%s</td><td class="num">%s</td>'
+            '<td class="num">%s</td><td class="num">%s</td></tr>'
+            % ("dim" if dim else "", thumb, G.esc(pid), G.esc(p["name"][:34]),
+               G.sample_badge(n, MIN_SESSIONS), G.esc(pid),
+               p["section_total"] or "–", G.esc(p["version"]),
+               f"{n:,}", G.sparkline(curve(p)),
+               G.pct(a["s00_rate"]), G.pct(a["s01_rate"]),
+               G.pct(a["done_rate"]), drop))
+
+    if ranked:
+        out += [row(pid, p) for pid, p in ranked]
+    else:
+        out.append('<tr><td colspan="8" class="muted">'
+                   '표본 %d세션 이상인 상품이 아직 없습니다.</td></tr>' % MIN_SESSIONS)
+    out.append("</table></div>")
+
+    if low:
+        out.append("<h2>표본 모으는 중 <span class='muted' "
+                   "style='font-weight:400;font-size:13px'>(%d세션 미만)</span></h2>"
+                   % MIN_SESSIONS)
+        out.append('<div class="scroll"><table><tr>'
+                   '<th></th><th>상품</th><th class="num">세션</th>'
+                   '<th>구간 도달 곡선</th><th class="num">미도달</th>'
+                   '<th class="num">첫 구간 이탈</th><th class="num">완독</th>'
+                   '<th class="num">최대 낙차</th></tr>')
+        out += [row(pid, p, dim=True) for pid, p in low]
+        out.append("</table></div>")
+
+    un = rec["unattributed"]
+    out.append('<footer>상품 미귀속: GA4 이탈 %s건 · Clarity 세션 %s건. '
+               'GA4 미귀속은 추적 스크립트 v1.2 게시(2026-08-06) 이전 세션입니다.</footer>'
+               % (f"{un['ga4_unknown_exit_events']:,}",
+                  f"{un['clarity_unmatched_sessions']:,}"))
+    return G.page("큐라엘몰 상세페이지 이탈 분석", "".join(out))
+
+
+def build_product(pid, p, date, days_collected):
+    a = p["devices"]["_all"]
+    n = a["sessions"]
+    total = p["section_total"] or 0
+    pcts, drops = a.get("section_reach_pct") or {}, a.get("section_dropoff") or {}
+    reach = {int(k): v for k, v in (a.get("section_reach") or {}).items()}
+    worst = a.get("biggest_drop_section")
+
+    out = ["<h1>%s</h1>" % G.esc(p["name"]),
+           '<p class="sub">%s번 · 이미지 %s장 · %s · %s 기준 · '
+           '<a href="%s" target="_blank" rel="noopener">상세페이지 열기</a></p>'
+           % (G.esc(pid), total or "–", G.esc(p["version"]), date, G.esc(p["url"]))]
+
+    if n < MIN_SESSIONS:
+        out.append('<div class="note">세션 <b>%d건</b>으로 표본이 부족합니다. '
+                   '아래 비율은 참고용이며 판단 근거로 쓰기엔 이릅니다.</div>' % n)
+
+    out.append('<div class="kpis">')
+    out.append(G.kpi("세션", f"{n:,}", "pdp_exit 기준"))
+    out.append(G.kpi("상세 미도달", G.frac(a["exit_s00"], n), "이미지를 못 봄"))
+    out.append(G.kpi("첫 구간 이탈", G.frac(a["exit_s01"], n), "S01에서 나감"))
+    out.append(G.kpi("끝까지 봄", G.frac(a["completed"], n), "S%02d 도달" % total if total else ""))
+    if a.get("avg_seconds") is not None:
+        out.append(G.kpi("평균 체류", "%d초" % round(a["avg_seconds"]), ""))
+    cl = p.get("clarity")
+    if cl:
+        out.append(G.kpi("Clarity 스크롤", "%s%%" % cl.get("avg_scroll_depth", "–"),
+                         "세션 %s · 분노클릭 %s" % (cl.get("sessions", "–"),
+                                              cl.get("rage_clicks", 0))))
+    out.append("</div>")
+
+    if not total:
+        out.append('<div class="note">구간 정보가 없어 이미지별 분석을 만들 수 없습니다.</div>')
+        return G.page(p["name"], "".join(out), back=True)
+
+    if total == 1:
+        out.append('<div class="note">이 상품은 <b>상세 이미지가 1장</b>인 초장문 이미지라 '
+                   '구간 분석이 성립하지 않습니다. 위의 Clarity 스크롤 비율로 보세요. '
+                   '이미지를 여러 장으로 나누면 어디서 나가는지 볼 수 있습니다.</div>')
+        return G.page(p["name"], "".join(out), back=True)
+
+    out.append("<h2>구간별 도달과 낙차</h2>")
+    out.append('<p class="sub">막대의 <span style="color:%s">붉은 조각</span>이 '
+               '그 구간에서 빠져나간 몫입니다. 조각이 클수록 그 이미지에서 많이 나갔습니다.</p>'
+               % G.DROP)
+    out.append('<div class="scroll"><table><tr>'
+               '<th>구간</th><th>이미지</th><th>도달률</th>'
+               '<th class="num">도달</th><th class="num">낙차</th></tr>')
+
+    imgs = p.get("images") or []
+    for i in range(1, total + 1):
+        rp = pcts.get(str(i), 0.0)
+        dr = drops.get(str(i), 0.0)
+        img = ('<img class="shot" loading="lazy" src="%s" alt="구간 %d">'
+               % (G.esc(imgs[i - 1]), i) if i - 1 < len(imgs) else "")
+        out.append(
+            '<tr class="%s"><td>S%02d%s</td><td>%s</td><td>%s</td>'
+            '<td class="num">%s</td><td class="num">%s</td></tr>'
+            % ("hi" if i == worst else "", i,
+               " ◀" if i == worst else "", img,
+               G.reach_bar(rp, dr), G.frac(reach.get(i, 0), n),
+               ("-%s" % G.pct(dr)) if dr > 0 else '<span class="muted">–</span>'))
+    out.append("</table></div>")
+
+    if worst and days_collected >= ADVICE_MIN_DAYS \
+            and a.get("biggest_drop_people", 0) >= ADVICE_MIN_PEOPLE:
+        out.append('<div class="note"><b>S%02d 이미지를 보세요.</b> 여기서 %s명이 '
+                   '빠져나갑니다.</div>'
+                   % (worst, f"{a['biggest_drop_people']:,}"))
+
+    out.append("<h2>기기별</h2>")
+    out.append('<div class="scroll"><table><tr><th>기기</th><th class="num">세션</th>'
+               '<th class="num">미도달</th><th class="num">첫 구간</th>'
+               '<th class="num">완독</th></tr>')
+    for dev, d in sorted(p["devices"].items()):
+        if dev == "_all" or not d["sessions"]:
+            continue
+        out.append('<tr><td>%s</td><td class="num">%s</td><td class="num">%s</td>'
+                   '<td class="num">%s</td><td class="num">%s</td></tr>'
+                   % (G.esc(dev), f"{d['sessions']:,}", G.pct(d["s00_rate"]),
+                      G.pct(d["s01_rate"]), G.pct(d["done_rate"])))
+    out.append("</table></div>")
+
+    out.append('<footer>도달률의 분모는 pdp_exit 건수(상세페이지를 연 세션)입니다. '
+               'S00은 상세 이미지 영역에 도달하지 못한 세션으로, 첫 이미지 문제가 아니라 '
+               '상단 영역이나 유입 소재 불일치를 뜻합니다.</footer>')
+    return G.page(p["name"], "".join(out), back=True)
+
+
+def main():
+    data = C.load_json(SRC, {})
+    days = data.get("days") or {}
+    if not days:
+        print("%s 가 비어 있다. merge_pdp.py 를 먼저 돌릴 것." % SRC, file=sys.stderr)
+        return 1
+
+    date = sorted(days)[-1]
+    rec = days[date]
+    n_days = len(days)
+    os.makedirs(OUT, exist_ok=True)
+
+    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
+        f.write(build_index(date, rec, n_days))
+    made = 1
+
+    for pid, p in rec["products"].items():
+        with open(os.path.join(OUT, "product-%s.html" % pid), "w",
+                  encoding="utf-8") as f:
+            f.write(build_product(pid, p, date, n_days))
+        made += 1
+
+    print("docs/ 에 %d개 페이지 생성 (기준일 %s, 수집 %d일차)" % (made, date, n_days))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
