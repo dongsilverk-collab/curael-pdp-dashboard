@@ -648,17 +648,17 @@
      },
      "sales": {
       "name": "[자연하] 그린진 원스틱 1.5g x 30포",
-      "orders": 3,
-      "units": 3,
-      "gross": 193000,
-      "net": 193000,
+      "orders": 5,
+      "units": 5,
+      "gross": 266121,
+      "net": 266121,
       "canceled_units": 0
      },
      "sample": "ok",
      "derived": {
-      "cvr": 0.0682,
-      "revenue_per_session": 4386,
-      "aov": 64333
+      "cvr": 0.1136,
+      "revenue_per_session": 6048,
+      "aov": 53224
      }
     },
     "44": {
@@ -871,8 +871,20 @@
       "quickback_sessions": 0,
       "truncated": false
      },
-     "sales": null,
-     "sample": "low"
+     "sales": {
+      "name": "[자연하] 크리노진 2.5g x 30포",
+      "orders": 1,
+      "units": 1,
+      "gross": 98404,
+      "net": 98404,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.0357,
+      "revenue_per_session": 3514,
+      "aov": 98404
+     }
     },
     "76": {
      "name": "[자연하] 숨촉촉365 12g x 14포",
@@ -2113,8 +2125,20 @@
       }
      },
      "clarity": null,
-     "sales": null,
-     "sample": "low"
+     "sales": {
+      "name": "국산 유기농 귀리쌀 1kg",
+      "orders": 1,
+      "units": 1,
+      "gross": 9741,
+      "net": 9741,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.3333,
+      "revenue_per_session": 3247,
+      "aov": 9741
+     }
     },
     "62": {
      "name": "국산 유기농 귀리 혼합 10곡 잡곡쌀 800g",
@@ -2322,5 +2346,5 @@
    }
   }
  },
- "built_at": "2026-08-06 21:04:25 KST"
+ "built_at": "2026-08-06 21:19:51 KST"
 }
