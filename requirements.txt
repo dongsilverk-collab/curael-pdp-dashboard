@@ -1,0 +1,6 @@
+# 수집기는 표준 라이브러리 위주다. 외부 의존성은 GA4 서비스계정 인증 하나뿐.
+#
+# extras 표기 "[requests]" 를 반드시 유지할 것.
+# google-auth 만 깔면 google.auth.transport.requests 가 ImportError 로 죽는다 —
+# 로컬에는 requests 가 이미 있어서 드러나지 않고 CI에서만 터진다.
+google-auth[requests]>=2.35

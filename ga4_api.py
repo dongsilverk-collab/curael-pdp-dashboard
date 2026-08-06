@@ -45,11 +45,20 @@ def _sa_info():
 
 def token():
     """서비스계정 JWT → access token. google-auth 필요."""
+    # google-auth 와 requests 는 별개 패키지다. transport.requests 는 후자를 요구하는데,
+    # 둘을 한 메시지로 뭉뚱그리면 "google-auth 는 깔았는데 왜 안 되지"로 헤매게 된다.
+    # (실제로 Actions 러너에서 이 함정에 걸렸다 — 로컬엔 requests 가 이미 있었다.)
     try:
-        import google.auth.transport.requests
         from google.oauth2 import service_account
     except ImportError as e:
-        raise GA4Error("google-auth 가 필요합니다:  pip install google-auth") from e
+        raise GA4Error(
+            'google-auth 가 없습니다:  pip install "google-auth[requests]"') from e
+    try:
+        import google.auth.transport.requests
+    except ImportError as e:
+        raise GA4Error(
+            'requests 가 없습니다(google-auth 는 설치됨):  '
+            'pip install "google-auth[requests]"') from e
 
     creds = service_account.Credentials.from_service_account_info(
         _sa_info(), scopes=[SCOPE])

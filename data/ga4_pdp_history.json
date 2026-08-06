@@ -8,29 +8,29 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 8,
-        "2": 8,
+        "1": 9,
+        "2": 9,
         "3": 7,
         "4": 7,
         "5": 6,
         "6": 6,
-        "7": 5,
-        "8": 5,
-        "16": 4,
-        "12": 3,
-        "13": 3,
-        "14": 3,
-        "15": 3,
-        "17": 3,
-        "9": 2,
-        "11": 2,
-        "18": 2,
+        "7": 6,
+        "8": 6,
+        "16": 5,
+        "12": 4,
+        "13": 4,
+        "14": 4,
+        "15": 4,
+        "17": 4,
+        "9": 3,
+        "11": 3,
+        "18": 3,
+        "10": 2,
         "19": 2,
-        "10": 1,
         "20": 1
        },
        "exit_hist": {
-        "0": 10,
+        "0": 14,
         "1": 8,
         "2": 1,
         "6": 1,
@@ -38,14 +38,14 @@
         "19": 1
        },
        "events": {
-        "pdp_section": 81,
-        "pdp_scroll": 30,
-        "pdp_exit": 22,
-        "pdp_cta_view": 11,
-        "pdp_cta_click": 2
+        "pdp_section": 95,
+        "pdp_scroll": 32,
+        "pdp_exit": 26,
+        "pdp_cta_view": 13,
+        "pdp_cta_click": 4
        },
-       "exit_events": 22,
-       "sum_seconds": 3857,
+       "exit_events": 26,
+       "sum_seconds": 4880,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
@@ -100,34 +100,34 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 2,
+        "1": 3,
+        "7": 3,
         "2": 2,
         "3": 2,
         "4": 2,
         "5": 2,
-        "7": 2,
         "6": 1,
         "8": 1,
         "9": 1
        },
        "exit_hist": {
-        "1": 7,
-        "9": 2,
-        "0": 1,
+        "1": 8,
+        "0": 6,
+        "9": 3,
         "5": 1
        },
        "events": {
-        "pdp_section": 15,
-        "pdp_exit": 11,
-        "pdp_scroll": 7,
-        "pdp_cta_view": 3,
-        "pdp_cta_click": 2,
+        "pdp_exit": 18,
+        "pdp_section": 17,
+        "pdp_scroll": 8,
+        "pdp_cta_click": 7,
+        "pdp_cta_view": 4,
         "pdp_review": 1
        },
-       "exit_events": 11,
-       "sum_seconds": 380,
+       "exit_events": 18,
+       "sum_seconds": 1226,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 1,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
@@ -147,20 +147,20 @@
         "6": 1
        },
        "exit_hist": {
+        "0": 5,
         "1": 2,
-        "0": 1,
         "4": 1,
         "6": 1
        },
        "events": {
+        "pdp_exit": 9,
         "pdp_section": 6,
-        "pdp_exit": 5,
+        "pdp_cta_click": 4,
         "pdp_scroll": 4,
-        "pdp_cta_click": 2,
         "pdp_cta_view": 1
        },
-       "exit_events": 5,
-       "sum_seconds": 310,
+       "exit_events": 9,
+       "sum_seconds": 346,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
@@ -213,8 +213,9 @@
         "pdp_exit": 6,
         "pdp_scroll": 4,
         "pdp_section": 3,
+        "pdp_cta_view": 2,
         "pdp_cta_click": 1,
-        "pdp_cta_view": 1
+        "pdp_review": 1
        },
        "exit_events": 6,
        "sum_seconds": 167,
@@ -235,17 +236,18 @@
         "1": 1
        },
        "exit_hist": {
-        "0": 2,
-        "1": 1
+        "0": 3,
+        "1": 2
        },
        "events": {
-        "pdp_exit": 3,
-        "pdp_scroll": 3,
-        "pdp_cta_view": 1,
+        "pdp_exit": 5,
+        "pdp_scroll": 4,
+        "pdp_cta_view": 2,
+        "pdp_review": 1,
         "pdp_section": 1
        },
-       "exit_events": 3,
-       "sum_seconds": 94,
+       "exit_events": 5,
+       "sum_seconds": 152,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
@@ -281,6 +283,24 @@
     "32": {
      "name": "[자연하] 베리베라진 20ml x 30포",
      "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2,
+        "1": 1
+       },
+       "events": {
+        "pdp_exit": 3,
+        "pdp_cta_view": 1
+       },
+       "exit_events": 3,
+       "sum_seconds": 2066,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      },
       "desktop": {
        "section_reach": {},
        "exit_hist": {
@@ -296,24 +316,6 @@
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
-      },
-      "mobile": {
-       "section_reach": {},
-       "exit_hist": {
-        "0": 1,
-        "1": 1
-       },
-       "events": {
-        "pdp_exit": 2,
-        "pdp_cta_view": 1
-       },
-       "exit_events": 2,
-       "sum_seconds": 1868,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0
       }
      }
     },
@@ -323,15 +325,38 @@
       "mobile": {
        "section_reach": {},
        "exit_hist": {
-        "0": 1
+        "0": 2
        },
        "events": {
         "pdp_cta_click": 2,
+        "pdp_cta_view": 2,
+        "pdp_exit": 2,
+        "pdp_review": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 83,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     }
+    },
+    "46": {
+     "name": "캔서 위너",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "1": 1
+       },
+       "events": {
         "pdp_exit": 1,
         "pdp_review": 1
        },
        "exit_events": 1,
-       "sum_seconds": 44,
+       "sum_seconds": 54,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
@@ -342,11 +367,11 @@
     }
    },
    "unknown": {
-    "section_events": 310,
+    "section_events": 321,
     "exit_events": 158
    },
    "missing_metrics": []
   }
  },
- "updated_at": "2026-08-06 17:49:07 KST"
+ "updated_at": "2026-08-06 18:09:53 KST"
 }

@@ -33,7 +33,11 @@ jobs:
           python-version: "3.12"
 
       - name: Install deps
-        run: pip install google-auth
+        # google-auth 만으로는 부족하다. 서비스계정 토큰 갱신에 쓰는
+        # google.auth.transport.requests 가 requests 를 따로 요구하는데, 그게 없으면
+        # ImportError 가 나면서 "google-auth 가 필요합니다"라는 엉뚱한 메시지로 죽는다.
+        # 로컬에는 requests 가 이미 깔려 있어서 드러나지 않았다.
+        run: pip install -r requirements.txt
 
       - name: Fetch GA4
         env:
