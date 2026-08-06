@@ -230,7 +230,11 @@ def main():
 
     date = sorted(days)[-1]
     rec = days[date]
-    n_days = len(days)
+
+    # 상품이 하나도 안 잡힌 날은 세지 않는다. GA4 수집기가 최근 4일을 되받아오므로
+    # 추적을 심기 전 날짜까지 들어오는데, 그걸 세면 "수집 4일차"가 되어
+    # 7일 게이트가 일찍 열리고 근거 없는 처방이 나간다.
+    n_days = sum(1 for d in days.values() if d.get("products"))
     os.makedirs(OUT, exist_ok=True)
 
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
