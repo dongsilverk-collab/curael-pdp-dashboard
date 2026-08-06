@@ -8,65 +8,68 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 10,
-        "2": 10,
-        "4": 9,
-        "8": 9,
-        "3": 8,
-        "5": 8,
-        "6": 8,
-        "7": 7,
-        "9": 5,
-        "12": 5,
-        "13": 5,
-        "14": 5,
-        "15": 5,
-        "16": 5,
-        "11": 4,
-        "17": 4,
-        "10": 3,
-        "18": 3,
-        "19": 3,
-        "20": 2
+        "1": 41,
+        "2": 40,
+        "3": 32,
+        "4": 32,
+        "5": 26,
+        "8": 26,
+        "6": 24,
+        "7": 23,
+        "9": 20,
+        "10": 17,
+        "13": 17,
+        "14": 17,
+        "16": 17,
+        "11": 16,
+        "12": 16,
+        "15": 16,
+        "18": 16,
+        "17": 15,
+        "19": 13,
+        "20": 12
        },
        "exit_hist": {
-        "0": 25,
+        "0": 61,
+        "20": 11,
         "1": 8,
-        "2": 1,
-        "3": 1,
+        "2": 5,
+        "3": 4,
+        "9": 3,
+        "19": 2,
+        "4": 1,
         "6": 1,
+        "7": 1,
         "8": 1,
-        "9": 1,
-        "19": 1,
-        "20": 1
+        "14": 1
        },
        "events": {
-        "pdp_section": 118,
-        "pdp_scroll": 41,
-        "pdp_exit": 40,
-        "pdp_cta_view": 15,
-        "pdp_cta_click": 6,
-        "pdp_review": 1
+        "pdp_section": 436,
+        "pdp_scroll": 146,
+        "pdp_exit": 99,
+        "pdp_cta_view": 56,
+        "pdp_cta_click": 17,
+        "pdp_review": 16
        },
-       "exit_events": 40,
-       "sum_seconds": 5853,
+       "exit_events": 99,
+       "sum_seconds": 10922,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
+       "sum_saw_cta": 37,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
       },
       "desktop": {
        "section_reach": {
-        "1": 1,
-        "2": 1,
-        "3": 1,
-        "4": 1,
-        "5": 1,
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "9": 2,
         "6": 1,
         "7": 1,
         "8": 1,
-        "9": 1,
         "10": 1,
         "11": 1,
         "12": 1,
@@ -80,18 +83,19 @@
         "20": 1
        },
        "exit_hist": {
+        "1": 1,
         "20": 1
        },
        "events": {
-        "pdp_section": 20,
-        "pdp_scroll": 2,
-        "pdp_cta_view": 1,
-        "pdp_exit": 1
+        "pdp_section": 27,
+        "pdp_scroll": 5,
+        "pdp_cta_view": 3,
+        "pdp_exit": 2
        },
-       "exit_events": 1,
-       "sum_seconds": 12,
+       "exit_events": 2,
+       "sum_seconds": 61,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 1,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
@@ -104,34 +108,52 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 7,
-        "2": 7,
-        "3": 5,
-        "4": 4,
-        "5": 4,
-        "7": 4,
-        "6": 3,
-        "8": 3,
-        "9": 2
+        "1": 12,
+        "2": 10,
+        "3": 10,
+        "4": 10,
+        "5": 9,
+        "7": 9,
+        "6": 8,
+        "8": 7,
+        "9": 6
        },
        "exit_hist": {
+        "0": 20,
         "1": 9,
-        "0": 7,
-        "9": 5,
-        "5": 1
+        "9": 8,
+        "5": 4,
+        "2": 1,
+        "3": 1
        },
        "events": {
-        "pdp_section": 39,
-        "pdp_scroll": 25,
-        "pdp_exit": 22,
-        "pdp_cta_click": 9,
-        "pdp_cta_view": 8,
-        "pdp_review": 2
+        "pdp_section": 81,
+        "pdp_scroll": 45,
+        "pdp_exit": 43,
+        "pdp_cta_view": 16,
+        "pdp_cta_click": 14,
+        "pdp_review": 6
        },
-       "exit_events": 22,
-       "sum_seconds": 1614,
+       "exit_events": 43,
+       "sum_seconds": 3092,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
+       "sum_saw_cta": 14,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      },
+      "desktop": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 5,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
@@ -139,157 +161,63 @@
      },
      "section_total": 9
     },
-    "40": {
-     "name": "[자연하] 스텔라진 3g x 30포",
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "3": 2,
-        "5": 2,
-        "1": 1,
-        "2": 1,
-        "4": 1
-       },
-       "exit_hist": {
-        "1": 5,
-        "5": 1
-       },
-       "events": {
-        "pdp_scroll": 7,
-        "pdp_section": 7,
-        "pdp_exit": 6,
-        "pdp_cta_view": 3,
-        "pdp_cta_click": 1,
-        "pdp_review": 1
-       },
-       "exit_events": 6,
-       "sum_seconds": 167,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0
-      }
-     },
-     "section_total": 5
-    },
     "44": {
      "name": "[자연하] 크리노진 2.5g x 30포",
      "devices": {
       "mobile": {
        "section_reach": {
-        "3": 2,
-        "4": 2,
-        "1": 1,
-        "5": 1,
-        "6": 1
+        "1": 9,
+        "3": 9,
+        "2": 8,
+        "6": 5,
+        "4": 4,
+        "5": 3
        },
        "exit_hist": {
-        "0": 7,
+        "0": 16,
+        "6": 5,
         "1": 2,
-        "4": 1,
-        "6": 1
+        "3": 2,
+        "4": 1
        },
        "events": {
-        "pdp_exit": 11,
-        "pdp_section": 7,
-        "pdp_scroll": 5,
+        "pdp_section": 38,
+        "pdp_scroll": 33,
+        "pdp_exit": 26,
+        "pdp_cta_view": 10,
         "pdp_cta_click": 4,
-        "pdp_cta_view": 1
+        "pdp_review": 3
        },
-       "exit_events": 11,
-       "sum_seconds": 1276,
+       "exit_events": 26,
+       "sum_seconds": 3837,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 7,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
       },
       "desktop": {
        "section_reach": {
-        "1": 1,
-        "2": 1,
-        "3": 1,
-        "4": 1,
-        "5": 1,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2,
         "6": 1
        },
        "exit_hist": {
-        "6": 1
-       },
-       "events": {
-        "pdp_scroll": 6,
-        "pdp_section": 6,
-        "pdp_exit": 1,
-        "pdp_review": 1
-       },
-       "exit_events": 1,
-       "sum_seconds": 43,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0
-      }
-     },
-     "section_total": 6
-    },
-    "73": {
-     "name": "김훈하 약사의 하루 한 장 항암 다이어리",
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "1": 2
-       },
-       "exit_hist": {
-        "0": 5,
-        "1": 3
-       },
-       "events": {
-        "pdp_scroll": 10,
-        "pdp_exit": 8,
-        "pdp_cta_view": 3,
-        "pdp_review": 3,
-        "pdp_section": 2
-       },
-       "exit_events": 8,
-       "sum_seconds": 211,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0
-      }
-     },
-     "section_total": 1
-    },
-    "76": {
-     "name": "[자연하] 숨촉촉365 12g x 14포",
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "6": 2,
         "5": 1,
-        "7": 1,
-        "8": 1,
-        "10": 1,
-        "11": 1,
-        "13": 1,
-        "14": 1,
-        "15": 1,
-        "16": 1
-       },
-       "exit_hist": {
-        "0": 3,
-        "11": 1
+        "6": 1
        },
        "events": {
         "pdp_section": 11,
-        "pdp_exit": 4,
-        "pdp_scroll": 2
+        "pdp_scroll": 10,
+        "pdp_cta_view": 2,
+        "pdp_exit": 2,
+        "pdp_review": 1
        },
-       "exit_events": 4,
-       "sum_seconds": 45,
+       "exit_events": 2,
+       "sum_seconds": 148,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 1,
        "sum_saw_review": 0,
@@ -297,30 +225,119 @@
        "sum_clicked_buy": 0
       }
      },
+     "section_total": 6
+    },
+    "76": {
+     "name": "[자연하] 숨촉촉365 12g x 14포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "11": 8,
+        "6": 7,
+        "10": 7,
+        "1": 6,
+        "2": 6,
+        "3": 6,
+        "5": 6,
+        "9": 6,
+        "4": 5,
+        "12": 5,
+        "7": 4,
+        "8": 4,
+        "13": 4,
+        "14": 4,
+        "15": 4,
+        "16": 4,
+        "17": 3,
+        "19": 3,
+        "18": 2
+       },
+       "exit_hist": {
+        "0": 9,
+        "11": 4,
+        "19": 4,
+        "12": 2,
+        "13": 1
+       },
+       "events": {
+        "pdp_section": 94,
+        "pdp_scroll": 26,
+        "pdp_exit": 20,
+        "pdp_cta_view": 6,
+        "pdp_review": 3
+       },
+       "exit_events": 20,
+       "sum_seconds": 786,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 11,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
      "section_total": 19
+    },
+    "31": {
+     "name": "[자연하] 커큐진 2g x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 1,
+        "5": 1
+       },
+       "exit_hist": {
+        "0": 11,
+        "1": 2,
+        "5": 2,
+        "2": 1
+       },
+       "events": {
+        "pdp_exit": 16,
+        "pdp_section": 11,
+        "pdp_scroll": 8,
+        "pdp_cta_view": 6,
+        "pdp_review": 1
+       },
+       "exit_events": 16,
+       "sum_seconds": 1795,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 3,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "section_total": 5
     },
     "32": {
      "name": "[자연하] 베리베라진 20ml x 30포",
      "devices": {
       "mobile": {
        "section_reach": {
-        "3": 1
+        "3": 3,
+        "4": 3,
+        "1": 2,
+        "2": 2
        },
        "exit_hist": {
+        "4": 4,
         "0": 2,
         "1": 1
        },
        "events": {
-        "pdp_exit": 3,
-        "pdp_cta_view": 2,
-        "pdp_review": 1,
-        "pdp_scroll": 1,
-        "pdp_section": 1
+        "pdp_scroll": 15,
+        "pdp_section": 10,
+        "pdp_exit": 7,
+        "pdp_cta_view": 3,
+        "pdp_review": 2
        },
-       "exit_events": 3,
-       "sum_seconds": 2066,
+       "exit_events": 7,
+       "sum_seconds": 2258,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 4,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
@@ -343,6 +360,70 @@
       }
      },
      "section_total": 4
+    },
+    "40": {
+     "name": "[자연하] 스텔라진 3g x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2
+       },
+       "exit_hist": {
+        "1": 5,
+        "5": 5
+       },
+       "events": {
+        "pdp_scroll": 16,
+        "pdp_section": 11,
+        "pdp_exit": 10,
+        "pdp_cta_view": 5,
+        "pdp_review": 2,
+        "pdp_cta_click": 1
+       },
+       "exit_events": 10,
+       "sum_seconds": 680,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 4,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "section_total": 5
+    },
+    "73": {
+     "name": "김훈하 약사의 하루 한 장 항암 다이어리",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2
+       },
+       "exit_hist": {
+        "0": 7,
+        "1": 3
+       },
+       "events": {
+        "pdp_scroll": 12,
+        "pdp_exit": 10,
+        "pdp_cta_view": 4,
+        "pdp_review": 3,
+        "pdp_cta_click": 2,
+        "pdp_section": 2
+       },
+       "exit_events": 10,
+       "sum_seconds": 219,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "section_total": 1
     },
     "46": {
      "name": "캔서 위너",
@@ -372,28 +453,33 @@
      },
      "section_total": 1
     },
-    "31": {
-     "name": "[자연하] 커큐진 2g x 30포",
+    "48": {
+     "name": "열방약국 유방암 상담소",
      "devices": {
       "mobile": {
-       "section_reach": {},
+       "section_reach": {
+        "1": 1
+       },
        "exit_hist": {
-        "0": 7,
         "1": 2
        },
        "events": {
-        "pdp_exit": 9,
-        "pdp_cta_view": 2
+        "pdp_exit": 2,
+        "pdp_scroll": 2,
+        "pdp_cta_view": 1,
+        "pdp_review": 1,
+        "pdp_section": 1
        },
-       "exit_events": 9,
-       "sum_seconds": 1628,
+       "exit_events": 2,
+       "sum_seconds": 84,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 2,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
       }
-     }
+     },
+     "section_total": 1
     },
     "47": {
      "name": "기적의 항암 식단",
@@ -401,16 +487,63 @@
       "mobile": {
        "section_reach": {},
        "exit_hist": {
+        "0": 6
+       },
+       "events": {
+        "pdp_cta_view": 7,
+        "pdp_cta_click": 6,
+        "pdp_exit": 6,
+        "pdp_review": 3,
+        "pdp_scroll": 3
+       },
+       "exit_events": 6,
+       "sum_seconds": 111,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 3,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     }
+    },
+    "59": {
+     "name": "국산 유기농 귀리쌀 1kg",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 3
+       },
+       "events": {
+        "pdp_scroll": 6,
+        "pdp_exit": 3,
+        "pdp_cta_click": 2,
+        "pdp_cta_view": 2,
+        "pdp_review": 2
+       },
+       "exit_events": 3,
+       "sum_seconds": 61,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     }
+    },
+    "62": {
+     "name": "국산 유기농 귀리 혼합 10곡 잡곡쌀 800g",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
         "0": 2
        },
        "events": {
-        "pdp_cta_click": 2,
-        "pdp_cta_view": 2,
-        "pdp_exit": 2,
-        "pdp_review": 1
+        "pdp_exit": 2
        },
        "exit_events": 2,
-       "sum_seconds": 83,
+       "sum_seconds": 2,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
@@ -442,8 +575,8 @@
     }
    },
    "unknown": {
-    "section_events": 331,
-    "exit_events": 161
+    "section_events": 349,
+    "exit_events": 166
    },
    "missing_metrics": []
   },
@@ -466,5 +599,5 @@
    "missing_metrics": []
   }
  },
- "updated_at": "2026-08-06 19:02:31 KST"
+ "updated_at": "2026-08-06 21:02:53 KST"
 }
