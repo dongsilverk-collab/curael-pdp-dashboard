@@ -124,3 +124,62 @@ def get(path, params, tries=4):
                 time.sleep(5 * (attempt + 1))
                 continue
             raise Cafe24Error("연결 실패: %s" % e)
+
+
+# ---------- 재인증 ----------
+#
+# refresh 토큰이 만료되면(=2주 넘게 수집이 안 돌면) 브라우저 로그인이 필요하다.
+# vegicel-ad-autopilot 의 같은 기능은 자격증명을 **환경변수에서만** 읽어서, 그냥 연
+# PowerShell 에서는 "CAFE24_MALL_ID 환경변수 필요"로 실패한다. 여기서는 .env 를 읽는
+# _env() 를 쓰므로 이 저장소에서 바로 된다. 급할 때 환경변수부터 찾게 만들면 안 된다.
+
+def auth_url():
+    redirect = _env("CAFE24_REDIRECT", required=False) or "https://www.curael.co.kr"
+    q = urllib.parse.urlencode({
+        "response_type": "code",
+        "client_id": _env("CAFE24_CLIENT_ID"),
+        "redirect_uri": redirect,
+        "scope": "mall.read_order",
+        "state": "pdp",
+    })
+    return "https://%s.cafe24api.com/api/v2/oauth/authorize?%s" % (
+        _env("CAFE24_MALL_ID"), q)
+
+
+def exchange_code(code):
+    """authorize 로 받은 code 를 토큰으로 교환. code 는 1분 남짓만 유효하다."""
+    redirect = _env("CAFE24_REDIRECT", required=False) or "https://www.curael.co.kr"
+    req = urllib.request.Request(
+        "%s/oauth/token" % _base(),
+        data=urllib.parse.urlencode({"grant_type": "authorization_code",
+                                     "code": code,
+                                     "redirect_uri": redirect}).encode(),
+        headers={"Authorization": _basic_auth(),
+                 "Content-Type": "application/x-www-form-urlencoded"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            tok = json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        raise Cafe24Error("코드 교환 실패(1분 지났을 수 있음): %s"
+                          % e.read().decode("replace")[:300])
+    _save_token(tok)
+    return tok
+
+
+if __name__ == "__main__":
+    import argparse
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    ap = argparse.ArgumentParser(description="카페24 재인증")
+    ap.add_argument("--auth-url", action="store_true", help="로그인 URL 출력")
+    ap.add_argument("--code", help="주소창의 code= 값")
+    a = ap.parse_args()
+    if a.auth_url:
+        print(auth_url())
+        print("\n위 URL 을 브라우저로 열어 로그인한 뒤, 주소창의 code= 값을 복사해")
+        print("1분 안에:  python cafe24_pdp_api.py --code 복사한코드")
+    elif a.code:
+        t = exchange_code(a.code)
+        print("발급 완료 — refresh 만료 %s" % t.get("refresh_token_expires_at"))
+        print("저장 위치: %s" % token_path())
+    else:
+        ap.print_help()

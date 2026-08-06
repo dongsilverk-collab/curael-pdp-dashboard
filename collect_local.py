@@ -51,9 +51,12 @@ def check_token():
     left = (exp - datetime.now(exp.tzinfo) if exp.tzinfo
             else exp - datetime.now()).total_seconds() / 86400
     if left < 0:
+        # vegicel 쪽 스크립트를 안내하면 안 된다 — 자격증명을 환경변수에서만 읽어서
+        # 그냥 연 PowerShell 에서는 "CAFE24_MALL_ID 환경변수 필요"로 막힌다.
+        # 이 저장소 것은 .env 를 읽으므로 그대로 붙여넣으면 된다.
         print("!! 카페24 refresh 토큰이 만료됐습니다. 재인증이 필요합니다:\n"
-              "   cd C:\\Users\\dongs\\vegicel-ad-autopilot\n"
-              "   python cafe24_api.py --auth-url", file=sys.stderr)
+              "   cd C:\\Users\\dongs\\curael-pdp-dashboard\n"
+              "   python cafe24_pdp_api.py --auth-url", file=sys.stderr)
         raise SystemExit(2)
     if left < WARN_DAYS_LEFT:
         print("! 카페24 refresh 토큰 잔여 %.1f일. 곧 재인증이 필요합니다." % left,
