@@ -36,9 +36,23 @@ class RateLimited(ClarityError):
 
 
 def _token():
+    """환경변수 우선, 없으면 로컬 .env (gitignore 처리됨).
+
+    토큰을 명령줄에 직접 넣지 않는다 — 셸 히스토리·프로세스 목록에 남는다.
+    """
     t = os.getenv("CLARITY_API_TOKEN", "").strip()
     if not t:
-        raise ClarityError("CLARITY_API_TOKEN 환경변수가 없습니다.")
+        try:
+            with open(".env", encoding="utf-8") as f:
+                for line in f:
+                    if line.strip().startswith("CLARITY_API_TOKEN="):
+                        t = line.split("=", 1)[1].strip()
+                        break
+        except FileNotFoundError:
+            pass
+    if not t:
+        raise ClarityError(
+            "CLARITY_API_TOKEN 이 없습니다. 환경변수로 넣거나 .env 에 적으세요.")
     return t
 
 
@@ -88,11 +102,12 @@ def live_insights(num_of_days=1, dims=(), reserve=0):
         "Authorization": f"Bearer {_token()}",
         "Content-Type": "application/json",
     })
-    _budget_inc()          # 성공 여부와 무관하게 소진된다고 본다 (보수적)
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
+            _budget_inc()      # 서버에 도달한 경우에만 소진으로 센다
             return json.loads(r.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
+        _budget_inc()          # HTTP 오류도 서버에 도달한 것 → 소진
         body = ""
         try:
             body = e.read().decode("utf-8", "replace")[:300]

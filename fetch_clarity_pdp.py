@@ -16,7 +16,9 @@ import argparse
 import sys
 
 import clarity_api
-from pdp_common import kst_date, kst_now, load_json, parse_product_no, save_json
+from datetime import timedelta
+
+from pdp_common import kst_now, load_json, parse_product_no, save_json
 
 SNAP_PATH = "data/clarity_snapshots.json"
 
@@ -30,22 +32,41 @@ AUTO_CALLS = [
 RESERVE = 3          # 사람 몫
 
 
-def _date_key(num_of_days):
-    """numOfDays=1 이면 방금 끝난 하루 = 어제(KST 00:20 실행 기준)."""
-    return kst_date(1) if num_of_days == 1 else f"{kst_date(num_of_days)}~{kst_date(1)}"
+def _window(num_of_days):
+    """API 창은 '호출 시각 기준 지난 N일'이라 달력일이 아니다.
+
+    00:20에 돌리면 창이 어제 하루와 거의 일치하지만, 다른 시각에 돌리면 어긋난다.
+    창의 중간 지점이 속한 날짜를 키로 삼고, 실제 경계와 정렬 여부를 함께 남긴다.
+    라벨을 실제와 다르게 붙이면 나중에 GA4와 대조할 때 조용히 틀린다.
+    """
+    end = kst_now()
+    start = end - timedelta(days=num_of_days)
+    mid = start + (end - start) / 2
+    key = mid.strftime("%Y-%m-%d")
+    # 00:00~01:00 사이 실행이면 창이 직전 달력일과 거의 일치한다
+    aligned = end.hour == 0 or (end.hour == 1 and end.minute < 30)
+    return key, {
+        "window_start_kst": start.isoformat(timespec="seconds"),
+        "window_end_kst": end.isoformat(timespec="seconds"),
+        "aligned_to_calendar_day": aligned,
+    }
 
 
 def fetch(num_of_days=1, force=False, dump_raw=False):
     snaps = load_json(SNAP_PATH)
     snaps.setdefault("snapshots", {})
-    key = _date_key(num_of_days)
+    key, win = _window(num_of_days)
     entry = snaps["snapshots"].setdefault(key, {})
     entry.setdefault("calls", {})
 
     entry["fetched_at"] = kst_now().isoformat(timespec="seconds")
     entry["num_of_days"] = num_of_days
+    entry.update(win)
     entry["window_kst_note"] = (
         "호출 시각 기준 지난 %d일. KST 달력일과 정확히 같지 않다." % num_of_days)
+    if not win["aligned_to_calendar_day"]:
+        print(f"  ⚠ 실행 시각이 00:20이 아니라 창이 달력일과 어긋납니다 "
+              f"({win['window_start_kst'][:16]} ~ {win['window_end_kst'][:16]})")
     if num_of_days > 1:
         entry["aggregate_only"] = True
 
