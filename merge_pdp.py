@@ -231,9 +231,22 @@ def main():
                 "images": imgs,
                 "devices": devices,
                 "clarity": clar.get(pid),
-                "sales": (cafe24.get(date) or {}).get(pid),
+                "sales": ((cafe24.get(date) or {}).get("products") or {}).get(pid),
                 "sample": "ok" if devices["_all"]["sessions"] >= MIN_SESSIONS else "low",
             }
+
+            # 금액 환산. 이게 있어야 "이 이미지를 고치면 얼마"가 나온다.
+            # 분모는 상세페이지 세션(pdp_exit). 주문은 상세를 안 보고도 발생할 수 있어
+            # (재구매·장바구니 직행) 전환율이 100%를 넘을 수 있다 — 그건 오류가 아니라
+            # '상세페이지를 거치지 않은 주문'이라는 신호다. 그래서 자르지 않고 그대로 둔다.
+            s = rec["products"][pid]["sales"]
+            n = devices["_all"]["sessions"]
+            if s and n:
+                rec["products"][pid]["derived"] = {
+                    "cvr": round(s["orders"] / n, 4),
+                    "revenue_per_session": round(s["net"] / n),
+                    "aov": round(s["net"] / s["orders"]) if s["orders"] else 0,
+                }
 
         out["days"][date] = rec
         n_low = sum(1 for p in rec["products"].values() if p["sample"] == "low")
