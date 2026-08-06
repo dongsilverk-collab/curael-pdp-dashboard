@@ -92,7 +92,16 @@ def _derive(bucket, total_sections):
 
 
 def merge_clarity(snapshots, date):
-    """URL 행을 상품번호로 접는다. 매칭 실패분은 버리지 않고 따로 센다."""
+    """URL 행을 상품번호로 접는다. 매칭 실패분은 버리지 않고 따로 센다.
+
+    ⚠ Clarity 행동지표 행의 필드 의미 (한 번 크게 틀렸던 부분):
+      sessionsCount                 그 URL의 **전체** 세션 수. 지표 발생 수가 아니다.
+      sessionsWithMetricPercentage  그중 해당 행동이 일어난 세션의 비율(%)
+      subTotal                      발생 **횟수**
+
+    sessionsCount 를 그대로 더하면 '26번 분노클릭 54건' 같은 숫자가 나오는데,
+    실제로는 전 행이 0%였다(= 분노클릭 0건). 세션 수를 지표로 착각한 것이다.
+    """
     snap = (snapshots.get("snapshots") or {}).get(date)
     if not snap:
         return {}, {"matched": 0, "unmatched": 0}
@@ -104,10 +113,20 @@ def merge_clarity(snapshots, date):
     def rows(name):
         return metrics.get(name) or []
 
-    # 세션 수를 먼저 모아 스크롤 뎁스의 가중치로 쓴다.
+    def _int(x):
+        try:
+            return int(float(x or 0))
+        except (TypeError, ValueError):
+            return 0
+
+    # URL별 세션 수를 먼저 잡아둔다. 스크롤 뎁스 가중치로 쓰려면 '그 URL의' 세션 수가
+    # 필요하다 — 누적 합계를 가중치로 쓰면 뒤에 온 URL일수록 무겁게 잡혀 평균이 왜곡된다.
+    url_sessions = {}
     for r in rows("Traffic"):
-        pid = C.parse_product_no(r.get("Url") or "")
-        n = int(r.get("totalSessionCount") or 0) or int(r.get("distinctUserCount") or 0)
+        u = r.get("Url") or ""
+        n = _int(r.get("totalSessionCount")) or _int(r.get("distinctUserCount"))
+        url_sessions[u] = url_sessions.get(u, 0) + n
+        pid = C.parse_product_no(u)
         if not pid:
             un["unmatched"] += n
             continue
@@ -117,23 +136,29 @@ def merge_clarity(snapshots, date):
         per[pid]["sessions"] += n
 
     for r in rows("ScrollDepth"):
-        pid = C.parse_product_no(r.get("Url") or "")
+        u = r.get("Url") or ""
+        pid = C.parse_product_no(u)
         if not pid or pid not in per:
             continue
-        w = max(1, per[pid]["sessions"])
+        w = max(1, url_sessions.get(u, 1))
         try:
             per[pid]["scroll_num"] += float(r.get("averageScrollDepth") or 0) * w
             per[pid]["scroll_den"] += w
         except (TypeError, ValueError):
             pass
 
+    # 행동지표는 '세션 수 x 발생 비율'로 환산해야 한다(위 docstring 참고).
     for name, key in (("DeadClickCount", "dead"), ("RageClickCount", "rage"),
                       ("QuickbackClick", "quickback")):
         for r in rows(name):
             pid = C.parse_product_no(r.get("Url") or "")
             if not pid or pid not in per:
                 continue
-            per[pid][key] += int(r.get("sessionsCount") or 0)
+            try:
+                share = float(r.get("sessionsWithMetricPercentage") or 0) / 100.0
+            except (TypeError, ValueError):
+                share = 0.0
+            per[pid][key] += round(_int(r.get("sessionsCount")) * share)
 
     out = {}
     for pid, v in per.items():
@@ -141,8 +166,10 @@ def merge_clarity(snapshots, date):
             "sessions": v["sessions"],
             "avg_scroll_depth": round(v["scroll_num"] / v["scroll_den"], 1)
             if v["scroll_den"] else None,
-            "dead_clicks": v["dead"], "rage_clicks": v["rage"],
-            "quickback": v["quickback"],
+            # 전부 '해당 행동이 일어난 세션 수'다. 횟수가 아니다.
+            "dead_click_sessions": v["dead"],
+            "rage_click_sessions": v["rage"],
+            "quickback_sessions": v["quickback"],
             "truncated": bool(call.get("truncated")),
         }
     return out, un

@@ -158,9 +158,13 @@ def build_product(pid, p, date, days_collected):
         out.append(G.kpi("평균 체류", "%d초" % round(a["avg_seconds"]), ""))
     cl = p.get("clarity")
     if cl:
+        # 분노/데드클릭은 '그 행동이 일어난 세션 수'다. 세션 수 자체가 아니다.
         out.append(G.kpi("Clarity 스크롤", "%s%%" % cl.get("avg_scroll_depth", "–"),
-                         "세션 %s · 분노클릭 %s" % (cl.get("sessions", "–"),
-                                              cl.get("rage_clicks", 0))))
+                         "세션 %s · 분노 %s · 데드 %s · 되돌아감 %s"
+                         % (cl.get("sessions", "–"),
+                            cl.get("rage_click_sessions", 0),
+                            cl.get("dead_click_sessions", 0),
+                            cl.get("quickback_sessions", 0))))
     out.append("</div>")
 
     if not total:
