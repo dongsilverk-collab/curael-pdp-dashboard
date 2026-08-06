@@ -19,6 +19,9 @@ concurrency:
   group: pdp-daily
   cancel-in-progress: false
 
+permissions:
+  contents: write   # 수집 결과를 커밋한다. 없으면 push 단계가 403.
+
 jobs:
   build:
     runs-on: ubuntu-latest
