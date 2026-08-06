@@ -70,6 +70,21 @@ def crawl_detail_images(pno):
     return _RE_IMG_SRC.findall(m.group(1))
 
 
+def absolutize(src):
+    """표시용 절대 URL. 정규화와 목적이 완전히 다르므로 절대 섞지 말 것.
+
+    normalize_one() 은 '같은 이미지인가'를 판정하려고 호스트·copy-<epoch>- 를 지운다.
+    그 결과물로는 URL을 복원할 수 없다(실제로 404가 났다). 화면에 그림을 띄우려면
+    크롤한 원본 src 를 그대로 살려둬야 한다.
+    """
+    s = (src or "").strip()
+    if s.startswith("//"):
+        return "https:" + s
+    if s.startswith("/"):
+        return MALL_HOST + s
+    return s
+
+
 def normalize_one(src):
     """비교용 이름으로 정규화.
 
@@ -175,10 +190,15 @@ def detect(dry_run=False, sleep=1.0):
         products[pno]["last_seen"] = today
         products[pno].setdefault("first_seen", today)
 
-    raw = {}
+    raw, display = {}, {}
     for pno in sorted(listing, key=int):
         srcs = crawl_detail_images(pno)
         raw[pno] = [normalize_one(s) for s in srcs]
+        # 표시용은 **배너를 포함한 DOM 순서 그대로**여야 한다. 추적 스크립트는
+        # #prdDetail 의 <img> 를 전부 세므로, 배너를 뺀 목록으로 그림을 붙이면
+        # 구간 번호가 한 칸씩 밀려 매 구간마다 엉뚱한 이미지를 보여주게 된다.
+        # 버전 판정용(배너 제외)과 표시용(배너 포함)은 서로 다른 목록이다.
+        display[pno] = [absolutize(s) for s in srcs]
         print(f"  [{pno}] 이미지 {len(raw[pno])}장")
         time.sleep(sleep)
 
@@ -197,6 +217,10 @@ def detect(dry_run=False, sleep=1.0):
         h = _hash(body)
         entry = store.get(pno) or {}
         cur = entry.get("current")
+
+        # 표시용 URL은 버전의 정체성이 아니라 화면 재료다. 버전이 안 바뀌어도
+        # 매 크롤마다 최신으로 덮어쓴다(current 안에 넣으면 버전 고정 시 낡는다).
+        entry["display_urls"] = display.get(pno) or []
 
         if cur and cur.get("struct_hash") == h:
             entry.pop("pending", None)

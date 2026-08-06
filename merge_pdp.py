@@ -19,8 +19,6 @@ PRODUCTS = "data/pdp_products.json"
 CAFE24 = "data/cafe24_pdp_history.json"   # 아직 수집기 없음. 없으면 미수집으로 표시.
 OUT = "data/pdp_daily.json"
 
-CDN = "https://ecimg.cafe24img.com/pg1274b45322217050/yulbangjyh/web/product/extra/big/"
-
 MIN_SESSIONS = 30      # 이 미만은 순위에서 빼고 '표본 부족'으로 따로 보여준다
 
 
@@ -191,7 +189,10 @@ def main():
                 _add(allb, b)
             devices["_all"] = _derive(allb, total)
 
-            imgs = ver.get("images") or []
+            # display_urls 는 배너 포함 DOM 순서 그대로라 구간 번호와 1:1로 맞는다.
+            # ver["images"] 는 배너를 뺀 '버전 비교용 이름'이라 그림 붙이기에 쓰면
+            # 번호가 밀리고, 게다가 copy-<epoch>- 가 벗겨져 URL 복원도 안 된다.
+            imgs = (versions.get(pid) or {}).get("display_urls") or []
             rec["products"][pid] = {
                 "name": p.get("name") or "",
                 "slug": (products.get(pid) or {}).get("slug", ""),
@@ -200,7 +201,7 @@ def main():
                 "version": "v%s.%s" % (ver.get("version", 0), ver.get("minor", 0)),
                 # 구간 번호 → 실제 이미지. 이게 있어야 "몇 번째에서 나갔나"가
                 # 번호가 아니라 그림으로 보인다.
-                "images": [CDN + s for s in imgs],
+                "images": imgs,
                 "devices": devices,
                 "clarity": clar.get(pid),
                 "sales": (cafe24.get(date) or {}).get(pid),
