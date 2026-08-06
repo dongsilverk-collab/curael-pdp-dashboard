@@ -45,7 +45,12 @@
         "pdp_cta_click": 2
        },
        "exit_events": 22,
-       "sum_seconds": 3857
+       "sum_seconds": 3857,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       },
       "desktop": {
        "section_reach": {
@@ -80,7 +85,12 @@
         "pdp_exit": 1
        },
        "exit_events": 1,
-       "sum_seconds": 12
+       "sum_seconds": 12,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      },
      "section_total": 20
@@ -103,18 +113,24 @@
        "exit_hist": {
         "1": 7,
         "9": 2,
+        "0": 1,
         "5": 1
        },
        "events": {
         "pdp_section": 15,
-        "pdp_exit": 10,
+        "pdp_exit": 11,
         "pdp_scroll": 7,
         "pdp_cta_view": 3,
         "pdp_cta_click": 2,
         "pdp_review": 1
        },
-       "exit_events": 10,
-       "sum_seconds": 313
+       "exit_events": 11,
+       "sum_seconds": 380,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      },
      "section_total": 9
@@ -132,17 +148,24 @@
        },
        "exit_hist": {
         "1": 2,
+        "0": 1,
         "4": 1,
         "6": 1
        },
        "events": {
         "pdp_section": 6,
-        "pdp_exit": 4,
+        "pdp_exit": 5,
         "pdp_scroll": 4,
+        "pdp_cta_click": 2,
         "pdp_cta_view": 1
        },
-       "exit_events": 4,
-       "sum_seconds": 302
+       "exit_events": 5,
+       "sum_seconds": 310,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       },
       "desktop": {
        "section_reach": {
@@ -163,7 +186,12 @@
         "pdp_review": 1
        },
        "exit_events": 1,
-       "sum_seconds": 43
+       "sum_seconds": 43,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      },
      "section_total": 6
@@ -189,7 +217,12 @@
         "pdp_cta_view": 1
        },
        "exit_events": 6,
-       "sum_seconds": 167
+       "sum_seconds": 167,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      },
      "section_total": 5
@@ -212,7 +245,12 @@
         "pdp_section": 1
        },
        "exit_events": 3,
-       "sum_seconds": 94
+       "sum_seconds": 94,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      },
      "section_total": 1
@@ -231,7 +269,12 @@
         "pdp_cta_view": 2
        },
        "exit_events": 6,
-       "sum_seconds": 371
+       "sum_seconds": 371,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      }
     },
@@ -247,19 +290,30 @@
         "pdp_exit": 1
        },
        "exit_events": 1,
-       "sum_seconds": 2
+       "sum_seconds": 2,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       },
       "mobile": {
        "section_reach": {},
        "exit_hist": {
+        "0": 1,
         "1": 1
        },
        "events": {
-        "pdp_cta_view": 1,
-        "pdp_exit": 1
+        "pdp_exit": 2,
+        "pdp_cta_view": 1
        },
-       "exit_events": 1,
-       "sum_seconds": 1768
+       "exit_events": 2,
+       "sum_seconds": 1868,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      }
     },
@@ -277,23 +331,22 @@
         "pdp_review": 1
        },
        "exit_events": 1,
-       "sum_seconds": 44
+       "sum_seconds": 44,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      }
     }
    },
    "unknown": {
     "section_events": 310,
-    "exit_events": 157
+    "exit_events": 158
    },
-   "missing_metrics": [
-    "pdp_bounce_3s",
-    "pdp_saw_cta",
-    "pdp_saw_review",
-    "pdp_clicked_cart",
-    "pdp_clicked_buy"
-   ]
+   "missing_metrics": []
   }
  },
- "updated_at": "2026-08-06 17:30:53 KST"
+ "updated_at": "2026-08-06 17:49:07 KST"
 }
