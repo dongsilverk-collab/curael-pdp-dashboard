@@ -52,7 +52,17 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ docs/ || true
-          git diff --cached --quiet && echo "변경 없음" && exit 0
+          # docs/ 는 대시보드 생성 전까지 존재하지 않는다. 두 경로를 한 번에 add 하면
+          # 없는 쪽 때문에 명령 전체가 실패하고, || true 가 그 실패를 삼켜서
+          # data/ 까지 스테이징되지 않는다 — 수집은 성공인데 아무것도 안 남는다.
+          # 경로별로 나누고, 실패는 무시하되 결과는 반드시 확인한다.
+          for p in data docs; do
+            [ -d "$p" ] && git add "$p"
+          done
+          git status --short
+          if git diff --cached --quiet; then
+            echo "스테이징된 변경 없음 — 커밋 생략"
+            exit 0
+          fi
           git commit -m "PDP data $(TZ=Asia/Seoul date +%F)"
           git push
