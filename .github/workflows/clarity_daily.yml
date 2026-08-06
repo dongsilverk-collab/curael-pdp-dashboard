@@ -17,6 +17,11 @@ concurrency:
   group: clarity-daily
   cancel-in-progress: false   # 적재는 중간에 끊으면 안 된다
 
+# 이 워크플로는 수집 결과를 저장소에 커밋한다. 신규 저장소의 GITHUB_TOKEN 기본값이
+# 읽기 전용인 경우가 있어, 명시하지 않으면 마지막 push 단계에서 403으로 죽는다.
+permissions:
+  contents: write
+
 jobs:
   collect:
     runs-on: ubuntu-latest
