@@ -63,8 +63,11 @@ def build_index(date, rec, days_collected):
             '처방은 7일치가 모이면 표시됩니다.</div>' % days_collected)
 
     if rec["sources"]["cafe24"] != "ok":
-        out.append('<div class="note">매출 데이터 <b>미수집</b> — 전환율·매출 항목은 '
-                   '아직 비어 있습니다(카페24 수집기 미구축).</div>')
+        out.append('<div class="note">매출 데이터 <b>미수집</b> — 이 날짜는 카페24 수집이 '
+                   '돌지 않았습니다. 매출 칸의 회색 <b>–</b>는 0원이 아니라 모른다는 뜻입니다.</div>')
+
+    revenue = sum((p.get("sales") or {}).get("net", 0) for p in ps.values())
+    orders = sum((p.get("sales") or {}).get("orders", 0) for p in ps.values())
 
     out.append('<div class="kpis">')
     out.append(G.kpi("상세페이지 세션", f"{tot_sessions:,}", "pdp_exit 기준"))
@@ -72,6 +75,10 @@ def build_index(date, rec, days_collected):
                      "%s명 · 이미지를 못 봄" % f"{s00:,}"))
     out.append(G.kpi("끝까지 봄", G.pct(done / tot_sessions) if tot_sessions else "–",
                      "%s명" % f"{done:,}"))
+    if rec["sources"]["cafe24"] == "ok":
+        out.append(G.kpi("세션당 매출", "%s원" % f"{round(revenue / tot_sessions):,}"
+                         if tot_sessions else "–",
+                         "순매출 %s원 · 주문 %d건" % (f"{revenue:,}", orders)))
     out.append(G.kpi("Clarity 스크롤", "%.0f%%" % (sum(scrolls) / len(scrolls))
                      if scrolls else "–", "상품 평균"))
     out.append("</div>")
@@ -81,11 +88,21 @@ def build_index(date, rec, days_collected):
                '<th></th><th>상품</th><th class="num">세션</th>'
                '<th>구간 도달 곡선</th><th class="num">미도달</th>'
                '<th class="num">첫 구간 이탈</th><th class="num">완독</th>'
-               '<th class="num">최대 낙차</th></tr>')
+               '<th class="num">최대 낙차</th><th class="num">순매출</th>'
+               '<th class="num">세션당</th></tr>')
 
     def row(pid, p, dim=False):
         a = p["devices"]["_all"]
         n = a["sessions"]
+        s, dv = p.get("sales"), p.get("derived") or {}
+        # 미수집(회색 –)과 실제 0(검은 0)을 구분한다. 섞이면 화면이 거짓말을 한다.
+        if rec["sources"]["cafe24"] != "ok":
+            money = rps = '<span class="muted">–</span>'
+        elif s:
+            money = "%s원" % f"{s['net']:,}"
+            rps = "%s원" % f"{dv.get('revenue_per_session', 0):,}"
+        else:
+            money, rps = "0원", "0원"
         thumb = ('<img class="thumb" loading="lazy" src="%s" alt="">' % G.esc(p["images"][0])
                  if p.get("images") else '<div class="thumb"></div>')
         drop = ("S%02d <span class='muted'>-%s</span>"
@@ -97,18 +114,19 @@ def build_index(date, rec, days_collected):
             '<span class="muted">%s번 · 이미지 %s장 · %s</span></td>'
             '<td class="num">%s</td><td>%s</td>'
             '<td class="num">%s</td><td class="num">%s</td>'
+            '<td class="num">%s</td><td class="num">%s</td>'
             '<td class="num">%s</td><td class="num">%s</td></tr>'
             % ("dim" if dim else "", thumb, G.esc(pid), G.esc(p["name"][:34]),
                G.sample_badge(n, MIN_SESSIONS), G.esc(pid),
                p["section_total"] or "–", G.esc(p["version"]),
                f"{n:,}", G.sparkline(curve(p)),
                G.pct(a["s00_rate"]), G.pct(a["s01_rate"]),
-               G.pct(a["done_rate"]), drop))
+               G.pct(a["done_rate"]), drop, money, rps))
 
     if ranked:
         out += [row(pid, p) for pid, p in ranked]
     else:
-        out.append('<tr><td colspan="8" class="muted">'
+        out.append('<tr><td colspan="10" class="muted">'
                    '표본 %d세션 이상인 상품이 아직 없습니다.</td></tr>' % MIN_SESSIONS)
     out.append("</table></div>")
 
@@ -120,7 +138,8 @@ def build_index(date, rec, days_collected):
                    '<th></th><th>상품</th><th class="num">세션</th>'
                    '<th>구간 도달 곡선</th><th class="num">미도달</th>'
                    '<th class="num">첫 구간 이탈</th><th class="num">완독</th>'
-                   '<th class="num">최대 낙차</th></tr>')
+                   '<th class="num">최대 낙차</th><th class="num">순매출</th>'
+                   '<th class="num">세션당</th></tr>')
         out += [row(pid, p, dim=True) for pid, p in low]
         out.append("</table></div>")
 
@@ -156,6 +175,11 @@ def build_product(pid, p, date, days_collected):
     out.append(G.kpi("끝까지 봄", G.frac(a["completed"], n), "S%02d 도달" % total if total else ""))
     if a.get("avg_seconds") is not None:
         out.append(G.kpi("평균 체류", "%d초" % round(a["avg_seconds"]), ""))
+    s, dv = p.get("sales"), p.get("derived") or {}
+    if s:
+        out.append(G.kpi("순매출", "%s원" % f"{s['net']:,}",
+                         "주문 %d건 · 세션당 %s원"
+                         % (s["orders"], f"{dv.get('revenue_per_session', 0):,}")))
     cl = p.get("clarity")
     if cl:
         # 분노/데드클릭은 '그 행동이 일어난 세션 수'다. 세션 수 자체가 아니다.

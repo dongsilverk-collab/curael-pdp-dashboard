@@ -4,7 +4,7 @@
    "sources": {
     "ga4": "ok",
     "clarity": "missing",
-    "cafe24": "missing"
+    "cafe24": "ok"
    },
    "products": {},
    "unattributed": {
@@ -16,7 +16,7 @@
    "sources": {
     "ga4": "ok",
     "clarity": "missing",
-    "cafe24": "missing"
+    "cafe24": "ok"
    },
    "products": {},
    "unattributed": {
@@ -28,7 +28,7 @@
    "sources": {
     "ga4": "ok",
     "clarity": "missing",
-    "cafe24": "missing"
+    "cafe24": "ok"
    },
    "products": {},
    "unattributed": {
@@ -40,7 +40,7 @@
    "sources": {
     "ga4": "ok",
     "clarity": "ok",
-    "cafe24": "missing"
+    "cafe24": "ok"
    },
    "products": {
     "26": {
@@ -398,8 +398,20 @@
       "quickback_sessions": 2,
       "truncated": false
      },
-     "sales": null,
-     "sample": "ok"
+     "sales": {
+      "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+      "orders": 7,
+      "units": 8,
+      "gross": 630220,
+      "net": 630220,
+      "canceled_units": 0
+     },
+     "sample": "ok",
+     "derived": {
+      "cvr": 0.1707,
+      "revenue_per_session": 15371,
+      "aov": 90031
+     }
     },
     "28": {
      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
@@ -570,8 +582,20 @@
       "quickback_sessions": 1,
       "truncated": false
      },
-     "sales": null,
-     "sample": "low"
+     "sales": {
+      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+      "orders": 3,
+      "units": 3,
+      "gross": 193000,
+      "net": 193000,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.1364,
+      "revenue_per_session": 8773,
+      "aov": 64333
+     }
     },
     "40": {
      "name": "[자연하] 스텔라진 3g x 30포",
@@ -1625,8 +1649,20 @@
       "quickback_sessions": 0,
       "truncated": false
      },
-     "sales": null,
-     "sample": "low"
+     "sales": {
+      "name": "[자연하] 커큐진 2g x 30포",
+      "orders": 1,
+      "units": 1,
+      "gross": 117000,
+      "net": 117000,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.1111,
+      "revenue_per_session": 13000,
+      "aov": 117000
+     }
     },
     "47": {
      "name": "기적의 항암 식단",
@@ -1725,8 +1761,20 @@
       "quickback_sessions": 0,
       "truncated": false
      },
-     "sales": null,
-     "sample": "low"
+     "sales": {
+      "name": "기적의 항암 식단",
+      "orders": 1,
+      "units": 1,
+      "gross": 15000,
+      "net": 15000,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.5,
+      "revenue_per_session": 7500,
+      "aov": 15000
+     }
     },
     "51": {
      "name": "김훈하 서적 전권(기적의항암식단+유방암상담소+말기암통합요법+캔서위너)",
@@ -1846,5 +1894,5 @@
    }
   }
  },
- "built_at": "2026-08-06 20:02:48 KST"
+ "built_at": "2026-08-06 20:16:27 KST"
 }
