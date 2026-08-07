@@ -156,6 +156,20 @@ def fetch_day(date, access=None, prop=None):
         for name, api in sums:
             b[name] = _n(r, api)
 
+    # ---- R5 유입 채널 ----
+    # sessionSource/Medium 은 이벤트 단위 맞춤측정기준과 엮으면 카디널리티 때문에
+    # 82%가 (not set)/(data not available) 로 뭉개진다. 채널그룹은 불명 0%다.
+    # 대신 분류 규칙이 없는 트래픽이 Unassigned 로 몰리는데, 그건 숨기지 않고 그대로 보여준다.
+    for r in _rows([D_PRODUCT, "sessionDefaultChannelGroup"], ["eventCount"],
+                   date, "pdp_exit", access, prop):
+        pid = r.get(D_PRODUCT) or ""
+        if not pid:
+            continue
+        p = day["products"].setdefault(pid, {"name": "", "devices": {}})
+        ch = p.setdefault("channels", {})
+        name = r.get("sessionDefaultChannelGroup") or "(미분류)"
+        ch[name] = ch.get(name, 0) + _n(r, "eventCount")
+
     # ---- R4 이벤트별 카운트 (퍼널 분모) ----
     for r in _rows(["eventName", D_PRODUCT, D_DEVICE], ["eventCount"],
                    date, None, access, prop):

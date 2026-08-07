@@ -156,6 +156,17 @@ def merge_clarity(snapshots, date):
         except (TypeError, ValueError):
             pass
 
+    # 총 체류 대비 실제 활동 시간. 체류가 길어도 활동비율이 낮으면 '켜두고 딴짓'이고,
+    # 높으면 '진짜 보는 중'이다. 같은 체류시간이라도 해석이 정반대가 된다.
+    for r in rows("EngagementTime"):
+        pid = C.parse_product_no(r.get("Url") or "")
+        if not pid or pid not in per:
+            continue
+        per[pid].setdefault("total_time", 0)
+        per[pid].setdefault("active_time", 0)
+        per[pid]["total_time"] += _int(r.get("totalTime"))
+        per[pid]["active_time"] += _int(r.get("activeTime"))
+
     # 행동지표는 '세션 수 x 발생 비율'로 환산해야 한다(위 docstring 참고).
     for name, key in (("DeadClickCount", "dead"), ("RageClickCount", "rage"),
                       ("QuickbackClick", "quickback")):
@@ -179,6 +190,8 @@ def merge_clarity(snapshots, date):
             "dead_click_sessions": v["dead"],
             "rage_click_sessions": v["rage"],
             "quickback_sessions": v["quickback"],
+            "active_ratio": (round(v["active_time"] / v["total_time"], 3)
+                             if v.get("total_time") else None),
             "truncated": bool(call.get("truncated")),
         }
     return out, un
@@ -239,6 +252,7 @@ def main():
                 # 번호가 아니라 그림으로 보인다.
                 "images": imgs,
                 "devices": devices,
+                "channels": p.get("channels") or {},
                 "clarity": clar.get(pid),
                 "sales": ((cafe24.get(date) or {}).get("products") or {}).get(pid),
                 "sample": "ok" if devices["_all"]["sessions"] >= MIN_SESSIONS else "low",

@@ -74,115 +74,117 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 44,
-        "2": 43,
-        "3": 35,
-        "4": 34,
-        "5": 27,
-        "8": 27,
-        "6": 25,
-        "7": 24,
-        "9": 21,
-        "10": 20,
-        "11": 20,
-        "12": 19,
-        "13": 19,
-        "14": 18,
-        "18": 18,
-        "16": 17,
-        "15": 16,
-        "19": 16,
-        "17": 15,
-        "20": 14
+        "1": 73,
+        "2": 68,
+        "3": 60,
+        "4": 58,
+        "5": 46,
+        "8": 44,
+        "6": 43,
+        "7": 41,
+        "9": 38,
+        "12": 38,
+        "11": 37,
+        "14": 37,
+        "10": 36,
+        "13": 36,
+        "15": 36,
+        "16": 35,
+        "17": 34,
+        "18": 32,
+        "19": 30,
+        "20": 27
        },
        "exit_hist": {
-        "0": 66,
-        "20": 12,
-        "1": 8,
-        "2": 5,
+        "0": 132,
+        "20": 25,
+        "1": 14,
+        "2": 7,
+        "4": 5,
+        "14": 5,
         "3": 4,
+        "19": 4,
+        "6": 3,
+        "8": 3,
         "9": 3,
-        "19": 3,
-        "4": 1,
-        "6": 1,
+        "18": 2,
         "7": 1,
-        "8": 1,
-        "14": 1
+        "17": 1
        },
        "events": {
-        "pdp_section": 472,
-        "pdp_scroll": 155,
-        "pdp_exit": 106,
-        "pdp_cta_view": 61,
-        "pdp_cta_click": 18,
-        "pdp_review": 17
+        "pdp_section": 849,
+        "pdp_scroll": 290,
+        "pdp_exit": 209,
+        "pdp_cta_view": 104,
+        "pdp_review": 35,
+        "pdp_cta_click": 27
        },
-       "exit_events": 106,
-       "sum_seconds": 11244,
+       "exit_events": 209,
+       "sum_seconds": 24209,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 40,
+       "sum_saw_cta": 87,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 106,
+       "sessions": 209,
        "section_reach_pct": {
-        "1": 0.4151,
-        "2": 0.4057,
-        "3": 0.3302,
-        "4": 0.3208,
-        "5": 0.2547,
-        "6": 0.2358,
-        "7": 0.2264,
-        "8": 0.2547,
-        "9": 0.1981,
-        "10": 0.1887,
-        "11": 0.1887,
-        "12": 0.1792,
-        "13": 0.1792,
-        "14": 0.1698,
-        "15": 0.1509,
-        "16": 0.1604,
-        "17": 0.1415,
-        "18": 0.1698,
-        "19": 0.1509,
-        "20": 0.1321
+        "1": 0.3493,
+        "2": 0.3254,
+        "3": 0.2871,
+        "4": 0.2775,
+        "5": 0.2201,
+        "6": 0.2057,
+        "7": 0.1962,
+        "8": 0.2105,
+        "9": 0.1818,
+        "10": 0.1722,
+        "11": 0.177,
+        "12": 0.1818,
+        "13": 0.1722,
+        "14": 0.177,
+        "15": 0.1722,
+        "16": 0.1675,
+        "17": 0.1627,
+        "18": 0.1531,
+        "19": 0.1435,
+        "20": 0.1292
        },
        "section_dropoff": {
-        "2": 0.0094,
-        "3": 0.0755,
-        "4": 0.0094,
-        "5": 0.066,
-        "6": 0.0189,
-        "7": 0.0094,
-        "8": -0.0283,
-        "9": 0.0566,
-        "10": 0.0094,
-        "11": 0.0,
-        "12": 0.0094,
-        "13": 0.0,
-        "14": 0.0094,
-        "15": 0.0189,
-        "16": -0.0094,
-        "17": 0.0189,
-        "18": -0.0283,
-        "19": 0.0189,
-        "20": 0.0189
+        "2": 0.0239,
+        "3": 0.0383,
+        "4": 0.0096,
+        "5": 0.0574,
+        "6": 0.0144,
+        "7": 0.0096,
+        "8": -0.0144,
+        "9": 0.0287,
+        "10": 0.0096,
+        "11": -0.0048,
+        "12": -0.0048,
+        "13": 0.0096,
+        "14": -0.0048,
+        "15": 0.0048,
+        "16": 0.0048,
+        "17": 0.0048,
+        "18": 0.0096,
+        "19": 0.0096,
+        "20": 0.0144
        },
-       "biggest_drop_section": 3,
-       "biggest_drop_rate": 0.0755,
-       "biggest_drop_people": 8,
-       "avg_seconds": 106.0755,
+       "biggest_drop_section": 5,
+       "biggest_drop_rate": 0.0574,
+       "biggest_drop_people": 12,
+       "avg_seconds": 115.8325,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.3774,
+       "avg_saw_cta": 0.4163,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 66,
-       "exit_s01": 8,
-       "completed": 12,
-       "s00_rate": 0.6226,
-       "s01_rate": 0.0755,
-       "done_rate": 0.1132
+       "exit_s00": 132,
+       "exit_s01": 14,
+       "completed": 25,
+       "s00_rate": 0.6316,
+       "s01_rate": 0.067,
+       "done_rate": 0.1196
       },
       "desktop": {
        "section_reach": {
@@ -191,10 +193,10 @@
         "3": 2,
         "4": 2,
         "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 2,
         "9": 2,
-        "6": 1,
-        "7": 1,
-        "8": 1,
         "10": 1,
         "11": 1,
         "12": 1,
@@ -213,7 +215,7 @@
         "20": 1
        },
        "events": {
-        "pdp_section": 27,
+        "pdp_section": 30,
         "pdp_scroll": 5,
         "pdp_cta_view": 3,
         "pdp_exit": 3
@@ -232,9 +234,9 @@
         "3": 0.6667,
         "4": 0.6667,
         "5": 0.6667,
-        "6": 0.3333,
-        "7": 0.3333,
-        "8": 0.3333,
+        "6": 0.6667,
+        "7": 0.6667,
+        "8": 0.6667,
         "9": 0.6667,
         "10": 0.3333,
         "11": 0.3333,
@@ -253,10 +255,10 @@
         "3": 0.0,
         "4": 0.0,
         "5": 0.0,
-        "6": 0.3333,
+        "6": 0.0,
         "7": 0.0,
         "8": 0.0,
-        "9": -0.3333,
+        "9": 0.0,
         "10": 0.3333,
         "11": 0.0,
         "12": 0.0,
@@ -287,116 +289,128 @@
       },
       "_all": {
        "section_reach": {
-        "1": 47,
-        "2": 45,
-        "3": 37,
-        "4": 36,
-        "5": 29,
-        "8": 28,
-        "6": 26,
-        "7": 25,
-        "9": 23,
-        "10": 21,
-        "11": 21,
-        "12": 20,
-        "13": 20,
-        "14": 19,
-        "18": 19,
-        "16": 18,
-        "15": 17,
-        "19": 17,
-        "17": 16,
-        "20": 15
+        "1": 76,
+        "2": 70,
+        "3": 62,
+        "4": 60,
+        "5": 48,
+        "8": 46,
+        "6": 45,
+        "7": 43,
+        "9": 40,
+        "12": 39,
+        "11": 38,
+        "14": 38,
+        "10": 37,
+        "13": 37,
+        "15": 37,
+        "16": 36,
+        "17": 35,
+        "18": 33,
+        "19": 31,
+        "20": 28
        },
        "exit_hist": {
-        "0": 66,
-        "20": 13,
-        "1": 9,
-        "2": 5,
+        "0": 132,
+        "20": 26,
+        "1": 15,
+        "2": 7,
+        "4": 5,
+        "14": 5,
         "3": 4,
+        "19": 4,
+        "6": 3,
+        "8": 3,
         "9": 4,
-        "19": 3,
-        "4": 1,
-        "6": 1,
+        "18": 2,
         "7": 1,
-        "8": 1,
-        "14": 1
+        "17": 1
        },
        "events": {
-        "pdp_section": 499,
-        "pdp_scroll": 160,
-        "pdp_exit": 109,
-        "pdp_cta_view": 64,
-        "pdp_cta_click": 18,
-        "pdp_review": 17
+        "pdp_section": 879,
+        "pdp_scroll": 295,
+        "pdp_exit": 212,
+        "pdp_cta_view": 107,
+        "pdp_review": 35,
+        "pdp_cta_click": 27
        },
-       "exit_events": 109,
-       "sum_seconds": 11343,
+       "exit_events": 212,
+       "sum_seconds": 24308,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 42,
+       "sum_saw_cta": 89,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 109,
+       "sessions": 212,
        "section_reach_pct": {
-        "1": 0.4312,
-        "2": 0.4128,
-        "3": 0.3394,
-        "4": 0.3303,
-        "5": 0.2661,
-        "6": 0.2385,
-        "7": 0.2294,
-        "8": 0.2569,
-        "9": 0.211,
-        "10": 0.1927,
-        "11": 0.1927,
-        "12": 0.1835,
-        "13": 0.1835,
-        "14": 0.1743,
-        "15": 0.156,
-        "16": 0.1651,
-        "17": 0.1468,
-        "18": 0.1743,
-        "19": 0.156,
-        "20": 0.1376
+        "1": 0.3585,
+        "2": 0.3302,
+        "3": 0.2925,
+        "4": 0.283,
+        "5": 0.2264,
+        "6": 0.2123,
+        "7": 0.2028,
+        "8": 0.217,
+        "9": 0.1887,
+        "10": 0.1745,
+        "11": 0.1792,
+        "12": 0.184,
+        "13": 0.1745,
+        "14": 0.1792,
+        "15": 0.1745,
+        "16": 0.1698,
+        "17": 0.1651,
+        "18": 0.1557,
+        "19": 0.1462,
+        "20": 0.1321
        },
        "section_dropoff": {
-        "2": 0.0183,
-        "3": 0.0734,
-        "4": 0.0092,
-        "5": 0.0642,
-        "6": 0.0275,
-        "7": 0.0092,
-        "8": -0.0275,
-        "9": 0.0459,
-        "10": 0.0183,
-        "11": 0.0,
-        "12": 0.0092,
-        "13": 0.0,
-        "14": 0.0092,
-        "15": 0.0183,
-        "16": -0.0092,
-        "17": 0.0183,
-        "18": -0.0275,
-        "19": 0.0183,
-        "20": 0.0183
+        "2": 0.0283,
+        "3": 0.0377,
+        "4": 0.0094,
+        "5": 0.0566,
+        "6": 0.0142,
+        "7": 0.0094,
+        "8": -0.0142,
+        "9": 0.0283,
+        "10": 0.0142,
+        "11": -0.0047,
+        "12": -0.0047,
+        "13": 0.0094,
+        "14": -0.0047,
+        "15": 0.0047,
+        "16": 0.0047,
+        "17": 0.0047,
+        "18": 0.0094,
+        "19": 0.0094,
+        "20": 0.0142
        },
-       "biggest_drop_section": 3,
-       "biggest_drop_rate": 0.0734,
-       "biggest_drop_people": 8,
-       "avg_seconds": 104.0642,
+       "biggest_drop_section": 5,
+       "biggest_drop_rate": 0.0566,
+       "biggest_drop_people": 12,
+       "avg_seconds": 114.6604,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.3853,
+       "avg_saw_cta": 0.4198,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 66,
-       "exit_s01": 9,
-       "completed": 13,
-       "s00_rate": 0.6055,
-       "s01_rate": 0.0826,
-       "done_rate": 0.1193
+       "exit_s00": 132,
+       "exit_s01": 15,
+       "completed": 26,
+       "s00_rate": 0.6226,
+       "s01_rate": 0.0708,
+       "done_rate": 0.1226
       }
+     },
+     "channels": {
+      "Unassigned": 141,
+      "Cross-network": 48,
+      "Direct": 9,
+      "Paid Social": 7,
+      "Organic Video": 3,
+      "Organic Search": 2,
+      "Organic Social": 1,
+      "Paid Other": 1
      },
      "clarity": {
       "sessions": 318,
@@ -404,6 +418,7 @@
       "dead_click_sessions": 14,
       "rage_click_sessions": 0,
       "quickback_sessions": 11,
+      "active_ratio": 0.91,
       "truncated": false
      },
      "sales": {
@@ -416,8 +431,8 @@
      },
      "sample": "ok",
      "derived": {
-      "cvr": 0.1009,
-      "revenue_per_session": 8480,
+      "cvr": 0.0519,
+      "revenue_per_session": 4360,
       "aov": 84032
      }
     },
@@ -441,77 +456,79 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 13,
-        "2": 11,
-        "4": 11,
-        "5": 11,
-        "3": 10,
-        "7": 10,
-        "6": 9,
-        "8": 7,
-        "9": 6
+        "1": 20,
+        "2": 18,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 14,
+        "7": 13,
+        "8": 10,
+        "9": 10
        },
        "exit_hist": {
-        "0": 20,
+        "0": 34,
+        "9": 15,
         "1": 9,
-        "9": 8,
-        "5": 4,
+        "5": 5,
+        "6": 2,
         "2": 1,
         "3": 1,
+        "4": 1,
         "7": 1
        },
        "events": {
-        "pdp_section": 88,
-        "pdp_scroll": 51,
-        "pdp_exit": 44,
-        "pdp_cta_view": 17,
-        "pdp_cta_click": 14,
-        "pdp_review": 7
+        "pdp_section": 136,
+        "pdp_scroll": 77,
+        "pdp_exit": 69,
+        "pdp_cta_view": 27,
+        "pdp_cta_click": 21,
+        "pdp_review": 9
        },
-       "exit_events": 44,
-       "sum_seconds": 3204,
+       "exit_events": 69,
+       "sum_seconds": 4272,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 15,
+       "sum_saw_cta": 30,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 44,
+       "sessions": 69,
        "section_reach_pct": {
-        "1": 0.2955,
-        "2": 0.25,
-        "3": 0.2273,
-        "4": 0.25,
-        "5": 0.25,
-        "6": 0.2045,
-        "7": 0.2273,
-        "8": 0.1591,
-        "9": 0.1364
+        "1": 0.2899,
+        "2": 0.2609,
+        "3": 0.2464,
+        "4": 0.2464,
+        "5": 0.2464,
+        "6": 0.2029,
+        "7": 0.1884,
+        "8": 0.1449,
+        "9": 0.1449
        },
        "section_dropoff": {
-        "2": 0.0455,
-        "3": 0.0227,
-        "4": -0.0227,
+        "2": 0.029,
+        "3": 0.0145,
+        "4": 0.0,
         "5": 0.0,
-        "6": 0.0455,
-        "7": -0.0227,
-        "8": 0.0682,
-        "9": 0.0227
+        "6": 0.0435,
+        "7": 0.0145,
+        "8": 0.0435,
+        "9": 0.0
        },
-       "biggest_drop_section": 8,
-       "biggest_drop_rate": 0.0682,
+       "biggest_drop_section": 6,
+       "biggest_drop_rate": 0.0435,
        "biggest_drop_people": 3,
-       "avg_seconds": 72.8182,
+       "avg_seconds": 61.913,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.3409,
+       "avg_saw_cta": 0.4348,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 20,
+       "exit_s00": 34,
        "exit_s01": 9,
-       "completed": 8,
-       "s00_rate": 0.4545,
-       "s01_rate": 0.2045,
-       "done_rate": 0.1818
+       "completed": 15,
+       "s00_rate": 0.4928,
+       "s01_rate": 0.1304,
+       "done_rate": 0.2174
       },
       "desktop": {
        "section_reach": {},
@@ -568,78 +585,87 @@
       },
       "_all": {
        "section_reach": {
-        "1": 13,
-        "2": 11,
-        "4": 11,
-        "5": 11,
-        "3": 10,
-        "7": 10,
-        "6": 9,
-        "8": 7,
-        "9": 6
+        "1": 20,
+        "2": 18,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 14,
+        "7": 13,
+        "8": 10,
+        "9": 10
        },
        "exit_hist": {
-        "0": 21,
+        "0": 35,
+        "9": 15,
         "1": 9,
-        "9": 8,
-        "5": 4,
+        "5": 5,
+        "6": 2,
         "2": 1,
         "3": 1,
+        "4": 1,
         "7": 1
        },
        "events": {
-        "pdp_section": 88,
-        "pdp_scroll": 51,
-        "pdp_exit": 45,
-        "pdp_cta_view": 17,
-        "pdp_cta_click": 14,
-        "pdp_review": 7
+        "pdp_section": 136,
+        "pdp_scroll": 77,
+        "pdp_exit": 70,
+        "pdp_cta_view": 27,
+        "pdp_cta_click": 21,
+        "pdp_review": 9
        },
-       "exit_events": 45,
-       "sum_seconds": 3209,
+       "exit_events": 70,
+       "sum_seconds": 4277,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 15,
+       "sum_saw_cta": 30,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 45,
+       "sessions": 70,
        "section_reach_pct": {
-        "1": 0.2889,
-        "2": 0.2444,
-        "3": 0.2222,
-        "4": 0.2444,
-        "5": 0.2444,
+        "1": 0.2857,
+        "2": 0.2571,
+        "3": 0.2429,
+        "4": 0.2429,
+        "5": 0.2429,
         "6": 0.2,
-        "7": 0.2222,
-        "8": 0.1556,
-        "9": 0.1333
+        "7": 0.1857,
+        "8": 0.1429,
+        "9": 0.1429
        },
        "section_dropoff": {
-        "2": 0.0444,
-        "3": 0.0222,
-        "4": -0.0222,
+        "2": 0.0286,
+        "3": 0.0143,
+        "4": 0.0,
         "5": 0.0,
-        "6": 0.0444,
-        "7": -0.0222,
-        "8": 0.0667,
-        "9": 0.0222
+        "6": 0.0429,
+        "7": 0.0143,
+        "8": 0.0429,
+        "9": 0.0
        },
-       "biggest_drop_section": 8,
-       "biggest_drop_rate": 0.0667,
+       "biggest_drop_section": 6,
+       "biggest_drop_rate": 0.0429,
        "biggest_drop_people": 3,
-       "avg_seconds": 71.3111,
+       "avg_seconds": 61.1,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.3333,
+       "avg_saw_cta": 0.4286,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 21,
+       "exit_s00": 35,
        "exit_s01": 9,
-       "completed": 8,
-       "s00_rate": 0.4667,
-       "s01_rate": 0.2,
-       "done_rate": 0.1778
+       "completed": 15,
+       "s00_rate": 0.5,
+       "s01_rate": 0.1286,
+       "done_rate": 0.2143
       }
+     },
+     "channels": {
+      "Unassigned": 44,
+      "Direct": 12,
+      "Cross-network": 8,
+      "Organic Video": 3,
+      "Paid Social": 3
      },
      "clarity": {
       "sessions": 90,
@@ -647,6 +673,7 @@
       "dead_click_sessions": 4,
       "rage_click_sessions": 0,
       "quickback_sessions": 5,
+      "active_ratio": 0.956,
       "truncated": false
      },
      "sales": {
@@ -659,8 +686,8 @@
      },
      "sample": "ok",
      "derived": {
-      "cvr": 0.1111,
-      "revenue_per_session": 5914,
+      "cvr": 0.0714,
+      "revenue_per_session": 3802,
       "aov": 53224
      }
     },
@@ -681,66 +708,66 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "3": 10,
-        "1": 9,
-        "2": 8,
-        "6": 5,
-        "4": 4,
-        "5": 3
+        "3": 13,
+        "1": 11,
+        "2": 11,
+        "6": 6,
+        "4": 5,
+        "5": 4
        },
        "exit_hist": {
-        "0": 16,
-        "6": 5,
+        "0": 31,
+        "6": 8,
+        "3": 4,
         "1": 2,
-        "3": 2,
         "4": 1
        },
        "events": {
-        "pdp_section": 39,
-        "pdp_scroll": 35,
-        "pdp_exit": 26,
-        "pdp_cta_view": 10,
-        "pdp_cta_click": 4,
-        "pdp_review": 4
+        "pdp_section": 50,
+        "pdp_scroll": 47,
+        "pdp_exit": 46,
+        "pdp_cta_view": 12,
+        "pdp_review": 7,
+        "pdp_cta_click": 4
        },
-       "exit_events": 26,
-       "sum_seconds": 3837,
+       "exit_events": 46,
+       "sum_seconds": 6475,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 7,
+       "sum_saw_cta": 13,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 26,
+       "sessions": 46,
        "section_reach_pct": {
-        "1": 0.3462,
-        "2": 0.3077,
-        "3": 0.3846,
-        "4": 0.1538,
-        "5": 0.1154,
-        "6": 0.1923
+        "1": 0.2391,
+        "2": 0.2391,
+        "3": 0.2826,
+        "4": 0.1087,
+        "5": 0.087,
+        "6": 0.1304
        },
        "section_dropoff": {
-        "2": 0.0385,
-        "3": -0.0769,
-        "4": 0.2308,
-        "5": 0.0385,
-        "6": -0.0769
+        "2": 0.0,
+        "3": -0.0435,
+        "4": 0.1739,
+        "5": 0.0217,
+        "6": -0.0435
        },
        "biggest_drop_section": 4,
-       "biggest_drop_rate": 0.2308,
-       "biggest_drop_people": 6,
-       "avg_seconds": 147.5769,
+       "biggest_drop_rate": 0.1739,
+       "biggest_drop_people": 8,
+       "avg_seconds": 140.7609,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.2692,
+       "avg_saw_cta": 0.2826,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 16,
+       "exit_s00": 31,
        "exit_s01": 2,
-       "completed": 5,
-       "s00_rate": 0.6154,
-       "s01_rate": 0.0769,
-       "done_rate": 0.1923
+       "completed": 8,
+       "s00_rate": 0.6739,
+       "s01_rate": 0.0435,
+       "done_rate": 0.1739
       },
       "desktop": {
        "section_reach": {
@@ -803,68 +830,76 @@
       },
       "_all": {
        "section_reach": {
-        "3": 12,
-        "1": 11,
-        "2": 10,
-        "6": 6,
-        "4": 6,
-        "5": 5
+        "3": 15,
+        "1": 13,
+        "2": 13,
+        "6": 7,
+        "4": 7,
+        "5": 6
        },
        "exit_hist": {
-        "0": 16,
-        "6": 6,
+        "0": 31,
+        "6": 9,
+        "3": 4,
         "1": 2,
-        "3": 2,
         "4": 1,
         "5": 1
        },
        "events": {
-        "pdp_section": 50,
-        "pdp_scroll": 45,
-        "pdp_exit": 28,
-        "pdp_cta_view": 12,
-        "pdp_cta_click": 4,
-        "pdp_review": 5
+        "pdp_section": 61,
+        "pdp_scroll": 57,
+        "pdp_exit": 48,
+        "pdp_cta_view": 14,
+        "pdp_review": 8,
+        "pdp_cta_click": 4
        },
-       "exit_events": 28,
-       "sum_seconds": 3985,
+       "exit_events": 48,
+       "sum_seconds": 6623,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 8,
+       "sum_saw_cta": 14,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 28,
+       "sessions": 48,
        "section_reach_pct": {
-        "1": 0.3929,
-        "2": 0.3571,
-        "3": 0.4286,
-        "4": 0.2143,
-        "5": 0.1786,
-        "6": 0.2143
+        "1": 0.2708,
+        "2": 0.2708,
+        "3": 0.3125,
+        "4": 0.1458,
+        "5": 0.125,
+        "6": 0.1458
        },
        "section_dropoff": {
-        "2": 0.0357,
-        "3": -0.0714,
-        "4": 0.2143,
-        "5": 0.0357,
-        "6": -0.0357
+        "2": 0.0,
+        "3": -0.0417,
+        "4": 0.1667,
+        "5": 0.0208,
+        "6": -0.0208
        },
        "biggest_drop_section": 4,
-       "biggest_drop_rate": 0.2143,
-       "biggest_drop_people": 6,
-       "avg_seconds": 142.3214,
+       "biggest_drop_rate": 0.1667,
+       "biggest_drop_people": 8,
+       "avg_seconds": 137.9792,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.2857,
+       "avg_saw_cta": 0.2917,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 16,
+       "exit_s00": 31,
        "exit_s01": 2,
-       "completed": 6,
-       "s00_rate": 0.5714,
-       "s01_rate": 0.0714,
-       "done_rate": 0.2143
+       "completed": 9,
+       "s00_rate": 0.6458,
+       "s01_rate": 0.0417,
+       "done_rate": 0.1875
       }
+     },
+     "channels": {
+      "Unassigned": 26,
+      "Cross-network": 8,
+      "Direct": 6,
+      "Paid Social": 4,
+      "Organic Video": 3,
+      "Organic Search": 1
      },
      "clarity": {
       "sessions": 58,
@@ -872,6 +907,7 @@
       "dead_click_sessions": 1,
       "rage_click_sessions": 0,
       "quickback_sessions": 1,
+      "active_ratio": 0.963,
       "truncated": false
      },
      "sales": {
@@ -882,10 +918,10 @@
       "net": 98404,
       "canceled_units": 0
      },
-     "sample": "low",
+     "sample": "ok",
      "derived": {
-      "cvr": 0.0357,
-      "revenue_per_session": 3514,
+      "cvr": 0.0208,
+      "revenue_per_session": 2050,
       "aov": 98404
      }
     },
@@ -919,206 +955,216 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "11": 8,
-        "6": 7,
-        "10": 7,
-        "1": 6,
-        "2": 6,
-        "3": 6,
-        "4": 6,
-        "5": 6,
-        "9": 6,
-        "12": 5,
-        "7": 4,
-        "8": 4,
-        "13": 4,
+        "4": 12,
+        "5": 12,
+        "9": 12,
+        "10": 12,
+        "3": 11,
+        "6": 11,
+        "1": 10,
+        "2": 10,
+        "7": 10,
+        "8": 10,
+        "11": 10,
+        "12": 7,
+        "13": 6,
         "14": 4,
         "15": 4,
         "16": 4,
+        "19": 4,
         "17": 3,
-        "19": 3,
-        "18": 2
+        "18": 3
        },
        "exit_hist": {
-        "0": 9,
-        "19": 5,
+        "0": 11,
+        "19": 7,
         "11": 4,
+        "10": 2,
         "12": 2,
+        "9": 1,
         "13": 1
        },
        "events": {
-        "pdp_section": 95,
-        "pdp_scroll": 27,
-        "pdp_exit": 21,
-        "pdp_cta_view": 6,
-        "pdp_review": 4
+        "pdp_section": 155,
+        "pdp_scroll": 48,
+        "pdp_exit": 28,
+        "pdp_cta_view": 14,
+        "pdp_review": 5
        },
-       "exit_events": 21,
-       "sum_seconds": 837,
+       "exit_events": 28,
+       "sum_seconds": 1537,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 12,
+       "sum_saw_cta": 19,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 21,
+       "sessions": 28,
        "section_reach_pct": {
-        "1": 0.2857,
-        "2": 0.2857,
-        "3": 0.2857,
-        "4": 0.2857,
-        "5": 0.2857,
-        "6": 0.3333,
-        "7": 0.1905,
-        "8": 0.1905,
-        "9": 0.2857,
-        "10": 0.3333,
-        "11": 0.381,
-        "12": 0.2381,
-        "13": 0.1905,
-        "14": 0.1905,
-        "15": 0.1905,
-        "16": 0.1905,
-        "17": 0.1429,
-        "18": 0.0952,
+        "1": 0.3571,
+        "2": 0.3571,
+        "3": 0.3929,
+        "4": 0.4286,
+        "5": 0.4286,
+        "6": 0.3929,
+        "7": 0.3571,
+        "8": 0.3571,
+        "9": 0.4286,
+        "10": 0.4286,
+        "11": 0.3571,
+        "12": 0.25,
+        "13": 0.2143,
+        "14": 0.1429,
+        "15": 0.1429,
+        "16": 0.1429,
+        "17": 0.1071,
+        "18": 0.1071,
         "19": 0.1429
        },
        "section_dropoff": {
         "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
+        "3": -0.0357,
+        "4": -0.0357,
         "5": 0.0,
-        "6": -0.0476,
-        "7": 0.1429,
+        "6": 0.0357,
+        "7": 0.0357,
         "8": 0.0,
-        "9": -0.0952,
-        "10": -0.0476,
-        "11": -0.0476,
-        "12": 0.1429,
-        "13": 0.0476,
-        "14": 0.0,
+        "9": -0.0714,
+        "10": 0.0,
+        "11": 0.0714,
+        "12": 0.1071,
+        "13": 0.0357,
+        "14": 0.0714,
         "15": 0.0,
         "16": 0.0,
-        "17": 0.0476,
-        "18": 0.0476,
-        "19": -0.0476
+        "17": 0.0357,
+        "18": 0.0,
+        "19": -0.0357
        },
-       "biggest_drop_section": 7,
-       "biggest_drop_rate": 0.1429,
+       "biggest_drop_section": 12,
+       "biggest_drop_rate": 0.1071,
        "biggest_drop_people": 3,
-       "avg_seconds": 39.8571,
+       "avg_seconds": 54.8929,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.5714,
+       "avg_saw_cta": 0.6786,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 9,
+       "exit_s00": 11,
        "exit_s01": 0,
-       "completed": 5,
-       "s00_rate": 0.4286,
+       "completed": 7,
+       "s00_rate": 0.3929,
        "s01_rate": 0.0,
-       "done_rate": 0.2381
+       "done_rate": 0.25
       },
       "_all": {
        "section_reach": {
-        "11": 8,
-        "6": 7,
-        "10": 7,
-        "1": 6,
-        "2": 6,
-        "3": 6,
-        "4": 6,
-        "5": 6,
-        "9": 6,
-        "12": 5,
-        "7": 4,
-        "8": 4,
-        "13": 4,
+        "4": 12,
+        "5": 12,
+        "9": 12,
+        "10": 12,
+        "3": 11,
+        "6": 11,
+        "1": 10,
+        "2": 10,
+        "7": 10,
+        "8": 10,
+        "11": 10,
+        "12": 7,
+        "13": 6,
         "14": 4,
         "15": 4,
         "16": 4,
+        "19": 4,
         "17": 3,
-        "19": 3,
-        "18": 2
+        "18": 3
        },
        "exit_hist": {
-        "0": 9,
-        "19": 5,
+        "0": 11,
+        "19": 7,
         "11": 4,
+        "10": 2,
         "12": 2,
+        "9": 1,
         "13": 1
        },
        "events": {
-        "pdp_section": 95,
-        "pdp_scroll": 27,
-        "pdp_exit": 21,
-        "pdp_cta_view": 6,
-        "pdp_review": 4
+        "pdp_section": 155,
+        "pdp_scroll": 48,
+        "pdp_exit": 28,
+        "pdp_cta_view": 14,
+        "pdp_review": 5
        },
-       "exit_events": 21,
-       "sum_seconds": 837,
+       "exit_events": 28,
+       "sum_seconds": 1537,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 12,
+       "sum_saw_cta": 19,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 21,
+       "sessions": 28,
        "section_reach_pct": {
-        "1": 0.2857,
-        "2": 0.2857,
-        "3": 0.2857,
-        "4": 0.2857,
-        "5": 0.2857,
-        "6": 0.3333,
-        "7": 0.1905,
-        "8": 0.1905,
-        "9": 0.2857,
-        "10": 0.3333,
-        "11": 0.381,
-        "12": 0.2381,
-        "13": 0.1905,
-        "14": 0.1905,
-        "15": 0.1905,
-        "16": 0.1905,
-        "17": 0.1429,
-        "18": 0.0952,
+        "1": 0.3571,
+        "2": 0.3571,
+        "3": 0.3929,
+        "4": 0.4286,
+        "5": 0.4286,
+        "6": 0.3929,
+        "7": 0.3571,
+        "8": 0.3571,
+        "9": 0.4286,
+        "10": 0.4286,
+        "11": 0.3571,
+        "12": 0.25,
+        "13": 0.2143,
+        "14": 0.1429,
+        "15": 0.1429,
+        "16": 0.1429,
+        "17": 0.1071,
+        "18": 0.1071,
         "19": 0.1429
        },
        "section_dropoff": {
         "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
+        "3": -0.0357,
+        "4": -0.0357,
         "5": 0.0,
-        "6": -0.0476,
-        "7": 0.1429,
+        "6": 0.0357,
+        "7": 0.0357,
         "8": 0.0,
-        "9": -0.0952,
-        "10": -0.0476,
-        "11": -0.0476,
-        "12": 0.1429,
-        "13": 0.0476,
-        "14": 0.0,
+        "9": -0.0714,
+        "10": 0.0,
+        "11": 0.0714,
+        "12": 0.1071,
+        "13": 0.0357,
+        "14": 0.0714,
         "15": 0.0,
         "16": 0.0,
-        "17": 0.0476,
-        "18": 0.0476,
-        "19": -0.0476
+        "17": 0.0357,
+        "18": 0.0,
+        "19": -0.0357
        },
-       "biggest_drop_section": 7,
-       "biggest_drop_rate": 0.1429,
+       "biggest_drop_section": 12,
+       "biggest_drop_rate": 0.1071,
        "biggest_drop_people": 3,
-       "avg_seconds": 39.8571,
+       "avg_seconds": 54.8929,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.5714,
+       "avg_saw_cta": 0.6786,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 9,
+       "exit_s00": 11,
        "exit_s01": 0,
-       "completed": 5,
-       "s00_rate": 0.4286,
+       "completed": 7,
+       "s00_rate": 0.3929,
        "s01_rate": 0.0,
-       "done_rate": 0.2381
+       "done_rate": 0.25
       }
+     },
+     "channels": {
+      "Unassigned": 22,
+      "Direct": 4,
+      "Cross-network": 1,
+      "Paid Social": 1
      },
      "clarity": {
       "sessions": 25,
@@ -1126,6 +1172,7 @@
       "dead_click_sessions": 1,
       "rage_click_sessions": 0,
       "quickback_sessions": 1,
+      "active_ratio": 0.472,
       "truncated": false
      },
      "sales": null,
@@ -1147,122 +1194,130 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "2": 4,
-        "1": 3,
-        "3": 3,
-        "4": 1,
-        "5": 1
+        "2": 9,
+        "3": 9,
+        "1": 7,
+        "4": 6,
+        "5": 5
        },
        "exit_hist": {
-        "0": 11,
+        "0": 25,
+        "5": 8,
         "1": 2,
-        "5": 2,
-        "2": 1,
-        "3": 1
+        "3": 2,
+        "4": 2,
+        "2": 1
        },
        "events": {
-        "pdp_exit": 17,
-        "pdp_scroll": 12,
-        "pdp_section": 12,
-        "pdp_cta_view": 6,
-        "pdp_review": 1
+        "pdp_scroll": 48,
+        "pdp_exit": 40,
+        "pdp_section": 36,
+        "pdp_cta_view": 11,
+        "pdp_review": 6
        },
-       "exit_events": 17,
-       "sum_seconds": 1848,
+       "exit_events": 40,
+       "sum_seconds": 2724,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
+       "sum_saw_cta": 15,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 17,
+       "sessions": 40,
        "section_reach_pct": {
-        "1": 0.1765,
-        "2": 0.2353,
-        "3": 0.1765,
-        "4": 0.0588,
-        "5": 0.0588
+        "1": 0.175,
+        "2": 0.225,
+        "3": 0.225,
+        "4": 0.15,
+        "5": 0.125
        },
        "section_dropoff": {
-        "2": -0.0588,
-        "3": 0.0588,
-        "4": 0.1176,
-        "5": 0.0
+        "2": -0.05,
+        "3": 0.0,
+        "4": 0.075,
+        "5": 0.025
        },
        "biggest_drop_section": 4,
-       "biggest_drop_rate": 0.1176,
-       "biggest_drop_people": 2,
-       "avg_seconds": 108.7059,
+       "biggest_drop_rate": 0.075,
+       "biggest_drop_people": 3,
+       "avg_seconds": 68.1,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.2353,
+       "avg_saw_cta": 0.375,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 11,
+       "exit_s00": 25,
        "exit_s01": 2,
-       "completed": 2,
-       "s00_rate": 0.6471,
-       "s01_rate": 0.1176,
-       "done_rate": 0.1176
+       "completed": 8,
+       "s00_rate": 0.625,
+       "s01_rate": 0.05,
+       "done_rate": 0.2
       },
       "_all": {
        "section_reach": {
-        "2": 4,
-        "1": 3,
-        "3": 3,
-        "4": 1,
-        "5": 1
+        "2": 9,
+        "3": 9,
+        "1": 7,
+        "4": 6,
+        "5": 5
        },
        "exit_hist": {
-        "0": 11,
+        "0": 25,
+        "5": 8,
         "1": 2,
-        "5": 2,
-        "2": 1,
-        "3": 1
+        "3": 2,
+        "4": 2,
+        "2": 1
        },
        "events": {
-        "pdp_exit": 17,
-        "pdp_scroll": 12,
-        "pdp_section": 12,
-        "pdp_cta_view": 6,
-        "pdp_review": 1
+        "pdp_scroll": 48,
+        "pdp_exit": 40,
+        "pdp_section": 36,
+        "pdp_cta_view": 11,
+        "pdp_review": 6
        },
-       "exit_events": 17,
-       "sum_seconds": 1848,
+       "exit_events": 40,
+       "sum_seconds": 2724,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
+       "sum_saw_cta": 15,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 17,
+       "sessions": 40,
        "section_reach_pct": {
-        "1": 0.1765,
-        "2": 0.2353,
-        "3": 0.1765,
-        "4": 0.0588,
-        "5": 0.0588
+        "1": 0.175,
+        "2": 0.225,
+        "3": 0.225,
+        "4": 0.15,
+        "5": 0.125
        },
        "section_dropoff": {
-        "2": -0.0588,
-        "3": 0.0588,
-        "4": 0.1176,
-        "5": 0.0
+        "2": -0.05,
+        "3": 0.0,
+        "4": 0.075,
+        "5": 0.025
        },
        "biggest_drop_section": 4,
-       "biggest_drop_rate": 0.1176,
-       "biggest_drop_people": 2,
-       "avg_seconds": 108.7059,
+       "biggest_drop_rate": 0.075,
+       "biggest_drop_people": 3,
+       "avg_seconds": 68.1,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.2353,
+       "avg_saw_cta": 0.375,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 11,
+       "exit_s00": 25,
        "exit_s01": 2,
-       "completed": 2,
-       "s00_rate": 0.6471,
-       "s01_rate": 0.1176,
-       "done_rate": 0.1176
+       "completed": 8,
+       "s00_rate": 0.625,
+       "s01_rate": 0.05,
+       "done_rate": 0.2
       }
+     },
+     "channels": {
+      "Unassigned": 22,
+      "Direct": 14,
+      "Cross-network": 2,
+      "Paid Social": 2
      },
      "clarity": {
       "sessions": 50,
@@ -1270,6 +1325,7 @@
       "dead_click_sessions": 0,
       "rage_click_sessions": 0,
       "quickback_sessions": 1,
+      "active_ratio": 0.794,
       "truncated": false
      },
      "sales": {
@@ -1280,12 +1336,278 @@
       "net": 117000,
       "canceled_units": 0
      },
-     "sample": "low",
+     "sample": "ok",
      "derived": {
-      "cvr": 0.0588,
-      "revenue_per_session": 6882,
+      "cvr": 0.025,
+      "revenue_per_session": 2925,
       "aov": 117000
      }
+    },
+    "40": {
+     "name": "[자연하] 스텔라진 3g x 30포",
+     "slug": "자연하-스텔라진-3g-x-30포",
+     "url": "https://curaelmall.com/product/detail.html?product_no=40",
+     "section_total": 5,
+     "version": "v1.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260709/copy-1783557296-notice_banner_1080.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7841.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7842_ECA080EC9AA9EB9F89.gif",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7843.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7844.jpg"
+     ],
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 8,
+        "2": 7,
+        "3": 7,
+        "4": 6,
+        "5": 6
+       },
+       "exit_hist": {
+        "5": 10,
+        "1": 5,
+        "0": 4,
+        "2": 1
+       },
+       "events": {
+        "pdp_scroll": 37,
+        "pdp_section": 34,
+        "pdp_exit": 20,
+        "pdp_cta_view": 12,
+        "pdp_review": 4,
+        "pdp_cta_click": 1
+       },
+       "exit_events": 20,
+       "sum_seconds": 2699,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 12,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 20,
+       "section_reach_pct": {
+        "1": 0.4,
+        "2": 0.35,
+        "3": 0.35,
+        "4": 0.3,
+        "5": 0.3
+       },
+       "section_dropoff": {
+        "2": 0.05,
+        "3": 0.0,
+        "4": 0.05,
+        "5": 0.0
+       },
+       "biggest_drop_section": 2,
+       "biggest_drop_rate": 0.05,
+       "biggest_drop_people": 1,
+       "avg_seconds": 134.95,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.6,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 4,
+       "exit_s01": 5,
+       "completed": 10,
+       "s00_rate": 0.2,
+       "s01_rate": 0.25,
+       "done_rate": 0.5
+      },
+      "_all": {
+       "section_reach": {
+        "1": 8,
+        "2": 7,
+        "3": 7,
+        "4": 6,
+        "5": 6
+       },
+       "exit_hist": {
+        "5": 10,
+        "1": 5,
+        "0": 4,
+        "2": 1
+       },
+       "events": {
+        "pdp_scroll": 37,
+        "pdp_section": 34,
+        "pdp_exit": 20,
+        "pdp_cta_view": 12,
+        "pdp_review": 4,
+        "pdp_cta_click": 1
+       },
+       "exit_events": 20,
+       "sum_seconds": 2699,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 12,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 20,
+       "section_reach_pct": {
+        "1": 0.4,
+        "2": 0.35,
+        "3": 0.35,
+        "4": 0.3,
+        "5": 0.3
+       },
+       "section_dropoff": {
+        "2": 0.05,
+        "3": 0.0,
+        "4": 0.05,
+        "5": 0.0
+       },
+       "biggest_drop_section": 2,
+       "biggest_drop_rate": 0.05,
+       "biggest_drop_people": 1,
+       "avg_seconds": 134.95,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.6,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 4,
+       "exit_s01": 5,
+       "completed": 10,
+       "s00_rate": 0.2,
+       "s01_rate": 0.25,
+       "done_rate": 0.5
+      }
+     },
+     "channels": {
+      "Unassigned": 10,
+      "Direct": 8,
+      "Cross-network": 2
+     },
+     "clarity": {
+      "sessions": 21,
+      "avg_scroll_depth": 23.9,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.915,
+      "truncated": false
+     },
+     "sales": null,
+     "sample": "low"
+    },
+    "73": {
+     "name": "김훈하 약사의 하루 한 장 항암 다이어리",
+     "slug": "김훈하-약사의-하루-한-장-항암-다이어리",
+     "url": "https://curaelmall.com/product/detail.html?product_no=73",
+     "section_total": 1,
+     "version": "v1.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260226/EB8BA4EC9DB4EC96B4EBA6AC20EC8381EC84B8.jpg"
+     ],
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 5
+       },
+       "exit_hist": {
+        "0": 10,
+        "1": 5
+       },
+       "events": {
+        "pdp_scroll": 30,
+        "pdp_exit": 15,
+        "pdp_cta_view": 9,
+        "pdp_review": 7,
+        "pdp_section": 5,
+        "pdp_cta_click": 2
+       },
+       "exit_events": 15,
+       "sum_seconds": 442,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 5,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 15,
+       "section_reach_pct": {
+        "1": 0.3333
+       },
+       "section_dropoff": {},
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 29.4667,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.3333,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 10,
+       "exit_s01": 5,
+       "completed": 5,
+       "s00_rate": 0.6667,
+       "s01_rate": 0.3333,
+       "done_rate": 0.3333
+      },
+      "_all": {
+       "section_reach": {
+        "1": 5
+       },
+       "exit_hist": {
+        "0": 10,
+        "1": 5
+       },
+       "events": {
+        "pdp_scroll": 30,
+        "pdp_exit": 15,
+        "pdp_cta_view": 9,
+        "pdp_review": 7,
+        "pdp_section": 5,
+        "pdp_cta_click": 2
+       },
+       "exit_events": 15,
+       "sum_seconds": 442,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 5,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 15,
+       "section_reach_pct": {
+        "1": 0.3333
+       },
+       "section_dropoff": {},
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 29.4667,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.3333,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 10,
+       "exit_s01": 5,
+       "completed": 5,
+       "s00_rate": 0.6667,
+       "s01_rate": 0.3333,
+       "done_rate": 0.3333
+      }
+     },
+     "channels": {
+      "Unassigned": 9,
+      "Cross-network": 4,
+      "Paid Social": 2
+     },
+     "clarity": {
+      "sessions": 20,
+      "avg_scroll_depth": 45.9,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 0.576,
+      "truncated": false
+     },
+     "sales": null,
+     "sample": "low"
     },
     "32": {
      "name": "[자연하] 베리베라진 20ml x 30포",
@@ -1308,30 +1630,30 @@
         "4": 3
        },
        "exit_hist": {
+        "0": 5,
         "4": 4,
-        "0": 2,
         "1": 1
        },
        "events": {
-        "pdp_scroll": 17,
+        "pdp_scroll": 18,
         "pdp_section": 12,
-        "pdp_exit": 7,
+        "pdp_exit": 10,
         "pdp_cta_view": 4,
         "pdp_review": 2
        },
-       "exit_events": 7,
-       "sum_seconds": 2258,
+       "exit_events": 10,
+       "sum_seconds": 2270,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 4,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 7,
+       "sessions": 10,
        "section_reach_pct": {
-        "1": 0.4286,
-        "2": 0.4286,
-        "3": 0.4286,
-        "4": 0.4286
+        "1": 0.3,
+        "2": 0.3,
+        "3": 0.3,
+        "4": 0.3
        },
        "section_dropoff": {
         "2": 0.0,
@@ -1341,18 +1663,18 @@
        "biggest_drop_section": 2,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 322.5714,
+       "avg_seconds": 227.0,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.5714,
+       "avg_saw_cta": 0.4,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 2,
+       "exit_s00": 5,
        "exit_s01": 1,
        "completed": 4,
-       "s00_rate": 0.2857,
-       "s01_rate": 0.1429,
-       "done_rate": 0.5714
+       "s00_rate": 0.5,
+       "s01_rate": 0.1,
+       "done_rate": 0.4
       },
       "desktop": {
        "section_reach": {},
@@ -1405,30 +1727,30 @@
         "4": 3
        },
        "exit_hist": {
+        "0": 6,
         "4": 4,
-        "0": 3,
         "1": 1
        },
        "events": {
-        "pdp_scroll": 17,
+        "pdp_scroll": 18,
         "pdp_section": 12,
-        "pdp_exit": 8,
+        "pdp_exit": 11,
         "pdp_cta_view": 4,
         "pdp_review": 2
        },
-       "exit_events": 8,
-       "sum_seconds": 2260,
+       "exit_events": 11,
+       "sum_seconds": 2272,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 4,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 8,
+       "sessions": 11,
        "section_reach_pct": {
-        "1": 0.375,
-        "2": 0.375,
-        "3": 0.375,
-        "4": 0.375
+        "1": 0.2727,
+        "2": 0.2727,
+        "3": 0.2727,
+        "4": 0.2727
        },
        "section_dropoff": {
         "2": 0.0,
@@ -1438,19 +1760,24 @@
        "biggest_drop_section": 2,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 282.5,
+       "avg_seconds": 206.5455,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.5,
+       "avg_saw_cta": 0.3636,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 3,
+       "exit_s00": 6,
        "exit_s01": 1,
        "completed": 4,
-       "s00_rate": 0.375,
-       "s01_rate": 0.125,
-       "done_rate": 0.5
+       "s00_rate": 0.5455,
+       "s01_rate": 0.0909,
+       "done_rate": 0.3636
       }
+     },
+     "channels": {
+      "Unassigned": 9,
+      "Cross-network": 1,
+      "Organic Video": 1
      },
      "clarity": {
       "sessions": 29,
@@ -1458,159 +1785,20 @@
       "dead_click_sessions": 0,
       "rage_click_sessions": 0,
       "quickback_sessions": 0,
+      "active_ratio": 0.976,
       "truncated": false
      },
      "sales": null,
      "sample": "low"
     },
-    "40": {
-     "name": "[자연하] 스텔라진 3g x 30포",
-     "slug": "자연하-스텔라진-3g-x-30포",
-     "url": "https://curaelmall.com/product/detail.html?product_no=40",
-     "section_total": 5,
-     "version": "v1.0",
-     "images": [
-      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260709/copy-1783557296-notice_banner_1080.jpg",
-      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7841.jpg",
-      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7842_ECA080EC9AA9EB9F89.gif",
-      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7843.jpg",
-      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7844.jpg"
-     ],
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "1": 3,
-        "5": 3,
-        "2": 2,
-        "3": 2,
-        "4": 2
-       },
-       "exit_hist": {
-        "1": 5,
-        "5": 5
-       },
-       "events": {
-        "pdp_scroll": 17,
-        "pdp_section": 12,
-        "pdp_exit": 10,
-        "pdp_cta_view": 5,
-        "pdp_review": 2,
-        "pdp_cta_click": 1
-       },
-       "exit_events": 10,
-       "sum_seconds": 680,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "sessions": 10,
-       "section_reach_pct": {
-        "1": 0.3,
-        "2": 0.2,
-        "3": 0.2,
-        "4": 0.2,
-        "5": 0.3
-       },
-       "section_dropoff": {
-        "2": 0.1,
-        "3": 0.0,
-        "4": 0.0,
-        "5": -0.1
-       },
-       "biggest_drop_section": 2,
-       "biggest_drop_rate": 0.1,
-       "biggest_drop_people": 1,
-       "avg_seconds": 68.0,
-       "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.4,
-       "avg_saw_review": 0.0,
-       "avg_clicked_cart": 0.0,
-       "avg_clicked_buy": 0.0,
-       "exit_s00": 0,
-       "exit_s01": 5,
-       "completed": 5,
-       "s00_rate": 0.0,
-       "s01_rate": 0.5,
-       "done_rate": 0.5
-      },
-      "_all": {
-       "section_reach": {
-        "1": 3,
-        "5": 3,
-        "2": 2,
-        "3": 2,
-        "4": 2
-       },
-       "exit_hist": {
-        "1": 5,
-        "5": 5
-       },
-       "events": {
-        "pdp_scroll": 17,
-        "pdp_section": 12,
-        "pdp_exit": 10,
-        "pdp_cta_view": 5,
-        "pdp_review": 2,
-        "pdp_cta_click": 1
-       },
-       "exit_events": 10,
-       "sum_seconds": 680,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "sessions": 10,
-       "section_reach_pct": {
-        "1": 0.3,
-        "2": 0.2,
-        "3": 0.2,
-        "4": 0.2,
-        "5": 0.3
-       },
-       "section_dropoff": {
-        "2": 0.1,
-        "3": 0.0,
-        "4": 0.0,
-        "5": -0.1
-       },
-       "biggest_drop_section": 2,
-       "biggest_drop_rate": 0.1,
-       "biggest_drop_people": 1,
-       "avg_seconds": 68.0,
-       "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.4,
-       "avg_saw_review": 0.0,
-       "avg_clicked_cart": 0.0,
-       "avg_clicked_buy": 0.0,
-       "exit_s00": 0,
-       "exit_s01": 5,
-       "completed": 5,
-       "s00_rate": 0.0,
-       "s01_rate": 0.5,
-       "done_rate": 0.5
-      }
-     },
-     "clarity": {
-      "sessions": 21,
-      "avg_scroll_depth": 23.9,
-      "dead_click_sessions": 0,
-      "rage_click_sessions": 0,
-      "quickback_sessions": 0,
-      "truncated": false
-     },
-     "sales": null,
-     "sample": "low"
-    },
-    "73": {
-     "name": "김훈하 약사의 하루 한 장 항암 다이어리",
-     "slug": "김훈하-약사의-하루-한-장-항암-다이어리",
-     "url": "https://curaelmall.com/product/detail.html?product_no=73",
+    "47": {
+     "name": "기적의 항암 식단",
+     "slug": "기적의-항암-식단",
+     "url": "https://curaelmall.com/product/detail.html?product_no=47",
      "section_total": 1,
      "version": "v1.0",
      "images": [
-      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260226/EB8BA4EC9DB4EC96B4EBA6AC20EC8381EC84B8.jpg"
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/서적/기적의 항암 식단/1763083027.png"
      ],
      "devices": {
       "mobile": {
@@ -1618,100 +1806,417 @@
         "1": 2
        },
        "exit_hist": {
-        "0": 7,
-        "1": 4
+        "0": 8,
+        "1": 1
        },
        "events": {
         "pdp_scroll": 12,
-        "pdp_exit": 11,
-        "pdp_cta_view": 4,
-        "pdp_review": 3,
-        "pdp_cta_click": 2,
+        "pdp_cta_view": 9,
+        "pdp_exit": 9,
+        "pdp_cta_click": 6,
+        "pdp_review": 4,
         "pdp_section": 2
        },
-       "exit_events": 11,
-       "sum_seconds": 371,
+       "exit_events": 9,
+       "sum_seconds": 247,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
+       "sum_saw_cta": 5,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 11,
+       "sessions": 9,
        "section_reach_pct": {
-        "1": 0.1818
+        "1": 0.2222
        },
        "section_dropoff": {},
        "biggest_drop_section": null,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 33.7273,
+       "avg_seconds": 27.4444,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.1818,
+       "avg_saw_cta": 0.5556,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 7,
-       "exit_s01": 4,
-       "completed": 4,
-       "s00_rate": 0.6364,
-       "s01_rate": 0.3636,
-       "done_rate": 0.3636
+       "exit_s00": 8,
+       "exit_s01": 1,
+       "completed": 1,
+       "s00_rate": 0.8889,
+       "s01_rate": 0.1111,
+       "done_rate": 0.1111
+      },
+      "desktop": {
+       "section_reach": {
+        "1": 1
+       },
+       "exit_hist": {
+        "1": 1
+       },
+       "events": {
+        "pdp_scroll": 6,
+        "pdp_cta_view": 1,
+        "pdp_exit": 1,
+        "pdp_review": 1,
+        "pdp_section": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 21,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 1,
+       "section_reach_pct": {
+        "1": 1.0
+       },
+       "section_dropoff": {},
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 21.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 0,
+       "exit_s01": 1,
+       "completed": 1,
+       "s00_rate": 0.0,
+       "s01_rate": 1.0,
+       "done_rate": 1.0
+      },
+      "_all": {
+       "section_reach": {
+        "1": 3
+       },
+       "exit_hist": {
+        "0": 8,
+        "1": 2
+       },
+       "events": {
+        "pdp_scroll": 18,
+        "pdp_cta_view": 10,
+        "pdp_exit": 10,
+        "pdp_cta_click": 6,
+        "pdp_review": 5,
+        "pdp_section": 3
+       },
+       "exit_events": 10,
+       "sum_seconds": 268,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 6,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 10,
+       "section_reach_pct": {
+        "1": 0.3
+       },
+       "section_dropoff": {},
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 26.8,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.6,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 8,
+       "exit_s01": 2,
+       "completed": 2,
+       "s00_rate": 0.8,
+       "s01_rate": 0.2,
+       "done_rate": 0.2
+      }
+     },
+     "channels": {
+      "Unassigned": 10
+     },
+     "clarity": {
+      "sessions": 25,
+      "avg_scroll_depth": 55.8,
+      "dead_click_sessions": 3,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.359,
+      "truncated": false
+     },
+     "sales": {
+      "name": "기적의 항암 식단",
+      "orders": 1,
+      "units": 1,
+      "gross": 15000,
+      "net": 15000,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.1,
+      "revenue_per_session": 1500,
+      "aov": 15000
+     }
+    },
+    "48": {
+     "name": "열방약국 유방암 상담소",
+     "slug": "열방약국-유방암-상담소",
+     "url": "https://curaelmall.com/product/detail.html?product_no=48",
+     "section_total": 1,
+     "version": "v1.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/서적/열방약국 유방암 상담소/1763083070.png"
+     ],
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2
+       },
+       "exit_hist": {
+        "1": 3
+       },
+       "events": {
+        "pdp_scroll": 10,
+        "pdp_exit": 3,
+        "pdp_cta_view": 2,
+        "pdp_review": 2,
+        "pdp_section": 2
+       },
+       "exit_events": 3,
+       "sum_seconds": 137,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 3,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 3,
+       "section_reach_pct": {
+        "1": 0.6667
+       },
+       "section_dropoff": {},
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 45.6667,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 0,
+       "exit_s01": 3,
+       "completed": 3,
+       "s00_rate": 0.0,
+       "s01_rate": 1.0,
+       "done_rate": 1.0
       },
       "_all": {
        "section_reach": {
         "1": 2
        },
        "exit_hist": {
-        "0": 7,
-        "1": 4
+        "1": 3
        },
        "events": {
-        "pdp_scroll": 12,
-        "pdp_exit": 11,
-        "pdp_cta_view": 4,
-        "pdp_review": 3,
-        "pdp_cta_click": 2,
+        "pdp_scroll": 10,
+        "pdp_exit": 3,
+        "pdp_cta_view": 2,
+        "pdp_review": 2,
         "pdp_section": 2
        },
-       "exit_events": 11,
-       "sum_seconds": 371,
+       "exit_events": 3,
+       "sum_seconds": 137,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
+       "sum_saw_cta": 3,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 11,
+       "sessions": 3,
        "section_reach_pct": {
-        "1": 0.1818
+        "1": 0.6667
        },
        "section_dropoff": {},
        "biggest_drop_section": null,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 33.7273,
+       "avg_seconds": 45.6667,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.1818,
+       "avg_saw_cta": 1.0,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 7,
-       "exit_s01": 4,
-       "completed": 4,
-       "s00_rate": 0.6364,
-       "s01_rate": 0.3636,
-       "done_rate": 0.3636
+       "exit_s00": 0,
+       "exit_s01": 3,
+       "completed": 3,
+       "s00_rate": 0.0,
+       "s01_rate": 1.0,
+       "done_rate": 1.0
       }
      },
+     "channels": {
+      "Unassigned": 2,
+      "Direct": 1
+     },
      "clarity": {
-      "sessions": 20,
-      "avg_scroll_depth": 45.9,
-      "dead_click_sessions": 1,
+      "sessions": 5,
+      "avg_scroll_depth": 68.0,
+      "dead_click_sessions": 0,
       "rage_click_sessions": 0,
-      "quickback_sessions": 1,
+      "quickback_sessions": 0,
+      "active_ratio": 0.97,
       "truncated": false
      },
-     "sales": null,
-     "sample": "low"
+     "sales": {
+      "name": "열방약국 유방암 상담소",
+      "orders": 1,
+      "units": 1,
+      "gross": 13000,
+      "net": 13000,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.3333,
+      "revenue_per_session": 4333,
+      "aov": 13000
+     }
+    },
+    "60": {
+     "name": "국산 유기농 서리태 검은콩 1kg",
+     "slug": "",
+     "url": "https://curaelmall.com/product/detail.html?product_no=60",
+     "section_total": 4,
+     "version": "v0.0",
+     "images": [],
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2,
+        "2": 2
+       },
+       "exit_hist": {
+        "2": 1,
+        "4": 1
+       },
+       "events": {
+        "pdp_section": 4,
+        "pdp_scroll": 3,
+        "pdp_cta_view": 2,
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 42,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_pct": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.0,
+        "4": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 1.0,
+        "4": 0.0
+       },
+       "biggest_drop_section": 3,
+       "biggest_drop_rate": 1.0,
+       "biggest_drop_people": 2,
+       "avg_seconds": 21.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 0,
+       "exit_s01": 0,
+       "completed": 1,
+       "s00_rate": 0.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.5
+      },
+      "_all": {
+       "section_reach": {
+        "1": 2,
+        "2": 2
+       },
+       "exit_hist": {
+        "2": 1,
+        "4": 1
+       },
+       "events": {
+        "pdp_section": 4,
+        "pdp_scroll": 3,
+        "pdp_cta_view": 2,
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 42,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_pct": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.0,
+        "4": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 1.0,
+        "4": 0.0
+       },
+       "biggest_drop_section": 3,
+       "biggest_drop_rate": 1.0,
+       "biggest_drop_people": 2,
+       "avg_seconds": 21.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 0,
+       "exit_s01": 0,
+       "completed": 1,
+       "s00_rate": 0.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.5
+      }
+     },
+     "channels": {
+      "Unassigned": 2
+     },
+     "clarity": {
+      "sessions": 4,
+      "avg_scroll_depth": 41.0,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 0.102,
+      "truncated": false
+     },
+     "sales": {
+      "name": "국산 유기농 서리태 검은콩 1kg",
+      "orders": 1,
+      "units": 1,
+      "gross": 22534,
+      "net": 22534,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.5,
+      "revenue_per_session": 11267,
+      "aov": 22534
+     }
     },
     "46": {
      "name": "캔서 위너",
@@ -1728,87 +2233,92 @@
         "1": 1
        },
        "exit_hist": {
-        "1": 2,
-        "0": 1
+        "0": 3,
+        "1": 2
        },
        "events": {
         "pdp_scroll": 6,
-        "pdp_exit": 3,
+        "pdp_exit": 5,
         "pdp_cta_view": 1,
         "pdp_review": 1,
         "pdp_section": 1
        },
-       "exit_events": 3,
-       "sum_seconds": 5402,
+       "exit_events": 5,
+       "sum_seconds": 5561,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 1,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 3,
+       "sessions": 5,
        "section_reach_pct": {
-        "1": 0.3333
+        "1": 0.2
        },
        "section_dropoff": {},
        "biggest_drop_section": null,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 1800.6667,
+       "avg_seconds": 1112.2,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.3333,
+       "avg_saw_cta": 0.2,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 1,
+       "exit_s00": 3,
        "exit_s01": 2,
        "completed": 2,
-       "s00_rate": 0.3333,
-       "s01_rate": 0.6667,
-       "done_rate": 0.6667
+       "s00_rate": 0.6,
+       "s01_rate": 0.4,
+       "done_rate": 0.4
       },
       "_all": {
        "section_reach": {
         "1": 1
        },
        "exit_hist": {
-        "1": 2,
-        "0": 1
+        "0": 3,
+        "1": 2
        },
        "events": {
         "pdp_scroll": 6,
-        "pdp_exit": 3,
+        "pdp_exit": 5,
         "pdp_cta_view": 1,
         "pdp_review": 1,
         "pdp_section": 1
        },
-       "exit_events": 3,
-       "sum_seconds": 5402,
+       "exit_events": 5,
+       "sum_seconds": 5561,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 1,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 3,
+       "sessions": 5,
        "section_reach_pct": {
-        "1": 0.3333
+        "1": 0.2
        },
        "section_dropoff": {},
        "biggest_drop_section": null,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 1800.6667,
+       "avg_seconds": 1112.2,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.3333,
+       "avg_saw_cta": 0.2,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 1,
+       "exit_s00": 3,
        "exit_s01": 2,
        "completed": 2,
-       "s00_rate": 0.3333,
-       "s01_rate": 0.6667,
-       "done_rate": 0.6667
+       "s00_rate": 0.6,
+       "s01_rate": 0.4,
+       "done_rate": 0.4
       }
+     },
+     "channels": {
+      "Unassigned": 3,
+      "Cross-network": 1,
+      "Organic Video": 1
      },
      "clarity": {
       "sessions": 5,
@@ -1816,283 +2326,67 @@
       "dead_click_sessions": 1,
       "rage_click_sessions": 0,
       "quickback_sessions": 0,
+      "active_ratio": 1.0,
       "truncated": false
      },
      "sales": null,
      "sample": "low"
     },
-    "48": {
-     "name": "열방약국 유방암 상담소",
-     "slug": "열방약국-유방암-상담소",
-     "url": "https://curaelmall.com/product/detail.html?product_no=48",
-     "section_total": 1,
-     "version": "v1.0",
-     "images": [
-      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/서적/열방약국 유방암 상담소/1763083070.png"
-     ],
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "1": 1
-       },
-       "exit_hist": {
-        "1": 2
-       },
-       "events": {
-        "pdp_exit": 2,
-        "pdp_scroll": 2,
-        "pdp_cta_view": 1,
-        "pdp_review": 1,
-        "pdp_section": 1
-       },
-       "exit_events": 2,
-       "sum_seconds": 84,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "sessions": 2,
-       "section_reach_pct": {
-        "1": 0.5
-       },
-       "section_dropoff": {},
-       "biggest_drop_section": null,
-       "biggest_drop_rate": 0.0,
-       "biggest_drop_people": 0,
-       "avg_seconds": 42.0,
-       "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 1.0,
-       "avg_saw_review": 0.0,
-       "avg_clicked_cart": 0.0,
-       "avg_clicked_buy": 0.0,
-       "exit_s00": 0,
-       "exit_s01": 2,
-       "completed": 2,
-       "s00_rate": 0.0,
-       "s01_rate": 1.0,
-       "done_rate": 1.0
-      },
-      "_all": {
-       "section_reach": {
-        "1": 1
-       },
-       "exit_hist": {
-        "1": 2
-       },
-       "events": {
-        "pdp_exit": 2,
-        "pdp_scroll": 2,
-        "pdp_cta_view": 1,
-        "pdp_review": 1,
-        "pdp_section": 1
-       },
-       "exit_events": 2,
-       "sum_seconds": 84,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "sessions": 2,
-       "section_reach_pct": {
-        "1": 0.5
-       },
-       "section_dropoff": {},
-       "biggest_drop_section": null,
-       "biggest_drop_rate": 0.0,
-       "biggest_drop_people": 0,
-       "avg_seconds": 42.0,
-       "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 1.0,
-       "avg_saw_review": 0.0,
-       "avg_clicked_cart": 0.0,
-       "avg_clicked_buy": 0.0,
-       "exit_s00": 0,
-       "exit_s01": 2,
-       "completed": 2,
-       "s00_rate": 0.0,
-       "s01_rate": 1.0,
-       "done_rate": 1.0
-      }
-     },
-     "clarity": {
-      "sessions": 5,
-      "avg_scroll_depth": 68.0,
-      "dead_click_sessions": 0,
-      "rage_click_sessions": 0,
-      "quickback_sessions": 0,
-      "truncated": false
-     },
-     "sales": {
-      "name": "열방약국 유방암 상담소",
-      "orders": 1,
-      "units": 1,
-      "gross": 13000,
-      "net": 13000,
-      "canceled_units": 0
-     },
-     "sample": "low",
-     "derived": {
-      "cvr": 0.5,
-      "revenue_per_session": 6500,
-      "aov": 13000
-     }
-    },
-    "47": {
-     "name": "기적의 항암 식단",
-     "slug": "기적의-항암-식단",
-     "url": "https://curaelmall.com/product/detail.html?product_no=47",
-     "section_total": 1,
-     "version": "v1.0",
-     "images": [
-      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/서적/기적의 항암 식단/1763083027.png"
-     ],
-     "devices": {
-      "mobile": {
-       "section_reach": {},
-       "exit_hist": {
-        "0": 6
-       },
-       "events": {
-        "pdp_cta_view": 7,
-        "pdp_cta_click": 6,
-        "pdp_exit": 6,
-        "pdp_review": 3,
-        "pdp_scroll": 3
-       },
-       "exit_events": 6,
-       "sum_seconds": 111,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 3,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "sessions": 6,
-       "section_reach_pct": {
-        "1": 0.0
-       },
-       "section_dropoff": {},
-       "biggest_drop_section": null,
-       "biggest_drop_rate": 0.0,
-       "biggest_drop_people": 0,
-       "avg_seconds": 18.5,
-       "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.5,
-       "avg_saw_review": 0.0,
-       "avg_clicked_cart": 0.0,
-       "avg_clicked_buy": 0.0,
-       "exit_s00": 6,
-       "exit_s01": 0,
-       "completed": 0,
-       "s00_rate": 1.0,
-       "s01_rate": 0.0,
-       "done_rate": 0.0
-      },
-      "_all": {
-       "section_reach": {},
-       "exit_hist": {
-        "0": 6
-       },
-       "events": {
-        "pdp_cta_view": 7,
-        "pdp_cta_click": 6,
-        "pdp_exit": 6,
-        "pdp_review": 3,
-        "pdp_scroll": 3
-       },
-       "exit_events": 6,
-       "sum_seconds": 111,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 3,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "sessions": 6,
-       "section_reach_pct": {
-        "1": 0.0
-       },
-       "section_dropoff": {},
-       "biggest_drop_section": null,
-       "biggest_drop_rate": 0.0,
-       "biggest_drop_people": 0,
-       "avg_seconds": 18.5,
-       "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.5,
-       "avg_saw_review": 0.0,
-       "avg_clicked_cart": 0.0,
-       "avg_clicked_buy": 0.0,
-       "exit_s00": 6,
-       "exit_s01": 0,
-       "completed": 0,
-       "s00_rate": 1.0,
-       "s01_rate": 0.0,
-       "done_rate": 0.0
-      }
-     },
-     "clarity": {
-      "sessions": 25,
-      "avg_scroll_depth": 55.8,
-      "dead_click_sessions": 3,
-      "rage_click_sessions": 0,
-      "quickback_sessions": 0,
-      "truncated": false
-     },
-     "sales": {
-      "name": "기적의 항암 식단",
-      "orders": 1,
-      "units": 1,
-      "gross": 15000,
-      "net": 15000,
-      "canceled_units": 0
-     },
-     "sample": "low",
-     "derived": {
-      "cvr": 0.1667,
-      "revenue_per_session": 2500,
-      "aov": 15000
-     }
-    },
     "59": {
      "name": "국산 유기농 귀리쌀 1kg",
      "slug": "",
      "url": "https://curaelmall.com/product/detail.html?product_no=59",
-     "section_total": 0,
+     "section_total": 5,
      "version": "v0.0",
      "images": [],
      "devices": {
       "mobile": {
-       "section_reach": {},
+       "section_reach": {
+        "1": 1,
+        "2": 1
+       },
        "exit_hist": {
-        "0": 3
+        "0": 6
        },
        "events": {
-        "pdp_scroll": 6,
-        "pdp_exit": 3,
-        "pdp_cta_click": 2,
-        "pdp_cta_view": 2,
-        "pdp_review": 2
+        "pdp_scroll": 7,
+        "pdp_exit": 6,
+        "pdp_cta_click": 4,
+        "pdp_cta_view": 3,
+        "pdp_review": 2,
+        "pdp_section": 2
        },
-       "exit_events": 3,
-       "sum_seconds": 61,
+       "exit_events": 6,
+       "sum_seconds": 90,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 2,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 3,
-       "section_reach_pct": {},
-       "section_dropoff": {},
-       "biggest_drop_section": null,
-       "biggest_drop_rate": 0.0,
-       "biggest_drop_people": 0,
-       "avg_seconds": 20.3333,
+       "sessions": 6,
+       "section_reach_pct": {
+        "1": 0.1667,
+        "2": 0.1667,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.1667,
+        "4": 0.0,
+        "5": 0.0
+       },
+       "biggest_drop_section": 3,
+       "biggest_drop_rate": 0.1667,
+       "biggest_drop_people": 1,
+       "avg_seconds": 15.0,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.6667,
+       "avg_saw_cta": 0.3333,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 3,
+       "exit_s00": 6,
        "exit_s01": 0,
        "completed": 0,
        "s00_rate": 1.0,
@@ -2100,43 +2394,62 @@
        "done_rate": 0.0
       },
       "_all": {
-       "section_reach": {},
+       "section_reach": {
+        "1": 1,
+        "2": 1
+       },
        "exit_hist": {
-        "0": 3
+        "0": 6
        },
        "events": {
-        "pdp_scroll": 6,
-        "pdp_exit": 3,
-        "pdp_cta_click": 2,
-        "pdp_cta_view": 2,
-        "pdp_review": 2
+        "pdp_scroll": 7,
+        "pdp_exit": 6,
+        "pdp_cta_click": 4,
+        "pdp_cta_view": 3,
+        "pdp_review": 2,
+        "pdp_section": 2
        },
-       "exit_events": 3,
-       "sum_seconds": 61,
+       "exit_events": 6,
+       "sum_seconds": 90,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 2,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 3,
-       "section_reach_pct": {},
-       "section_dropoff": {},
-       "biggest_drop_section": null,
-       "biggest_drop_rate": 0.0,
-       "biggest_drop_people": 0,
-       "avg_seconds": 20.3333,
+       "sessions": 6,
+       "section_reach_pct": {
+        "1": 0.1667,
+        "2": 0.1667,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.1667,
+        "4": 0.0,
+        "5": 0.0
+       },
+       "biggest_drop_section": 3,
+       "biggest_drop_rate": 0.1667,
+       "biggest_drop_people": 1,
+       "avg_seconds": 15.0,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.6667,
+       "avg_saw_cta": 0.3333,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 3,
+       "exit_s00": 6,
        "exit_s01": 0,
        "completed": 0,
        "s00_rate": 1.0,
        "s01_rate": 0.0,
        "done_rate": 0.0
       }
+     },
+     "channels": {
+      "Direct": 3,
+      "Unassigned": 3
      },
      "clarity": {
       "sessions": 6,
@@ -2144,6 +2457,7 @@
       "dead_click_sessions": 0,
       "rage_click_sessions": 0,
       "quickback_sessions": 0,
+      "active_ratio": 0.93,
       "truncated": false
      },
      "sales": {
@@ -2156,8 +2470,8 @@
      },
      "sample": "low",
      "derived": {
-      "cvr": 0.3333,
-      "revenue_per_session": 3247,
+      "cvr": 0.1667,
+      "revenue_per_session": 1624,
       "aov": 9741
      }
     },
@@ -2165,78 +2479,116 @@
      "name": "국산 유기농 귀리 혼합 10곡 잡곡쌀 800g",
      "slug": "",
      "url": "https://curaelmall.com/product/detail.html?product_no=62",
-     "section_total": 0,
+     "section_total": 3,
      "version": "v0.0",
      "images": [],
      "devices": {
       "mobile": {
-       "section_reach": {},
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+       },
        "exit_hist": {
-        "0": 2
+        "0": 6,
+        "3": 2
        },
        "events": {
-        "pdp_exit": 2
+        "pdp_exit": 8,
+        "pdp_scroll": 6,
+        "pdp_section": 3,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
        },
-       "exit_events": 2,
-       "sum_seconds": 2,
+       "exit_events": 8,
+       "sum_seconds": 301,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 2,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 2,
-       "section_reach_pct": {},
-       "section_dropoff": {},
-       "biggest_drop_section": null,
+       "sessions": 8,
+       "section_reach_pct": {
+        "1": 0.125,
+        "2": 0.125,
+        "3": 0.125
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0
+       },
+       "biggest_drop_section": 2,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 1.0,
+       "avg_seconds": 37.625,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.0,
+       "avg_saw_cta": 0.25,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 2,
+       "exit_s00": 6,
        "exit_s01": 0,
-       "completed": 0,
-       "s00_rate": 1.0,
+       "completed": 2,
+       "s00_rate": 0.75,
        "s01_rate": 0.0,
-       "done_rate": 0.0
+       "done_rate": 0.25
       },
       "_all": {
-       "section_reach": {},
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+       },
        "exit_hist": {
-        "0": 2
+        "0": 6,
+        "3": 2
        },
        "events": {
-        "pdp_exit": 2
+        "pdp_exit": 8,
+        "pdp_scroll": 6,
+        "pdp_section": 3,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
        },
-       "exit_events": 2,
-       "sum_seconds": 2,
+       "exit_events": 8,
+       "sum_seconds": 301,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 2,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 2,
-       "section_reach_pct": {},
-       "section_dropoff": {},
-       "biggest_drop_section": null,
+       "sessions": 8,
+       "section_reach_pct": {
+        "1": 0.125,
+        "2": 0.125,
+        "3": 0.125
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0
+       },
+       "biggest_drop_section": 2,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 1.0,
+       "avg_seconds": 37.625,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.0,
+       "avg_saw_cta": 0.25,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 2,
+       "exit_s00": 6,
        "exit_s01": 0,
-       "completed": 0,
-       "s00_rate": 1.0,
+       "completed": 2,
+       "s00_rate": 0.75,
        "s01_rate": 0.0,
-       "done_rate": 0.0
+       "done_rate": 0.25
       }
+     },
+     "channels": {
+      "Unassigned": 3,
+      "Cross-network": 2,
+      "Direct": 2,
+      "Paid Social": 1
      },
      "clarity": {
       "sessions": 10,
@@ -2244,6 +2596,7 @@
       "dead_click_sessions": 1,
       "rage_click_sessions": 0,
       "quickback_sessions": 2,
+      "active_ratio": 0.878,
       "truncated": false
      },
      "sales": null,
@@ -2265,19 +2618,19 @@
       "mobile": {
        "section_reach": {},
        "exit_hist": {
-        "0": 1
+        "0": 4
        },
        "events": {
-        "pdp_exit": 1
+        "pdp_exit": 4
        },
-       "exit_events": 1,
-       "sum_seconds": 12,
+       "exit_events": 4,
+       "sum_seconds": 32,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 1,
+       "sessions": 4,
        "section_reach_pct": {
         "1": 0.0,
         "2": 0.0,
@@ -2292,13 +2645,13 @@
        "biggest_drop_section": 2,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 12.0,
+       "avg_seconds": 8.0,
        "avg_bounce_3s": 0.0,
        "avg_saw_cta": 0.0,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 1,
+       "exit_s00": 4,
        "exit_s01": 0,
        "completed": 0,
        "s00_rate": 1.0,
@@ -2308,19 +2661,19 @@
       "_all": {
        "section_reach": {},
        "exit_hist": {
-        "0": 1
+        "0": 4
        },
        "events": {
-        "pdp_exit": 1
+        "pdp_exit": 4
        },
-       "exit_events": 1,
-       "sum_seconds": 12,
+       "exit_events": 4,
+       "sum_seconds": 32,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 1,
+       "sessions": 4,
        "section_reach_pct": {
         "1": 0.0,
         "2": 0.0,
@@ -2335,13 +2688,13 @@
        "biggest_drop_section": 2,
        "biggest_drop_rate": 0.0,
        "biggest_drop_people": 0,
-       "avg_seconds": 12.0,
+       "avg_seconds": 8.0,
        "avg_bounce_3s": 0.0,
        "avg_saw_cta": 0.0,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
-       "exit_s00": 1,
+       "exit_s00": 4,
        "exit_s01": 0,
        "completed": 0,
        "s00_rate": 1.0,
@@ -2349,23 +2702,138 @@
        "done_rate": 0.0
       }
      },
+     "channels": {
+      "Direct": 3,
+      "Unassigned": 1
+     },
      "clarity": {
       "sessions": 4,
       "avg_scroll_depth": 21.2,
       "dead_click_sessions": 0,
       "rage_click_sessions": 0,
       "quickback_sessions": 0,
+      "active_ratio": 0.962,
       "truncated": false
      },
      "sales": null,
      "sample": "low"
+    },
+    "61": {
+     "name": "국산 유기농 오트밀 압착 귀리 350g",
+     "slug": "",
+     "url": "https://curaelmall.com/product/detail.html?product_no=61",
+     "section_total": 0,
+     "version": "v0.0",
+     "images": [],
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_scroll": 6,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 38,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_pct": {},
+       "section_dropoff": {},
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 19.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 2,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      },
+      "_all": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_scroll": 6,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 38,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_pct": {},
+       "section_dropoff": {},
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 19.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "exit_s00": 2,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      }
+     },
+     "channels": {
+      "Direct": 2
+     },
+     "clarity": {
+      "sessions": 4,
+      "avg_scroll_depth": 39.9,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
+     "sales": {
+      "name": "국산 유기농 오트밀 압착 귀리 350g",
+      "orders": 1,
+      "units": 3,
+      "gross": 26060,
+      "net": 26060,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.5,
+      "revenue_per_session": 13030,
+      "aov": 26060
+     }
     }
    },
    "unattributed": {
-    "ga4_unknown_exit_events": 166,
+    "ga4_unknown_exit_events": 167,
     "clarity_unmatched_sessions": 390
    }
   }
  },
- "built_at": "2026-08-07 09:12:59 KST"
+ "built_at": "2026-08-07 09:37:51 KST"
 }
