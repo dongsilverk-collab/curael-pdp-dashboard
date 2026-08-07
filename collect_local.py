@@ -65,9 +65,33 @@ def check_token():
         print("카페24 토큰 잔여 %.1f일" % left)
 
 
+MAX_BACKFILL = 60   # PC를 오래 꺼뒀어도 이 이상은 한 번에 안 받는다(호출 폭주 방지)
+
+
+def days_to_fetch(minimum=2):
+    """마지막 수집일 이후의 공백을 스스로 메운다.
+
+    이 배치는 PC가 켜져 있을 때만 돈다. 며칠 쉬면 그 사이가 비는데, 고정 --days 2 면
+    영영 안 채워진다. 카페24 주문 API 는 Clarity 와 달리 **과거를 언제든 다시 주므로**
+    공백은 전부 복구 가능하다 — 안 받는 게 손해다.
+    """
+    hist = C.load_json("data/cafe24_pdp_history.json", {}).get("days") or {}
+    if not hist:
+        return minimum
+    last = max(hist)
+    try:
+        gap = (datetime.strptime(C.kst_today(), "%Y-%m-%d")
+               - datetime.strptime(last, "%Y-%m-%d")).days
+    except ValueError:
+        return minimum
+    # 오늘은 아직 주문이 들어오는 중이라 어제치도 다시 받아야 확정된다.
+    return max(minimum, min(gap + 1, MAX_BACKFILL))
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--days", type=int, default=2)
+    ap.add_argument("--days", type=int, default=0,
+                    help="0이면 마지막 수집일 기준으로 자동 판단")
     ap.add_argument("--no-push", action="store_true")
     args = ap.parse_args()
 
@@ -80,7 +104,10 @@ def main():
     run(["git", "pull", "--rebase", "--autostash"], check=False)
 
     py = sys.executable
-    run([py, "fetch_cafe24_pdp.py", "--days", str(args.days)])
+    n = args.days or days_to_fetch()
+    if n > 2:
+        print("\n마지막 수집 이후 공백이 있어 최근 %d일을 받습니다." % n)
+    run([py, "fetch_cafe24_pdp.py", "--days", str(n)])
     run([py, "merge_pdp.py"])
     run([py, "build_pdp_dashboard.py"])
 
