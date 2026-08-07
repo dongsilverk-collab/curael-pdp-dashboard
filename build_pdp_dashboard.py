@@ -161,6 +161,40 @@ CHANNEL_KO = {
 }
 
 
+def scroll_block(p):
+    """스크롤 도달 곡선. Clarity 대시보드의 '데이터 스크롤' 표와 같은 성격.
+
+    Clarity API 는 평균값 하나만 주므로 그 표는 자동화할 수 없다. 대신 우리
+    추적 스크립트가 쏘는 pdp_scroll 을 쓴다 — 상품별로 갈라지고 매일 자동으로 쌓인다.
+
+    분모가 다르다는 점은 화면에 명시한다. Clarity 는 페이지 전체, 이쪽은 상세영역이다.
+    """
+    a = p["devices"]["_all"]
+    curve = a.get("scroll_curve") or {}
+    pct = a.get("scroll_curve_pct") or {}
+    n = a["sessions"]
+    if not curve or not n:
+        return ""
+    out = ["<h2>상세영역 스크롤 도달</h2>",
+           '<p class="sub">상세 이미지 영역(#prdDetail)을 100%로 봤을 때의 도달률입니다. '
+           'Clarity의 스크롤 수치는 <b>페이지 전체</b> 기준이라 값이 다릅니다.</p>',
+           '<div class="scroll"><table><tr><th>지점</th><th>도달률</th>'
+           '<th class="num">여기서 멈춤</th></tr>']
+    keys = sorted(curve, key=int)
+    for i, k in enumerate(keys):
+        v, r = curve[k], pct.get(k, 0)
+        nxt = curve[keys[i + 1]] if i + 1 < len(keys) else 0
+        out.append('<tr><td>%s%%</td>'
+                   '<td class="bar">%s<span class="barval">%s</span></td>'
+                   '<td class="num">%s</td></tr>'
+                   % (G.esc(k), G.reach_bar(r, ((v - nxt) / n) if n else 0),
+                      G.frac(v, n),
+                      ("%d명" % (v - nxt)) if v - nxt > 0 else
+                      '<span class="muted">–</span>'))
+    out.append("</table></div>")
+    return "".join(out)
+
+
 def channels_block(p):
     """유입 채널. '미도달 61%'를 해석하려면 누가 왔는지를 알아야 한다."""
     ch = p.get("channels") or {}
@@ -393,6 +427,7 @@ def build_product(pid, p, date, days_collected):
                       G.pct(d["s01_rate"]), G.pct(d["done_rate"])))
     out.append("</table></div>")
 
+    out.append(scroll_block(p))
     out.append(channels_block(p))
     out.append(reading_block(p, date, days_collected))
 

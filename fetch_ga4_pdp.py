@@ -31,6 +31,7 @@ D_PRODUCT = "customEvent:pdp_product_id"
 D_NAME = "customEvent:pdp_product_name"
 D_SECTION = "customEvent:pdp_section_label"
 D_EXIT = "customEvent:pdp_exit_label"
+D_PERCENT = "customEvent:pdp_percent"   # 2026-08-07 등록. 그 이전 데이터는 비어 있다.
 D_DEVICE = "deviceCategory"
 
 # 합계로 돌아오는 맞춤 측정항목. 평균은 여기서 내지 않고 merge 단계에서 eventCount로 나눈다.
@@ -155,6 +156,23 @@ def fetch_day(date, access=None, prop=None):
         b["exit_events"] = _n(r, "eventCount")
         for name, api in sums:
             b[name] = _n(r, api)
+
+    # ---- R6 스크롤 도달 곡선 ----
+    # Clarity 대시보드의 '데이터 스크롤' 표와 같은 성격인데, 그 표는 API 로 못 받는다
+    # (Clarity API 는 평균 스크롤 깊이 하나만 준다). 우리 추적 스크립트가 이미
+    # 10/25/50/75/90/100% 에서 pdp_scroll 을 쏘고 있으므로 그걸 상품별로 쪼갠다.
+    #
+    # ⚠ 분모가 다르다. Clarity 는 **페이지 전체** 기준, 이쪽은 **#prdDetail 상세영역**
+    # 기준이다. 상단(가격·옵션·리뷰탭)이 빠져 있어 같은 25%라도 가리키는 위치가 다르다.
+    for r in _rows([D_PRODUCT, D_PERCENT, D_DEVICE], ["eventCount"],
+                   date, "pdp_scroll", access, prop):
+        pid = r.get(D_PRODUCT) or ""
+        pc = (r.get(D_PERCENT) or "").strip()
+        if not pid or not pc.isdigit():
+            continue
+        b = bucket(pid, r.get(D_DEVICE) or "unknown")
+        b.setdefault("scroll_reach", {})
+        b["scroll_reach"][pc] = b["scroll_reach"].get(pc, 0) + _n(r, "eventCount")
 
     # ---- R5 유입 채널 ----
     # sessionSource/Medium 은 이벤트 단위 맞춤측정기준과 엮으면 카디널리티 때문에
