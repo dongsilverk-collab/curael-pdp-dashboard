@@ -102,7 +102,16 @@ def merge_clarity(snapshots, date):
     sessionsCount 를 그대로 더하면 '26번 분노클릭 54건' 같은 숫자가 나오는데,
     실제로는 전 행이 0%였다(= 분노클릭 0건). 세션 수를 지표로 착각한 것이다.
     """
-    snap = (snapshots.get("snapshots") or {}).get(date)
+    # 한 날짜에 스냅샷이 여러 개일 수 있다(예약 실행 실패 후 복구분 등, `날짜#2`).
+    # 달력일에 가장 잘 맞는 것을 고르고, 동률이면 나중에 받은 것을 쓴다.
+    all_snaps = snapshots.get("snapshots") or {}
+    cands = [v for k, v in all_snaps.items()
+             if (v.get("date_key") or k.split("#")[0]) == date]
+    if not cands:
+        return {}, {"matched": 0, "unmatched": 0}
+    snap = sorted(cands,
+                  key=lambda v: (bool(v.get("aligned_to_calendar_day")),
+                                 v.get("fetched_at") or ""))[-1]
     if not snap:
         return {}, {"matched": 0, "unmatched": 0}
     call = (snap.get("calls") or {}).get("URL") or {}

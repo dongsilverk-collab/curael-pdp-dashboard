@@ -16,7 +16,7 @@ import argparse
 import sys
 
 import clarity_api
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 from pdp_common import kst_now, load_json, parse_product_no, save_json
 
@@ -56,8 +56,27 @@ def fetch(num_of_days=1, force=False, dump_raw=False):
     snaps = load_json(SNAP_PATH)
     snaps.setdefault("snapshots", {})
     key, win = _window(num_of_days)
+    date_key = key
+
+    # 같은 날짜 키에 **다른 창**이 이미 있으면 덮지도 건너뛰지도 않고 새 키로 넣는다.
+    #
+    # 창이 '호출 시각 기준 지난 24시간'이라 실행 시각이 밀리면 중간값 날짜가 기존
+    # 스냅샷과 겹친다. 예약 실행이 실패한 뒤 낮에 복구하려 하면 키가 충돌해
+    # "이미 수집됨"으로 건너뛰고, 그 데이터는 3일 뒤 영구 소실된다.
+    # (실제로 2026-08-07 02:02 예약 실행이 GitHub 러너 배정 실패로 죽었다.)
+    prev = snaps["snapshots"].get(key)
+    if prev and not force:
+        prev_start = (prev.get("window_start_kst") or "")[:16]
+        if prev_start and prev_start != win["window_start_kst"][:16]:
+            i = 2
+            while "%s#%d" % (date_key, i) in snaps["snapshots"]:
+                i += 1
+            key = "%s#%d" % (date_key, i)
+            print("  같은 날짜에 다른 창이 이미 있어 새 키로 저장합니다: %s" % key)
+
     entry = snaps["snapshots"].setdefault(key, {})
     entry.setdefault("calls", {})
+    entry["date_key"] = date_key
 
     entry["fetched_at"] = kst_now().isoformat(timespec="seconds")
     entry["num_of_days"] = num_of_days
@@ -138,6 +157,26 @@ if __name__ == "__main__":
                     help="공백 보충용. 결과는 일별이 아니라 합산값이다.")
     ap.add_argument("--force", action="store_true", help="이미 있는 것도 덮어쓴다")
     ap.add_argument("--dump-raw", action="store_true")
+    ap.add_argument("--only-if-stale-hours", type=float, default=0,
+                    help="마지막 수집이 이보다 최근이면 호출하지 않고 종료. "
+                         "예약 실행 실패에 대비한 재시도용.")
     a = ap.parse_args()
+
+    # 재시도 스케줄이 정상 수집분 위에 또 호출하면 하루 10회 예산을 태운다.
+    # 마지막 수집 시각을 보고 이미 최신이면 아무것도 하지 않는다.
+    if a.only_if_stale_hours > 0:
+        snaps = (load_json(SNAP_PATH).get("snapshots") or {})
+        last = max((v.get("fetched_at") or "" for v in snaps.values()),
+                   default="")
+        if last:
+            try:
+                age = (kst_now() - datetime.fromisoformat(last)).total_seconds() / 3600
+                if age < a.only_if_stale_hours:
+                    print("마지막 수집이 %.1f시간 전 — 아직 최신이라 건너뜁니다." % age)
+                    raise SystemExit(0)
+                print("마지막 수집이 %.1f시간 전 — 수집을 진행합니다." % age)
+            except ValueError:
+                pass
+
     fetch(num_of_days=(a.days if not a.repair else max(a.days, 3)),
           force=a.force, dump_raw=a.dump_raw)
