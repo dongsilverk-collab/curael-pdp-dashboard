@@ -49,11 +49,29 @@ def _derive(bucket, total_sections):
     out = dict(bucket)
     out["sessions"] = sessions
 
+    # 도달 수를 뒤에서부터 누적 최대로 보정한다.
+    #
+    # 추적 스크립트는 이미지 높이가 1px 이하면(레이지 로드 미완) 안 본 것으로 처리한다.
+    # 그런데 그 이미지가 자리를 차지하지 않으니 뒤 이미지들이 위로 당겨져 같은 스크롤
+    # 깊이에서 더 많이 잡힌다. 그래서 뒤 구간 도달이 앞 구간보다 커지는 일이 생긴다
+    # (26번 실측: 20구간 중 6군데). S18 을 봤다면 S14 자리는 반드시 지나갔으므로,
+    # 뒤 구간 값이 크면 앞 구간도 최소 그만큼은 도달한 것이다.
+    #
+    # 원본을 지우지 않고 section_reach 로 남겨둔다 — 보정은 추론이고 원본은 측정이다.
+    mono, run = {}, 0
+    for i in range(total_sections, 0, -1):
+        run = max(run, reach.get(i, 0))
+        mono[i] = run
+    repaired = sum(1 for i in range(1, total_sections + 1)
+                   if mono.get(i, 0) != reach.get(i, 0))
+    out["section_reach_mono"] = {str(i): mono[i] for i in mono}
+    out["reach_repaired_sections"] = repaired
+
     pct, drop = {}, {}
     if sessions and total_sections:
         prev = None
         for i in range(1, total_sections + 1):
-            p = reach.get(i, 0) / sessions
+            p = mono.get(i, 0) / sessions
             pct[str(i)] = round(p, 4)
             if prev is not None:
                 drop[str(i)] = round(prev - p, 4)
