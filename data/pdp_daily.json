@@ -3441,7 +3441,7 @@
   "2026-08-07": {
    "sources": {
     "ga4": "ok",
-    "clarity": "missing",
+    "clarity": "ok",
     "cafe24": "ok"
    },
    "products": {
@@ -4117,20 +4117,28 @@
       "sessions": 207,
       "engaged": 163
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 475,
+      "avg_scroll_depth": 35.2,
+      "dead_click_sessions": 12,
+      "rage_click_sessions": 1,
+      "quickback_sessions": 14,
+      "active_ratio": 0.879,
+      "truncated": false
+     },
      "sales": {
       "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
-      "orders": 1,
-      "units": 1,
-      "gross": 97998,
-      "net": 97998,
+      "orders": 6,
+      "units": 6,
+      "gross": 393344,
+      "net": 393344,
       "canceled_units": 0
      },
      "sample": "ok",
      "derived": {
-      "cvr": 0.0043,
-      "revenue_per_session": 424,
-      "aov": 97998
+      "cvr": 0.026,
+      "revenue_per_session": 1703,
+      "aov": 65557
      }
     },
     "28": {
@@ -4540,20 +4548,28 @@
       "sessions": 30,
       "engaged": 23
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 86,
+      "avg_scroll_depth": 31.6,
+      "dead_click_sessions": 5,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 3,
+      "active_ratio": 0.835,
+      "truncated": false
+     },
      "sales": {
       "name": "[자연하] 그린진 원스틱 1.5g x 30포",
-      "orders": 1,
-      "units": 1,
-      "gross": 54333,
-      "net": 54333,
+      "orders": 4,
+      "units": 5,
+      "gross": 161620,
+      "net": 161620,
       "canceled_units": 0
      },
      "sample": "ok",
      "derived": {
-      "cvr": 0.013,
-      "revenue_per_session": 706,
-      "aov": 54333
+      "cvr": 0.0519,
+      "revenue_per_session": 2099,
+      "aov": 40405
      }
     },
     "47": {
@@ -4771,7 +4787,15 @@
       "sessions": 10,
       "engaged": 8
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 21,
+      "avg_scroll_depth": 56.7,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.89,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -5213,9 +5237,29 @@
       "sessions": 7,
       "engaged": 7
      },
-     "clarity": null,
-     "sales": null,
-     "sample": "low"
+     "clarity": {
+      "sessions": 29,
+      "avg_scroll_depth": 49.5,
+      "dead_click_sessions": 4,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 4,
+      "active_ratio": 0.733,
+      "truncated": false
+     },
+     "sales": {
+      "name": "[자연하] 숨촉촉365 12g x 14포",
+      "orders": 1,
+      "units": 1,
+      "gross": 104324,
+      "net": 104324,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.04,
+      "revenue_per_session": 4173,
+      "aov": 104324
+     }
     },
     "31": {
      "name": "[자연하] 커큐진 2g x 30포",
@@ -5449,7 +5493,15 @@
       "sessions": 17,
       "engaged": 8
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 42,
+      "avg_scroll_depth": 34.2,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 0.792,
+      "truncated": false
+     },
      "sales": null,
      "sample": "ok"
     },
@@ -5738,7 +5790,15 @@
       "sessions": 21,
       "engaged": 12
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 47,
+      "avg_scroll_depth": 25.9,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 3,
+      "active_ratio": 0.824,
+      "truncated": false
+     },
      "sales": null,
      "sample": "ok"
     },
@@ -5957,7 +6017,15 @@
       "sessions": 4,
       "engaged": 2
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 11,
+      "avg_scroll_depth": 53.1,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.94,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -6172,7 +6240,15 @@
       "sessions": 13,
       "engaged": 10
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 32,
+      "avg_scroll_depth": 26.3,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.991,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -6385,7 +6461,15 @@
       "Direct": 2
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 4,
+      "avg_scroll_depth": 50.5,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 1,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -6676,7 +6760,15 @@
       "Direct": 2
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 7,
+      "avg_scroll_depth": 20.3,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.434,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -6914,20 +7006,28 @@
       "sessions": 1,
       "engaged": 1
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 7,
+      "avg_scroll_depth": 40.8,
+      "dead_click_sessions": 2,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": {
       "name": "국산 유기농 귀리 혼합 10곡 잡곡쌀 800g",
-      "orders": 1,
-      "units": 1,
-      "gross": 10769,
-      "net": 10769,
+      "orders": 3,
+      "units": 5,
+      "gross": 53968,
+      "net": 53968,
       "canceled_units": 0
      },
      "sample": "low",
      "derived": {
-      "cvr": 0.1,
-      "revenue_per_session": 1077,
-      "aov": 10769
+      "cvr": 0.3,
+      "revenue_per_session": 5397,
+      "aov": 17989
      }
     },
     "73": {
@@ -7144,9 +7244,29 @@
       "sessions": 7,
       "engaged": 6
      },
-     "clarity": null,
-     "sales": null,
-     "sample": "low"
+     "clarity": {
+      "sessions": 10,
+      "avg_scroll_depth": 37.3,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.888,
+      "truncated": false
+     },
+     "sales": {
+      "name": "김훈하 약사의 하루 한 장 항암 다이어리",
+      "orders": 2,
+      "units": 2,
+      "gross": 32338,
+      "net": 32338,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.1667,
+      "revenue_per_session": 2695,
+      "aov": 16169
+     }
     },
     "40": {
      "name": "[자연하] 스텔라진 3g x 30포",
@@ -7373,7 +7493,15 @@
       "sessions": 7,
       "engaged": 6
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 18,
+      "avg_scroll_depth": 30.8,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.91,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -7577,7 +7705,15 @@
       "sessions": 7,
       "engaged": 4
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 9,
+      "avg_scroll_depth": 33.3,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.933,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -7771,7 +7907,15 @@
       "sessions": 2,
       "engaged": 1
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 4,
+      "avg_scroll_depth": 30.3,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -7882,7 +8026,15 @@
       "Unassigned": 1
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 3,
+      "avg_scroll_depth": 25.5,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -8023,16 +8175,24 @@
       "sessions": 2,
       "engaged": 2
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 1,
+      "avg_scroll_depth": 12.0,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     }
    },
    "unattributed": {
     "ga4_unknown_exit_events": 0,
-    "clarity_unmatched_sessions": 0
+    "clarity_unmatched_sessions": 307
    }
   }
  },
- "built_at": "2026-08-07 17:06:25 KST"
+ "built_at": "2026-08-08 07:00:07 KST"
 }
