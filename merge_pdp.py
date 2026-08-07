@@ -311,6 +311,9 @@ def main():
                 "image_bytes_total": sum(sizes),
                 "devices": devices,
                 "channels": p.get("channels") or {},
+                # 진입 세션과 즉시 이탈. 우리 추적(pdp_exit)보다 앞단이다 —
+                # 태그가 뜨기 전에 나간 사람은 여기에만 잡힌다.
+                "entry": p.get("entry") or {},
                 "clarity": clar.get(pid),
                 "sales": ((cafe24.get(date) or {}).get("products") or {}).get(pid),
                 "sample": "ok" if devices["_all"]["sessions"] >= MIN_SESSIONS else "low",

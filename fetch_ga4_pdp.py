@@ -158,6 +158,22 @@ def fetch_day(date, access=None, prop=None):
         for name, api in sums:
             b[name] = _n(r, api)
 
+    # ---- R8 진입/즉시이탈 ----
+    # "그냥 들어왔다 나가는 사람"은 우리 추적에 안 잡힌다. GTM 태그가 DOM Ready 에
+    # 뜨는데 그 전에 나가버리기 때문이다(pdp_bounce_3s 가 전 상품 0인 이유).
+    # 그래서 세션 단위 GA4 지표를 쓴다 — page_view 기반이라 훨씬 일찍 잡힌다.
+    # landingPage 를 상품번호로 파싱해 상품에 붙인다.
+    for r in _rows(["landingPagePlusQueryString"], ["sessions", "engagedSessions"],
+                   date, None, access, prop):
+        lp = r.get("landingPagePlusQueryString") or ""
+        pid = C.parse_product_no(lp)
+        if not pid:
+            continue
+        p = day["products"].setdefault(pid, {"name": "", "devices": {}})
+        e = p.setdefault("entry", {"sessions": 0, "engaged": 0})
+        e["sessions"] += _n(r, "sessions")
+        e["engaged"] += _n(r, "engagedSessions")
+
     # ---- R7 클릭 영역 ----
     # Clarity 클릭 히트맵은 API 가 없어 매번 사람이 로그인해 읽어야 한다. 같은 정보를
     # 직접 세면 자동으로 쌓인다. 스크립트가 **영역당 세션 1회만** 쏘므로 여기 숫자는

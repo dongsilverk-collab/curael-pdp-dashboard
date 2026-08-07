@@ -161,6 +161,54 @@ CHANNEL_KO = {
 }
 
 
+def entry_block(p):
+    """들어와서 바로 나간 사람 / 남은 사람 / 상세까지 본 사람.
+
+    **분모가 두 개다.** 진입 세션은 GA4 세션 지표(page_view 기반), 아래 단계는 우리
+    추적(pdp_exit). 우리 태그는 DOM Ready 에 뜨므로 그 전에 나간 사람은 진입에만 잡힌다
+    — pdp_bounce_3s 가 전 상품 0으로 나온 이유가 이것이다.
+    두 수를 한 표에 섞어 비율을 내면 틀리므로 단계마다 출처를 밝힌다.
+    """
+    e = p.get("entry") or {}
+    n_entry = e.get("sessions", 0)
+    if not n_entry:
+        return ""
+    engaged = e.get("engaged", 0)
+    bounced = n_entry - engaged
+    a = p["devices"]["_all"]
+    n_tr = a["sessions"]
+    reached = n_tr - a["exit_s00"]
+    s = p.get("sales") or {}
+
+    rows = [
+        ("이 상품으로 들어옴", n_entry, n_entry, "GA4 세션"),
+        ("바로 안 나가고 머묾", engaged, n_entry, "GA4 세션 · 10초 이상 또는 2페이지 이상"),
+        ("상세 이미지까지 봄", reached, n_tr, "우리 추적 · 분모가 위와 다름"),
+        ("끝까지 봄", a["completed"], n_tr, "우리 추적"),
+    ]
+    if s:
+        rows.append(("주문", s.get("orders", 0), n_entry, "카페24 주문"))
+
+    out = ["<h2>들어와서 어디까지 갔나</h2>",
+           '<p class="sub">위 두 줄은 GA4 세션 기준, 아래는 우리 추적 기준이라 '
+           '<b>분모가 다릅니다</b>. 우리 태그는 페이지가 어느 정도 뜬 뒤 실행되므로 '
+           '그 전에 나간 사람은 위 두 줄에만 잡힙니다.</p>',
+           '<div class="scroll"><table><tr><th>단계</th><th>비율</th>'
+           '<th class="num">세션</th><th>출처</th></tr>']
+    for label, v, base, src in rows:
+        out.append('<tr><td>%s</td>'
+                   '<td class="bar">%s<span class="barval">%s</span></td>'
+                   '<td class="num">%s</td><td class="muted">%s</td></tr>'
+                   % (G.esc(label), G.reach_bar((v / base) if base else 0, 0),
+                      G.frac(v, base), f"{v:,}", G.esc(src)))
+    out.append("</table></div>")
+    if n_entry:
+        out.append('<div class="note">들어오자마자 나간 사람이 <b>%s</b>(%d명)입니다. '
+                   '나머지 %d명이 상세페이지에서 머물다 나가거나 삽니다.</div>'
+                   % (G.pct(bounced / n_entry), bounced, engaged))
+    return "".join(out)
+
+
 def zone_block(p):
     """어느 영역을 만졌나. Clarity 클릭 히트맵을 대체한다.
 
@@ -455,6 +503,7 @@ def build_product(pid, p, date, days_collected):
                       G.pct(d["s01_rate"]), G.pct(d["done_rate"])))
     out.append("</table></div>")
 
+    out.append(entry_block(p))
     out.append(zone_block(p))
     out.append(scroll_block(p))
     out.append(channels_block(p))
