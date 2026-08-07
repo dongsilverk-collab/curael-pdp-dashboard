@@ -276,6 +276,7 @@ def main():
             # ver["images"] 는 배너를 뺀 '버전 비교용 이름'이라 그림 붙이기에 쓰면
             # 번호가 밀리고, 게다가 copy-<epoch>- 가 벗겨져 URL 복원도 안 된다.
             imgs = (versions.get(pid) or {}).get("display_urls") or []
+            sizes = (versions.get(pid) or {}).get("image_bytes") or []
             rec["products"][pid] = {
                 "name": p.get("name") or "",
                 "slug": (products.get(pid) or {}).get("slug", ""),
@@ -285,6 +286,8 @@ def main():
                 # 구간 번호 → 실제 이미지. 이게 있어야 "몇 번째에서 나갔나"가
                 # 번호가 아니라 그림으로 보인다.
                 "images": imgs,
+                "image_bytes": sizes,
+                "image_bytes_total": sum(sizes),
                 "devices": devices,
                 "channels": p.get("channels") or {},
                 "clarity": clar.get(pid),
