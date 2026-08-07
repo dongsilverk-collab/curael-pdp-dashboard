@@ -61,14 +61,30 @@ def _derive(bucket, total_sections):
     out["section_reach_pct"] = pct
     out["section_dropoff"] = drop
 
-    # 낙차 순위는 S02부터 센다. S01 낙차에는 '3초 미만 이탈'(유입 품질·광고 소재 불일치)이
-    # 몰리는데 그건 이미지 문제가 아니라 처방이 완전히 다르다. 섞으면 엉뚱한 걸 고치게 된다.
-    cand = {int(k): v for k, v in drop.items() if int(k) >= 2}
-    if cand:
+    # 도달률이 뒤 구간에서 되레 오르면 측정 잡음이다(스크롤은 아래로만 간다).
+    # 레이지 로드가 늦거나 빠르게 지나치면 그 구간 기록이 빠진다.
+    # 잡음이 있으면 도달률 차이로 낸 낙차를 믿을 수 없다는 표시를 남긴다.
+    bumps = sum(1 for k, v in drop.items() if v < -0.02)
+    out["reach_noise"] = bumps
+
+    # 최대 낙차는 pdp_exit 분포에서 고른다.
+    #
+    # 처음엔 도달률 차이로 계산했는데 그건 간접 신호다. 실제로 26번 S05 는 도달률이
+    # 5명 줄어 '최대 낙차'로 뽑혔지만 그 구간에서 세션이 끝난 사람은 0명이었고,
+    # 바로 뒤 S06·S07 에서 도달률이 다시 올라갔다 — 이탈이 아니라 누락이었다.
+    # pdp_exit 은 세션이 어디서 끝났는지를 직접 센다. 질문이 "어디서 나갔나"라면
+    # 직접 센 값을 써야 한다.
+    ex_all = {int(k): v for k, v in (bucket.get("exit_hist") or {}).items()
+              if str(k).isdigit()}
+    # S01 은 제외한다. 3초 미만 이탈(유입 품질·광고 소재 불일치)이 여기 몰리는데
+    # 그건 이미지 문제가 아니라 처방이 완전히 다르다. S00(미도달)도 당연히 제외.
+    cand = {i: n for i, n in ex_all.items()
+            if i >= 2 and (not total_sections or i < total_sections)}
+    if cand and sessions:
         i = max(cand, key=lambda k: cand[k])
         out["biggest_drop_section"] = i
-        out["biggest_drop_rate"] = cand[i]
-        out["biggest_drop_people"] = round(sessions * cand[i])
+        out["biggest_drop_people"] = cand[i]
+        out["biggest_drop_rate"] = round(cand[i] / sessions, 4)
     else:
         out["biggest_drop_section"] = None
         out["biggest_drop_rate"] = 0.0
