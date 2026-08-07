@@ -311,18 +311,22 @@ def build_product(pid, p, date, days_collected):
                    '이미지를 여러 장으로 나누면 어디서 나가는지 볼 수 있습니다.</div>')
         return G.page(p["name"], "".join(out), back=True)
 
-    out.append("<h2>구간별 도달과 낙차</h2>")
-    out.append('<p class="sub">막대의 <span style="color:%s">붉은 조각</span>이 '
-               '그 구간에서 빠져나간 몫입니다. 조각이 클수록 그 이미지에서 많이 나갔습니다.</p>'
-               % G.DROP)
+    out.append("<h2>구간별 도달과 이탈</h2>")
+    out.append('<p class="sub">막대는 도달률, <span style="color:%s">붉은 조각</span>은 '
+               '<b>그 구간을 마지막으로 세션이 끝난 사람</b>(pdp_exit 실측)입니다. '
+               '도달률 계산 차이가 아니라 실제 이탈 지점입니다.</p>' % G.DROP)
     out.append('<div class="scroll"><table><tr>'
                '<th>구간</th><th>이미지</th><th>도달률</th>'
-               '<th class="num">도달</th><th class="num">낙차</th></tr>')
+               '<th class="num">도달</th><th class="num">여기서 나감</th></tr>')
 
+    # 붉은 조각도 pdp_exit 실측으로 그린다. 도달률 차이는 레이지 로드 누락으로
+    # 뒤 구간이 되레 오르는 잡음이 있어(26번 S05 사례) 이탈처럼 보이는 허상을 만든다.
+    exit_hist = {int(k): v for k, v in (a.get("exit_hist") or {}).items()
+                 if str(k).isdigit()}
     imgs = p.get("images") or []
     for i in range(1, total + 1):
         rp = pcts.get(str(i), 0.0)
-        dr = drops.get(str(i), 0.0)
+        left = exit_hist.get(i, 0)
         img = ('<img class="shot" loading="lazy" src="%s" alt="구간 %d">'
                % (G.esc(imgs[i - 1]), i) if i - 1 < len(imgs) else "")
         out.append(
@@ -330,9 +334,16 @@ def build_product(pid, p, date, days_collected):
             '<td class="num">%s</td><td class="num">%s</td></tr>'
             % ("hi" if i == worst else "", i,
                " ◀" if i == worst else "", img,
-               G.reach_bar(rp, dr), G.frac(reach.get(i, 0), n),
-               ("-%s" % G.pct(dr)) if dr > 0 else '<span class="muted">–</span>'))
+               G.reach_bar(rp, (left / n) if n else 0),
+               G.frac(reach.get(i, 0), n),
+               ("%d명" % left) if left else '<span class="muted">–</span>'))
     out.append("</table></div>")
+
+    if (a.get("reach_noise") or 0) >= 2:
+        out.append('<div class="note">도달률이 뒤 구간에서 되레 오르는 곳이 %d군데 '
+                   '있습니다. 이미지 로드가 늦어 기록이 빠진 측정 잡음이니, 도달률의 '
+                   '작은 차이보다 "여기서 나감" 열을 믿으세요.</div>'
+                   % a["reach_noise"])
 
     if worst and days_collected >= ADVICE_MIN_DAYS \
             and a.get("biggest_drop_people", 0) >= ADVICE_MIN_PEOPLE:
