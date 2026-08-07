@@ -181,10 +181,16 @@ def channels_block(p):
 
     un = ch.get("Unassigned", 0) + ch.get("(미분류)", 0)
     if total and un / total > 0.3:
-        out.append('<div class="note"><b>미분류가 %s입니다.</b> GA4가 유입 출처를 '
-                   '분류하지 못한 트래픽으로, 링크에 UTM 파라미터가 없거나 채널 규칙에 '
-                   '걸리지 않아서입니다. 이 비중이 높으면 "어느 광고가 효과 있나"를 '
-                   '이 표로 판단할 수 없습니다.</div>' % G.pct(un / total))
+        # 원인을 구체적으로 적는다. "UTM이 없어서"만으로는 무엇을 고쳐야 할지 모른다.
+        # 실측(2026-08-06): 미분류 세션에는 session_start 이벤트가 아예 없었다.
+        out.append('<div class="note"><b>미분류가 %s입니다.</b> 이 세션들은 GA4에 '
+                   '<b>세션 시작 기록 자체가 없습니다</b> — 유튜브·인스타 앱 안의 '
+                   '브라우저로 들어오면 앱이 유입 출처를 지우기 때문입니다. '
+                   '즉 유튜브 유입이 "영상(자연)"이 아니라 여기 섞여 있을 수 있습니다. '
+                   '영상 설명란·프로필 링크에 UTM을 붙이면 갈라집니다'
+                   '(저장소 <code>UTM_GUIDE.md</code>). '
+                   '지금은 이 표로 채널별 성과를 판단할 수 없습니다.</div>'
+                   % G.pct(un / total))
     return "".join(out)
 
 
