@@ -22,14 +22,18 @@ OUT = "data/pdp_daily.json"
 MIN_SESSIONS = 30      # 이 미만은 순위에서 빼고 '표본 부족'으로 따로 보여준다
 
 
+MILESTONES = (10, 25, 50, 75, 90, 100)
+
+
 def _blank():
-    return {"section_reach": {}, "exit_hist": {}, "events": {}, "exit_events": 0}
+    return {"section_reach": {}, "exit_hist": {}, "events": {},
+            "scroll_reach": {}, "exit_events": 0}
 
 
 def _add(dst, src):
     """기기별 버킷을 합쳐 _all 을 만든다. 합산 로직이 화면에 또 생기지 않도록 여기서 끝낸다."""
     dst["exit_events"] += src.get("exit_events", 0)
-    for key in ("section_reach", "exit_hist", "events"):
+    for key in ("section_reach", "exit_hist", "events", "scroll_reach"):
         for k, v in (src.get(key) or {}).items():
             dst[key][k] = dst[key].get(k, 0) + v
     for k, v in src.items():
@@ -114,6 +118,22 @@ def _derive(bucket, total_sections):
         s = bucket.get("sum_" + name)
         if s is not None and sessions:
             out["avg_" + name] = round(s / sessions, 4)
+
+    # 스크롤 도달 곡선. 구간(이미지 번호)과 달리 픽셀 비율이라 이미지 장수와 무관하게
+    # 상품 간 비교가 된다. 여기도 뒤 지점 값이 더 크면 잡음이므로 단조 보정한다.
+    sc = {int(k): v for k, v in (bucket.get("scroll_reach") or {}).items()
+          if str(k).isdigit()}
+    if sc and sessions:
+        run, curve = 0, {}
+        for m in sorted(MILESTONES, reverse=True):
+            run = max(run, sc.get(m, 0))
+            curve[m] = run
+        out["scroll_curve"] = {str(m): curve[m] for m in sorted(curve)}
+        out["scroll_curve_pct"] = {str(m): round(curve[m] / sessions, 4)
+                                   for m in sorted(curve)}
+    else:
+        out["scroll_curve"] = {}
+        out["scroll_curve_pct"] = {}
 
     ex = {int(k): v for k, v in (bucket.get("exit_hist") or {}).items()
           if str(k).isdigit()}
