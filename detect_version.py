@@ -18,8 +18,10 @@ import hashlib
 import re
 import sys
 import time
+import urllib.error
+import urllib.request
 
-from pdp_common import (MALL_HOST, kst_now, kst_today, load_json,
+from pdp_common import (MALL_HOST, UA, kst_now, kst_today, load_json,
                         http_get_text, save_json)
 
 PRODUCTS_PATH = "data/pdp_products.json"
@@ -83,6 +85,27 @@ def absolutize(src):
     if s.startswith("/"):
         return MALL_HOST + s
     return s
+
+
+def fetch_image_sizes(urls, workers=8):
+    """구간별 이미지 바이트 수. HEAD 요청이라 본문은 안 받는다.
+
+    실패하면 0 을 넣는다 — 0 과 '작다'는 다르므로 화면에서 구분해야 한다.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+
+    def one(u):
+        try:
+            req = urllib.request.Request(u, method="HEAD", headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return int(r.headers.get("content-length") or 0)
+        except Exception:
+            return 0
+
+    if not urls:
+        return []
+    with ThreadPoolExecutor(workers) as ex:
+        return list(ex.map(one, urls))
 
 
 def normalize_one(src):
@@ -221,6 +244,14 @@ def detect(dry_run=False, sleep=1.0):
         # 표시용 URL은 버전의 정체성이 아니라 화면 재료다. 버전이 안 바뀌어도
         # 매 크롤마다 최신으로 덮어쓴다(current 안에 넣으면 버전 고정 시 낡는다).
         entry["display_urls"] = display.get(pno) or []
+
+        # 구간별 이미지 용량. 이게 이탈의 유력한 원인이라 매일 추적한다.
+        #
+        # 2026-08-07 실측: 26번 상세 이미지 20장이 25.4MB, 한 장이 4.8MB였다.
+        # Clarity 스크롤로 보면 상단은 99%가 통과하는데 S02~S05 에서 90%→48% 로
+        # 무너지는데, 그 구간이 무거운 이미지가 시작되는 지점과 정확히 겹친다.
+        # 압축 전후를 비교하려면 용량이 데이터로 남아 있어야 한다.
+        entry["image_bytes"] = fetch_image_sizes(display.get(pno) or [])
 
         if cur and cur.get("struct_hash") == h:
             entry.pop("pending", None)

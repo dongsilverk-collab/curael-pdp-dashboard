@@ -208,13 +208,28 @@ def reading_block(p, date, days_collected):
     total = p.get("section_total") or 0
     notes = []
 
+    # 이미지 무게를 먼저 말한다. 2026-08-07 Clarity 스크롤 실측에서 상단은 99%가
+    # 통과하고 상세 이미지 초반에서 무너지는 것이 확인됐다 — "상단에서 붙잡힌다"는
+    # 앞선 해석은 틀렸다. 원인 후보 1순위는 이미지 용량이다.
+    sizes = p.get("image_bytes") or []
+    heavy = [(i + 1, s) for i, s in enumerate(sizes) if s >= 1024 * 1024]
+    total_mb = sum(sizes) / 1024 / 1024
+    if heavy:
+        notes.append("상세 이미지가 <b>총 %.1fMB</b>이고 그중 <b>%d장이 1MB를 넘습니다</b>"
+                     "(가장 무거운 것 S%02d, %.1fMB). 모바일에서는 이미지가 뜨기 전에 "
+                     "스크롤이 지나가버려, 사용자는 빈 화면을 넘기다 나가고 측정은 "
+                     "'못 봤다'로 기록됩니다. <b>고칠 순서는 이미지 압축이 먼저입니다.</b>"
+                     % (total_mb, len(heavy),
+                        max(heavy, key=lambda x: x[1])[0],
+                        max(s for _, s in heavy) / 1024 / 1024))
+
     if a["s00_rate"] >= 0.4:
-        line = ("세션의 <b>%s</b>가 상세 이미지 영역에 도달하지 못했습니다(%d명). "
-                "첫 이미지가 문제가 아니라 <b>그 위쪽</b>—가격·옵션·리뷰 탭—에서 "
-                "판단이 끝나거나, 유입 소재와 상세 상단이 어긋난다는 뜻입니다."
+        line = ("측정상 세션의 <b>%s</b>가 상세 이미지에 도달하지 못한 것으로 나옵니다"
+                "(%d명). 다만 이 수치는 <b>이미지가 로드되지 않으면 도달로 세지 않는</b> "
+                "방식이라, 실제로는 스크롤했는데 그림이 안 뜬 경우가 섞여 있습니다."
                 % (G.pct(a["s00_rate"]), a["exit_s00"]))
         if a.get("avg_seconds"):
-            line += " 평균 체류가 %d초인데도 그렇습니다." % round(a["avg_seconds"])
+            line += " 평균 체류는 %d초입니다." % round(a["avg_seconds"])
         notes.append(line)
 
     ar = cl.get("active_ratio")
@@ -317,7 +332,8 @@ def build_product(pid, p, date, days_collected):
                '도달률 계산 차이가 아니라 실제 이탈 지점입니다.</p>' % G.DROP)
     out.append('<div class="scroll"><table><tr>'
                '<th>구간</th><th>이미지</th><th>도달률</th>'
-               '<th class="num">여기서 나감</th></tr>')
+               '<th class="num">용량</th><th class="num">여기서 나감</th></tr>')
+    sizes = p.get("image_bytes") or []
 
     # 막대와 숫자를 한 칸에 붙인다. 열을 나누면 숫자가 오른쪽 끝으로 밀려
     # 어느 막대의 값인지 눈이 왕복해야 한다.
@@ -330,14 +346,22 @@ def build_product(pid, p, date, days_collected):
         left = exit_hist.get(i, 0)
         img = ('<img class="shot" loading="lazy" src="%s" alt="구간 %d">'
                % (G.esc(imgs[i - 1]), i) if i - 1 < len(imgs) else "")
+        # 1MB 넘는 이미지는 모바일에서 뜨기 전에 지나쳐진다. 붉게 표시한다.
+        kb = (sizes[i - 1] // 1024) if i - 1 < len(sizes) else 0
+        if not kb:
+            wt = '<span class="muted">–</span>'
+        elif kb >= 1024:
+            wt = '<b style="color:%s">%.1fMB</b>' % (G.DROP, kb / 1024)
+        else:
+            wt = "%dKB" % kb
         out.append(
             '<tr class="%s"><td>S%02d%s</td><td>%s</td>'
             '<td class="bar">%s<span class="barval">%s</span></td>'
-            '<td class="num">%s</td></tr>'
+            '<td class="num">%s</td><td class="num">%s</td></tr>'
             % ("hi" if i == worst else "", i,
                " ◀" if i == worst else "", img,
                G.reach_bar(rp, (left / n) if n else 0),
-               G.frac(mono.get(i, 0), n),
+               G.frac(mono.get(i, 0), n), wt,
                ("%d명" % left) if left else '<span class="muted">–</span>'))
     out.append("</table></div>")
 
