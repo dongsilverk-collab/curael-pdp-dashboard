@@ -161,6 +161,34 @@ CHANNEL_KO = {
 }
 
 
+def zone_block(p):
+    """어느 영역을 만졌나. Clarity 클릭 히트맵을 대체한다.
+
+    숫자는 '그 영역을 건드린 세션 수'다. 총 클릭수가 아니다 — 추적 스크립트가
+    영역당 세션 1회만 쏘기 때문이고, 그래야 소수 사용자의 연타에 안 휘둘린다.
+    """
+    a = p["devices"]["_all"]
+    z = a.get("zone_clicks") or {}
+    n = a["sessions"]
+    if not z or not n:
+        return ""
+    rows = sorted(z.items(), key=lambda kv: -kv[1])
+    out = ["<h2>어느 영역을 만졌나</h2>",
+           '<p class="sub">그 영역을 <b>건드린 세션 수</b>입니다(총 클릭수 아님). '
+           '한 사람이 열 번 눌러도 1로 셉니다.</p>',
+           '<div class="scroll"><table><tr><th>영역</th><th>비율</th>'
+           '<th class="num">세션</th></tr>']
+    top = rows[0][1] if rows else 1
+    for name, c in rows:
+        out.append('<tr><td>%s</td>'
+                   '<td class="bar">%s<span class="barval">%s</span></td>'
+                   '<td class="num">%s</td></tr>'
+                   % (G.esc(name), G.reach_bar(c / top, 0),
+                      G.pct(c / n), f"{c:,}"))
+    out.append("</table></div>")
+    return "".join(out)
+
+
 def scroll_block(p):
     """스크롤 도달 곡선. Clarity 대시보드의 '데이터 스크롤' 표와 같은 성격.
 
@@ -427,6 +455,7 @@ def build_product(pid, p, date, days_collected):
                       G.pct(d["s01_rate"]), G.pct(d["done_rate"])))
     out.append("</table></div>")
 
+    out.append(zone_block(p))
     out.append(scroll_block(p))
     out.append(channels_block(p))
     out.append(reading_block(p, date, days_collected))

@@ -32,6 +32,7 @@ D_NAME = "customEvent:pdp_product_name"
 D_SECTION = "customEvent:pdp_section_label"
 D_EXIT = "customEvent:pdp_exit_label"
 D_PERCENT = "customEvent:pdp_percent"   # 2026-08-07 등록. 그 이전 데이터는 비어 있다.
+D_ZONE = "customEvent:pdp_zone"         # 2026-08-07 등록. GTM 게시 후부터 값이 들어온다.
 D_DEVICE = "deviceCategory"
 
 # 합계로 돌아오는 맞춤 측정항목. 평균은 여기서 내지 않고 merge 단계에서 eventCount로 나눈다.
@@ -156,6 +157,21 @@ def fetch_day(date, access=None, prop=None):
         b["exit_events"] = _n(r, "eventCount")
         for name, api in sums:
             b[name] = _n(r, api)
+
+    # ---- R7 클릭 영역 ----
+    # Clarity 클릭 히트맵은 API 가 없어 매번 사람이 로그인해 읽어야 한다. 같은 정보를
+    # 직접 세면 자동으로 쌓인다. 스크립트가 **영역당 세션 1회만** 쏘므로 여기 숫자는
+    # '몇 명이 그 영역을 건드렸나'다. 총 클릭수가 아니다 — 소수 사용자의 연타에
+    # 휘둘리지 않게 하려는 의도적 선택이다.
+    for r in _rows([D_PRODUCT, D_ZONE, D_DEVICE], ["eventCount"],
+                   date, "pdp_zone_click", access, prop):
+        pid = r.get(D_PRODUCT) or ""
+        z = (r.get(D_ZONE) or "").strip()
+        if not pid or not z or z.startswith("("):
+            continue
+        b = bucket(pid, r.get(D_DEVICE) or "unknown")
+        b.setdefault("zone_clicks", {})
+        b["zone_clicks"][z] = b["zone_clicks"].get(z, 0) + _n(r, "eventCount")
 
     # ---- R6 스크롤 도달 곡선 ----
     # Clarity 대시보드의 '데이터 스크롤' 표와 같은 성격인데, 그 표는 API 로 못 받는다

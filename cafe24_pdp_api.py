@@ -95,7 +95,7 @@ def get_access_token():
         with urllib.request.urlopen(req, timeout=20) as r:
             new = json.loads(r.read().decode())
     except urllib.error.HTTPError as e:
-        raise Cafe24Error("토큰 갱신 실패: %s" % e.read().decode("replace")[:300])
+        raise Cafe24Error("토큰 갱신 실패: %s" % e.read().decode("utf-8", "replace")[:300])
     _save_token(new)
     return new["access_token"]
 
@@ -112,7 +112,7 @@ def get(path, params, tries=4):
                 time.sleep(0.7)          # 레이트리밋 예방
                 return json.loads(r.read().decode())
         except urllib.error.HTTPError as e:
-            body = e.read().decode("replace")
+            body = e.read().decode("utf-8", "replace")
             if e.code == 429 and attempt < tries - 1:
                 time.sleep(10 * (attempt + 1))
                 continue
@@ -161,7 +161,7 @@ def exchange_code(code):
             tok = json.loads(r.read().decode())
     except urllib.error.HTTPError as e:
         raise Cafe24Error("코드 교환 실패(1분 지났을 수 있음): %s"
-                          % e.read().decode("replace")[:300])
+                          % e.read().decode("utf-8", "replace")[:300])
     _save_token(tok)
     return tok
 
