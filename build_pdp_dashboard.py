@@ -151,6 +151,106 @@ def build_index(date, rec, days_collected):
     return G.page("큐라엘몰 상세페이지 이탈 분석", "".join(out))
 
 
+CHANNEL_KO = {
+    "Direct": "직접 방문", "Organic Search": "검색(자연)", "Paid Search": "검색(광고)",
+    "Organic Social": "SNS(자연)", "Paid Social": "SNS(광고)",
+    "Organic Video": "영상(자연)", "Paid Video": "영상(광고)",
+    "Organic Shopping": "쇼핑(자연)", "Paid Shopping": "쇼핑(광고)",
+    "Cross-network": "크로스네트워크", "Email": "이메일", "Referral": "타사이트 유입",
+    "Unassigned": "미분류", "(미분류)": "미분류",
+}
+
+
+def channels_block(p):
+    """유입 채널. '미도달 61%'를 해석하려면 누가 왔는지를 알아야 한다."""
+    ch = p.get("channels") or {}
+    if not ch:
+        return ""
+    total = sum(ch.values())
+    rows = sorted(ch.items(), key=lambda kv: -kv[1])
+    out = ["<h2>어디서 들어왔나</h2>",
+           '<div class="scroll"><table><tr><th>유입 채널</th>'
+           '<th class="num">세션</th><th class="num">비중</th></tr>']
+    for name, n in rows:
+        ko = CHANNEL_KO.get(name, name)
+        dim = ' class="dim"' if name in ("Unassigned", "(미분류)") else ""
+        out.append('<tr%s><td>%s</td><td class="num">%s</td>'
+                   '<td class="num">%s</td></tr>'
+                   % (dim, G.esc(ko), f"{n:,}", G.pct(n / total) if total else "–"))
+    out.append("</table></div>")
+
+    un = ch.get("Unassigned", 0) + ch.get("(미분류)", 0)
+    if total and un / total > 0.3:
+        out.append('<div class="note"><b>미분류가 %s입니다.</b> GA4가 유입 출처를 '
+                   '분류하지 못한 트래픽으로, 링크에 UTM 파라미터가 없거나 채널 규칙에 '
+                   '걸리지 않아서입니다. 이 비중이 높으면 "어느 광고가 효과 있나"를 '
+                   '이 표로 판단할 수 없습니다.</div>' % G.pct(un / total))
+    return "".join(out)
+
+
+def reading_block(p, date, days_collected):
+    """관찰 메모. 처방이 아니라 '지금 숫자가 무엇을 말하는가'만 적는다.
+
+    문장을 손으로 쓰지 않고 데이터에서 생성하는 이유: 손으로 쓰면 다음 날 숫자가
+    바뀌어도 문장이 그대로 남아 거짓말이 된다.
+    """
+    a = p["devices"]["_all"]
+    n = a["sessions"]
+    if not n:
+        return ""
+    cl = p.get("clarity") or {}
+    total = p.get("section_total") or 0
+    notes = []
+
+    if a["s00_rate"] >= 0.4:
+        line = ("세션의 <b>%s</b>가 상세 이미지 영역에 도달하지 못했습니다(%d명). "
+                "첫 이미지가 문제가 아니라 <b>그 위쪽</b>—가격·옵션·리뷰 탭—에서 "
+                "판단이 끝나거나, 유입 소재와 상세 상단이 어긋난다는 뜻입니다."
+                % (G.pct(a["s00_rate"]), a["exit_s00"]))
+        if a.get("avg_seconds"):
+            line += " 평균 체류가 %d초인데도 그렇습니다." % round(a["avg_seconds"])
+        notes.append(line)
+
+    ar = cl.get("active_ratio")
+    if ar is not None and a.get("avg_seconds"):
+        if ar >= 0.8:
+            notes.append("활동 비율이 <b>%s</b>로 높습니다. 창만 켜두고 자리를 뜬 게 "
+                         "아니라 실제로 페이지를 보고 있었다는 뜻이라, 위의 체류시간은 "
+                         "실제 검토 시간으로 읽어도 됩니다." % G.pct(ar))
+        elif ar < 0.5:
+            notes.append("활동 비율이 <b>%s</b>로 낮습니다. 체류시간이 길어도 상당수는 "
+                         "창을 켜둔 채 방치한 것이라 체류시간을 관심도로 읽으면 안 됩니다."
+                         % G.pct(ar))
+
+    if total > 1 and a.get("biggest_drop_section"):
+        notes.append("구간 중에서는 <b>S%02d</b>의 낙차가 가장 큽니다(%s, %d명). "
+                     "다만 S01 낙차는 3초 미만 이탈이 섞이므로 순위에서 제외했습니다."
+                     % (a["biggest_drop_section"], G.pct(a["biggest_drop_rate"]),
+                        a["biggest_drop_people"]))
+
+    dead = cl.get("dead_click_sessions", 0)
+    rage = cl.get("rage_click_sessions", 0)
+    if cl.get("sessions"):
+        if rage == 0 and dead <= max(2, cl["sessions"] * 0.05):
+            notes.append("분노 클릭 %d건·데드 클릭 %d건으로 <b>조작 상의 막힘은 "
+                         "관찰되지 않았습니다</b>. 이탈 원인을 버튼 오작동 쪽에서 찾을 "
+                         "필요는 없어 보입니다." % (rage, dead))
+        elif rage > 0:
+            notes.append("분노 클릭이 <b>%d세션</b>에서 발생했습니다. 눌리지 않는 요소가 "
+                         "있을 수 있으니 세션 리플레이로 확인할 값어치가 있습니다." % rage)
+
+    if not notes:
+        return ""
+
+    head = ("<h2>지금 숫자가 말하는 것</h2>"
+            '<p class="sub">아래는 관찰이지 처방이 아닙니다. '
+            '%s</p>'
+            % ("표본이 %d세션·수집 %d일차라 방향만 참고하세요."
+               % (n, days_collected) if days_collected < ADVICE_MIN_DAYS
+               else "수집 %d일차 기준입니다." % days_collected))
+    return head + "".join('<div class="note">%s</div>' % t for t in notes)
+
+
 def build_product(pid, p, date, days_collected):
     a = p["devices"]["_all"]
     n = a["sessions"]
@@ -181,6 +281,10 @@ def build_product(pid, p, date, days_collected):
                          "주문 %d건 · 세션당 %s원"
                          % (s["orders"], f"{dv.get('revenue_per_session', 0):,}")))
     cl = p.get("clarity")
+    if cl and cl.get("active_ratio") is not None:
+        # 체류시간만으로는 '보는 중'과 '켜두고 딴짓'이 구분되지 않는다.
+        out.append(G.kpi("활동 비율", G.pct(cl["active_ratio"]),
+                         "총 체류 중 실제로 움직인 시간"))
     if cl:
         # 분노/데드클릭은 '그 행동이 일어난 세션 수'다. 세션 수 자체가 아니다.
         out.append(G.kpi("Clarity 스크롤", "%s%%" % cl.get("avg_scroll_depth", "–"),
@@ -242,6 +346,9 @@ def build_product(pid, p, date, days_collected):
                    % (G.esc(dev), f"{d['sessions']:,}", G.pct(d["s00_rate"]),
                       G.pct(d["s01_rate"]), G.pct(d["done_rate"])))
     out.append("</table></div>")
+
+    out.append(channels_block(p))
+    out.append(reading_block(p, date, days_collected))
 
     out.append('<footer>도달률의 분모는 pdp_exit 건수(상세페이지를 연 세션)입니다. '
                'S00은 상세 이미지 영역에 도달하지 못한 세션으로, 첫 이미지 문제가 아니라 '
