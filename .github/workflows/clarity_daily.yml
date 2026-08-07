@@ -10,7 +10,13 @@ name: clarity daily
 
 on:
   schedule:
-    - cron: "20 15 * * *"     # 15:20 UTC = 00:20 KST
+    - cron: "20 15 * * *"     # 15:20 UTC = 00:20 KST  ← 본 실행
+    # 재시도 2회. GitHub 예약 실행은 지연되거나 아예 실패한다 —
+    # 2026-08-07 02:02 실행은 "job was not acquired by Runner" 로 죽었고,
+    # Clarity 는 3일 뒤 영구 소실이라 놓치면 복구가 안 된다.
+    # --only-if-stale-hours 가드 덕분에 본 실행이 성공했으면 이 둘은 호출 없이 끝난다.
+    - cron: "20 18 * * *"     # 03:20 KST
+    - cron: "20 22 * * *"     # 07:20 KST
   workflow_dispatch:
 
 concurrency:
@@ -35,7 +41,9 @@ jobs:
       - name: Collect Clarity snapshots
         env:
           CLARITY_API_TOKEN: ${{ secrets.CLARITY_API_TOKEN }}
-        run: python fetch_clarity_pdp.py
+        # 6시간 안에 이미 받았으면 호출하지 않는다. 하루 10회 예산을 재시도가
+        # 태워버리면 정작 사람이 수동 조회할 몫이 없어진다.
+        run: python fetch_clarity_pdp.py --only-if-stale-hours 6
 
       - name: Commit
         run: |
