@@ -108,6 +108,11 @@ th,td{padding:9px 11px;text-align:left;border-bottom:1px solid #EEF2F1;
  white-space:nowrap;vertical-align:middle}
 th{font-size:11px;color:#6B7876;font-weight:600;background:#FBFCFC}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+/* 막대와 값을 한 칸에 나란히 — 열을 나누면 숫자가 오른쪽 끝으로 밀려
+   어느 막대의 값인지 확인하려고 눈이 좌우로 왕복하게 된다. */
+td.bar{white-space:nowrap}
+td.bar svg{vertical-align:middle}
+.barval{margin-left:9px;font-variant-numeric:tabular-nums;color:#3D4C49}
 tr:last-child td{border-bottom:0}
 a{color:#15776A;text-decoration:none}
 a:hover{text-decoration:underline}

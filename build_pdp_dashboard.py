@@ -317,12 +317,13 @@ def build_product(pid, p, date, days_collected):
                '도달률 계산 차이가 아니라 실제 이탈 지점입니다.</p>' % G.DROP)
     out.append('<div class="scroll"><table><tr>'
                '<th>구간</th><th>이미지</th><th>도달률</th>'
-               '<th class="num">도달</th><th class="num">여기서 나감</th></tr>')
+               '<th class="num">여기서 나감</th></tr>')
 
-    # 붉은 조각도 pdp_exit 실측으로 그린다. 도달률 차이는 레이지 로드 누락으로
-    # 뒤 구간이 되레 오르는 잡음이 있어(26번 S05 사례) 이탈처럼 보이는 허상을 만든다.
+    # 막대와 숫자를 한 칸에 붙인다. 열을 나누면 숫자가 오른쪽 끝으로 밀려
+    # 어느 막대의 값인지 눈이 왕복해야 한다.
     exit_hist = {int(k): v for k, v in (a.get("exit_hist") or {}).items()
                  if str(k).isdigit()}
+    mono = {int(k): v for k, v in (a.get("section_reach_mono") or {}).items()}
     imgs = p.get("images") or []
     for i in range(1, total + 1):
         rp = pcts.get(str(i), 0.0)
@@ -330,20 +331,24 @@ def build_product(pid, p, date, days_collected):
         img = ('<img class="shot" loading="lazy" src="%s" alt="구간 %d">'
                % (G.esc(imgs[i - 1]), i) if i - 1 < len(imgs) else "")
         out.append(
-            '<tr class="%s"><td>S%02d%s</td><td>%s</td><td>%s</td>'
-            '<td class="num">%s</td><td class="num">%s</td></tr>'
+            '<tr class="%s"><td>S%02d%s</td><td>%s</td>'
+            '<td class="bar">%s<span class="barval">%s</span></td>'
+            '<td class="num">%s</td></tr>'
             % ("hi" if i == worst else "", i,
                " ◀" if i == worst else "", img,
                G.reach_bar(rp, (left / n) if n else 0),
-               G.frac(reach.get(i, 0), n),
+               G.frac(mono.get(i, 0), n),
                ("%d명" % left) if left else '<span class="muted">–</span>'))
     out.append("</table></div>")
 
-    if (a.get("reach_noise") or 0) >= 2:
-        out.append('<div class="note">도달률이 뒤 구간에서 되레 오르는 곳이 %d군데 '
-                   '있습니다. 이미지 로드가 늦어 기록이 빠진 측정 잡음이니, 도달률의 '
-                   '작은 차이보다 "여기서 나감" 열을 믿으세요.</div>'
-                   % a["reach_noise"])
+    rep = a.get("reach_repaired_sections") or 0
+    if rep:
+        out.append('<div class="note"><b>도달률은 보정된 값입니다.</b> 상세 이미지가 '
+                   '늦게 로드되면 그 구간이 "안 본 것"으로 빠지고, 자리를 차지하지 않아 '
+                   '뒤 구간이 부풀어 곡선이 되레 올라갑니다. <b>S18을 봤다면 S14 자리는 '
+                   '반드시 지나갔다</b>는 제약으로 %d개 구간을 메웠습니다. '
+                   '보정 전 원본은 <code>data/pdp_daily.json</code>의 '
+                   '<code>section_reach</code>에 그대로 있습니다.</div>' % rep)
 
     if worst and days_collected >= ADVICE_MIN_DAYS \
             and a.get("biggest_drop_people", 0) >= ADVICE_MIN_PEOPLE:
