@@ -27,13 +27,14 @@ MILESTONES = (10, 25, 50, 75, 90, 100)
 
 def _blank():
     return {"section_reach": {}, "exit_hist": {}, "events": {},
-            "scroll_reach": {}, "exit_events": 0}
+            "scroll_reach": {}, "zone_clicks": {}, "exit_events": 0}
 
 
 def _add(dst, src):
     """기기별 버킷을 합쳐 _all 을 만든다. 합산 로직이 화면에 또 생기지 않도록 여기서 끝낸다."""
     dst["exit_events"] += src.get("exit_events", 0)
-    for key in ("section_reach", "exit_hist", "events", "scroll_reach"):
+    for key in ("section_reach", "exit_hist", "events", "scroll_reach",
+                "zone_clicks"):
         for k, v in (src.get(key) or {}).items():
             dst[key][k] = dst[key].get(k, 0) + v
     for k, v in src.items():
