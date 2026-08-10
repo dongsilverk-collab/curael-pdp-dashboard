@@ -108,6 +108,49 @@ def fetch_image_sizes(urls, workers=8):
         return list(ex.map(one, urls))
 
 
+def _img_size(url):
+    """이미지 픽셀 크기를 헤더만 읽어서 알아낸다. 본문 전체를 받지 않는다.
+
+    구간이 상세영역의 몇 % 지점인지 계산하려면 각 이미지의 세로 길이가 필요하다.
+    상세 이미지는 전부 컨테이너 폭에 맞춰 늘어나므로 **화면에서의 높이 비율은
+    height/width 에만 좌우된다** — 기기 폭과 무관해서 한 번 재두면 어디서나 쓸 수 있다.
+    """
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Range": "bytes=0-4095"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            b = r.read(4096)
+    except Exception:
+        return None
+
+    try:
+        if b[:8] == b"\x89PNG\r\n\x1a\n":
+            return (int.from_bytes(b[16:20], "big"), int.from_bytes(b[20:24], "big"))
+        if b[:3] == b"GIF":
+            return (int.from_bytes(b[6:8], "little"), int.from_bytes(b[8:10], "little"))
+        if b[:2] == b"\xff\xd8":                      # JPEG — SOFn 마커를 찾는다
+            i = 2
+            while i < len(b) - 9:
+                if b[i] != 0xFF:
+                    i += 1
+                    continue
+                m = b[i + 1]
+                if 0xC0 <= m <= 0xCF and m not in (0xC4, 0xC8, 0xCC):
+                    return (int.from_bytes(b[i + 7:i + 9], "big"),
+                            int.from_bytes(b[i + 5:i + 7], "big"))
+                i += 2 + int.from_bytes(b[i + 2:i + 4], "big")
+    except Exception:
+        pass
+    return None
+
+
+def fetch_image_dims(urls, workers=8):
+    from concurrent.futures import ThreadPoolExecutor
+    if not urls:
+        return []
+    with ThreadPoolExecutor(workers) as ex:
+        return [list(d) if d else None for d in ex.map(_img_size, urls)]
+
+
 def normalize_one(src):
     """비교용 이름으로 정규화.
 
@@ -252,6 +295,7 @@ def detect(dry_run=False, sleep=1.0):
         # 무너지는데, 그 구간이 무거운 이미지가 시작되는 지점과 정확히 겹친다.
         # 압축 전후를 비교하려면 용량이 데이터로 남아 있어야 한다.
         entry["image_bytes"] = fetch_image_sizes(display.get(pno) or [])
+        entry["image_dims"] = fetch_image_dims(display.get(pno) or [])
 
         if cur and cur.get("struct_hash") == h:
             entry.pop("pending", None)

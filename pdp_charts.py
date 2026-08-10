@@ -113,6 +113,11 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 td.bar{white-space:nowrap}
 td.bar svg{vertical-align:middle}
 .barval{margin-left:9px;font-variant-numeric:tabular-nums;color:#3D4C49}
+/* 스크롤 도달 지점 표시. 구간 위치와 스크롤 %가 같은 좌표계(상세영역 기준)라
+   바로 겹쳐 놓을 수 있다. Clarity 평균은 페이지 전체 기준이라 여기 못 얹는다. */
+.mark{margin-top:5px;font-size:11px;color:#8A6D3B;background:#FCF3E3;
+ border-left:3px solid #E0A94A;padding:2px 7px;border-radius:0 3px 3px 0;
+ display:block;white-space:normal;max-width:210px;line-height:1.35}
 tr:last-child td{border-bottom:0}
 a{color:#15776A;text-decoration:none}
 a:hover{text-decoration:underline}

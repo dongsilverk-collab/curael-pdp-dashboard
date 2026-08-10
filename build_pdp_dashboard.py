@@ -451,6 +451,19 @@ def build_product(pid, p, date, days_collected):
                  if str(k).isdigit()}
     mono = {int(k): v for k, v in (a.get("section_reach_mono") or {}).items()}
     imgs = p.get("images") or []
+
+    # 스크롤 도달 지점이 어느 구간에 떨어지는지 표시한다.
+    # 우리 pdp_scroll 은 상세영역 기준이고 구간 위치도 상세영역 기준이라 바로 겹친다.
+    # (Clarity 의 평균 스크롤은 **페이지 전체** 기준이라 좌표계가 달라 여기 못 얹는다.)
+    spans = p.get("section_spans") or []
+    curve_pct = a.get("scroll_curve_pct") or {}
+    marks = {}
+    for pctkey, share in sorted(curve_pct.items(), key=lambda kv: int(kv[0])):
+        pos = int(pctkey) / 100.0
+        for i, sp in enumerate(spans, 1):
+            if sp[0] <= pos < sp[1] or (i == len(spans) and pos >= sp[0]):
+                marks.setdefault(i, []).append((int(pctkey), share))
+                break
     for i in range(1, total + 1):
         rp = pcts.get(str(i), 0.0)
         left = exit_hist.get(i, 0)
@@ -464,14 +477,17 @@ def build_product(pid, p, date, days_collected):
             wt = '<b style="color:%s">%.1fMB</b>' % (G.DROP, kb / 1024)
         else:
             wt = "%dKB" % kb
+        mk = "".join(
+            '<div class="mark">스크롤 %d%% 지점 · 여기까지 온 사람 %s</div>'
+            % (pc, G.pct(sh)) for pc, sh in marks.get(i, []))
         out.append(
             '<tr class="%s"><td>S%02d%s</td><td>%s</td>'
-            '<td class="bar">%s<span class="barval">%s</span></td>'
+            '<td class="bar">%s<span class="barval">%s</span>%s</td>'
             '<td class="num">%s</td><td class="num">%s</td></tr>'
             % ("hi" if i == worst else "", i,
                " ◀" if i == worst else "", img,
                G.reach_bar(rp, (left / n) if n else 0),
-               G.frac(mono.get(i, 0), n), wt,
+               G.frac(mono.get(i, 0), n), mk, wt,
                ("%d명" % left) if left else '<span class="muted">–</span>'))
     out.append("</table></div>")
 

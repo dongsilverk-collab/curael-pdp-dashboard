@@ -299,6 +299,17 @@ def main():
             # 번호가 밀리고, 게다가 copy-<epoch>- 가 벗겨져 URL 복원도 안 된다.
             imgs = (versions.get(pid) or {}).get("display_urls") or []
             sizes = (versions.get(pid) or {}).get("image_bytes") or []
+            dims = (versions.get(pid) or {}).get("image_dims") or []
+            # 구간이 상세영역의 몇 % 지점에서 시작·끝나는지. 상세 이미지는 전부
+            # 컨테이너 폭에 맞춰 늘어나므로 화면 높이 비율은 height/width 만으로 정해진다
+            # — 기기 폭과 무관해서 한 번 재두면 어디서나 유효하다.
+            ratios = [(d[1] / d[0]) if (d and d[0]) else 0 for d in dims]
+            tot_r = sum(ratios)
+            spans, acc = [], 0.0
+            for r_ in ratios:
+                spans.append([round(acc / tot_r, 4) if tot_r else 0,
+                              round((acc + r_) / tot_r, 4) if tot_r else 0])
+                acc += r_
             rec["products"][pid] = {
                 "name": p.get("name") or "",
                 "slug": (products.get(pid) or {}).get("slug", ""),
@@ -309,6 +320,7 @@ def main():
                 # 번호가 아니라 그림으로 보인다.
                 "images": imgs,
                 "image_bytes": sizes,
+                "section_spans": spans,
                 "image_bytes_total": sum(sizes),
                 "devices": devices,
                 "channels": p.get("channels") or {},
@@ -380,13 +392,15 @@ def build_period(days, n):
                                   "url": p["url"], "section_total": p["section_total"],
                                   "version": p["version"], "images": p.get("images") or [],
                                   "image_bytes": p.get("image_bytes") or [],
+                                  "section_spans": p.get("section_spans") or [],
                                   "image_bytes_total": p.get("image_bytes_total", 0)})
             # 이름·이미지는 최신 날짜 것으로 갱신한다(상품명이나 이미지가 바뀔 수 있다).
             meta[pid].update({"name": p["name"] or meta[pid]["name"],
                               "section_total": p["section_total"] or meta[pid]["section_total"],
                               "version": p["version"],
                               "images": p.get("images") or meta[pid]["images"],
-                              "image_bytes": p.get("image_bytes") or meta[pid]["image_bytes"]})
+                              "image_bytes": p.get("image_bytes") or meta[pid]["image_bytes"],
+                              "section_spans": p.get("section_spans") or meta[pid]["section_spans"]})
             for c, v in (p.get("channels") or {}).items():
                 chans.setdefault(pid, {})[c] = chans.setdefault(pid, {}).get(c, 0) + v
             e = p.get("entry") or {}
