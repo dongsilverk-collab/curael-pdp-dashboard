@@ -16,7 +16,7 @@ on:
     # Clarity 는 3일 뒤 영구 소실이라 놓치면 복구가 안 된다.
     # --only-if-stale-hours 가드 덕분에 본 실행이 성공했으면 이 둘은 호출 없이 끝난다.
     - cron: "20 18 * * *"     # 03:20 KST
-    - cron: "20 22 * * *"     # 07:20 KST
+    - cron: "20 21 * * *"     # 06:20 KST — pdp daily(07:20)와 겹치지 않게 앞당김
   workflow_dispatch:
 
 concurrency:
@@ -43,8 +43,6 @@ jobs:
           CLARITY_API_TOKEN: ${{ secrets.CLARITY_API_TOKEN }}
         # 6시간 안에 이미 받았으면 호출하지 않는다. 하루 10회 예산을 재시도가
         # 태워버리면 정작 사람이 수동 조회할 몫이 없어진다.
-        # 6시간 안에 이미 받았으면 호출하지 않는다. 하루 10회 예산을 재시도가
-        # 태워버리면 정작 사람이 수동 조회할 몫이 없어진다.
         # 건너뛴 경우를 커밋 단계가 실패로 오인하지 않도록 표시를 남긴다.
         run: |
           out=$(python fetch_clarity_pdp.py --only-if-stale-hours 6 | tee /dev/stderr)
@@ -69,4 +67,14 @@ jobs:
             exit 0
           fi
           git commit -m "Clarity snapshot $(TZ=Asia/Seoul date +%F)"
-          git push
+          # 다른 워크플로가 먼저 push 하면 거부된다. 실제로 2026-08-10 07:53 실행이
+          # 07:52 의 pdp daily 와 부딪혀 그날 Clarity 수집분이 통째로 날아갔다.
+          # Clarity 는 3일 뒤 영구 소실이라 push 실패를 그냥 두면 안 된다.
+          for i in 1 2 3 4 5; do
+            if git push; then echo "push 성공 ($i회차)"; exit 0; fi
+            echo "push 거부 — 원격을 받아 다시 얹는다 ($i/5)"
+            git pull --rebase --autostash origin master || true
+            sleep $((i * 5))
+          done
+          echo "::error::5회 시도했으나 push 실패. Clarity 데이터가 유실될 수 있다"
+          exit 1

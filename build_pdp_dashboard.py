@@ -53,12 +53,12 @@ def build_index(date, rec, days_collected):
                if p.get("clarity") and p["clarity"].get("avg_scroll_depth")]
 
     out = ["<h1>큐라엘몰 상세페이지 이탈 분석</h1>",
-           '<p class="sub">%s 기준 · 수집 %d일차 · 생성 %s</p>'
+           '<p class="sub">%s 합산 · %d일치 · 생성 %s</p>'
            % (date, days_collected, C.kst_now().strftime("%m-%d %H:%M"))]
 
     if days_collected < ADVICE_MIN_DAYS:
         out.append(
-            '<div class="note"><b>수집 %d일차입니다.</b> 방향만 참고하세요. '
+            '<div class="note"><b>수집 %d일치입니다.</b> 방향만 참고하세요. '
             '표본이 쌓이기 전의 숫자로 상세페이지를 고치면 엉뚱한 곳을 고치게 됩니다. '
             '처방은 7일치가 모이면 표시됩니다.</div>' % days_collected)
 
@@ -522,13 +522,19 @@ def main():
         print("%s 가 비어 있다. merge_pdp.py 를 먼저 돌릴 것." % SRC, file=sys.stderr)
         return 1
 
-    date = sorted(days)[-1]
-    rec = days[date]
+    # 하루치가 아니라 기간 합산을 그린다.
+    #
+    # 예전엔 sorted(days)[-1] 로 '가장 최근 하루'만 썼는데, 수집이 07:20에 도니까
+    # 화면에는 몇 시간치(8세션짜리 표)만 떴다. 며칠 모은 데이터가 통째로 안 보이고
+    # 표본도 판단하기엔 너무 작았다.
+    period = data.get("period") or {}
+    rec = period if period.get("products") else days[sorted(days)[-1]]
+    date = period.get("range") or sorted(days)[-1]
 
     # 상품이 하나도 안 잡힌 날은 세지 않는다. GA4 수집기가 최근 4일을 되받아오므로
-    # 추적을 심기 전 날짜까지 들어오는데, 그걸 세면 "수집 4일차"가 되어
-    # 7일 게이트가 일찍 열리고 근거 없는 처방이 나간다.
-    n_days = sum(1 for d in days.values() if d.get("products"))
+    # 추적을 심기 전 날짜까지 들어오는데, 그걸 세면 게이트가 일찍 열려
+    # 근거 없는 처방이 나간다.
+    n_days = period.get("days_count") or sum(1 for d in days.values() if d.get("products"))
     os.makedirs(OUT, exist_ok=True)
 
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:

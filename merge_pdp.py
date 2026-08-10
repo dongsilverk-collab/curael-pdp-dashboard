@@ -20,6 +20,7 @@ CAFE24 = "data/cafe24_pdp_history.json"   # 아직 수집기 없음. 없으면 �
 OUT = "data/pdp_daily.json"
 
 MIN_SESSIONS = 30      # 이 미만은 순위에서 빼고 '표본 부족'으로 따로 보여준다
+PERIOD_DAYS = 7        # 화면 기본값. 하루치는 표본이 너무 작아 판단이 안 된다
 
 
 MILESTONES = (10, 25, 50, 75, 90, 100)
@@ -338,9 +339,123 @@ def main():
               % (date, len(rec["products"]), n_low,
                  rec["sources"]["clarity"], rec["sources"]["cafe24"]))
 
+    # ---- 기간 합산 ----
+    # 화면이 '가장 최근 하루'만 그리면 오전에는 몇 시간치만 보인다. 실제로 07:20 실행
+    # 직후 화면에 8세션짜리 표가 떠서 "여태 모은 정보가 어디 갔냐"는 말이 나왔다.
+    # 하루 단위는 표본이 너무 작아 판단도 안 된다. 기간 합산을 정본으로 삼는다.
+    out["period"] = build_period(out["days"], PERIOD_DAYS)
     C.save_json(OUT, out)
-    print("%s 저장 — %d일치" % (OUT, len(out["days"])))
+    print("%s 저장 — %d일치 (기간 합산 %s)"
+          % (OUT, len(out["days"]), out["period"]["range"]))
     return 0
+
+
+def build_period(days, n):
+    """최근 n일(데이터가 있는 날 기준)을 하나로 합친다.
+
+    합산은 원천 카운터에서 다시 한다. 일별로 낸 비율을 평균 내면 '평균의 평균'이 되어
+    세션이 적은 날이 과대 반영된다.
+    """
+    dated = [d for d in sorted(days) if days[d].get("products")]
+    use = dated[-n:]
+    if not use:
+        return {"range": "-", "dates": [], "products": {}, "sources": {},
+                "unattributed": {}}
+
+    prods, chans, entries, sales, meta = {}, {}, {}, {}, {}
+    un = {"ga4_unknown_exit_events": 0, "clarity_unmatched_sessions": 0}
+    clar = {}
+    for d in use:
+        rec = days[d]
+        for k in un:
+            un[k] += (rec.get("unattributed") or {}).get(k, 0)
+        for pid, p in rec["products"].items():
+            devs = prods.setdefault(pid, {})
+            for dev, b in p["devices"].items():
+                if dev == "_all":
+                    continue
+                dst = devs.setdefault(dev, _blank())
+                _add(dst, b)
+            meta.setdefault(pid, {"name": p["name"], "slug": p.get("slug", ""),
+                                  "url": p["url"], "section_total": p["section_total"],
+                                  "version": p["version"], "images": p.get("images") or [],
+                                  "image_bytes": p.get("image_bytes") or [],
+                                  "image_bytes_total": p.get("image_bytes_total", 0)})
+            # 이름·이미지는 최신 날짜 것으로 갱신한다(상품명이나 이미지가 바뀔 수 있다).
+            meta[pid].update({"name": p["name"] or meta[pid]["name"],
+                              "section_total": p["section_total"] or meta[pid]["section_total"],
+                              "version": p["version"],
+                              "images": p.get("images") or meta[pid]["images"],
+                              "image_bytes": p.get("image_bytes") or meta[pid]["image_bytes"]})
+            for c, v in (p.get("channels") or {}).items():
+                chans.setdefault(pid, {})[c] = chans.setdefault(pid, {}).get(c, 0) + v
+            e = p.get("entry") or {}
+            if e:
+                t = entries.setdefault(pid, {"sessions": 0, "engaged": 0})
+                t["sessions"] += e.get("sessions", 0)
+                t["engaged"] += e.get("engaged", 0)
+            s = p.get("sales")
+            if s:
+                t = sales.setdefault(pid, {"orders": 0, "units": 0, "gross": 0,
+                                           "net": 0, "canceled_units": 0})
+                for k in t:
+                    t[k] += s.get(k, 0)
+            cl = p.get("clarity")
+            if cl:
+                t = clar.setdefault(pid, {"sessions": 0, "dead_click_sessions": 0,
+                                          "rage_click_sessions": 0, "quickback_sessions": 0,
+                                          "_sd_num": 0.0, "_sd_den": 0,
+                                          "_at": 0, "_tt": 0})
+                for k in ("sessions", "dead_click_sessions", "rage_click_sessions",
+                          "quickback_sessions"):
+                    t[k] += cl.get(k, 0)
+                if cl.get("avg_scroll_depth") is not None:
+                    w = max(1, cl.get("sessions", 1))
+                    t["_sd_num"] += cl["avg_scroll_depth"] * w
+                    t["_sd_den"] += w
+                if cl.get("active_ratio") is not None:
+                    w = max(1, cl.get("sessions", 1))
+                    t["_at"] += cl["active_ratio"] * w
+                    t["_tt"] += w
+
+    products = {}
+    for pid, devs in prods.items():
+        m = meta[pid]
+        total = m["section_total"]
+        allb = _blank()
+        out_devs = {}
+        for dev, b in devs.items():
+            out_devs[dev] = _derive(b, total)
+            _add(allb, b)
+        out_devs["_all"] = _derive(allb, total)
+
+        c = clar.get(pid)
+        cl = None
+        if c:
+            cl = {"sessions": c["sessions"],
+                  "avg_scroll_depth": round(c["_sd_num"] / c["_sd_den"], 1) if c["_sd_den"] else None,
+                  "active_ratio": round(c["_at"] / c["_tt"], 3) if c["_tt"] else None,
+                  "dead_click_sessions": c["dead_click_sessions"],
+                  "rage_click_sessions": c["rage_click_sessions"],
+                  "quickback_sessions": c["quickback_sessions"], "truncated": False}
+
+        rec = dict(m)
+        rec.update({"devices": out_devs, "channels": chans.get(pid) or {},
+                    "entry": entries.get(pid) or {}, "clarity": cl,
+                    "sales": sales.get(pid),
+                    "sample": "ok" if out_devs["_all"]["sessions"] >= MIN_SESSIONS else "low"})
+        s, n_ses = rec["sales"], out_devs["_all"]["sessions"]
+        if s and n_ses:
+            rec["derived"] = {"cvr": round(s["orders"] / n_ses, 4),
+                              "revenue_per_session": round(s["net"] / n_ses),
+                              "aov": round(s["net"] / s["orders"]) if s["orders"] else 0}
+        products[pid] = rec
+
+    srcs = {k: ("ok" if any(days[d]["sources"].get(k) == "ok" for d in use) else "missing")
+            for k in ("ga4", "clarity", "cafe24")}
+    return {"range": "%s ~ %s" % (use[0], use[-1]), "dates": use,
+            "days_count": len(use), "products": products,
+            "sources": srcs, "unattributed": un}
 
 
 if __name__ == "__main__":

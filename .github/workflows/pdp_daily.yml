@@ -48,6 +48,15 @@ jobs:
       - name: Detect detail-page versions
         run: python detect_version.py
 
+      # 수집만 하고 화면을 안 만들면 docs/ 가 낡은 채로 남는다.
+      # 실제로 로컬 배치(07:00)가 만든 화면이 정본이었는데, 그건 이 워크플로의
+      # GA4 수집(07:20)보다 **먼저** 돌기 때문에 항상 하루 뒤처진 데이터를 그렸다.
+      # 대표가 "여태 모은 정보가 어디 갔냐"고 물은 게 이것이다.
+      - name: Merge and build dashboard
+        run: |
+          python merge_pdp.py
+          python build_pdp_dashboard.py
+
       - name: Commit
         run: |
           git config user.name  "github-actions[bot]"
@@ -65,4 +74,12 @@ jobs:
             exit 0
           fi
           git commit -m "PDP data $(TZ=Asia/Seoul date +%F)"
-          git push
+          # clarity daily 와 겹치면 뒤에 도는 쪽이 거부된다. 받아서 다시 얹고 재시도한다.
+          for i in 1 2 3 4 5; do
+            if git push; then echo "push 성공 ($i회차)"; exit 0; fi
+            echo "push 거부 — 원격을 받아 다시 얹는다 ($i/5)"
+            git pull --rebase --autostash origin master || true
+            sleep $((i * 5))
+          done
+          echo "::error::5회 시도했으나 push 실패"
+          exit 1

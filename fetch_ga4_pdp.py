@@ -88,6 +88,14 @@ def _rows(dims, mets, date, event=None, access=None, prop=None):
                               access=access, prop=prop)
 
 
+# GA4 는 값이 없을 때 빈 문자열이 아니라 "(not set)" / "(other)" 같은 표기를 준다.
+# 이걸 상품번호로 받으면 '(not set)' 이라는 유령 상품이 생긴다(실제로 178세션짜리가
+# 만들어졌다). 숫자가 아닌 것은 전부 미귀속으로 보낸다.
+def _pid(row):
+    v = (row.get(D_PRODUCT) or "").strip()
+    return v if v.isdigit() else ""
+
+
 def _n(row, key):
     try:
         return int(float(row.get(key) or 0))
@@ -112,7 +120,7 @@ def fetch_day(date, access=None, prop=None):
     # ---- R1 구간 도달 ----
     for r in _rows([D_PRODUCT, D_NAME, D_SECTION, D_DEVICE], ["eventCount"],
                    date, "pdp_section", access, prop):
-        pid = r.get(D_PRODUCT) or ""
+        pid = _pid(r)
         if not pid:
             day["unknown"]["section_events"] = \
                 day["unknown"].get("section_events", 0) + _n(r, "eventCount")
@@ -131,7 +139,7 @@ def fetch_day(date, access=None, prop=None):
     # ---- R2 이탈 분포 ----
     for r in _rows([D_PRODUCT, D_NAME, D_EXIT, D_DEVICE], ["eventCount"],
                    date, "pdp_exit", access, prop):
-        pid = r.get(D_PRODUCT) or ""
+        pid = _pid(r)
         if not pid:
             day["unknown"]["exit_events"] = \
                 day["unknown"].get("exit_events", 0) + _n(r, "eventCount")
@@ -150,7 +158,7 @@ def fetch_day(date, access=None, prop=None):
                               for _, api in M_SUMS if api not in have]
     mets = ["eventCount"] + [api for _, api in sums]
     for r in _rows([D_PRODUCT, D_DEVICE], mets, date, "pdp_exit", access, prop):
-        pid = r.get(D_PRODUCT) or ""
+        pid = _pid(r)
         if not pid:
             continue
         b = bucket(pid, r.get(D_DEVICE) or "unknown")
@@ -181,7 +189,7 @@ def fetch_day(date, access=None, prop=None):
     # 휘둘리지 않게 하려는 의도적 선택이다.
     for r in _rows([D_PRODUCT, D_ZONE, D_DEVICE], ["eventCount"],
                    date, "pdp_zone_click", access, prop):
-        pid = r.get(D_PRODUCT) or ""
+        pid = _pid(r)
         z = (r.get(D_ZONE) or "").strip()
         if not pid or not z or z.startswith("("):
             continue
@@ -198,7 +206,7 @@ def fetch_day(date, access=None, prop=None):
     # 기준이다. 상단(가격·옵션·리뷰탭)이 빠져 있어 같은 25%라도 가리키는 위치가 다르다.
     for r in _rows([D_PRODUCT, D_PERCENT, D_DEVICE], ["eventCount"],
                    date, "pdp_scroll", access, prop):
-        pid = r.get(D_PRODUCT) or ""
+        pid = _pid(r)
         pc = (r.get(D_PERCENT) or "").strip()
         if not pid or not pc.isdigit():
             continue
@@ -212,7 +220,7 @@ def fetch_day(date, access=None, prop=None):
     # 대신 분류 규칙이 없는 트래픽이 Unassigned 로 몰리는데, 그건 숨기지 않고 그대로 보여준다.
     for r in _rows([D_PRODUCT, "sessionDefaultChannelGroup"], ["eventCount"],
                    date, "pdp_exit", access, prop):
-        pid = r.get(D_PRODUCT) or ""
+        pid = _pid(r)
         if not pid:
             continue
         p = day["products"].setdefault(pid, {"name": "", "devices": {}})
@@ -226,7 +234,7 @@ def fetch_day(date, access=None, prop=None):
         ev = r.get("eventName") or ""
         if ev not in PDP_EVENTS:
             continue
-        pid = r.get(D_PRODUCT) or ""
+        pid = _pid(r)
         if not pid:
             continue
         b = bucket(pid, r.get(D_DEVICE) or "unknown")
