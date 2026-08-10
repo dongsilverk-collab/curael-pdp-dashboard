@@ -457,13 +457,41 @@ def build_product(pid, p, date, days_collected):
     # (Clarity 의 평균 스크롤은 **페이지 전체** 기준이라 좌표계가 달라 여기 못 얹는다.)
     spans = p.get("section_spans") or []
     curve_pct = a.get("scroll_curve_pct") or {}
+
+    def section_of(detail_pos):
+        for i, sp in enumerate(spans, 1):
+            if sp[0] <= detail_pos < sp[1] or (i == len(spans) and detail_pos >= sp[0]):
+                return i
+        return None
+
     marks = {}
     for pctkey, share in sorted(curve_pct.items(), key=lambda kv: int(kv[0])):
-        pos = int(pctkey) / 100.0
-        for i, sp in enumerate(spans, 1):
-            if sp[0] <= pos < sp[1] or (i == len(spans) and pos >= sp[0]):
-                marks.setdefault(i, []).append((int(pctkey), share))
-                break
+        i = section_of(int(pctkey) / 100.0)
+        if i:
+            marks.setdefault(i, []).append(
+                ("스크롤 %d%% 지점 · 여기까지 온 사람 %s" % (int(pctkey), G.pct(share)),
+                 "ours"))
+
+    # Clarity 평균을 상세영역 좌표로 옮긴다.
+    #   상세영역_% = (페이지_% - 상세시작) / (상세끝 - 상세시작)
+    # 실측한 레이아웃이 있는 상품만. 없으면 아예 안 그린다 — 좌표계가 다른 값을
+    # 어림짐작으로 얹으면 조용히 틀린 그림이 된다.
+    cl, lay = p.get("clarity") or {}, p.get("layout") or {}
+    cl_note = None
+    if cl.get("avg_scroll_depth") is not None and lay.get("detail_end_pct"):
+        page = cl["avg_scroll_depth"] / 100.0
+        st, en = lay["detail_start_pct"] / 100.0, lay["detail_end_pct"] / 100.0
+        dpos = (page - st) / (en - st) if en > st else None
+        if dpos is not None and 0 <= dpos <= 1:
+            i = section_of(dpos)
+            if i:
+                marks.setdefault(i, []).append(
+                    ("Clarity 평균 스크롤 %.1f%% 지점 (상세영역 %d%%)"
+                     % (cl["avg_scroll_depth"], round(dpos * 100)), "clarity"))
+        elif dpos is not None:
+            cl_note = ("Clarity 평균 스크롤 %.1f%%는 상세 이미지 %s입니다."
+                       % (cl["avg_scroll_depth"],
+                          "시작 전" if dpos < 0 else "끝난 뒤"))
     for i in range(1, total + 1):
         rp = pcts.get(str(i), 0.0)
         left = exit_hist.get(i, 0)
@@ -477,19 +505,32 @@ def build_product(pid, p, date, days_collected):
             wt = '<b style="color:%s">%.1fMB</b>' % (G.DROP, kb / 1024)
         else:
             wt = "%dKB" % kb
-        mk = "".join(
-            '<div class="mark">스크롤 %d%% 지점 · 여기까지 온 사람 %s</div>'
-            % (pc, G.pct(sh)) for pc, sh in marks.get(i, []))
+        mk = "".join('<div class="mark %s">%s</div>' % (kind, G.esc(txt))
+                     for txt, kind in marks.get(i, []))
+
+        # 마지막 구간에서 끝난 세션은 '이탈'이 아니라 '완독'이다. 다 보고 나간 것과
+        # 중간에 포기한 것은 성격이 정반대인데 같은 붉은색으로 그리면 오독된다.
+        last = (i == total)
+        if not left:
+            leftcell = '<span class="muted">–</span>'
+        elif last:
+            leftcell = '<span class="done">%d명 완독</span>' % left
+        else:
+            leftcell = "%d명" % left
         out.append(
             '<tr class="%s"><td>S%02d%s</td><td>%s</td>'
             '<td class="bar">%s<span class="barval">%s</span>%s</td>'
             '<td class="num">%s</td><td class="num">%s</td></tr>'
             % ("hi" if i == worst else "", i,
                " ◀" if i == worst else "", img,
-               G.reach_bar(rp, (left / n) if n else 0),
-               G.frac(mono.get(i, 0), n), mk, wt,
-               ("%d명" % left) if left else '<span class="muted">–</span>'))
+               G.reach_bar(rp, 0 if last else ((left / n) if n else 0)),
+               G.frac(mono.get(i, 0), n), mk, wt, leftcell))
     out.append("</table></div>")
+
+    if cl_note:
+        out.append('<div class="note">%s 구간 표 안에는 표시하지 않습니다 — '
+                   'Clarity는 페이지 전체 기준이고 이 표는 상세영역 기준이라 '
+                   '범위를 벗어났습니다.</div>' % G.esc(cl_note))
 
     rep = a.get("reach_repaired_sections") or 0
     if rep:

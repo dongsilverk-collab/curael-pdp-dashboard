@@ -16,6 +16,7 @@ GA4 = "data/ga4_pdp_history.json"
 CLARITY = "data/clarity_snapshots.json"
 VERSIONS = "data/pdp_versions.json"
 PRODUCTS = "data/pdp_products.json"
+LAYOUT = "data/pdp_layout.json"   # 상세영역이 페이지의 몇 % 지점인지(실측)
 CAFE24 = "data/cafe24_pdp_history.json"   # 아직 수집기 없음. 없으면 미수집으로 표시.
 OUT = "data/pdp_daily.json"
 
@@ -258,6 +259,7 @@ def main():
     clarity_all = C.load_json(CLARITY, {})
     versions = C.load_json(VERSIONS, {})
     products = C.load_json(PRODUCTS, {})
+    layout = C.load_json(LAYOUT, {})
     cafe24 = C.load_json(CAFE24, {}).get("days") or {}
 
     if not ga4:
@@ -321,6 +323,9 @@ def main():
                 "images": imgs,
                 "image_bytes": sizes,
                 "section_spans": spans,
+                # Clarity 평균 스크롤은 페이지 전체 기준이라 구간 표(상세영역 기준)와
+                # 좌표계가 다르다. 실측한 상세영역 시작·끝으로 옮겨 담는다.
+                "layout": layout.get(pid) or {},
                 "image_bytes_total": sum(sizes),
                 "devices": devices,
                 "channels": p.get("channels") or {},
@@ -393,6 +398,7 @@ def build_period(days, n):
                                   "version": p["version"], "images": p.get("images") or [],
                                   "image_bytes": p.get("image_bytes") or [],
                                   "section_spans": p.get("section_spans") or [],
+                                  "layout": p.get("layout") or {},
                                   "image_bytes_total": p.get("image_bytes_total", 0)})
             # 이름·이미지는 최신 날짜 것으로 갱신한다(상품명이나 이미지가 바뀔 수 있다).
             meta[pid].update({"name": p["name"] or meta[pid]["name"],
