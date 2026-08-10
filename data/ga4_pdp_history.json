@@ -5696,58 +5696,59 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 14,
+        "1": 16,
         "3": 10,
         "2": 9,
+        "5": 9,
+        "6": 9,
+        "8": 9,
         "4": 8,
-        "5": 8,
-        "6": 7,
+        "7": 8,
+        "14": 8,
         "9": 7,
-        "7": 6,
-        "8": 6,
+        "13": 7,
+        "11": 6,
         "10": 5,
-        "14": 5,
+        "12": 5,
         "15": 5,
-        "11": 4,
-        "13": 4,
-        "16": 4,
-        "17": 4,
-        "18": 4,
-        "20": 4,
-        "12": 3,
-        "19": 3
+        "16": 5,
+        "17": 5,
+        "18": 5,
+        "19": 5,
+        "20": 5
        },
        "exit_hist": {
-        "0": 10,
+        "0": 17,
+        "1": 3,
         "2": 3,
-        "1": 2,
+        "14": 2,
         "20": 2,
         "3": 1,
         "6": 1,
         "7": 1
        },
        "events": {
-        "pdp_section": 120,
-        "pdp_scroll": 42,
-        "pdp_exit": 20,
-        "pdp_cta_click": 16,
-        "pdp_cta_view": 16,
-        "pdp_review": 3
+        "pdp_section": 146,
+        "pdp_scroll": 47,
+        "pdp_exit": 30,
+        "pdp_cta_view": 21,
+        "pdp_cta_click": 17,
+        "pdp_review": 4
        },
-       "exit_events": 20,
-       "sum_seconds": 10982,
+       "exit_events": 30,
+       "sum_seconds": 11382,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 12,
+       "sum_saw_cta": 16,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "scroll_reach": {
         "10": 13,
+        "50": 8,
         "25": 7,
-        "50": 7,
-        "75": 6,
-        "90": 5,
-        "100": 4
+        "75": 7,
+        "90": 7,
+        "100": 5
        }
       },
       "desktop": {
@@ -5781,14 +5782,16 @@
      },
      "section_total": 20,
      "entry": {
-      "sessions": 21,
-      "engaged": 13
+      "sessions": 31,
+      "engaged": 23
      },
      "channels": {
-      "Unassigned": 17,
+      "Unassigned": 23,
+      "Organic Video": 3,
       "Paid Social": 2,
+      "Cross-network": 1,
       "Direct": 1,
-      "Organic Video": 1
+      "Organic Social": 1
      }
     },
     "32": {
@@ -5838,30 +5841,33 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "5": 1
+        "5": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
        },
        "exit_hist": {
-        "0": 1,
+        "0": 3,
         "5": 1
        },
        "events": {
-        "pdp_scroll": 5,
-        "pdp_exit": 2,
-        "pdp_review": 1,
-        "pdp_section": 1
+        "pdp_scroll": 7,
+        "pdp_section": 5,
+        "pdp_exit": 4,
+        "pdp_review": 1
        },
-       "exit_events": 2,
-       "sum_seconds": 1086,
+       "exit_events": 4,
+       "sum_seconds": 1177,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 1,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "scroll_reach": {
+        "50": 2,
+        "75": 2,
         "100": 1,
         "25": 1,
-        "50": 1,
-        "75": 1,
         "90": 1
        }
       },
@@ -5884,12 +5890,73 @@
      },
      "section_total": 5,
      "entry": {
-      "sessions": 2,
-      "engaged": 1
+      "sessions": 4,
+      "engaged": 2
      },
      "channels": {
-      "Unassigned": 2,
+      "Unassigned": 4,
       "Organic Video": 1
+     }
+    },
+    "28": {
+     "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "4": 1,
+        "5": 1
+       },
+       "exit_hist": {},
+       "events": {
+        "pdp_section": 3,
+        "pdp_scroll": 2,
+        "pdp_cta_view": 1
+       },
+       "exit_events": 0,
+       "scroll_reach": {
+        "25": 1,
+        "50": 1
+       }
+      }
+     },
+     "section_total": 9,
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     }
+    },
+    "31": {
+     "name": "[자연하] 커큐진 2g x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "3": 1,
+        "4": 1
+       },
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_section": 2,
+        "pdp_exit": 1,
+        "pdp_scroll": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 29,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "25": 1
+       }
+      }
+     },
+     "section_total": 5,
+     "channels": {
+      "Unassigned": 1
      }
     },
     "47": {
@@ -5900,32 +5967,41 @@
         "1": 1
        },
        "exit_hist": {
-        "1": 2
+        "1": 3,
+        "0": 1
        },
        "events": {
-        "pdp_scroll": 3,
-        "pdp_exit": 2,
-        "pdp_cta_view": 1,
-        "pdp_review": 1,
+        "pdp_scroll": 9,
+        "pdp_exit": 4,
+        "pdp_cta_view": 3,
+        "pdp_review": 2,
         "pdp_section": 1
        },
-       "exit_events": 2,
-       "sum_seconds": 50,
+       "exit_events": 4,
+       "sum_seconds": 128,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
+       "sum_saw_cta": 4,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "scroll_reach": {
-        "10": 1,
-        "25": 1,
-        "50": 1
+        "10": 2,
+        "25": 2,
+        "50": 2,
+        "100": 1,
+        "75": 1,
+        "90": 1
        }
       }
      },
      "section_total": 1,
+     "entry": {
+      "sessions": 2,
+      "engaged": 0
+     },
      "channels": {
-      "Unassigned": 2
+      "Unassigned": 3,
+      "Paid Social": 1
      }
     },
     "59": {
@@ -5933,44 +6009,69 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "2": 1
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1
        },
        "exit_hist": {},
        "events": {
-        "pdp_scroll": 2,
-        "pdp_section": 1
+        "pdp_scroll": 6,
+        "pdp_section": 4,
+        "pdp_cta_view": 1
        },
        "exit_events": 0,
        "scroll_reach": {
+        "10": 2,
+        "90": 2,
         "25": 1,
-        "90": 1
+        "75": 1
        }
       }
      },
      "section_total": 5
     },
-    "31": {
-     "name": "[자연하] 커큐진 2g x 30포",
+    "61": {
+     "name": "국산 유기농 오트밀 압착 귀리 350g",
      "devices": {
       "mobile": {
-       "section_reach": {},
+       "section_reach": {
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+       },
        "exit_hist": {
-        "0": 1
+        "0": 2,
+        "12": 1
        },
        "events": {
-        "pdp_exit": 1
+        "pdp_section": 4,
+        "pdp_exit": 3,
+        "pdp_scroll": 3,
+        "pdp_review": 1
        },
-       "exit_events": 1,
-       "sum_seconds": 29,
+       "exit_events": 3,
+       "sum_seconds": 114,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 1,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "100": 1,
+        "25": 1,
+        "50": 1
+       }
       }
      },
+     "section_total": 12,
+     "entry": {
+      "sessions": 1,
+      "engaged": 0
+     },
      "channels": {
-      "Unassigned": 1
+      "Unassigned": 3
      }
     },
     "73": {
@@ -5979,15 +6080,17 @@
       "mobile": {
        "section_reach": {},
        "exit_hist": {
-        "0": 1
+        "0": 4
        },
        "events": {
-        "pdp_exit": 1
+        "pdp_cta_click": 6,
+        "pdp_exit": 4,
+        "pdp_cta_view": 1
        },
-       "exit_events": 1,
-       "sum_seconds": 3,
+       "exit_events": 4,
+       "sum_seconds": 57,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 0,
+       "sum_saw_cta": 3,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
@@ -5998,15 +6101,7 @@
       "engaged": 1
      },
      "channels": {
-      "Unassigned": 1
-     }
-    },
-    "61": {
-     "name": "",
-     "devices": {},
-     "entry": {
-      "sessions": 1,
-      "engaged": 0
+      "Unassigned": 4
      }
     }
    },
@@ -6014,5 +6109,5 @@
    "missing_metrics": []
   }
  },
- "updated_at": "2026-08-11 07:00:35 KST"
+ "updated_at": "2026-08-11 07:58:42 KST"
 }
