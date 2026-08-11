@@ -557,21 +557,64 @@
    "products": {
     "26": {
      "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
-     "orders": 2,
+     "orders": 12,
+     "units": 12,
+     "gross": 1097168,
+     "net": 950800,
+     "canceled_units": 1
+    },
+    "28": {
+     "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+     "orders": 4,
+     "units": 6,
+     "gross": 177520,
+     "net": 177520,
+     "canceled_units": 0
+    },
+    "62": {
+     "name": "국산 유기농 귀리 혼합 10곡 잡곡쌀 800g",
+     "orders": 1,
      "units": 2,
-     "gross": 96200,
-     "net": 96200,
+     "gross": 11800,
+     "net": 11800,
+     "canceled_units": 0
+    },
+    "40": {
+     "name": "[자연하] 스텔라진 3g x 30포",
+     "orders": 1,
+     "units": 2,
+     "gross": 120000,
+     "net": 120000,
      "canceled_units": 0
     }
    },
    "_meta": {
-    "orders_scanned": 2,
+    "orders_scanned": 17,
     "truncated": false,
-    "item_sum": 96200,
-    "order_sum": 96200,
+    "item_sum": 1406488,
+    "order_sum": 1409488,
+    "reconcile_diff_pct": -0.21
+   }
+  },
+  "2026-08-12": {
+   "products": {
+    "26": {
+     "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+     "orders": 4,
+     "units": 4,
+     "gross": 437200,
+     "net": 437200,
+     "canceled_units": 0
+    }
+   },
+   "_meta": {
+    "orders_scanned": 4,
+    "truncated": false,
+    "item_sum": 437200,
+    "order_sum": 437200,
     "reconcile_diff_pct": 0.0
    }
   }
  },
- "updated_at": "2026-08-11 07:00:07 KST"
+ "updated_at": "2026-08-12 07:00:09 KST"
 }

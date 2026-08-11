@@ -25993,7 +25993,7 @@
   "2026-08-11": {
    "sources": {
     "ga4": "ok",
-    "clarity": "missing",
+    "clarity": "ok",
     "cafe24": "ok"
    },
    "products": {
@@ -26589,20 +26589,28 @@
       "sessions": 31,
       "engaged": 23
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 503,
+      "avg_scroll_depth": 37.4,
+      "dead_click_sessions": 21,
+      "rage_click_sessions": 1,
+      "quickback_sessions": 18,
+      "active_ratio": 0.825,
+      "truncated": false
+     },
      "sales": {
       "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
-      "orders": 2,
-      "units": 2,
-      "gross": 96200,
-      "net": 96200,
-      "canceled_units": 0
+      "orders": 12,
+      "units": 12,
+      "gross": 1097168,
+      "net": 950800,
+      "canceled_units": 1
      },
      "sample": "ok",
      "derived": {
-      "cvr": 0.0645,
-      "revenue_per_session": 3103,
-      "aov": 48100
+      "cvr": 0.3871,
+      "revenue_per_session": 30671,
+      "aov": 79233
      }
     },
     "32": {
@@ -26817,7 +26825,15 @@
       "sessions": 2,
       "engaged": 2
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 32,
+      "avg_scroll_depth": 38.5,
+      "dead_click_sessions": 2,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 2,
+      "active_ratio": 0.764,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -27104,9 +27120,29 @@
       "sessions": 4,
       "engaged": 2
      },
-     "clarity": null,
-     "sales": null,
-     "sample": "low"
+     "clarity": {
+      "sessions": 29,
+      "avg_scroll_depth": 51.0,
+      "dead_click_sessions": 2,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 3,
+      "active_ratio": 0.675,
+      "truncated": false
+     },
+     "sales": {
+      "name": "[자연하] 스텔라진 3g x 30포",
+      "orders": 1,
+      "units": 2,
+      "gross": 120000,
+      "net": 120000,
+      "canceled_units": 0
+     },
+     "sample": "low",
+     "derived": {
+      "cvr": 0.2,
+      "revenue_per_session": 24000,
+      "aov": 120000
+     }
     },
     "28": {
      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
@@ -27278,8 +27314,23 @@
       "sessions": 1,
       "engaged": 1
      },
-     "clarity": null,
-     "sales": null,
+     "clarity": {
+      "sessions": 71,
+      "avg_scroll_depth": 37.9,
+      "dead_click_sessions": 3,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 4,
+      "active_ratio": 0.853,
+      "truncated": false
+     },
+     "sales": {
+      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+      "orders": 4,
+      "units": 6,
+      "gross": 177520,
+      "net": 177520,
+      "canceled_units": 0
+     },
      "sample": "low"
     },
     "31": {
@@ -27493,7 +27544,15 @@
       "Unassigned": 1
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 22,
+      "avg_scroll_depth": 55.4,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 2,
+      "active_ratio": 0.894,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -27672,7 +27731,15 @@
       "sessions": 2,
       "engaged": 0
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 16,
+      "avg_scroll_depth": 52.7,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 2,
+      "active_ratio": 0.789,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -27780,7 +27847,15 @@
      },
      "channels": {},
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 2,
+      "avg_scroll_depth": null,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": null,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -28015,7 +28090,15 @@
       "sessions": 1,
       "engaged": 0
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 5,
+      "avg_scroll_depth": 32.5,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.022,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     },
@@ -28140,18 +28223,26 @@
       "sessions": 2,
       "engaged": 1
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 9,
+      "avg_scroll_depth": 50.2,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 0.971,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low"
     }
    },
    "unattributed": {
     "ga4_unknown_exit_events": 0,
-    "clarity_unmatched_sessions": 0
+    "clarity_unmatched_sessions": 360
    }
   }
  },
- "built_at": "2026-08-11 07:59:35 KST",
+ "built_at": "2026-08-12 07:00:09 KST",
  "period": {
   "range": "2026-08-05 ~ 2026-08-11",
   "dates": [
@@ -28967,26 +29058,26 @@
      "engaged": 2355
     },
     "clarity": {
-     "sessions": 2210,
-     "avg_scroll_depth": 34.9,
-     "active_ratio": 0.878,
-     "dead_click_sessions": 70,
-     "rage_click_sessions": 1,
-     "quickback_sessions": 77,
+     "sessions": 2713,
+     "avg_scroll_depth": 35.3,
+     "active_ratio": 0.868,
+     "dead_click_sessions": 91,
+     "rage_click_sessions": 2,
+     "quickback_sessions": 95,
      "truncated": false
     },
     "sales": {
-     "orders": 64,
-     "units": 65,
-     "gross": 5403253,
-     "net": 5403253,
-     "canceled_units": 1
+     "orders": 74,
+     "units": 75,
+     "gross": 6404221,
+     "net": 6257853,
+     "canceled_units": 2
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0308,
-     "revenue_per_session": 2596,
-     "aov": 84426
+     "cvr": 0.0356,
+     "revenue_per_session": 3007,
+     "aov": 84566
     }
    },
    "47": {
@@ -29318,12 +29409,12 @@
      "engaged": 106
     },
     "clarity": {
-     "sessions": 109,
+     "sessions": 125,
      "avg_scroll_depth": 52.7,
-     "active_ratio": 0.574,
-     "dead_click_sessions": 6,
+     "active_ratio": 0.602,
+     "dead_click_sessions": 7,
      "rage_click_sessions": 0,
-     "quickback_sessions": 4,
+     "quickback_sessions": 6,
      "truncated": false
     },
     "sales": {
@@ -29642,12 +29733,12 @@
      "engaged": 54
     },
     "clarity": {
-     "sessions": 79,
-     "avg_scroll_depth": 42.6,
-     "active_ratio": 0.813,
+     "sessions": 88,
+     "avg_scroll_depth": 43.3,
+     "active_ratio": 0.83,
      "dead_click_sessions": 8,
      "rage_click_sessions": 0,
-     "quickback_sessions": 3,
+     "quickback_sessions": 4,
      "truncated": false
     },
     "sales": {
@@ -30198,26 +30289,26 @@
      "engaged": 253
     },
     "clarity": {
-     "sessions": 381,
-     "avg_scroll_depth": 31.4,
-     "active_ratio": 0.882,
-     "dead_click_sessions": 22,
+     "sessions": 452,
+     "avg_scroll_depth": 32.4,
+     "active_ratio": 0.877,
+     "dead_click_sessions": 25,
      "rage_click_sessions": 0,
-     "quickback_sessions": 10,
+     "quickback_sessions": 14,
      "truncated": false
     },
     "sales": {
-     "orders": 17,
-     "units": 18,
-     "gross": 707141,
-     "net": 707141,
+     "orders": 21,
+     "units": 24,
+     "gross": 884661,
+     "net": 884661,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0386,
-     "revenue_per_session": 1607,
-     "aov": 41597
+     "cvr": 0.0477,
+     "revenue_per_session": 2011,
+     "aov": 42127
     }
    },
    "31": {
@@ -30562,12 +30653,12 @@
      "engaged": 116
     },
     "clarity": {
-     "sessions": 209,
-     "avg_scroll_depth": 34.2,
-     "active_ratio": 0.86,
+     "sessions": 231,
+     "avg_scroll_depth": 36.2,
+     "active_ratio": 0.863,
      "dead_click_sessions": 5,
      "rage_click_sessions": 0,
-     "quickback_sessions": 7,
+     "quickback_sessions": 9,
      "truncated": false
     },
     "sales": {
@@ -30962,12 +31053,12 @@
      "engaged": 108
     },
     "clarity": {
-     "sessions": 154,
-     "avg_scroll_depth": 27.5,
-     "active_ratio": 0.944,
-     "dead_click_sessions": 3,
+     "sessions": 186,
+     "avg_scroll_depth": 29.4,
+     "active_ratio": 0.913,
+     "dead_click_sessions": 5,
      "rage_click_sessions": 0,
-     "quickback_sessions": 0,
+     "quickback_sessions": 2,
      "truncated": false
     },
     "sales": null,
@@ -31371,16 +31462,27 @@
      "engaged": 62
     },
     "clarity": {
-     "sessions": 95,
-     "avg_scroll_depth": 28.3,
-     "active_ratio": 0.859,
-     "dead_click_sessions": 0,
+     "sessions": 124,
+     "avg_scroll_depth": 33.6,
+     "active_ratio": 0.816,
+     "dead_click_sessions": 2,
      "rage_click_sessions": 0,
-     "quickback_sessions": 1,
+     "quickback_sessions": 4,
      "truncated": false
     },
-    "sales": null,
-    "sample": "ok"
+    "sales": {
+     "orders": 1,
+     "units": 2,
+     "gross": 120000,
+     "net": 120000,
+     "canceled_units": 0
+    },
+    "sample": "ok",
+    "derived": {
+     "cvr": 0.0088,
+     "revenue_per_session": 1062,
+     "aov": 120000
+    }
    },
    "44": {
     "name": "[자연하] 크리노진 2.5g x 30포",
@@ -33164,7 +33266,7 @@
      "engaged": 6
     },
     "clarity": {
-     "sessions": 17,
+     "sessions": 19,
      "avg_scroll_depth": 47.5,
      "active_ratio": 0.859,
      "dead_click_sessions": 1,
@@ -33807,9 +33909,9 @@
      "engaged": 15
     },
     "clarity": {
-     "sessions": 21,
-     "avg_scroll_depth": 34.8,
-     "active_ratio": 0.643,
+     "sessions": 26,
+     "avg_scroll_depth": 34.3,
+     "active_ratio": 0.523,
      "dead_click_sessions": 0,
      "rage_click_sessions": 0,
      "quickback_sessions": 0,
@@ -34887,7 +34989,7 @@
   },
   "unattributed": {
    "ga4_unknown_exit_events": 178,
-   "clarity_unmatched_sessions": 1780
+   "clarity_unmatched_sessions": 2140
   }
  }
 }
