@@ -96,6 +96,15 @@ h2{font-size:16px;margin:34px 0 10px}
 .note{background:#FFF6E5;border:1px solid #F0DCB4;border-radius:8px;
  padding:11px 13px;font-size:13px;color:#6B5A34;margin:0 0 20px}
 .note b{color:#4A3D22}
+/* 수집 끊김은 참고사항이 아니라 경보다. 흐린 노란 알림과 같은 무게로 그리면
+   그냥 지나치게 된다. */
+.alert{background:#FDECEA;border:1px solid #F0B4AE;border-left:5px solid #C0392B;
+ border-radius:8px;padding:13px 15px;font-size:13px;color:#7A2E24;margin:0 0 20px}
+.alert b{color:#5C1E17}
+.alert ul{margin:8px 0;padding-left:20px}
+.alert li{margin:4px 0}
+.ok{background:#EDF6F1;border:1px solid #BFE0CD;border-radius:8px;
+ padding:9px 13px;font-size:12px;color:#2E6B4A;margin:0 0 20px}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
 .kpi{background:#fff;border:1px solid #E3E9E8;border-radius:9px;padding:13px 14px}
 .kpi-v{font-size:23px;font-weight:650;letter-spacing:-.01em}

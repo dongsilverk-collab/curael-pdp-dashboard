@@ -473,9 +473,22 @@ def build_period(days, n):
 
     srcs = {k: ("ok" if any(days[d]["sources"].get(k) == "ok" for d in use) else "missing")
             for k in ("ga4", "clarity", "cafe24")}
+
+    # 소스별 '마지막으로 들어온 날'과 며칠 밀렸는지. 기간 안에 한 번이라도 성공하면
+    # sources 는 ok 로 남기 때문에, 그것만으로는 며칠째 끊겼는지 알 수 없다.
+    # 조용히 끊긴 걸 모르고 판단하는 게 실패 자체보다 위험하다.
+    from datetime import datetime
+    today = datetime.strptime(C.kst_today(), "%Y-%m-%d")
+    fresh = {}
+    for k in ("ga4", "clarity", "cafe24"):
+        got = [d for d in sorted(days) if days[d]["sources"].get(k) == "ok"]
+        last = got[-1] if got else None
+        gap = (today - datetime.strptime(last, "%Y-%m-%d")).days if last else 99
+        fresh[k] = {"last": last, "stale_days": max(0, gap)}
+
     return {"range": "%s ~ %s" % (use[0], use[-1]), "dates": use,
             "days_count": len(use), "products": products,
-            "sources": srcs, "unattributed": un}
+            "sources": srcs, "source_fresh": fresh, "unattributed": un}
 
 
 if __name__ == "__main__":

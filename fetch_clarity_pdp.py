@@ -23,10 +23,16 @@ from pdp_common import kst_now, load_json, parse_product_no, save_json
 SNAP_PATH = "data/clarity_snapshots.json"
 
 # 자동 호출 4건. 5~7은 재시도, 8~10은 사람이 수동 조회할 몫으로 남긴다.
+# 2026-08-17: 4콜 -> 2콜로 줄임.
+#
+# 병합·화면이 실제로 읽는 건 URL 하나뿐인데(merge_pdp.py 의 calls["URL"]) 나머지 3콜은
+# 예산만 태우고 있었다. 실제로 8/15~8/16 에 "Exceeded daily limit" 이 나서 그날 수집이
+# 통째로 실패했다 — 안 쓰는 데이터 때문에 쓰는 데이터를 잃은 셈이다.
+#
+# Source|Medium 은 유일하게 유튜브 유입을 잡아주는 값이라(GA4 는 미분류로 뭉갬) 남긴다.
+# URL|Device 와 Device 는 필요해지면 그때 되살린다.
 AUTO_CALLS = [
     ("URL", ("URL",)),
-    ("URL|Device", ("URL", "Device")),
-    ("Device", ("Device",)),                      # 1·2번의 1000행 잘림 검증용 기준값
     ("Source|Medium|Device", ("Source", "Medium", "Device")),
 ]
 RESERVE = 3          # 사람 몫

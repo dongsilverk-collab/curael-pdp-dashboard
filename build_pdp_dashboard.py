@@ -34,6 +34,43 @@ def curve(p, dev="_all"):
     return [pcts.get(str(i), 0.0) for i in range(1, n + 1)]
 
 
+SOURCE_KO = {"ga4": "GA4 (행동)", "clarity": "Clarity", "cafe24": "카페24 (매출)"}
+SOURCE_WHY = {
+    "ga4": "Actions 워크플로 pdp daily 로그를 확인하세요.",
+    "clarity": "Actions 워크플로 clarity daily 로그를 확인하세요. "
+               "하루 10회 호출 한도를 넘겼을 수 있습니다.",
+    "cafe24": "PC가 켜져 있어야 돕니다. 켜고 <code>collect_pdp.bat</code>을 실행하면 "
+              "빠진 날짜가 자동으로 채워집니다.",
+}
+
+
+def freshness_block(rec):
+    """어느 소스가 며칠째 안 들어오는지 화면 맨 위에 크게 띄운다.
+
+    2026-08-13~17 에 카페24가 5일, Clarity 가 3일 끊겼는데 화면에는 아무 표시가 없어
+    대표가 매출이 0인 줄 알았다. 조용히 실패하는 게 실패 자체보다 나쁘다 —
+    숫자가 틀린 줄 모르고 판단하게 되기 때문이다.
+    """
+    fresh = rec.get("source_fresh") or {}
+    if not fresh:
+        return ""
+    bad = [(k, v) for k, v in fresh.items() if v.get("stale_days", 0) >= 1]
+    if not bad:
+        return ('<div class="ok">세 소스 모두 정상 수집 중입니다 '
+                '— GA4 · Clarity · 카페24.</div>')
+    bad.sort(key=lambda kv: -kv[1]["stale_days"])
+    items = "".join(
+        "<li><b>%s</b>가 <b>%d일째</b> 안 들어옵니다"
+        "(마지막 %s). %s</li>"
+        % (SOURCE_KO.get(k, k), v["stale_days"], v.get("last") or "기록 없음",
+           SOURCE_WHY.get(k, ""))
+        for k, v in bad)
+    return ('<div class="alert"><b>⚠ 수집이 끊긴 소스가 있습니다.</b>'
+            '<ul>%s</ul>'
+            '끊긴 소스의 숫자는 <b>0이 아니라 "모름"</b>입니다. '
+            '그 항목으로 판단하지 마세요.</div>' % items)
+
+
 def build_index(date, rec, days_collected):
     ps = rec["products"]
     ranked, low = [], []
@@ -62,9 +99,7 @@ def build_index(date, rec, days_collected):
             '표본이 쌓이기 전의 숫자로 상세페이지를 고치면 엉뚱한 곳을 고치게 됩니다. '
             '처방은 7일치가 모이면 표시됩니다.</div>' % days_collected)
 
-    if rec["sources"]["cafe24"] != "ok":
-        out.append('<div class="note">매출 데이터 <b>미수집</b> — 이 날짜는 카페24 수집이 '
-                   '돌지 않았습니다. 매출 칸의 회색 <b>–</b>는 0원이 아니라 모른다는 뜻입니다.</div>')
+    out.append(freshness_block(rec))
 
     revenue = sum((p.get("sales") or {}).get("net", 0) for p in ps.values())
     orders = sum((p.get("sales") or {}).get("orders", 0) for p in ps.values())
