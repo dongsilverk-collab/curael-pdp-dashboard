@@ -14064,20 +14064,20 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "2": 7,
-        "4": 7,
-        "1": 6,
-        "5": 6,
-        "3": 5,
-        "6": 5,
+        "2": 9,
+        "4": 9,
+        "1": 8,
+        "3": 7,
+        "5": 7,
+        "6": 7,
+        "7": 5,
         "8": 5,
-        "7": 4,
         "9": 4,
-        "10": 3,
-        "11": 3,
-        "12": 3,
-        "13": 3,
-        "14": 3,
+        "10": 4,
+        "11": 4,
+        "12": 4,
+        "13": 4,
+        "14": 4,
         "19": 3,
         "20": 3,
         "18": 2,
@@ -14090,49 +14090,51 @@
         "9": 2,
         "20": 2,
         "1": 1,
-        "6": 1
+        "6": 1,
+        "7": 1,
+        "14": 1
        },
        "events": {
-        "pdp_section": 75,
-        "pdp_scroll": 37,
-        "pdp_exit": 16,
-        "pdp_cta_view": 12,
+        "pdp_section": 92,
+        "pdp_scroll": 44,
+        "pdp_exit": 18,
+        "pdp_cta_view": 15,
         "pdp_review": 3,
-        "pdp_cta_click": 1
+        "pdp_cta_click": 2
        },
-       "exit_events": 16,
-       "sum_seconds": 514,
+       "exit_events": 18,
+       "sum_seconds": 645,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 9,
+       "sum_saw_cta": 11,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "옵션선택": 4,
+        "옵션선택": 5,
+        "바로구매": 2,
         "상단메뉴": 2,
         "정기배송선택": 2,
         "가격영역": 1,
         "리뷰": 1,
-        "바로구매": 1,
         "상세이미지": 1
        },
        "scroll_reach": {
-        "10": 9,
-        "25": 8,
+        "10": 11,
+        "25": 10,
+        "50": 7,
+        "75": 6,
         "90": 6,
-        "50": 5,
-        "75": 5,
         "100": 4
        }
       }
      },
      "section_total": 20,
      "entry": {
-      "sessions": 25,
-      "engaged": 13
+      "sessions": 28,
+      "engaged": 15
      },
      "channels": {
-      "Unassigned": 12,
+      "Unassigned": 14,
       "Paid Social": 3,
       "Cross-network": 1
      }
@@ -14142,32 +14144,37 @@
      "devices": {
       "mobile": {
        "section_reach": {
+        "1": 4,
+        "2": 4,
         "4": 4,
-        "1": 3,
-        "2": 3,
         "3": 3,
         "5": 3
        },
        "exit_hist": {
-        "5": 3
+        "5": 3,
+        "1": 1
        },
        "events": {
-        "pdp_scroll": 17,
-        "pdp_section": 16,
-        "pdp_cta_view": 3,
-        "pdp_exit": 3,
+        "pdp_scroll": 18,
+        "pdp_section": 18,
+        "pdp_cta_view": 4,
+        "pdp_exit": 4,
         "pdp_review": 3
        },
-       "exit_events": 3,
-       "sum_seconds": 682,
+       "exit_events": 4,
+       "sum_seconds": 702,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 3,
+       "sum_saw_cta": 4,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 1,
+        "상품문의": 1
+       },
        "scroll_reach": {
+        "10": 4,
         "50": 4,
-        "10": 3,
         "100": 3,
         "75": 3,
         "25": 2,
@@ -14181,7 +14188,7 @@
       "engaged": 2
      },
      "channels": {
-      "Unassigned": 2,
+      "Unassigned": 3,
       "Cross-network": 1
      }
     },
@@ -14200,20 +14207,20 @@
         "9": 1
        },
        "exit_hist": {
-        "0": 4,
-        "9": 1
+        "0": 5,
+        "9": 2
        },
        "events": {
         "pdp_section": 13,
         "pdp_scroll": 8,
-        "pdp_exit": 5,
+        "pdp_exit": 7,
         "pdp_cta_view": 2,
         "pdp_review": 1
        },
-       "exit_events": 5,
-       "sum_seconds": 176,
+       "exit_events": 7,
+       "sum_seconds": 343,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
+       "sum_saw_cta": 3,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
@@ -14233,8 +14240,9 @@
       "engaged": 3
      },
      "channels": {
-      "Unassigned": 4,
-      "Organic Video": 1
+      "Unassigned": 5,
+      "Organic Video": 1,
+      "Paid Social": 1
      }
     },
     "40": {
@@ -14458,6 +14466,7 @@
         "3": 1,
         "5": 1,
         "6": 1,
+        "7": 1,
         "8": 1,
         "9": 1,
         "10": 1,
@@ -14470,7 +14479,7 @@
        },
        "exit_hist": {},
        "events": {
-        "pdp_section": 14,
+        "pdp_section": 15,
         "pdp_scroll": 4,
         "pdp_cta_view": 1,
         "pdp_review": 1
@@ -14543,5 +14552,5 @@
    "missing_metrics": []
   }
  },
- "updated_at": "2026-08-18 07:00:35 KST"
+ "updated_at": "2026-08-18 07:44:06 KST"
 }
