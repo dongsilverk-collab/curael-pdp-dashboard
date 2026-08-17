@@ -869,20 +869,20 @@
   },
   "2026-08-17": {
    "products": {
-    "26": {
-     "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
-     "orders": 8,
-     "units": 8,
-     "gross": 768350,
-     "net": 768350,
-     "canceled_units": 0
-    },
     "28": {
      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
-     "orders": 4,
-     "units": 4,
+     "orders": 5,
+     "units": 5,
      "gross": 178775,
      "net": 178775,
+     "canceled_units": 0
+    },
+    "26": {
+     "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+     "orders": 9,
+     "units": 9,
+     "gross": 854971,
+     "net": 854971,
      "canceled_units": 0
     },
     "32": {
@@ -895,13 +895,32 @@
     }
    },
    "_meta": {
-    "orders_scanned": 11,
+    "orders_scanned": 13,
     "truncated": false,
-    "item_sum": 1077125,
-    "order_sum": 1077125,
+    "item_sum": 1163746,
+    "order_sum": 1163746,
+    "reconcile_diff_pct": 0.0
+   }
+  },
+  "2026-08-18": {
+   "products": {
+    "26": {
+     "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+     "orders": 1,
+     "units": 1,
+     "gross": 49700,
+     "net": 49700,
+     "canceled_units": 0
+    }
+   },
+   "_meta": {
+    "orders_scanned": 1,
+    "truncated": false,
+    "item_sum": 49700,
+    "order_sum": 49700,
     "reconcile_diff_pct": 0.0
    }
   }
  },
- "updated_at": "2026-08-17 16:56:42 KST"
+ "updated_at": "2026-08-18 07:00:06 KST"
 }
