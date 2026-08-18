@@ -7,3 +7,8 @@ data/cafe24_token.json
 collect_pdp.bat
 .env
 *.env
+
+# Clarity 원본 응답. 2026-08-18 기준 105 MiB 로 GitHub 파일당 100 MiB 한도를
+# 넘어섰다. 저장소에는 clarity_slim.json(약 1 MB) 만 올린다 — merge 가 쓰는
+# 숫자는 전부 보존된다(clarity_slim.py). 원본은 이 PC 에만 남는다.
+data/clarity_snapshots.json

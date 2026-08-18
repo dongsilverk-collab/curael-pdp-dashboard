@@ -13,7 +13,10 @@ import sys
 import pdp_common as C
 
 GA4 = "data/ga4_pdp_history.json"
-CLARITY = "data/clarity_snapshots.json"
+# 요약본이 정본이다. 원본은 100 MiB 한도를 넘어 저장소에서 뺐다(clarity_slim.py 참고)
+# — Actions 러너에는 원본이 아예 없다. 원본은 로컬에 남아 있으면 폴백으로 쓴다.
+CLARITY = "data/clarity_slim.json"
+CLARITY_RAW = "data/clarity_snapshots.json"
 VERSIONS = "data/pdp_versions.json"
 PRODUCTS = "data/pdp_products.json"
 LAYOUT = "data/pdp_layout.json"   # 상세영역이 페이지의 몇 % 지점인지(실측)
@@ -257,6 +260,8 @@ def merge_clarity(snapshots, date):
 def main():
     ga4 = C.load_json(GA4, {"days": {}}).get("days") or {}
     clarity_all = C.load_json(CLARITY, {})
+    if not (clarity_all.get("snapshots") or {}):
+        clarity_all = C.load_json(CLARITY_RAW, {})
     versions = C.load_json(VERSIONS, {})
     products = C.load_json(PRODUCTS, {})
     layout = C.load_json(LAYOUT, {})

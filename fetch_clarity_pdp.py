@@ -16,11 +16,13 @@ import argparse
 import sys
 
 import clarity_api
+import clarity_slim
 from datetime import datetime, timedelta
 
 from pdp_common import kst_now, load_json, parse_product_no, save_json
 
-SNAP_PATH = "data/clarity_snapshots.json"
+SNAP_PATH = "data/clarity_snapshots.json"   # 원본. 용량 때문에 gitignore — 로컬 전용
+SLIM_PATH = "data/clarity_slim.json"        # 저장소에 올라가는 정본
 
 # 자동 호출 4건. 5~7은 재시도, 8~10은 사람이 수동 조회할 몫으로 남긴다.
 # 2026-08-17: 4콜 -> 2콜로 줄임.
@@ -130,6 +132,12 @@ def fetch(num_of_days=1, force=False, dump_raw=False):
     entry["call_count"] = len(entry["calls"])
     snaps["snapshots"][key] = entry
     save_json(SNAP_PATH, snaps)
+
+    # 요약본은 통째로 다시 만들지 않고 이 한 건만 얹는다.
+    # Actions 러너에는 원본이 없어서(gitignore) 통째로 만들면 과거가 전부 날아간다.
+    slim = load_json(SLIM_PATH)
+    slim.setdefault("snapshots", {})[key] = clarity_slim.slim_entry(entry)
+    save_json(SLIM_PATH, slim)
     print(f"저장: {SNAP_PATH} · {key} · 이번 실행 {done}건 "
           f"(오늘 예산 {clarity_api.budget_used()}/{clarity_api.DAILY_LIMIT})")
     return entry
@@ -171,7 +179,9 @@ if __name__ == "__main__":
     # 재시도 스케줄이 정상 수집분 위에 또 호출하면 하루 10회 예산을 태운다.
     # 마지막 수집 시각을 보고 이미 최신이면 아무것도 하지 않는다.
     if a.only_if_stale_hours > 0:
-        snaps = (load_json(SNAP_PATH).get("snapshots") or {})
+        snaps = (load_json(SLIM_PATH).get("snapshots") or {})
+        if not snaps:
+            snaps = (load_json(SNAP_PATH).get("snapshots") or {})
         last = max((v.get("fetched_at") or "" for v in snaps.values()),
                    default="")
         if last:

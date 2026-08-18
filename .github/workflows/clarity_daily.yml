@@ -54,7 +54,9 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/clarity_snapshots.json data/clarity_call_budget.json
+          # 원본은 gitignore. 100 MiB 한도를 넘겨 2026-08-14 부터 push 가 계속
+          # 거부됐고 5일치를 잃었다. 저장소에 올리는 건 요약본뿐이다.
+          git add data/clarity_slim.json data/clarity_call_budget.json
           git status --short
           # Clarity 는 append-only 라 커밋 실패 = 그날 데이터 영구 소실이다.
           # 조용히 지나가지 않도록 상태를 찍고 분기를 명시한다.
