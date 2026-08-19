@@ -16503,64 +16503,66 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 10,
-        "3": 10,
-        "2": 9,
-        "4": 9,
-        "12": 8,
-        "13": 8,
-        "14": 8,
-        "19": 8,
-        "6": 7,
-        "10": 7,
-        "11": 7,
-        "15": 7,
-        "20": 7,
-        "5": 6,
-        "7": 6,
-        "8": 6,
-        "9": 6,
-        "16": 6,
-        "17": 6,
-        "18": 5
+        "1": 13,
+        "2": 13,
+        "3": 13,
+        "4": 13,
+        "12": 12,
+        "13": 12,
+        "6": 11,
+        "10": 11,
+        "11": 11,
+        "14": 11,
+        "5": 10,
+        "15": 10,
+        "19": 10,
+        "16": 9,
+        "17": 9,
+        "20": 9,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "18": 6
        },
        "exit_hist": {
-        "0": 11,
-        "20": 4,
+        "0": 16,
+        "20": 7,
         "2": 1,
-        "6": 1
+        "4": 1,
+        "6": 1,
+        "8": 1
        },
        "events": {
-        "pdp_section": 146,
-        "pdp_scroll": 46,
-        "pdp_exit": 17,
-        "pdp_cta_view": 12,
-        "pdp_cta_click": 6,
-        "pdp_review": 4
+        "pdp_section": 207,
+        "pdp_scroll": 63,
+        "pdp_exit": 27,
+        "pdp_cta_view": 17,
+        "pdp_cta_click": 10,
+        "pdp_review": 5
        },
-       "exit_events": 17,
-       "sum_seconds": 2539,
+       "exit_events": 27,
+       "sum_seconds": 3072,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 8,
+       "sum_saw_cta": 14,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "바로구매": 3,
-        "옵션선택": 3,
-        "썸네일": 2,
+        "바로구매": 6,
+        "썸네일": 5,
+        "옵션선택": 5,
         "정기배송선택": 2,
         "리뷰": 1,
         "상품문의": 1,
         "장바구니": 1
        },
        "scroll_reach": {
-        "10": 11,
-        "50": 8,
-        "75": 8,
-        "90": 8,
-        "25": 7,
-        "100": 4
+        "10": 15,
+        "50": 12,
+        "25": 11,
+        "75": 10,
+        "90": 10,
+        "100": 5
        }
       },
       "desktop": {
@@ -16593,12 +16595,12 @@
      },
      "section_total": 20,
      "entry": {
-      "sessions": 20,
-      "engaged": 12
+      "sessions": 28,
+      "engaged": 18
      },
      "channels": {
-      "Unassigned": 16,
-      "Paid Social": 6
+      "Unassigned": 22,
+      "Paid Social": 10
      }
     },
     "76": {
@@ -16606,57 +16608,62 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "3": 7,
+        "3": 9,
+        "1": 8,
+        "2": 7,
+        "9": 7,
         "4": 6,
-        "2": 5,
-        "1": 4,
-        "5": 3,
-        "6": 3,
-        "7": 3,
-        "8": 3,
-        "9": 3,
-        "19": 3,
-        "10": 2,
-        "11": 2,
-        "12": 2,
-        "18": 2,
-        "13": 1,
-        "14": 1,
-        "15": 1,
-        "16": 1,
-        "17": 1
+        "6": 6,
+        "7": 6,
+        "8": 6,
+        "10": 6,
+        "5": 5,
+        "11": 4,
+        "19": 4,
+        "12": 3,
+        "18": 3,
+        "13": 2,
+        "14": 2,
+        "15": 2,
+        "16": 2,
+        "17": 2
        },
        "exit_hist": {
-        "0": 24,
+        "0": 35,
+        "1": 3,
         "19": 3,
         "4": 2,
-        "3": 1
+        "3": 1,
+        "9": 1,
+        "10": 1
        },
        "events": {
-        "pdp_section": 53,
-        "pdp_exit": 30,
-        "pdp_scroll": 14,
-        "pdp_cta_view": 7,
-        "pdp_review": 3
+        "pdp_section": 90,
+        "pdp_exit": 46,
+        "pdp_scroll": 21,
+        "pdp_cta_view": 12,
+        "pdp_review": 3,
+        "pdp_cta_click": 2
        },
-       "exit_events": 30,
-       "sum_seconds": 556,
+       "exit_events": 46,
+       "sum_seconds": 778,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 11,
+       "sum_saw_cta": 17,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
+        "네이버페이": 2,
         "상단메뉴": 1,
         "상세이미지": 1
        },
        "scroll_reach": {
-        "10": 3,
+        "50": 6,
+        "10": 4,
         "100": 3,
         "25": 3,
-        "50": 2,
-        "90": 2,
-        "75": 1
+        "90": 3,
+        "75": 2
        }
       },
       "desktop": {
@@ -16710,12 +16717,12 @@
      },
      "section_total": 19,
      "entry": {
-      "sessions": 27,
-      "engaged": 20
+      "sessions": 39,
+      "engaged": 27
      },
      "channels": {
-      "Unassigned": 20,
-      "Paid Social": 12,
+      "Unassigned": 28,
+      "Paid Social": 20,
       "Cross-network": 1
      }
     },
@@ -16868,8 +16875,8 @@
      },
      "section_total": 1,
      "entry": {
-      "sessions": 2,
-      "engaged": 1
+      "sessions": 3,
+      "engaged": 2
      },
      "channels": {
       "Unassigned": 1
@@ -16950,6 +16957,39 @@
       "mobile": {
        "section_reach": {},
        "exit_hist": {
+        "0": 1,
+        "1": 1
+       },
+       "events": {
+        "pdp_exit": 2,
+        "pdp_scroll": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 19,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "25": 1
+       }
+      }
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "channels": {
+      "Unassigned": 2
+     }
+    },
+    "60": {
+     "name": "국산 유기농 서리태 검은콩 1kg",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
         "0": 1
        },
        "events": {
@@ -16999,11 +17039,19 @@
      "channels": {
       "Paid Social": 1
      }
+    },
+    "59": {
+     "name": "",
+     "devices": {},
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     }
     }
    },
    "unknown": {},
    "missing_metrics": []
   }
  },
- "updated_at": "2026-08-20 07:00:35 KST"
+ "updated_at": "2026-08-20 07:44:27 KST"
 }
