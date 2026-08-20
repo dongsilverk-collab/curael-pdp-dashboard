@@ -306,57 +306,80 @@ def scroll_block(p):
     return "".join(out)
 
 
-def source_block(p):
-    """광고 소재별 이탈 지점.
-
-    같은 상세페이지라도 어느 광고로 들어왔느냐에 따라 어디까지 보는지가 다르다.
-    소재가 페이지와 안 맞으면(광고는 A를 약속했는데 페이지는 B로 시작) 초반에
-    빠지고, 소재가 맞으면 끝까지 간다. 그 차이를 여기서 본다.
-
-    ⚠️ 광고 유입이 전혀 없으면 아예 그리지 않는다. '_비광고' 한 줄짜리 표는
-       읽는 사람에게 아무것도 알려주지 않으면서 화면만 차지한다.
-    """
-    bs = p.get("by_source") or {}
-    ads = {k: v for k, v in bs.items() if k != "_비광고" and v.get("exits", 0) > 0}
-    if not ads:
-        return ""
-    total_sec = p.get("section_total") or 0
-    rows = sorted(ads.items(), key=lambda kv: -kv[1]["exits"])
-    base = bs.get("_비광고") or {}
-
-    def profile(v):
-        """이탈이 앞쪽에 몰렸는지 뒤쪽인지를 한 숫자로. 0=첫장, 1=완독."""
+def _depth_rows(bucket, total_sec, label_fn):
+    """유입 묶음 하나를 표 한 줄로. 어디까지 보고 나갔는지가 핵심이다."""
+    out = []
+    for key, v in sorted(bucket.items(), key=lambda kv: -kv[1]["exits"]):
         ex = {int(k): n for k, n in (v.get("exit_hist") or {}).items() if k.isdigit()}
         tot = sum(ex.values())
-        if not tot or not total_sec:
-            return None
-        return sum(i * n for i, n in ex.items()) / tot / total_sec
+        if not tot:
+            continue
+        # S00 = 상세영역에 들어서기도 전에 나간 사람. 이걸 평균에 섞으면
+        # '유입이 나쁜 것'과 '페이지가 나쁜 것'이 구분되지 않는다.
+        pre = ex.get(0, 0)
+        inside = {i: n for i, n in ex.items() if i >= 1}
+        n_in = sum(inside.values())
+        depth = (sum(i * n for i, n in inside.items()) / n_in / total_sec
+                 if n_in and total_sec else None)
+        done = inside.get(total_sec, 0) / n_in if n_in and total_sec else 0
+        out.append({
+            "name": label_fn(key), "exits": v["exits"],
+            "pre_rate": pre / tot, "depth": depth, "done": done, "n_in": n_in,
+        })
+    return out
 
-    out = ["<h2>어느 광고로 들어온 사람이 더 보나</h2>",
-           '<p class="sub">광고 소재별로 상세페이지를 어디까지 보고 나갔는지입니다. '
-           '숫자가 낮을수록 초반에 빠집니다.</p>',
-           '<div class="scroll"><table><tr><th>광고 소재</th>'
-           '<th class="num">이탈</th><th class="num">평균 도달</th>'
-           '<th>초반 이탈 비중</th></tr>']
-    for name, v in rows:
-        d = profile(v)
-        ex = {int(k): n for k, n in (v.get("exit_hist") or {}).items() if k.isdigit()}
-        tot = sum(ex.values()) or 1
-        early = sum(n for i, n in ex.items() if i <= max(1, total_sec // 4)) / tot
-        bar = G.reach_bar(d if d is not None else 0, early)
-        out.append('<tr><td>%s</td><td class="num">%s</td>'
-                   '<td class="num">%s</td><td class="bar">%s</td></tr>'
-                   % (G.esc(name[:44]), f"{v['exits']:,}",
-                      G.pct(d) if d is not None else "–", bar))
-    if base.get("exits"):
-        d = profile(base)
-        out.append('<tr class="dim"><td>비광고 유입(검색·직접 등)</td>'
-                   '<td class="num">%s</td><td class="num">%s</td><td></td></tr>'
-                   % (f"{base['exits']:,}", G.pct(d) if d is not None else "–"))
-    out.append("</table></div>")
-    out.append('<p class="sub">비광고 유입과 나란히 보세요. 광고 쪽이 뚜렷하게 낮으면 '
-               '소재와 상세페이지 첫 화면이 어긋난 것입니다.</p>')
-    return "".join(out)
+
+def _depth_table(rows, head):
+    if not rows:
+        return ""
+    o = ['<div class="scroll"><table><tr><th>%s</th>'
+         '<th class="num">이탈</th><th class="num">상세 진입 전</th>'
+         '<th class="num">평균 도달</th><th class="num">완독</th>'
+         '<th>도달 분포</th></tr>' % head]
+    for r in rows:
+        low = ' class="dim"' if r["n_in"] < 30 else ""
+        badge = G.sample_badge(r["n_in"])
+        o.append('<tr%s><td>%s%s</td><td class="num">%s</td>'
+                 '<td class="num">%s</td><td class="num">%s</td>'
+                 '<td class="num">%s</td><td class="bar">%s</td></tr>'
+                 % (low, G.esc(r["name"][:40]), badge, f'{r["exits"]:,}',
+                    G.pct(r["pre_rate"]),
+                    G.pct(r["depth"]) if r["depth"] is not None else "–",
+                    G.pct(r["done"]),
+                    G.reach_bar(r["depth"] or 0, r["pre_rate"])))
+    o.append("</table></div>")
+    return "".join(o)
+
+
+def source_block(p):
+    """유입별로 상세페이지를 어디까지 보는가.
+
+    두 축을 나눠 그린다.
+      채널(GA4 자동 분류) — 과거분까지 다 있어 표본이 두껍다. 판단의 정본.
+      광고 소재(utm_content) — 파라미터를 붙인 뒤부터만. 소재 온오프 판단용.
+
+    '상세 진입 전' 열을 따로 둔 이유: 상세영역에 들어서지도 못하고 나간 비율이
+    유입 품질(광고 소재가 페이지와 안 맞음)을 가리키고, '평균 도달'은 들어선
+    사람이 얼마나 읽었는지를 가리킨다. 둘을 섞으면 무엇을 고쳐야 할지 안 나온다.
+    """
+    total_sec = p.get("section_total") or 0
+    ch = p.get("by_channel") or {}
+    ads = {k: v for k, v in (p.get("by_source") or {}).items()
+           if k != "_비광고" and v.get("exits", 0) > 0}
+    if not ch and not ads:
+        return ""
+
+    o = ["<h2>어떻게 들어온 사람이 더 보나</h2>",
+         '<p class="sub">유입 경로별로 상세페이지를 어디까지 보고 나갔는지입니다. '
+         '<b>상세 진입 전</b>이 높으면 유입과 페이지가 안 맞는 것이고, '
+         '<b>평균 도달</b>이 낮으면 페이지 자체 문제입니다.</p>']
+    o.append(_depth_table(_depth_rows(ch, total_sec,
+                                      lambda k: CHANNEL_KO.get(k, k)),
+                          "유입 채널"))
+    if ads:
+        o.append('<h2 style="font-size:14px">광고 소재별</h2>')
+        o.append(_depth_table(_depth_rows(ads, total_sec, lambda k: k), "광고 소재"))
+    return "".join(o)
 
 
 def channels_block(p):

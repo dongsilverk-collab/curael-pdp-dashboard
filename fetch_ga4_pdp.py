@@ -210,6 +210,24 @@ def fetch_day(date, access=None, prop=None):
         by["exit_hist"][key] = by["exit_hist"].get(key, 0) + n
         by["exits"] += n
 
+    # ---- R10 유입 채널별 이탈 분포 ----
+    # R9(utm_content)는 광고에 파라미터를 붙인 뒤부터만 값이 있고 표본도 얇다.
+    # 채널 축은 GA4 가 알아서 분류하므로 과거분까지 전부 쓸 수 있다 —
+    # "광고로 온 사람 vs 검색으로 온 사람이 어디까지 보나"는 이쪽이 정본이다.
+    for r in _rows([D_PRODUCT, "sessionDefaultChannelGroup", D_EXIT], ["eventCount"],
+                   date, "pdp_exit", access, prop):
+        pid = _pid(r)
+        if not pid:
+            continue
+        ch = r.get("sessionDefaultChannelGroup") or "(미분류)"
+        p = day["products"].setdefault(pid, {"name": "", "devices": {}})
+        by = p.setdefault("by_channel", {}).setdefault(ch, {"exit_hist": {}, "exits": 0})
+        i = _section_index(r.get(D_EXIT) or "")
+        key = str(i) if i is not None else "?"
+        n = _n(r, "eventCount")
+        by["exit_hist"][key] = by["exit_hist"].get(key, 0) + n
+        by["exits"] += n
+
     # ---- R3 상품별 합계 KPI ----
     sums = probe_metrics(date, access, prop)
     have = {api for _, api in sums}

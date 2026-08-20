@@ -280,6 +280,8 @@ def main():
         # 그날 GA4 원본의 유입별 이탈 분포(R9)
         src_day = {pid: (v.get("by_source") or {})
                    for pid, v in ((ga4.get(date) or {}).get("products") or {}).items()}
+        chan_day = {pid: (v.get("by_channel") or {})
+                    for pid, v in ((ga4.get(date) or {}).get("products") or {}).items()}
         rec = {
             "sources": {
                 "ga4": "ok",
@@ -346,6 +348,7 @@ def main():
                 # 광고 소재별 이탈 분포. build_period 가 여기서 다시 합산하므로
                 # 일별 레코드에 실어 보내야 한다.
                 "by_source": (src_day.get(pid) or {}),
+                "by_channel": (chan_day.get(pid) or {}),
             }
 
             # 금액 환산. 이게 있어야 "이 이미지를 고치면 얼마"가 나온다.
@@ -451,14 +454,15 @@ def build_period(days, n):
 
     # 유입(광고 소재)별 이탈 분포를 기간 합산한다.
     # 광고는 며칠 단위로 켜고 끄므로 하루치만 보면 표본이 늘 부족하다.
-    bysrc = {}
+    bysrc, bychan = {}, {}
     for d in use:
         for pid, p0 in (days[d].get("products") or {}).items():
-            for src, v in (p0.get("by_source") or {}).items():
-                t = bysrc.setdefault(pid, {}).setdefault(src, {"exit_hist": {}, "exits": 0})
-                t["exits"] += v.get("exits", 0)
-                for k, n in (v.get("exit_hist") or {}).items():
-                    t["exit_hist"][k] = t["exit_hist"].get(k, 0) + n
+            for field, store in (("by_source", bysrc), ("by_channel", bychan)):
+                for src, v in (p0.get(field) or {}).items():
+                    t = store.setdefault(pid, {}).setdefault(src, {"exit_hist": {}, "exits": 0})
+                    t["exits"] += v.get("exits", 0)
+                    for k, n in (v.get("exit_hist") or {}).items():
+                        t["exit_hist"][k] = t["exit_hist"].get(k, 0) + n
 
     products = {}
     for pid, devs in prods.items():
@@ -484,6 +488,7 @@ def build_period(days, n):
         rec = dict(m)
         rec.update({"devices": out_devs, "channels": chans.get(pid) or {},
                     "by_source": bysrc.get(pid) or {},
+                    "by_channel": bychan.get(pid) or {},
                     "entry": entries.get(pid) or {}, "clarity": cl,
                     "sales": sales.get(pid),
                     "sample": "ok" if out_devs["_all"]["sessions"] >= MIN_SESSIONS else "low"})
