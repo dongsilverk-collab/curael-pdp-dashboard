@@ -20,6 +20,7 @@ Clarity(fetch_clarity_pdp.py)와 정반대 규칙이라 헷갈리기 쉽다. 이
 """
 import argparse
 import sys
+import urllib.parse
 
 import ga4_api
 import pdp_common as C
@@ -105,6 +106,44 @@ def _n(row, key):
         return 0
 
 
+def _norm_src(v):
+    """utm_content 값을 하나의 표기로 모은다.
+
+    같은 광고 세트가 두 형태로 들어온다(실측 2026-08-20):
+      숨촉촉_수동형_트랙픽_ 1일3만원_0818
+      %EC%88%A8%EC%B4%89%EC%B4%89_%EC%88%98%EB%8F%99%ED%...
+    브라우저·유입 경로에 따라 한글이 퍼센트 인코딩되기도 해서, 안 풀면 같은
+    소재가 둘로 갈려 표본이 반토막 난다.
+
+    숫자만 들어오는 경우도 있다(광고 ID). 이름이 아니라 ID 라는 걸 화면에서
+    알아볼 수 있게 표시를 붙인다 — 조용히 섞으면 나중에 원인을 못 찾는다.
+    """
+    s = (v or "").strip()
+    if not s or s == "(not set)":
+        return "_비광고"
+    if "%" in s:
+        # GA4 가 값을 100바이트에서 자르는 탓에 퍼센트 인코딩이 중간에 끊긴 채로
+        # 오기도 한다("...1일3%EB"). errors="replace" 로 풀면 깨진 문자가 남아
+        # 같은 세트가 둘로 갈리므로, 꼬리의 불완전한 조각은 잘라낸다.
+        try:
+            s = urllib.parse.unquote(s, errors="strict")
+        except (UnicodeDecodeError, ValueError):
+            cut = s
+            for _ in range(6):
+                cut = cut[:cut.rfind("%")] if "%" in cut else cut
+                try:
+                    s = urllib.parse.unquote(cut, errors="strict") + "…"
+                    break
+                except (UnicodeDecodeError, ValueError):
+                    continue
+            else:
+                s = urllib.parse.unquote(s, errors="replace")
+    s = " ".join(s.split())          # 연속 공백·언더바 뒤 공백 정리
+    if s.isdigit():
+        return "ID %s (이름 미설정)" % s
+    return s
+
+
 def fetch_day(date, access=None, prop=None):
     """하루치를 4개 리포트로 받아 하나의 dict로 만든다."""
     access = access or ga4_api.token()
@@ -162,10 +201,7 @@ def fetch_day(date, access=None, prop=None):
         pid = _pid(r)
         if not pid:
             continue
-        src = (r.get(D_UTM) or "").strip()
-        # 값이 없는 건 광고가 아닌 유입(검색·직접 등)이다. 광고와 섞지 않는다.
-        if not src or src == "(not set)":
-            src = "_비광고"
+        src = _norm_src(r.get(D_UTM))
         p = day["products"].setdefault(pid, {"name": "", "devices": {}})
         by = p.setdefault("by_source", {}).setdefault(src, {"exit_hist": {}, "exits": 0})
         i = _section_index(r.get(D_EXIT) or "")

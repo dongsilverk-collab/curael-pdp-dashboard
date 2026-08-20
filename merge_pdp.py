@@ -277,6 +277,9 @@ def main():
         day = ga4[date]
         clar, un_clar = merge_clarity(clarity_all, date)
 
+        # 그날 GA4 원본의 유입별 이탈 분포(R9)
+        src_day = {pid: (v.get("by_source") or {})
+                   for pid, v in ((ga4.get(date) or {}).get("products") or {}).items()}
         rec = {
             "sources": {
                 "ga4": "ok",
@@ -340,6 +343,9 @@ def main():
                 "clarity": clar.get(pid),
                 "sales": ((cafe24.get(date) or {}).get("products") or {}).get(pid),
                 "sample": "ok" if devices["_all"]["sessions"] >= MIN_SESSIONS else "low",
+                # 광고 소재별 이탈 분포. build_period 가 여기서 다시 합산하므로
+                # 일별 레코드에 실어 보내야 한다.
+                "by_source": (src_day.get(pid) or {}),
             }
 
             # 금액 환산. 이게 있어야 "이 이미지를 고치면 얼마"가 나온다.
