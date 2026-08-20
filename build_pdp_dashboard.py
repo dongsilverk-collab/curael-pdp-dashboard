@@ -306,6 +306,59 @@ def scroll_block(p):
     return "".join(out)
 
 
+def source_block(p):
+    """광고 소재별 이탈 지점.
+
+    같은 상세페이지라도 어느 광고로 들어왔느냐에 따라 어디까지 보는지가 다르다.
+    소재가 페이지와 안 맞으면(광고는 A를 약속했는데 페이지는 B로 시작) 초반에
+    빠지고, 소재가 맞으면 끝까지 간다. 그 차이를 여기서 본다.
+
+    ⚠️ 광고 유입이 전혀 없으면 아예 그리지 않는다. '_비광고' 한 줄짜리 표는
+       읽는 사람에게 아무것도 알려주지 않으면서 화면만 차지한다.
+    """
+    bs = p.get("by_source") or {}
+    ads = {k: v for k, v in bs.items() if k != "_비광고" and v.get("exits", 0) > 0}
+    if not ads:
+        return ""
+    total_sec = p.get("section_total") or 0
+    rows = sorted(ads.items(), key=lambda kv: -kv[1]["exits"])
+    base = bs.get("_비광고") or {}
+
+    def profile(v):
+        """이탈이 앞쪽에 몰렸는지 뒤쪽인지를 한 숫자로. 0=첫장, 1=완독."""
+        ex = {int(k): n for k, n in (v.get("exit_hist") or {}).items() if k.isdigit()}
+        tot = sum(ex.values())
+        if not tot or not total_sec:
+            return None
+        return sum(i * n for i, n in ex.items()) / tot / total_sec
+
+    out = ["<h2>어느 광고로 들어온 사람이 더 보나</h2>",
+           '<p class="sub">광고 소재별로 상세페이지를 어디까지 보고 나갔는지입니다. '
+           '숫자가 낮을수록 초반에 빠집니다.</p>',
+           '<div class="scroll"><table><tr><th>광고 소재</th>'
+           '<th class="num">이탈</th><th class="num">평균 도달</th>'
+           '<th>초반 이탈 비중</th></tr>']
+    for name, v in rows:
+        d = profile(v)
+        ex = {int(k): n for k, n in (v.get("exit_hist") or {}).items() if k.isdigit()}
+        tot = sum(ex.values()) or 1
+        early = sum(n for i, n in ex.items() if i <= max(1, total_sec // 4)) / tot
+        bar = G.reach_bar(d if d is not None else 0, early)
+        out.append('<tr><td>%s</td><td class="num">%s</td>'
+                   '<td class="num">%s</td><td class="bar">%s</td></tr>'
+                   % (G.esc(name[:44]), f"{v['exits']:,}",
+                      G.pct(d) if d is not None else "–", bar))
+    if base.get("exits"):
+        d = profile(base)
+        out.append('<tr class="dim"><td>비광고 유입(검색·직접 등)</td>'
+                   '<td class="num">%s</td><td class="num">%s</td><td></td></tr>'
+                   % (f"{base['exits']:,}", G.pct(d) if d is not None else "–"))
+    out.append("</table></div>")
+    out.append('<p class="sub">비광고 유입과 나란히 보세요. 광고 쪽이 뚜렷하게 낮으면 '
+               '소재와 상세페이지 첫 화면이 어긋난 것입니다.</p>')
+    return "".join(out)
+
+
 def channels_block(p):
     """유입 채널. '미도달 61%'를 해석하려면 누가 왔는지를 알아야 한다."""
     ch = p.get("channels") or {}
@@ -598,6 +651,7 @@ def build_product(pid, p, date, days_collected):
     out.append(entry_block(p))
     out.append(zone_block(p))
     out.append(scroll_block(p))
+    out.append(source_block(p))
     out.append(channels_block(p))
     out.append(reading_block(p, date, days_collected))
 

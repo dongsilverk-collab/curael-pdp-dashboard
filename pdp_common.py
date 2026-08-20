@@ -44,12 +44,30 @@ def kst_date(days_ago=0):
 # ---------- 파일 ----------
 
 def load_json(path, default=None):
-    """없으면 default(기본 {}). vegicel build_dashboard.py:52 관례."""
+    """없으면 default(기본 {}).
+
+    ⚠️ 파일이 **깨졌을 때 조용히 기본값을 돌려주면 안 된다.**
+    2026-08-20 에 data/clarity_call_budget.json 에 git 충돌 표식(<<<<<<<)이
+    커밋된 채로 남았는데, 여기서 조용히 {} 를 돌려주는 바람에 budget_used() 가
+    계속 0 을 반환했다. 하루 10회 한도 가드가 통째로 꺼진 셈이라 눈치채기까지
+    시간이 걸렸다. 없는 파일과 깨진 파일은 다르게 다뤄야 한다.
+    """
     try:
         with open(path, encoding="utf-8") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
+            raw = f.read()
+    except FileNotFoundError:
         return {} if default is None else default
+
+    if "<<<<<<<" in raw or ">>>>>>>" in raw:
+        raise ValueError(
+            "%s 에 git 충돌 표식이 남아 있습니다. 병합을 마무리한 뒤 다시 실행하세요."
+            % path)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as e:
+        print("⚠ %s 를 읽지 못했습니다(%s). 기본값으로 진행하면 조용히 틀리므로 "
+              "중단합니다." % (path, e), file=sys.stderr)
+        raise
 
 
 def save_json(path, obj):

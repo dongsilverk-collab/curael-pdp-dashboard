@@ -31,6 +31,8 @@ D_PRODUCT = "customEvent:pdp_product_id"
 D_NAME = "customEvent:pdp_product_name"
 D_SECTION = "customEvent:pdp_section_label"
 D_EXIT = "customEvent:pdp_exit_label"
+# 2026-08-20 등록. 메타 광고 URL 매개변수 utm_content(=광고세트 이름)를 담는다.
+D_UTM = "customEvent:pdp_utm_content"
 D_PERCENT = "customEvent:pdp_percent"   # 2026-08-07 등록. 그 이전 데이터는 비어 있다.
 D_ZONE = "customEvent:pdp_zone"         # 2026-08-07 등록. GTM 게시 후부터 값이 들어온다.
 D_DEVICE = "deviceCategory"
@@ -150,6 +152,27 @@ def fetch_day(date, access=None, prop=None):
         i = _section_index(lab)
         key = str(i) if i is not None else "?"
         b["exit_hist"][key] = b["exit_hist"].get(key, 0) + _n(r, "eventCount")
+
+    # ---- R9 유입(광고 소재)별 이탈 분포 ----
+    # R2 와 같은 이벤트를 보지만 차원에 utm_content 를 더한다. R2 를 고치지 않고
+    # 따로 받는 이유는, 맞춤 측정기준이 비어 있는 기간(등록 전 데이터)에도
+    # 기존 집계가 그대로 남아야 하기 때문이다.
+    for r in _rows([D_PRODUCT, D_UTM, D_EXIT], ["eventCount"],
+                   date, "pdp_exit", access, prop):
+        pid = _pid(r)
+        if not pid:
+            continue
+        src = (r.get(D_UTM) or "").strip()
+        # 값이 없는 건 광고가 아닌 유입(검색·직접 등)이다. 광고와 섞지 않는다.
+        if not src or src == "(not set)":
+            src = "_비광고"
+        p = day["products"].setdefault(pid, {"name": "", "devices": {}})
+        by = p.setdefault("by_source", {}).setdefault(src, {"exit_hist": {}, "exits": 0})
+        i = _section_index(r.get(D_EXIT) or "")
+        key = str(i) if i is not None else "?"
+        n = _n(r, "eventCount")
+        by["exit_hist"][key] = by["exit_hist"].get(key, 0) + n
+        by["exits"] += n
 
     # ---- R3 상품별 합계 KPI ----
     sums = probe_metrics(date, access, prop)

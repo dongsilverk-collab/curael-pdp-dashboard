@@ -443,6 +443,17 @@ def build_period(days, n):
                     t["_at"] += cl["active_ratio"] * w
                     t["_tt"] += w
 
+    # 유입(광고 소재)별 이탈 분포를 기간 합산한다.
+    # 광고는 며칠 단위로 켜고 끄므로 하루치만 보면 표본이 늘 부족하다.
+    bysrc = {}
+    for d in use:
+        for pid, p0 in (days[d].get("products") or {}).items():
+            for src, v in (p0.get("by_source") or {}).items():
+                t = bysrc.setdefault(pid, {}).setdefault(src, {"exit_hist": {}, "exits": 0})
+                t["exits"] += v.get("exits", 0)
+                for k, n in (v.get("exit_hist") or {}).items():
+                    t["exit_hist"][k] = t["exit_hist"].get(k, 0) + n
+
     products = {}
     for pid, devs in prods.items():
         m = meta[pid]
@@ -466,6 +477,7 @@ def build_period(days, n):
 
         rec = dict(m)
         rec.update({"devices": out_devs, "channels": chans.get(pid) or {},
+                    "by_source": bysrc.get(pid) or {},
                     "entry": entries.get(pid) or {}, "clarity": cl,
                     "sales": sales.get(pid),
                     "sample": "ok" if out_devs["_all"]["sessions"] >= MIN_SESSIONS else "low"})
