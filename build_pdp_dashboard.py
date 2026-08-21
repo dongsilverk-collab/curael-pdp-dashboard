@@ -187,8 +187,8 @@ def build_index(date, rec, days_collected):
 
 
 # 유료 지면. by_channel 키와 정확히 일치해야 한다.
-PAID_CHANNELS = {"Paid Social", "Cross-network", "Paid Search",
-                 "Paid Shopping", "Paid Video", "Display"}
+PAID_CHANNELS = {"Paid Social", "Cross-network", "Paid Search", "Paid Shopping",
+                 "Paid Video", "Paid Other", "Display"}
 
 CHANNEL_KO = {
     "Direct": "직접 방문", "Organic Search": "검색(자연)", "Paid Search": "검색(광고)",
@@ -379,15 +379,17 @@ def verdict_block(pid, p, days):
             continue
         bc = pr.get("by_channel") or {}
         t = sum(v.get("exits", 0) for v in bc.values())
-        share = (sum(v.get("exits", 0) for k, v in bc.items() if k in PAID) / t) if t else 0
+        share = (sum(v.get("exits", 0) for k, v in bc.items() if k in PAID) / t) if t else None
         hist.append({"d": d, "ses": a["sessions"], "s00": a.get("s00_rate") or 0,
                      "done": a.get("done_rate") or 0, "ad": share,
                      "orders": (pr.get("sales") or {}).get("orders") or 0})
     if len(hist) < 4:
         return ""
 
-    adays = [h for h in hist if h["ad"] >= 0.3]
-    orgs = [h for h in hist if h["ad"] < 0.3 and h["ses"] >= 10]
+    # 채널을 모르는 날은 양쪽 어디에도 넣지 않는다. 광고일지 아닐지 모르는 것을
+    # 비광고로 세면 비교 기준선 자체가 오염된다.
+    adays = [h for h in hist if h["ad"] is not None and h["ad"] >= 0.3]
+    orgs = [h for h in hist if h["ad"] is not None and h["ad"] < 0.3 and h["ses"] >= 10]
     if not adays:
         return ""
 
@@ -463,9 +465,11 @@ def trend_block(pid, days):
         bc = p.get("by_channel") or {}
         tot_ch = sum(v.get("exits", 0) for v in bc.values())
         ad = sum(v.get("exits", 0) for k, v in bc.items() if k in PAID_CHANNELS)
+        # 채널 수집(R10)은 2026-08-17 부터다. 그 전 날짜는 광고를 돌렸어도
+        # 판별할 근거가 없다. 0% 로 그리면 '광고 안 한 날'로 읽혀 실제와 반대가 된다.
         rows.append({
             "date": d, "sessions": ses,
-            "ad_share": (ad / tot_ch) if tot_ch else 0,
+            "ad_share": (ad / tot_ch) if tot_ch else None,
             "s00": a.get("s00_rate") or 0,
             "done": a.get("done_rate") or 0,
             "orders": sales.get("orders") or 0,
@@ -487,7 +491,7 @@ def trend_block(pid, days):
          '<th class="num">주문</th><th class="num">매출</th></tr>']
     for r in rows:
         # 유료 비중 30% 이상이면 광고 집행일로 본다. 그 아래는 잔여 트래픽이다.
-        is_ad = r["ad_share"] >= 0.3
+        is_ad = r["ad_share"] is not None and r["ad_share"] >= 0.3
         cls = " ".join(c for c in (("dim" if r["sessions"] < 30 else ""),
                                    ("adday" if is_ad else "")) if c)
         dim = ' class="%s"' % cls if cls else ""
