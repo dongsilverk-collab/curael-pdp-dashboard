@@ -600,6 +600,7 @@ def build_product(pid, p, date, days_collected, days=None):
                    '이미지를 여러 장으로 나누면 어디서 나가는지 볼 수 있습니다.</div>')
         return G.page(p["name"], "".join(out), back=True)
 
+    body_at = len(out)
     out.append("<h2>구간별 도달과 이탈</h2>")
     out.append('<p class="sub">막대는 도달률, <span style="color:%s">붉은 조각</span>은 '
                '<b>그 구간을 마지막으로 세션이 끝난 사람</b>(pdp_exit 실측)입니다. '
@@ -711,6 +712,7 @@ def build_product(pid, p, date, days_collected, days=None):
                    '빠져나갑니다.</div>'
                    % (worst, f"{a['biggest_drop_people']:,}"))
 
+    dev_at = len(out)
     out.append("<h2>기기별</h2>")
     out.append('<div class="scroll"><table><tr><th>기기</th><th class="num">세션</th>'
                '<th class="num">미도달</th><th class="num">첫 구간</th>'
@@ -724,13 +726,33 @@ def build_product(pid, p, date, days_collected, days=None):
                       G.pct(d["s01_rate"]), G.pct(d["done_rate"])))
     out.append("</table></div>")
 
-    out.append(entry_block(p))
-    out.append(zone_block(p))
-    out.append(scroll_block(p))
-    out.append(trend_block(pid, days or {}))
-    out.append(source_block(p))
-    out.append(channels_block(p))
-    out.append(reading_block(p, date, days_collected))
+    devices_html = "".join(out[dev_at:])
+    del out[dev_at:]
+
+    # 탭으로 나눈다. 블록이 9개라 한 화면 스크롤로는 뒤쪽을 아무도 안 본다.
+    # 순서는 '가장 자주 볼 것'부터 — 구간별 이탈이 이 대시보드의 존재 이유다.
+    panes = [
+        ("t1", "구간별 이탈", "".join(out[body_at:]) + scroll_block(p)),
+        ("t2", "유입 분석", source_block(p) + channels_block(p)),
+        ("t3", "날짜별 추이", trend_block(pid, days or {})),
+        ("t4", "행동·기기", entry_block(p) + zone_block(p) + devices_html),
+        ("t5", "요약 해석", reading_block(p, date, days_collected)),
+    ]
+    panes = [(i, t, h) for i, t, h in panes if h.strip()]
+    del out[body_at:]
+
+    tab = ['<div class="tabs">']
+    for k, (i, _t, _h) in enumerate(panes):
+        tab.append('<input type="radio" name="tab" id="%s"%s>'
+                   % (i, ' checked' if k == 0 else ''))
+    tab.append('<div class="tabnav">')
+    for i, t, _h in panes:
+        tab.append('<label for="%s">%s</label>' % (i, G.esc(t)))
+    tab.append("</div>")
+    for i, _t, h in panes:
+        tab.append('<div class="tabpane" id="p%s">%s</div>' % (i[1:], h))
+    tab.append("</div>")
+    out.append("".join(tab))
 
     out.append('<footer>도달률의 분모는 pdp_exit 건수(상세페이지를 연 세션)입니다. '
                'S00은 상세 이미지 영역에 도달하지 못한 세션으로, 첫 이미지 문제가 아니라 '

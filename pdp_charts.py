@@ -143,6 +143,27 @@ a:hover{text-decoration:underline}
 .dim{opacity:.55}
 .hi{background:#FDF3E7}
 .muted{color:#9AA5A3}
+
+/* 탭. 라디오 + 형제 선택자로 만든다 — 외부 JS 없이 동작해야 한다는 원칙 때문이다.
+   블록이 9개까지 늘어 한 페이지 스크롤로는 아무도 끝까지 안 본다. */
+.tabs{margin:26px 0 0}
+.tabs input{position:absolute;opacity:0;pointer-events:none}
+.tabnav{display:flex;gap:2px;flex-wrap:wrap;border-bottom:2px solid #E3E9E8}
+.tabnav label{padding:9px 15px;font-size:13px;color:#6B7876;cursor:pointer;
+ border-radius:7px 7px 0 0;white-space:nowrap;user-select:none;
+ border:1px solid transparent;border-bottom:0;margin-bottom:-2px}
+.tabnav label:hover{color:#15776A;background:#F1F5F4}
+.tabpane{display:none;padding-top:2px}
+.tabpane h2:first-of-type{margin-top:20px}
+#t1:checked~.tabnav label[for=t1],#t2:checked~.tabnav label[for=t2],
+#t3:checked~.tabnav label[for=t3],#t4:checked~.tabnav label[for=t4],
+#t5:checked~.tabnav label[for=t5]{
+ color:#15776A;font-weight:650;background:#fff;border-color:#E3E9E8;
+ border-bottom:2px solid #fff}
+#t1:checked~#p1,#t2:checked~#p2,#t3:checked~#p3,
+#t4:checked~#p4,#t5:checked~#p5{display:block}
+/* 키보드 이동 시 어디에 있는지 보이게 한다 */
+.tabs input:focus-visible+.tabnav label,.tabnav label:focus-within{outline:2px solid #15776A}
 footer{margin-top:34px;font-size:12px;color:#9AA5A3}
 """
 

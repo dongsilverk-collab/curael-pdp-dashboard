@@ -56,5 +56,26 @@ a:hover{text-decoration:underline}
 .dim{opacity:.55}
 .hi{background:#FDF3E7}
 .muted{color:#9AA5A3}
+
+/* 탭. 라디오 + 형제 선택자로 만든다 — 외부 JS 없이 동작해야 한다는 원칙 때문이다.
+   블록이 9개까지 늘어 한 페이지 스크롤로는 아무도 끝까지 안 본다. */
+.tabs{margin:26px 0 0}
+.tabs input{position:absolute;opacity:0;pointer-events:none}
+.tabnav{display:flex;gap:2px;flex-wrap:wrap;border-bottom:2px solid #E3E9E8}
+.tabnav label{padding:9px 15px;font-size:13px;color:#6B7876;cursor:pointer;
+ border-radius:7px 7px 0 0;white-space:nowrap;user-select:none;
+ border:1px solid transparent;border-bottom:0;margin-bottom:-2px}
+.tabnav label:hover{color:#15776A;background:#F1F5F4}
+.tabpane{display:none;padding-top:2px}
+.tabpane h2:first-of-type{margin-top:20px}
+#t1:checked~.tabnav label[for=t1],#t2:checked~.tabnav label[for=t2],
+#t3:checked~.tabnav label[for=t3],#t4:checked~.tabnav label[for=t4],
+#t5:checked~.tabnav label[for=t5]{
+ color:#15776A;font-weight:650;background:#fff;border-color:#E3E9E8;
+ border-bottom:2px solid #fff}
+#t1:checked~#p1,#t2:checked~#p2,#t3:checked~#p3,
+#t4:checked~#p4,#t5:checked~#p5{display:block}
+/* 키보드 이동 시 어디에 있는지 보이게 한다 */
+.tabs input:focus-visible+.tabnav label,.tabnav label:focus-within{outline:2px solid #15776A}
 footer{margin-top:34px;font-size:12px;color:#9AA5A3}
 </style></head><body><div class="wrap"><p class="sub"><a href="index.html">&larr; 전체 목록</a></p><h1>열방약국 유방암 상담소</h1><p class="sub">48번 · 이미지 1장 · v1.0 · 2026-08-15 ~ 2026-08-21 기준 · <a href="https://curaelmall.com/product/detail.html?product_no=48" target="_blank" rel="noopener">상세페이지 열기</a></p><div class="note">세션 <b>13건</b>으로 표본이 부족합니다. 아래 비율은 참고용이며 판단 근거로 쓰기엔 이릅니다.</div><div class="kpis"><div class="kpi"><div class="kpi-v">13</div><div class="kpi-l">세션</div><div class="kpi-s">pdp_exit 기준</div></div><div class="kpi"><div class="kpi-v">77% (10/13)</div><div class="kpi-l">상세 미도달</div><div class="kpi-s">이미지를 못 봄</div></div><div class="kpi"><div class="kpi-v">23% (3/13)</div><div class="kpi-l">첫 구간 이탈</div><div class="kpi-s">S01에서 나감</div></div><div class="kpi"><div class="kpi-v">23% (3/13)</div><div class="kpi-l">끝까지 봄</div><div class="kpi-s">S01 도달</div></div><div class="kpi"><div class="kpi-v">35초</div><div class="kpi-l">평균 체류</div><div class="kpi-s"></div></div><div class="kpi"><div class="kpi-v">77%</div><div class="kpi-l">활동 비율</div><div class="kpi-s">총 체류 중 실제로 움직인 시간</div></div><div class="kpi"><div class="kpi-v">31.5%</div><div class="kpi-l">Clarity 스크롤</div><div class="kpi-s">세션 9 · 분노 0 · 데드 0 · 되돌아감 0</div></div></div><div class="note">이 상품은 <b>상세 이미지가 1장</b>인 초장문 이미지라 구간 분석이 성립하지 않습니다. 위의 Clarity 스크롤 비율로 보세요. 이미지를 여러 장으로 나누면 어디서 나가는지 볼 수 있습니다.</div></div></body></html>
