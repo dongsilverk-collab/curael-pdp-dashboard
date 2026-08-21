@@ -186,6 +186,10 @@ def build_index(date, rec, days_collected):
     return G.page("큐라엘몰 상세페이지 이탈 분석", "".join(out))
 
 
+# 유료 지면. by_channel 키와 정확히 일치해야 한다.
+PAID_CHANNELS = {"Paid Social", "Cross-network", "Paid Search",
+                 "Paid Shopping", "Paid Video", "Display"}
+
 CHANNEL_KO = {
     "Direct": "직접 방문", "Organic Search": "검색(자연)", "Paid Search": "검색(광고)",
     "Organic Social": "SNS(자연)", "Paid Social": "SNS(광고)",
@@ -351,6 +355,92 @@ def _depth_table(rows, head):
     return "".join(o)
 
 
+def verdict_block(pid, p, days):
+    """다음에 무엇을 할지 한 줄로 좁힌다.
+
+    보고가 목적이 아니다. 이 화면을 연 사람이 '그래서 뭘 하지'를 들고
+    나가야 한다. 그래서 지표를 여럿 늘어놓지 않고 하나로 좁힌다 —
+    동시에 여러 개를 손대면 다음에 원인 귀속이 불가능해진다.
+
+    ⚠️ 여기서 판정할 수 있는 것은 **랜딩 쪽(CVR·상세 도달)** 뿐이다.
+       CTR·CPM·CPA 는 광고비와 노출 수가 있어야 하는데 그건 메타에 있고
+       이 파이프라인에 안 들어온다. 소재를 끄라 켜라는 판정은 여기서 하지 않는다.
+    """
+    PAID = PAID_CHANNELS
+    ds = sorted(days)
+    cur = ad = pre = None
+    hist = []
+    for d in ds:
+        pr = (days[d].get("products") or {}).get(pid)
+        if not pr:
+            continue
+        a = (pr.get("devices") or {}).get("_all") or {}
+        if not a.get("sessions"):
+            continue
+        bc = pr.get("by_channel") or {}
+        t = sum(v.get("exits", 0) for v in bc.values())
+        share = (sum(v.get("exits", 0) for k, v in bc.items() if k in PAID) / t) if t else 0
+        hist.append({"d": d, "ses": a["sessions"], "s00": a.get("s00_rate") or 0,
+                     "done": a.get("done_rate") or 0, "ad": share,
+                     "orders": (pr.get("sales") or {}).get("orders") or 0})
+    if len(hist) < 4:
+        return ""
+
+    adays = [h for h in hist if h["ad"] >= 0.3]
+    orgs = [h for h in hist if h["ad"] < 0.3 and h["ses"] >= 10]
+    if not adays:
+        return ""
+
+    # 표본 게이트. 광고 3일 미만이거나 세션이 얇으면 판정하지 않는다.
+    n_ses = sum(h["ses"] for h in adays)
+    if len(adays) < 3 or n_ses < 100:
+        return ('<div class="verdict warn"><h3>아직 판정하지 않습니다</h3>'
+                '<p class="why">광고 집행 %d일 · 세션 %s건입니다. '
+                '3일 이상 그리고 100세션 이상 쌓여야 방향이 잡힙니다. '
+                '지금 숫자로 소재를 끄거나 페이지를 되돌리면 노이즈에 반응하는 것입니다.</p>'
+                '</div>' % (len(adays), f"{n_ses:,}"))
+
+    ad_s00 = sum(h["s00"] * h["ses"] for h in adays) / n_ses
+    org_s00 = (sum(h["s00"] * h["ses"] for h in orgs) / sum(h["ses"] for h in orgs)
+               if orgs else None)
+    orders = sum(h["orders"] for h in adays)
+    cvr = orders / n_ses if n_ses else 0
+
+    # 판정 — 위에서 아래로, 하나가 걸리면 멈춘다.
+    if org_s00 is not None and ad_s00 - org_s00 >= 0.25:
+        kind, head = "bad", "광고 유입이 상세페이지에 닿지 못합니다"
+        why = ("광고로 들어온 사람의 <b>%s</b>가 상세 이미지를 한 장도 못 보고 나갑니다. "
+               "비광고 유입은 %s입니다. 같은 페이지인데 <b>%.0f%%p 차이</b>가 납니다. "
+               "페이지가 나쁜 게 아니라 광고가 약속한 것과 페이지 첫 화면이 어긋난 것입니다."
+               % (G.pct(ad_s00), G.pct(org_s00), (ad_s00 - org_s00) * 100))
+        do = ("이번 기간 지표 <b>하나만</b> 잡습니다 — <b>광고 유입의 상세 미도달률 "
+              "%s → %s</b>. 상단(상품명 아래 문구·첫 상세 이미지)을 광고 카피와 "
+              "같은 말로 맞추는 것이 1순위입니다. 소재를 끄는 판단은 아직 이릅니다."
+              % (G.pct(ad_s00), G.pct(max(org_s00, ad_s00 - 0.15))))
+    elif cvr < 0.005 and n_ses >= 300:
+        kind, head = "bad", "상세페이지까지는 오는데 사지 않습니다"
+        why = ("광고 유입 %s세션에 주문 %d건, 전환율 %s입니다. "
+               "상세 미도달은 %s로 유입 자체는 문제가 아닙니다."
+               % (f"{n_ses:,}", orders, G.pct(cvr), G.pct(ad_s00)))
+        do = ("지표 <b>하나만</b> — <b>전환율</b>. 상세페이지 후반부(가격 제시·"
+              "마무리 CTA)와 가격·구성을 봅니다. 소재는 건드리지 않습니다.")
+    else:
+        kind, head = "", "지금은 그대로 두고 지켜봅니다"
+        why = ("광고 유입 상세 미도달 %s, 전환율 %s. "
+               "비광고 대비 뚜렷하게 나쁘지 않습니다." % (G.pct(ad_s00), G.pct(cvr)))
+        do = "바꾼 것이 있으면 그 효과가 나올 때까지 기다립니다. 동시에 여러 개를 손대지 않습니다."
+
+    o = ['<div class="verdict %s"><h3>%s</h3>' % (kind, G.esc(head)),
+         '<p class="why">%s</p>' % why,
+         '<p class="do">다음에 할 것 — %s</p>' % do]
+    o.append('<p class="hold">근거: 광고 집행 %d일 · 광고 유입 %s세션 · 주문 %d건. '
+             'CTR·CPM·CPA 는 광고비와 노출 수가 필요해 여기서 판정하지 않습니다 '
+             '(메타 광고관리자에서 확인).</p>'
+             % (len(adays), f"{n_ses:,}", orders))
+    o.append("</div>")
+    return "".join(o)
+
+
 def trend_block(pid, days):
     """날짜별 추이. 상세페이지를 고친 날 전후를 나란히 놓기 위한 표다.
 
@@ -370,8 +460,12 @@ def trend_block(pid, days):
         if not ses:
             continue
         sales = p.get("sales") or {}
+        bc = p.get("by_channel") or {}
+        tot_ch = sum(v.get("exits", 0) for v in bc.values())
+        ad = sum(v.get("exits", 0) for k, v in bc.items() if k in PAID_CHANNELS)
         rows.append({
             "date": d, "sessions": ses,
+            "ad_share": (ad / tot_ch) if tot_ch else 0,
             "s00": a.get("s00_rate") or 0,
             "done": a.get("done_rate") or 0,
             "orders": sales.get("orders") or 0,
@@ -392,8 +486,14 @@ def trend_block(pid, days):
          '<th class="num">상세 미도달</th><th class="num">완독</th>'
          '<th class="num">주문</th><th class="num">매출</th></tr>']
     for r in rows:
-        dim = ' class="dim"' if r["sessions"] < 30 else ""
+        # 유료 비중 30% 이상이면 광고 집행일로 본다. 그 아래는 잔여 트래픽이다.
+        is_ad = r["ad_share"] >= 0.3
+        cls = " ".join(c for c in (("dim" if r["sessions"] < 30 else ""),
+                                   ("adday" if is_ad else "")) if c)
+        dim = ' class="%s"' % cls if cls else ""
         badge = G.sample_badge(r["sessions"])
+        if is_ad:
+            badge += '<span class="adtag">광고 %d%%</span>' % round(r["ad_share"] * 100)
         bar = G.reach_bar(r["sessions"] / mx, 0, w=90, h=11)
         o.append('<tr%s><td>%s%s</td><td class="num">%s</td><td class="bar">%s</td>'
                  '<td class="num">%s</td><td class="num">%s</td>'
@@ -736,7 +836,7 @@ def build_product(pid, p, date, days_collected, days=None):
     panes = [
         ("t1", "구간별 이탈", "".join(out[body_at:]) + scroll_block(p)),
         ("t2", "유입 분석", source_block(p) + channels_block(p)),
-        ("t3", "날짜별 추이", trend_block(pid, days or {})),
+        ("t3", "날짜별 추이", verdict_block(pid, p, days or {}) + trend_block(pid, days or {})),
         ("t4", "행동·기기", entry_block(p) + zone_block(p) + devices_html),
         ("t5", "요약 해석", reading_block(p, date, days_collected)),
     ]

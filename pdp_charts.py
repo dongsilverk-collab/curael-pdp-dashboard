@@ -164,6 +164,23 @@ a:hover{text-decoration:underline}
 #t4:checked~#p4,#t5:checked~#p5{display:block}
 /* 키보드 이동 시 어디에 있는지 보이게 한다 */
 .tabs input:focus-visible+.tabnav label,.tabnav label:focus-within{outline:2px solid #15776A}
+
+/* 광고 집행일. 광고 전후를 눈으로 갈라 보려고 왼쪽에 띠를 세운다 —
+   배경색만 칠하면 표본 부족 회색 처리와 섞여 구분이 안 된다. */
+tr.adday td:first-child{box-shadow:inset 3px 0 0 #C77B2E}
+.adtag{font-size:10px;background:#FBEEDF;color:#8A5A22;border-radius:4px;
+ padding:1px 5px;margin-left:5px}
+/* 판정 카드. 읽는 사람이 다음에 뭘 할지 한 줄로 가져가게 만든다. */
+.verdict{border:1px solid #E3E9E8;border-left:5px solid #15776A;border-radius:8px;
+ padding:15px 17px;margin:0 0 16px;background:#fff}
+.verdict.warn{border-left-color:#C77B2E;background:#FFFBF5}
+.verdict.bad{border-left-color:#C0392B;background:#FDF6F5}
+.verdict h3{margin:0 0 7px;font-size:15px}
+.verdict .why{font-size:13px;color:#5A6664;margin:0 0 10px;line-height:1.6}
+.verdict .do{font-size:13px;color:#1D2624;background:#F1F5F4;border-radius:6px;
+ padding:9px 12px;margin:0}
+.verdict .do b{color:#15776A}
+.verdict .hold{font-size:12px;color:#8A6D3B;margin:9px 0 0}
 footer{margin-top:34px;font-size:12px;color:#9AA5A3}
 """
 
