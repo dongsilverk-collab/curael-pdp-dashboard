@@ -351,6 +351,59 @@ def _depth_table(rows, head):
     return "".join(o)
 
 
+def trend_block(pid, days):
+    """날짜별 추이. 상세페이지를 고친 날 전후를 나란히 놓기 위한 표다.
+
+    합산만 보면 어제 바꾼 것의 효과가 6일치 과거에 희석돼 안 보인다.
+    변화를 판단하려면 '고친 날'에 선을 긋고 양쪽을 봐야 한다.
+
+    ⚠️ 하루치는 표본이 얇다. 세션 30 미만인 날은 흐리게 그려서 그 줄만 보고
+       판단하지 않게 한다 — 광고를 껐다 켠 날은 몇십 건밖에 안 들어온다.
+    """
+    rows = []
+    for d in sorted(days):
+        p = (days[d].get("products") or {}).get(pid)
+        if not p:
+            continue
+        a = (p.get("devices") or {}).get("_all") or {}
+        ses = a.get("sessions") or 0
+        if not ses:
+            continue
+        sales = p.get("sales") or {}
+        rows.append({
+            "date": d, "sessions": ses,
+            "s00": a.get("s00_rate") or 0,
+            "done": a.get("done_rate") or 0,
+            "orders": sales.get("orders") or 0,
+            "net": sales.get("net") or 0,
+        })
+    if len(rows) < 3:
+        return ""
+    rows = rows[-14:]
+    mx = max(r["sessions"] for r in rows) or 1
+
+    o = ["<h2>날짜별 추이</h2>",
+         '<p class="sub">상세페이지나 광고를 바꾼 날 앞뒤를 나란히 보세요. '
+         '<b>상세 미도달</b>은 이미지를 한 장도 못 보고 나간 비율입니다.</p>',
+         '<div class="scroll"><table><tr><th>날짜</th>'
+         '<th class="num">세션</th><th>규모</th>'
+         '<th class="num">상세 미도달</th><th class="num">완독</th>'
+         '<th class="num">주문</th><th class="num">매출</th></tr>']
+    for r in rows:
+        dim = ' class="dim"' if r["sessions"] < 30 else ""
+        badge = G.sample_badge(r["sessions"])
+        bar = G.reach_bar(r["sessions"] / mx, 0, w=90, h=11)
+        o.append('<tr%s><td>%s%s</td><td class="num">%s</td><td class="bar">%s</td>'
+                 '<td class="num">%s</td><td class="num">%s</td>'
+                 '<td class="num">%s</td><td class="num">%s</td></tr>'
+                 % (dim, r["date"][5:], badge, f'{r["sessions"]:,}', bar,
+                    G.pct(r["s00"]), G.pct(r["done"]),
+                    r["orders"] or "–",
+                    ("%s원" % f'{r["net"]:,}') if r["net"] else "–"))
+    o.append("</table></div>")
+    return "".join(o)
+
+
 def source_block(p):
     """유입별로 상세페이지를 어디까지 보는가.
 
@@ -493,7 +546,7 @@ def reading_block(p, date, days_collected):
     return head + "".join('<div class="note">%s</div>' % t for t in notes)
 
 
-def build_product(pid, p, date, days_collected):
+def build_product(pid, p, date, days_collected, days=None):
     a = p["devices"]["_all"]
     n = a["sessions"]
     total = p["section_total"] or 0
@@ -674,6 +727,7 @@ def build_product(pid, p, date, days_collected):
     out.append(entry_block(p))
     out.append(zone_block(p))
     out.append(scroll_block(p))
+    out.append(trend_block(pid, days or {}))
     out.append(source_block(p))
     out.append(channels_block(p))
     out.append(reading_block(p, date, days_collected))
@@ -713,7 +767,7 @@ def main():
     for pid, p in rec["products"].items():
         with open(os.path.join(OUT, "product-%s.html" % pid), "w",
                   encoding="utf-8") as f:
-            f.write(build_product(pid, p, date, n_days))
+            f.write(build_product(pid, p, date, n_days, days))
         made += 1
 
     print("docs/ 에 %d개 페이지 생성 (기준일 %s, 수집 %d일차)" % (made, date, n_days))
