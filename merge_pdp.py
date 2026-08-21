@@ -507,12 +507,19 @@ def build_period(days, n):
     # 조용히 끊긴 걸 모르고 판단하는 게 실패 자체보다 위험하다.
     from datetime import datetime
     today = datetime.strptime(C.kst_today(), "%Y-%m-%d")
+
+    # 소스마다 '정상일 때의 지연'이 다르다. 전부 오늘 기준으로 재면 멀쩡한 수집도
+    # 경보가 뜬다 — 실제로 Clarity 는 00:20 에 '전날 하루'를 받으므로 어제치가
+    # 최신인 것이 정상인데, 그걸 "1일째 안 들어옴"으로 띄우고 있었다.
+    # 경보가 틀리기 시작하면 진짜 끊겼을 때 아무도 안 본다.
+    NORMAL_LAG = {"clarity": 1, "ga4": 1, "cafe24": 1}
     fresh = {}
     for k in ("ga4", "clarity", "cafe24"):
         got = [d for d in sorted(days) if days[d]["sources"].get(k) == "ok"]
         last = got[-1] if got else None
         gap = (today - datetime.strptime(last, "%Y-%m-%d")).days if last else 99
-        fresh[k] = {"last": last, "stale_days": max(0, gap)}
+        fresh[k] = {"last": last, "stale_days": max(0, gap - NORMAL_LAG.get(k, 0)),
+                    "raw_gap": max(0, gap), "normal_lag": NORMAL_LAG.get(k, 0)}
 
     return {"range": "%s ~ %s" % (use[0], use[-1]), "dates": use,
             "days_count": len(use), "products": products,

@@ -90897,7 +90897,7 @@
    }
   }
  },
- "built_at": "2026-08-21 11:15:36 KST",
+ "built_at": "2026-08-21 15:29:05 KST",
  "period": {
   "range": "2026-08-15 ~ 2026-08-21",
   "dates": [
@@ -99921,15 +99921,21 @@
   "source_fresh": {
    "ga4": {
     "last": "2026-08-21",
-    "stale_days": 0
+    "stale_days": 0,
+    "raw_gap": 0,
+    "normal_lag": 1
    },
    "clarity": {
     "last": "2026-08-20",
-    "stale_days": 1
+    "stale_days": 0,
+    "raw_gap": 1,
+    "normal_lag": 1
    },
    "cafe24": {
     "last": "2026-08-21",
-    "stale_days": 0
+    "stale_days": 0,
+    "raw_gap": 0,
+    "normal_lag": 1
    }
   },
   "unattributed": {
