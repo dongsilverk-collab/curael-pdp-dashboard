@@ -355,6 +355,18 @@ def _depth_table(rows, head):
     return "".join(o)
 
 
+# GA4 는 세션이 끝나야 유입 정보를 붙이고 약 48시간 뒤 확정된다.
+# 당일·전일은 아직 움직이는 숫자라 '결과'로 읽으면 안 된다.
+def _settle(d):
+    """'done' 확정 · 'partial' 어제(변동 가능) · 'today' 오늘(집계 중)"""
+    today = C.kst_today()
+    if d >= today:
+        return "today"
+    if d >= C.kst_date(1):
+        return "partial"
+    return "done"
+
+
 def verdict_block(pid, p, days):
     """다음에 무엇을 할지 한 줄로 좁힌다.
 
@@ -380,6 +392,8 @@ def verdict_block(pid, p, days):
         bc = pr.get("by_channel") or {}
         t = sum(v.get("exits", 0) for v in bc.values())
         share = (sum(v.get("exits", 0) for k, v in bc.items() if k in PAID) / t) if t else None
+        if _settle(d) != "done":
+            continue          # 미확정 데이터로 '뭘 해라'를 만들지 않는다
         hist.append({"d": d, "ses": a["sessions"], "s00": a.get("s00_rate") or 0,
                      "done": a.get("done_rate") or 0, "ad": share,
                      "orders": (pr.get("sales") or {}).get("orders") or 0})
@@ -490,14 +504,20 @@ def trend_block(pid, days):
          '<th class="num">상세 미도달</th><th class="num">완독</th>'
          '<th class="num">주문</th><th class="num">매출</th></tr>']
     for r in rows:
+        st = _settle(r["date"])
         # 유료 비중 30% 이상이면 광고 집행일로 본다. 그 아래는 잔여 트래픽이다.
         is_ad = r["ad_share"] is not None and r["ad_share"] >= 0.3
         cls = " ".join(c for c in (("dim" if r["sessions"] < 30 else ""),
-                                   ("adday" if is_ad else "")) if c)
+                                   ("adday" if is_ad else ""),
+                                   ("pending" if st != "done" else "")) if c)
         dim = ' class="%s"' % cls if cls else ""
         badge = G.sample_badge(r["sessions"])
         if is_ad:
             badge += '<span class="adtag">광고 %d%%</span>' % round(r["ad_share"] * 100)
+        if st == "today":
+            badge += '<span class="pendtag">집계 중</span>'
+        elif st == "partial":
+            badge += '<span class="pendtag">확정 전</span>' 
         bar = G.reach_bar(r["sessions"] / mx, 0, w=90, h=11)
         o.append('<tr%s><td>%s%s</td><td class="num">%s</td><td class="bar">%s</td>'
                  '<td class="num">%s</td><td class="num">%s</td>'

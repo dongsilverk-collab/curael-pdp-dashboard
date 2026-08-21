@@ -181,6 +181,14 @@ tr.adday td:first-child{box-shadow:inset 3px 0 0 #C77B2E}
  padding:9px 12px;margin:0}
 .verdict .do b{color:#15776A}
 .verdict .hold{font-size:12px;color:#8A6D3B;margin:9px 0 0}
+
+/* 미확정 데이터. GA4 는 유입 정보를 세션 종료 후에 붙이고 약 48시간 확정된다.
+   당일 행은 항상 미분류가 높게 나오는데(실측 8/21 69% vs 확정일 4~7%)
+   확정된 날과 같은 모양으로 그리면 그 숫자를 결과로 읽게 된다. */
+tr.pending td{color:#9AA5A3;font-style:italic}
+tr.pending td:first-child{box-shadow:inset 3px 0 0 #9AA5A3}
+.pendtag{font-size:10px;background:#EEF2F1;color:#6B7876;border-radius:4px;
+ padding:1px 5px;margin-left:5px;font-style:normal}
 footer{margin-top:34px;font-size:12px;color:#9AA5A3}
 """
 
