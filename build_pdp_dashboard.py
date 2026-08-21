@@ -379,7 +379,9 @@ def trend_block(pid, days):
         })
     if len(rows) < 3:
         return ""
-    rows = rows[-14:]
+    # 최근 14일만, 최신이 위. 어제 뭘 바꿨는지 확인하려고 여는 표라
+    # 매번 맨 아래로 스크롤하게 두면 안 된다.
+    rows = rows[-14:][::-1]
     mx = max(r["sessions"] for r in rows) or 1
 
     o = ["<h2>날짜별 추이</h2>",
