@@ -297,21 +297,49 @@
   ]
  },
  "32": {
-  "history": [],
+  "history": [
+   {
+    "version": 1,
+    "minor": 0,
+    "since": "2026-08-06",
+    "struct_hash": "b3ac575f61bf",
+    "image_count": 4,
+    "images": [
+     "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg",
+     "NNEditor/20260622/e37aaeabd7a608c36a48411da192eb82.jpg",
+     "NNEditor/20260622/4a5d0129ff52786a78c25bb530f5c8f6.jpg",
+     "NNEditor/20260622/5df03477dd7a1622c9faabe4a5a4b71c.jpg"
+    ],
+    "reason": "initial",
+    "diff": {},
+    "to": "2026-08-26"
+   }
+  ],
   "current": {
-   "version": 1,
+   "version": 2,
    "minor": 0,
-   "since": "2026-08-06",
-   "struct_hash": "b3ac575f61bf",
+   "since": "2026-08-26",
+   "struct_hash": "d5e6362c7588",
    "image_count": 4,
    "images": [
     "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg",
-    "NNEditor/20260622/e37aaeabd7a608c36a48411da192eb82.jpg",
-    "NNEditor/20260622/4a5d0129ff52786a78c25bb530f5c8f6.jpg",
-    "NNEditor/20260622/5df03477dd7a1622c9faabe4a5a4b71c.jpg"
+    "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
+    "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
+    "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
    ],
-   "reason": "initial",
-   "diff": {}
+   "reason": "앞 3장 중 교체 (구간 [2, 3])",
+   "diff": {
+    "added": [
+     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg",
+     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
+     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg"
+    ],
+    "removed": [
+     "NNEditor/20260622/4a5d0129ff52786a78c25bb530f5c8f6.jpg",
+     "NNEditor/20260622/5df03477dd7a1622c9faabe4a5a4b71c.jpg",
+     "NNEditor/20260622/e37aaeabd7a608c36a48411da192eb82.jpg"
+    ]
+   }
   },
   "display_urls": [
    "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg",
@@ -342,18 +370,7 @@
     1000,
     2068
    ]
-  ],
-  "pending": {
-   "struct_hash": "d5e6362c7588",
-   "images": [
-    "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg",
-    "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
-    "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
-    "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
-   ],
-   "first_seen": "2026-08-25",
-   "seen_count": 1
-  }
+  ]
  },
  "40": {
   "history": [],
@@ -795,7 +812,7 @@
    ]
   ]
  },
- "_crawled_at": "2026-08-25T07:47:44+09:00",
+ "_crawled_at": "2026-08-26T07:49:00+09:00",
  "_shared_banners": [
   "NNEditor/20260709/notice_banner_1080.jpg"
  ]
