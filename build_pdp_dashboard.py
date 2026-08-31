@@ -250,30 +250,60 @@ def entry_block(p):
     return "".join(out)
 
 
+# 눌러야 결제가 되는 영역. 여기 전환율이 높은 건 정보가 아니다 — 정의상 그렇다.
+# 화면에서 흐리게 처리해, 읽을 값이 있는 영역과 눈으로 구분되게 한다.
+CHECKOUT_ZONES = {"장바구니", "바로구매", "네이버페이", "정기배송선택", "옵션선택"}
+
+
 def zone_block(p):
-    """어느 영역을 만졌나. Clarity 클릭 히트맵을 대체한다.
+    """어느 영역을 만졌나, 그리고 만진 사람 중 몇이 샀나.
 
     숫자는 '그 영역을 건드린 세션 수'다. 총 클릭수가 아니다 — 추적 스크립트가
     영역당 세션 1회만 쏘기 때문이고, 그래야 소수 사용자의 연타에 안 휘둘린다.
+
+    구입 열은 pdp_zone_purchase(주문완료에서 되쏜 것)다. 분자·분모가 같은 단위라
+    그대로 나눌 수 있다. 자세한 한계는 아래 주의 문구와 추적 스크립트 상단 참고.
     """
     a = p["devices"]["_all"]
     z = a.get("zone_clicks") or {}
+    buys = a.get("zone_buys") or {}
     n = a["sessions"]
     if not z or not n:
         return ""
     rows = sorted(z.items(), key=lambda kv: -kv[1])
+    # 구입 데이터가 하나도 없으면 열을 아예 안 그린다. 빈 칸이 늘어선 표는
+    # '전환이 0이다'로 잘못 읽힌다 — 실제로는 아직 안 쌓인 것이다.
+    has_buy = any(buys.values())
     out = ["<h2>어느 영역을 만졌나</h2>",
            '<p class="sub">그 영역을 <b>건드린 세션 수</b>입니다(총 클릭수 아님). '
-           '한 사람이 열 번 눌러도 1로 셉니다.</p>',
-           '<div class="scroll"><table><tr><th>영역</th><th>비율</th>'
-           '<th class="num">세션</th></tr>']
+           '한 사람이 열 번 눌러도 1로 셉니다.</p>']
+    if has_buy:
+        out.append('<p class="sub"><b>구입</b>은 그 영역을 만졌던 사람 중 실제로 '
+                   '산 수입니다. <b>인과가 아닙니다</b> — "눌러서 샀다"가 아니라 '
+                   '"산 사람은 그것도 눌렀다"입니다. 결제 동선(장바구니·바로구매·'
+                   '옵션·정기배송·네이버페이)은 정의상 높게 나와 흐리게 표시했습니다. '
+                   '읽을 값이 있는 건 <b>그 밖의 영역</b>입니다.</p>')
+    out.append('<div class="scroll"><table><tr><th>영역</th><th>비율</th>'
+               '<th class="num">세션</th>'
+               + ('<th class="num">구입</th><th class="num">전환율</th>' if has_buy else "")
+               + '</tr>')
     top = rows[0][1] if rows else 1
     for name, c in rows:
-        out.append('<tr><td>%s</td>'
+        extra = ""
+        cls = ""
+        if has_buy:
+            b = buys.get(name, 0)
+            # 표본이 얇으면 전환율을 안 쓴다. 3명 중 1명이 샀다고 33% 라 적으면
+            # 그 숫자가 혼자 걸어다닌다.
+            rate = ("%s" % G.pct(b / c)) if (b and c >= 20) else "–"
+            extra = '<td class="num">%s</td><td class="num">%s</td>' % (b or "–", rate)
+            if name in CHECKOUT_ZONES:
+                cls = ' class="dim"'
+        out.append('<tr%s><td>%s</td>'
                    '<td class="bar">%s<span class="barval">%s</span></td>'
-                   '<td class="num">%s</td></tr>'
-                   % (G.esc(name), G.reach_bar(c / top, 0),
-                      G.pct(c / n), f"{c:,}"))
+                   '<td class="num">%s</td>%s</tr>'
+                   % (cls, G.esc(name), G.reach_bar(c / top, 0),
+                      G.pct(c / n), f"{c:,}", extra))
     out.append("</table></div>")
     return "".join(out)
 

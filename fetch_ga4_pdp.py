@@ -274,6 +274,26 @@ def fetch_day(date, access=None, prop=None):
         b.setdefault("zone_clicks", {})
         b["zone_clicks"][z] = b["zone_clicks"].get(z, 0) + _n(r, "eventCount")
 
+    # ---- R7b 클릭 영역 x 구입 ----
+    # R7 은 '많이 눌린 곳'을 준다. 그게 '돈이 되는 곳'은 아니다. 산 사람이 그 상품에서
+    # 어떤 영역을 만졌었는지를 주문완료 시점에 되쏜 것이 pdp_zone_purchase 다
+    # (docs/analytics/pdp-zonepurchase.js). 분자·분모가 같은 단위(영역을 만진 세션)라
+    # zone_clicks 로 그대로 나눌 수 있다.
+    #
+    # ⚠ 인과가 아니다. '눌러서 샀다'가 아니라 '산 사람은 그것도 눌렀다'다. 결제 동선
+    #   (장바구니·바로구매)은 정의상 높게 나온다. 읽을 값이 있는 건 결제 동선이 아닌
+    #   영역(리뷰·상세이미지·상품문의)이다.
+    # ⚠ 같은 탭에서 결제를 끝낸 세션만 잡힌다. 카페24 주문 수보다 적게 나오는 게 정상.
+    for r in _rows([D_PRODUCT, D_ZONE, D_DEVICE], ["eventCount"],
+                   date, "pdp_zone_purchase", access, prop):
+        pid = _pid(r)
+        z = (r.get(D_ZONE) or "").strip()
+        if not pid or not z or z.startswith("("):
+            continue
+        b = bucket(pid, r.get(D_DEVICE) or "unknown")
+        b.setdefault("zone_buys", {})
+        b["zone_buys"][z] = b["zone_buys"].get(z, 0) + _n(r, "eventCount")
+
     # ---- R6 스크롤 도달 곡선 ----
     # Clarity 대시보드의 '데이터 스크롤' 표와 같은 성격인데, 그 표는 API 로 못 받는다
     # (Clarity API 는 평균 스크롤 깊이 하나만 준다). 우리 추적 스크립트가 이미
