@@ -20,6 +20,8 @@ import pdp_charts as G
 import pdp_common as C
 
 SRC = "data/pdp_daily.json"
+# 손으로 적는 변경 이력. 없어도 대시보드는 돈다.
+EVENTS = "data/pdp_events.json"
 OUT = "docs"
 MIN_SESSIONS = 30
 ADVICE_MIN_DAYS = 7      # 이 미만이면 처방 카드를 만들지 않는다
@@ -457,7 +459,7 @@ def verdict_block(pid, p, days):
     return "".join(o)
 
 
-def trend_block(pid, days):
+def trend_block(pid, days, events=()):
     """날짜별 추이. 상세페이지를 고친 날 전후를 나란히 놓기 위한 표다.
 
     합산만 보면 어제 바꾼 것의 효과가 6일치 과거에 희석돼 안 보인다.
@@ -498,7 +500,8 @@ def trend_block(pid, days):
 
     o = ["<h2>날짜별 추이</h2>",
          '<p class="sub">상세페이지나 광고를 바꾼 날 앞뒤를 나란히 보세요. '
-         '<b>상세 미도달</b>은 이미지를 한 장도 못 보고 나간 비율입니다.</p>',
+         '<b>상세 미도달</b>은 이미지를 한 장도 못 보고 나간 비율입니다. '
+         '가로선은 그날 무엇을 바꿨는지 기록한 것입니다.</p>',
          '<div class="scroll"><table><tr><th>날짜</th>'
          '<th class="num">세션</th><th>규모</th>'
          '<th class="num">상세 미도달</th><th class="num">완독</th>'
@@ -526,6 +529,11 @@ def trend_block(pid, days):
                     G.pct(r["s00"]), G.pct(r["done"]),
                     r["orders"] or "–",
                     ("%s원" % f'{r["net"]:,}') if r["net"] else "–"))
+        for ev in events:
+            if ev.get("date") == r["date"]:
+                o.append('<tr class="evt"><td colspan="7">'
+                         '<b>%s</b> 이 날부터 위쪽이 바뀐 뒤입니다 · %s</td></tr>'
+                         % (G.esc(ev["date"][5:]), G.esc(ev.get("label") or "변경")))
     o.append("</table></div>")
     return "".join(o)
 
@@ -672,7 +680,7 @@ def reading_block(p, date, days_collected):
     return head + "".join('<div class="note">%s</div>' % t for t in notes)
 
 
-def build_product(pid, p, date, days_collected, days=None):
+def build_product(pid, p, date, days_collected, days=None, events=None):
     a = p["devices"]["_all"]
     n = a["sessions"]
     total = p["section_total"] or 0
@@ -860,7 +868,7 @@ def build_product(pid, p, date, days_collected, days=None):
     panes = [
         ("t1", "구간별 이탈", "".join(out[body_at:]) + scroll_block(p)),
         ("t2", "유입 분석", source_block(p) + channels_block(p)),
-        ("t3", "날짜별 추이", verdict_block(pid, p, days or {}) + trend_block(pid, days or {})),
+        ("t3", "날짜별 추이", verdict_block(pid, p, days or {}) + trend_block(pid, days or {}, (events or {}).get(pid) or [])),
         ("t4", "행동·기기", entry_block(p) + zone_block(p) + devices_html),
         ("t5", "요약 해석", reading_block(p, date, days_collected)),
     ]
@@ -888,6 +896,7 @@ def build_product(pid, p, date, days_collected, days=None):
 
 def main():
     data = C.load_json(SRC, {})
+    events = (C.load_json(EVENTS, {}) or {}).get("events") or {}
     days = data.get("days") or {}
     if not days:
         print("%s 가 비어 있다. merge_pdp.py 를 먼저 돌릴 것." % SRC, file=sys.stderr)
@@ -915,7 +924,7 @@ def main():
     for pid, p in rec["products"].items():
         with open(os.path.join(OUT, "product-%s.html" % pid), "w",
                   encoding="utf-8") as f:
-            f.write(build_product(pid, p, date, n_days, days))
+            f.write(build_product(pid, p, date, n_days, days, events))
         made += 1
 
     print("docs/ 에 %d개 페이지 생성 (기준일 %s, 수집 %d일차)" % (made, date, n_days))

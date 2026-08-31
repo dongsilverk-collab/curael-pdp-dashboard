@@ -202,3 +202,14 @@ def page(title, body, back=None):
         '<meta name="robots" content="noindex">'
         '<title>%s</title><style>%s</style></head><body><div class="wrap">%s%s'
         '</div></body></html>' % (esc(title), CSS, nav, body))
+
+
+# 변경 이력 선 — 이 줄 위쪽이 '바꾼 뒤'다. 색이 아니라 굵은 선으로 나누는 이유는
+# 광고일 표시(adday)와 색이 겹치면 둘 다 안 읽히기 때문이다.
+CSS_EVENT = """
+tr.evt td{background:#FDF3E7;border-top:2px solid #C0392B;border-bottom:2px solid #C0392B;
+  font-size:12px;color:#7A4A12;padding:6px 8px}
+tr.evt td b{color:#C0392B}
+"""
+
+CSS += CSS_EVENT
