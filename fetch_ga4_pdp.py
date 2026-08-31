@@ -294,6 +294,24 @@ def fetch_day(date, access=None, prop=None):
         b.setdefault("zone_buys", {})
         b["zone_buys"][z] = b["zone_buys"].get(z, 0) + _n(r, "eventCount")
 
+    # ---- R7c 구매자 도달 깊이 ----
+    # R2(pdp_exit)는 '나간 사람이 어디까지 봤나'다. 여기 있는 건 '산 사람이 어디까지
+    # 봤나'다. 둘을 같은 구간축에 겹쳐 놓으면 "몇 번째까지 보게 만들면 사는가"가
+    # 나온다 — 상세페이지를 고칠 때의 목표선이다.
+    #
+    # 라벨(pdp_exit_label)을 재사용한다. 형식이 R2 와 같아야 _section_index 가
+    # 같은 칸에 넣는다. 스크립트 쪽에서도 S03/20 형식을 그대로 만든다.
+    for r in _rows([D_PRODUCT, D_EXIT, D_DEVICE], ["eventCount"],
+                   date, "pdp_depth_purchase", access, prop):
+        pid = _pid(r)
+        if not pid:
+            continue
+        i = _section_index(r.get(D_EXIT) or "")
+        b = bucket(pid, r.get(D_DEVICE) or "unknown")
+        b.setdefault("buyer_depth", {})
+        key = str(i) if i is not None else "?"
+        b["buyer_depth"][key] = b["buyer_depth"].get(key, 0) + _n(r, "eventCount")
+
     # ---- R6 스크롤 도달 곡선 ----
     # Clarity 대시보드의 '데이터 스크롤' 표와 같은 성격인데, 그 표는 API 로 못 받는다
     # (Clarity API 는 평균 스크롤 깊이 하나만 준다). 우리 추적 스크립트가 이미

@@ -255,6 +255,96 @@ def entry_block(p):
 CHECKOUT_ZONES = {"장바구니", "바로구매", "네이버페이", "정기배송선택", "옵션선택"}
 
 
+def buyer_block(p):
+    """산 사람은 어디까지 보고, 어디를 만졌나.
+
+    이탈 분포(나간 사람이 도달한 구간)와 구매자 도달 분포를 같은 구간축에 겹친다.
+    "몇 번째까지 보게 만들면 사는가"가 여기서 나오고, 그게 상세페이지를 고칠 때의
+    목표선이 된다. 지금까지는 '앞쪽에서 다 나간다'까지만 알았지 어디까지 끌고 가야
+    팔리는지를 몰랐다.
+
+    ⚠ 인과가 아니다. 깊이 본 사람이 사는 것인지, 살 마음이 있어서 깊이 보는 것인지
+      이 표로는 못 가른다. 그래도 목표선으로는 쓸 수 있다.
+    """
+    a = p["devices"]["_all"]
+    depth = a.get("buyer_depth") or {}
+    exits = a.get("exit_hist") or {}
+    total = p.get("section_total") or 0
+    n_buy = sum(depth.values())
+    if not n_buy or not total:
+        return ""
+
+    def stats(hist):
+        n = sum(hist.values())
+        if not n:
+            return None
+        s0 = hist.get("0", 0)
+        done = hist.get(str(total), 0)
+        avg = sum(int(k) * v for k, v in hist.items() if k.isdigit()) / n
+        return {"n": n, "s0": s0 / n, "done": done / n, "avg": avg}
+
+    b, e = stats(depth), stats(exits)
+    o = ["<h2>산 사람은 어디까지 봤나</h2>",
+         '<p class="sub">주문완료 시점에 그 사람이 도달했던 <b>최대 구간</b>을 '
+         '되쏜 것입니다. 아래 이탈 분포와 같은 구간축입니다.</p>']
+
+    o.append('<div class="scroll"><table><tr><th>　</th>'
+             '<th class="num">건수</th><th class="num">평균 도달</th>'
+             '<th class="num">상세 미도달</th><th class="num">끝까지</th></tr>')
+    for lab, d, cls in (("구매한 사람", b, ' class="verdict"'),
+                        ("나간 사람", e, "")):
+        if not d:
+            continue
+        o.append('<tr%s><td>%s</td><td class="num">%s</td>'
+                 '<td class="num">S%02d / %d</td>'
+                 '<td class="num">%s</td><td class="num">%s</td></tr>'
+                 % (cls, lab, f'{d["n"]:,}', round(d["avg"]), total,
+                    G.pct(d["s0"]), G.pct(d["done"])))
+    o.append("</table></div>")
+
+    if b and e:
+        gap = b["avg"] - e["avg"]
+        if b["n"] < 20:
+            o.append('<p class="sub warn">구매 %d건뿐입니다. 방향만 참고하세요 '
+                     '— 20건은 넘어야 숫자로 씁니다.</p>' % b["n"])
+        elif gap >= 1:
+            o.append('<p class="verdict">구매한 사람은 평균 <b>S%02d</b>까지, '
+                     '나간 사람은 <b>S%02d</b>까지 봤습니다. '
+                     '<b>%d구간 차이</b>입니다. 사람을 S%02d까지 끌고 가는 것이 '
+                     '이 페이지의 목표선입니다.</p>'
+                     % (round(b["avg"]), round(e["avg"]), round(gap),
+                        round(b["avg"])))
+        else:
+            o.append('<p class="sub">구매자와 이탈자의 도달 깊이가 거의 같습니다. '
+                     '이 상품은 <b>얼마나 읽었는가로 구매가 갈리지 않습니다</b> — '
+                     '깊이보다 가격·유입 쪽을 보세요.</p>')
+
+    # 구간별로 나란히
+    rows = []
+    for i in range(0, total + 1):
+        k = str(i)
+        bv, ev = depth.get(k, 0), exits.get(k, 0)
+        if bv or ev:
+            rows.append((i, bv, ev))
+    if rows:
+        mx = max(max(r[1] for r in rows), 1)
+        mxe = max(max(r[2] for r in rows), 1)
+        o.append('<h2 style="font-size:14px">구간별로 나란히</h2>'
+                 '<div class="scroll"><table><tr><th>구간</th>'
+                 '<th>구매자</th><th class="num">건</th>'
+                 '<th>이탈자</th><th class="num">건</th></tr>')
+        for i, bv, ev in rows:
+            name = "미도달" if i == 0 else ("S%02d" % i)
+            o.append('<tr%s><td>%s</td><td class="bar">%s</td>'
+                     '<td class="num">%s</td><td class="bar">%s</td>'
+                     '<td class="num">%s</td></tr>'
+                     % (' class="verdict"' if bv and bv == mx else "",
+                        name, G.reach_bar(bv / mx, 0), bv or "–",
+                        G.reach_bar(ev / mxe, 0), f"{ev:,}" if ev else "–"))
+        o.append("</table></div>")
+    return "".join(o)
+
+
 def zone_block(p):
     """어느 영역을 만졌나, 그리고 만진 사람 중 몇이 샀나.
 
@@ -899,8 +989,9 @@ def build_product(pid, p, date, days_collected, days=None, events=None):
         ("t1", "구간별 이탈", "".join(out[body_at:]) + scroll_block(p)),
         ("t2", "유입 분석", source_block(p) + channels_block(p)),
         ("t3", "날짜별 추이", verdict_block(pid, p, days or {}) + trend_block(pid, days or {}, (events or {}).get(pid) or [])),
-        ("t4", "행동·기기", entry_block(p) + zone_block(p) + devices_html),
-        ("t5", "요약 해석", reading_block(p, date, days_collected)),
+        ("t4", "구매자 동선", buyer_block(p) + zone_block(p)),
+        ("t5", "행동·기기", entry_block(p) + devices_html),
+        ("t6", "요약 해석", reading_block(p, date, days_collected)),
     ]
     panes = [(i, t, h) for i, t, h in panes if h.strip()]
     del out[body_at:]
