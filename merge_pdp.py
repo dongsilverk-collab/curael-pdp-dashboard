@@ -409,7 +409,7 @@ def build_period(days, n):
                     continue
                 dst = devs.setdefault(dev, _blank())
                 _add(dst, b)
-            meta.setdefault(pid, {"name": p["name"], "slug": p.get("slug", ""),
+            meta.setdefault(pid, {"name": C.clean_name(p["name"]), "slug": p.get("slug", ""),
                                   "url": p["url"], "section_total": p["section_total"],
                                   "version": p["version"], "images": p.get("images") or [],
                                   "image_bytes": p.get("image_bytes") or [],
@@ -417,7 +417,7 @@ def build_period(days, n):
                                   "layout": p.get("layout") or {},
                                   "image_bytes_total": p.get("image_bytes_total", 0)})
             # 이름·이미지는 최신 날짜 것으로 갱신한다(상품명이나 이미지가 바뀔 수 있다).
-            meta[pid].update({"name": p["name"] or meta[pid]["name"],
+            meta[pid].update({"name": C.clean_name(p["name"]) or meta[pid]["name"],
                               "section_total": p["section_total"] or meta[pid]["section_total"],
                               "version": p["version"],
                               "images": p.get("images") or meta[pid]["images"],
@@ -430,6 +430,16 @@ def build_period(days, n):
                 t = entries.setdefault(pid, {"sessions": 0, "engaged": 0})
                 t["sessions"] += e.get("sessions", 0)
                 t["engaged"] += e.get("engaged", 0)
+            # 카페24 이름이 정본이다. 주문 API 가 준 값이라 흔들리지 않는다.
+            # GA4 이름은 페이지에서 긁어오는 값이라 가끔 몰 이름이 섞여 들어온다.
+            cname = ((p.get("sales") or {}).get("name") or "").strip()
+            if cname:
+                meta[pid]["name"] = cname
+            elif not (meta[pid].get("name") or "").strip():
+                # 주문이 한 번도 없어 카페24 이름이 없고 GA4 이름도 걸러진 상품.
+                # 몰 페이지 <title> 에서 뽑아둔 이름을 마지막으로 쓴다.
+                meta[pid]["name"] = ((versions.get(pid) or {})
+                                     .get("title_name") or "")
             s = p.get("sales")
             if s:
                 t = sales.setdefault(pid, {"orders": 0, "units": 0, "gross": 0,

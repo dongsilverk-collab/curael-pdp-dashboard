@@ -38,6 +38,8 @@ D_PERCENT = "customEvent:pdp_percent"   # 2026-08-07 등록. 그 이전 데이�
 D_ZONE = "customEvent:pdp_zone"         # 2026-08-07 등록. GTM 게시 후부터 값이 들어온다.
 D_DEVICE = "deviceCategory"
 
+_clean_name = C.clean_name   # 판정 기준은 pdp_common 한 곳에만 둔다
+
 # 합계로 돌아오는 맞춤 측정항목. 평균은 여기서 내지 않고 merge 단계에서 eventCount로 나눈다.
 # (원천에 sum_* 을 그대로 남겨야 기간·기기 합산 시 '평균의 평균' 오류가 안 생긴다.)
 #
@@ -167,7 +169,7 @@ def fetch_day(date, access=None, prop=None):
                 day["unknown"].get("section_events", 0) + _n(r, "eventCount")
             continue
         b = bucket(pid, r.get(D_DEVICE) or "unknown")
-        day["products"][pid]["name"] = r.get(D_NAME) or ""
+        day["products"][pid]["name"] = _clean_name(r.get(D_NAME))
         # 라벨 'S03/20' → 인덱스 3. 키를 정수로 두어야 버전이 바뀌어도 비교가 된다.
         lab = r.get(D_SECTION) or ""
         i = _section_index(lab)
@@ -186,7 +188,8 @@ def fetch_day(date, access=None, prop=None):
                 day["unknown"].get("exit_events", 0) + _n(r, "eventCount")
             continue
         b = bucket(pid, r.get(D_DEVICE) or "unknown")
-        day["products"][pid]["name"] = r.get(D_NAME) or day["products"][pid]["name"]
+        day["products"][pid]["name"] = (_clean_name(r.get(D_NAME))
+                                        or day["products"][pid]["name"])
         lab = r.get(D_EXIT) or ""
         i = _section_index(lab)
         key = str(i) if i is not None else "?"

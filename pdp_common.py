@@ -154,3 +154,18 @@ def http_get(url, headers=None, tries=3, timeout=25):
 
 def http_get_text(url, headers=None, tries=3, timeout=25):
     return http_get(url, headers, tries, timeout).decode("utf-8", "replace")
+
+# 상품명이 아닌 값들. 추적 스크립트가 상품명 요소를 못 잡으면 몰 이름·브랜드를
+# 대신 집어온다(실측: 76번이 8/25·8/26·8/30 에 "큐라엘"로 들어왔고, 그날이
+# 최신이라는 이유로 화면 전체를 덮었다).
+#
+# 수집과 병합 양쪽에서 쓴다. 수집만 걸러도 **이미 쌓인 과거 데이터**는 그대로라
+# 병합이 다시 집어 올린다 — 그래서 두 군데 다 필요하다.
+JUNK_NAMES = {"큐라엘", "큐라엘몰", "curael", "curael mall", "큐라엘 공식몰",
+              "쇼핑몰", "상품상세", "product"}
+
+
+def clean_name(v):
+    """상품명이 아닌 값이면 빈 문자열. 그래야 다음 근거로 넘어간다."""
+    n = " ".join((v or "").split())
+    return "" if n.lower() in JUNK_NAMES else n

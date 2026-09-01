@@ -57,19 +57,47 @@ def fetch_product_list():
 
 # ---------- 상세 이미지 ----------
 
+_RE_TITLE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
+
+# 상품명 후보에서 걷어낼 것들. 카페24 <title> 은 "큐라엘 | 상품명" 또는
+# "상품명 | 큐라엘몰" 처럼 몰 이름이 붙는다.
+_TITLE_NOISE = ("큐라엘몰", "큐라엘", "CURAEL", "curael")
+
+
+def title_to_name(html):
+    """<title> 에서 상품명만 남긴다. 못 뽑으면 빈 문자열.
+
+    주문이 한 번도 없는 상품은 카페24 이름이 없고, GA4 이름은 추적 스크립트가
+    상품명 요소를 못 잡으면 몰 이름("큐라엘")을 집어온다. 그때 쓸 마지막 근거다.
+    """
+    m = _RE_TITLE.search(html or "")
+    if not m:
+        return ""
+    raw = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1))).strip()
+    parts = [x.strip() for x in raw.split("|") if x.strip()]
+    for x in parts:
+        if x not in _TITLE_NOISE:
+            return x
+    return ""
+
+
 def crawl_detail_images(pno):
-    """#prdDetail 블록 안의 이미지 src를 DOM 순서대로. 실패 시 빈 리스트."""
+    """#prdDetail 블록 안의 이미지 src를 DOM 순서대로. 실패 시 빈 리스트.
+
+    (imgs, name) 을 돌려준다. 이름은 <title> 에서 뽑은 상품명이다.
+    """
     url = f"{MALL_HOST}/product/detail.html?product_no={pno}"
     try:
         html = http_get_text(url)
     except Exception as e:
         print(f"  [{pno}] 크롤 실패: {e}", file=sys.stderr)
-        return []
+        return [], ""
+    name = title_to_name(html)
     m = _RE_DETAIL_BLOCK.search(html)
     if not m:
         print(f"  [{pno}] prdDetail 블록 없음", file=sys.stderr)
-        return []
-    return _RE_IMG_SRC.findall(m.group(1))
+        return [], name
+    return _RE_IMG_SRC.findall(m.group(1)), name
 
 
 def absolutize(src):
@@ -249,6 +277,22 @@ def detect(dry_run=False, sleep=1.0):
     overrides = load_json(OVERRIDES_PATH)
 
     listing = fetch_product_list()
+    # 전체상품 카테고리에 안 걸리는 상품이 있다(실측: 60·61·63 유기농 먹거리).
+    # 트래픽은 들어오는데 크롤을 안 하니 이름도 이미지도 비어 화면에 "큐라엘"로
+    # 떴다. GA4 가 본 적 있는 상품번호를 합쳐서, 사람이 보는 상품은 다 크롤한다.
+    seen = set()
+    try:
+        ga4 = load_json("data/ga4_pdp_history.json") or {}
+        for rec in (ga4.get("days") or {}).values():
+            seen.update(k for k in (rec.get("products") or {}) if k.isdigit())
+    except Exception as e:
+        print(f"  GA4 상품 목록을 못 읽었습니다({e}). 카테고리 목록만 씁니다.",
+              file=sys.stderr)
+    extra = sorted(seen - set(listing), key=int)
+    for pno in extra:
+        listing[pno] = {"slug": (products.get(pno) or {}).get("slug", "")}
+    if extra:
+        print(f"카테고리 밖 상품 {len(extra)}개 추가: {', '.join(extra)}")
     print(f"상품 {len(listing)}개 발견")
     for pno, meta in listing.items():
         products.setdefault(pno, {})
@@ -256,9 +300,11 @@ def detect(dry_run=False, sleep=1.0):
         products[pno]["last_seen"] = today
         products[pno].setdefault("first_seen", today)
 
-    raw, display = {}, {}
+    raw, display, titles = {}, {}, {}
     for pno in sorted(listing, key=int):
-        srcs = crawl_detail_images(pno)
+        srcs, tname = crawl_detail_images(pno)
+        if tname:
+            titles[pno] = tname
         raw[pno] = [normalize_one(s) for s in srcs]
         # 표시용은 **배너를 포함한 DOM 순서 그대로**여야 한다. 추적 스크립트는
         # #prdDetail 의 <img> 를 전부 세므로, 배너를 뺀 목록으로 그림을 붙이면
@@ -287,6 +333,10 @@ def detect(dry_run=False, sleep=1.0):
         # 표시용 URL은 버전의 정체성이 아니라 화면 재료다. 버전이 안 바뀌어도
         # 매 크롤마다 최신으로 덮어쓴다(current 안에 넣으면 버전 고정 시 낡는다).
         entry["display_urls"] = display.get(pno) or []
+        # 몰이 표시하는 상품명. 주문이 없어 카페24 이름이 없고 GA4 이름도
+        # 못 믿을 때 병합이 마지막으로 집는 값이다.
+        if titles.get(pno):
+            entry["title_name"] = titles[pno]
 
         # 구간별 이미지 용량. 이게 이탈의 유력한 원인이라 매일 추적한다.
         #
