@@ -376,14 +376,14 @@ def main():
     # 화면이 '가장 최근 하루'만 그리면 오전에는 몇 시간치만 보인다. 실제로 07:20 실행
     # 직후 화면에 8세션짜리 표가 떠서 "여태 모은 정보가 어디 갔냐"는 말이 나왔다.
     # 하루 단위는 표본이 너무 작아 판단도 안 된다. 기간 합산을 정본으로 삼는다.
-    out["period"] = build_period(out["days"], PERIOD_DAYS)
+    out["period"] = build_period(out["days"], PERIOD_DAYS, versions)
     C.save_json(OUT, out)
     print("%s 저장 — %d일치 (기간 합산 %s)"
           % (OUT, len(out["days"]), out["period"]["range"]))
     return 0
 
 
-def build_period(days, n):
+def build_period(days, n, versions=None):
     """최근 n일(데이터가 있는 날 기준)을 하나로 합친다.
 
     합산은 원천 카운터에서 다시 한다. 일별로 낸 비율을 평균 내면 '평균의 평균'이 되어
@@ -438,7 +438,7 @@ def build_period(days, n):
             elif not (meta[pid].get("name") or "").strip():
                 # 주문이 한 번도 없어 카페24 이름이 없고 GA4 이름도 걸러진 상품.
                 # 몰 페이지 <title> 에서 뽑아둔 이름을 마지막으로 쓴다.
-                meta[pid]["name"] = ((versions.get(pid) or {})
+                meta[pid]["name"] = (((versions or {}).get(pid) or {})
                                      .get("title_name") or "")
             s = p.get("sales")
             if s:
