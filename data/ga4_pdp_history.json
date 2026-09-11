@@ -99155,81 +99155,133 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "2": 13,
-        "1": 12,
-        "3": 11,
-        "4": 9,
-        "8": 6,
-        "9": 6,
-        "12": 6,
-        "5": 5,
-        "10": 5,
-        "11": 5,
-        "14": 6,
-        "15": 6,
-        "16": 5,
-        "17": 5,
-        "21": 5,
-        "6": 4,
-        "13": 5,
-        "18": 4,
-        "20": 4,
-        "7": 3,
-        "19": 3
+        "1": 20,
+        "2": 18,
+        "3": 17,
+        "4": 14,
+        "5": 12,
+        "12": 11,
+        "14": 12,
+        "15": 12,
+        "10": 10,
+        "11": 10,
+        "13": 11,
+        "17": 10,
+        "18": 10,
+        "6": 9,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "16": 9,
+        "20": 8,
+        "21": 8,
+        "19": 7
        },
        "exit_hist": {
-        "0": 14,
-        "21": 4,
-        "1": 2,
-        "2": 1,
+        "0": 37,
+        "1": 5,
+        "21": 5,
+        "2": 2,
         "3": 1,
         "4": 1,
         "5": 1,
         "19": 1
        },
        "events": {
-        "pdp_section": 128,
-        "pdp_scroll": 50,
-        "pdp_exit": 25,
-        "pdp_cta_view": 21,
-        "pdp_cta_click": 7,
-        "pdp_review": 5
+        "pdp_section": 235,
+        "pdp_scroll": 81,
+        "pdp_exit": 53,
+        "pdp_cta_view": 36,
+        "pdp_cta_click": 35,
+        "pdp_review": 8
        },
-       "exit_events": 25,
-       "sum_seconds": 1179,
+       "exit_events": 53,
+       "sum_seconds": 2331,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 15,
+       "sum_saw_cta": 29,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "네이버페이": 3,
-        "상단메뉴": 3,
-        "썸네일": 3,
-        "옵션선택": 3,
-        "정기배송선택": 3,
-        "리뷰": 2,
+        "바로구매": 12,
+        "썸네일": 11,
+        "옵션선택": 10,
+        "네이버페이": 5,
+        "상단메뉴": 4,
+        "정기배송선택": 4,
+        "리뷰": 3,
+        "상세이미지": 2,
         "상품문의": 2,
-        "장바구니": 2,
-        "바로구매": 1
+        "장바구니": 2
        },
        "zone_buys": {
-        "옵션선택": 2,
-        "정기배송선택": 2,
-        "네이버페이": 1,
-        "상단메뉴": 1
+        "옵션선택": 5,
+        "네이버페이": 3,
+        "정기배송선택": 3,
+        "바로구매": 2,
+        "상단메뉴": 2,
+        "썸네일": 2
        },
        "buyer_depth": {
-        "0": 1,
-        "21": 1
+        "0": 3,
+        "21": 2
        },
        "scroll_reach": {
-        "10": 15,
-        "50": 9,
-        "100": 7,
-        "25": 7,
-        "75": 6,
-        "90": 6
+        "10": 22,
+        "25": 14,
+        "50": 13,
+        "75": 12,
+        "100": 10,
+        "90": 10
+       }
+      },
+      "desktop": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1
+       },
+       "exit_hist": {
+        "0": 2,
+        "21": 1
+       },
+       "events": {
+        "pdp_section": 17,
+        "pdp_scroll": 5,
+        "pdp_exit": 3,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
+       },
+       "exit_events": 3,
+       "sum_seconds": 276,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "100": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
        }
       },
       "tablet": {
@@ -99253,28 +99305,31 @@
      "by_source": {
       "ID 120251481934440414 (이름 미설정)": {
        "exit_hist": {
-        "0": 7,
+        "0": 17,
+        "1": 1,
         "4": 1,
         "19": 1,
         "21": 1
        },
-       "exits": 10
+       "exits": 21
       },
       "_비광고": {
        "exit_hist": {
-        "0": 4,
-        "1": 2
+        "0": 16,
+        "1": 4,
+        "2": 1,
+        "21": 1
        },
-       "exits": 6
+       "exits": 22
       },
       "ID 120252219109880414 (이름 미설정)": {
        "exit_hist": {
-        "21": 3,
-        "0": 2,
+        "21": 4,
+        "0": 3,
         "3": 1,
         "5": 1
        },
-       "exits": 7
+       "exits": 9
       },
       "ID 120251481906110414 (이름 미설정)": {
        "exit_hist": {
@@ -99282,44 +99337,65 @@
         "2": 1
        },
        "exits": 3
+      },
+      "YT3-8K_oleUju2ZQfzv2xR0K807SEqPFoS4eShLHQHtIa0NbBmineQybdPLsbrgy8iMlDuEe8NugZFGbx1QJX68Q1eWAf-LRo3E3": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-E-977-QY60tggm5d8PW1LZN7P-WZK8ZLjnBkmnxDJaQbFYyngjdJ9_me53gxWfMQtW6bo1e5Mgm83ApFj7zlrApRcdcgMg": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       }
      },
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 12,
-        "1": 2,
-        "21": 2,
-        "2": 1,
+        "0": 27,
+        "1": 4,
+        "21": 3,
+        "2": 2,
         "3": 1,
         "4": 1,
         "19": 1
        },
-       "exits": 20
+       "exits": 39
       },
       "Cross-network": {
        "exit_hist": {
-        "0": 3,
-        "5": 1,
-        "21": 1
+        "0": 11,
+        "21": 2,
+        "1": 1,
+        "5": 1
        },
-       "exits": 5
+       "exits": 15
       },
       "Direct": {
        "exit_hist": {
+        "0": 1,
         "21": 1
+       },
+       "exits": 2
+      },
+      "Referral": {
+       "exit_hist": {
+        "0": 1
        },
        "exits": 1
       }
      },
      "entry": {
-      "sessions": 25,
-      "engaged": 16
+      "sessions": 40,
+      "engaged": 26
      },
      "channels": {
-      "Unassigned": 20,
-      "Cross-network": 5,
-      "Direct": 1
+      "Unassigned": 39,
+      "Cross-network": 15,
+      "Direct": 2,
+      "Referral": 1
      }
     },
     "28": {
@@ -99327,38 +99403,41 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 4,
-        "2": 3,
-        "3": 3,
-        "4": 3,
-        "5": 3,
-        "6": 3,
-        "7": 3,
-        "8": 3,
-        "9": 2
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 5,
+        "7": 5,
+        "5": 4,
+        "6": 4,
+        "8": 4,
+        "9": 3
        },
        "exit_hist": {
-        "0": 5,
-        "9": 4,
-        "1": 2
+        "0": 12,
+        "9": 5,
+        "1": 2,
+        "7": 2,
+        "4": 1
        },
        "events": {
-        "pdp_section": 27,
-        "pdp_scroll": 14,
-        "pdp_exit": 11,
+        "pdp_section": 44,
+        "pdp_scroll": 28,
+        "pdp_exit": 22,
+        "pdp_cta_view": 6,
         "pdp_cta_click": 3,
-        "pdp_cta_view": 3,
-        "pdp_review": 1
+        "pdp_review": 3
        },
-       "exit_events": 11,
-       "sum_seconds": 1111,
+       "exit_events": 22,
+       "sum_seconds": 1408,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 7,
+       "sum_saw_cta": 11,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
         "옵션선택": 2,
+        "리뷰": 1,
         "바로구매": 1,
         "상단메뉴": 1,
         "썸네일": 1,
@@ -99373,12 +99452,12 @@
         "9": 1
        },
        "scroll_reach": {
-        "25": 3,
-        "50": 3,
-        "75": 3,
-        "10": 2,
-        "90": 2,
-        "100": 1
+        "25": 6,
+        "10": 5,
+        "50": 5,
+        "75": 5,
+        "90": 4,
+        "100": 3
        }
       }
      },
@@ -99386,9 +99465,11 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "9": 2
+        "9": 3,
+        "7": 2,
+        "4": 1
        },
-       "exits": 2
+       "exits": 6
       },
       "YT3-m-TlT4FfmCPhGiBDyYQ186QfPvE5FK6YxpM2HTV9jTyQ4_jMaFJUreAvfVJU6VXz1prMJ6Px2lEWQFkby22teOQjLQOEqe_x": {
        "exit_hist": {
@@ -99403,13 +99484,49 @@
        },
        "exits": 4
       },
+      "YT3-u481jEsN_ai1OFi0GttyofME--Mja5sg15xCM7Pn3NKNSuuKScVqViP6EBRUtrc3mMPUmnx8qqdCb6YtEiWylar-car2EbB7": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "ID 120250970961990414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "ID 120252576622940414 (이름 미설정)": {
        "exit_hist": {
         "0": 1
        },
        "exits": 1
       },
+      "YT3-5KYSFbBeYgngO1vpoytKwR6nD20jdSa0S8OkeFhv3LwQCQ1rk9KO8Mz9DvG7V_g3HynmsUgj1TXSP2_LTIIqnu7yIpPeXXU": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-BCKu6cSyCnd3jKGiPfKY5syjb8o6_hzJUIQ4FZVo89dr5Lwx9xjU4rLKwsj9M88ERRsXcQUwamzY5deHS2ruNvA6QoC82GXV": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-FuvADMKKwuUnPPz4yS-_m6tv8sFCXfQIJP-g8B0mplxeUq8x9cRITc9YlgkFNMkOVrz7KePJFeW1mIGvF8sb0wO1PhatKyWT": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-Jf7O8CFiGNmfChW9VRWD7gf-EaksBUpoF99PbfEDbomkekxOnAAYEKtIOf4n0d6rQzbs6E1_GGX-AlONr35SRDYHBXIpI-Mj": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-VD9zNGDs1-wHcRFQSptXYV-tFy11GYYOyvElF7mTIGG7CsOpfSg1BQ3z4Y-WwrJhoPxVia524hWeIQ9bd5ER7AFnU3db9tci": {
        "exit_hist": {
         "0": 1
        },
@@ -99425,27 +99542,36 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 4,
+        "0": 11,
         "9": 4,
         "1": 1
        },
-       "exits": 9
+       "exits": 16
+      },
+      "Organic Shopping": {
+       "exit_hist": {
+        "7": 2
+       },
+       "exits": 2
       },
       "Cross-network": {
        "exit_hist": {
         "0": 1,
-        "1": 1
+        "1": 1,
+        "4": 1,
+        "9": 1
        },
-       "exits": 2
+       "exits": 4
       }
      },
      "entry": {
-      "sessions": 7,
-      "engaged": 6
+      "sessions": 13,
+      "engaged": 11
      },
      "channels": {
-      "Unassigned": 9,
-      "Cross-network": 2
+      "Unassigned": 16,
+      "Cross-network": 4,
+      "Organic Shopping": 2
      }
     },
     "42": {
@@ -99453,7 +99579,7 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 2,
+        "1": 4,
         "2": 1,
         "3": 1,
         "4": 1,
@@ -99469,21 +99595,22 @@
         "14": 1
        },
        "exit_hist": {
-        "0": 3,
+        "0": 5,
+        "1": 1,
         "13": 1,
         "14": 1
        },
        "events": {
         "pdp_cta_click": 38,
-        "pdp_section": 15,
-        "pdp_cta_view": 5,
-        "pdp_exit": 5,
+        "pdp_section": 17,
+        "pdp_cta_view": 9,
+        "pdp_exit": 8,
         "pdp_review": 1
        },
-       "exit_events": 5,
-       "sum_seconds": 102,
+       "exit_events": 8,
+       "sum_seconds": 509,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 3,
+       "sum_saw_cta": 6,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
@@ -99509,7 +99636,25 @@
        },
        "exits": 1
       },
+      "YT3-G3nVDYsOMq7QliJ_0H_SZycZGGKUcGsmybp2XbIPCnOyn1amc9A89xjMzNNM7XIkxvdTH8GPrUsj4y5OfphNelrP3nNA5ls3": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-R8Br26ik7Ka3MDxC-5x3cs33UnurOrbjngcOI6H0ROw1oo1eVJw90GVwlmWfOFR8or-9AU-2obwN7Mtj5G6U9BjH1NNDPw": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-_wHP-iOk5E0Gawb6eOVUQQEjSHXbBQEcdazpFVI5GMptIAD__7zqzjNJeaSi9Q63cP09WuU5Ydmcv8LkPXHph51ypPc8xrp7": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-rSlgMPSAiU6ox00ZCQqLkUOBRv92BMzo5LgelNkivtaKvW13aMupJisq1SXq9coCU4_0J8yt9JEIwZgFJJiAjcNN_SxyKqx-": {
        "exit_hist": {
         "0": 1
        },
@@ -99525,19 +99670,20 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 3,
+        "0": 5,
+        "1": 1,
         "13": 1,
         "14": 1
        },
-       "exits": 5
+       "exits": 8
       }
      },
      "entry": {
-      "sessions": 4,
-      "engaged": 2
+      "sessions": 7,
+      "engaged": 4
      },
      "channels": {
-      "Unassigned": 5
+      "Unassigned": 8
      }
     },
     "31": {
@@ -99545,29 +99691,36 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "3": 1,
-        "4": 1
+        "3": 2,
+        "4": 2,
+        "1": 1,
+        "2": 1,
+        "5": 1
        },
        "exit_hist": {
-        "5": 2
+        "5": 3
        },
        "events": {
-        "pdp_scroll": 4,
-        "pdp_exit": 2,
-        "pdp_section": 2
+        "pdp_scroll": 10,
+        "pdp_section": 7,
+        "pdp_exit": 3,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
        },
-       "exit_events": 2,
-       "sum_seconds": 100,
+       "exit_events": 3,
+       "sum_seconds": 224,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
+       "sum_saw_cta": 3,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "scroll_reach": {
-        "25": 1,
-        "50": 1,
-        "75": 1,
-        "90": 1
+        "25": 2,
+        "50": 2,
+        "75": 2,
+        "90": 2,
+        "10": 1,
+        "100": 1
        }
       }
      },
@@ -99578,6 +99731,12 @@
         "5": 2
        },
        "exits": 2
+      },
+      "YT3-GoV2F2Zn_CGmYy8e8H8ILQctSPVlKyG7i2-Cd2rkyMvSOigrLXqFnJsxC0fMWkuFcskH58QnrUWiBfupleFHjGM4KKk5GrHi": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
       }
      },
      "by_channel": {
@@ -99586,10 +99745,21 @@
         "5": 2
        },
        "exits": 2
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
       }
      },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
      "channels": {
-      "Unassigned": 2
+      "Unassigned": 2,
+      "Cross-network": 1
      }
     },
     "44": {
@@ -99597,15 +99767,18 @@
      "devices": {
       "mobile": {
        "section_reach": {
+        "1": 1,
         "2": 1,
+        "3": 1,
+        "4": 1,
         "5": 1
        },
        "exit_hist": {
         "5": 1
        },
        "events": {
-        "pdp_scroll": 2,
-        "pdp_section": 2,
+        "pdp_section": 5,
+        "pdp_scroll": 3,
         "pdp_cta_view": 1,
         "pdp_exit": 1
        },
@@ -99618,7 +99791,8 @@
        "sum_clicked_buy": 0,
        "scroll_reach": {
         "10": 1,
-        "25": 1
+        "25": 1,
+        "50": 1
        }
       }
      },
@@ -99635,6 +99809,69 @@
       "Unassigned": {
        "exit_hist": {
         "5": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "channels": {
+      "Unassigned": 1
+     }
+    },
+    "55": {
+     "name": "[베지셀] 메이킹 7.4 + 청귤라이트 시너지세트",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "15": 1,
+        "16": 1
+       },
+       "exit_hist": {
+        "16": 1
+       },
+       "events": {
+        "pdp_section": 8,
+        "pdp_scroll": 4,
+        "pdp_cta_view": 1,
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 26,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1
+       }
+      }
+     },
+     "section_total": 32,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "16": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "16": 1
        },
        "exits": 1
       }
@@ -99677,6 +99914,8 @@
      "devices": {
       "mobile": {
        "section_reach": {
+        "1": 1,
+        "2": 1,
         "3": 1,
         "4": 1,
         "5": 1,
@@ -99688,28 +99927,43 @@
         "12": 1
        },
        "exit_hist": {
-        "0": 1
+        "0": 4
        },
        "events": {
-        "pdp_section": 9,
-        "pdp_exit": 1,
-        "pdp_scroll": 1
+        "pdp_section": 11,
+        "pdp_exit": 4,
+        "pdp_scroll": 4,
+        "pdp_cta_view": 2
        },
-       "exit_events": 1,
-       "sum_seconds": 10,
+       "exit_events": 4,
+       "sum_seconds": 17,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "scroll_reach": {
-        "25": 1
+        "25": 2,
+        "10": 1,
+        "50": 1
        }
       }
      },
      "section_total": 19,
      "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
       "ID 120252576546880414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "ID 120252576622940414 (이름 미설정)": {
        "exit_hist": {
         "0": 1
        },
@@ -99717,7 +99971,19 @@
       }
      },
      "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
       "Cross-network": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Direct": {
        "exit_hist": {
         "0": 1
        },
@@ -99725,19 +99991,101 @@
       }
      },
      "entry": {
-      "sessions": 3,
-      "engaged": 2
+      "sessions": 5,
+      "engaged": 3
      },
      "channels": {
-      "Cross-network": 1
+      "Unassigned": 2,
+      "Cross-network": 1,
+      "Direct": 1
+     }
+    },
+    "49": {
+     "name": "열방약국 말기암 통합요법 상담소",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 6,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "by_source": {
+      "YT3-hZO5sKbHq-F9CvF25tKFqe7zEZs5jV1g-7DyClUXgfvbbSxemIm6L6hSen5w8TxhUfV57-WQUQ6y0BbM31KeYAQpJeTKlg": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 2,
+      "engaged": 1
+     },
+     "channels": {
+      "Unassigned": 2
      }
     },
     "47": {
-     "name": "",
-     "devices": {},
+     "name": "기적의 항암 식단",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 5,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "by_source": {
+      "ID 120250970961990414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
      "entry": {
-      "sessions": 1,
-      "engaged": 1
+      "sessions": 2,
+      "engaged": 2
+     },
+     "channels": {
+      "Unassigned": 1
      }
     }
    },
@@ -99745,5 +100093,5 @@
    "missing_metrics": []
   }
  },
- "updated_at": "2026-09-11 07:00:41 KST"
+ "updated_at": "2026-09-11 09:13:12 KST"
 }
