@@ -227,16 +227,43 @@
     "reason": "initial",
     "diff": {},
     "to": "2026-09-04"
+   },
+   {
+    "version": 2,
+    "minor": 0,
+    "since": "2026-09-04",
+    "struct_hash": "24925e0ebce4",
+    "image_count": 9,
+    "images": [
+     "NNEditor/20260902/120f568bbeb086e1323742a98e7d9110.jpg",
+     "NNEditor/20260708/452daaa65620895e39b424dd2121214a.jpg",
+     "NNEditor/20260708/3272504099b74298b45862853c0e702a.jpg",
+     "NNEditor/20260708/e0d050e6eb052f84465e675d53852f79.jpg",
+     "NNEditor/20260708/c6bede13653ea92b2824e3be2e7a2287.jpg",
+     "NNEditor/20260708/2cc0ab1739f6c4458c632b125a1a4c8a.jpg",
+     "NNEditor/20260708/fcdd2838f30d5bfb1100eec6c83df0a8.jpg",
+     "NNEditor/20260708/c2c0d732fe38f799d3f882b15b13740e.jpg",
+     "NNEditor/20260708/cccf7968441625b139f246fa43fb8e0c.jpg"
+    ],
+    "reason": "앞 3장 중 교체 (구간 [1])",
+    "diff": {
+     "added": [
+      "NNEditor/20260902/120f568bbeb086e1323742a98e7d9110.jpg"
+     ],
+     "removed": [
+      "NNEditor/20260709/3aa902b4cd370d4632b450c94c31b235.jpg"
+     ]
+    },
+    "to": "2026-09-12"
    }
   ],
   "current": {
-   "version": 2,
+   "version": 3,
    "minor": 0,
-   "since": "2026-09-04",
-   "struct_hash": "24925e0ebce4",
-   "image_count": 9,
+   "since": "2026-09-12",
+   "struct_hash": "b2f3c14fe28c",
+   "image_count": 8,
    "images": [
-    "NNEditor/20260902/120f568bbeb086e1323742a98e7d9110.jpg",
     "NNEditor/20260708/452daaa65620895e39b424dd2121214a.jpg",
     "NNEditor/20260708/3272504099b74298b45862853c0e702a.jpg",
     "NNEditor/20260708/e0d050e6eb052f84465e675d53852f79.jpg",
@@ -246,13 +273,11 @@
     "NNEditor/20260708/c2c0d732fe38f799d3f882b15b13740e.jpg",
     "NNEditor/20260708/cccf7968441625b139f246fa43fb8e0c.jpg"
    ],
-   "reason": "앞 3장 중 교체 (구간 [1])",
+   "reason": "image_count 9→8",
    "diff": {
-    "added": [
-     "NNEditor/20260902/120f568bbeb086e1323742a98e7d9110.jpg"
-    ],
+    "added": [],
     "removed": [
-     "NNEditor/20260709/3aa902b4cd370d4632b450c94c31b235.jpg"
+     "NNEditor/20260902/120f568bbeb086e1323742a98e7d9110.jpg"
     ]
    }
   },
@@ -316,40 +341,47 @@
     1882
    ]
   ],
-  "title_name": "자연하 그린진 원스틱 1박스 – 유기농 동결건조 야채 건강분말",
-  "pending": {
-   "struct_hash": "b2f3c14fe28c",
-   "images": [
-    "NNEditor/20260708/452daaa65620895e39b424dd2121214a.jpg",
-    "NNEditor/20260708/3272504099b74298b45862853c0e702a.jpg",
-    "NNEditor/20260708/e0d050e6eb052f84465e675d53852f79.jpg",
-    "NNEditor/20260708/c6bede13653ea92b2824e3be2e7a2287.jpg",
-    "NNEditor/20260708/2cc0ab1739f6c4458c632b125a1a4c8a.jpg",
-    "NNEditor/20260708/fcdd2838f30d5bfb1100eec6c83df0a8.jpg",
-    "NNEditor/20260708/c2c0d732fe38f799d3f882b15b13740e.jpg",
-    "NNEditor/20260708/cccf7968441625b139f246fa43fb8e0c.jpg"
-   ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
-  }
+  "title_name": "자연하 그린진 원스틱 1박스 – 유기농 동결건조 야채 건강분말"
  },
  "31": {
-  "history": [],
+  "history": [
+   {
+    "version": 1,
+    "minor": 0,
+    "since": "2026-08-06",
+    "struct_hash": "08baa14b9e0f",
+    "image_count": 5,
+    "images": [
+     "NNEditor/20260722/fb5e1e6651025b40f8c4aa684af23ff5.jpg",
+     "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
+     "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
+     "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
+     "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
+    ],
+    "reason": "initial",
+    "diff": {},
+    "to": "2026-09-12"
+   }
+  ],
   "current": {
-   "version": 1,
+   "version": 2,
    "minor": 0,
-   "since": "2026-08-06",
-   "struct_hash": "08baa14b9e0f",
-   "image_count": 5,
+   "since": "2026-09-12",
+   "struct_hash": "0812804c3d77",
+   "image_count": 4,
    "images": [
-    "NNEditor/20260722/fb5e1e6651025b40f8c4aa684af23ff5.jpg",
     "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
     "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
     "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
     "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
    ],
-   "reason": "initial",
-   "diff": {}
+   "reason": "image_count 5→4",
+   "diff": {
+    "added": [],
+    "removed": [
+     "NNEditor/20260722/fb5e1e6651025b40f8c4aa684af23ff5.jpg"
+    ]
+   }
   },
   "display_urls": [
    "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260722/fb5e1e6651025b40f8c4aa684af23ff5.jpg",
@@ -387,18 +419,7 @@
     1174
    ]
   ],
-  "title_name": "자연하 커큐진 1박스",
-  "pending": {
-   "struct_hash": "0812804c3d77",
-   "images": [
-    "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
-    "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
-    "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
-    "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
-   ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
-  }
+  "title_name": "자연하 커큐진 1박스"
  },
  "32": {
   "history": [
@@ -417,31 +438,51 @@
     "reason": "initial",
     "diff": {},
     "to": "2026-08-26"
+   },
+   {
+    "version": 2,
+    "minor": 0,
+    "since": "2026-08-26",
+    "struct_hash": "d5e6362c7588",
+    "image_count": 4,
+    "images": [
+     "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg",
+     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
+     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
+     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
+    ],
+    "reason": "앞 3장 중 교체 (구간 [2, 3])",
+    "diff": {
+     "added": [
+      "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg",
+      "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
+      "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg"
+     ],
+     "removed": [
+      "NNEditor/20260622/4a5d0129ff52786a78c25bb530f5c8f6.jpg",
+      "NNEditor/20260622/5df03477dd7a1622c9faabe4a5a4b71c.jpg",
+      "NNEditor/20260622/e37aaeabd7a608c36a48411da192eb82.jpg"
+     ]
+    },
+    "to": "2026-09-12"
    }
   ],
   "current": {
-   "version": 2,
+   "version": 3,
    "minor": 0,
-   "since": "2026-08-26",
-   "struct_hash": "d5e6362c7588",
-   "image_count": 4,
+   "since": "2026-09-12",
+   "struct_hash": "14858ce6684e",
+   "image_count": 3,
    "images": [
-    "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg",
     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
    ],
-   "reason": "앞 3장 중 교체 (구간 [2, 3])",
+   "reason": "image_count 4→3",
    "diff": {
-    "added": [
-     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg",
-     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
-     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg"
-    ],
+    "added": [],
     "removed": [
-     "NNEditor/20260622/4a5d0129ff52786a78c25bb530f5c8f6.jpg",
-     "NNEditor/20260622/5df03477dd7a1622c9faabe4a5a4b71c.jpg",
-     "NNEditor/20260622/e37aaeabd7a608c36a48411da192eb82.jpg"
+     "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg"
     ]
    }
   },
@@ -475,17 +516,7 @@
     2068
    ]
   ],
-  "title_name": "자연하 베리베라진 – 아로니아 &amp; 알로에 건강젤리",
-  "pending": {
-   "struct_hash": "14858ce6684e",
-   "images": [
-    "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
-    "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
-    "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
-   ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
-  }
+  "title_name": "자연하 베리베라진 – 아로니아 &amp; 알로에 건강젤리"
  },
  "40": {
   "history": [
@@ -566,23 +597,46 @@
   "title_name": "자연하 스텔라진"
  },
  "44": {
-  "history": [],
+  "history": [
+   {
+    "version": 1,
+    "minor": 0,
+    "since": "2026-08-06",
+    "struct_hash": "82189daa6d4e",
+    "image_count": 6,
+    "images": [
+     "NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg",
+     "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
+     "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
+     "NNEditor/20260707/7d429f2425317782324ddfa02c1c666d.jpg",
+     "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
+     "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
+    ],
+    "reason": "initial",
+    "diff": {},
+    "to": "2026-09-12"
+   }
+  ],
   "current": {
-   "version": 1,
+   "version": 2,
    "minor": 0,
-   "since": "2026-08-06",
-   "struct_hash": "82189daa6d4e",
-   "image_count": 6,
+   "since": "2026-09-12",
+   "struct_hash": "47848283c2d7",
+   "image_count": 5,
    "images": [
-    "NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg",
     "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
     "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
     "NNEditor/20260707/7d429f2425317782324ddfa02c1c666d.jpg",
     "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
     "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
    ],
-   "reason": "initial",
-   "diff": {}
+   "reason": "image_count 6→5",
+   "diff": {
+    "added": [],
+    "removed": [
+     "NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg"
+    ]
+   }
   },
   "display_urls": [
    "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg",
@@ -626,19 +680,7 @@
     4336
    ]
   ],
-  "title_name": "자연하 크리노진 2.5 g x 30포",
-  "pending": {
-   "struct_hash": "47848283c2d7",
-   "images": [
-    "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
-    "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
-    "NNEditor/20260707/7d429f2425317782324ddfa02c1c666d.jpg",
-    "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
-    "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
-   ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
-  }
+  "title_name": "자연하 크리노진 2.5 g x 30포"
  },
  "46": {
   "history": [],
@@ -971,7 +1013,7 @@
   ],
   "title_name": "자연하 숨촉촉365 매일 가벼운 수분 습관"
  },
- "_crawled_at": "2026-09-12T07:02:37+09:00",
+ "_crawled_at": "2026-09-12T09:22:48+09:00",
  "_shared_banners": [
   "NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg",
   "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg",
@@ -1841,8 +1883,13 @@
     1882
    ]
   ],
-  "pending": {
+  "history": [],
+  "current": {
+   "version": 1,
+   "minor": 0,
+   "since": "2026-09-12",
    "struct_hash": "b2f3c14fe28c",
+   "image_count": 8,
    "images": [
     "NNEditor/20260708/452daaa65620895e39b424dd2121214a.jpg",
     "NNEditor/20260708/3272504099b74298b45862853c0e702a.jpg",
@@ -1853,8 +1900,8 @@
     "NNEditor/20260708/c2c0d732fe38f799d3f882b15b13740e.jpg",
     "NNEditor/20260708/cccf7968441625b139f246fa43fb8e0c.jpg"
    ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
+   "reason": "initial",
+   "diff": {}
   }
  },
  "79": {
@@ -1895,16 +1942,21 @@
     1174
    ]
   ],
-  "pending": {
+  "history": [],
+  "current": {
+   "version": 1,
+   "minor": 0,
+   "since": "2026-09-12",
    "struct_hash": "0812804c3d77",
+   "image_count": 4,
    "images": [
     "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
     "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
     "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
     "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
    ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
+   "reason": "initial",
+   "diff": {}
   }
  },
  "80": {
@@ -1945,8 +1997,13 @@
     11634
    ]
   ],
-  "pending": {
+  "history": [],
+  "current": {
+   "version": 1,
+   "minor": 0,
+   "since": "2026-09-12",
    "struct_hash": "667d61b27959",
+   "image_count": 5,
    "images": [
     "NNEditor/20260709/notice_banner_1080.jpg",
     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7841.jpg",
@@ -1954,8 +2011,8 @@
     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7843.jpg",
     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7844.jpg"
    ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
+   "reason": "initial",
+   "diff": {}
   }
  },
  "81": {
@@ -2002,8 +2059,13 @@
     4336
    ]
   ],
-  "pending": {
+  "history": [],
+  "current": {
+   "version": 1,
+   "minor": 0,
+   "since": "2026-09-12",
    "struct_hash": "47848283c2d7",
+   "image_count": 5,
    "images": [
     "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
     "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
@@ -2011,8 +2073,8 @@
     "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
     "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
    ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
+   "reason": "initial",
+   "diff": {}
   }
  },
  "82": {
@@ -2047,15 +2109,20 @@
     2068
    ]
   ],
-  "pending": {
+  "history": [],
+  "current": {
+   "version": 1,
+   "minor": 0,
+   "since": "2026-09-12",
    "struct_hash": "14858ce6684e",
+   "image_count": 3,
    "images": [
     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
    ],
-   "first_seen": "2026-09-12",
-   "seen_count": 1
+   "reason": "initial",
+   "diff": {}
   }
  }
 }
