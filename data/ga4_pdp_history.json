@@ -132976,70 +132976,70 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 83,
-        "2": 73,
-        "3": 65,
-        "4": 58,
-        "5": 51,
-        "6": 47,
-        "9": 44,
-        "7": 43,
-        "8": 43,
-        "10": 39,
-        "11": 36,
-        "13": 36,
-        "12": 35,
+        "1": 89,
+        "2": 78,
+        "3": 69,
+        "4": 65,
+        "5": 56,
+        "6": 51,
+        "7": 49,
+        "8": 45,
+        "9": 45,
+        "10": 41,
+        "11": 39,
+        "12": 37,
+        "13": 37,
+        "14": 36,
+        "15": 36,
         "18": 35,
-        "14": 34,
-        "15": 33,
-        "16": 31,
-        "19": 31,
-        "17": 30,
-        "20": 29,
-        "21": 29
+        "16": 32,
+        "19": 32,
+        "17": 31,
+        "20": 30,
+        "21": 30
        },
        "exit_hist": {
-        "0": 121,
-        "21": 20,
+        "0": 130,
+        "21": 23,
         "1": 13,
         "2": 10,
         "4": 8,
         "7": 6,
         "19": 5,
         "5": 4,
-        "6": 3,
+        "6": 4,
+        "9": 3,
         "15": 3,
+        "16": 3,
         "3": 2,
-        "9": 2,
+        "10": 2,
         "13": 2,
-        "16": 2,
-        "10": 1,
         "18": 1
        },
        "events": {
-        "pdp_section": 905,
-        "pdp_scroll": 265,
-        "pdp_exit": 203,
-        "pdp_cta_view": 117,
-        "pdp_cta_click": 36,
-        "pdp_review": 22
+        "pdp_section": 963,
+        "pdp_scroll": 290,
+        "pdp_exit": 219,
+        "pdp_cta_view": 128,
+        "pdp_cta_click": 38,
+        "pdp_review": 27
        },
-       "exit_events": 203,
-       "sum_seconds": 16201,
+       "exit_events": 219,
+       "sum_seconds": 17290,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 113,
+       "sum_saw_cta": 121,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "옵션선택": 43,
-        "썸네일": 32,
-        "정기배송선택": 32,
-        "바로구매": 21,
+        "옵션선택": 45,
+        "썸네일": 35,
+        "정기배송선택": 33,
+        "바로구매": 22,
+        "상단메뉴": 15,
         "리뷰": 14,
-        "상단메뉴": 12,
+        "상세이미지": 3,
         "네이버페이": 2,
-        "상세이미지": 2,
         "상품문의": 2,
         "장바구니": 2
        },
@@ -133057,12 +133057,12 @@
         "5": 1
        },
        "scroll_reach": {
-        "10": 72,
-        "25": 58,
-        "50": 44,
-        "75": 37,
-        "90": 32,
-        "100": 22
+        "10": 79,
+        "25": 64,
+        "50": 46,
+        "75": 38,
+        "90": 35,
+        "100": 28
        }
       },
       "tablet": {
@@ -133071,27 +133071,37 @@
         "2": 1
        },
        "exit_hist": {
-        "0": 4,
+        "0": 5,
         "1": 1,
         "2": 1
        },
        "events": {
-        "pdp_exit": 6,
-        "pdp_cta_view": 4,
-        "pdp_section": 3,
-        "pdp_cta_click": 1
+        "pdp_exit": 7,
+        "pdp_cta_view": 5,
+        "pdp_cta_click": 3,
+        "pdp_section": 3
        },
-       "exit_events": 6,
-       "sum_seconds": 2823,
+       "exit_events": 7,
+       "sum_seconds": 19845,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 5,
+       "sum_saw_cta": 6,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
+        "옵션선택": 2,
+        "바로구매": 1,
+        "장바구니": 1,
+        "정기배송선택": 1
+       },
+       "zone_buys": {
+        "바로구매": 1,
         "옵션선택": 1,
         "장바구니": 1,
         "정기배송선택": 1
+       },
+       "buyer_depth": {
+        "1": 1
        }
       },
       "desktop": {
@@ -133124,7 +133134,7 @@
         "pdp_exit": 5,
         "pdp_scroll": 4,
         "pdp_cta_click": 3,
-        "pdp_cta_view": 2
+        "pdp_cta_view": 3
        },
        "exit_events": 5,
        "sum_seconds": 80,
@@ -133134,8 +133144,8 @@
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
+        "옵션선택": 3,
         "네이버페이": 2,
-        "옵션선택": 2,
         "가격영역": 1,
         "상세이미지": 1,
         "썸네일": 1,
@@ -133161,21 +133171,22 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 34,
+        "0": 38,
+        "21": 7,
         "1": 6,
         "4": 6,
         "2": 5,
-        "21": 5,
         "5": 3,
         "7": 3,
         "13": 2,
+        "16": 2,
         "19": 2,
         "6": 1,
         "9": 1,
-        "15": 1,
-        "16": 1
+        "10": 1,
+        "15": 1
        },
-       "exits": 70
+       "exits": 78
       },
       "보호자 번아웃 + 가격 소구": {
        "exit_hist": {
@@ -133211,30 +133222,31 @@
        },
        "exits": 5
       },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 5,
+        "1": 1,
+        "4": 1
+       },
+       "exits": 7
+      },
       "01KHV4Y6FN15EVM3KT40J6N4EP": {
        "exit_hist": {
         "0": 4
        },
        "exits": 4
       },
-      "ID 120252956260630414 (이름 미설정)": {
-       "exit_hist": {
-        "0": 4,
-        "1": 1,
-        "4": 1
-       },
-       "exits": 6
-      },
       "베지셀 7건": {
        "exit_hist": {
         "0": 4,
+        "9": 2,
         "19": 2,
         "21": 2,
         "10": 1,
-        "9": 1,
+        "6": 1,
         "16": 1
        },
-       "exits": 11
+       "exits": 13
       },
       "베지셀_수동형_일5만원_이미지8건_0811": {
        "exit_hist": {
@@ -133253,6 +133265,12 @@
        "exits": 3
       },
       "YT3-JFHsmoM0iIlM-z_7i7i9tLFknXLbkr9usphyCuNKGtcUbATnXjzaXKqc_ORxr0DXnUzcElWiHdpb97bgQt6MygLMKFbRIwGo": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "YT3-fePmQYEeka8E34Cnou_LyrYC7lhuW6060JETNz-Sm5KsPz74evZ08jZagAw3QrTmtlH90B_lXyiuj_EGSyNFQ8fwNc8SJcre": {
        "exit_hist": {
         "0": 3
        },
@@ -133295,9 +133313,9 @@
        },
        "exits": 2
       },
-      "YT3-fePmQYEeka8E34Cnou_LyrYC7lhuW6060JETNz-Sm5KsPz74evZ08jZagAw3QrTmtlH90B_lXyiuj_EGSyNFQ8fwNc8SJcre": {
+      "YT3-_GXGhnEYSReI87RTa3lj_TPRzCIqfOn_oQFvys3ZuPC8uF9RPRHEKsyQWUVmVg8qdFikBBH-3I0a70_AjiIhUb01uZGKPAIO": {
        "exit_hist": {
-        "0": 2
+        "21": 2
        },
        "exits": 2
       },
@@ -133338,7 +133356,19 @@
        },
        "exits": 1
       },
+      "YT3-3c2KcJsTpWxwqIJsxg3LCA7Mfo5pPsjhNqiSYdQ4oSQIPBBjOvBlavcZBfHyrTpdsOcZR6L_yMyUnzcOb9XB0euEz9PJRrZ9": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-8YfCdqjANtdakUrnXHQXi01EmWagbgxrE8Hmr5RbpBugoc2TdGF1yNt7sETIzPmRnwiETg3dtDStM3iqGQpzxMYNQb-h92wP": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-8rRjCHQLampUFJ4G-Ft6A0y6YKFVqQhV71KzyKYpb1Uw1x9t5w4zK2NhgurrBWLwN_p-nT_EVZU_lY3e3SaCCOFRDPC5vCzw": {
        "exit_hist": {
         "0": 1
        },
@@ -133347,6 +133377,18 @@
       "YT3-C5q09Rsawkvsbgy76JcGRvLFLr6gjN2vIv--E0flZhJU9ijtPCWmzjw9VvtapZFwsZczmfgO5jVJj0BSX_IHMOwG_tT6d63I": {
        "exit_hist": {
         "4": 1
+       },
+       "exits": 1
+      },
+      "YT3-DfWaumMGz49o-lgmGZ0aEQitJ11uDlymsGUDajMq5FE81hb6ihOt3w_WJqKaOlbgVDQb_vPr_mHzlxtmW3-HnMvL8py-X-OR": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-GkadxKQMWzYOq4TsNqHb64yBv9ZO22O1XJdH-MiJDkL9TOTsAvzfFPZ8TztytAHQ3cmLwBhZW_oPxqLKpoZ31MlMPQ1UctF4": {
+       "exit_hist": {
+        "0": 1
        },
        "exits": 1
       },
@@ -133408,12 +133450,6 @@
       "YT3-Z6Bd_jhELzxkSmpWOuV_VBDpO3rLIfhb44yqJT9FYjI7JdZm3JqbZhURtKsXDCw1bnUWDe65e3YYrh4rjVysiFNVyDob_nB0": {
        "exit_hist": {
         "0": 1
-       },
-       "exits": 1
-      },
-      "YT3-_GXGhnEYSReI87RTa3lj_TPRzCIqfOn_oQFvys3ZuPC8uF9RPRHEKsyQWUVmVg8qdFikBBH-3I0a70_AjiIhUb01uZGKPAIO": {
-       "exit_hist": {
-        "21": 1
        },
        "exits": 1
       },
@@ -133485,88 +133521,89 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 68,
-        "21": 10,
-        "2": 9,
+        "0": 41,
         "1": 7,
-        "4": 5,
-        "5": 2,
-        "6": 2,
+        "4": 4,
+        "21": 3,
+        "2": 2,
         "7": 2,
         "13": 2,
-        "15": 2,
-        "19": 2,
-        "3": 1,
-        "16": 1
+        "3": 1
        },
-       "exits": 113
-      },
-      "Cross-network": {
-       "exit_hist": {
-        "0": 16,
-        "4": 3,
-        "21": 3,
-        "7": 2,
-        "2": 1,
-        "3": 1,
-        "9": 1,
-        "19": 1
-       },
-       "exits": 28
+       "exits": 62
       },
       "Paid Social": {
        "exit_hist": {
-        "0": 13,
-        "21": 6,
+        "0": 32,
+        "21": 9,
+        "2": 4,
+        "19": 4,
+        "4": 3,
+        "1": 2,
+        "6": 2,
         "7": 2,
-        "19": 2,
-        "2": 1,
-        "9": 1,
-        "10": 1
+        "9": 2,
+        "3": 1,
+        "10": 1,
+        "16": 1
        },
-       "exits": 26
-      },
-      "Organic Video": {
-       "exit_hist": {
-        "0": 12,
-        "1": 2
-       },
-       "exits": 14
+       "exits": 63
       },
       "Organic Social": {
        "exit_hist": {
-        "0": 8,
-        "1": 2,
+        "0": 31,
+        "21": 6,
+        "7": 3,
+        "2": 2,
+        "1": 1,
         "5": 1,
         "6": 1,
-        "7": 1,
+        "9": 1,
         "18": 1
        },
-       "exits": 14
+       "exits": 47
       },
-      "Direct": {
+      "Unassigned": {
        "exit_hist": {
-        "0": 7,
-        "1": 3,
-        "15": 1,
-        "16": 1,
-        "21": 1
+        "0": 15
        },
-       "exits": 13
+       "exits": 15
       },
       "Organic Search": {
        "exit_hist": {
-        "0": 3
+        "0": 8,
+        "1": 2,
+        "2": 1,
+        "5": 1,
+        "6": 1,
+        "10": 1,
+        "21": 1
        },
-       "exits": 3
+       "exits": 15
       },
-      "Organic Shopping": {
+      "Direct": {
        "exit_hist": {
-        "0": 1
+        "0": 6,
+        "21": 3,
+        "1": 2,
+        "15": 2,
+        "16": 2,
+        "5": 1,
+        "19": 1
        },
-       "exits": 1
+       "exits": 17
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 5,
+        "2": 2,
+        "4": 1,
+        "15": 1,
+        "21": 1
+       },
+       "exits": 10
       },
       "Paid Other": {
        "exit_hist": {
@@ -133582,18 +133619,17 @@
       }
      },
      "entry": {
-      "sessions": 159,
-      "engaged": 125
+      "sessions": 158,
+      "engaged": 150
      },
      "channels": {
-      "Unassigned": 113,
-      "Cross-network": 28,
-      "Paid Social": 26,
-      "Organic Social": 14,
-      "Organic Video": 14,
-      "Direct": 13,
-      "Organic Search": 3,
-      "Organic Shopping": 1,
+      "Paid Social": 63,
+      "Organic Shopping": 62,
+      "Organic Social": 47,
+      "Direct": 17,
+      "Organic Search": 15,
+      "Unassigned": 15,
+      "Organic Video": 10,
       "Paid Other": 1,
       "Referral": 1
      }
@@ -133604,19 +133640,19 @@
       "mobile": {
        "section_reach": {
         "1": 33,
-        "2": 30,
+        "2": 32,
         "3": 27,
-        "4": 26,
-        "5": 26,
-        "6": 23,
+        "4": 27,
+        "5": 27,
+        "6": 24,
         "7": 22,
         "8": 18,
         "9": 16
        },
        "exit_hist": {
-        "0": 98,
-        "9": 17,
-        "7": 6,
+        "0": 104,
+        "9": 18,
+        "7": 7,
         "2": 4,
         "5": 4,
         "8": 4,
@@ -133624,26 +133660,26 @@
         "1": 1
        },
        "events": {
-        "pdp_section": 221,
-        "pdp_exit": 137,
-        "pdp_scroll": 136,
-        "pdp_cta_view": 65,
-        "pdp_cta_click": 30,
-        "pdp_review": 19
+        "pdp_section": 226,
+        "pdp_exit": 145,
+        "pdp_scroll": 139,
+        "pdp_cta_view": 68,
+        "pdp_cta_click": 33,
+        "pdp_review": 20
        },
-       "exit_events": 137,
-       "sum_seconds": 11638,
+       "exit_events": 145,
+       "sum_seconds": 11915,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 78,
+       "sum_saw_cta": 83,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "옵션선택": 23,
+        "옵션선택": 24,
         "정기배송선택": 17,
-        "썸네일": 14,
-        "상단메뉴": 9,
-        "바로구매": 8,
+        "썸네일": 16,
+        "상단메뉴": 11,
+        "바로구매": 10,
         "장바구니": 8,
         "네이버페이": 6,
         "리뷰": 5,
@@ -133652,25 +133688,25 @@
         "상세이미지": 1
        },
        "zone_buys": {
-        "옵션선택": 8,
-        "정기배송선택": 7,
+        "옵션선택": 9,
+        "정기배송선택": 8,
         "네이버페이": 5,
         "장바구니": 5,
         "상단메뉴": 4,
+        "바로구매": 3,
         "가격영역": 2,
-        "리뷰": 2,
-        "바로구매": 2
+        "리뷰": 2
        },
        "buyer_depth": {
-        "0": 8,
+        "0": 9,
         "9": 5
        },
        "scroll_reach": {
         "10": 32,
-        "25": 25,
+        "25": 27,
         "50": 24,
         "75": 22,
-        "90": 17,
+        "90": 18,
         "100": 16
        }
       },
@@ -133683,21 +133719,21 @@
         "5": 1
        },
        "exit_hist": {
+        "4": 2,
         "5": 2,
-        "0": 1,
-        "4": 1
+        "0": 1
        },
        "events": {
         "pdp_section": 9,
+        "pdp_exit": 5,
         "pdp_scroll": 5,
-        "pdp_exit": 4,
         "pdp_cta_view": 3,
         "pdp_cta_click": 1
        },
-       "exit_events": 4,
-       "sum_seconds": 275,
+       "exit_events": 5,
+       "sum_seconds": 307,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
+       "sum_saw_cta": 5,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
@@ -133716,15 +133752,26 @@
        }
       },
       "tablet": {
-       "section_reach": {},
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+       },
        "exit_hist": {
         "0": 1,
         "9": 1
        },
        "events": {
+        "pdp_section": 9,
+        "pdp_cta_view": 2,
         "pdp_exit": 2,
-        "pdp_cta_click": 1,
-        "pdp_cta_view": 1
+        "pdp_cta_click": 1
        },
        "exit_events": 2,
        "sum_seconds": 40,
@@ -133737,6 +133784,14 @@
         "옵션선택": 1,
         "장바구니": 1,
         "정기배송선택": 1
+       },
+       "zone_buys": {
+        "옵션선택": 1,
+        "장바구니": 1,
+        "정기배송선택": 1
+       },
+       "buyer_depth": {
+        "9": 1
        }
       }
      },
@@ -133744,8 +133799,8 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 50,
-        "9": 8,
+        "0": 52,
+        "9": 9,
         "7": 4,
         "8": 4,
         "6": 3,
@@ -133753,7 +133808,19 @@
         "5": 2,
         "1": 1
        },
-       "exits": 74
+       "exits": 77
+      },
+      "YT3-e91sOfCORJ9gkDoS7Vf3gX8PkpTm9KenV47befm5p3Mq5_IlL6sHXiRS5cA-6Hwu4vyNo2KWhKqrb1SIr7UToz9JfLTrMnbx": {
+       "exit_hist": {
+        "0": 5
+       },
+       "exits": 5
+      },
+      "01KHV4Y6G8X4ASPS9TS9AHXT3G": {
+       "exit_hist": {
+        "0": 4
+       },
+       "exits": 4
       },
       "YT3-BC4GvHzN7i4YT3HveJB5BgCTiRic1LePjbGCPQ-h_IJsNXl1gI_Zpw13u8csFziI6SDTSklZKeI38xglefgF-K9SYLHQ_tbn": {
        "exit_hist": {
@@ -133762,23 +133829,11 @@
        },
        "exits": 6
       },
-      "YT3-e91sOfCORJ9gkDoS7Vf3gX8PkpTm9KenV47befm5p3Mq5_IlL6sHXiRS5cA-6Hwu4vyNo2KWhKqrb1SIr7UToz9JfLTrMnbx": {
+      "YT3-SPDR1ye1mGEmIpWbh8cjFs5yjrxxyUKPziDP1uaaBIEqRmFrMVpbraCQQ96rONHyiMf5h6Z2_kxvntshuaHMt2-Vys62sy4Z": {
        "exit_hist": {
         "0": 4
        },
        "exits": 4
-      },
-      "01KHV4Y6G8X4ASPS9TS9AHXT3G": {
-       "exit_hist": {
-        "0": 3
-       },
-       "exits": 3
-      },
-      "YT3-SPDR1ye1mGEmIpWbh8cjFs5yjrxxyUKPziDP1uaaBIEqRmFrMVpbraCQQ96rONHyiMf5h6Z2_kxvntshuaHMt2-Vys62sy4Z": {
-       "exit_hist": {
-        "0": 3
-       },
-       "exits": 3
       },
       "YT3-uzsZKBbKG-A8tMKeLqvvZ_9KV9J5pCOeLwbumVNpwG1_RfU1vgMPcce-6L2OhK-IO76U90O5rAT0a_4GkHEZiP6N-aYnNS_J": {
        "exit_hist": {
@@ -133813,10 +133868,16 @@
       },
       "YT3-I6_KTDuYgnYESJk-xSJ2bze2rJCfSpG-mBAvNOkOSH7eIec6uVE7u6yGZBTUY9hBlLbi5CwssqZy51m7Su6Rk7ehzN7uUA": {
        "exit_hist": {
-        "5": 2,
-        "4": 1
+        "4": 2,
+        "5": 2
        },
-       "exits": 3
+       "exits": 4
+      },
+      "YT3-T5XcX4x989Y_nqOte27VAH8kBaBlINjqkVkPwm4iSetJy5BNbNf36ltpDRjc9pmS439JKqAhSqvqIOgs6sWUuwcaeBGd8Rpc": {
+       "exit_hist": {
+        "7": 2
+       },
+       "exits": 2
       },
       "YT3-V8_uxxBlN0LT6FzTqdub-5rxRUCDXDal-FGoY-4UVRRxCFJrTVG-IzAEKHfJ-1a6uZSlY9LXPTHUXlCnyiIazJNxFmPp8089": {
        "exit_hist": {
@@ -133880,6 +133941,12 @@
        },
        "exits": 1
       },
+      "YT3-C_G53ERlbT4MRdE3x3Rn2iXMXopWX5wbnkwRscmYLd_dPsqL16123-JHctvijwyF0dKWLiRczWyOIBCY2ag79MS2m0mwVg": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-Cq_1Snj8cX1iio5SaIVYfxodBY2KW6GA0aJF8_HeIxa_y5hu8CYDeRWcNj8QuWDC3KAOAH93Dj7vdg_7nHOOu_LWLmQSUA": {
        "exit_hist": {
         "0": 1
@@ -133932,12 +133999,6 @@
       "YT3-S3hwcOtAR20i821DwAPo1wvppJcyCdvVFT9-1bk33zqVOne2jMaMmzjI_epVdNEBHfDXLLNILedqROGYPVCozRzY2-GhkNix": {
        "exit_hist": {
         "0": 1
-       },
-       "exits": 1
-      },
-      "YT3-T5XcX4x989Y_nqOte27VAH8kBaBlINjqkVkPwm4iSetJy5BNbNf36ltpDRjc9pmS439JKqAhSqvqIOgs6sWUuwcaeBGd8Rpc": {
-       "exit_hist": {
-        "7": 1
        },
        "exits": 1
       },
@@ -133997,81 +134058,78 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 56,
-        "9": 10,
-        "5": 3,
-        "7": 3,
-        "8": 3,
-        "2": 2,
-        "1": 1
-       },
-       "exits": 78
-      },
-      "Organic Video": {
-       "exit_hist": {
-        "0": 19,
-        "2": 2,
+        "0": 50,
+        "9": 7,
+        "7": 5,
+        "5": 4,
+        "2": 3,
+        "4": 2,
         "6": 2,
-        "7": 1,
-        "9": 1
+        "8": 2
        },
-       "exits": 25
-      },
-      "Cross-network": {
-       "exit_hist": {
-        "0": 12,
-        "4": 1,
-        "5": 1,
-        "8": 1,
-        "9": 1
-       },
-       "exits": 16
+       "exits": 75
       },
       "Direct": {
        "exit_hist": {
-        "0": 8,
-        "9": 3,
+        "0": 17,
+        "9": 5,
         "5": 2,
-        "7": 2
+        "7": 2,
+        "8": 2
        },
-       "exits": 15
+       "exits": 28
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "0": 14
+       },
+       "exits": 14
       },
       "Organic Search": {
        "exit_hist": {
-        "0": 3,
-        "6": 1,
+        "0": 13,
+        "9": 4,
+        "1": 1,
+        "6": 1
+       },
+       "exits": 19
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 6,
+        "2": 1,
         "9": 1
        },
-       "exits": 5
+       "exits": 8
       },
       "Paid Social": {
        "exit_hist": {
-        "9": 2,
-        "0": 1
+        "0": 4,
+        "9": 2
        },
-       "exits": 3
+       "exits": 6
       },
-      "Organic Shopping": {
+      "Organic Social": {
        "exit_hist": {
-        "0": 1
+        "0": 2
        },
-       "exits": 1
+       "exits": 2
       }
      },
      "entry": {
       "sessions": 52,
-      "engaged": 39
+      "engaged": 50
      },
      "channels": {
-      "Unassigned": 78,
-      "Organic Video": 25,
-      "Cross-network": 16,
-      "Direct": 15,
-      "Organic Search": 5,
-      "Paid Social": 3,
-      "Organic Shopping": 1
+      "Organic Shopping": 75,
+      "Direct": 28,
+      "Organic Search": 19,
+      "Unassigned": 14,
+      "Organic Video": 8,
+      "Paid Social": 6,
+      "Organic Social": 2
      }
     },
     "42": {
@@ -134079,19 +134137,19 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 19,
-        "2": 13,
-        "5": 13,
+        "1": 21,
+        "2": 15,
+        "5": 15,
+        "4": 12,
+        "7": 12,
+        "8": 12,
         "11": 12,
-        "4": 11,
+        "3": 11,
         "6": 11,
-        "7": 11,
-        "8": 11,
         "13": 11,
         "14": 11,
-        "3": 10,
         "10": 10,
-        "12": 9,
+        "12": 10,
         "9": 8
        },
        "exit_hist": {
@@ -134106,32 +134164,32 @@
         "13": 1
        },
        "events": {
-        "pdp_section": 160,
-        "pdp_scroll": 88,
+        "pdp_section": 171,
+        "pdp_scroll": 91,
         "pdp_exit": 70,
-        "pdp_cta_view": 48,
+        "pdp_cta_view": 52,
         "pdp_review": 12,
-        "pdp_cta_click": 8
+        "pdp_cta_click": 7
        },
        "exit_events": 70,
-       "sum_seconds": 5258,
+       "sum_seconds": 5272,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 55,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "옵션선택": 5,
-        "바로구매": 4,
+        "옵션선택": 8,
         "상단메뉴": 4,
         "리뷰": 3,
+        "바로구매": 3,
         "상세이미지": 3,
         "장바구니": 2,
         "썸네일": 1
        },
        "scroll_reach": {
-        "10": 21,
-        "25": 17,
+        "10": 22,
+        "25": 19,
         "50": 15,
         "75": 12,
         "90": 12,
@@ -134145,7 +134203,7 @@
        },
        "events": {
         "pdp_exit": 5,
-        "pdp_cta_view": 2
+        "pdp_cta_view": 3
        },
        "exit_events": 5,
        "sum_seconds": 339,
@@ -134158,6 +134216,23 @@
         "상단메뉴": 2,
         "썸네일": 1
        }
+      },
+      "desktop": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_cta_view": 1,
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 6,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      },
      "section_total": 14,
@@ -134181,12 +134256,6 @@
        },
        "exits": 4
       },
-      "YT3-Cf0kgGomE-mNixHqow6MmbPPGTd1-tjRlBfjIqJIBRDL0pM7CmDTAg5o6oTINTc0EeA3h0TY4Yd-n7faHJniCJRPO94ofmFq": {
-       "exit_hist": {
-        "0": 3
-       },
-       "exits": 3
-      },
       "ID 120252956260630414 (이름 미설정)": {
        "exit_hist": {
         "0": 2
@@ -134198,6 +134267,19 @@
         "0": 2
        },
        "exits": 2
+      },
+      "YT3-Cf0kgGomE-mNixHqow6MmbPPGTd1-tjRlBfjIqJIBRDL0pM7CmDTAg5o6oTINTc0EeA3h0TY4Yd-n7faHJniCJRPO94ofmFq": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-GOa0NCa955USnEx-uqkp-iGkb3eyJuTAo-hfyuCLtJkmDbbX7oEDQwsvf8QiPNMOzxN5mS-4wATpz7B1zEZS5uELD7jp7jI9": {
+       "exit_hist": {
+        "0": 2,
+        "1": 1
+       },
+       "exits": 3
       },
       "YT3-UUoj4Er5AZdTHkOcSy1RAp8ZPhn9QLJi5x8HD7MO8KDLFw9DgZbf8G2uCHnZtpe2lAvB3Oe7lI4YRqQK8NEac6pMszs-jHfb": {
        "exit_hist": {
@@ -134252,13 +134334,6 @@
         "0": 1
        },
        "exits": 1
-      },
-      "YT3-GOa0NCa955USnEx-uqkp-iGkb3eyJuTAo-hfyuCLtJkmDbbX7oEDQwsvf8QiPNMOzxN5mS-4wATpz7B1zEZS5uELD7jp7jI9": {
-       "exit_hist": {
-        "0": 1,
-        "1": 1
-       },
-       "exits": 2
       },
       "YT3-N2dYjs4VFZPe-eWq27T5OU9N6cWnT4O8btzUxBvCD9LBMK_-aXFe71-qt8cj2rq_I5J0OPhM1Zk-Dn5h5nX8Y1HsN3CEE1V3": {
        "exit_hist": {
@@ -134326,6 +134401,12 @@
        },
        "exits": 1
       },
+      "YT3-pfJEvue_Pb_sfZHXupEXKNX1g09CYdAyq2mUltHM_MIiuLtrbXAf01HEY5uevqcuwQAUBxPr_sjAbP_ZqKC32d9Wjq1877Bz": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-u5DzJ5ccCRgHWlDHUeyJAoDDvXrW_29JBV-jAigFu8NMCCTjEMIy-kQH-5_STRVCD5VbHdarPagS_bwptBoJp_3XU9zpf-ds": {
        "exit_hist": {
         "0": 1
@@ -134352,51 +134433,51 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 24,
-        "14": 7,
-        "5": 5,
-        "1": 4,
-        "2": 2,
-        "7": 1,
-        "13": 1
+        "0": 31,
+        "14": 5,
+        "5": 2,
+        "8": 2,
+        "1": 1,
+        "2": 1,
+        "7": 1
        },
-       "exits": 44
-      },
-      "Organic Video": {
-       "exit_hist": {
-        "0": 14,
-        "8": 1,
-        "14": 1
-       },
-       "exits": 16
+       "exits": 43
       },
       "Direct": {
        "exit_hist": {
-        "0": 3,
-        "14": 2,
-        "1": 1,
-        "2": 1
+        "0": 8,
+        "1": 3,
+        "14": 3,
+        "2": 2,
+        "5": 2
        },
-       "exits": 7
+       "exits": 18
       },
       "Organic Search": {
        "exit_hist": {
-        "0": 2,
-        "14": 2,
-        "12": 1
+        "14": 4,
+        "0": 3,
+        "12": 1,
+        "13": 1
        },
-       "exits": 5
+       "exits": 9
       },
-      "Cross-network": {
+      "Paid Social": {
        "exit_hist": {
-        "0": 1,
-        "8": 1
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "1": 1,
+        "5": 1
        },
        "exits": 2
       },
-      "Paid Social": {
+      "Unassigned": {
        "exit_hist": {
         "0": 1
        },
@@ -134404,16 +134485,16 @@
       }
      },
      "entry": {
-      "sessions": 33,
-      "engaged": 27
+      "sessions": 40,
+      "engaged": 37
      },
      "channels": {
-      "Unassigned": 44,
-      "Organic Video": 16,
-      "Direct": 7,
-      "Organic Search": 5,
-      "Cross-network": 2,
-      "Paid Social": 1
+      "Organic Shopping": 43,
+      "Direct": 18,
+      "Organic Search": 9,
+      "Paid Social": 3,
+      "Organic Video": 2,
+      "Unassigned": 1
      }
     },
     "76": {
@@ -134421,58 +134502,58 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 18,
+        "1": 20,
         "2": 15,
         "3": 12,
         "4": 11,
         "5": 9,
-        "6": 5,
+        "6": 6,
+        "12": 6,
+        "13": 6,
+        "7": 5,
+        "8": 5,
         "9": 5,
-        "12": 5,
-        "13": 5,
-        "7": 4,
-        "8": 4,
-        "10": 4,
-        "11": 4,
+        "10": 5,
+        "11": 5,
+        "18": 5,
+        "19": 5,
+        "14": 4,
+        "15": 4,
         "16": 4,
-        "18": 4,
-        "19": 4,
-        "14": 3,
-        "15": 3,
-        "17": 3
+        "17": 4
        },
        "exit_hist": {
-        "0": 37,
+        "0": 39,
         "1": 5,
+        "19": 4,
         "4": 3,
-        "19": 3,
+        "5": 3,
+        "2": 2,
         "3": 2,
-        "5": 2,
-        "2": 1,
         "6": 1,
         "13": 1
        },
        "events": {
-        "pdp_section": 122,
-        "pdp_exit": 55,
-        "pdp_scroll": 52,
-        "pdp_cta_view": 29,
-        "pdp_cta_click": 15,
+        "pdp_section": 136,
+        "pdp_exit": 60,
+        "pdp_scroll": 59,
+        "pdp_cta_view": 32,
+        "pdp_cta_click": 17,
         "pdp_review": 4
        },
-       "exit_events": 55,
-       "sum_seconds": 5791,
+       "exit_events": 60,
+       "sum_seconds": 6625,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 30,
+       "sum_saw_cta": 34,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "바로구매": 6,
+        "바로구매": 7,
         "옵션선택": 4,
+        "리뷰": 2,
         "상단메뉴": 2,
         "가격영역": 1,
-        "리뷰": 1,
         "상세이미지": 1
        },
        "zone_buys": {
@@ -134483,11 +134564,11 @@
         "0": 1
        },
        "scroll_reach": {
-        "10": 18,
-        "25": 11,
-        "50": 6,
-        "75": 6,
-        "90": 6,
+        "10": 20,
+        "25": 12,
+        "50": 8,
+        "75": 7,
+        "90": 7,
         "100": 5
        }
       }
@@ -134496,12 +134577,13 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 8,
+        "0": 9,
         "4": 3,
         "19": 3,
-        "1": 2
+        "1": 2,
+        "5": 1
        },
-       "exits": 16
+       "exits": 18
       },
       "01KHV4Y6FN15EVM3KT40J6N4EP": {
        "exit_hist": {
@@ -134517,9 +134599,9 @@
       },
       "YT3-VTABor2A2e_3hpbVqbYQkNQKAY_O5MQzlzDidH_SlOhf9EJgdkeRpgT8-bnQerZUrwE7bwGtqTir2xSrEo_9vvQGnwqFEw": {
        "exit_hist": {
-        "0": 3
+        "0": 4
        },
-       "exits": 3
+       "exits": 4
       },
       "YT3-1U_xgzkN0wWwMf-f0QzfeFYD8j1FQw3rZ2IRE0mTl8ZRLDX8-09w9jVPUx36-BlQ8RP_kfnuFqpJaHvwgM--R8XzMEoKGg": {
        "exit_hist": {
@@ -134575,11 +134657,18 @@
       },
       "YT3-QoDKw4TCqjJuhpegAebP5ROJBXMimChBgQfSlkTs6_VFzekZihr9Dje83JNiBrEtUTaMbQ7IUuE_5vaHqxWIPDwnCwI1I2JC": {
        "exit_hist": {
-        "0": 1
+        "0": 1,
+        "19": 1
+       },
+       "exits": 2
+      },
+      "YT3-SAT8fWjXnt9s3T4yzPNcoEmL3QabjtCC_Z6zdbAbybvAHe0O0UjAq3h04HfFsONebFrVl-MM00aq4vuOSpfX4dmfDf5T7fvA": {
+       "exit_hist": {
+        "2": 1
        },
        "exits": 1
       },
-      "YT3-SAT8fWjXnt9s3T4yzPNcoEmL3QabjtCC_Z6zdbAbybvAHe0O0UjAq3h04HfFsONebFrVl-MM00aq4vuOSpfX4dmfDf5T7fvA": {
+      "YT3-cU1ljh6YOUF8HML5cQ0_ufFOtUdC5mje8yq4b26jAMpVP2caeb0ShDK1-ThNb3NR19YKpn7q0J_YhSgcGCMO4BomYf5VEWZs": {
        "exit_hist": {
         "2": 1
        },
@@ -134607,72 +134696,72 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 31,
+        "0": 15,
         "1": 3,
-        "4": 2,
         "3": 1,
-        "5": 1,
-        "6": 1,
-        "13": 1,
-        "19": 1
+        "13": 1
        },
-       "exits": 41
+       "exits": 20
       },
-      "Cross-network": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 3,
-        "1": 1,
-        "19": 1
-       },
-       "exits": 5
-      },
-      "Direct": {
-       "exit_hist": {
+        "0": 8,
+        "1": 2,
+        "5": 2,
         "2": 1,
-        "4": 1
-       },
-       "exits": 2
-      },
-      "Organic Search": {
-       "exit_hist": {
-        "0": 1,
+        "3": 1,
+        "6": 1,
         "19": 1
        },
-       "exits": 2
-      },
-      "Organic Video": {
-       "exit_hist": {
-        "1": 1,
-        "3": 1,
-        "5": 1
-       },
-       "exits": 3
+       "exits": 16
       },
       "Paid Other": {
        "exit_hist": {
-        "0": 1
+        "0": 7
        },
-       "exits": 1
+       "exits": 7
+      },
+      "Direct": {
+       "exit_hist": {
+        "4": 3,
+        "0": 2,
+        "2": 1
+       },
+       "exits": 6
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "19": 3,
+        "0": 2,
+        "5": 1
+       },
+       "exits": 6
+      },
+      "Organic Social": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
       },
       "Paid Social": {
        "exit_hist": {
-        "0": 1
+        "0": 2
        },
-       "exits": 1
+       "exits": 2
       }
      },
      "entry": {
       "sessions": 34,
-      "engaged": 24
+      "engaged": 27
      },
      "channels": {
-      "Unassigned": 41,
-      "Cross-network": 5,
-      "Organic Video": 3,
-      "Direct": 2,
-      "Organic Search": 2,
-      "Paid Other": 1,
-      "Paid Social": 1
+      "Unassigned": 20,
+      "Organic Shopping": 16,
+      "Paid Other": 7,
+      "Direct": 6,
+      "Organic Search": 6,
+      "Organic Social": 3,
+      "Paid Social": 2
      }
     },
     "40": {
@@ -134680,39 +134769,40 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 14,
-        "2": 13,
-        "4": 10,
-        "5": 9,
-        "3": 7
+        "1": 15,
+        "2": 15,
+        "4": 12,
+        "3": 11,
+        "5": 10
        },
        "exit_hist": {
-        "0": 32,
-        "5": 10,
+        "0": 34,
+        "5": 11,
         "2": 3,
-        "4": 2
+        "4": 3,
+        "1": 1
        },
        "events": {
-        "pdp_scroll": 63,
-        "pdp_section": 53,
-        "pdp_exit": 47,
-        "pdp_cta_view": 20,
-        "pdp_cta_click": 11,
-        "pdp_review": 8
+        "pdp_scroll": 69,
+        "pdp_section": 63,
+        "pdp_exit": 52,
+        "pdp_cta_view": 21,
+        "pdp_cta_click": 13,
+        "pdp_review": 9
        },
-       "exit_events": 47,
-       "sum_seconds": 34683,
+       "exit_events": 52,
+       "sum_seconds": 35056,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 20,
+       "sum_saw_cta": 24,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "바로구매": 7,
+        "바로구매": 8,
+        "장바구니": 5,
         "리뷰": 4,
-        "장바구니": 4,
+        "정기배송선택": 4,
         "썸네일": 3,
-        "정기배송선택": 3,
         "상단메뉴": 2,
         "상세이미지": 1
        },
@@ -134727,12 +134817,12 @@
         "5": 3
        },
        "scroll_reach": {
-        "10": 14,
-        "25": 12,
-        "50": 10,
-        "100": 9,
-        "75": 9,
-        "90": 9
+        "10": 15,
+        "25": 14,
+        "50": 11,
+        "75": 10,
+        "90": 10,
+        "100": 9
        }
       },
       "tablet": {
@@ -134745,19 +134835,19 @@
        },
        "exit_hist": {
         "0": 4,
-        "5": 1
+        "5": 2
        },
        "events": {
         "pdp_scroll": 10,
         "pdp_section": 7,
-        "pdp_exit": 5,
+        "pdp_exit": 6,
         "pdp_cta_view": 2,
         "pdp_review": 1
        },
-       "exit_events": 5,
-       "sum_seconds": 1493,
+       "exit_events": 6,
+       "sum_seconds": 1568,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 1,
+       "sum_saw_cta": 2,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
@@ -134779,17 +134869,18 @@
       "_비광고": {
        "exit_hist": {
         "0": 10,
-        "5": 8,
+        "5": 10,
         "2": 2,
-        "4": 1
+        "4": 2,
+        "1": 1
        },
-       "exits": 21
+       "exits": 25
       },
       "YT3-2KXRIP7jw_p2b-Dkplh50nessF09wPvLWlu7H1zOR6WnHn6hjNkjO4J8UzG7pXB2Lqp1TPR1JB2bqVS2YAnpPtSEuKvi-HdJ": {
        "exit_hist": {
-        "0": 5
+        "0": 6
        },
-       "exits": 5
+       "exits": 6
       },
       "YT3-GbCeFt94LuUA0OOIr9VLdsHxXPN8HjRuwSg_fV9kjBo5UK8HGg5cDHf8Y_xMZnRKV3SPzSM706-VVqe3SYtj2qzXd-CU-Q": {
        "exit_hist": {
@@ -134876,6 +134967,12 @@
        },
        "exits": 1
       },
+      "YT3-psKKwoEAOS8MXhzo6T--8WxF0xXfuPrUeVf1XGjhkNcgJaoJod5sNfMk91EDnFpgbvCKWC6GsqL6g0M3JNjcrka4M06OWRaO": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-szS-XurBsa1IcaLGPdzDgj99kvkDAmAz5Dx2WFKT5jfpjPgPYJCpXh86d1w50pMSPd9aE0u3tx997k-z7-WggPv1-ymcXbY0": {
        "exit_hist": {
         "0": 1
@@ -134890,208 +134987,55 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 18,
+        "0": 23,
         "5": 5,
         "2": 1,
         "4": 1
        },
-       "exits": 25
+       "exits": 30
       },
       "Direct": {
        "exit_hist": {
-        "0": 9,
+        "0": 8,
         "2": 2,
         "4": 1
        },
-       "exits": 12
+       "exits": 11
       },
-      "Cross-network": {
+      "Organic Search": {
        "exit_hist": {
-        "0": 5,
-        "5": 1
+        "5": 6,
+        "1": 1
        },
-       "exits": 6
+       "exits": 7
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "0": 5
+       },
+       "exits": 5
       },
       "Organic Video": {
        "exit_hist": {
-        "0": 3,
-        "5": 3
+        "0": 2,
+        "5": 2,
+        "4": 1
        },
-       "exits": 6
-      },
-      "Organic Search": {
-       "exit_hist": {
-        "5": 2
-       },
-       "exits": 2
-      },
-      "Organic Shopping": {
-       "exit_hist": {
-        "0": 1
-       },
-       "exits": 1
+       "exits": 5
       }
      },
      "entry": {
-      "sessions": 26,
-      "engaged": 14
+      "sessions": 29,
+      "engaged": 23
      },
      "channels": {
-      "Unassigned": 25,
-      "Direct": 12,
-      "Cross-network": 6,
-      "Organic Video": 6,
-      "Organic Search": 2,
-      "Organic Shopping": 1
-     }
-    },
-    "78": {
-     "name": "[자연하]선물세트 그린진 원스틱 1.5g x 30포 10박스 + 쇼핑백증정",
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "1": 11,
-        "2": 9,
-        "3": 8,
-        "4": 8,
-        "5": 5,
-        "6": 5,
-        "7": 5,
-        "8": 5,
-        "9": 5
-       },
-       "exit_hist": {
-        "0": 9,
-        "9": 5,
-        "1": 4,
-        "4": 2,
-        "2": 1,
-        "8": 1
-       },
-       "events": {
-        "pdp_section": 61,
-        "pdp_scroll": 36,
-        "pdp_exit": 22,
-        "pdp_cta_view": 11,
-        "pdp_cta_click": 3,
-        "pdp_review": 3
-       },
-       "exit_events": 22,
-       "sum_seconds": 663,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 13,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "zone_clicks": {
-        "바로구매": 3
-       },
-       "zone_buys": {
-        "바로구매": 1
-       },
-       "buyer_depth": {
-        "1": 1
-       },
-       "scroll_reach": {
-        "10": 9,
-        "25": 8,
-        "50": 6,
-        "75": 5,
-        "100": 4,
-        "90": 4
-       }
-      },
-      "tablet": {
-       "section_reach": {},
-       "exit_hist": {
-        "0": 1
-       },
-       "events": {
-        "pdp_cta_view": 1,
-        "pdp_exit": 1
-       },
-       "exit_events": 1,
-       "sum_seconds": 37,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 1,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0
-      }
-     },
-     "section_total": 9,
-     "by_source": {
-      "_비광고": {
-       "exit_hist": {
-        "0": 9,
-        "1": 4,
-        "9": 4,
-        "4": 2,
-        "8": 1
-       },
-       "exits": 20
-      },
-      "ID 120252956260630414 (이름 미설정)": {
-       "exit_hist": {
-        "0": 1,
-        "2": 1,
-        "9": 1
-       },
-       "exits": 3
-      }
-     },
-     "by_channel": {
-      "Unassigned": {
-       "exit_hist": {
-        "0": 4,
-        "1": 3,
-        "9": 2,
-        "2": 1,
-        "8": 1
-       },
-       "exits": 11
-      },
-      "Direct": {
-       "exit_hist": {
-        "0": 3,
-        "9": 3,
-        "1": 1,
-        "4": 1
-       },
-       "exits": 8
-      },
-      "Cross-network": {
-       "exit_hist": {
-        "0": 1
-       },
-       "exits": 1
-      },
-      "Organic Search": {
-       "exit_hist": {
-        "0": 1,
-        "4": 1
-       },
-       "exits": 2
-      },
-      "Paid Other": {
-       "exit_hist": {
-        "0": 1
-       },
-       "exits": 1
-      }
-     },
-     "entry": {
-      "sessions": 6,
-      "engaged": 5
-     },
-     "channels": {
-      "Unassigned": 11,
-      "Direct": 8,
-      "Organic Search": 2,
-      "Cross-network": 1,
-      "Paid Other": 1
+      "Organic Shopping": 30,
+      "Direct": 11,
+      "Organic Search": 7,
+      "Organic Video": 5,
+      "Unassigned": 5
      }
     },
     "47": {
@@ -135099,24 +135043,24 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 10
-       },
-       "exit_hist": {
-        "0": 12,
         "1": 11
        },
+       "exit_hist": {
+        "1": 13,
+        "0": 12
+       },
        "events": {
-        "pdp_scroll": 49,
-        "pdp_exit": 23,
-        "pdp_cta_view": 11,
-        "pdp_section": 10,
+        "pdp_scroll": 55,
+        "pdp_exit": 25,
+        "pdp_cta_view": 12,
+        "pdp_section": 11,
         "pdp_review": 9,
         "pdp_cta_click": 1
        },
-       "exit_events": 23,
-       "sum_seconds": 762,
+       "exit_events": 25,
+       "sum_seconds": 1394,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 12,
+       "sum_saw_cta": 14,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
@@ -135126,12 +135070,12 @@
         "바로구매": 1
        },
        "scroll_reach": {
-        "10": 10,
-        "25": 10,
-        "50": 9,
+        "10": 11,
+        "25": 11,
+        "50": 11,
         "75": 8,
-        "100": 6,
-        "90": 6
+        "100": 7,
+        "90": 7
        }
       },
       "tablet": {
@@ -135139,17 +135083,18 @@
         "1": 1
        },
        "exit_hist": {
+        "0": 1,
         "1": 1
        },
        "events": {
         "pdp_scroll": 6,
+        "pdp_exit": 2,
         "pdp_cta_view": 1,
-        "pdp_exit": 1,
         "pdp_review": 1,
         "pdp_section": 1
        },
-       "exit_events": 1,
-       "sum_seconds": 220,
+       "exit_events": 2,
+       "sum_seconds": 226,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 1,
        "sum_saw_review": 0,
@@ -135172,10 +135117,10 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "1": 6,
+        "1": 7,
         "0": 2
        },
-       "exits": 8
+       "exits": 9
       },
       "ID 120252956260630414 (이름 미설정)": {
        "exit_hist": {
@@ -135202,7 +135147,19 @@
        },
        "exits": 1
       },
+      "YT3--gte2udtJsPc_q4LNsV5SHE8K57TH6qqxY2SbmR4AReoG4pKyghBGLApSBQAv262DqTT6vSxqChygVtrNqyNxsAWm3G6Oy14": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-F0V-xrX9TgInShVGNznfdWStLeotExcPvXwxX6DRwIge3W-8cW8F6WndH4iaDUtDoJmtpCvgeIp0fTUM4r9mRN8-FmTSZIvk": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-VbDbeBULKxTd1bnUuYcDeOsjdIsdttkpAtOQrY7NG6_Sk0LLwwTH-MUqIt3_IeP_5XJKKW0Hiwd0qEK5gnd0gTm_KbJoSdMf": {
        "exit_hist": {
         "1": 1
        },
@@ -135216,31 +135173,26 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 8,
-        "1": 6
+        "1": 6,
+        "0": 5
        },
-       "exits": 14
-      },
-      "Organic Video": {
-       "exit_hist": {
-        "1": 3
-       },
-       "exits": 3
+       "exits": 11
       },
       "Paid Social": {
        "exit_hist": {
-        "1": 3,
-        "0": 1
+        "1": 6,
+        "0": 5
+       },
+       "exits": 11
+      },
+      "Direct": {
+       "exit_hist": {
+        "0": 2,
+        "1": 2
        },
        "exits": 4
-      },
-      "Cross-network": {
-       "exit_hist": {
-        "0": 2
-       },
-       "exits": 2
       },
       "Paid Other": {
        "exit_hist": {
@@ -135250,14 +135202,152 @@
       }
      },
      "entry": {
-      "sessions": 14,
-      "engaged": 9
+      "sessions": 17,
+      "engaged": 17
      },
      "channels": {
-      "Unassigned": 14,
-      "Paid Social": 4,
-      "Organic Video": 3,
-      "Cross-network": 2,
+      "Organic Shopping": 11,
+      "Paid Social": 11,
+      "Direct": 4,
+      "Paid Other": 1
+     }
+    },
+    "78": {
+     "name": "[자연하]선물세트 그린진 원스틱 1.5g x 30포 10박스 + 쇼핑백증정",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 11,
+        "2": 9,
+        "3": 8,
+        "4": 8,
+        "8": 7,
+        "9": 6,
+        "5": 5,
+        "6": 5,
+        "7": 5
+       },
+       "exit_hist": {
+        "0": 9,
+        "9": 6,
+        "1": 4,
+        "4": 2,
+        "2": 1,
+        "8": 1
+       },
+       "events": {
+        "pdp_section": 64,
+        "pdp_scroll": 40,
+        "pdp_exit": 23,
+        "pdp_cta_view": 11,
+        "pdp_cta_click": 3,
+        "pdp_review": 3
+       },
+       "exit_events": 23,
+       "sum_seconds": 681,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 14,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "바로구매": 3
+       },
+       "zone_buys": {
+        "바로구매": 1
+       },
+       "buyer_depth": {
+        "1": 1
+       },
+       "scroll_reach": {
+        "10": 9,
+        "25": 8,
+        "100": 6,
+        "50": 6,
+        "90": 6,
+        "75": 5
+       }
+      },
+      "tablet": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_cta_view": 1,
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 37,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "section_total": 9,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 9,
+        "9": 5,
+        "1": 4,
+        "4": 2,
+        "8": 1
+       },
+       "exits": 21
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1,
+        "2": 1,
+        "9": 1
+       },
+       "exits": 3
+      }
+     },
+     "by_channel": {
+      "Organic Search": {
+       "exit_hist": {
+        "0": 5,
+        "4": 1,
+        "8": 1,
+        "9": 1
+       },
+       "exits": 8
+      },
+      "Direct": {
+       "exit_hist": {
+        "0": 4,
+        "1": 4,
+        "9": 4,
+        "4": 1
+       },
+       "exits": 13
+      },
+      "Paid Other": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "2": 1,
+        "9": 1
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 5,
+      "engaged": 5
+     },
+     "channels": {
+      "Direct": 13,
+      "Organic Search": 8,
+      "Paid Social": 2,
       "Paid Other": 1
      }
     },
@@ -135270,27 +135360,27 @@
         "19": 8,
         "1": 7,
         "2": 7,
+        "9": 7,
+        "12": 7,
+        "16": 7,
         "17": 7,
         "3": 6,
+        "4": 6,
+        "5": 6,
         "6": 6,
         "7": 6,
         "8": 6,
-        "9": 6,
         "10": 6,
         "11": 6,
-        "12": 6,
         "13": 6,
         "14": 6,
         "15": 6,
-        "16": 6,
-        "4": 5,
-        "5": 5,
         "20": 3,
         "21": 3,
         "22": 1
        },
        "exit_hist": {
-        "0": 26,
+        "0": 27,
         "19": 3,
         "21": 2,
         "2": 1,
@@ -135299,39 +135389,43 @@
         "32": 1
        },
        "events": {
-        "pdp_section": 127,
-        "pdp_exit": 35,
-        "pdp_cta_view": 19,
-        "pdp_scroll": 13,
-        "pdp_cta_click": 10
+        "pdp_section": 132,
+        "pdp_exit": 36,
+        "pdp_cta_view": 22,
+        "pdp_scroll": 19,
+        "pdp_cta_click": 11,
+        "pdp_review": 1
        },
-       "exit_events": 35,
-       "sum_seconds": 3341,
+       "exit_events": 36,
+       "sum_seconds": 3371,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 25,
+       "sum_saw_cta": 26,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "옵션선택": 8,
-        "바로구매": 3,
+        "옵션선택": 9,
+        "바로구매": 4,
         "상단메뉴": 3,
         "썸네일": 1,
         "장바구니": 1
        },
        "zone_buys": {
-        "옵션선택": 2,
-        "바로구매": 1,
+        "옵션선택": 3,
+        "바로구매": 2,
         "장바구니": 1
        },
        "buyer_depth": {
-        "0": 1,
+        "0": 2,
         "32": 1
        },
        "scroll_reach": {
-        "10": 5,
-        "25": 5,
-        "50": 3
+        "10": 6,
+        "25": 6,
+        "50": 4,
+        "100": 1,
+        "75": 1,
+        "90": 1
        }
       }
      },
@@ -135339,13 +135433,13 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 13,
+        "0": 14,
         "19": 3,
         "2": 1,
         "22": 1,
         "32": 1
        },
-       "exits": 19
+       "exits": 20
       },
       "01KHV4Y6FN15EVM3KT40J6N4EP": {
        "exit_hist": {
@@ -135423,45 +135517,59 @@
      "by_channel": {
       "Direct": {
        "exit_hist": {
-        "0": 11,
-        "2": 1,
-        "19": 1,
-        "32": 1
-       },
-       "exits": 14
-      },
-      "Unassigned": {
-       "exit_hist": {
         "0": 9,
         "19": 2,
-        "21": 2,
-        "16": 1,
-        "22": 1
+        "2": 1,
+        "32": 1
        },
-       "exits": 15
+       "exits": 13
       },
-      "Organic Video": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 4
+        "0": 8,
+        "16": 1
        },
-       "exits": 4
+       "exits": 9
       },
       "Organic Search": {
        "exit_hist": {
-        "0": 2
+        "0": 3,
+        "19": 1,
+        "22": 1
        },
-       "exits": 2
+       "exits": 5
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "0": 3,
+        "21": 2
+       },
+       "exits": 5
+      },
+      "Organic Social": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       }
      },
      "entry": {
-      "sessions": 15,
-      "engaged": 13
+      "sessions": 14,
+      "engaged": 12
      },
      "channels": {
-      "Unassigned": 15,
-      "Direct": 14,
-      "Organic Video": 4,
-      "Organic Search": 2
+      "Direct": 13,
+      "Organic Shopping": 9,
+      "Organic Search": 5,
+      "Unassigned": 5,
+      "Organic Video": 3,
+      "Organic Social": 1
      }
     },
     "44": {
@@ -135470,29 +135578,29 @@
       "mobile": {
        "section_reach": {
         "1": 7,
+        "2": 4,
         "3": 4,
         "6": 4,
-        "2": 3,
         "4": 3,
         "5": 3
        },
        "exit_hist": {
-        "0": 28,
+        "0": 33,
         "6": 4,
         "2": 1,
         "3": 1,
         "5": 1
        },
        "events": {
-        "pdp_exit": 35,
+        "pdp_exit": 40,
         "pdp_scroll": 30,
-        "pdp_section": 24,
-        "pdp_cta_view": 13,
+        "pdp_section": 25,
+        "pdp_cta_view": 14,
         "pdp_review": 4,
         "pdp_cta_click": 2
        },
-       "exit_events": 35,
-       "sum_seconds": 13318,
+       "exit_events": 40,
+       "sum_seconds": 13404,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 14,
        "sum_saw_review": 0,
@@ -135502,8 +135610,8 @@
         "네이버페이": 2,
         "리뷰": 2,
         "상단메뉴": 2,
-        "썸네일": 1,
-        "정기배송선택": 1
+        "정기배송선택": 2,
+        "썸네일": 1
        },
        "zone_buys": {
         "네이버페이": 1,
@@ -135563,6 +135671,18 @@
        },
        "exits": 3
       },
+      "YT3-duMJJH6e7y3_6mNXsosYsZGFmIx1RSoHNJVnB-vw6PQBqEOFf3myqKB_fjA8q3Tp4Xn0eMc82ibKVgCAO9roq6CdsAujtFu1": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-exF4rzcAsBwHnKeSV1VydOo05CQGblXA42XBJJJ_udi3vlyTOthkVgto4GSoR3NlwnqkWv1Or8Yw94jsbVsQJJXgQ7Yk3ctq": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
       "YT3-ldwusEBLfX6kCl_tXyL4gvCjPePRpv_95rEeCS-6HRgxDYIG-2HCknFocXFuljgLglVGUMxmC3176P1AsUCRc1fPQpi4JH2M": {
        "exit_hist": {
         "0": 2
@@ -135571,7 +135691,14 @@
       },
       "ID 120252920925390414 (이름 미설정)": {
        "exit_hist": {
+        "0": 1,
         "5": 1
+       },
+       "exits": 2
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
        },
        "exits": 1
       },
@@ -135629,21 +135756,15 @@
        },
        "exits": 1
       },
+      "YT3-Xdv5WmxsSRPUQ6EzRWh75pn4GOl5vGTwew-etZcqLmpIeTlT74xtMsgc1kXFVA4p_1LkEruW3DzNsqcc5mDy2k_-cjjiyw": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-bZGBDWiJYOAjzhoKmlq6acVGLCz4QC-CvgfA7UqiQhZblA_XI22K6N-bVa8kgmUH6OOlsC9LNpL6xbjYLNREtgz_GzrUyB2G": {
        "exit_hist": {
         "6": 1
-       },
-       "exits": 1
-      },
-      "YT3-duMJJH6e7y3_6mNXsosYsZGFmIx1RSoHNJVnB-vw6PQBqEOFf3myqKB_fjA8q3Tp4Xn0eMc82ibKVgCAO9roq6CdsAujtFu1": {
-       "exit_hist": {
-        "0": 1
-       },
-       "exits": 1
-      },
-      "YT3-exF4rzcAsBwHnKeSV1VydOo05CQGblXA42XBJJJ_udi3vlyTOthkVgto4GSoR3NlwnqkWv1Or8Yw94jsbVsQJJXgQ7Yk3ctq": {
-       "exit_hist": {
-        "0": 1
        },
        "exits": 1
       },
@@ -135667,27 +135788,27 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 18,
-        "6": 2,
-        "2": 1
+        "0": 22,
+        "6": 3,
+        "2": 1,
+        "3": 1
        },
-       "exits": 21
+       "exits": 27
       },
-      "Cross-network": {
+      "Paid Social": {
+       "exit_hist": {
+        "0": 3,
+        "5": 1
+       },
+       "exits": 4
+      },
+      "Unassigned": {
        "exit_hist": {
         "0": 3
        },
        "exits": 3
-      },
-      "Organic Video": {
-       "exit_hist": {
-        "0": 3,
-        "3": 1,
-        "6": 1
-       },
-       "exits": 5
       },
       "Direct": {
        "exit_hist": {
@@ -135695,31 +135816,31 @@
        },
        "exits": 2
       },
-      "Organic Shopping": {
+      "Organic Video": {
        "exit_hist": {
         "0": 2,
         "6": 1
        },
        "exits": 3
       },
-      "Organic Social": {
+      "Organic Search": {
        "exit_hist": {
-        "5": 1
+        "0": 1
        },
        "exits": 1
       }
      },
      "entry": {
-      "sessions": 29,
-      "engaged": 21
+      "sessions": 32,
+      "engaged": 29
      },
      "channels": {
-      "Unassigned": 21,
-      "Organic Video": 5,
-      "Cross-network": 3,
-      "Organic Shopping": 3,
+      "Organic Shopping": 27,
+      "Paid Social": 4,
+      "Organic Video": 3,
+      "Unassigned": 3,
       "Direct": 2,
-      "Organic Social": 1
+      "Organic Search": 1
      }
     },
     "31": {
@@ -135731,7 +135852,7 @@
         "2": 5,
         "3": 5,
         "4": 3,
-        "5": 1
+        "5": 2
        },
        "exit_hist": {
         "0": 16,
@@ -135740,11 +135861,11 @@
         "4": 1
        },
        "events": {
+        "pdp_scroll": 24,
         "pdp_exit": 22,
-        "pdp_scroll": 22,
-        "pdp_section": 20,
+        "pdp_section": 21,
         "pdp_cta_view": 11,
-        "pdp_review": 2,
+        "pdp_review": 3,
         "pdp_cta_click": 1
        },
        "exit_events": 22,
@@ -135766,12 +135887,13 @@
         "25": 5,
         "50": 4,
         "75": 3,
-        "90": 2,
-        "100": 1
+        "90": 3,
+        "100": 2
        }
       },
       "desktop": {
        "section_reach": {
+        "1": 1,
         "2": 1,
         "3": 1,
         "4": 1,
@@ -135781,10 +135903,11 @@
         "5": 1
        },
        "events": {
-        "pdp_section": 4,
+        "pdp_scroll": 6,
+        "pdp_section": 5,
+        "pdp_cta_view": 1,
         "pdp_exit": 1,
-        "pdp_review": 1,
-        "pdp_scroll": 1
+        "pdp_review": 1
        },
        "exit_events": 1,
        "sum_seconds": 51,
@@ -135797,7 +135920,12 @@
         "상단메뉴": 1
        },
        "scroll_reach": {
-        "100": 1
+        "10": 1,
+        "100": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
        }
       }
      },
@@ -135868,52 +135996,60 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 11,
-        "5": 2,
+        "0": 7,
+        "3": 1,
+        "5": 1
+       },
+       "exits": 9
+      },
+      "Direct": {
+       "exit_hist": {
+        "0": 3,
+        "5": 2
+       },
+       "exits": 5
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "0": 1,
         "3": 1,
         "4": 1
-       },
-       "exits": 15
-      },
-      "Cross-network": {
-       "exit_hist": {
-        "0": 2,
-        "5": 1
        },
        "exits": 3
       },
       "Organic Video": {
        "exit_hist": {
-        "0": 2,
+        "0": 1,
         "5": 1
        },
-       "exits": 3
+       "exits": 2
       },
-      "Direct": {
+      "Unassigned": {
        "exit_hist": {
         "0": 1
-       },
-       "exits": 1
-      },
-      "Organic Search": {
-       "exit_hist": {
-        "3": 1
        },
        "exits": 1
       }
      },
      "entry": {
-      "sessions": 10,
-      "engaged": 7
+      "sessions": 8,
+      "engaged": 8
      },
      "channels": {
-      "Unassigned": 15,
-      "Cross-network": 3,
-      "Organic Video": 3,
-      "Direct": 1,
-      "Organic Search": 1
+      "Organic Shopping": 9,
+      "Direct": 5,
+      "Organic Search": 3,
+      "Paid Social": 3,
+      "Organic Video": 2,
+      "Unassigned": 1
      }
     },
     "80": {
@@ -135965,6 +136101,8 @@
       },
       "desktop": {
        "section_reach": {
+        "1": 1,
+        "2": 1,
         "3": 1,
         "4": 1,
         "5": 1
@@ -135974,7 +136112,8 @@
        },
        "events": {
         "pdp_scroll": 6,
-        "pdp_section": 3,
+        "pdp_section": 5,
+        "pdp_cta_view": 1,
         "pdp_exit": 1,
         "pdp_review": 1
        },
@@ -136017,7 +136156,7 @@
        },
        "exits": 4
       },
-      "Unassigned": {
+      "Organic Search": {
        "exit_hist": {
         "2": 2
        },
@@ -136030,13 +136169,9 @@
        "exits": 1
       }
      },
-     "entry": {
-      "sessions": 1,
-      "engaged": 0
-     },
      "channels": {
       "Direct": 4,
-      "Unassigned": 2,
+      "Organic Search": 2,
       "Organic Video": 1
      }
     },
@@ -136104,12 +136239,24 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Search": {
        "exit_hist": {
-        "0": 2,
-        "4": 2
+        "4": 1
        },
-       "exits": 4
+       "exits": 1
+      },
+      "Organic Shopping": {
+       "exit_hist": {
+        "0": 1,
+        "4": 1
+       },
+       "exits": 2
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       }
      },
      "entry": {
@@ -136117,7 +136264,9 @@
       "engaged": 3
      },
      "channels": {
-      "Unassigned": 4
+      "Organic Shopping": 2,
+      "Organic Search": 1,
+      "Organic Video": 1
      }
     },
     "46": {
@@ -136181,27 +136330,20 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "1": 2,
+        "1": 3,
         "0": 1
        },
-       "exits": 3
-      },
-      "Organic Video": {
-       "exit_hist": {
-        "1": 1
-       },
-       "exits": 1
+       "exits": 4
       }
      },
      "entry": {
-      "sessions": 1,
-      "engaged": 0
+      "sessions": 2,
+      "engaged": 2
      },
      "channels": {
-      "Unassigned": 3,
-      "Organic Video": 1
+      "Organic Shopping": 4
      }
     },
     "49": {
@@ -136282,19 +136424,14 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 4
-       },
-       "exits": 4
-      },
-      "Organic Video": {
-       "exit_hist": {
+        "0": 4,
         "1": 2
        },
-       "exits": 2
+       "exits": 6
       },
-      "Cross-network": {
+      "Paid Other": {
        "exit_hist": {
         "0": 1
        },
@@ -136306,9 +136443,8 @@
       "engaged": 5
      },
      "channels": {
-      "Unassigned": 4,
-      "Organic Video": 2,
-      "Cross-network": 1
+      "Organic Shopping": 6,
+      "Paid Other": 1
      }
     },
     "60": {
@@ -136316,30 +136452,30 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 1
+        "1": 2
        },
        "exit_hist": {
-        "0": 2,
-        "1": 1
+        "0": 4,
+        "1": 2
        },
        "events": {
-        "pdp_cta_view": 3,
-        "pdp_exit": 3,
-        "pdp_scroll": 1,
-        "pdp_section": 1
+        "pdp_exit": 6,
+        "pdp_cta_view": 4,
+        "pdp_scroll": 2,
+        "pdp_section": 2
        },
-       "exit_events": 3,
-       "sum_seconds": 42,
+       "exit_events": 6,
+       "sum_seconds": 106,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
+       "sum_saw_cta": 5,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "상단메뉴": 1
+        "상단메뉴": 2
        },
        "scroll_reach": {
-        "10": 1
+        "10": 2
        }
       }
      },
@@ -136348,26 +136484,39 @@
       "ID 120252956260630414 (이름 미설정)": {
        "exit_hist": {
         "0": 2,
-        "1": 1
+        "1": 2
        },
-       "exits": 3
+       "exits": 4
+      },
+      "YT3-3fRcQugWS6VSD8CpIV8xLC3ecqoOc_onif8-k6ns4_hHpGTTDkz3flB-bOVVqTG7OZOgVuxDKs49XQEx5IubeEiCh8OCkHE5": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
       }
      },
      "by_channel": {
+      "Organic Shopping": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
       "Paid Social": {
        "exit_hist": {
         "0": 2,
-        "1": 1
+        "1": 2
        },
-       "exits": 3
+       "exits": 4
       }
      },
      "entry": {
-      "sessions": 2,
-      "engaged": 2
+      "sessions": 3,
+      "engaged": 3
      },
      "channels": {
-      "Paid Social": 3
+      "Paid Social": 4,
+      "Organic Shopping": 2
      }
     },
     "61": {
@@ -136421,13 +136570,13 @@
       }
      },
      "by_channel": {
-      "Cross-network": {
+      "Organic Video": {
        "exit_hist": {
         "3": 1
        },
        "exits": 1
       },
-      "Unassigned": {
+      "Paid Social": {
        "exit_hist": {
         "0": 1
        },
@@ -136436,11 +136585,11 @@
      },
      "entry": {
       "sessions": 1,
-      "engaged": 0
+      "engaged": 1
      },
      "channels": {
-      "Cross-network": 1,
-      "Unassigned": 1
+      "Organic Video": 1,
+      "Paid Social": 1
      }
     },
     "62": {
@@ -136503,16 +136652,10 @@
      "by_channel": {
       "Paid Social": {
        "exit_hist": {
-        "0": 2,
+        "0": 3,
         "3": 1
        },
-       "exits": 3
-      },
-      "Unassigned": {
-       "exit_hist": {
-        "0": 1
-       },
-       "exits": 1
+       "exits": 4
       }
      },
      "entry": {
@@ -136520,8 +136663,7 @@
       "engaged": 2
      },
      "channels": {
-      "Paid Social": 3,
-      "Unassigned": 1
+      "Paid Social": 4
      }
     },
     "63": {
@@ -136588,20 +136730,20 @@
         "1": 1
        },
        "exit_hist": {
-        "0": 1,
-        "1": 1
+        "1": 2,
+        "0": 1
        },
        "events": {
         "pdp_scroll": 6,
-        "pdp_exit": 2,
+        "pdp_exit": 3,
         "pdp_cta_view": 1,
         "pdp_review": 1,
         "pdp_section": 1
        },
-       "exit_events": 2,
-       "sum_seconds": 44,
+       "exit_events": 3,
+       "sum_seconds": 86,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 1,
+       "sum_saw_cta": 2,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
@@ -136622,9 +136764,9 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "1": 1
+        "1": 2
        },
-       "exits": 1
+       "exits": 2
       },
       "ID 120252920931200414 (이름 미설정)": {
        "exit_hist": {
@@ -136634,15 +136776,15 @@
       }
      },
      "by_channel": {
+      "Organic Shopping": {
+       "exit_hist": {
+        "1": 2
+       },
+       "exits": 2
+      },
       "Paid Social": {
        "exit_hist": {
         "0": 1
-       },
-       "exits": 1
-      },
-      "Unassigned": {
-       "exit_hist": {
-        "1": 1
        },
        "exits": 1
       }
@@ -136652,8 +136794,8 @@
       "engaged": 1
      },
      "channels": {
-      "Paid Social": 1,
-      "Unassigned": 1
+      "Organic Shopping": 2,
+      "Paid Social": 1
      }
     },
     "48": {
@@ -136695,13 +136837,13 @@
       }
      },
      "by_channel": {
-      "Paid Social": {
+      "Organic Search": {
        "exit_hist": {
         "0": 1
        },
        "exits": 1
       },
-      "Unassigned": {
+      "Paid Social": {
        "exit_hist": {
         "0": 1
        },
@@ -136713,8 +136855,8 @@
       "engaged": 1
      },
      "channels": {
-      "Paid Social": 1,
-      "Unassigned": 1
+      "Organic Search": 1,
+      "Paid Social": 1
      }
     },
     "81": {
@@ -136749,15 +136891,19 @@
       }
      },
      "by_channel": {
-      "Unassigned": {
+      "Paid Social": {
        "exit_hist": {
         "0": 1
        },
        "exits": 1
       }
      },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
      "channels": {
-      "Unassigned": 1
+      "Paid Social": 1
      }
     }
    },
@@ -136768,92 +136914,115 @@
    "date": "2026-09-20",
    "products": {
     "26": {
-     "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+     "name": "내몸에 베지셀 메이킹 7.4 - 국내산 원료 100% 건강한 채소과일즙",
      "devices": {
       "mobile": {
        "section_reach": {
-        "3": 18,
-        "1": 16,
-        "2": 16,
-        "4": 12,
-        "5": 11,
-        "9": 10,
-        "10": 10,
-        "7": 9,
-        "8": 9,
-        "11": 9,
-        "14": 9,
-        "6": 8,
-        "12": 8,
-        "13": 8,
-        "15": 8,
-        "16": 8,
-        "19": 8,
-        "17": 7,
-        "18": 7,
-        "20": 7,
-        "21": 3
+        "1": 108,
+        "2": 83,
+        "3": 80,
+        "4": 68,
+        "11": 64,
+        "7": 61,
+        "10": 61,
+        "5": 59,
+        "6": 58,
+        "9": 57,
+        "8": 56,
+        "12": 55,
+        "14": 52,
+        "13": 51,
+        "15": 51,
+        "18": 51,
+        "16": 49,
+        "17": 48,
+        "20": 45,
+        "21": 45,
+        "19": 44
        },
        "exit_hist": {
-        "0": 26,
-        "21": 3,
-        "1": 2,
-        "3": 2,
-        "20": 2,
-        "5": 1,
-        "11": 1,
+        "0": 139,
+        "21": 32,
+        "1": 18,
+        "3": 8,
+        "4": 5,
+        "2": 4,
+        "5": 4,
+        "9": 4,
+        "11": 4,
+        "15": 3,
+        "19": 3,
+        "20": 3,
+        "8": 2,
+        "18": 2,
+        "6": 1,
+        "7": 1,
+        "10": 1,
         "12": 1,
+        "13": 1,
         "14": 1,
-        "19": 1
+        "16": 1
        },
        "events": {
-        "pdp_section": 201,
-        "pdp_scroll": 62,
-        "pdp_exit": 40,
-        "pdp_cta_view": 27,
-        "pdp_cta_click": 8,
-        "pdp_review": 8
+        "pdp_section": 1246,
+        "pdp_scroll": 564,
+        "pdp_exit": 238,
+        "pdp_cta_view": 155,
+        "pdp_review": 74,
+        "pdp_cta_click": 64
        },
-       "exit_events": 40,
-       "sum_seconds": 2750,
+       "exit_events": 238,
+       "sum_seconds": 14059,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 27,
+       "sum_saw_cta": 142,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "옵션선택": 13,
-        "정기배송선택": 8,
-        "썸네일": 6,
-        "리뷰": 5,
-        "바로구매": 5,
-        "상단메뉴": 2,
-        "장바구니": 2,
-        "네이버페이": 1
+        "옵션선택": 67,
+        "썸네일": 42,
+        "정기배송선택": 40,
+        "바로구매": 32,
+        "리뷰": 29,
+        "상품문의": 25,
+        "상단메뉴": 18,
+        "네이버페이": 12,
+        "장바구니": 5,
+        "상세이미지": 3
        },
        "zone_buys": {
-        "바로구매": 2,
-        "옵션선택": 2,
-        "정기배송선택": 2,
-        "리뷰": 1,
-        "장바구니": 1
+        "옵션선택": 10,
+        "정기배송선택": 8,
+        "바로구매": 6,
+        "네이버페이": 5,
+        "리뷰": 3,
+        "썸네일": 3,
+        "장바구니": 2,
+        "상단메뉴": 1,
+        "상품문의": 1
        },
        "buyer_depth": {
-        "1": 1,
+        "1": 3,
+        "21": 2,
+        "0": 1,
+        "4": 1,
+        "8": 1,
+        "18": 1,
         "20": 1
        },
        "scroll_reach": {
-        "10": 17,
-        "25": 12,
-        "50": 10,
-        "75": 9,
-        "100": 7,
-        "90": 7
+        "10": 123,
+        "25": 100,
+        "50": 94,
+        "75": 90,
+        "90": 82,
+        "100": 75
        }
       },
       "tablet": {
        "section_reach": {
         "1": 1,
+        "2": 1,
         "3": 1,
         "4": 1,
         "5": 1,
@@ -136868,6 +137037,7 @@
         "14": 1,
         "15": 1,
         "17": 1,
+        "18": 1,
         "20": 1,
         "21": 1
        },
@@ -136876,7 +137046,7 @@
         "21": 1
        },
        "events": {
-        "pdp_section": 17,
+        "pdp_section": 19,
         "pdp_scroll": 5,
         "pdp_cta_click": 4,
         "pdp_exit": 3,
@@ -136893,8 +137063,8 @@
        "zone_clicks": {
         "바로구매": 3,
         "썸네일": 2,
+        "옵션선택": 2,
         "리뷰": 1,
-        "옵션선택": 1,
         "정기배송선택": 1
        },
        "scroll_reach": {
@@ -136910,13 +137080,102 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 10,
-        "1": 1,
-        "3": 1,
+        "0": 38,
+        "21": 6,
+        "1": 5,
+        "3": 3,
+        "4": 3,
+        "9": 3,
+        "2": 2,
+        "5": 2,
+        "8": 2,
+        "10": 1,
         "11": 1,
-        "21": 1
+        "15": 1,
+        "19": 1,
+        "20": 1
        },
-       "exits": 14
+       "exits": 69
+      },
+      "보호자 번아웃 가격 소구": {
+       "exit_hist": {
+        "0": 27,
+        "21": 3,
+        "1": 2,
+        "4": 1,
+        "13": 1,
+        "18": 1
+       },
+       "exits": 35
+      },
+      "베지셀 7건": {
+       "exit_hist": {
+        "0": 11,
+        "21": 3,
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "9": 1,
+        "11": 1
+       },
+       "exits": 19
+      },
+      "보호자 번아웃 + 가격 소구": {
+       "exit_hist": {
+        "0": 18,
+        "21": 16,
+        "2": 1,
+        "3": 2,
+        "11": 1,
+        "15": 1,
+        "16": 1,
+        "19": 2,
+        "20": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "12": 1,
+        "14": 1,
+        "18": 1
+       },
+       "exits": 49
+      },
+      "베지셀_수동형_일5만원_이미지7건_0811": {
+       "exit_hist": {
+        "0": 9,
+        "21": 2,
+        "1": 1,
+        "4": 1,
+        "11": 1,
+        "15": 1
+       },
+       "exits": 15
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 5,
+        "1": 1
+       },
+       "exits": 6
+      },
+      "01KHV4Y6FN15EVM3KT40J6N4EP": {
+       "exit_hist": {
+        "0": 4,
+        "3": 2
+       },
+       "exits": 6
+      },
+      "베지셀_수동형_일5만원_이…": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "ID 120251481934440414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
       },
       "ID 120252219070180414 (이름 미설정)": {
        "exit_hist": {
@@ -136924,45 +137183,70 @@
        },
        "exits": 3
       },
-      "보호자 번아웃 가격 소구": {
+      "YT3-j3c1aK0Pf-aapNPnPh_NFaWCFoNvXA07gFJFLkjLmBhNlvcLleb7hIGCMByr1-LptEemeVvFgcstPEM_4vB4pBg0Nx7cQhy7": {
        "exit_hist": {
-        "0": 3,
-        "1": 1
+        "0": 3
        },
-       "exits": 4
+       "exits": 3
       },
-      "ID 120252956260630414 (이름 미설정)": {
+      "YT3-1dv1gMMh68EVue9-y3t0LKovm_aLJ4uSS70HrQuOt1DsbW-y96xLDgRikOz8oUXjVQRaJSG6_dgXFc-fNYLHI1bu6Fr3mOAQ": {
        "exit_hist": {
         "0": 2
        },
        "exits": 2
       },
-      "베지셀_수동형_일5만원_이미지7건_0811": {
+      "YT3-4uEPqAN7ODj52ngJCnrl3hLPjzUDLglBYoTc5MBO7fNiA8TU4Ce7eLZ0ylW19B-E3ZO0ojWHfwkYNqd5tGfbH5q9iHX2YKgw": {
+       "exit_hist": {
+        "1": 2
+       },
+       "exits": 2
+      },
+      "YT3-5TxBsrzjMjd6zE3JU5Gaz0X-dvJKUQaPl2bMMO-8wAgOsMrYY3lKWYixy7whB4xPhEILQE5Lcm-_4v29i0GzZFK0-hfazVWg": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-ysr0i0vCOvF1X1ZOd2VxW8SD7mRqg1YelBFHU9-cUVeFr1vNwhKVDbGDY1G9GbjQxkBZ5hmq-ay1rqSQCjKemrwNCwe1UA6I": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "베지셀_수동형_일5만원_이미지8건_0811": {
        "exit_hist": {
         "0": 2,
+        "1": 1,
         "21": 1
        },
-       "exits": 3
+       "exits": 4
       },
-      "보호자 번아웃 + 가격 소구": {
-       "exit_hist": {
-        "0": 3,
-        "20": 1,
-        "21": 2,
-        "3": 1,
-        "12": 1,
-        "14": 1,
-        "19": 1
-       },
-       "exits": 10
-      },
-      "베지셀_수동형_일5만원_이…": {
+      "ID 120252920889460414 (이름 미설정)": {
        "exit_hist": {
         "0": 1
        },
        "exits": 1
       },
-      "ID 120251481934440414 (이름 미설정)": {
+      "ID 120252920925390414 (이름 미설정)": {
+       "exit_hist": {
+        "21": 1
+       },
+       "exits": 1
+      },
+      "YT3-2VUAwKJIiIBb6tABEVSaFLd49WKSLbrUtGNzBQnQ0Qy0dZvciUqtO9oqIQYHM6SHJ8LmoBZGUYy9Q_mTtK_iXviMBQfPzZyu": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-2ae-Y5s3LRAYlwJJvzOJb8iFn1dlUBEtCTt7tP8gOxFfBRDg7xlztbLy_utkHw-CrAizYDAytjg74z65gk1qIsyt8S8R9Z4W": {
+       "exit_hist": {
+        "0": 1,
+        "1": 1
+       },
+       "exits": 2
+      },
+      "YT3-5ay12iU7kCj6QZ2HHlDD3iI99jNm1pAaFuq6GZmjm_l7ismWDx8V4qJ5t2cPB7Jxd4SuByPcOK0ShaTvD0BmG3-PGswUy8WE": {
        "exit_hist": {
         "0": 1
        },
@@ -136975,9 +137259,45 @@
        },
        "exits": 2
       },
+      "YT3-DSmXb3A6BZTZazxr0a1Xqhi8wrGQRPnEUXhcMT8PPmh7xyvSMLSZSqGVmrtC5ECgP9mBjSSiTtNm9pHt5XBeOSYuWJHXE4mO": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-EEmxIlC333CJI1KN8C6uwUk-0Q0cG7_7Y3YWlATELY4zpKRT7dnBhgJ6vu-0K7BajUwwFmI2RtStibp-L-AkDo3mJhStYxgM": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-GLn4czkwsmkJutglXAJ6xiC4z704UKCNiI6D54VdB--cprzxsaqMZSUU7EEU3cPgKuPuRcEwg3Um0Gqt0QbOWgdYaiCKN1I": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-N8rIm0NzbQuQo65oEE6Ua1yxbtT1t6ZoQUO668zHVNsuZUH3WEfJMRUGYMxVCaQRK3ge5Kee0QkX-ZkAefkGgfStXAfbbtHV": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-P-mJbzE3xKrjX1Gba23u-_plcsy4bTJSWYXlAor2AIJN-GzFIIWmJNKecFrc3SHSh-H0T9L1OCwwXAd7IdOl0p5DY4vh3A": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
       "YT3-YX9ScvRjkM0EYx43MtlVSH72BAT0AXHOoewMQMDRtXiWvNU4hXrVjtkUJwi_R1zQQqgcZbmfi5k-gCwmh3G9twJIn52T6hiO": {
        "exit_hist": {
         "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-f3Zm9olOwdK2Mhby0BECvXbrjJtJMi1xzWAod8E2g5Of0el3u_gy7-rDG89CgK_HB3P6FFatMq2fIbR6rmmt74Uln98W8T9p": {
+       "exit_hist": {
+        "3": 1
        },
        "exits": 1
       },
@@ -136987,9 +137307,15 @@
        },
        "exits": 1
       },
-      "베지셀 7건": {
+      "YT3-oejK96YGspJMvX8s_7Pd0A0k56pa-dMyuj083gYZFfHaHdp_ugQ9uGuLIwzEvylASUELQJll_Su6IAOAbgoNPDTA9IDrTn1j": {
        "exit_hist": {
-        "5": 1
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-vQ_uYWySpWJmXfqLw_Ou-aSsnBMg4N2W2S4Giw74o_BNuQ4skhg92ojYnIYP7j3Cyv08uFrFNQePxr5ahWV5AYYLOwG-YZHu": {
+       "exit_hist": {
+        "21": 1
        },
        "exits": 1
       }
@@ -136997,57 +137323,121 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 12,
-        "1": 2,
-        "20": 2,
-        "21": 2,
-        "3": 1,
-        "5": 1,
-        "11": 1,
+        "0": 83,
+        "21": 20,
+        "1": 11,
+        "3": 5,
+        "5": 4,
+        "4": 3,
+        "9": 3,
+        "11": 3,
+        "19": 3,
+        "20": 3,
+        "15": 2,
+        "2": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "10": 1,
         "12": 1,
+        "13": 1,
         "14": 1,
-        "19": 1
+        "18": 1
        },
-       "exits": 24
+       "exits": 149
       },
       "Cross-network": {
        "exit_hist": {
-        "0": 6,
+        "0": 14,
+        "21": 4,
+        "1": 1,
         "3": 1,
+        "4": 1,
+        "16": 1
+       },
+       "exits": 22
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 13,
+        "21": 5,
+        "1": 2,
+        "2": 1,
+        "11": 1,
+        "15": 1
+       },
+       "exits": 23
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "0": 10,
+        "1": 2,
+        "4": 1
+       },
+       "exits": 13
+      },
+      "Organic Social": {
+       "exit_hist": {
+        "0": 9,
+        "21": 3,
+        "2": 1,
+        "3": 1,
+        "18": 1
+       },
+       "exits": 15
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 5,
+        "1": 2
+       },
+       "exits": 7
+      },
+      "Direct": {
+       "exit_hist": {
+        "0": 4,
+        "2": 1,
+        "3": 1,
+        "9": 1,
         "21": 1
        },
        "exits": 8
       },
-      "Organic Search": {
+      "Organic Shopping": {
        "exit_hist": {
-        "0": 4
+        "0": 1
        },
-       "exits": 4
+       "exits": 1
       },
-      "Paid Social": {
+      "Paid Other": {
        "exit_hist": {
-        "0": 4
+        "0": 1
        },
-       "exits": 4
+       "exits": 1
       },
-      "Organic Social": {
+      "Referral": {
        "exit_hist": {
-        "0": 2,
-        "21": 1
+        "0": 1,
+        "8": 1
        },
-       "exits": 3
+       "exits": 2
       }
      },
      "entry": {
-      "sessions": 38,
-      "engaged": 29
+      "sessions": 178,
+      "engaged": 151
      },
      "channels": {
-      "Unassigned": 24,
-      "Cross-network": 8,
-      "Organic Search": 4,
-      "Paid Social": 4,
-      "Organic Social": 3
+      "Unassigned": 149,
+      "Paid Social": 23,
+      "Cross-network": 22,
+      "Organic Social": 15,
+      "Organic Search": 13,
+      "Direct": 8,
+      "Organic Video": 7,
+      "Referral": 2,
+      "Organic Shopping": 1,
+      "Paid Other": 1
      }
     },
     "28": {
@@ -137055,60 +137445,101 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 9,
-        "2": 8,
-        "3": 6,
-        "4": 4,
-        "5": 2,
-        "7": 2,
-        "6": 1,
-        "8": 1,
-        "9": 1
+        "1": 34,
+        "2": 31,
+        "3": 29,
+        "4": 23,
+        "5": 19,
+        "7": 14,
+        "8": 13,
+        "9": 13,
+        "6": 12
        },
        "exit_hist": {
-        "0": 26,
-        "2": 3,
-        "4": 2,
-        "1": 1,
-        "5": 1,
-        "6": 1,
-        "7": 1,
-        "9": 1
+        "0": 81,
+        "9": 14,
+        "4": 6,
+        "1": 5,
+        "5": 5,
+        "2": 4,
+        "7": 4,
+        "3": 3,
+        "6": 3
        },
        "events": {
-        "pdp_exit": 36,
-        "pdp_scroll": 35,
-        "pdp_section": 34,
-        "pdp_cta_click": 26,
-        "pdp_cta_view": 19,
-        "pdp_review": 5
+        "pdp_section": 188,
+        "pdp_exit": 125,
+        "pdp_scroll": 118,
+        "pdp_cta_view": 64,
+        "pdp_cta_click": 58,
+        "pdp_review": 14
        },
-       "exit_events": 36,
-       "sum_seconds": 71258,
+       "exit_events": 125,
+       "sum_seconds": 75905,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 26,
+       "sum_saw_cta": 79,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "바로구매": 14,
-        "옵션선택": 8,
-        "정기배송선택": 5,
-        "리뷰": 4,
-        "가격영역": 3,
-        "썸네일": 3,
-        "네이버페이": 2,
-        "상단메뉴": 2,
-        "상품문의": 1,
+        "바로구매": 32,
+        "옵션선택": 25,
+        "정기배송선택": 14,
+        "썸네일": 13,
+        "장바구니": 10,
+        "리뷰": 7,
+        "상단메뉴": 7,
+        "가격영역": 4,
+        "네이버페이": 3,
+        "상세이미지": 1,
+        "상품문의": 1
+       },
+       "zone_buys": {
+        "옵션선택": 5,
+        "바로구매": 4,
+        "정기배송선택": 4,
+        "썸네일": 2,
+        "네이버페이": 1,
         "장바구니": 1
        },
+       "buyer_depth": {
+        "0": 2,
+        "4": 2,
+        "9": 1
+       },
        "scroll_reach": {
-        "10": 11,
-        "25": 7,
-        "50": 5,
-        "100": 4,
-        "75": 4,
-        "90": 4
+        "10": 35,
+        "25": 29,
+        "50": 19,
+        "75": 12,
+        "90": 12,
+        "100": 11
+       }
+      },
+      "tablet": {
+       "section_reach": {
+        "1": 1
+       },
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_cta_view": 1,
+        "pdp_exit": 1,
+        "pdp_section": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 3745,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_buys": {
+        "네이버페이": 2
+       },
+       "buyer_depth": {
+        "1": 2
        }
       }
      },
@@ -137116,27 +137547,81 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 19,
+        "0": 50,
+        "9": 11,
+        "4": 6,
+        "7": 4,
+        "1": 3,
+        "6": 3,
         "2": 2,
-        "4": 2,
-        "1": 1,
-        "6": 1,
-        "7": 1,
-        "9": 1
+        "5": 2,
+        "3": 1
        },
-       "exits": 27
+       "exits": 82
+      },
+      "YT3-K6-xTV48Xv4yQjTA_Oy1BdJjbzewJ_U8iOucdAA0F3jSGq5BgKjxd90BzFq1hVImVhvu6u2k-tPLAl-CCngI5jTThqti1jre": {
+       "exit_hist": {
+        "0": 5
+       },
+       "exits": 5
       },
       "ID 120250970961990414 (이름 미설정)": {
        "exit_hist": {
+        "0": 3,
+        "2": 1
+       },
+       "exits": 4
+      },
+      "YT3-X_IElBUCjsXaIEXCv1ibvURpPCYxd4pMq0B5cddAF7WrhIm74pVxDE-9RKO0Jf_374SuQDRQ733RP1bMLQiP2A1ggt4yhiJ-": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "YT3-16ZI_JSxq1NfwLAsk0JYgl00NkU0M0k4Gr3avi4yV3lBYL1aqXqqkwIu8SAQeVLa5HlJTR1IPoWfLXEZkbUtwGcAPdrL3atQ": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-21q1OrOIFTq5HnS4MYrAhmqbdumPtnnKebbcVdp9Rm96E77aCpMFsmW-IAcDnAW1h1r_dF_mHFOtVCHifGbqZ6kijD12AAyB": {
+       "exit_hist": {
+        "5": 2,
+        "1": 1
+       },
+       "exits": 3
+      },
+      "YT3-Dd-HXbHKir3dcFJDB9afdL_hoBvqarYCtEvbOab0c3bvTIwpZO_gNf-XwcieayaM3gulrIqScqfKKxAfA71qNdSTJcex9K0G": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-LcT-ZPZDa-t5uIXjCVzjf_wOTJqf9ShTpib1t2x3fEUVqasPCXaxWJpS1IZrXrY-6sD6EFW9bq6xSp7G16fS0jkXFYmhIUU8": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-vFQPwCoOnQMRO4nMSbkpRMDUZaGMGTY0poV6gIVXQ4Xeto6VkDTobgbxxv98v99_A4qm4fpfpUGzdyrw6KYap2Q4jxfwvFhz": {
+       "exit_hist": {
+        "9": 2,
         "0": 1
+       },
+       "exits": 3
+      },
+      "ID 120252920889460414 (이름 미설정)": {
+       "exit_hist": {
+        "3": 1
        },
        "exits": 1
       },
       "ID 120252956260630414 (이름 미설정)": {
        "exit_hist": {
+        "0": 1,
         "5": 1
        },
-       "exits": 1
+       "exits": 2
       },
       "YT3-1S21B62zEhf_5afsDsSW4xzdigapXDUAQEl6rCbbBs4IKLPdGkipWhpLpHU36KPVauHLXDxWjcW12CFpflGWUbHlIxenhoqx": {
        "exit_hist": {
@@ -137150,7 +137635,32 @@
        },
        "exits": 1
       },
-      "YT3-Dd-HXbHKir3dcFJDB9afdL_hoBvqarYCtEvbOab0c3bvTIwpZO_gNf-XwcieayaM3gulrIqScqfKKxAfA71qNdSTJcex9K0G": {
+      "YT3-7VsXDYv8uuoZICFeYJ8q21OqKFmcp-YGKz-Xl3Vq73KV41djfJJX0_Fp6aUA5YWPuZCXIJEgXoZ8W3vZsKGuF4XcopoURmo3": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-Fs9X-vlI8cw-HnWBBqJiM5isvXKz4LwLoPm4FG1kmpW7gxRBhldI1a3wVS7PHrMSfmTPKxa2JzQGGK1awjihAjSrq4JGLno": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-FwsO60EESxy1qlPfYawNnppkSQQ2zE2d4OMzvySe3YtYVYfEcYkPIujnBum1lX4GvFp5IModXTgPiyuB0MSvmTwTM-nE1kIy": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-IAcMeoNwEFpOThLxNgXVf0M6W8hXWRivOaZZpnPbrymRSFhbZdYZX2L-eGgoqIkv66ys7k56TXW88y00QTMVa_hG1uKYcSQ": {
+       "exit_hist": {
+        "0": 1,
+        "3": 1
+       },
+       "exits": 2
+      },
+      "YT3-OlhU8cKesbl1Uepzt_qZ-vLcF18huub-4KoHREQG4ij3lTt6Vl4VU4bv-bNhN5zEvYB6fbwa7VsQICvbeBPqIZWDZpj-avZY": {
        "exit_hist": {
         "0": 1
        },
@@ -137162,9 +137672,21 @@
        },
        "exits": 1
       },
+      "YT3-UJ0rOFeTJzByhqVEVKRhTkOpyRZccyO6NyPAS6IKt9_gzF3Irw3xJ8wptJdnVxUq-MDU782FRwJRbQfFp2tgsZKftvWfTg": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-ZVF_IqZMJMBom_SNMMHmrEiGjWGUwjP0Cmd6Axw1moI7sVBQdcnHX01RigaZsZIZ4_U9tPx8iKfrGUmnZXKDLydDHmKm6HfG": {
        "exit_hist": {
         "2": 1
+       },
+       "exits": 1
+      },
+      "YT3-j9wiveEVJdiliucWyfDaSBU-dtFTSDznJzOFNEazOYD_ctEk4tQ4J3aoyPYSkVAN02ekHkVRc9G5JKjoKoaGkvTQ8mGIolVp": {
+       "exit_hist": {
+        "9": 1
        },
        "exits": 1
       },
@@ -137179,70 +137701,109 @@
         "0": 1
        },
        "exits": 1
+      },
+      "YT3-pIQLVGlBWlaSWmkKZWlWDouahjKDopfz1eq935aMsp27xhNj2voTRY0jT6gvljDqk6BIGPSTJmteudtv3ZGYY2CTdLa3J815": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-wku4NSfcBjWeiwSm9UMfJSEojVNPOlZHqZPsCIPRx2F-lIfR5RO7FOoSWCuyZjj0nKUROUK0A8DtjIjsYtvHXMP8ev7yLR4u": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-x11vkoDUEeynZ69uqOtZ50mzvvJMd66p9E5DF3YcxDKvs1eWdF3-nQjIVeH-qeBbGIbJLtKqKduAsNrh3HHCBVJzztflihuB": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       }
      },
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 13,
+        "0": 43,
+        "4": 5,
+        "9": 5,
+        "1": 4,
         "2": 3,
-        "4": 2,
-        "1": 1,
-        "6": 1
+        "5": 3,
+        "3": 2,
+        "6": 2,
+        "7": 2
        },
-       "exits": 20
-      },
-      "Organic Search": {
-       "exit_hist": {
-        "0": 5
-       },
-       "exits": 5
-      },
-      "Cross-network": {
-       "exit_hist": {
-        "0": 3,
-        "7": 1,
-        "9": 1
-       },
-       "exits": 5
+       "exits": 69
       },
       "Organic Video": {
        "exit_hist": {
-        "0": 3
+        "0": 17,
+        "1": 1,
+        "3": 1,
+        "9": 1
        },
-       "exits": 3
+       "exits": 20
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 8,
+        "9": 2,
+        "7": 1
+       },
+       "exits": 11
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "0": 8,
+        "9": 4,
+        "6": 1,
+        "7": 1
+       },
+       "exits": 14
       },
       "Direct": {
        "exit_hist": {
+        "0": 3,
+        "4": 1,
+        "5": 1
+       },
+       "exits": 5
+      },
+      "Organic Shopping": {
+       "exit_hist": {
+        "9": 2,
         "0": 1
        },
-       "exits": 1
+       "exits": 3
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 2,
+        "2": 1
+       },
+       "exits": 3
       },
       "Paid Other": {
        "exit_hist": {
         "5": 1
        },
        "exits": 1
-      },
-      "Paid Social": {
-       "exit_hist": {
-        "0": 1
-       },
-       "exits": 1
       }
      },
      "entry": {
-      "sessions": 8,
-      "engaged": 6
+      "sessions": 44,
+      "engaged": 35
      },
      "channels": {
-      "Unassigned": 20,
-      "Cross-network": 5,
-      "Organic Search": 5,
-      "Organic Video": 3,
-      "Direct": 1,
-      "Paid Other": 1,
-      "Paid Social": 1
+      "Unassigned": 69,
+      "Organic Video": 20,
+      "Organic Search": 14,
+      "Cross-network": 11,
+      "Direct": 5,
+      "Organic Shopping": 3,
+      "Paid Social": 3,
+      "Paid Other": 1
      }
     },
     "42": {
@@ -137250,69 +137811,237 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 4,
-        "4": 4,
-        "5": 4,
-        "6": 4,
-        "7": 4,
-        "2": 3,
-        "3": 3,
-        "8": 3,
-        "9": 3,
-        "10": 3,
-        "11": 2,
-        "12": 2,
-        "13": 1,
-        "14": 1
+        "1": 23,
+        "2": 19,
+        "6": 19,
+        "7": 19,
+        "5": 18,
+        "4": 17,
+        "3": 16,
+        "8": 16,
+        "10": 16,
+        "9": 15,
+        "14": 14,
+        "11": 13,
+        "13": 12,
+        "12": 10
        },
        "exit_hist": {
-        "0": 10,
-        "10": 2,
-        "7": 1
+        "0": 47,
+        "14": 12,
+        "1": 3,
+        "7": 3,
+        "11": 3,
+        "6": 2,
+        "10": 2
        },
        "events": {
-        "pdp_section": 41,
-        "pdp_scroll": 14,
-        "pdp_exit": 13,
-        "pdp_cta_view": 9,
-        "pdp_cta_click": 2,
-        "pdp_review": 1
+        "pdp_section": 227,
+        "pdp_scroll": 91,
+        "pdp_exit": 72,
+        "pdp_cta_view": 48,
+        "pdp_cta_click": 17,
+        "pdp_review": 13
        },
-       "exit_events": 13,
-       "sum_seconds": 457,
+       "exit_events": 72,
+       "sum_seconds": 3874,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 11,
+       "sum_saw_cta": 53,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "옵션선택": 4,
-        "바로구매": 2
+        "옵션선택": 12,
+        "바로구매": 9,
+        "상단메뉴": 4,
+        "리뷰": 3
+       },
+       "zone_buys": {
+        "바로구매": 1,
+        "옵션선택": 1
+       },
+       "buyer_depth": {
+        "6": 1
        },
        "scroll_reach": {
-        "25": 4,
-        "50": 4,
-        "10": 3,
-        "75": 2,
-        "90": 1
+        "10": 20,
+        "25": 19,
+        "50": 17,
+        "75": 13,
+        "100": 11,
+        "90": 11
        }
+      },
+      "tablet": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 30,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      },
      "section_total": 14,
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 7,
+        "0": 24,
+        "14": 7,
+        "1": 3,
+        "7": 3,
         "10": 2,
-        "7": 1
+        "11": 2
        },
-       "exits": 10
+       "exits": 41
+      },
+      "01KHV4Y6FN15EVM3KT40J6N4EP": {
+       "exit_hist": {
+        "6": 2,
+        "14": 2,
+        "0": 1
+       },
+       "exits": 5
+      },
+      "YT3-8xgfy0ivGc-svMy_n6LhKjYGpAZkXBA--XGpnTZtwwEDWrk3GbvegXTomGnLmZt7EXT_8OUPdwVi3PsgG0U4FQsMHoM54aR5": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
       },
       "YT3-SI6_1mNwsc8eFQsKprWfySNjiaP_RGWUR741YdgQQ-oGQme14Flq3YTtoVup-4V8bj5Q9sRGHqyyj6XfJV0PyyU1nOjPcI3j": {
        "exit_hist": {
         "0": 2
        },
        "exits": 2
+      },
+      "YT3-hMyiW1ZD0-HiqvocqMGTQReb1OZfSIUwuZQAlJW5AwTpNG0f0B064YKwQ9mpa2FaCFSWB4_2vPM-jwQpFjR1PdcNRTgqadnw": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-zJRN0uNrMuuwUX-QIdR0tWp4qgSYsU_mo6vPhkM3EfFDnXKtq5j99L3-mKewRzn92LduU40vJjOfKdRixXWJqSD29YyB-DKo": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1,
+        "11": 1
+       },
+       "exits": 2
+      },
+      "YT3-05DdITCWcenJ4Gli-FHUZcgtKEVB1AxHpWzR9gcO5F5aAyBbdEQ9O4GzBwtsRKCOb6tFeP0m2xpX1P6xssH0lbfB2C4CcJny": {
+       "exit_hist": {
+        "14": 1
+       },
+       "exits": 1
+      },
+      "YT3-0ES-EItGqqlxpctGqUEvQQ9-B63Hg72iye7N7WLg8_Oa2cu9QMPz3KNFOiOoldq7XQEQQAMc8R4SZjLy6MI275L9BnwfL0tG": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-5AYZ6xLNyAmSVTgC8t4GqCuARHIlQl9aVsc-9q_k5tgRS5Ba6wg1-F_K7Mx-DI2m-Rj3lqSZW0bb3UPYIhgLREUFC9ttuw7Y": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-6NiVEJ0ziIMsb0Wofs38V5-0OOEMwrq5Fi2dIDv6I7_P91NyqT1b-5uYwCCkw2KoKOH_4qOuCNni75bamvCmmFxJ7_2MAmLC": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-BVIg0IkH8qFrjC73GIaiBv9jgU4nTe71wkJdWZSW1hjDFlZ4cmUP01Yt3G3-WfU1kqrrWRtvgHHaG8qXq8Usle8zEIeXur4h": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-QIOOfdM1BBz8FNK23uxAzBnjW7C2wAailxB6uAMjtM4GOCNModlaHxGrxJsI3_2jRmVK4eUDf4KEs1JgLEOglumQmwK38xg-": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-TPiDfc0Sf9HFdHiJFDmFHea0S55MJQ15Wor3RE_Db80BU4WHKjkFK9qYtfmctEQorbkK8YkAluuk7JhB-qEpNBzcuuc2a2Nk": {
+       "exit_hist": {
+        "14": 1
+       },
+       "exits": 1
+      },
+      "YT3-UlykrAJpFMCyz61rrSXDytEYsLxvD8jhm4oQE5CYB9V_E4pouCueOSIo-CU6H94LZMJ8hoQCn65DKzXrBPUy4K4YlDEoxxbn": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-UqdkW9FpssbZodJ6biEtx3FgjSxAOKQmOMLxUFBZ-GIRVRKKUDtbnd6fL7v9jiCBy7Rto17OkkaehpToMcn1LHt8UTMg9i1l": {
+       "exit_hist": {
+        "14": 1
+       },
+       "exits": 1
+      },
+      "YT3-V-1FUDM2wC-RyCr9sStRX-CadGGHzwvr2iOMeeuHzxAQac-QpkQueiq0cUk7RrX3ReeqGvgVwybgXJq42GXKgRuhQlSkn1ta": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-j1-bStc2Q-xvvK0WpOL27lBipekt4DwioU8qzEUgl8uO5i-0lCryxe-Sqw0jzy0A513QADfLxtgBGFoXyj4KY37B62HHtPZ2": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-jLZ6aY7DDL5FwVp57JBeHIvkyI02qbLIqFY7NzntUWNwVMqDMJVxjJ4V8svvWA1nnPo79p9b_gmfYjsL3bVEQRR7gtPRJuFD": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-jMnzTE-d9TZibLZFH9DNWAybyzy4G5gkKrbJ8W4R_vp1wz1VEy9QnpbsX4M6zlVDK93NrQOaLXSYAm352YfRriVopQCtEZFV": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-mbVbFf1beegY3xnEkNyy7dxQLdDRIHvE7grm-0gssV85vfwwceHzKIGB9K_puF1H7CK2jpzoS_95kUbaeKpBuKobxWrMem7c": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-oJJg0g38BWLe2J0QMuvWyBlcwvkN54baQWAQpdOf6u7UuSpG7kN9IDc2zZej5Mz83n3v_02M9GQ_7DZa2yix-UlCypaHr0z_": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-pCxPvW2AIh5Tx2nGt1LmQah8wdIpFblWub3RMVOqSDeTY8JqXr-umHWUR2qfAFurKlfRm0Z50sr3UCQvwjRFVDbosMUIPX7q": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-sZHQO_z1uihc0ipFds8y9vaL5lUr1-WcKQmxfQlBQhv1hVhF1O0iphPq7qdCZ8J9lEDQNKMoHNaQe9PHWSp-6Nj7F5rphMEk": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       },
       "YT3-yUjdEEeFCEKfZXysufpuWlnkRsZLN-ohnJ9dpJFYZrBBTE2zTGL4v-89GNFnfpJRGYCguPn-ZibWunw5LcastSrqHWbFza2B": {
        "exit_hist": {
@@ -137324,32 +138053,56 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 7,
-        "10": 2
+        "0": 28,
+        "14": 8,
+        "1": 2,
+        "6": 2,
+        "7": 2,
+        "10": 2,
+        "11": 1
        },
-       "exits": 9
-      },
-      "Organic Search": {
-       "exit_hist": {
-        "0": 3
-       },
-       "exits": 3
+       "exits": 45
       },
       "Cross-network": {
        "exit_hist": {
+        "0": 7,
+        "11": 2,
         "7": 1
        },
-       "exits": 1
+       "exits": 10
+      },
+      "Direct": {
+       "exit_hist": {
+        "0": 7,
+        "14": 3
+       },
+       "exits": 10
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "0": 5,
+        "1": 1
+       },
+       "exits": 6
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 2,
+        "14": 1
+       },
+       "exits": 3
       }
      },
      "entry": {
-      "sessions": 5,
-      "engaged": 3
+      "sessions": 32,
+      "engaged": 28
      },
      "channels": {
-      "Unassigned": 9,
-      "Organic Search": 3,
-      "Cross-network": 1
+      "Unassigned": 45,
+      "Cross-network": 10,
+      "Direct": 10,
+      "Organic Search": 6,
+      "Organic Video": 3
      }
     },
     "44": {
@@ -137357,42 +138110,48 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 4,
-        "4": 4,
-        "5": 4,
-        "3": 3,
-        "6": 3,
-        "2": 2
+        "1": 17,
+        "2": 10,
+        "4": 10,
+        "3": 9,
+        "5": 8,
+        "6": 6
        },
        "exit_hist": {
-        "0": 16,
-        "6": 3,
-        "1": 1
+        "0": 44,
+        "6": 6,
+        "1": 4,
+        "5": 2
        },
        "events": {
-        "pdp_scroll": 22,
-        "pdp_exit": 20,
-        "pdp_section": 20,
-        "pdp_cta_view": 7,
-        "pdp_review": 4
+        "pdp_scroll": 75,
+        "pdp_section": 60,
+        "pdp_exit": 56,
+        "pdp_cta_view": 22,
+        "pdp_review": 9,
+        "pdp_cta_click": 3
        },
-       "exit_events": 20,
-       "sum_seconds": 725,
+       "exit_events": 56,
+       "sum_seconds": 3742,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 6,
+       "sum_saw_cta": 16,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "리뷰": 1
+        "리뷰": 6,
+        "바로구매": 1,
+        "상단메뉴": 1,
+        "장바구니": 1,
+        "정기배송선택": 1
        },
        "scroll_reach": {
-        "10": 6,
-        "100": 4,
-        "75": 4,
-        "50": 3,
-        "90": 3,
-        "25": 2
+        "10": 19,
+        "25": 14,
+        "50": 14,
+        "75": 11,
+        "100": 9,
+        "90": 8
        }
       }
      },
@@ -137400,10 +138159,18 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 3,
+        "0": 12,
+        "5": 2,
+        "6": 2,
         "1": 1
        },
-       "exits": 4
+       "exits": 17
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
       },
       "YT3-j_ntSHkd_at9eEt3WcC6Z93Udz9C3qsG0O3RObWRlyaCPgXEmv-QxOEL6fjGpaMZ7RUyOAFd-BGEg3VgV5foZ5L9TwytnCDA": {
        "exit_hist": {
@@ -137424,7 +138191,31 @@
        },
        "exits": 3
       },
-      "ID 120252956260630414 (이름 미설정)": {
+      "YT3-dzgvlXObAMkKJFweAYYmQGnZad6PcVQLv7NPhmZSyaYsbTp4zXBoTwI2wHEwfCcqyHGmUe8v62x16LBv3FRQmJAdkD0Sqvw2": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-fCKM6ldUr1iJEW8_Ms5WGH9bmAbsbQQGUQ16cDL1eDN4g-7u3xa5WPIcDuSx9Yw9pVnXxOx0OJbP01e-6vwMo-nemdjFswQq": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "ID 120250970961990414 (이름 미설정)": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "ID 120252920889460414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "ID 120252920925390414 (이름 미설정)": {
        "exit_hist": {
         "0": 1
        },
@@ -137436,13 +138227,51 @@
        },
        "exits": 1
       },
-      "YT3-G0mhtwanacMa0acfFI8s8geF2fQJFLBYn8DKRao-a8Fwmymcg_cjz14SHQ3_xLVDSMwNuBDDqES4sD7IwyHeGpfeyHeHxfiX": {
+      "YT3-9-qvA47Ig5fkIzd-IGM5lE95gkz7rvoNxMGNcmNdIhQYlqKy0MHIXXQDtP5HBX14bQqgZSnTzfQf3cctxAuFuan9c72yzhMQ": {
+       "exit_hist": {
+        "6": 1
+       },
+       "exits": 1
+      },
+      "YT3-A8kYDsratB4q8hRizSSbh9Q7B_iEsTdadtZRAb4mQpjjpqhWLicwORjbT2goA5uFFRhRxNDZSPytMWQU8DG0k7IrI2CvNd7e": {
        "exit_hist": {
         "0": 1
        },
        "exits": 1
       },
+      "YT3-AFjrqIdoR3bJlSb5PJ_4xTEoIDiWszrPP5hHc7JPQhBr-k-52ZwJ7jsqG8V0xtfzQuKHwIt3fE79fwv3elot6fqFkH2K7FKH": {
+       "exit_hist": {
+        "0": 1,
+        "1": 1
+       },
+       "exits": 2
+      },
+      "YT3-Bz2Y1_KIix9uLtW4W08DpNfa0ko1z2cKvcg5nxDlh2iB2tsfqUjQBakQkhCj2IIPwT_muA-bymtYPEcyTU_yGJ0fLW_yeoOo": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-G0mhtwanacMa0acfFI8s8geF2fQJFLBYn8DKRao-a8Fwmymcg_cjz14SHQ3_xLVDSMwNuBDDqES4sD7IwyHeGpfeyHeHxfiX": {
+       "exit_hist": {
+        "0": 1,
+        "1": 1
+       },
+       "exits": 2
+      },
       "YT3-I_KBZRe1Ahj0oTeteBEttfehDmrvIwvxqmsc7UkPEjIK555hiVPwv67KkrM1IrFLQVAYJI9_M1JHi0amUvXRarYo1t2t8fcB": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-MiEtKGvxqVixORQPSSWeHczaFSwQEttDuEf-NUERSugYXQP2GQn66L8EpE3ZC6NQMlPW5PcAUPZSNHX46yv21DZKHjQwyoMK": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-NfZ1vvlpzn0cT7p8FSpNNogTlDFONRQbkBUBMATqOwcxYBiP3yroRbTnRCBBuow5Vh6dCqGSJlkib3ZaZxXfZhoF7dUodYa2": {
        "exit_hist": {
         "0": 1
        },
@@ -137454,7 +138283,31 @@
        },
        "exits": 1
       },
+      "YT3-aZstXx-3VuoHyxl6K6MlgrN7pOpX2OicOI6is_x9D3Himn9vDpBmflLgeWTV83YnTASq8bHxrQrWd2baCUZBem00vtHXHW0l": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-ceHi_Ei2CLRSY7Sy1bAdmbXpX5l9ykPDiN0hVC1Zxx18C330Rqd0dlp6blnM2npsSmurQNFi1butnpVlt40OCNSC7f7qmijD": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-iIwxbgtSUPYcyZJxcxyfmaHA3wGFSoEA0E8Zqy9_p6uS0YvdTcJrArSH33S2Z02S2zFqV8Cj4PX5pA-GHGpf9iVRCeJtUmCi": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-ldi5a4D_EwFpmoi-YKCzqAcxCNOAGkyC5OO0BfIMUl-jSyI1Gq3h6FFCdMFoABYFR_cPgZXy2apMrAJ3SbDUVpFC6zfG1Etq": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-nBSEIOSQILy8vJ3E-L_jE9aHyPProDbvCfkFX2Qv6mFQQLa1wdQKzh2aluyI2r-2Zi9DzK1SONoq3qyvs1SGtEBMgAaea15O": {
        "exit_hist": {
         "0": 1
        },
@@ -137465,197 +138318,68 @@
         "0": 1
        },
        "exits": 1
+      },
+      "YT3-twrtwZm9Q_RO6g4LR8A2XJ_10ej39lo6vQrpy2RWsUS95xix4ZNdDnHFLUFwoActV1JTz-YHvN5xgXy_-8d3X5yrEmeMfWuT": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-vbSpaOjKoTddqa0ZthLNxwNc9D46jTuYpfkfSiWwP74_c4FLH1k57gyywnJHSAzeNSw99aoS6_MO-oJ-qv4gRrCQBp-xZFmy": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       }
      },
      "by_channel": {
       "Unassigned": {
+       "exit_hist": {
+        "0": 21,
+        "6": 3,
+        "1": 2,
+        "5": 2
+       },
+       "exits": 28
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 10,
+        "6": 3,
+        "1": 1
+       },
+       "exits": 14
+      },
+      "Organic Video": {
        "exit_hist": {
         "0": 10,
         "1": 1
        },
        "exits": 11
       },
-      "Cross-network": {
+      "Organic Search": {
        "exit_hist": {
-        "0": 6,
-        "6": 3
-       },
-       "exits": 9
-      }
-     },
-     "entry": {
-      "sessions": 7,
-      "engaged": 4
-     },
-     "channels": {
-      "Unassigned": 11,
-      "Cross-network": 9
-     }
-    },
-    "47": {
-     "name": "기적의 항암 식단",
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "1": 3
-       },
-       "exit_hist": {
-        "1": 4
-       },
-       "events": {
-        "pdp_scroll": 15,
-        "pdp_exit": 4,
-        "pdp_cta_view": 3,
-        "pdp_section": 3,
-        "pdp_review": 2
-       },
-       "exit_events": 4,
-       "sum_seconds": 132,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "zone_clicks": {
-        "썸네일": 1
-       },
-       "scroll_reach": {
-        "10": 3,
-        "50": 3,
-        "75": 3,
-        "100": 2,
-        "25": 2,
-        "90": 2
-       }
-      }
-     },
-     "section_total": 1,
-     "by_source": {
-      "ID 120252956260630414 (이름 미설정)": {
-       "exit_hist": {
-        "1": 3
-       },
-       "exits": 3
-      },
-      "ID 120252920931200414 (이름 미설정)": {
-       "exit_hist": {
-        "1": 1
-       },
-       "exits": 1
-      }
-     },
-     "by_channel": {
-      "Unassigned": {
-       "exit_hist": {
-        "1": 2
+        "0": 2
        },
        "exits": 2
-      },
-      "Cross-network": {
-       "exit_hist": {
-        "1": 1
-       },
-       "exits": 1
       },
       "Paid Social": {
        "exit_hist": {
-        "1": 1
+        "0": 1
        },
        "exits": 1
       }
      },
      "entry": {
-      "sessions": 4,
-      "engaged": 3
+      "sessions": 36,
+      "engaged": 29
      },
      "channels": {
-      "Unassigned": 2,
-      "Cross-network": 1,
+      "Unassigned": 28,
+      "Cross-network": 14,
+      "Organic Video": 11,
+      "Organic Search": 2,
       "Paid Social": 1
-     }
-    },
-    "76": {
-     "name": "[자연하] 숨촉촉365 12g x 14포",
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "1": 3,
-        "2": 3,
-        "3": 3,
-        "5": 3,
-        "4": 2,
-        "8": 2,
-        "6": 1,
-        "7": 1,
-        "9": 1,
-        "10": 1,
-        "13": 1,
-        "14": 1,
-        "15": 1,
-        "16": 1,
-        "17": 1,
-        "18": 1,
-        "19": 1
-       },
-       "exit_hist": {
-        "19": 2,
-        "5": 1
-       },
-       "events": {
-        "pdp_section": 27,
-        "pdp_scroll": 10,
-        "pdp_cta_view": 3,
-        "pdp_exit": 3,
-        "pdp_review": 1
-       },
-       "exit_events": 3,
-       "sum_seconds": 165,
-       "sum_bounce_3s": 0,
-       "sum_saw_cta": 3,
-       "sum_saw_review": 0,
-       "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0,
-       "scroll_reach": {
-        "10": 3,
-        "25": 3,
-        "100": 1,
-        "50": 1,
-        "75": 1,
-        "90": 1
-       }
-      }
-     },
-     "section_total": 19,
-     "by_source": {
-      "_비광고": {
-       "exit_hist": {
-        "19": 2,
-        "5": 1
-       },
-       "exits": 3
-      }
-     },
-     "by_channel": {
-      "Unassigned": {
-       "exit_hist": {
-        "19": 2
-       },
-       "exits": 2
-      },
-      "Cross-network": {
-       "exit_hist": {
-        "5": 1
-       },
-       "exits": 1
-      }
-     },
-     "entry": {
-      "sessions": 1,
-      "engaged": 1
-     },
-     "channels": {
-      "Unassigned": 2,
-      "Cross-network": 1
      }
     },
     "31": {
@@ -137663,57 +138387,79 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "2": 2,
-        "3": 2,
-        "4": 2,
-        "1": 1,
-        "5": 1
+        "1": 15,
+        "2": 10,
+        "5": 10,
+        "4": 9,
+        "3": 8
        },
        "exit_hist": {
-        "0": 6,
-        "5": 1
+        "0": 20,
+        "5": 10,
+        "1": 3,
+        "4": 3,
+        "2": 1
        },
        "events": {
-        "pdp_scroll": 9,
-        "pdp_section": 8,
-        "pdp_exit": 7,
-        "pdp_cta_click": 4,
-        "pdp_cta_view": 2,
-        "pdp_review": 1
+        "pdp_scroll": 77,
+        "pdp_section": 52,
+        "pdp_exit": 37,
+        "pdp_cta_view": 21,
+        "pdp_review": 12,
+        "pdp_cta_click": 8
        },
-       "exit_events": 7,
-       "sum_seconds": 914,
+       "exit_events": 37,
+       "sum_seconds": 2147,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
+       "sum_saw_cta": 22,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "바로구매": 2
+        "바로구매": 6,
+        "상단메뉴": 4,
+        "정기배송선택": 2,
+        "썸네일": 1
        },
        "scroll_reach": {
-        "10": 2,
-        "50": 2,
-        "75": 2,
-        "100": 1,
-        "25": 1,
-        "90": 1
+        "10": 16,
+        "25": 16,
+        "50": 13,
+        "100": 11,
+        "90": 11,
+        "75": 10
        }
       }
      },
      "section_total": 5,
      "by_source": {
-      "YT3-FQ4i1LQGQ5Huk_7_p4h1XLegFfYJKizzFIL5bAh-E2XbQarMI_rARXIDOkbCS4WRV5bfT0E8WBEjAyy_SCLJhH55sDr3QXsW": {
-       "exit_hist": {
-        "0": 4
-       },
-       "exits": 4
-      },
       "_비광고": {
        "exit_hist": {
-        "0": 1
+        "0": 12,
+        "5": 9,
+        "4": 3,
+        "1": 2
        },
-       "exits": 1
+       "exits": 26
+      },
+      "YT3-FQ4i1LQGQ5Huk_7_p4h1XLegFfYJKizzFIL5bAh-E2XbQarMI_rARXIDOkbCS4WRV5bfT0E8WBEjAyy_SCLJhH55sDr3QXsW": {
+       "exit_hist": {
+        "0": 5
+       },
+       "exits": 5
+      },
+      "ID 120252920925390414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "1": 1,
+        "2": 1
+       },
+       "exits": 2
       },
       "YT3-IncLG3XJqOI73tl074GODcnS4qoZdFFDIaHSGUCzDJoBHX1EaLbMx1bhlENwFEW4HW8YomxiVB7ePvye00IKegWkPfit5gEL": {
        "exit_hist": {
@@ -137731,25 +138477,53 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 5
+        "0": 11,
+        "5": 4,
+        "4": 2,
+        "1": 1,
+        "2": 1
+       },
+       "exits": 19
+      },
+      "Direct": {
+       "exit_hist": {
+        "0": 4,
+        "1": 2,
+        "5": 1
+       },
+       "exits": 7
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "5": 4,
+        "4": 1
        },
        "exits": 5
       },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
       "Cross-network": {
        "exit_hist": {
-        "0": 1,
+        "0": 2,
         "5": 1
        },
-       "exits": 2
+       "exits": 3
       }
      },
      "entry": {
-      "sessions": 5,
-      "engaged": 5
+      "sessions": 13,
+      "engaged": 11
      },
      "channels": {
-      "Unassigned": 5,
-      "Cross-network": 2
+      "Unassigned": 19,
+      "Direct": 7,
+      "Organic Search": 5,
+      "Cross-network": 3,
+      "Organic Video": 3
      }
     },
     "40": {
@@ -137757,45 +138531,95 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 2,
-        "2": 2,
-        "3": 2,
-        "4": 1,
-        "5": 1
+        "1": 15,
+        "2": 15,
+        "3": 14,
+        "4": 13,
+        "5": 9
        },
        "exit_hist": {
-        "0": 7,
-        "2": 2
+        "0": 26,
+        "5": 9,
+        "4": 5,
+        "2": 3
        },
        "events": {
-        "pdp_exit": 9,
-        "pdp_section": 8,
-        "pdp_scroll": 4,
-        "pdp_cta_click": 2,
-        "pdp_cta_view": 2
+        "pdp_section": 66,
+        "pdp_scroll": 61,
+        "pdp_exit": 43,
+        "pdp_cta_view": 18,
+        "pdp_review": 4,
+        "pdp_cta_click": 3
        },
-       "exit_events": 9,
-       "sum_seconds": 3910,
+       "exit_events": 43,
+       "sum_seconds": 7273,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 2,
+       "sum_saw_cta": 20,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "바로구매": 1
+        "리뷰": 2,
+        "바로구매": 2,
+        "상단메뉴": 1,
+        "정기배송선택": 1
        },
        "scroll_reach": {
-        "10": 2,
-        "25": 2
+        "25": 17,
+        "10": 15,
+        "50": 10,
+        "75": 10,
+        "90": 5,
+        "100": 4
        }
+      },
+      "desktop": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 3,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      },
+      "tablet": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 28,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
       }
      },
      "section_total": 5,
      "by_source": {
       "_비광고": {
        "exit_hist": {
+        "4": 4,
+        "5": 4,
         "2": 2,
         "0": 1
+       },
+       "exits": 11
+      },
+      "YT3-xsQP-9dyAK8AVwul1E4NEPGTNctnCNLcT2CSXvgqu-xjEBjUEvaVXFWLr7pTRMm59MjGi3Cjg2yTRN1B9J1t-6XGVeiQrV5A": {
+       "exit_hist": {
+        "0": 3
        },
        "exits": 3
       },
@@ -137805,13 +138629,69 @@
        },
        "exits": 2
       },
-      "YT3-xsQP-9dyAK8AVwul1E4NEPGTNctnCNLcT2CSXvgqu-xjEBjUEvaVXFWLr7pTRMm59MjGi3Cjg2yTRN1B9J1t-6XGVeiQrV5A": {
+      "YT3-KNBxkueGbrY7T_m_73_P9tUQYMMOB5nqAx6GbbJPlAtpKpVUjbU1cEQC6KMUS0i2wqNuejazqAnu-OTkmqaburDwa76tyX-x": {
        "exit_hist": {
         "0": 2
        },
        "exits": 2
       },
+      "YT3-NMIWd0nFQrx1BBJUBMlN2TaMkifqdjEXMR-xeioN7FaMjxfLDMmN22Z9YqU5xJujjXEEuaABVWlBWJgzIRUTp2Sg754xAz9P": {
+       "exit_hist": {
+        "5": 2
+       },
+       "exits": 2
+      },
+      "YT3-_tGkP3P3U_lbZoYMGWonZKsnUPhitcAmxVDg-t6T5BmPYtTPJ3P1tKbmV49kg5PG2wLndylWF7ontBRSd_iG2nSOW8Fg0fka": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-m77cxPXLfzJopJkqj24tm_AwYHxSK_h__STYqhXnlQZJDvoV2YS1LwFsIG6a0L7wOuDIjAKtKWmKTpTqF49Lw0LnBMpj0t__": {
+       "exit_hist": {
+        "0": 2,
+        "2": 1
+       },
+       "exits": 3
+      },
+      "YT3-ogIexf95VgAz-3FevGKdeYTkFk_qWZZl2EUQCv5FsbZHrR9yspIVEYGTmZGh1C4THjdIXEudZaCsPF9RqMRNrd_OBeW_nwk8": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-phy-2UUUM6FMA60jrILn5p4JbsO4ggNM7vj_gZvVdb9H1IxAbsyWS_oy27U66XuF4Vc7L__1nEEluP962_RdKV8irEjrargZ": {
+       "exit_hist": {
+        "0": 2,
+        "5": 2
+       },
+       "exits": 4
+      },
+      "YT3-3J9U5Rv4JJhuzSdCViSJD-Gvh0TP0qEwu-_YH2GCLEmfXenqCQZBcDKkKkHeZstUnLf8tJ-_LXZ8RrBgmr3uEq4ND5f5GH-l": {
+       "exit_hist": {
+        "4": 1
+       },
+       "exits": 1
+      },
+      "YT3-A94FUo-B9QhSmwO_ovLeW2UU49bm_Jrb_NVv12zH_yBEAv8pJrdEHbSqWCi7aTm4BI4hqYk_NnDTz0vegUJvNb8NSym0Vs6J": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-IMuZBNfKaB2IOmsGE7Ns9WP__pXgbTzrL_e3Hdu-BBcxOPPmn4a3J7FLx-NZsxwlXom-cPyK1hkspICtqUpRLFrFzwGydhcg": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-K1EPXOPQcE7RDcXrLMVqdfbwz7cQWtjHzPkN05wgeUvV9YZHmy-lriRV3WmxRKJ648bD-2h8xQL0NHyIGejfutNE62c8HJJ2": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-MRXvUmOub8ofqxXomNavMTATFdTVcnzBOky06qog8NTGR04MY0ZV4cjsNyLQffdXSM0uY_47sBtmKib3FRUv6o7-BWwo5kLl": {
        "exit_hist": {
         "0": 1
        },
@@ -137822,21 +138702,86 @@
         "0": 1
        },
        "exits": 1
+      },
+      "YT3-P85QEYFN0Q_bUoczQrO7ZogodEbmO-jUj3pcgMul1sibtKKCf3JPXaILPJ9IPZmJl2879WHMhBjtGN1HqcwQQQv86sUlzw": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-eMbXSPHx79iwBkombTzbQfTX6JS0oJs-T7tb_JB6nsHpd6I5XNc67YFf70Q5u6SCgjDn2AM2rHU4gst-Z1_IylHJ58tyivaH": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-fexMQXPbl7oh1drW2ZSRM21Jbo93HSQQUOaQPrA8x0GYeg2J4KO0uoAjsCkYsG4qrkseM8LEwAm-PnNGDvJASk665w3XrnNF": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-iVs5hk5ghnAkFNrY7YM9xanuQEQ4dh62bUgZiexbDoB6zOx-Kpj9lBA7aPW09jGtkh36STSMG7PT4Y7aXz4Vu6Jw4aWtISzV": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      },
+      "YT3-nOtkYMf2RjkmJfwY9hx1bwmHwMHHX3OBZ9-6j7SGKhvg-APdvjEbkrdLLrvBYSYIsPj_Bs4n0DkCy8p88eBQVdbKAhjvh7Fx": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-oIcjEMoleLDU0wbZlColPq8szYt4A1Ot-Aw2v4MbMU08ZO51uX4hal9bK_RMCpxBMSFmQf7H71uWyE4uyQwMsI0cVWSsjHt_": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-vyE4WVbtgsxklcF2zrLWDDcbqZdr7oEImkJPjR4mbnN7bGhUHaKEU04dbju326uJjfemLvdsLUxm7Ml3YY0Vs4VGhHQ3TJNJ": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-wfPbCq1RvWlJaiWRwrFRfdR42Kwp499BTAxMhsaGZLtpo3z-SbAM-ZaGvkqe_wAw0u0rRACAUQkuyA9ncjSQXIZCPw6UUOSw": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       }
      },
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 5,
-        "2": 2
+        "0": 17,
+        "5": 6,
+        "2": 3,
+        "4": 1
        },
-       "exits": 7
+       "exits": 27
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 6,
+        "4": 2,
+        "5": 1
+       },
+       "exits": 9
       },
       "Cross-network": {
        "exit_hist": {
-        "0": 1
+        "0": 4
        },
-       "exits": 1
+       "exits": 4
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "4": 2,
+        "5": 2
+       },
+       "exits": 4
       },
       "Organic Shopping": {
        "exit_hist": {
@@ -137846,72 +138791,179 @@
       }
      },
      "entry": {
-      "sessions": 7,
-      "engaged": 4
+      "sessions": 30,
+      "engaged": 23
      },
      "channels": {
-      "Unassigned": 7,
-      "Cross-network": 1,
+      "Unassigned": 27,
+      "Organic Video": 9,
+      "Cross-network": 4,
+      "Organic Search": 4,
       "Organic Shopping": 1
      }
     },
-    "78": {
-     "name": "[자연하]선물세트 그린진 원스틱 1.5g x 30포 10박스 + 쇼핑백증정",
+    "76": {
+     "name": "[자연하] 숨촉촉365 12g x 14포",
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 2,
-        "2": 2,
-        "3": 2,
-        "4": 2,
-        "5": 2,
-        "8": 2,
-        "6": 1,
-        "7": 1,
-        "9": 1
+        "5": 11,
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "6": 10,
+        "7": 10,
+        "8": 10,
+        "12": 10,
+        "4": 9,
+        "11": 9,
+        "13": 9,
+        "9": 8,
+        "10": 8,
+        "14": 8,
+        "15": 8,
+        "17": 8,
+        "18": 8,
+        "16": 7,
+        "19": 7
        },
        "exit_hist": {
-        "0": 3,
-        "9": 3
+        "0": 18,
+        "19": 8,
+        "15": 2,
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "13": 1
        },
        "events": {
-        "pdp_section": 15,
-        "pdp_scroll": 10,
-        "pdp_exit": 6,
-        "pdp_cta_view": 2,
-        "pdp_cta_click": 1
+        "pdp_section": 170,
+        "pdp_scroll": 54,
+        "pdp_exit": 33,
+        "pdp_cta_view": 19,
+        "pdp_review": 7,
+        "pdp_cta_click": 5
        },
-       "exit_events": 6,
-       "sum_seconds": 161,
+       "exit_events": 33,
+       "sum_seconds": 2830,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 3,
+       "sum_saw_cta": 24,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
-        "장바구니": 2,
-        "바로구매": 1
+        "옵션선택": 5,
+        "바로구매": 3,
+        "리뷰": 1,
+        "상단메뉴": 1,
+        "썸네일": 1,
+        "장바구니": 1
+       },
+       "zone_buys": {
+        "상단메뉴": 1,
+        "옵션선택": 1
+       },
+       "buyer_depth": {
+        "0": 1
        },
        "scroll_reach": {
-        "10": 2,
-        "25": 2,
-        "50": 2,
-        "90": 2,
-        "100": 1,
-        "75": 1
+        "10": 12,
+        "25": 11,
+        "75": 9,
+        "90": 8,
+        "100": 7,
+        "50": 7
+       }
+      },
+      "tablet": {
+       "section_reach": {
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+       },
+       "exit_hist": {
+        "0": 1,
+        "6": 1
+       },
+       "events": {
+        "pdp_section": 4,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1,
+        "pdp_scroll": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 63,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "25": 1
        }
       }
      },
-     "section_total": 9,
+     "section_total": 19,
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "9": 3,
+        "0": 12,
+        "19": 6,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "13": 1
+       },
+       "exits": 23
+      },
+      "01KHV4Y6FN15EVM3KT40J6N4EP": {
+       "exit_hist": {
+        "15": 2,
+        "0": 1
+       },
+       "exits": 3
+      },
+      "ID 120252920889460414 (이름 미설정)": {
+       "exit_hist": {
         "0": 2
        },
-       "exits": 5
+       "exits": 2
       },
-      "ID 120252956260630414 (이름 미설정)": {
+      "YT3-3j-VLdx0_Cx0PmyAI5I1NfKB1DZYnuRvENDOpyihEn8TvqYmeooBkm0oRHUfTNoIGr66kooXpjuD4g8BobR5G1JdKk1sJbpb": {
+       "exit_hist": {
+        "0": 1,
+        "19": 1
+       },
+       "exits": 2
+      },
+      "YT3-9qOCZQSbt7SKkPuzeTyF1NoLMlVNuBS7HifGHjgu6LUyxlqhZFqKqvXnMme9i8rW4elsNtBNX70qBv5ksTqHaFKxcL-DKMWY": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-YJGdraAQxVgqvoCU3ra4pRtne2cGB2K39xIBpt_0VPOCaDfjYjLsHSJcRU3IAA8VFicjJx2t-KxqoMpdfF-VHQixLXi3ThsO": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-bC3B8eYHtYZCGmDWfuYqrIeZ54Y19TXnV_C_l9XGN8psjrAQc5YTgoEV_AhMrZ2_Cw_Hia80yBHhCpSjRWvb862uHhhjYFUq": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-j3gmVHBdqn-gd35mpRufY9yQRObXItQNx3BxJbnPurTbrcJp3XZtxwJvKje1CmaO8xyW8E_QA-CEMIkOeRY8pjjvVDFp2QM0": {
+       "exit_hist": {
+        "19": 1
+       },
+       "exits": 1
+      },
+      "YT3-uO1SCAC8MudVvs3hws0BNJO8_Zc6yjHc1S9r3xFOVFBsMPp_gHdD9WDOI6ZofPKa3TGv4PLpH79l6ERMDpLqtDvVfRn29A": {
        "exit_hist": {
         "0": 1
        },
@@ -137921,24 +138973,482 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 3,
-        "9": 2
+        "0": 9,
+        "19": 3,
+        "15": 2,
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "6": 1,
+        "13": 1
+       },
+       "exits": 19
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "19": 3,
+        "0": 2
        },
        "exits": 5
       },
+      "Direct": {
+       "exit_hist": {
+        "0": 2,
+        "19": 1
+       },
+       "exits": 3
+      },
+      "Organic Shopping": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
       "Cross-network": {
        "exit_hist": {
-        "9": 1
+        "5": 1
+       },
+       "exits": 1
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "0": 1,
+        "19": 1
+       },
+       "exits": 2
+      },
+      "Referral": {
+       "exit_hist": {
+        "0": 1
        },
        "exits": 1
       }
      },
      "entry": {
-      "sessions": 2,
-      "engaged": 2
+      "sessions": 13,
+      "engaged": 7
      },
      "channels": {
-      "Unassigned": 5,
+      "Unassigned": 19,
+      "Organic Video": 5,
+      "Direct": 3,
+      "Organic Search": 2,
+      "Organic Shopping": 2,
+      "Paid Social": 2,
+      "Cross-network": 1,
+      "Referral": 1
+     }
+    },
+    "78": {
+     "name": "[자연하]선물세트 그린진 원스틱 1.5g x 30포 10박스 + 쇼핑백증정",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "4": 11,
+        "5": 11,
+        "1": 10,
+        "3": 10,
+        "2": 9,
+        "6": 9,
+        "7": 8,
+        "8": 8,
+        "9": 7
+       },
+       "exit_hist": {
+        "0": 12,
+        "9": 9,
+        "5": 2,
+        "1": 1
+       },
+       "events": {
+        "pdp_section": 83,
+        "pdp_scroll": 54,
+        "pdp_exit": 24,
+        "pdp_cta_view": 12,
+        "pdp_review": 7,
+        "pdp_cta_click": 1
+       },
+       "exit_events": 24,
+       "sum_seconds": 844,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 14,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 2,
+        "장바구니": 2,
+        "가격영역": 1,
+        "바로구매": 1,
+        "상세이미지": 1,
+        "상품문의": 1
+       },
+       "buyer_depth": {
+        "0": 1
+       },
+       "scroll_reach": {
+        "10": 11,
+        "25": 11,
+        "50": 9,
+        "100": 8,
+        "75": 8,
+        "90": 7
+       }
+      }
+     },
+     "section_total": 9,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 9,
+        "9": 9,
+        "5": 2,
+        "1": 1
+       },
+       "exits": 21
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "ID 120250971077550414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 9,
+        "9": 5
+       },
+       "exits": 14
+      },
+      "Direct": {
+       "exit_hist": {
+        "5": 2,
+        "0": 1
+       },
+       "exits": 3
+      },
+      "Organic Shopping": {
+       "exit_hist": {
+        "9": 2
+       },
+       "exits": 2
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 1,
+        "9": 1
+       },
+       "exits": 2
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "1": 1,
+        "9": 1
+       },
+       "exits": 2
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 5,
+      "engaged": 5
+     },
+     "channels": {
+      "Unassigned": 14,
+      "Direct": 3,
+      "Cross-network": 2,
+      "Organic Search": 2,
+      "Organic Shopping": 2,
+      "Paid Social": 1
+     }
+    },
+    "47": {
+     "name": "기적의 항암 식단",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 9
+       },
+       "exit_hist": {
+        "1": 6,
+        "0": 5
+       },
+       "events": {
+        "pdp_scroll": 43,
+        "pdp_cta_view": 11,
+        "pdp_exit": 11,
+        "pdp_section": 9,
+        "pdp_review": 5
+       },
+       "exit_events": 11,
+       "sum_seconds": 369,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 8,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 2,
+        "상세이미지": 1,
+        "썸네일": 1
+       },
+       "scroll_reach": {
+        "10": 9,
+        "25": 8,
+        "50": 8,
+        "75": 7,
+        "90": 6,
+        "100": 5
+       }
+      },
+      "tablet": {
+       "section_reach": {
+        "1": 1
+       },
+       "exit_hist": {
+        "0": 2,
+        "1": 1
+       },
+       "events": {
+        "pdp_scroll": 6,
+        "pdp_exit": 3,
+        "pdp_cta_view": 1,
+        "pdp_review": 1,
+        "pdp_section": 1
+       },
+       "exit_events": 3,
+       "sum_seconds": 633,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "썸네일": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "100": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 1,
+     "by_source": {
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "1": 4,
+        "0": 3
+       },
+       "exits": 7
+      },
+      "YT3-DpoevIIrbkySIwyEL6i-_92HDmj3219qt-7QEnLXMi8-7oUQGyORuKNKepCyzH6NOUtyhQuKG4XDjhtuqn6we8Rjs995TjNI": {
+       "exit_hist": {
+        "0": 2,
+        "1": 1
+       },
+       "exits": 3
+      },
+      "_비광고": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "ID 120252920889460414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "ID 120252920931200414 (이름 미설정)": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-DEPq_Ngv23qUQrD-tQTL5ZQGXhqK-XKAUeo7la5AcSFz6htxvhLVKkovsKSp-qcQPcXRX1lQLUwnOuFyE1pK9zRbPolP4KYP": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 4,
+        "1": 4
+       },
+       "exits": 8
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 2,
+        "1": 1
+       },
+       "exits": 3
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 16,
+      "engaged": 12
+     },
+     "channels": {
+      "Unassigned": 8,
+      "Paid Social": 3,
+      "Cross-network": 1,
+      "Organic Search": 1,
+      "Organic Video": 1
+     }
+    },
+    "60": {
+     "name": "국산 유기농 서리태 검은콩 1kg",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 5,
+        "2": 4,
+        "3": 4,
+        "4": 3
+       },
+       "exit_hist": {
+        "0": 7,
+        "4": 3,
+        "3": 2,
+        "1": 1
+       },
+       "events": {
+        "pdp_scroll": 18,
+        "pdp_section": 16,
+        "pdp_exit": 13,
+        "pdp_cta_view": 7,
+        "pdp_cta_click": 2,
+        "pdp_review": 1
+       },
+       "exit_events": 13,
+       "sum_seconds": 511,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 8,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 1,
+        "바로구매": 1,
+        "상단메뉴": 1
+       },
+       "scroll_reach": {
+        "10": 4,
+        "25": 4,
+        "50": 4,
+        "75": 3,
+        "90": 2,
+        "100": 1
+       }
+      }
+     },
+     "section_total": 4,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 4,
+        "3": 2,
+        "4": 2,
+        "1": 1
+       },
+       "exits": 9
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "ID 120252920889460414 (이름 미설정)": {
+       "exit_hist": {
+        "4": 1
+       },
+       "exits": 1
+      },
+      "YT3-2B_rRyjmv82ODeYVlSKroxdtypbWvkndENJW_E8VmrLIE_5kaSedBsJgO6rRYxOoJ6LvL7GJz5kaTOEzCqk-wQtPWVTVXVxv": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 5,
+        "3": 2,
+        "4": 2,
+        "1": 1
+       },
+       "exits": 10
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 1,
+        "4": 1
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 5,
+      "engaged": 4
+     },
+     "channels": {
+      "Unassigned": 10,
+      "Paid Social": 2,
       "Cross-network": 1
      }
     },
@@ -137947,34 +139457,39 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 1,
-        "2": 1,
-        "3": 1,
-        "4": 1
+        "1": 3,
+        "2": 3,
+        "3": 2,
+        "4": 2
        },
        "exit_hist": {
-        "0": 6,
-        "4": 1
+        "0": 18,
+        "4": 5
        },
        "events": {
-        "pdp_exit": 7,
-        "pdp_scroll": 5,
-        "pdp_section": 4,
-        "pdp_cta_view": 1
+        "pdp_exit": 23,
+        "pdp_scroll": 18,
+        "pdp_section": 10,
+        "pdp_cta_view": 4,
+        "pdp_review": 2
        },
-       "exit_events": 7,
-       "sum_seconds": 159,
+       "exit_events": 23,
+       "sum_seconds": 522,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 1,
+       "sum_saw_cta": 7,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 2
+       },
        "scroll_reach": {
-        "10": 1,
-        "25": 1,
-        "50": 1,
-        "75": 1,
-        "90": 1
+        "10": 4,
+        "25": 3,
+        "50": 3,
+        "75": 3,
+        "90": 3,
+        "100": 2
        }
       }
      },
@@ -137982,28 +139497,179 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 6,
-        "4": 1
+        "0": 15,
+        "4": 5
        },
-       "exits": 7
+       "exits": 20
+      },
+      "YT3-JIXWuNKIxAiF90U71bF18ZEC1cUWNwQSuSpxclNQKxITYpl-EcDygNR0w75x8OKEyVA8vHuivmIpxXj_FuiRVcUqFOgQknbD": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-Xrz4ZmkBh_T4wOFjSUT0IrEDMPp02tdCuM1_wFhlcfOSS4117VFQteFjb_h3T4Y8iKmGYw7pbW-eHON9ZpbiP2cJOI2wMXft": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-auiGG4Ls3UQyNbQuTdyTLt8_jhe8SyWcFrzD9VCeh-he2UEkm3EJWAy8rYBLWaKWUFDs8XNg2tW197sk9T5CmmHA8gW4QS6h": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       }
      },
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "0": 6,
-        "4": 1
+        "0": 10,
+        "4": 3
        },
-       "exits": 7
+       "exits": 13
+      },
+      "Direct": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "4": 2
+       },
+       "exits": 2
       }
      },
+     "entry": {
+      "sessions": 3,
+      "engaged": 3
+     },
      "channels": {
-      "Unassigned": 7
+      "Unassigned": 13,
+      "Direct": 3,
+      "Organic Video": 3,
+      "Cross-network": 2,
+      "Organic Search": 2
+     }
+    },
+    "48": {
+     "name": "열방약국 유방암 상담소",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 3
+       },
+       "exit_hist": {
+        "1": 2
+       },
+       "events": {
+        "pdp_scroll": 10,
+        "pdp_cta_click": 3,
+        "pdp_review": 3,
+        "pdp_section": 3,
+        "pdp_cta_view": 2,
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 171,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "바로구매": 1,
+        "장바구니": 1
+       },
+       "scroll_reach": {
+        "10": 3,
+        "25": 2,
+        "50": 2,
+        "100": 1,
+        "75": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 1,
+     "by_source": {
+      "ID 120250970961990414 (이름 미설정)": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "1": 2
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 0
+     },
+     "channels": {
+      "Unassigned": 2
      }
     },
     "49": {
      "name": "열방약국 말기암 통합요법 상담소",
      "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 3
+       },
+       "exit_hist": {
+        "0": 6,
+        "1": 2
+       },
+       "events": {
+        "pdp_scroll": 12,
+        "pdp_exit": 8,
+        "pdp_cta_view": 5,
+        "pdp_section": 3,
+        "pdp_review": 2
+       },
+       "exit_events": 8,
+       "sum_seconds": 2354,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "10": 3,
+        "25": 3,
+        "100": 2,
+        "50": 2,
+        "75": 1,
+        "90": 1
+       }
+      },
       "desktop": {
        "section_reach": {
         "1": 1
@@ -138036,6 +139702,43 @@
      },
      "section_total": 1,
      "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 2,
+        "1": 1
+       },
+       "exits": 3
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "YT3-MohwLFAIt-HdMr9xHFY-9-MAnQi1tXUZqoZnI8t9bHkzcVRQmfRh9Bw0LXbWHSQw-IwCI7wguWjVrFQNtBaMhYL438Louf8X": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-bXfOlQQRArZNbAe4B5r6blz8M91oUzJjOf-YXZmot7CmP36q4N-dhAxPeqlI-zIsyGxar957TDcZ7ETi8GHjywXPmr8-bxci": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-f4USTrXy-Ri8ks9Qk4ewT5eeg-2J3raIDnPGufFcYNkZQZhI8E8Yj7d6shFKicob9HbGEgacalzduaxPLgvfJetZnaZFTO-D": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-jVQ-sjdxFxCuuYxFu6p3C_JkHt27KMh0truLPwzkTZWaEVY3AyJmqbZ8qdwq4DRtMCM-yenOzcC0b6RroSoTHq5oOZO3tA": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
       "YT3-sxYrMG6mDPHjgtKbH8q1iivVc4X42ewXDfXDkGcJKiXdjwnFes2neTSyWOIkelL5BUmjP7LBzxfJkrQDUroCRE9VVzldchKP": {
        "exit_hist": {
         "1": 1
@@ -138044,15 +139747,116 @@
       }
      },
      "by_channel": {
+      "Organic Video": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
       "Unassigned": {
+       "exit_hist": {
+        "0": 3,
+        "1": 2
+       },
+       "exits": 5
+      },
+      "Organic Search": {
        "exit_hist": {
         "1": 1
        },
        "exits": 1
       }
      },
+     "entry": {
+      "sessions": 6,
+      "engaged": 6
+     },
      "channels": {
-      "Unassigned": 1
+      "Unassigned": 5,
+      "Organic Video": 3,
+      "Organic Search": 1
+     }
+    },
+    "79": {
+     "name": "[자연하]선물세트 커큐진 2g x 30포 5박스 + 쇼핑백증정",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 3,
+        "2": 3,
+        "4": 3,
+        "5": 3,
+        "3": 2
+       },
+       "exit_hist": {
+        "0": 4,
+        "5": 3
+       },
+       "events": {
+        "pdp_scroll": 17,
+        "pdp_section": 14,
+        "pdp_exit": 7,
+        "pdp_cta_view": 4,
+        "pdp_review": 2
+       },
+       "exit_events": 7,
+       "sum_seconds": 238,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 3,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "상단메뉴": 2,
+        "상세이미지": 2,
+        "리뷰": 1
+       },
+       "scroll_reach": {
+        "10": 3,
+        "25": 3,
+        "50": 3,
+        "75": 3,
+        "90": 3,
+        "100": 2
+       }
+      }
+     },
+     "section_total": 5,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 4,
+        "5": 3
+       },
+       "exits": 7
+      }
+     },
+     "by_channel": {
+      "Direct": {
+       "exit_hist": {
+        "0": 2,
+        "5": 1
+       },
+       "exits": 3
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "0": 2,
+        "5": 1
+       },
+       "exits": 3
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      }
+     },
+     "channels": {
+      "Direct": 3,
+      "Unassigned": 3,
+      "Organic Video": 1
      }
     },
     "55": {
@@ -138060,33 +139864,59 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "3": 1,
-        "4": 1
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1
        },
        "exit_hist": {
-        "0": 3,
-        "4": 1
+        "0": 11,
+        "4": 1,
+        "24": 1
        },
        "events": {
-        "pdp_exit": 4,
-        "pdp_cta_view": 3,
-        "pdp_section": 2,
-        "pdp_cta_click": 1,
-        "pdp_scroll": 1
+        "pdp_section": 28,
+        "pdp_exit": 13,
+        "pdp_cta_view": 8,
+        "pdp_scroll": 4,
+        "pdp_cta_click": 1
        },
-       "exit_events": 4,
-       "sum_seconds": 162,
+       "exit_events": 13,
+       "sum_seconds": 548,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
+       "sum_saw_cta": 8,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
        "zone_clicks": {
+        "상단메뉴": 3,
         "옵션선택": 3,
         "바로구매": 1
        },
        "scroll_reach": {
-        "10": 1
+        "10": 2,
+        "25": 1,
+        "50": 1
        }
       }
      },
@@ -138094,10 +139924,29 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
-        "0": 2,
-        "4": 1
+        "0": 7,
+        "4": 1,
+        "24": 1
        },
-       "exits": 3
+       "exits": 9
+      },
+      "ID 120250970961990414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "ID 120252920931200414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-6Jdz1abz223tPESUFoc0rPxOErAEpORmeKazmkZ1TrTEBLqQ-0xW79zays-hKbSmgh4hmC0NbpyR-K7DTFJyg_oytgOD2Q-z": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
       },
       "YT3-SapKWVc4ldFLjnxzr0vc6QO64bRdt0lKlsyT_pa7S5ugTJ0NnqVRhmcuOe5D_pYFR79AKymeEJj0ugAMz5ixoLTCxCKk8rM": {
        "exit_hist": {
@@ -138107,6 +139956,13 @@
       }
      },
      "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 8,
+        "4": 1
+       },
+       "exits": 9
+      },
       "Organic Search": {
        "exit_hist": {
         "0": 2
@@ -138115,24 +139971,232 @@
       },
       "Direct": {
        "exit_hist": {
+        "0": 1,
+        "24": 1
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 4,
+      "engaged": 2
+     },
+     "channels": {
+      "Unassigned": 9,
+      "Direct": 2,
+      "Organic Search": 2
+     }
+    },
+    "61": {
+     "name": "국산 유기농 오트밀 압착 귀리 350g",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "8": 2,
+        "9": 2,
+        "10": 2,
+        "11": 2,
+        "12": 2,
+        "2": 1,
+        "6": 1,
+        "7": 1
+       },
+       "exit_hist": {
+        "0": 4,
+        "12": 1
+       },
+       "events": {
+        "pdp_section": 21,
+        "pdp_scroll": 11,
+        "pdp_exit": 5,
+        "pdp_cta_view": 2,
+        "pdp_review": 1
+       },
+       "exit_events": 5,
+       "sum_seconds": 152,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "상단메뉴": 1
+       },
+       "scroll_reach": {
+        "100": 2,
+        "25": 2,
+        "50": 2,
+        "75": 2,
+        "90": 2,
+        "10": 1
+       }
+      }
+     },
+     "section_total": 12,
+     "by_source": {
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "_비광고": {
+       "exit_hist": {
+        "12": 1
+       },
+       "exits": 1
+      },
+      "ID 120252920931200414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Cross-network": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Direct": {
+       "exit_hist": {
+        "12": 1
+       },
+       "exits": 1
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 3,
+      "engaged": 3
+     },
+     "channels": {
+      "Cross-network": 3,
+      "Direct": 1,
+      "Paid Social": 1
+     }
+    },
+    "63": {
+     "name": "국산 유기농 현미 귀리 잡곡 즉석밥 180g",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "5": 2,
+        "6": 2,
+        "4": 1,
+        "7": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1
+       },
+       "exit_hist": {},
+       "events": {
+        "pdp_section": 17,
+        "pdp_scroll": 9,
+        "pdp_cta_view": 2
+       },
+       "exit_events": 0,
+       "zone_clicks": {
+        "옵션선택": 1
+       },
+       "scroll_reach": {
+        "10": 2,
+        "25": 2,
+        "75": 2,
+        "90": 2,
+        "50": 1
+       }
+      }
+     },
+     "section_total": 13
+    },
+    "59": {
+     "name": "국산 유기농 귀리쌀 1kg",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+       },
+       "exit_hist": {
+        "0": 1,
+        "3": 1
+       },
+       "events": {
+        "pdp_scroll": 3,
+        "pdp_section": 3,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 49,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "썸네일": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "25": 1,
+        "50": 1
+       }
+      }
+     },
+     "section_total": 5,
+     "by_source": {
+      "ID 120252920931200414 (이름 미설정)": {
+       "exit_hist": {
+        "3": 1
+       },
+       "exits": 1
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Paid Social": {
+       "exit_hist": {
         "0": 1
        },
        "exits": 1
       },
       "Unassigned": {
        "exit_hist": {
-        "4": 1
+        "3": 1
        },
        "exits": 1
       }
      },
      "entry": {
-      "sessions": 1,
-      "engaged": 1
+      "sessions": 2,
+      "engaged": 2
      },
      "channels": {
-      "Organic Search": 2,
-      "Direct": 1,
+      "Paid Social": 1,
       "Unassigned": 1
      }
     },
@@ -138142,14 +140206,15 @@
       "desktop": {
        "section_reach": {
         "1": 1,
+        "2": 1,
         "3": 1
        },
        "exit_hist": {
         "3": 1
        },
        "events": {
-        "pdp_scroll": 5,
-        "pdp_section": 2,
+        "pdp_scroll": 6,
+        "pdp_section": 3,
         "pdp_cta_view": 1,
         "pdp_exit": 1,
         "pdp_review": 1
@@ -138167,9 +140232,30 @@
        "scroll_reach": {
         "10": 1,
         "100": 1,
+        "25": 1,
         "50": 1,
         "75": 1,
         "90": 1
+       }
+      },
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 5
+       },
+       "events": {
+        "pdp_exit": 5,
+        "pdp_cta_click": 2
+       },
+       "exit_events": 5,
+       "sum_seconds": 19,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "바로구매": 1
        }
       }
      },
@@ -138177,7 +140263,20 @@
      "by_source": {
       "_비광고": {
        "exit_hist": {
+        "0": 2,
         "3": 1
+       },
+       "exits": 3
+      },
+      "ID 120250970961990414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
        },
        "exits": 1
       }
@@ -138185,44 +140284,19 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
+        "0": 5,
         "3": 1
        },
-       "exits": 1
+       "exits": 6
       }
      },
      "entry": {
-      "sessions": 1,
-      "engaged": 1
+      "sessions": 2,
+      "engaged": 2
      },
      "channels": {
-      "Unassigned": 1
+      "Unassigned": 6
      }
-    },
-    "63": {
-     "name": "국산 유기농 현미 귀리 잡곡 즉석밥 180g",
-     "devices": {
-      "mobile": {
-       "section_reach": {
-        "1": 1,
-        "5": 1,
-        "6": 1,
-        "7": 1
-       },
-       "exit_hist": {},
-       "events": {
-        "pdp_section": 4,
-        "pdp_scroll": 3,
-        "pdp_cta_view": 1
-       },
-       "exit_events": 0,
-       "scroll_reach": {
-        "10": 1,
-        "75": 1,
-        "90": 1
-       }
-      }
-     },
-     "section_total": 13
     },
     "73": {
      "name": "김훈하 약사의 하루 한 장 항암 다이어리",
@@ -138294,8 +140368,239 @@
       "Unassigned": 5
      }
     },
-    "60": {
-     "name": "국산 유기농 서리태 검은콩 1kg",
+    "80": {
+     "name": "[자연하]선물세트 스텔라진 3g x 30포 5박스 + 쇼핑백증정",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+       },
+       "exit_hist": {
+        "0": 4,
+        "5": 1
+       },
+       "events": {
+        "pdp_exit": 5,
+        "pdp_section": 5,
+        "pdp_scroll": 4,
+        "pdp_cta_view": 2
+       },
+       "exit_events": 5,
+       "sum_seconds": 120,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1
+       }
+      }
+     },
+     "section_total": 5,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 4,
+        "5": 1
+       },
+       "exits": 5
+      }
+     },
+     "by_channel": {
+      "Organic Shopping": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "0": 1,
+        "5": 1
+       },
+       "exits": 2
+      }
+     },
+     "channels": {
+      "Organic Shopping": 3,
+      "Unassigned": 2
+     }
+    },
+    "82": {
+     "name": "[자연하] 베리베라진 20ml x 30포 5박스 + 쇼핑백증정",
+     "devices": {
+      "desktop": {
+       "section_reach": {
+        "1": 1,
+        "2": 1
+       },
+       "exit_hist": {
+        "2": 1
+       },
+       "events": {
+        "pdp_scroll": 5,
+        "pdp_section": 2,
+        "pdp_cta_view": 1,
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 15,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       }
+      },
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "4": 1
+       },
+       "exit_hist": {
+        "0": 5,
+        "4": 2,
+        "1": 1
+       },
+       "events": {
+        "pdp_exit": 8,
+        "pdp_cta_click": 6,
+        "pdp_scroll": 3,
+        "pdp_section": 3,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
+       },
+       "exit_events": 8,
+       "sum_seconds": 105,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 3,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "바로구매": 3
+       },
+       "zone_buys": {
+        "바로구매": 1
+       },
+       "buyer_depth": {
+        "0": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "100": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 4,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 5,
+        "4": 2,
+        "1": 1,
+        "2": 1
+       },
+       "exits": 9
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 5,
+        "4": 2,
+        "1": 1,
+        "2": 1
+       },
+       "exits": 9
+      }
+     },
+     "channels": {
+      "Unassigned": 9
+     }
+    },
+    "81": {
+     "name": "[자연하]선물세트 크리노진 2.5g x 30포 5박스 + 쇼핑백증정",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 6
+       },
+       "events": {
+        "pdp_exit": 6
+       },
+       "exit_events": 6,
+       "sum_seconds": 24,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 4
+       },
+       "exits": 4
+      },
+      "ID 120252920931200414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Organic Video": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "channels": {
+      "Organic Video": 2,
+      "Paid Social": 2,
+      "Unassigned": 2
+     }
+    },
+    "46": {
+     "name": "캔서 위너",
      "devices": {
       "mobile": {
        "section_reach": {},
@@ -138306,7 +140611,651 @@
         "pdp_exit": 2
        },
        "exit_events": 2,
-       "sum_seconds": 21,
+       "sum_seconds": 98,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "by_source": {
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-jXocS-PvVZfaR4XcIQ28hQX0rjs_A1ANQDKYIJaCUNZLFDJ0CM7G2sHXQL5n5XDlUXLDnsXKVE73_ZXcQ5pRqfFxYgrSZzGw": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 2,
+      "engaged": 2
+     },
+     "channels": {
+      "Unassigned": 2
+     }
+    }
+   },
+   "unknown": {},
+   "missing_metrics": []
+  },
+  "2026-09-21": {
+   "date": "2026-09-21",
+   "products": {
+    "26": {
+     "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 11,
+        "3": 9,
+        "2": 8,
+        "5": 8,
+        "6": 8,
+        "4": 7,
+        "7": 6,
+        "14": 6,
+        "11": 5,
+        "12": 5,
+        "13": 5,
+        "15": 5,
+        "17": 5,
+        "18": 5,
+        "20": 5,
+        "21": 5,
+        "8": 4,
+        "9": 4,
+        "10": 4,
+        "16": 4,
+        "19": 4
+       },
+       "exit_hist": {
+        "0": 19,
+        "1": 2,
+        "7": 2,
+        "21": 2,
+        "3": 1,
+        "6": 1,
+        "14": 1
+       },
+       "events": {
+        "pdp_section": 123,
+        "pdp_scroll": 32,
+        "pdp_exit": 28,
+        "pdp_cta_view": 13,
+        "pdp_cta_click": 6,
+        "pdp_review": 1
+       },
+       "exit_events": 28,
+       "sum_seconds": 20864,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 12,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "옵션선택": 9,
+        "정기배송선택": 7,
+        "장바구니": 4,
+        "리뷰": 3,
+        "바로구매": 3,
+        "상단메뉴": 3,
+        "썸네일": 1
+       },
+       "zone_buys": {
+        "옵션선택": 2,
+        "장바구니": 2,
+        "정기배송선택": 2,
+        "바로구매": 1,
+        "상단메뉴": 1
+       },
+       "buyer_depth": {
+        "1": 1,
+        "3": 1
+       },
+       "scroll_reach": {
+        "10": 10,
+        "25": 8,
+        "75": 5,
+        "50": 4,
+        "90": 4,
+        "100": 1
+       }
+      }
+     },
+     "section_total": 21,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 5,
+        "1": 2,
+        "3": 1,
+        "6": 1,
+        "7": 1,
+        "14": 1
+       },
+       "exits": 11
+      },
+      "YT3-71Fx8R5apw6o9I_epG2DWeBUM1B6d1Vf5OogIbu3e_F5HbCiogUp2DsuHEXSQdimhxJeJToB7dLJ4p_WfNBLWZ5pKYdPIlHT": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "베지셀_수동형_일5만원_이미지7건_0811": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "보호자 번아웃 가격 소구": {
+       "exit_hist": {
+        "0": 2,
+        "7": 1,
+        "21": 1
+       },
+       "exits": 4
+      },
+      "베지셀_수동형_일5만원_이…": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "보호자 번아웃 + 가격 소구": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "ID 120251481934440414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1,
+        "21": 1
+       },
+       "exits": 2
+      },
+      "YT3--P7pYeU0lei9haRothqaBTrsq4iqzrPQOKSp1Vp6PBj6RAbcGwuHD5hnitKwmfrfEvtUUElMUS_Hb6K8k8OTS5xGPUAc7BdP": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-XGnQUy0N3Nwa22Kc2pBmObQthRgTHkj3SF-e0wwFWgfeYG92RTBaHrD9KlhdJehXSBijbu0OkLO2t3zzOKB7FaE3eZjaAMTX": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-YBJWyOylbXD3ER48qEzNiwsKt-H22PuMRAQc8GupVieMNiVljabSOyrWb26ngb-j4AGs8tMAkXf_Gks9iLg5QA4hmSBJQy8c": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "베지셀 7건": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 10,
+        "1": 2,
+        "21": 2,
+        "3": 1,
+        "6": 1,
+        "7": 1
+       },
+       "exits": 17
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 3,
+        "7": 1
+       },
+       "exits": 4
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "Organic Shopping": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Organic Social": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "14": 1
+       },
+       "exits": 1
+      },
+      "Paid Other": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 20,
+      "engaged": 16
+     },
+     "channels": {
+      "Unassigned": 17,
+      "Cross-network": 4,
+      "Organic Search": 2,
+      "Organic Shopping": 1,
+      "Organic Social": 1,
+      "Organic Video": 1,
+      "Paid Other": 1,
+      "Paid Social": 1
+     }
+    },
+    "44": {
+     "name": "[자연하] 크리노진 2.5g x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 8,
+        "2": 6,
+        "4": 6,
+        "5": 6,
+        "3": 5,
+        "6": 3
+       },
+       "exit_hist": {
+        "0": 10,
+        "5": 3,
+        "1": 2,
+        "6": 2,
+        "2": 1
+       },
+       "events": {
+        "pdp_section": 34,
+        "pdp_scroll": 33,
+        "pdp_exit": 18,
+        "pdp_cta_view": 12,
+        "pdp_review": 2
+       },
+       "exit_events": 18,
+       "sum_seconds": 453,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 11,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 1,
+        "상단메뉴": 1
+       },
+       "scroll_reach": {
+        "10": 8,
+        "25": 6,
+        "50": 6,
+        "75": 6,
+        "100": 4,
+        "90": 3
+       }
+      }
+     },
+     "section_total": 6,
+     "by_source": {
+      "YT3-SYcMfpJ5WwIoVwItOCYi8kg8OUhr_Hf-9LYI0wcUUNaHMIYGHiY0__3OwlBSas_9talDkA_1AXd3s_BbbXijuaO8cIoecKfo": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "5": 2
+       },
+       "exits": 2
+      },
+      "YT3-0d32XZPZJGgs6OHAll-YUCJgcH-PAb_jjEhvixieRPoH6deRSrQvmC7S2nen-Pb0HQ8JRh7qBipglaVSoMAlAB25PCqRNFJu": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-Vb_eeB70OYlCuIHhl2ddx8e1HCmMirJg-rAFWHtwns2YsFPV8pnpN2Jn47okn1hBK9dawwunDH3vsyC9MkJ5BdxNXxExNvJr": {
+       "exit_hist": {
+        "0": 2,
+        "1": 1
+       },
+       "exits": 3
+      },
+      "_비광고": {
+       "exit_hist": {
+        "1": 1,
+        "6": 1
+       },
+       "exits": 2
+      },
+      "ID 120252920925390414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-4wronLML1epqA8J8lKLYLgz-hWGKBaG-qAE5FEDskhcMdj-bdeBSEGi7gV9JiMq2ouszYLR0a8kt6MATGCKNU4U-xsQadeEv": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-AdLt_pT7HmXTlAO1QBaeOXwXE-lDmBTNeN2TYWilMDrjV8bQ3UWx4wWrL2sgpeqwMg-zudHxLiL7ufab0GdAmhrZyBQbSqzq": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-DnI5Hj7o1rBAZhzB6Hc5r-ADQtuJbOe9XtUUTEsQsXNc95FW34QaFYlzdbN_7sA-76DjrB1tnwFC44Hb14iUBwRRnFpgH9jY": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      },
+      "YT3-NJG_sy7SOadt9JpaImk9hDiU86m_qMDzGEy73RKzmLxV5XYNH2J9MWliV4c6ImWqhs3R-qJmKttnrL6-IP8gQ7UbO0y0d9mq": {
+       "exit_hist": {
+        "2": 1
+       },
+       "exits": 1
+      },
+      "YT3-QwWchYte7UOx76cinnEGJbI6L-LBSmW9XUuzJ5ldkOV6Br0raEZaoNYRHzCrkh9HolTJsYbXITQxNf9zy-QzXt2nEIUgRksb": {
+       "exit_hist": {
+        "6": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 6,
+        "5": 2,
+        "6": 2,
+        "2": 1
+       },
+       "exits": 11
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 3,
+        "1": 1
+       },
+       "exits": 4
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 1,
+        "1": 1
+       },
+       "exits": 2
+      },
+      "Paid Other": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 13,
+      "engaged": 9
+     },
+     "channels": {
+      "Unassigned": 11,
+      "Organic Video": 4,
+      "Cross-network": 2,
+      "Paid Other": 1
+     }
+    },
+    "28": {
+     "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 6,
+        "2": 4,
+        "3": 4,
+        "5": 4,
+        "6": 4,
+        "8": 4,
+        "4": 3,
+        "7": 3,
+        "9": 2
+       },
+       "exit_hist": {
+        "0": 14,
+        "9": 3,
+        "8": 1
+       },
+       "events": {
+        "pdp_section": 34,
+        "pdp_scroll": 24,
+        "pdp_exit": 18,
+        "pdp_cta_click": 9,
+        "pdp_cta_view": 9,
+        "pdp_review": 3
+       },
+       "exit_events": 18,
+       "sum_seconds": 2808,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 9,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "정기배송선택": 5,
+        "옵션선택": 4,
+        "바로구매": 3,
+        "리뷰": 2,
+        "상단메뉴": 2,
+        "썸네일": 2,
+        "장바구니": 2
+       },
+       "zone_buys": {
+        "옵션선택": 1,
+        "장바구니": 1,
+        "정기배송선택": 1
+       },
+       "buyer_depth": {
+        "0": 1
+       },
+       "scroll_reach": {
+        "10": 5,
+        "25": 4,
+        "50": 4,
+        "75": 4,
+        "90": 4,
+        "100": 3
+       }
+      },
+      "tablet": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 8,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "section_total": 9,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 7,
+        "9": 3,
+        "8": 1
+       },
+       "exits": 11
+      },
+      "YT3-uLrhF0NuYnE1wLfwPF7huiLDhYRxni_gRCs9qROjzky7SHmzPp9DIDCQO94CrXvn2OrE8YmcF6EJSofX3K7PSTD6ZChT48DM": {
+       "exit_hist": {
+        "0": 4
+       },
+       "exits": 4
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-V0Rk9NQfDs33tv0fmgygfV08YJ3dlQ_jnOMluPYJiSInJY9J1ll1iMiNrcOFu8NApUc1OMOtsU1eTyrYUYBluHKOTxFyrGQ": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-YYkJCrcdSiAby9S_rXB7w5AzP0zXW58seMYbwHol4Dh70Uh9BQfeyXN8EJyGirmlWfFl2eNocVv1iyhMZS3Vq6Nk7d9zrxTp": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-iFL0AbAbpljtaudPdmmU4KlrNVeA00OZKK9de1g1XTW0_qd5wq_hiRnMSpEvW0URvkZKadnC6xuZeX5onvDtBK07EEow0UvB": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 14,
+        "9": 2
+       },
+       "exits": 16
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "8": 1,
+        "9": 1
+       },
+       "exits": 2
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 8,
+      "engaged": 3
+     },
+     "channels": {
+      "Unassigned": 16,
+      "Organic Search": 2,
+      "Organic Video": 1
+     }
+    },
+    "40": {
+     "name": "[자연하] 스텔라진 3g x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 5,
+        "4": 5,
+        "2": 4,
+        "3": 4,
+        "5": 3
+       },
+       "exit_hist": {
+        "0": 7,
+        "5": 5
+       },
+       "events": {
+        "pdp_scroll": 24,
+        "pdp_section": 21,
+        "pdp_exit": 12,
+        "pdp_cta_view": 5,
+        "pdp_review": 4
+       },
+       "exit_events": 12,
+       "sum_seconds": 703,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 5,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "썸네일": 3,
+        "리뷰": 1,
+        "상세이미지": 1
+       },
+       "scroll_reach": {
+        "10": 5,
+        "25": 5,
+        "100": 4,
+        "75": 4,
+        "50": 3,
+        "90": 3
+       }
+      },
+      "desktop": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_cta_view": 1,
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 18,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 1,
        "sum_saw_review": 0,
@@ -138314,12 +141263,763 @@
        "sum_clicked_buy": 0
       }
      },
+     "section_total": 5,
      "by_source": {
+      "YT3-Lojww1XmwvmLIJ9oZAobKJJxrJX2cAUdbV16P-7lnwXQG1pfG8ZnaWdN4noYk-J-er5woNCyJwKraoS9sSlh3Bvj1067gjxu": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2,
+        "5": 1
+       },
+       "exits": 3
+      },
+      "YT3-0oqllSARgXhosSb-1PjHrNwk0w5yfej4PV6NlFvZPN-xWvhVYFvq68V8lyyN9-Lk6w4sBA85nBXuyKl79IQlDuWk0MCf2yZd": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
       "_비광고": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      },
+      "YT3-bpmS6Cuh7O0YoonxtJUvI0lcSz_wNZD01ZMRCgk4AdwrUCHheuVD9D3c-AqVsWcRiD8bSLmuW7qNdUCq6n29CE5jIF_uFfnm": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      },
+      "YT3-iY7YRRgwVEGArpJFy7JeuD2nXEZXFaCrQoBay5O8RQqkAnjCJNioEyCkMX-Sgl5GV003kNW2DiAVpb3OWUBIY4RrXNEQetWb": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      },
+      "YT3-qemGayVVk6nvUm5m8Sn2DJc-oB95NfvIM3cYuzy9E2rK-UPajRQtdIsVp7F5XHLnz2M4TkJRB0oX1HZUxXAQyVhxlair3P51": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      },
+      "YT3-sIQYIeaLwGTQ-lXFmQRC_F4eqN7eHvc0MKOzzYL2TLiQUFxR3oQtx8IXDLh1Xi2ABpwmx32HRwYCXgODXG__jB8AHcdJfT5p": {
        "exit_hist": {
         "0": 1
        },
        "exits": 1
+      }
+     },
+     "by_channel": {
+      "Organic Video": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "0": 3,
+        "5": 3
+       },
+       "exits": 6
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Organic Shopping": {
+       "exit_hist": {
+        "5": 1
+       },
+       "exits": 1
+      },
+      "Paid Other": {
+       "exit_hist": {
+        "0": 1,
+        "5": 1
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 8,
+      "engaged": 7
+     },
+     "channels": {
+      "Unassigned": 6,
+      "Organic Video": 3,
+      "Paid Other": 2,
+      "Cross-network": 1,
+      "Organic Shopping": 1
+     }
+    },
+    "42": {
+     "name": "[베지셀] 베지셀 청귤 라이트 100ml",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 5,
+        "7": 5,
+        "2": 4,
+        "4": 4,
+        "5": 3,
+        "6": 3,
+        "3": 2,
+        "11": 2,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1
+       },
+       "exit_hist": {
+        "0": 10,
+        "7": 3,
+        "14": 3,
+        "4": 1
+       },
+       "events": {
+        "pdp_section": 34,
+        "pdp_scroll": 33,
+        "pdp_exit": 17,
+        "pdp_cta_view": 9,
+        "pdp_cta_click": 5,
+        "pdp_review": 3
+       },
+       "exit_events": 17,
+       "sum_seconds": 4724,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 11,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "네이버페이": 2,
+        "바로구매": 1,
+        "옵션선택": 1,
+        "장바구니": 1
+       },
+       "scroll_reach": {
+        "50": 7,
+        "10": 6,
+        "25": 6,
+        "75": 6,
+        "100": 4,
+        "90": 4
+       }
+      }
+     },
+     "section_total": 14,
+     "by_source": {
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2,
+        "7": 2,
+        "14": 2
+       },
+       "exits": 6
+      },
+      "YT3-iwOThFGEf4QcGfzjlDkeSp4m7KKhFstCCZdN9U7vXf1iL2aOuDJ4KH6gHCXAf5iLTy_LtzM8ddsNseZGGHRr1cm0rPtZ70Qm": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "_비광고": {
+       "exit_hist": {
+        "0": 1,
+        "4": 1,
+        "7": 1
+       },
+       "exits": 3
+      },
+      "YT3-5GezpH-9n7nypP6lIERaWY9Nb1d0M0_oAf84-JXTxKJ8jvk-eYF0aBxcZvn_Zjuh1lEQn8hk7VhI7HcXNZyuVGoRzxyjVg": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-96KL6sadgYe5mYo_mD9Hq7i9q2Iviy4QmyXmN6x5Qn1J9DFwHIy3nIo-Vg4gNIv2kLpHopkX0GLA-V9vAVUVpjZq-y3tTdRL": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-LZZ5VEOWzAqKjQXteQvvehj3tIQGlIo-X7czWtUfskvayWIJm14x0agjxV6NBeO-FTmzEXno4ZtdeKGBgnYLe026kBPP1c6h": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-PbYMCw3dj8c42eWtJ-YwdZsm0W14DsOiaqtt7avPbnRQYblOrHiBnJ0XibjxiJ133vHlIFu1pgMfKLr8vSIM1GM6XBn8r7_z": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "YT3-dx0HTbBPUmhfHd0ohbVVvZ-wE9q0205xiS3Ljmb6tK_X9BJzcBl8fodM4haTuAMHFAU2xgRFUYXGJQI_svnXVtUYn5h3LA": {
+       "exit_hist": {
+        "14": 1
+       },
+       "exits": 1
+      },
+      "YT3-h9fT2Qlf3agJCM2hedlyTaCFPb2cqo1EFFSy1Z9MgMmL1ERfJph4PbPUzydX1c_sSL0tFuv4iduxGCbesBoRs7bezPsubUzA": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 5,
+        "4": 1,
+        "7": 1,
+        "14": 1
+       },
+       "exits": 8
+      },
+      "Cross-network": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "Organic Social": {
+       "exit_hist": {
+        "7": 2,
+        "0": 1,
+        "14": 1
+       },
+       "exits": 4
+      },
+      "Organic Video": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Paid Other": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "14": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 10,
+      "engaged": 8
+     },
+     "channels": {
+      "Unassigned": 8,
+      "Organic Social": 4,
+      "Cross-network": 2,
+      "Organic Video": 1,
+      "Paid Other": 1,
+      "Paid Social": 1
+     }
+    },
+    "47": {
+     "name": "기적의 항암 식단",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2
+       },
+       "exit_hist": {
+        "1": 2,
+        "0": 1
+       },
+       "events": {
+        "pdp_scroll": 10,
+        "pdp_cta_view": 3,
+        "pdp_exit": 3,
+        "pdp_section": 2,
+        "pdp_review": 1
+       },
+       "exit_events": 3,
+       "sum_seconds": 50,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 1
+       },
+       "scroll_reach": {
+        "10": 2,
+        "25": 2,
+        "50": 2,
+        "75": 2,
+        "100": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 1,
+     "by_source": {
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "1": 2,
+        "0": 1
+       },
+       "exits": 3
+      }
+     },
+     "by_channel": {
+      "Cross-network": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "0": 1,
+        "1": 1
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 3,
+      "engaged": 3
+     },
+     "channels": {
+      "Unassigned": 2,
+      "Cross-network": 1
+     }
+    },
+    "63": {
+     "name": "국산 유기농 현미 귀리 잡곡 즉석밥 180g",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1
+       },
+       "exit_hist": {
+        "13": 1
+       },
+       "events": {
+        "pdp_section": 16,
+        "pdp_scroll": 8,
+        "pdp_cta_click": 2,
+        "pdp_cta_view": 2,
+        "pdp_exit": 1,
+        "pdp_review": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 67,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 1,
+        "바로구매": 1,
+        "옵션선택": 1,
+        "장바구니": 1
+       },
+       "zone_buys": {
+        "리뷰": 1,
+        "바로구매": 1,
+        "옵션선택": 1,
+        "장바구니": 1
+       },
+       "buyer_depth": {
+        "13": 1
+       },
+       "scroll_reach": {
+        "10": 2,
+        "25": 2,
+        "100": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 13,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "13": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Paid Social": {
+       "exit_hist": {
+        "13": 1
+       },
+       "exits": 1
+      }
+     },
+     "channels": {
+      "Paid Social": 1
+     }
+    },
+    "76": {
+     "name": "[자연하] 숨촉촉365 12g x 14포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "13": 2,
+        "14": 2,
+        "16": 2,
+        "2": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "15": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1
+       },
+       "exit_hist": {
+        "0": 1,
+        "18": 1,
+        "19": 1
+       },
+       "events": {
+        "pdp_section": 28,
+        "pdp_scroll": 10,
+        "pdp_cta_click": 3,
+        "pdp_exit": 3,
+        "pdp_cta_view": 2,
+        "pdp_review": 1
+       },
+       "exit_events": 3,
+       "sum_seconds": 228,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "바로구매": 2,
+        "옵션선택": 2,
+        "네이버페이": 1,
+        "리뷰": 1,
+        "상단메뉴": 1,
+        "장바구니": 1
+       },
+       "zone_buys": {
+        "네이버페이": 1,
+        "바로구매": 1,
+        "옵션선택": 1
+       },
+       "buyer_depth": {
+        "19": 1
+       },
+       "scroll_reach": {
+        "10": 2,
+        "50": 2,
+        "75": 2,
+        "90": 2,
+        "100": 1,
+        "25": 1
+       }
+      }
+     },
+     "section_total": 19,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 1,
+        "18": 1
+       },
+       "exits": 2
+      },
+      "ID 120252920889460414 (이름 미설정)": {
+       "exit_hist": {
+        "19": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 1,
+        "18": 1,
+        "19": 1
+       },
+       "exits": 3
+      }
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "channels": {
+      "Unassigned": 3
+     }
+    },
+    "80": {
+     "name": "[자연하]선물세트 스텔라진 3g x 30포 5박스 + 쇼핑백증정",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "1": 1,
+        "5": 1
+       },
+       "exit_hist": {},
+       "events": {
+        "pdp_section": 8,
+        "pdp_scroll": 4,
+        "pdp_cta_view": 1
+       },
+       "exit_events": 0,
+       "scroll_reach": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1
+       }
+      }
+     },
+     "section_total": 5
+    },
+    "81": {
+     "name": "[자연하]선물세트 크리노진 2.5g x 30포 5박스 + 쇼핑백증정",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 2,
+        "2": 1,
+        "3": 1
+       },
+       "exit_hist": {
+        "1": 1,
+        "3": 1
+       },
+       "events": {
+        "pdp_scroll": 6,
+        "pdp_section": 4,
+        "pdp_cta_view": 2,
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 46,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "10": 2,
+        "25": 2,
+        "50": 2
+       }
+      }
+     },
+     "section_total": 6,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      },
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "3": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Cross-network": {
+       "exit_hist": {
+        "3": 1
+       },
+       "exits": 1
+      },
+      "Unassigned": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 0
+     },
+     "channels": {
+      "Cross-network": 1,
+      "Unassigned": 1
+     }
+    },
+    "31": {
+     "name": "[자연하] 커큐진 2g x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+       },
+       "exit_hist": {
+        "0": 1,
+        "5": 1
+       },
+       "events": {
+        "pdp_scroll": 6,
+        "pdp_section": 5,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 76,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "100": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 5,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 1,
+        "5": 1
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 1,
+        "5": 1
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 0
+     },
+     "channels": {
+      "Unassigned": 2
+     }
+    },
+    "32": {
+     "name": "[자연하] 베리베라진 20ml x 30포",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "3": 1,
+        "4": 1
+       },
+       "exit_hist": {
+        "0": 2,
+        "1": 1,
+        "4": 1
+       },
+       "events": {
+        "pdp_exit": 4,
+        "pdp_scroll": 4,
+        "pdp_cta_click": 3,
+        "pdp_section": 3,
+        "pdp_cta_view": 2
+       },
+       "exit_events": 4,
+       "sum_seconds": 95,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 3,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "바로구매": 2,
+        "상단메뉴": 1,
+        "정기배송선택": 1
+       },
+       "zone_buys": {
+        "바로구매": 1,
+        "정기배송선택": 1
+       },
+       "buyer_depth": {
+        "1": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 4,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 1,
+        "1": 1,
+        "4": 1
+       },
+       "exits": 3
       },
       "ID 120252956260630414 (이름 미설정)": {
        "exit_hist": {
@@ -138329,7 +142029,112 @@
       }
      },
      "by_channel": {
-      "Paid Social": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 2,
+        "4": 1
+       },
+       "exits": 3
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "1": 1
+       },
+       "exits": 1
+      }
+     },
+     "entry": {
+      "sessions": 2,
+      "engaged": 2
+     },
+     "channels": {
+      "Unassigned": 3,
+      "Organic Search": 1
+     }
+    },
+    "55": {
+     "name": "[베지셀] 메이킹 7.4 + 청귤라이트 시너지세트",
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1,
+        "31": 1,
+        "32": 1
+       },
+       "exit_hist": {
+        "0": 1,
+        "32": 1
+       },
+       "events": {
+        "pdp_section": 30,
+        "pdp_scroll": 5,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 272,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "리뷰": 1
+       },
+       "scroll_reach": {
+        "100": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 32,
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "32": 1
+       },
+       "exits": 1
+      },
+      "YT3-2kOg-oqzBCjk4SVLW7DLVEaD-BIBZjdy_a_DGJExtxf-TsEbgVwxxOr8GuBMUCTaa4sRoDoASCfpt3KLNhMuQTUbQECOQXpX": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Organic Video": {
        "exit_hist": {
         "0": 1
        },
@@ -138337,40 +142142,52 @@
       },
       "Unassigned": {
        "exit_hist": {
-        "0": 1
+        "32": 1
        },
        "exits": 1
       }
      },
      "entry": {
-      "sessions": 2,
-      "engaged": 1
+      "sessions": 1,
+      "engaged": 0
      },
      "channels": {
-      "Paid Social": 1,
+      "Organic Video": 1,
       "Unassigned": 1
      }
     },
-    "61": {
-     "name": "국산 유기농 오트밀 압착 귀리 350g",
+    "73": {
+     "name": "김훈하 약사의 하루 한 장 항암 다이어리",
      "devices": {
       "mobile": {
-       "section_reach": {},
+       "section_reach": {
+        "1": 1
+       },
        "exit_hist": {
         "0": 1
        },
        "events": {
-        "pdp_exit": 1
+        "pdp_scroll": 4,
+        "pdp_cta_view": 1,
+        "pdp_exit": 1,
+        "pdp_section": 1
        },
        "exit_events": 1,
-       "sum_seconds": 6,
+       "sum_seconds": 12,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 0,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
-       "sum_clicked_buy": 0
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1
+       }
       }
      },
+     "section_total": 1,
      "by_source": {
       "ID 120252956260630414 (이름 미설정)": {
        "exit_hist": {
@@ -138388,37 +142205,252 @@
       }
      },
      "entry": {
-      "sessions": 1,
-      "engaged": 1
+      "sessions": 2,
+      "engaged": 2
      },
      "channels": {
       "Cross-network": 1
      }
     },
-    "82": {
-     "name": "[자연하] 베리베라진 20ml x 30포 5박스 + 쇼핑백증정",
+    "78": {
+     "name": "[자연하]선물세트 그린진 원스틱 1.5g x 30포 10박스 + 쇼핑백증정",
      "devices": {
-      "desktop": {
-       "section_reach": {},
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "5": 1,
+        "7": 1
+       },
        "exit_hist": {
-        "2": 1
+        "0": 1,
+        "7": 1
        },
        "events": {
-        "pdp_exit": 1
+        "pdp_scroll": 6,
+        "pdp_section": 3,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
        },
-       "exit_events": 1,
-       "sum_seconds": 15,
+       "exit_events": 2,
+       "sum_seconds": 17,
        "sum_bounce_3s": 0,
        "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "10": 1,
+        "100": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       }
+      }
+     },
+     "section_total": 9,
+     "by_source": {
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1,
+        "7": 1
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Paid Other": {
+       "exit_hist": {
+        "0": 1,
+        "7": 1
+       },
+       "exits": 2
+      }
+     },
+     "channels": {
+      "Paid Other": 2
+     }
+    },
+    "61": {
+     "name": "국산 유기농 오트밀 압착 귀리 350g",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 4
+       },
+       "events": {
+        "pdp_cta_click": 8,
+        "pdp_exit": 4
+       },
+       "exit_events": 4,
+       "sum_seconds": 12,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "바로구매": 4
+       }
+      }
+     },
+     "by_source": {
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 4
+       },
+       "exits": 4
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 3
+       },
+       "exits": 3
+      },
+      "Paid Social": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "channels": {
+      "Unassigned": 3,
+      "Paid Social": 1
+     }
+    },
+    "46": {
+     "name": "캔서 위너",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 52,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0
       }
      },
      "by_source": {
-      "_비광고": {
+      "YT3-b_9U2EnMpkavpjOwhNtXo-2JqdPMMVy8ZkvWcR1voMcHUGxss1H_ApfFyzxKAcsgh_HDgetgeExDWuS1N93AllrCX2I-hAOD": {
        "exit_hist": {
-        "2": 1
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Unassigned": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 2,
+      "engaged": 1
+     },
+     "channels": {
+      "Unassigned": 2
+     }
+    },
+    "62": {
+     "name": "국산 유기농 귀리 혼합 10곡 잡곡쌀 800g",
+     "devices": {
+      "desktop": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 1,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      },
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 3,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "by_source": {
+      "ID 120252956260630414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Paid Social": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "channels": {
+      "Paid Social": 2
+     }
+    },
+    "79": {
+     "name": "[자연하]선물세트 커큐진 2g x 30포 5박스 + 쇼핑백증정",
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 1,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0
+      }
+     },
+     "by_source": {
+      "ID 120252920931200414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
        },
        "exits": 1
       }
@@ -138426,7 +142458,7 @@
      "by_channel": {
       "Unassigned": {
        "exit_hist": {
-        "2": 1
+        "0": 1
        },
        "exits": 1
       }
@@ -138440,5 +142472,5 @@
    "missing_metrics": []
   }
  },
- "updated_at": "2026-09-20 09:10:22 KST"
+ "updated_at": "2026-09-21 09:18:15 KST"
 }
