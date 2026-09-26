@@ -630,25 +630,103 @@
     "reason": "initial",
     "diff": {},
     "to": "2026-09-12"
+   },
+   {
+    "version": 2,
+    "minor": 0,
+    "since": "2026-09-12",
+    "struct_hash": "0812804c3d77",
+    "image_count": 4,
+    "images": [
+     "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
+     "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
+     "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
+     "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
+    ],
+    "reason": "image_count 5→4",
+    "diff": {
+     "added": [],
+     "removed": [
+      "NNEditor/20260722/fb5e1e6651025b40f8c4aa684af23ff5.jpg"
+     ]
+    },
+    "to": "2026-09-26"
    }
   ],
   "current": {
-   "version": 2,
+   "version": 3,
    "minor": 0,
-   "since": "2026-09-12",
-   "struct_hash": "0812804c3d77",
-   "image_count": 4,
+   "since": "2026-09-26",
+   "struct_hash": "2c252176e1a5",
+   "image_count": 29,
    "images": [
-    "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
-    "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
-    "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
-    "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
+    "NNEditor/20260925/p31_sign.jpg",
+    "NNEditor/20260925/p31_pharmacist.jpg",
+    "NNEditor/20260925/p31_team.jpg",
+    "NNEditor/20260925/p31_seal.jpg",
+    "NNEditor/20260925/p31_hero_photo.jpg",
+    "NNEditor/20260925/p31_sec2_photo.jpg",
+    "NNEditor/20260925/p31_c1_turmeric_top.jpg",
+    "NNEditor/20260925/p31_c1_turmeric_bot.jpg",
+    "NNEditor/20260925/p31_c2_water_top.jpg",
+    "NNEditor/20260925/p31_c2_water_bot.jpg",
+    "NNEditor/20260925/p31_c3_micelle_top.jpg",
+    "NNEditor/20260925/p31_c3_micelle_bot.jpg",
+    "NNEditor/20260925/p31_c4_yeast_top.jpg",
+    "NNEditor/20260925/p31_c4_yeast_bot.jpg",
+    "NNEditor/20260925/p31_c5_haccp_top.jpg",
+    "NNEditor/20260925/p31_haccp.jpg",
+    "NNEditor/20260925/p31_c5_haccp_bot.jpg",
+    "NNEditor/20260925/p31_c6_fire_top.jpg",
+    "NNEditor/20260925/p31_c6_fire_bot.jpg",
+    "NNEditor/20260925/p31_point01_turmeric.jpg",
+    "NNEditor/20260925/p31_glasses.jpg",
+    "NNEditor/20260925/p31_yeast_bowl.jpg",
+    "NNEditor/20260925/p31_yeast_chart.jpg",
+    "NNEditor/20260925/p31_pepper.jpg",
+    "NNEditor/20260925/p31_pk_chart.jpg",
+    "NNEditor/20260925/p31_box_turmeric.jpg",
+    "NNEditor/20260925/p31_pharmacist_point.jpg",
+    "NNEditor/20260925/p31_box_small.jpg",
+    "NNEditor/20260925/p31_haccp.jpg"
    ],
-   "reason": "image_count 5→4",
+   "reason": "image_count 4→29",
    "diff": {
-    "added": [],
+    "added": [
+     "NNEditor/20260925/p31_box_small.jpg",
+     "NNEditor/20260925/p31_box_turmeric.jpg",
+     "NNEditor/20260925/p31_c1_turmeric_bot.jpg",
+     "NNEditor/20260925/p31_c1_turmeric_top.jpg",
+     "NNEditor/20260925/p31_c2_water_bot.jpg",
+     "NNEditor/20260925/p31_c2_water_top.jpg",
+     "NNEditor/20260925/p31_c3_micelle_bot.jpg",
+     "NNEditor/20260925/p31_c3_micelle_top.jpg",
+     "NNEditor/20260925/p31_c4_yeast_bot.jpg",
+     "NNEditor/20260925/p31_c4_yeast_top.jpg",
+     "NNEditor/20260925/p31_c5_haccp_bot.jpg",
+     "NNEditor/20260925/p31_c5_haccp_top.jpg",
+     "NNEditor/20260925/p31_c6_fire_bot.jpg",
+     "NNEditor/20260925/p31_c6_fire_top.jpg",
+     "NNEditor/20260925/p31_glasses.jpg",
+     "NNEditor/20260925/p31_haccp.jpg",
+     "NNEditor/20260925/p31_hero_photo.jpg",
+     "NNEditor/20260925/p31_pepper.jpg",
+     "NNEditor/20260925/p31_pharmacist.jpg",
+     "NNEditor/20260925/p31_pharmacist_point.jpg",
+     "NNEditor/20260925/p31_pk_chart.jpg",
+     "NNEditor/20260925/p31_point01_turmeric.jpg",
+     "NNEditor/20260925/p31_seal.jpg",
+     "NNEditor/20260925/p31_sec2_photo.jpg",
+     "NNEditor/20260925/p31_sign.jpg",
+     "NNEditor/20260925/p31_team.jpg",
+     "NNEditor/20260925/p31_yeast_bowl.jpg",
+     "NNEditor/20260925/p31_yeast_chart.jpg"
+    ],
     "removed": [
-     "NNEditor/20260722/fb5e1e6651025b40f8c4aa684af23ff5.jpg"
+     "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
+     "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
+     "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg",
+     "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg"
     ]
    }
   },
@@ -832,43 +910,7 @@
     197
    ]
   ],
-  "title_name": "자연하 커큐진 1박스",
-  "pending": {
-   "struct_hash": "2c252176e1a5",
-   "images": [
-    "NNEditor/20260925/p31_sign.jpg",
-    "NNEditor/20260925/p31_pharmacist.jpg",
-    "NNEditor/20260925/p31_team.jpg",
-    "NNEditor/20260925/p31_seal.jpg",
-    "NNEditor/20260925/p31_hero_photo.jpg",
-    "NNEditor/20260925/p31_sec2_photo.jpg",
-    "NNEditor/20260925/p31_c1_turmeric_top.jpg",
-    "NNEditor/20260925/p31_c1_turmeric_bot.jpg",
-    "NNEditor/20260925/p31_c2_water_top.jpg",
-    "NNEditor/20260925/p31_c2_water_bot.jpg",
-    "NNEditor/20260925/p31_c3_micelle_top.jpg",
-    "NNEditor/20260925/p31_c3_micelle_bot.jpg",
-    "NNEditor/20260925/p31_c4_yeast_top.jpg",
-    "NNEditor/20260925/p31_c4_yeast_bot.jpg",
-    "NNEditor/20260925/p31_c5_haccp_top.jpg",
-    "NNEditor/20260925/p31_haccp.jpg",
-    "NNEditor/20260925/p31_c5_haccp_bot.jpg",
-    "NNEditor/20260925/p31_c6_fire_top.jpg",
-    "NNEditor/20260925/p31_c6_fire_bot.jpg",
-    "NNEditor/20260925/p31_point01_turmeric.jpg",
-    "NNEditor/20260925/p31_glasses.jpg",
-    "NNEditor/20260925/p31_yeast_bowl.jpg",
-    "NNEditor/20260925/p31_yeast_chart.jpg",
-    "NNEditor/20260925/p31_pepper.jpg",
-    "NNEditor/20260925/p31_pk_chart.jpg",
-    "NNEditor/20260925/p31_box_turmeric.jpg",
-    "NNEditor/20260925/p31_pharmacist_point.jpg",
-    "NNEditor/20260925/p31_box_small.jpg",
-    "NNEditor/20260925/p31_haccp.jpg"
-   ],
-   "first_seen": "2026-09-26",
-   "seen_count": 1
-  }
+  "title_name": "자연하 커큐진 1박스"
  },
  "32": {
   "history": [
@@ -914,24 +956,70 @@
      ]
     },
     "to": "2026-09-12"
+   },
+   {
+    "version": 3,
+    "minor": 0,
+    "since": "2026-09-12",
+    "struct_hash": "14858ce6684e",
+    "image_count": 3,
+    "images": [
+     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
+     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
+     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
+    ],
+    "reason": "image_count 4→3",
+    "diff": {
+     "added": [],
+     "removed": [
+      "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg"
+     ]
+    },
+    "to": "2026-09-26"
    }
   ],
   "current": {
-   "version": 3,
+   "version": 4,
    "minor": 0,
-   "since": "2026-09-12",
-   "struct_hash": "14858ce6684e",
-   "image_count": 3,
+   "since": "2026-09-26",
+   "struct_hash": "53e8c5f3bb3e",
+   "image_count": 13,
    "images": [
-    "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
-    "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
-    "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
+    "NNEditor/20260925/p32_pharmacist.jpg",
+    "NNEditor/20260925/p32_team.jpg",
+    "NNEditor/20260925/p32_official_badge.jpg",
+    "NNEditor/20260925/p32_hero.jpg",
+    "NNEditor/20260925/p32_aronia_tree.jpg",
+    "NNEditor/20260925/p32_aronia_bowl.jpg",
+    "NNEditor/20260925/p32_goji.jpg",
+    "NNEditor/20260925/p32_card_aronia.jpg",
+    "NNEditor/20260925/p32_card_goji.jpg",
+    "NNEditor/20260925/p32_card_aloe.jpg",
+    "NNEditor/20260925/p32_card_hovenia.jpg",
+    "NNEditor/20260925/p32_product.jpg",
+    "NNEditor/20260925/p32_haccp.jpg"
    ],
-   "reason": "image_count 4→3",
+   "reason": "image_count 3→13",
    "diff": {
-    "added": [],
+    "added": [
+     "NNEditor/20260925/p32_aronia_bowl.jpg",
+     "NNEditor/20260925/p32_aronia_tree.jpg",
+     "NNEditor/20260925/p32_card_aloe.jpg",
+     "NNEditor/20260925/p32_card_aronia.jpg",
+     "NNEditor/20260925/p32_card_goji.jpg",
+     "NNEditor/20260925/p32_card_hovenia.jpg",
+     "NNEditor/20260925/p32_goji.jpg",
+     "NNEditor/20260925/p32_haccp.jpg",
+     "NNEditor/20260925/p32_hero.jpg",
+     "NNEditor/20260925/p32_official_badge.jpg",
+     "NNEditor/20260925/p32_pharmacist.jpg",
+     "NNEditor/20260925/p32_product.jpg",
+     "NNEditor/20260925/p32_team.jpg"
+    ],
     "removed": [
-     "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg"
+     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg",
+     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
+     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg"
     ]
    }
   },
@@ -1019,27 +1107,7 @@
     200
    ]
   ],
-  "title_name": "자연하 베리베라진 – 아로니아 &amp; 알로에 건강젤리",
-  "pending": {
-   "struct_hash": "53e8c5f3bb3e",
-   "images": [
-    "NNEditor/20260925/p32_pharmacist.jpg",
-    "NNEditor/20260925/p32_team.jpg",
-    "NNEditor/20260925/p32_official_badge.jpg",
-    "NNEditor/20260925/p32_hero.jpg",
-    "NNEditor/20260925/p32_aronia_tree.jpg",
-    "NNEditor/20260925/p32_aronia_bowl.jpg",
-    "NNEditor/20260925/p32_goji.jpg",
-    "NNEditor/20260925/p32_card_aronia.jpg",
-    "NNEditor/20260925/p32_card_goji.jpg",
-    "NNEditor/20260925/p32_card_aloe.jpg",
-    "NNEditor/20260925/p32_card_hovenia.jpg",
-    "NNEditor/20260925/p32_product.jpg",
-    "NNEditor/20260925/p32_haccp.jpg"
-   ],
-   "first_seen": "2026-09-26",
-   "seen_count": 1
-  }
+  "title_name": "자연하 베리베라진 – 아로니아 &amp; 알로에 건강젤리"
  },
  "40": {
   "history": [
@@ -1058,27 +1126,89 @@
     "reason": "initial",
     "diff": {},
     "to": "2026-09-04"
+   },
+   {
+    "version": 2,
+    "minor": 0,
+    "since": "2026-09-04",
+    "struct_hash": "667d61b27959",
+    "image_count": 5,
+    "images": [
+     "NNEditor/20260709/notice_banner_1080.jpg",
+     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7841.jpg",
+     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7842_ECA080EC9AA9EB9F89.gif",
+     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7843.jpg",
+     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7844.jpg"
+    ],
+    "reason": "image_count 4→5",
+    "diff": {
+     "added": [
+      "NNEditor/20260709/notice_banner_1080.jpg"
+     ],
+     "removed": []
+    },
+    "to": "2026-09-26"
    }
   ],
   "current": {
-   "version": 2,
+   "version": 3,
    "minor": 0,
-   "since": "2026-09-04",
-   "struct_hash": "667d61b27959",
-   "image_count": 5,
+   "since": "2026-09-26",
+   "struct_hash": "043304643940",
+   "image_count": 22,
    "images": [
     "NNEditor/20260709/notice_banner_1080.jpg",
-    "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7841.jpg",
+    "NNEditor/20260925/p40_logo.jpg",
+    "NNEditor/20260925/p40_hero_box.jpg",
+    "NNEditor/20260925/p40_icons.jpg",
+    "NNEditor/20260925/p40_sansuyu.jpg",
+    "NNEditor/20260925/p40_herbs.jpg",
     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7842_ECA080EC9AA9EB9F89.gif",
-    "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7843.jpg",
-    "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7844.jpg"
+    "NNEditor/20260925/p40_ing1_milkthistle.jpg",
+    "NNEditor/20260925/p40_ing2_yeast.jpg",
+    "NNEditor/20260925/p40_ing3_spirulina.jpg",
+    "NNEditor/20260925/p40_ing4_chlorella.jpg",
+    "NNEditor/20260925/p40_ing5_mugwort.jpg",
+    "NNEditor/20260925/p40_ing6_ogapi.jpg",
+    "NNEditor/20260925/p40_ing7_sansuyu.jpg",
+    "NNEditor/20260925/p40_ing8_hwanggeum.jpg",
+    "NNEditor/20260925/p40_sticks.jpg",
+    "NNEditor/20260925/p40_bag.jpg",
+    "NNEditor/20260925/p40_family_box.jpg",
+    "NNEditor/20260925/p40_rec1_tired.jpg",
+    "NNEditor/20260925/p40_rec2_herb.jpg",
+    "NNEditor/20260925/p40_rec3_family.jpg",
+    "NNEditor/20260925/p40_rec4_drink.jpg"
    ],
-   "reason": "image_count 4→5",
+   "reason": "image_count 5→22",
    "diff": {
     "added": [
-     "NNEditor/20260709/notice_banner_1080.jpg"
+     "NNEditor/20260925/p40_bag.jpg",
+     "NNEditor/20260925/p40_family_box.jpg",
+     "NNEditor/20260925/p40_herbs.jpg",
+     "NNEditor/20260925/p40_hero_box.jpg",
+     "NNEditor/20260925/p40_icons.jpg",
+     "NNEditor/20260925/p40_ing1_milkthistle.jpg",
+     "NNEditor/20260925/p40_ing2_yeast.jpg",
+     "NNEditor/20260925/p40_ing3_spirulina.jpg",
+     "NNEditor/20260925/p40_ing4_chlorella.jpg",
+     "NNEditor/20260925/p40_ing5_mugwort.jpg",
+     "NNEditor/20260925/p40_ing6_ogapi.jpg",
+     "NNEditor/20260925/p40_ing7_sansuyu.jpg",
+     "NNEditor/20260925/p40_ing8_hwanggeum.jpg",
+     "NNEditor/20260925/p40_logo.jpg",
+     "NNEditor/20260925/p40_rec1_tired.jpg",
+     "NNEditor/20260925/p40_rec2_herb.jpg",
+     "NNEditor/20260925/p40_rec3_family.jpg",
+     "NNEditor/20260925/p40_rec4_drink.jpg",
+     "NNEditor/20260925/p40_sansuyu.jpg",
+     "NNEditor/20260925/p40_sticks.jpg"
     ],
-    "removed": []
+    "removed": [
+     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7841.jpg",
+     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7843.jpg",
+     "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7844.jpg"
+    ]
    }
   },
   "display_urls": [
@@ -1219,36 +1349,7 @@
     295
    ]
   ],
-  "title_name": "자연하 스텔라진",
-  "pending": {
-   "struct_hash": "043304643940",
-   "images": [
-    "NNEditor/20260709/notice_banner_1080.jpg",
-    "NNEditor/20260925/p40_logo.jpg",
-    "NNEditor/20260925/p40_hero_box.jpg",
-    "NNEditor/20260925/p40_icons.jpg",
-    "NNEditor/20260925/p40_sansuyu.jpg",
-    "NNEditor/20260925/p40_herbs.jpg",
-    "NNEditor/20250827/ED8190EB9DBCEC9798_EC8AA4ED8594EB9DBCECA7842_ECA080EC9AA9EB9F89.gif",
-    "NNEditor/20260925/p40_ing1_milkthistle.jpg",
-    "NNEditor/20260925/p40_ing2_yeast.jpg",
-    "NNEditor/20260925/p40_ing3_spirulina.jpg",
-    "NNEditor/20260925/p40_ing4_chlorella.jpg",
-    "NNEditor/20260925/p40_ing5_mugwort.jpg",
-    "NNEditor/20260925/p40_ing6_ogapi.jpg",
-    "NNEditor/20260925/p40_ing7_sansuyu.jpg",
-    "NNEditor/20260925/p40_ing8_hwanggeum.jpg",
-    "NNEditor/20260925/p40_sticks.jpg",
-    "NNEditor/20260925/p40_bag.jpg",
-    "NNEditor/20260925/p40_family_box.jpg",
-    "NNEditor/20260925/p40_rec1_tired.jpg",
-    "NNEditor/20260925/p40_rec2_herb.jpg",
-    "NNEditor/20260925/p40_rec3_family.jpg",
-    "NNEditor/20260925/p40_rec4_drink.jpg"
-   ],
-   "first_seen": "2026-09-26",
-   "seen_count": 1
-  }
+  "title_name": "자연하 스텔라진"
  },
  "44": {
   "history": [
@@ -1269,26 +1370,102 @@
     "reason": "initial",
     "diff": {},
     "to": "2026-09-12"
+   },
+   {
+    "version": 2,
+    "minor": 0,
+    "since": "2026-09-12",
+    "struct_hash": "47848283c2d7",
+    "image_count": 5,
+    "images": [
+     "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
+     "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
+     "NNEditor/20260707/7d429f2425317782324ddfa02c1c666d.jpg",
+     "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
+     "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
+    ],
+    "reason": "image_count 6→5",
+    "diff": {
+     "added": [],
+     "removed": [
+      "NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg"
+     ]
+    },
+    "to": "2026-09-26"
    }
   ],
   "current": {
-   "version": 2,
+   "version": 3,
    "minor": 0,
-   "since": "2026-09-12",
-   "struct_hash": "47848283c2d7",
-   "image_count": 5,
+   "since": "2026-09-26",
+   "struct_hash": "06046ffff250",
+   "image_count": 27,
    "images": [
-    "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
-    "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
-    "NNEditor/20260707/7d429f2425317782324ddfa02c1c666d.jpg",
-    "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
-    "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
+    "NNEditor/20260925/p44_sign.jpg",
+    "NNEditor/20260925/p44_kim.jpg",
+    "NNEditor/20260925/p44_team.jpg",
+    "NNEditor/20260925/p44_official_badge.jpg",
+    "NNEditor/20260925/p44_logo_jayeonha.jpg",
+    "NNEditor/20260925/p44_hero_box.jpg",
+    "NNEditor/20260925/p44_icon_01.jpg",
+    "NNEditor/20260925/p44_icon_02.jpg",
+    "NNEditor/20260925/p44_icon_03.jpg",
+    "NNEditor/20260925/p44_brand_rice.jpg",
+    "NNEditor/20260925/p44_brand_ginseng.jpg",
+    "NNEditor/20260925/p44_brand_cricket.jpg",
+    "NNEditor/20260925/p44_pour.jpg",
+    "NNEditor/20260925/p44_badge.jpg",
+    "NNEditor/20260925/p44_ing_cricket.jpg",
+    "NNEditor/20260925/p44_ing_rice.jpg",
+    "NNEditor/20260925/p44_ing_ginseng.jpg",
+    "NNEditor/20260925/p44_ing_tryptophan.jpg",
+    "NNEditor/20260925/p44_ing_xylitol.jpg",
+    "NNEditor/20260925/p44_ing_maca.jpg",
+    "NNEditor/20260925/p44_ing_rehmannia.jpg",
+    "NNEditor/20260925/p44_ing_peony.jpg",
+    "NNEditor/20260925/p44_ing_liriope.jpg",
+    "NNEditor/20260925/p44_ing_angelica.jpg",
+    "NNEditor/20260925/p44_sticks5.jpg",
+    "NNEditor/20260925/p44_bag.jpg",
+    "NNEditor/20260925/p44_box_open.jpg"
    ],
-   "reason": "image_count 6→5",
+   "reason": "image_count 5→27",
    "diff": {
-    "added": [],
+    "added": [
+     "NNEditor/20260925/p44_badge.jpg",
+     "NNEditor/20260925/p44_bag.jpg",
+     "NNEditor/20260925/p44_box_open.jpg",
+     "NNEditor/20260925/p44_brand_cricket.jpg",
+     "NNEditor/20260925/p44_brand_ginseng.jpg",
+     "NNEditor/20260925/p44_brand_rice.jpg",
+     "NNEditor/20260925/p44_hero_box.jpg",
+     "NNEditor/20260925/p44_icon_01.jpg",
+     "NNEditor/20260925/p44_icon_02.jpg",
+     "NNEditor/20260925/p44_icon_03.jpg",
+     "NNEditor/20260925/p44_ing_angelica.jpg",
+     "NNEditor/20260925/p44_ing_cricket.jpg",
+     "NNEditor/20260925/p44_ing_ginseng.jpg",
+     "NNEditor/20260925/p44_ing_liriope.jpg",
+     "NNEditor/20260925/p44_ing_maca.jpg",
+     "NNEditor/20260925/p44_ing_peony.jpg",
+     "NNEditor/20260925/p44_ing_rehmannia.jpg",
+     "NNEditor/20260925/p44_ing_rice.jpg",
+     "NNEditor/20260925/p44_ing_tryptophan.jpg",
+     "NNEditor/20260925/p44_ing_xylitol.jpg",
+     "NNEditor/20260925/p44_kim.jpg",
+     "NNEditor/20260925/p44_logo_jayeonha.jpg",
+     "NNEditor/20260925/p44_official_badge.jpg",
+     "NNEditor/20260925/p44_pour.jpg",
+     "NNEditor/20260925/p44_sign.jpg",
+     "NNEditor/20260925/p44_sticks5.jpg",
+     "NNEditor/20260925/p44_team.jpg"
+    ],
     "removed": [
-     "NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg"
+     "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
+     "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
+     "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
+     "NNEditor/20260707/7d429f2425317782324ddfa02c1c666d.jpg",
+     "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
     ]
    }
   },
@@ -1460,41 +1637,7 @@
     1148
    ]
   ],
-  "title_name": "자연하 크리노진 2.5 g x 30포",
-  "pending": {
-   "struct_hash": "06046ffff250",
-   "images": [
-    "NNEditor/20260925/p44_sign.jpg",
-    "NNEditor/20260925/p44_kim.jpg",
-    "NNEditor/20260925/p44_team.jpg",
-    "NNEditor/20260925/p44_official_badge.jpg",
-    "NNEditor/20260925/p44_logo_jayeonha.jpg",
-    "NNEditor/20260925/p44_hero_box.jpg",
-    "NNEditor/20260925/p44_icon_01.jpg",
-    "NNEditor/20260925/p44_icon_02.jpg",
-    "NNEditor/20260925/p44_icon_03.jpg",
-    "NNEditor/20260925/p44_brand_rice.jpg",
-    "NNEditor/20260925/p44_brand_ginseng.jpg",
-    "NNEditor/20260925/p44_brand_cricket.jpg",
-    "NNEditor/20260925/p44_pour.jpg",
-    "NNEditor/20260925/p44_badge.jpg",
-    "NNEditor/20260925/p44_ing_cricket.jpg",
-    "NNEditor/20260925/p44_ing_rice.jpg",
-    "NNEditor/20260925/p44_ing_ginseng.jpg",
-    "NNEditor/20260925/p44_ing_tryptophan.jpg",
-    "NNEditor/20260925/p44_ing_xylitol.jpg",
-    "NNEditor/20260925/p44_ing_maca.jpg",
-    "NNEditor/20260925/p44_ing_rehmannia.jpg",
-    "NNEditor/20260925/p44_ing_peony.jpg",
-    "NNEditor/20260925/p44_ing_liriope.jpg",
-    "NNEditor/20260925/p44_ing_angelica.jpg",
-    "NNEditor/20260925/p44_sticks5.jpg",
-    "NNEditor/20260925/p44_bag.jpg",
-    "NNEditor/20260925/p44_box_open.jpg"
-   ],
-   "first_seen": "2026-09-26",
-   "seen_count": 1
-  }
+  "title_name": "자연하 크리노진 2.5 g x 30포"
  },
  "46": {
   "history": [
@@ -1967,36 +2110,125 @@
   "title_name": "김훈하 약사의 하루 한 장 항암 다이어리"
  },
  "76": {
-  "history": [],
+  "history": [
+   {
+    "version": 1,
+    "minor": 0,
+    "since": "2026-08-06",
+    "struct_hash": "437aef7507ff",
+    "image_count": 19,
+    "images": [
+     "NNEditor/20260806/bb6869a751938f5cfc6d5853f67ce860.jpg",
+     "NNEditor/20260806/81d62040bc6ca624008aaaa9c6f014f7.jpg",
+     "NNEditor/20260806/f4e7b3fa719a09972073010749354445.jpg",
+     "NNEditor/20260806/ec5a9a6d776adec8c518979d2b446e0c.jpg",
+     "NNEditor/20260806/da5271a841066834bbf6b128cc1bf31e.jpg",
+     "NNEditor/20260806/f52f0498fd8159be7a40a430aa1dfae0.jpg",
+     "NNEditor/20260806/c8ff68c91926ceecddfe9679aa590721.jpg",
+     "NNEditor/20260806/febacf2b69a2b57d277b11f9ac788f55.jpg",
+     "NNEditor/20260806/7c39ba3549e87de0582da4eda3e7ba13.jpg",
+     "NNEditor/20260806/3f770d437ede92dcd5148b9606e64cdf.jpg",
+     "NNEditor/20260806/035772b4360835a5ec3b1ab2e28a1f73.jpg",
+     "NNEditor/20260806/392da42e3615c2c9d44669ba383b8143.jpg",
+     "NNEditor/20260806/cab55635d2b319645a802e551ed0a405.jpg",
+     "NNEditor/20260806/7724dbd0cdd5dcf5bf036d5b4022b882.jpg",
+     "NNEditor/20260806/a379b0840825a158e72f2dcaa8338e1b.jpg",
+     "NNEditor/20260806/189b9df7f47c168c27fc1a9e69bddac4.jpg",
+     "NNEditor/20260806/384f97ba59e22f23648d3ce1742837e9.jpg",
+     "NNEditor/20260806/e328b3c97eff7e9b25e6777eac6bfa40.jpg",
+     "NNEditor/20260806/e510f22da6fd7651dfc5f4f9d6b30535.jpg"
+    ],
+    "reason": "initial",
+    "diff": {},
+    "to": "2026-09-26"
+   }
+  ],
   "current": {
-   "version": 1,
+   "version": 2,
    "minor": 0,
-   "since": "2026-08-06",
-   "struct_hash": "437aef7507ff",
-   "image_count": 19,
+   "since": "2026-09-26",
+   "struct_hash": "af020164a4fc",
+   "image_count": 26,
    "images": [
-    "NNEditor/20260806/bb6869a751938f5cfc6d5853f67ce860.jpg",
-    "NNEditor/20260806/81d62040bc6ca624008aaaa9c6f014f7.jpg",
-    "NNEditor/20260806/f4e7b3fa719a09972073010749354445.jpg",
-    "NNEditor/20260806/ec5a9a6d776adec8c518979d2b446e0c.jpg",
-    "NNEditor/20260806/da5271a841066834bbf6b128cc1bf31e.jpg",
-    "NNEditor/20260806/f52f0498fd8159be7a40a430aa1dfae0.jpg",
-    "NNEditor/20260806/c8ff68c91926ceecddfe9679aa590721.jpg",
-    "NNEditor/20260806/febacf2b69a2b57d277b11f9ac788f55.jpg",
-    "NNEditor/20260806/7c39ba3549e87de0582da4eda3e7ba13.jpg",
-    "NNEditor/20260806/3f770d437ede92dcd5148b9606e64cdf.jpg",
-    "NNEditor/20260806/035772b4360835a5ec3b1ab2e28a1f73.jpg",
-    "NNEditor/20260806/392da42e3615c2c9d44669ba383b8143.jpg",
-    "NNEditor/20260806/cab55635d2b319645a802e551ed0a405.jpg",
-    "NNEditor/20260806/7724dbd0cdd5dcf5bf036d5b4022b882.jpg",
-    "NNEditor/20260806/a379b0840825a158e72f2dcaa8338e1b.jpg",
-    "NNEditor/20260806/189b9df7f47c168c27fc1a9e69bddac4.jpg",
-    "NNEditor/20260806/384f97ba59e22f23648d3ce1742837e9.jpg",
-    "NNEditor/20260806/e328b3c97eff7e9b25e6777eac6bfa40.jpg",
-    "NNEditor/20260806/e510f22da6fd7651dfc5f4f9d6b30535.jpg"
+    "NNEditor/20260925/p76_pharmacist.jpg",
+    "NNEditor/20260925/p76_signature.jpg",
+    "NNEditor/20260925/p76_team.jpg",
+    "NNEditor/20260925/p76_official_badge.jpg",
+    "NNEditor/20260925/p76_hero_box.jpg",
+    "NNEditor/20260925/p76_why_woman.jpg",
+    "NNEditor/20260925/p76_dry_band.jpg",
+    "NNEditor/20260925/p76_eating.jpg",
+    "NNEditor/20260925/p76_speaking.jpg",
+    "NNEditor/20260925/p76_sleeping.jpg",
+    "NNEditor/20260925/p76_everyday.jpg",
+    "NNEditor/20260925/p76_product_bubble.jpg",
+    "NNEditor/20260925/p76_kitchen.jpg",
+    "NNEditor/20260925/p76_icon_protect.jpg",
+    "NNEditor/20260925/p76_icon_comfort.jpg",
+    "NNEditor/20260925/p76_icon_balance.jpg",
+    "NNEditor/20260925/p76_icon_routine.jpg",
+    "NNEditor/20260925/p76_ingredients.jpg",
+    "NNEditor/20260925/p76_apple_table.jpg",
+    "NNEditor/20260925/p76_review_stick.jpg",
+    "NNEditor/20260925/p76_patents.jpg",
+    "NNEditor/20260925/p76_papers.jpg",
+    "NNEditor/20260925/p76_hand_stick.jpg",
+    "NNEditor/20260925/p76_factory.jpg",
+    "NNEditor/20260925/p76_dna.jpg",
+    "NNEditor/20260925/p76_curael_logo.jpg"
    ],
-   "reason": "initial",
-   "diff": {}
+   "reason": "image_count 19→26",
+   "diff": {
+    "added": [
+     "NNEditor/20260925/p76_apple_table.jpg",
+     "NNEditor/20260925/p76_curael_logo.jpg",
+     "NNEditor/20260925/p76_dna.jpg",
+     "NNEditor/20260925/p76_dry_band.jpg",
+     "NNEditor/20260925/p76_eating.jpg",
+     "NNEditor/20260925/p76_everyday.jpg",
+     "NNEditor/20260925/p76_factory.jpg",
+     "NNEditor/20260925/p76_hand_stick.jpg",
+     "NNEditor/20260925/p76_hero_box.jpg",
+     "NNEditor/20260925/p76_icon_balance.jpg",
+     "NNEditor/20260925/p76_icon_comfort.jpg",
+     "NNEditor/20260925/p76_icon_protect.jpg",
+     "NNEditor/20260925/p76_icon_routine.jpg",
+     "NNEditor/20260925/p76_ingredients.jpg",
+     "NNEditor/20260925/p76_kitchen.jpg",
+     "NNEditor/20260925/p76_official_badge.jpg",
+     "NNEditor/20260925/p76_papers.jpg",
+     "NNEditor/20260925/p76_patents.jpg",
+     "NNEditor/20260925/p76_pharmacist.jpg",
+     "NNEditor/20260925/p76_product_bubble.jpg",
+     "NNEditor/20260925/p76_review_stick.jpg",
+     "NNEditor/20260925/p76_signature.jpg",
+     "NNEditor/20260925/p76_sleeping.jpg",
+     "NNEditor/20260925/p76_speaking.jpg",
+     "NNEditor/20260925/p76_team.jpg",
+     "NNEditor/20260925/p76_why_woman.jpg"
+    ],
+    "removed": [
+     "NNEditor/20260806/035772b4360835a5ec3b1ab2e28a1f73.jpg",
+     "NNEditor/20260806/189b9df7f47c168c27fc1a9e69bddac4.jpg",
+     "NNEditor/20260806/384f97ba59e22f23648d3ce1742837e9.jpg",
+     "NNEditor/20260806/392da42e3615c2c9d44669ba383b8143.jpg",
+     "NNEditor/20260806/3f770d437ede92dcd5148b9606e64cdf.jpg",
+     "NNEditor/20260806/7724dbd0cdd5dcf5bf036d5b4022b882.jpg",
+     "NNEditor/20260806/7c39ba3549e87de0582da4eda3e7ba13.jpg",
+     "NNEditor/20260806/81d62040bc6ca624008aaaa9c6f014f7.jpg",
+     "NNEditor/20260806/a379b0840825a158e72f2dcaa8338e1b.jpg",
+     "NNEditor/20260806/bb6869a751938f5cfc6d5853f67ce860.jpg",
+     "NNEditor/20260806/c8ff68c91926ceecddfe9679aa590721.jpg",
+     "NNEditor/20260806/cab55635d2b319645a802e551ed0a405.jpg",
+     "NNEditor/20260806/da5271a841066834bbf6b128cc1bf31e.jpg",
+     "NNEditor/20260806/e328b3c97eff7e9b25e6777eac6bfa40.jpg",
+     "NNEditor/20260806/e510f22da6fd7651dfc5f4f9d6b30535.jpg",
+     "NNEditor/20260806/ec5a9a6d776adec8c518979d2b446e0c.jpg",
+     "NNEditor/20260806/f4e7b3fa719a09972073010749354445.jpg",
+     "NNEditor/20260806/f52f0498fd8159be7a40a430aa1dfae0.jpg",
+     "NNEditor/20260806/febacf2b69a2b57d277b11f9ac788f55.jpg"
+    ]
+   }
   },
   "display_urls": [
    "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p76_pharmacist.jpg",
@@ -2160,42 +2392,9 @@
     55
    ]
   ],
-  "title_name": "자연하 숨촉촉365 매일 가벼운 수분 습관",
-  "pending": {
-   "struct_hash": "af020164a4fc",
-   "images": [
-    "NNEditor/20260925/p76_pharmacist.jpg",
-    "NNEditor/20260925/p76_signature.jpg",
-    "NNEditor/20260925/p76_team.jpg",
-    "NNEditor/20260925/p76_official_badge.jpg",
-    "NNEditor/20260925/p76_hero_box.jpg",
-    "NNEditor/20260925/p76_why_woman.jpg",
-    "NNEditor/20260925/p76_dry_band.jpg",
-    "NNEditor/20260925/p76_eating.jpg",
-    "NNEditor/20260925/p76_speaking.jpg",
-    "NNEditor/20260925/p76_sleeping.jpg",
-    "NNEditor/20260925/p76_everyday.jpg",
-    "NNEditor/20260925/p76_product_bubble.jpg",
-    "NNEditor/20260925/p76_kitchen.jpg",
-    "NNEditor/20260925/p76_icon_protect.jpg",
-    "NNEditor/20260925/p76_icon_comfort.jpg",
-    "NNEditor/20260925/p76_icon_balance.jpg",
-    "NNEditor/20260925/p76_icon_routine.jpg",
-    "NNEditor/20260925/p76_ingredients.jpg",
-    "NNEditor/20260925/p76_apple_table.jpg",
-    "NNEditor/20260925/p76_review_stick.jpg",
-    "NNEditor/20260925/p76_patents.jpg",
-    "NNEditor/20260925/p76_papers.jpg",
-    "NNEditor/20260925/p76_hand_stick.jpg",
-    "NNEditor/20260925/p76_factory.jpg",
-    "NNEditor/20260925/p76_dna.jpg",
-    "NNEditor/20260925/p76_curael_logo.jpg"
-   ],
-   "first_seen": "2026-09-26",
-   "seen_count": 1
-  }
+  "title_name": "자연하 숨촉촉365 매일 가벼운 수분 습관"
  },
- "_crawled_at": "2026-09-26T07:04:13+09:00",
+ "_crawled_at": "2026-09-26T09:41:58+09:00",
  "_shared_banners": [],
  "59": {
   "display_urls": [
@@ -3365,24 +3564,30 @@
     1174
    ]
   ],
-  "history": [],
+  "history": [
+   {
+    "version": 1,
+    "minor": 0,
+    "since": "2026-09-12",
+    "struct_hash": "0812804c3d77",
+    "image_count": 4,
+    "images": [
+     "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
+     "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
+     "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
+     "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
+    ],
+    "reason": "initial",
+    "diff": {},
+    "to": "2026-09-26"
+   }
+  ],
   "current": {
-   "version": 1,
+   "version": 2,
    "minor": 0,
-   "since": "2026-09-12",
-   "struct_hash": "0812804c3d77",
-   "image_count": 4,
-   "images": [
-    "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
-    "NNEditor/20260724/71c34a84d4ff48068092f806ec3abe83.jpg",
-    "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
-    "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
-   ],
-   "reason": "initial",
-   "diff": {}
-  },
-  "pending": {
+   "since": "2026-09-26",
    "struct_hash": "08baa14b9e0f",
+   "image_count": 5,
    "images": [
     "NNEditor/20260722/fb5e1e6651025b40f8c4aa684af23ff5.jpg",
     "NNEditor/20260724/28fe1bf87ff28734a12cb6b82389f96f.jpg",
@@ -3390,8 +3595,13 @@
     "NNEditor/20260724/ee18d10a05ed752739efc332af9d510e.jpg",
     "NNEditor/20260724/8ce878f9350a0f2fb7faad8735addb67.jpg"
    ],
-   "first_seen": "2026-09-26",
-   "seen_count": 1
+   "reason": "image_count 4→5",
+   "diff": {
+    "added": [
+     "NNEditor/20260722/fb5e1e6651025b40f8c4aa684af23ff5.jpg"
+    ],
+    "removed": []
+   }
   }
  },
  "80": {
@@ -3494,25 +3704,31 @@
     4336
    ]
   ],
-  "history": [],
+  "history": [
+   {
+    "version": 1,
+    "minor": 0,
+    "since": "2026-09-12",
+    "struct_hash": "47848283c2d7",
+    "image_count": 5,
+    "images": [
+     "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
+     "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
+     "NNEditor/20260707/7d429f2425317782324ddfa02c1c666d.jpg",
+     "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
+     "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
+    ],
+    "reason": "initial",
+    "diff": {},
+    "to": "2026-09-26"
+   }
+  ],
   "current": {
-   "version": 1,
+   "version": 2,
    "minor": 0,
-   "since": "2026-09-12",
-   "struct_hash": "47848283c2d7",
-   "image_count": 5,
-   "images": [
-    "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
-    "NNEditor/20260707/241e1e4078eef54c125ba308e70450b8.jpg",
-    "NNEditor/20260707/7d429f2425317782324ddfa02c1c666d.jpg",
-    "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
-    "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
-   ],
-   "reason": "initial",
-   "diff": {}
-  },
-  "pending": {
+   "since": "2026-09-26",
    "struct_hash": "82189daa6d4e",
+   "image_count": 6,
    "images": [
     "NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg",
     "NNEditor/20260707/717db8b13117660bcde4f5d09174d67e.jpg",
@@ -3521,8 +3737,13 @@
     "NNEditor/20260707/0f8b4c2f5bd081d77861a8ee8e0e7826.jpg",
     "NNEditor/20260707/dded46a01bd7f0d41495d13d61679c14.jpg"
    ],
-   "first_seen": "2026-09-26",
-   "seen_count": 1
+   "reason": "image_count 5→6",
+   "diff": {
+    "added": [
+     "NNEditor/20260722/63196a6d9b5fcd8d629444289f150279.jpg"
+    ],
+    "removed": []
+   }
   }
  },
  "82": {
@@ -3557,31 +3778,42 @@
     2068
    ]
   ],
-  "history": [],
+  "history": [
+   {
+    "version": 1,
+    "minor": 0,
+    "since": "2026-09-12",
+    "struct_hash": "14858ce6684e",
+    "image_count": 3,
+    "images": [
+     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
+     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
+     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
+    ],
+    "reason": "initial",
+    "diff": {},
+    "to": "2026-09-26"
+   }
+  ],
   "current": {
-   "version": 1,
+   "version": 2,
    "minor": 0,
-   "since": "2026-09-12",
-   "struct_hash": "14858ce6684e",
-   "image_count": 3,
-   "images": [
-    "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
-    "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
-    "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
-   ],
-   "reason": "initial",
-   "diff": {}
-  },
-  "pending": {
+   "since": "2026-09-26",
    "struct_hash": "d5e6362c7588",
+   "image_count": 4,
    "images": [
     "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg",
     "NNEditor/20260824/3c9cf325d3459475e9c64a6560ba68c1.jpg",
     "NNEditor/20260824/63a277dc3804ae67b79fd223c11d567c.jpg",
     "NNEditor/20260824/00e6792cf661e76c17cadaa930b0c196.jpg"
    ],
-   "first_seen": "2026-09-26",
-   "seen_count": 1
+   "reason": "image_count 3→4",
+   "diff": {
+    "added": [
+     "NNEditor/20260722/b09753949b24e4a54f07e7d7c84f6067.jpg"
+    ],
+    "removed": []
+   }
   }
  }
 }
