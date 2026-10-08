@@ -590223,7 +590223,7 @@
   "2026-10-08": {
    "sources": {
     "ga4": "ok",
-    "clarity": "missing",
+    "clarity": "ok",
     "cafe24": "ok"
    },
    "products": {
@@ -590699,14 +590699,22 @@
       "sessions": 7,
       "engaged": 7
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 99,
+      "avg_scroll_depth": 29.9,
+      "dead_click_sessions": 4,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 12,
+      "active_ratio": 0.762,
+      "truncated": false
+     },
      "sales": {
       "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
-      "orders": 1,
-      "units": 1,
-      "gross": 55700,
-      "net": 55700,
-      "canceled_units": 0
+      "orders": 4,
+      "units": 5,
+      "gross": 272540,
+      "net": 272540,
+      "canceled_units": 2
      },
      "sample": "low",
      "by_source": {
@@ -590753,9 +590761,9 @@
       }
      },
      "derived": {
-      "cvr": 0.2,
-      "revenue_per_session": 11140,
-      "aov": 55700
+      "cvr": 0.8,
+      "revenue_per_session": 54508,
+      "aov": 68135
      }
     },
     "28": {
@@ -591363,8 +591371,23 @@
       "sessions": 6,
       "engaged": 6
      },
-     "clarity": null,
-     "sales": null,
+     "clarity": {
+      "sessions": 54,
+      "avg_scroll_depth": 30.5,
+      "dead_click_sessions": 3,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 5,
+      "active_ratio": 0.895,
+      "truncated": false
+     },
+     "sales": {
+      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+      "orders": 2,
+      "units": 2,
+      "gross": 137950,
+      "net": 137950,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -591411,6 +591434,11 @@
        },
        "exits": 1
       }
+     },
+     "derived": {
+      "cvr": 0.5,
+      "revenue_per_session": 34488,
+      "aov": 68975
      }
     },
     "47": {
@@ -591707,7 +591735,15 @@
       "sessions": 4,
       "engaged": 4
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 39,
+      "avg_scroll_depth": 46.2,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 2,
+      "active_ratio": 0.822,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -592147,7 +592183,15 @@
      },
      "channels": {},
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 15,
+      "avg_scroll_depth": 55.8,
+      "dead_click_sessions": 2,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 0.769,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {},
@@ -592434,8 +592478,23 @@
      },
      "channels": {},
      "entry": {},
-     "clarity": null,
-     "sales": null,
+     "clarity": {
+      "sessions": 29,
+      "avg_scroll_depth": 57.3,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 0.355,
+      "truncated": false
+     },
+     "sales": {
+      "name": "[자연하] 숨촉촉365 12g x 14포",
+      "orders": 1,
+      "units": 1,
+      "gross": 0,
+      "net": 0,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {},
      "by_channel": {}
@@ -592633,7 +592692,15 @@
      },
      "channels": {},
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 13,
+      "avg_scroll_depth": 57.2,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 2,
+      "active_ratio": 0.852,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {},
@@ -592642,11 +592709,11 @@
    },
    "unattributed": {
     "ga4_unknown_exit_events": 0,
-    "clarity_unmatched_sessions": 0
+    "clarity_unmatched_sessions": 236
    }
   }
  },
- "built_at": "2026-10-08 11:01:47 KST",
+ "built_at": "2026-10-09 07:00:08 KST",
  "period": {
   "range": "2026-10-02 ~ 2026-10-08",
   "dates": [
@@ -594816,26 +594883,26 @@
      "engaged": 517
     },
     "clarity": {
-     "sessions": 706,
-     "avg_scroll_depth": 28.1,
+     "sessions": 805,
+     "avg_scroll_depth": 28.3,
      "active_ratio": 0.759,
-     "dead_click_sessions": 28,
+     "dead_click_sessions": 32,
      "rage_click_sessions": 0,
-     "quickback_sessions": 44,
+     "quickback_sessions": 56,
      "truncated": false
     },
     "sales": {
-     "orders": 50,
-     "units": 50,
-     "gross": 6351322,
-     "net": 6351322,
-     "canceled_units": 0
+     "orders": 53,
+     "units": 54,
+     "gross": 6568162,
+     "net": 6568162,
+     "canceled_units": 2
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0525,
-     "revenue_per_session": 6665,
-     "aov": 127026
+     "cvr": 0.0556,
+     "revenue_per_session": 6892,
+     "aov": 123928
     }
    },
    "28": {
@@ -596873,26 +596940,26 @@
      "engaged": 332
     },
     "clarity": {
-     "sessions": 477,
-     "avg_scroll_depth": 31.4,
-     "active_ratio": 0.798,
-     "dead_click_sessions": 13,
+     "sessions": 531,
+     "avg_scroll_depth": 31.3,
+     "active_ratio": 0.808,
+     "dead_click_sessions": 16,
      "rage_click_sessions": 0,
-     "quickback_sessions": 33,
+     "quickback_sessions": 38,
      "truncated": false
     },
     "sales": {
-     "orders": 33,
-     "units": 39,
-     "gross": 946260,
-     "net": 946260,
+     "orders": 35,
+     "units": 41,
+     "gross": 1084210,
+     "net": 1084210,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.05,
-     "revenue_per_session": 1434,
-     "aov": 28675
+     "cvr": 0.053,
+     "revenue_per_session": 1643,
+     "aov": 30977
     }
    },
    "76": {
@@ -597980,26 +598047,26 @@
      "engaged": 108
     },
     "clarity": {
-     "sessions": 165,
-     "avg_scroll_depth": 42.9,
-     "active_ratio": 0.794,
-     "dead_click_sessions": 10,
+     "sessions": 194,
+     "avg_scroll_depth": 45.1,
+     "active_ratio": 0.729,
+     "dead_click_sessions": 11,
      "rage_click_sessions": 0,
-     "quickback_sessions": 13,
+     "quickback_sessions": 14,
      "truncated": false
     },
     "sales": {
-     "orders": 5,
-     "units": 5,
+     "orders": 6,
+     "units": 6,
      "gross": 215658,
      "net": 215658,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.025,
+     "cvr": 0.03,
      "revenue_per_session": 1078,
-     "aov": 43132
+     "aov": 35943
     }
    },
    "47": {
@@ -598724,12 +598791,12 @@
      "engaged": 170
     },
     "clarity": {
-     "sessions": 171,
-     "avg_scroll_depth": 44.2,
-     "active_ratio": 0.54,
-     "dead_click_sessions": 3,
+     "sessions": 210,
+     "avg_scroll_depth": 44.6,
+     "active_ratio": 0.593,
+     "dead_click_sessions": 4,
      "rage_click_sessions": 0,
-     "quickback_sessions": 7,
+     "quickback_sessions": 9,
      "truncated": false
     },
     "sales": {
@@ -600151,12 +600218,12 @@
      "engaged": 84
     },
     "clarity": {
-     "sessions": 131,
-     "avg_scroll_depth": 29.6,
-     "active_ratio": 0.786,
-     "dead_click_sessions": 6,
+     "sessions": 146,
+     "avg_scroll_depth": 32.3,
+     "active_ratio": 0.784,
+     "dead_click_sessions": 8,
      "rage_click_sessions": 0,
-     "quickback_sessions": 13,
+     "quickback_sessions": 14,
      "truncated": false
     },
     "sales": {
@@ -607121,12 +607188,12 @@
      "engaged": 14
     },
     "clarity": {
-     "sessions": 47,
-     "avg_scroll_depth": 44.0,
-     "active_ratio": 0.721,
+     "sessions": 60,
+     "avg_scroll_depth": 46.9,
+     "active_ratio": 0.749,
      "dead_click_sessions": 5,
      "rage_click_sessions": 0,
-     "quickback_sessions": 5,
+     "quickback_sessions": 7,
      "truncated": false
     },
     "sales": {
@@ -609867,11 +609934,11 @@
    "ga4": {
     "last": "2026-10-08",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    },
    "clarity": {
-    "last": "2026-10-07",
+    "last": "2026-10-08",
     "stale_days": 0,
     "raw_gap": 1,
     "normal_lag": 1
@@ -609879,13 +609946,13 @@
    "cafe24": {
     "last": "2026-10-08",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    }
   },
   "unattributed": {
    "ga4_unknown_exit_events": 0,
-   "clarity_unmatched_sessions": 1489
+   "clarity_unmatched_sessions": 1725
   }
  }
 }
