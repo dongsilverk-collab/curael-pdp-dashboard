@@ -1,0 +1,110 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>[함께구매 특가] 베리베라진 30포</title><style>
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",
+ "Malgun Gothic",sans-serif;color:#1D2624;background:#F6F8F8}
+.wrap{max-width:1040px;margin:0 auto;padding:22px 16px 72px}
+h1{font-size:21px;margin:0 0 2px}
+h2{font-size:16px;margin:34px 0 10px}
+.sub{color:#6B7876;font-size:13px;margin:0 0 18px}
+.note{background:#FFF6E5;border:1px solid #F0DCB4;border-radius:8px;
+ padding:11px 13px;font-size:13px;color:#6B5A34;margin:0 0 20px}
+.note b{color:#4A3D22}
+/* 수집 끊김은 참고사항이 아니라 경보다. 흐린 노란 알림과 같은 무게로 그리면
+   그냥 지나치게 된다. */
+.alert{background:#FDECEA;border:1px solid #F0B4AE;border-left:5px solid #C0392B;
+ border-radius:8px;padding:13px 15px;font-size:13px;color:#7A2E24;margin:0 0 20px}
+.alert b{color:#5C1E17}
+.alert ul{margin:8px 0;padding-left:20px}
+.alert li{margin:4px 0}
+.ok{background:#EDF6F1;border:1px solid #BFE0CD;border-radius:8px;
+ padding:9px 13px;font-size:12px;color:#2E6B4A;margin:0 0 20px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.kpi{background:#fff;border:1px solid #E3E9E8;border-radius:9px;padding:13px 14px}
+.kpi-v{font-size:23px;font-weight:650;letter-spacing:-.01em}
+.kpi-l{font-size:12px;color:#6B7876;margin-top:3px}
+.kpi-s{font-size:11px;color:#9AA5A3;margin-top:1px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px;
+ border:1px solid #E3E9E8;border-radius:9px;overflow:hidden}
+th,td{padding:9px 11px;text-align:left;border-bottom:1px solid #EEF2F1;
+ white-space:nowrap;vertical-align:middle}
+th{font-size:11px;color:#6B7876;font-weight:600;background:#FBFCFC}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+/* 막대와 값을 한 칸에 나란히 — 열을 나누면 숫자가 오른쪽 끝으로 밀려
+   어느 막대의 값인지 확인하려고 눈이 좌우로 왕복하게 된다. */
+td.bar{white-space:nowrap}
+td.bar svg{vertical-align:middle}
+.barval{margin-left:9px;font-variant-numeric:tabular-nums;color:#3D4C49}
+/* 스크롤 도달 지점 표시. 구간 위치와 스크롤 %가 같은 좌표계(상세영역 기준)라
+   바로 겹쳐 놓을 수 있다. Clarity 평균은 페이지 전체 기준이라 여기 못 얹는다. */
+.mark{margin-top:5px;font-size:11px;color:#8A6D3B;background:#FCF3E3;
+ border-left:3px solid #E0A94A;padding:2px 7px;border-radius:0 3px 3px 0;
+ display:block;white-space:normal;max-width:210px;line-height:1.35}
+/* 출처가 다르면 색도 달라야 한다 — 우리 측정(주황)과 Clarity(파랑)를 같은 색으로
+   그리면 좌표계가 다른 두 수를 같은 것으로 읽게 된다. */
+.mark.clarity{color:#2A5C7A;background:#EAF2F7;border-left-color:#5A93BC}
+tr:last-child td{border-bottom:0}
+a{color:#15776A;text-decoration:none}
+a:hover{text-decoration:underline}
+.thumb{width:34px;height:34px;object-fit:cover;border-radius:5px;
+ border:1px solid #E3E9E8;background:#F1F4F4;display:block}
+.shot{width:74px;border-radius:5px;border:1px solid #E3E9E8;display:block;
+ background:#F1F4F4}
+.badge{font-size:10px;background:#EEF2F1;color:#6B7876;border-radius:4px;
+ padding:1px 5px;margin-left:5px}
+.badge.low{background:#F4E9E7;color:#9C5A4E}
+.dim{opacity:.55}
+.hi{background:#FDF3E7}
+.muted{color:#9AA5A3}
+
+/* 탭. 라디오 + 형제 선택자로 만든다 — 외부 JS 없이 동작해야 한다는 원칙 때문이다.
+   블록이 9개까지 늘어 한 페이지 스크롤로는 아무도 끝까지 안 본다. */
+.tabs{margin:26px 0 0}
+.tabs input{position:absolute;opacity:0;pointer-events:none}
+.tabnav{display:flex;gap:2px;flex-wrap:wrap;border-bottom:2px solid #E3E9E8}
+.tabnav label{padding:9px 15px;font-size:13px;color:#6B7876;cursor:pointer;
+ border-radius:7px 7px 0 0;white-space:nowrap;user-select:none;
+ border:1px solid transparent;border-bottom:0;margin-bottom:-2px}
+.tabnav label:hover{color:#15776A;background:#F1F5F4}
+.tabpane{display:none;padding-top:2px}
+.tabpane h2:first-of-type{margin-top:20px}
+#t1:checked~.tabnav label[for=t1],#t2:checked~.tabnav label[for=t2],
+#t3:checked~.tabnav label[for=t3],#t4:checked~.tabnav label[for=t4],
+#t5:checked~.tabnav label[for=t5]{
+ color:#15776A;font-weight:650;background:#fff;border-color:#E3E9E8;
+ border-bottom:2px solid #fff}
+#t1:checked~#p1,#t2:checked~#p2,#t3:checked~#p3,
+#t4:checked~#p4,#t5:checked~#p5{display:block}
+/* 키보드 이동 시 어디에 있는지 보이게 한다 */
+.tabs input:focus-visible+.tabnav label,.tabnav label:focus-within{outline:2px solid #15776A}
+
+/* 광고 집행일. 광고 전후를 눈으로 갈라 보려고 왼쪽에 띠를 세운다 —
+   배경색만 칠하면 표본 부족 회색 처리와 섞여 구분이 안 된다. */
+tr.adday td:first-child{box-shadow:inset 3px 0 0 #C77B2E}
+.adtag{font-size:10px;background:#FBEEDF;color:#8A5A22;border-radius:4px;
+ padding:1px 5px;margin-left:5px}
+/* 판정 카드. 읽는 사람이 다음에 뭘 할지 한 줄로 가져가게 만든다. */
+.verdict{border:1px solid #E3E9E8;border-left:5px solid #15776A;border-radius:8px;
+ padding:15px 17px;margin:0 0 16px;background:#fff}
+.verdict.warn{border-left-color:#C77B2E;background:#FFFBF5}
+.verdict.bad{border-left-color:#C0392B;background:#FDF6F5}
+.verdict h3{margin:0 0 7px;font-size:15px}
+.verdict .why{font-size:13px;color:#5A6664;margin:0 0 10px;line-height:1.6}
+.verdict .do{font-size:13px;color:#1D2624;background:#F1F5F4;border-radius:6px;
+ padding:9px 12px;margin:0}
+.verdict .do b{color:#15776A}
+.verdict .hold{font-size:12px;color:#8A6D3B;margin:9px 0 0}
+
+/* 미확정 데이터. GA4 는 유입 정보를 세션 종료 후에 붙이고 약 48시간 확정된다.
+   당일 행은 항상 미분류가 높게 나오는데(실측 8/21 69% vs 확정일 4~7%)
+   확정된 날과 같은 모양으로 그리면 그 숫자를 결과로 읽게 된다. */
+tr.pending td{color:#9AA5A3;font-style:italic}
+tr.pending td:first-child{box-shadow:inset 3px 0 0 #9AA5A3}
+.pendtag{font-size:10px;background:#EEF2F1;color:#6B7876;border-radius:4px;
+ padding:1px 5px;margin-left:5px;font-style:normal}
+footer{margin-top:34px;font-size:12px;color:#9AA5A3}
+
+tr.evt td{background:#FDF3E7;border-top:2px solid #C0392B;border-bottom:2px solid #C0392B;
+  font-size:12px;color:#7A4A12;padding:6px 8px}
+tr.evt td b{color:#C0392B}
+</style></head><body><div class="wrap"><p class="sub"><a href="index.html">&larr; 전체 목록</a></p><h1>[함께구매 특가] 베리베라진 30포</h1><p class="sub">83번 · 이미지 –장 · v0.0 · 2026-10-08 ~ 2026-10-14 기준 · <a href="https://curaelmall.com/product/detail.html?product_no=83" target="_blank" rel="noopener">상세페이지 열기</a></p><div class="note">세션 <b>2건</b>으로 표본이 부족합니다. 아래 비율은 참고용이며 판단 근거로 쓰기엔 이릅니다.</div><div class="kpis"><div class="kpi"><div class="kpi-v">2</div><div class="kpi-l">세션</div><div class="kpi-s">pdp_exit 기준</div></div><div class="kpi"><div class="kpi-v">100% (2/2)</div><div class="kpi-l">상세 미도달</div><div class="kpi-s">이미지를 못 봄</div></div><div class="kpi"><div class="kpi-v">0% (0/2)</div><div class="kpi-l">첫 구간 이탈</div><div class="kpi-s">S01에서 나감</div></div><div class="kpi"><div class="kpi-v">0% (0/2)</div><div class="kpi-l">끝까지 봄</div><div class="kpi-s"></div></div><div class="kpi"><div class="kpi-v">5초</div><div class="kpi-l">평균 체류</div><div class="kpi-s"></div></div><div class="kpi"><div class="kpi-v">100%</div><div class="kpi-l">활동 비율</div><div class="kpi-s">총 체류 중 실제로 움직인 시간</div></div><div class="kpi"><div class="kpi-v">23.0%</div><div class="kpi-l">Clarity 스크롤</div><div class="kpi-s">세션 1 · 분노 0 · 데드 0 · 되돌아감 0</div></div></div><div class="note">구간 정보가 없어 이미지별 분석을 만들 수 없습니다.</div></div></body></html>
