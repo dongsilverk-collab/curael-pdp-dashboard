@@ -672224,108 +672224,113 @@
      "devices": {
       "mobile": {
        "section_reach": {
-        "1": 3,
-        "2": 3,
-        "3": 3,
-        "4": 2,
-        "5": 2,
-        "6": 2,
-        "7": 2,
-        "8": 2,
-        "9": 2,
-        "10": 2,
-        "11": 2,
-        "12": 2,
-        "13": 2,
-        "14": 2,
-        "15": 2,
-        "16": 2,
-        "17": 2,
-        "18": 2,
-        "19": 2,
-        "20": 2
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 6,
+        "5": 5,
+        "6": 5,
+        "7": 5,
+        "8": 4,
+        "9": 4,
+        "10": 4,
+        "11": 4,
+        "12": 4,
+        "13": 4,
+        "14": 4,
+        "15": 4,
+        "16": 4,
+        "17": 4,
+        "18": 4,
+        "19": 4,
+        "20": 4
        },
        "exit_hist": {
-        "0": 4,
-        "3": 2,
-        "20": 2
+        "0": 35,
+        "3": 4,
+        "20": 4,
+        "4": 2
        },
        "events": {
-        "pdp_section": 43,
-        "pdp_scroll": 13,
-        "pdp_exit": 8,
-        "pdp_cta_view": 3,
-        "pdp_review": 2
+        "pdp_section": 97,
+        "pdp_exit": 45,
+        "pdp_scroll": 30,
+        "pdp_cta_view": 12,
+        "pdp_review": 3
        },
-       "exit_events": 8,
-       "sum_seconds": 539,
+       "exit_events": 45,
+       "sum_seconds": 1253,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
+       "sum_saw_cta": 15,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "scroll_reach": {
-        "10": 3,
-        "100": 2,
-        "25": 2,
-        "50": 2,
-        "75": 2,
-        "90": 2
+       "zone_clicks": {
+        "상단메뉴": 4,
+        "상세이미지": 1
        },
-       "sessions": 8,
+       "scroll_reach": {
+        "10": 8,
+        "25": 7,
+        "50": 4,
+        "75": 4,
+        "90": 4,
+        "100": 3
+       },
+       "sessions": 45,
        "section_reach_mono": {
-        "20": 2,
-        "19": 2,
-        "18": 2,
-        "17": 2,
-        "16": 2,
-        "15": 2,
-        "14": 2,
-        "13": 2,
-        "12": 2,
-        "11": 2,
-        "10": 2,
-        "9": 2,
-        "8": 2,
-        "7": 2,
-        "6": 2,
-        "5": 2,
-        "4": 2,
-        "3": 3,
-        "2": 3,
-        "1": 3
+        "20": 4,
+        "19": 4,
+        "18": 4,
+        "17": 4,
+        "16": 4,
+        "15": 4,
+        "14": 4,
+        "13": 4,
+        "12": 4,
+        "11": 4,
+        "10": 4,
+        "9": 4,
+        "8": 4,
+        "7": 5,
+        "6": 5,
+        "5": 5,
+        "4": 6,
+        "3": 8,
+        "2": 8,
+        "1": 8
        },
        "reach_repaired_sections": 0,
        "section_reach_pct": {
-        "1": 0.375,
-        "2": 0.375,
-        "3": 0.375,
-        "4": 0.25,
-        "5": 0.25,
-        "6": 0.25,
-        "7": 0.25,
-        "8": 0.25,
-        "9": 0.25,
-        "10": 0.25,
-        "11": 0.25,
-        "12": 0.25,
-        "13": 0.25,
-        "14": 0.25,
-        "15": 0.25,
-        "16": 0.25,
-        "17": 0.25,
-        "18": 0.25,
-        "19": 0.25,
-        "20": 0.25
+        "1": 0.1778,
+        "2": 0.1778,
+        "3": 0.1778,
+        "4": 0.1333,
+        "5": 0.1111,
+        "6": 0.1111,
+        "7": 0.1111,
+        "8": 0.0889,
+        "9": 0.0889,
+        "10": 0.0889,
+        "11": 0.0889,
+        "12": 0.0889,
+        "13": 0.0889,
+        "14": 0.0889,
+        "15": 0.0889,
+        "16": 0.0889,
+        "17": 0.0889,
+        "18": 0.0889,
+        "19": 0.0889,
+        "20": 0.0889
        },
        "section_dropoff": {
         "2": 0.0,
         "3": 0.0,
-        "4": 0.125,
-        "5": 0.0,
+        "4": 0.0444,
+        "5": 0.0222,
         "6": 0.0,
         "7": 0.0,
-        "8": 0.0,
+        "8": 0.0222,
         "9": 0.0,
         "10": 0.0,
         "11": 0.0,
@@ -672341,144 +672346,148 @@
        },
        "reach_noise": 0,
        "biggest_drop_section": 3,
-       "biggest_drop_people": 2,
-       "biggest_drop_rate": 0.25,
-       "avg_seconds": 67.375,
+       "biggest_drop_people": 4,
+       "biggest_drop_rate": 0.0889,
+       "avg_seconds": 27.8444,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.5,
+       "avg_saw_cta": 0.3333,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
        "scroll_curve": {
-        "10": 3,
-        "25": 2,
-        "50": 2,
-        "75": 2,
-        "90": 2,
-        "100": 2
+        "10": 8,
+        "25": 7,
+        "50": 4,
+        "75": 4,
+        "90": 4,
+        "100": 3
        },
        "scroll_curve_pct": {
-        "10": 0.375,
-        "25": 0.25,
-        "50": 0.25,
-        "75": 0.25,
-        "90": 0.25,
-        "100": 0.25
+        "10": 0.1778,
+        "25": 0.1556,
+        "50": 0.0889,
+        "75": 0.0889,
+        "90": 0.0889,
+        "100": 0.0667
        },
-       "exit_s00": 4,
+       "exit_s00": 35,
        "exit_s01": 0,
-       "completed": 2,
-       "s00_rate": 0.5,
+       "completed": 4,
+       "s00_rate": 0.7778,
        "s01_rate": 0.0,
-       "done_rate": 0.25
+       "done_rate": 0.0889
       },
       "_all": {
        "section_reach": {
-        "1": 3,
-        "2": 3,
-        "3": 3,
-        "4": 2,
-        "5": 2,
-        "6": 2,
-        "7": 2,
-        "8": 2,
-        "9": 2,
-        "10": 2,
-        "11": 2,
-        "12": 2,
-        "13": 2,
-        "14": 2,
-        "15": 2,
-        "16": 2,
-        "17": 2,
-        "18": 2,
-        "19": 2,
-        "20": 2
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 6,
+        "5": 5,
+        "6": 5,
+        "7": 5,
+        "8": 4,
+        "9": 4,
+        "10": 4,
+        "11": 4,
+        "12": 4,
+        "13": 4,
+        "14": 4,
+        "15": 4,
+        "16": 4,
+        "17": 4,
+        "18": 4,
+        "19": 4,
+        "20": 4
        },
        "exit_hist": {
-        "0": 4,
-        "3": 2,
-        "20": 2
+        "0": 35,
+        "3": 4,
+        "20": 4,
+        "4": 2
        },
        "events": {
-        "pdp_section": 43,
-        "pdp_scroll": 13,
-        "pdp_exit": 8,
-        "pdp_cta_view": 3,
-        "pdp_review": 2
+        "pdp_section": 97,
+        "pdp_exit": 45,
+        "pdp_scroll": 30,
+        "pdp_cta_view": 12,
+        "pdp_review": 3
        },
        "scroll_reach": {
-        "10": 3,
-        "100": 2,
-        "25": 2,
-        "50": 2,
-        "75": 2,
-        "90": 2
+        "10": 8,
+        "25": 7,
+        "50": 4,
+        "75": 4,
+        "90": 4,
+        "100": 3
        },
-       "zone_clicks": {},
+       "zone_clicks": {
+        "상단메뉴": 4,
+        "상세이미지": 1
+       },
        "zone_buys": {},
        "buyer_depth": {},
-       "exit_events": 8,
-       "sum_seconds": 539,
+       "exit_events": 45,
+       "sum_seconds": 1253,
        "sum_bounce_3s": 0,
-       "sum_saw_cta": 4,
+       "sum_saw_cta": 15,
        "sum_saw_review": 0,
        "sum_clicked_cart": 0,
        "sum_clicked_buy": 0,
-       "sessions": 8,
+       "sessions": 45,
        "section_reach_mono": {
-        "20": 2,
-        "19": 2,
-        "18": 2,
-        "17": 2,
-        "16": 2,
-        "15": 2,
-        "14": 2,
-        "13": 2,
-        "12": 2,
-        "11": 2,
-        "10": 2,
-        "9": 2,
-        "8": 2,
-        "7": 2,
-        "6": 2,
-        "5": 2,
-        "4": 2,
-        "3": 3,
-        "2": 3,
-        "1": 3
+        "20": 4,
+        "19": 4,
+        "18": 4,
+        "17": 4,
+        "16": 4,
+        "15": 4,
+        "14": 4,
+        "13": 4,
+        "12": 4,
+        "11": 4,
+        "10": 4,
+        "9": 4,
+        "8": 4,
+        "7": 5,
+        "6": 5,
+        "5": 5,
+        "4": 6,
+        "3": 8,
+        "2": 8,
+        "1": 8
        },
        "reach_repaired_sections": 0,
        "section_reach_pct": {
-        "1": 0.375,
-        "2": 0.375,
-        "3": 0.375,
-        "4": 0.25,
-        "5": 0.25,
-        "6": 0.25,
-        "7": 0.25,
-        "8": 0.25,
-        "9": 0.25,
-        "10": 0.25,
-        "11": 0.25,
-        "12": 0.25,
-        "13": 0.25,
-        "14": 0.25,
-        "15": 0.25,
-        "16": 0.25,
-        "17": 0.25,
-        "18": 0.25,
-        "19": 0.25,
-        "20": 0.25
+        "1": 0.1778,
+        "2": 0.1778,
+        "3": 0.1778,
+        "4": 0.1333,
+        "5": 0.1111,
+        "6": 0.1111,
+        "7": 0.1111,
+        "8": 0.0889,
+        "9": 0.0889,
+        "10": 0.0889,
+        "11": 0.0889,
+        "12": 0.0889,
+        "13": 0.0889,
+        "14": 0.0889,
+        "15": 0.0889,
+        "16": 0.0889,
+        "17": 0.0889,
+        "18": 0.0889,
+        "19": 0.0889,
+        "20": 0.0889
        },
        "section_dropoff": {
         "2": 0.0,
         "3": 0.0,
-        "4": 0.125,
-        "5": 0.0,
+        "4": 0.0444,
+        "5": 0.0222,
         "6": 0.0,
         "7": 0.0,
-        "8": 0.0,
+        "8": 0.0222,
         "9": 0.0,
         "10": 0.0,
         "11": 0.0,
@@ -672494,69 +672503,90 @@
        },
        "reach_noise": 0,
        "biggest_drop_section": 3,
-       "biggest_drop_people": 2,
-       "biggest_drop_rate": 0.25,
-       "avg_seconds": 67.375,
+       "biggest_drop_people": 4,
+       "biggest_drop_rate": 0.0889,
+       "avg_seconds": 27.8444,
        "avg_bounce_3s": 0.0,
-       "avg_saw_cta": 0.5,
+       "avg_saw_cta": 0.3333,
        "avg_saw_review": 0.0,
        "avg_clicked_cart": 0.0,
        "avg_clicked_buy": 0.0,
        "scroll_curve": {
-        "10": 3,
-        "25": 2,
-        "50": 2,
-        "75": 2,
-        "90": 2,
-        "100": 2
+        "10": 8,
+        "25": 7,
+        "50": 4,
+        "75": 4,
+        "90": 4,
+        "100": 3
        },
        "scroll_curve_pct": {
-        "10": 0.375,
-        "25": 0.25,
-        "50": 0.25,
-        "75": 0.25,
-        "90": 0.25,
-        "100": 0.25
+        "10": 0.1778,
+        "25": 0.1556,
+        "50": 0.0889,
+        "75": 0.0889,
+        "90": 0.0889,
+        "100": 0.0667
        },
-       "exit_s00": 4,
+       "exit_s00": 35,
        "exit_s01": 0,
-       "completed": 2,
-       "s00_rate": 0.5,
+       "completed": 4,
+       "s00_rate": 0.7778,
        "s01_rate": 0.0,
-       "done_rate": 0.25
+       "done_rate": 0.0889
       }
      },
      "channels": {
-      "Paid Social": 6,
-      "Direct": 1,
-      "Organic Search": 1
+      "Paid Social": 21,
+      "Direct": 18,
+      "Organic Social": 3,
+      "Organic Search": 2,
+      "Organic Shopping": 1
      },
      "entry": {
-      "sessions": 6,
-      "engaged": 6
+      "sessions": 34,
+      "engaged": 34
      },
      "clarity": null,
      "sales": null,
-     "sample": "low",
+     "sample": "ok",
      "by_source": {
-      "ID 120253355862720414 (이름 미설정)": {
+      "_비광고": {
        "exit_hist": {
-        "0": 2,
+        "0": 14,
         "3": 2,
         "20": 1
        },
-       "exits": 5
+       "exits": 17
       },
-      "_비광고": {
+      "ID 120253355862720414 (이름 미설정)": {
        "exit_hist": {
-        "0": 1,
-        "20": 1
+        "0": 13,
+        "3": 2,
+        "20": 2
        },
-       "exits": 2
+       "exits": 17
       },
       "ID 120253355785090414 (이름 미설정)": {
        "exit_hist": {
+        "0": 7
+       },
+       "exits": 7
+      },
+      "img_부담이었는데_베지셀": {
+       "exit_hist": {
+        "4": 2
+       },
+       "exits": 2
+      },
+      "YT3-8Do5DlrM2Yz4gOm1zkbVfMj14VHvzVv48ycTX5-Jkv0Fjzh7Ww0FqIjd-OwHLJ3devNn3_vP6-CqbQhUWF89pv2NKxe0h2sy": {
+       "exit_hist": {
         "0": 1
+       },
+       "exits": 1
+      },
+      "gif_만들기3분할_베지셀": {
+       "exit_hist": {
+        "20": 1
        },
        "exits": 1
       }
@@ -672564,23 +672594,1411 @@
      "by_channel": {
       "Paid Social": {
        "exit_hist": {
-        "0": 3,
+        "0": 17,
         "3": 2,
-        "20": 1
+        "20": 2
        },
-       "exits": 6
+       "exits": 21
       },
       "Direct": {
+       "exit_hist": {
+        "0": 16,
+        "3": 2
+       },
+       "exits": 18
+      },
+      "Organic Social": {
+       "exit_hist": {
+        "4": 2,
+        "20": 1
+       },
+       "exits": 3
+      },
+      "Organic Search": {
+       "exit_hist": {
+        "0": 1,
+        "20": 1
+       },
+       "exits": 2
+      },
+      "Organic Shopping": {
        "exit_hist": {
         "0": 1
        },
        "exits": 1
+      }
+     }
+    },
+    "31": {
+     "name": "[자연하] 커큐진 2g x 30포",
+     "slug": "자연하-커큐진-2g-x-30포",
+     "url": "https://curaelmall.com/product/detail.html?product_no=31",
+     "section_total": 29,
+     "version": "v5.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_sign.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_pharmacist.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_team.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_seal.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_hero_photo.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_sec2_photo.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c1_turmeric_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c1_turmeric_bot.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c2_water_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c2_water_bot.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c3_micelle_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c3_micelle_bot.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c4_yeast_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c4_yeast_bot.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c5_haccp_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_haccp.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c5_haccp_bot.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c6_fire_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_c6_fire_bot.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_point01_turmeric.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_glasses.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_yeast_bowl.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_yeast_chart.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_pepper.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_pk_chart.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_box_turmeric.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_pharmacist_point.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_box_small.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p31_haccp.jpg"
+     ],
+     "image_bytes": [
+      4557,
+      19035,
+      16519,
+      7037,
+      50541,
+      90990,
+      6611,
+      3872,
+      1783,
+      4574,
+      3526,
+      3037,
+      6636,
+      4598,
+      4210,
+      9679,
+      3624,
+      2932,
+      3229,
+      51167,
+      23600,
+      80202,
+      48485,
+      73094,
+      23233,
+      84713,
+      30056,
+      13527,
+      9679
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.0268
+      ],
+      [
+       0.0268,
+       0.1233
+      ],
+      [
+       0.1233,
+       0.1304
+      ],
+      [
+       0.1304,
+       0.1859
+      ],
+      [
+       0.1859,
+       0.2508
+      ],
+      [
+       0.2508,
+       0.2901
+      ],
+      [
+       0.2901,
+       0.3116
+      ],
+      [
+       0.3116,
+       0.328
+      ],
+      [
+       0.328,
+       0.3495
+      ],
+      [
+       0.3495,
+       0.3658
+      ],
+      [
+       0.3658,
+       0.3873
+      ],
+      [
+       0.3873,
+       0.4037
+      ],
+      [
+       0.4037,
+       0.4252
+      ],
+      [
+       0.4252,
+       0.4415
+      ],
+      [
+       0.4415,
+       0.4631
+      ],
+      [
+       0.4631,
+       0.5135
+      ],
+      [
+       0.5135,
+       0.5259
+      ],
+      [
+       0.5259,
+       0.5474
+      ],
+      [
+       0.5474,
+       0.5637
+      ],
+      [
+       0.5637,
+       0.5884
+      ],
+      [
+       0.5884,
+       0.6136
+      ],
+      [
+       0.6136,
+       0.6406
+      ],
+      [
+       0.6406,
+       0.6885
+      ],
+      [
+       0.6885,
+       0.7205
+      ],
+      [
+       0.7205,
+       0.7494
+      ],
+      [
+       0.7494,
+       0.8041
+      ],
+      [
+       0.8041,
+       0.8878
+      ],
+      [
+       0.8878,
+       0.9496
+      ],
+      [
+       0.9496,
+       1.0
+      ]
+     ],
+     "layout": {
+      "detail_start_pct": 14.7,
+      "detail_end_pct": 79.2,
+      "measured_at": "2026-08-10"
+     },
+     "image_bytes_total": 684746,
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1
+       },
+       "exit_hist": {
+        "29": 2
+       },
+       "events": {
+        "pdp_section": 23,
+        "pdp_scroll": 5,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 292,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "75": 2,
+        "10": 1,
+        "25": 1,
+        "50": 1
+       },
+       "sessions": 2,
+       "section_reach_mono": {
+        "29": 1,
+        "28": 1,
+        "27": 1,
+        "26": 1,
+        "25": 1,
+        "24": 1,
+        "23": 1,
+        "22": 1,
+        "21": 1,
+        "20": 1,
+        "19": 1,
+        "18": 1,
+        "17": 1,
+        "16": 1,
+        "15": 1,
+        "14": 1,
+        "13": 1,
+        "12": 1,
+        "11": 1,
+        "10": 1,
+        "9": 1,
+        "8": 1,
+        "7": 1,
+        "6": 1,
+        "5": 1,
+        "4": 1,
+        "3": 1,
+        "2": 1,
+        "1": 1
+       },
+       "reach_repaired_sections": 6,
+       "section_reach_pct": {
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.5,
+        "5": 0.5,
+        "6": 0.5,
+        "7": 0.5,
+        "8": 0.5,
+        "9": 0.5,
+        "10": 0.5,
+        "11": 0.5,
+        "12": 0.5,
+        "13": 0.5,
+        "14": 0.5,
+        "15": 0.5,
+        "16": 0.5,
+        "17": 0.5,
+        "18": 0.5,
+        "19": 0.5,
+        "20": 0.5,
+        "21": 0.5,
+        "22": 0.5,
+        "23": 0.5,
+        "24": 0.5,
+        "25": 0.5,
+        "26": 0.5,
+        "27": 0.5,
+        "28": 0.5,
+        "29": 0.5
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0,
+        "19": 0.0,
+        "20": 0.0,
+        "21": 0.0,
+        "22": 0.0,
+        "23": 0.0,
+        "24": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0,
+        "28": 0.0,
+        "29": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 146.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {
+        "10": 2,
+        "25": 2,
+        "50": 2,
+        "75": 2,
+        "90": 0,
+        "100": 0
+       },
+       "scroll_curve_pct": {
+        "10": 1.0,
+        "25": 1.0,
+        "50": 1.0,
+        "75": 1.0,
+        "90": 0.0,
+        "100": 0.0
+       },
+       "exit_s00": 0,
+       "exit_s01": 0,
+       "completed": 2,
+       "s00_rate": 0.0,
+       "s01_rate": 0.0,
+       "done_rate": 1.0
       },
+      "_all": {
+       "section_reach": {
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1
+       },
+       "exit_hist": {
+        "29": 2
+       },
+       "events": {
+        "pdp_section": 23,
+        "pdp_scroll": 5,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1
+       },
+       "scroll_reach": {
+        "75": 2,
+        "10": 1,
+        "25": 1,
+        "50": 1
+       },
+       "zone_clicks": {},
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 2,
+       "sum_seconds": 292,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_mono": {
+        "29": 1,
+        "28": 1,
+        "27": 1,
+        "26": 1,
+        "25": 1,
+        "24": 1,
+        "23": 1,
+        "22": 1,
+        "21": 1,
+        "20": 1,
+        "19": 1,
+        "18": 1,
+        "17": 1,
+        "16": 1,
+        "15": 1,
+        "14": 1,
+        "13": 1,
+        "12": 1,
+        "11": 1,
+        "10": 1,
+        "9": 1,
+        "8": 1,
+        "7": 1,
+        "6": 1,
+        "5": 1,
+        "4": 1,
+        "3": 1,
+        "2": 1,
+        "1": 1
+       },
+       "reach_repaired_sections": 6,
+       "section_reach_pct": {
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.5,
+        "5": 0.5,
+        "6": 0.5,
+        "7": 0.5,
+        "8": 0.5,
+        "9": 0.5,
+        "10": 0.5,
+        "11": 0.5,
+        "12": 0.5,
+        "13": 0.5,
+        "14": 0.5,
+        "15": 0.5,
+        "16": 0.5,
+        "17": 0.5,
+        "18": 0.5,
+        "19": 0.5,
+        "20": 0.5,
+        "21": 0.5,
+        "22": 0.5,
+        "23": 0.5,
+        "24": 0.5,
+        "25": 0.5,
+        "26": 0.5,
+        "27": 0.5,
+        "28": 0.5,
+        "29": 0.5
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0,
+        "19": 0.0,
+        "20": 0.0,
+        "21": 0.0,
+        "22": 0.0,
+        "23": 0.0,
+        "24": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0,
+        "28": 0.0,
+        "29": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 146.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {
+        "10": 2,
+        "25": 2,
+        "50": 2,
+        "75": 2,
+        "90": 0,
+        "100": 0
+       },
+       "scroll_curve_pct": {
+        "10": 1.0,
+        "25": 1.0,
+        "50": 1.0,
+        "75": 1.0,
+        "90": 0.0,
+        "100": 0.0
+       },
+       "exit_s00": 0,
+       "exit_s01": 0,
+       "completed": 2,
+       "s00_rate": 0.0,
+       "s01_rate": 0.0,
+       "done_rate": 1.0
+      }
+     },
+     "channels": {
+      "Organic Social": 2
+     },
+     "entry": {},
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "29": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Organic Social": {
+       "exit_hist": {
+        "29": 2
+       },
+       "exits": 2
+      }
+     }
+    },
+    "32": {
+     "name": "[자연하] 베리베라진 20ml x 30포",
+     "slug": "자연하-베리베라진-20ml-x-30포",
+     "url": "https://curaelmall.com/product/detail.html?product_no=32",
+     "section_total": 13,
+     "version": "v6.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_pharmacist.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_team.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_official_badge.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_hero.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_aronia_tree.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_aronia_bowl.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_goji.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_card_aronia.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_card_goji.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_card_aloe.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_card_hovenia.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_product.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p32_haccp.jpg"
+     ],
+     "image_bytes": [
+      21827,
+      15537,
+      7462,
+      63884,
+      115806,
+      81536,
+      118285,
+      17469,
+      23400,
+      17674,
+      26804,
+      79191,
+      9563
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.1688
+      ],
+      [
+       0.1688,
+       0.1793
+      ],
+      [
+       0.1793,
+       0.2574
+      ],
+      [
+       0.2574,
+       0.3298
+      ],
+      [
+       0.3298,
+       0.403
+      ],
+      [
+       0.403,
+       0.4733
+      ],
+      [
+       0.4733,
+       0.547
+      ],
+      [
+       0.547,
+       0.6225
+      ],
+      [
+       0.6225,
+       0.6982
+      ],
+      [
+       0.6982,
+       0.7737
+      ],
+      [
+       0.7737,
+       0.8494
+      ],
+      [
+       0.8494,
+       0.9219
+      ],
+      [
+       0.9219,
+       1.0
+      ]
+     ],
+     "layout": {
+      "detail_start_pct": 18.5,
+      "detail_end_pct": 81.6,
+      "measured_at": "2026-08-10"
+     },
+     "image_bytes_total": 598438,
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1
+       },
+       "exit_hist": {
+        "13": 2
+       },
+       "events": {
+        "pdp_section": 13,
+        "pdp_scroll": 4,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 60,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "scroll_reach": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1
+       },
+       "sessions": 2,
+       "section_reach_mono": {
+        "13": 1,
+        "12": 1,
+        "11": 1,
+        "10": 1,
+        "9": 1,
+        "8": 1,
+        "7": 1,
+        "6": 1,
+        "5": 1,
+        "4": 1,
+        "3": 1,
+        "2": 1,
+        "1": 1
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.5,
+        "5": 0.5,
+        "6": 0.5,
+        "7": 0.5,
+        "8": 0.5,
+        "9": 0.5,
+        "10": 0.5,
+        "11": 0.5,
+        "12": 0.5,
+        "13": 0.5
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 30.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 0,
+        "100": 0
+       },
+       "scroll_curve_pct": {
+        "10": 0.5,
+        "25": 0.5,
+        "50": 0.5,
+        "75": 0.5,
+        "90": 0.0,
+        "100": 0.0
+       },
+       "exit_s00": 0,
+       "exit_s01": 0,
+       "completed": 2,
+       "s00_rate": 0.0,
+       "s01_rate": 0.0,
+       "done_rate": 1.0
+      },
+      "_all": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1
+       },
+       "exit_hist": {
+        "13": 2
+       },
+       "events": {
+        "pdp_section": 13,
+        "pdp_scroll": 4,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1
+       },
+       "zone_clicks": {},
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 2,
+       "sum_seconds": 60,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_mono": {
+        "13": 1,
+        "12": 1,
+        "11": 1,
+        "10": 1,
+        "9": 1,
+        "8": 1,
+        "7": 1,
+        "6": 1,
+        "5": 1,
+        "4": 1,
+        "3": 1,
+        "2": 1,
+        "1": 1
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.5,
+        "5": 0.5,
+        "6": 0.5,
+        "7": 0.5,
+        "8": 0.5,
+        "9": 0.5,
+        "10": 0.5,
+        "11": 0.5,
+        "12": 0.5,
+        "13": 0.5
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 30.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 0,
+        "100": 0
+       },
+       "scroll_curve_pct": {
+        "10": 0.5,
+        "25": 0.5,
+        "50": 0.5,
+        "75": 0.5,
+        "90": 0.0,
+        "100": 0.0
+       },
+       "exit_s00": 0,
+       "exit_s01": 0,
+       "completed": 2,
+       "s00_rate": 0.0,
+       "s01_rate": 0.0,
+       "done_rate": 1.0
+      }
+     },
+     "channels": {
+      "Organic Social": 2
+     },
+     "entry": {},
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "img_부담이었는데_베지셀": {
+       "exit_hist": {
+        "13": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Organic Social": {
+       "exit_hist": {
+        "13": 2
+       },
+       "exits": 2
+      }
+     }
+    },
+    "76": {
+     "name": "[자연하] 숨촉촉365 12g x 14포",
+     "slug": "자연하-숨촉촉365-12g-x-14포",
+     "url": "https://curaelmall.com/product/detail.html?product_no=76",
+     "section_total": 18,
+     "version": "v5.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p76_pharmacist.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p76_signature.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p76_team.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260925/p76_official_badge.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_01.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_02.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_03.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_04.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_05.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_06_1.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_06_2.gif",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_06_3.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_07.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_08.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_09.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_10.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_11.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/product/soom/261002ver/detail_page_breathmoist365_1000_12.jpg"
+     ],
+     "image_bytes": [
+      18974,
+      4374,
+      15554,
+      7133,
+      599023,
+      141635,
+      289791,
+      529679,
+      238479,
+      97868,
+      63574,
+      459911,
+      532940,
+      236789,
+      393845,
+      244423,
+      249889,
+      188047
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.0879
+      ],
+      [
+       0.0879,
+       0.1075
+      ],
+      [
+       0.1075,
+       0.1142
+      ],
+      [
+       0.1142,
+       0.1585
+      ],
+      [
+       0.1585,
+       0.2338
+      ],
+      [
+       0.2338,
+       0.2839
+      ],
+      [
+       0.2839,
+       0.3638
+      ],
+      [
+       0.3638,
+       0.4298
+      ],
+      [
+       0.4298,
+       0.5137
+      ],
+      [
+       0.5137,
+       0.5401
+      ],
+      [
+       0.5401,
+       0.5803
+      ],
+      [
+       0.5803,
+       0.6085
+      ],
+      [
+       0.6085,
+       0.6753
+      ],
+      [
+       0.6753,
+       0.7267
+      ],
+      [
+       0.7267,
+       0.7834
+      ],
+      [
+       0.7834,
+       0.8787
+      ],
+      [
+       0.8787,
+       0.9576
+      ],
+      [
+       0.9576,
+       1.0
+      ]
+     ],
+     "layout": {
+      "detail_start_pct": 9.3,
+      "detail_end_pct": 84.6,
+      "measured_at": "2026-08-10"
+     },
+     "image_bytes_total": 4311928,
+     "devices": {
+      "mobile": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1
+       },
+       "exit_hist": {
+        "18": 2
+       },
+       "events": {
+        "pdp_section": 18,
+        "pdp_scroll": 6,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
+       },
+       "exit_events": 2,
+       "sum_seconds": 248,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "zone_clicks": {
+        "상세이미지": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "100": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       },
+       "sessions": 2,
+       "section_reach_mono": {
+        "18": 1,
+        "17": 1,
+        "16": 1,
+        "15": 1,
+        "14": 1,
+        "13": 1,
+        "12": 1,
+        "11": 1,
+        "10": 1,
+        "9": 1,
+        "8": 1,
+        "7": 1,
+        "6": 1,
+        "5": 1,
+        "4": 1,
+        "3": 1,
+        "2": 1,
+        "1": 1
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.5,
+        "5": 0.5,
+        "6": 0.5,
+        "7": 0.5,
+        "8": 0.5,
+        "9": 0.5,
+        "10": 0.5,
+        "11": 0.5,
+        "12": 0.5,
+        "13": 0.5,
+        "14": 0.5,
+        "15": 0.5,
+        "16": 0.5,
+        "17": 0.5,
+        "18": 0.5
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 124.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1,
+        "100": 1
+       },
+       "scroll_curve_pct": {
+        "10": 0.5,
+        "25": 0.5,
+        "50": 0.5,
+        "75": 0.5,
+        "90": 0.5,
+        "100": 0.5
+       },
+       "exit_s00": 0,
+       "exit_s01": 0,
+       "completed": 2,
+       "s00_rate": 0.0,
+       "s01_rate": 0.0,
+       "done_rate": 1.0
+      },
+      "_all": {
+       "section_reach": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1
+       },
+       "exit_hist": {
+        "18": 2
+       },
+       "events": {
+        "pdp_section": 18,
+        "pdp_scroll": 6,
+        "pdp_exit": 2,
+        "pdp_cta_view": 1,
+        "pdp_review": 1
+       },
+       "scroll_reach": {
+        "10": 1,
+        "100": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1
+       },
+       "zone_clicks": {
+        "상세이미지": 1
+       },
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 2,
+       "sum_seconds": 248,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 2,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_mono": {
+        "18": 1,
+        "17": 1,
+        "16": 1,
+        "15": 1,
+        "14": 1,
+        "13": 1,
+        "12": 1,
+        "11": 1,
+        "10": 1,
+        "9": 1,
+        "8": 1,
+        "7": 1,
+        "6": 1,
+        "5": 1,
+        "4": 1,
+        "3": 1,
+        "2": 1,
+        "1": 1
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.5,
+        "5": 0.5,
+        "6": 0.5,
+        "7": 0.5,
+        "8": 0.5,
+        "9": 0.5,
+        "10": 0.5,
+        "11": 0.5,
+        "12": 0.5,
+        "13": 0.5,
+        "14": 0.5,
+        "15": 0.5,
+        "16": 0.5,
+        "17": 0.5,
+        "18": 0.5
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 124.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 1.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {
+        "10": 1,
+        "25": 1,
+        "50": 1,
+        "75": 1,
+        "90": 1,
+        "100": 1
+       },
+       "scroll_curve_pct": {
+        "10": 0.5,
+        "25": 0.5,
+        "50": 0.5,
+        "75": 0.5,
+        "90": 0.5,
+        "100": 0.5
+       },
+       "exit_s00": 0,
+       "exit_s01": 0,
+       "completed": 2,
+       "s00_rate": 0.0,
+       "s01_rate": 0.0,
+       "done_rate": 1.0
+      }
+     },
+     "channels": {
+      "Organic Search": 2
+     },
+     "entry": {
+      "sessions": 2,
+      "engaged": 2
+     },
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "18": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
       "Organic Search": {
        "exit_hist": {
-        "20": 1
+        "18": 2
        },
-       "exits": 1
+       "exits": 2
       }
      }
     },
@@ -672955,6 +674373,1652 @@
        "exits": 1
       }
      }
+    },
+    "28": {
+     "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+     "slug": "자연하-그린진-원스틱-15g-x-30포",
+     "url": "https://curaelmall.com/product/detail.html?product_no=28",
+     "section_total": 29,
+     "version": "v6.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_sign.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_pharmacist.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_team.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_seal.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_hero_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_hero_product.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_paper_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_who_worker.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_who_child.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_who_senior.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_stick_dish.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_box_dish.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_powder.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_paper_bottom.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_stick_flat.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_veg5.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_box_veg.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_paper_veg_top.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_easycut.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_easycut_tail.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_step1.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_step2.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_step3.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_paper_end.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_recipe_water.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_recipe_yogurt.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_recipe_latte.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p28_recipe_egg.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260708/cccf7968441625b139f246fa43fb8e0c.jpg"
+     ],
+     "image_bytes": [
+      4557,
+      19035,
+      16519,
+      7037,
+      30181,
+      70337,
+      12241,
+      8703,
+      5592,
+      7882,
+      34682,
+      66728,
+      28843,
+      22567,
+      28027,
+      39128,
+      136712,
+      28895,
+      50348,
+      15502,
+      20144,
+      21538,
+      12450,
+      22620,
+      68836,
+      61866,
+      42629,
+      59158,
+      714119
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.0228
+      ],
+      [
+       0.0228,
+       0.1048
+      ],
+      [
+       0.1048,
+       0.1109
+      ],
+      [
+       0.1109,
+       0.158
+      ],
+      [
+       0.158,
+       0.1769
+      ],
+      [
+       0.1769,
+       0.2104
+      ],
+      [
+       0.2104,
+       0.2186
+      ],
+      [
+       0.2186,
+       0.2802
+      ],
+      [
+       0.2802,
+       0.3325
+      ],
+      [
+       0.3325,
+       0.3744
+      ],
+      [
+       0.3744,
+       0.437
+      ],
+      [
+       0.437,
+       0.4654
+      ],
+      [
+       0.4654,
+       0.515
+      ],
+      [
+       0.515,
+       0.5296
+      ],
+      [
+       0.5296,
+       0.5398
+      ],
+      [
+       0.5398,
+       0.5513
+      ],
+      [
+       0.5513,
+       0.5983
+      ],
+      [
+       0.5983,
+       0.6095
+      ],
+      [
+       0.6095,
+       0.6309
+      ],
+      [
+       0.6309,
+       0.7105
+      ],
+      [
+       0.7105,
+       0.7442
+      ],
+      [
+       0.7442,
+       0.7781
+      ],
+      [
+       0.7781,
+       0.8115
+      ],
+      [
+       0.8115,
+       0.8279
+      ],
+      [
+       0.8279,
+       0.8508
+      ],
+      [
+       0.8508,
+       0.8737
+      ],
+      [
+       0.8737,
+       0.8965
+      ],
+      [
+       0.8965,
+       0.9193
+      ],
+      [
+       0.9193,
+       1.0
+      ]
+     ],
+     "layout": {
+      "detail_start_pct": 11.7,
+      "detail_end_pct": 83.3,
+      "measured_at": "2026-08-10"
+     },
+     "image_bytes_total": 1656876,
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 4
+       },
+       "events": {
+        "pdp_exit": 4,
+        "pdp_cta_view": 1
+       },
+       "exit_events": 4,
+       "sum_seconds": 213,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 4,
+       "section_reach_mono": {
+        "29": 0,
+        "28": 0,
+        "27": 0,
+        "26": 0,
+        "25": 0,
+        "24": 0,
+        "23": 0,
+        "22": 0,
+        "21": 0,
+        "20": 0,
+        "19": 0,
+        "18": 0,
+        "17": 0,
+        "16": 0,
+        "15": 0,
+        "14": 0,
+        "13": 0,
+        "12": 0,
+        "11": 0,
+        "10": 0,
+        "9": 0,
+        "8": 0,
+        "7": 0,
+        "6": 0,
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0,
+        "19": 0.0,
+        "20": 0.0,
+        "21": 0.0,
+        "22": 0.0,
+        "23": 0.0,
+        "24": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0,
+        "28": 0.0,
+        "29": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0,
+        "19": 0.0,
+        "20": 0.0,
+        "21": 0.0,
+        "22": 0.0,
+        "23": 0.0,
+        "24": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0,
+        "28": 0.0,
+        "29": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 53.25,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.25,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 4,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      },
+      "_all": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 4
+       },
+       "events": {
+        "pdp_exit": 4,
+        "pdp_cta_view": 1
+       },
+       "scroll_reach": {},
+       "zone_clicks": {},
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 4,
+       "sum_seconds": 213,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 1,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 4,
+       "section_reach_mono": {
+        "29": 0,
+        "28": 0,
+        "27": 0,
+        "26": 0,
+        "25": 0,
+        "24": 0,
+        "23": 0,
+        "22": 0,
+        "21": 0,
+        "20": 0,
+        "19": 0,
+        "18": 0,
+        "17": 0,
+        "16": 0,
+        "15": 0,
+        "14": 0,
+        "13": 0,
+        "12": 0,
+        "11": 0,
+        "10": 0,
+        "9": 0,
+        "8": 0,
+        "7": 0,
+        "6": 0,
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0,
+        "19": 0.0,
+        "20": 0.0,
+        "21": 0.0,
+        "22": 0.0,
+        "23": 0.0,
+        "24": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0,
+        "28": 0.0,
+        "29": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0,
+        "19": 0.0,
+        "20": 0.0,
+        "21": 0.0,
+        "22": 0.0,
+        "23": 0.0,
+        "24": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0,
+        "28": 0.0,
+        "29": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 53.25,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.25,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 4,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      }
+     },
+     "channels": {
+      "Cross-network": 2,
+      "Organic Shopping": 1,
+      "Organic Social": 1
+     },
+     "entry": {
+      "sessions": 4,
+      "engaged": 3
+     },
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "YT3--mVz26QM5uvlrCpqD6t8-sTI7zXE8YuLUa7bVRmpy3PGrepWrkMRC6htxqShEyngK5nY5q9TdKH4D1beLraFcbLk8HmSAY-b": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "YT3-luMbxl_yZyMYURs39lrGpGcGMzbb7-Le3-R3GAf57whWUPR73K26jBnHID-0OGztcw-3JKTHwUrjD8WSuzCLnKnY16rwpzjB": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "img_담았습니다_베지셀": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Cross-network": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      },
+      "Organic Shopping": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      },
+      "Organic Social": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     }
+    },
+    "47": {
+     "name": "기적의 항암 식단",
+     "slug": "기적의-항암-식단",
+     "url": "https://curaelmall.com/product/detail.html?product_no=47",
+     "section_total": 9,
+     "version": "v2.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_veggies.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_preview_kimchi.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_pot_pink.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_preview_juk.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_pot_purple.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_preview_omelet.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_pot_orange.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_preview_pasta.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p47_cover.jpg"
+     ],
+     "image_bytes": [
+      3042,
+      63693,
+      1321,
+      49634,
+      1293,
+      50283,
+      1337,
+      57376,
+      52265
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.0436
+      ],
+      [
+       0.0436,
+       0.1477
+      ],
+      [
+       0.1477,
+       0.2537
+      ],
+      [
+       0.2537,
+       0.3584
+      ],
+      [
+       0.3584,
+       0.4627
+      ],
+      [
+       0.4627,
+       0.5676
+      ],
+      [
+       0.5676,
+       0.6719
+      ],
+      [
+       0.6719,
+       0.7776
+      ],
+      [
+       0.7776,
+       1.0
+      ]
+     ],
+     "layout": {},
+     "image_bytes_total": 280244,
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 2,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_mono": {
+        "9": 0,
+        "8": 0,
+        "7": 0,
+        "6": 0,
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 1.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 2,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      },
+      "_all": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_exit": 2
+       },
+       "scroll_reach": {},
+       "zone_clicks": {},
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 2,
+       "sum_seconds": 2,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_mono": {
+        "9": 0,
+        "8": 0,
+        "7": 0,
+        "6": 0,
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 1.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 2,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      }
+     },
+     "channels": {
+      "Direct": 2
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "_비광고": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Direct": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     }
+    },
+    "60": {
+     "name": "국산 유기농 서리태 검은콩 1kg",
+     "slug": "",
+     "url": "https://curaelmall.com/product/detail.html?product_no=60",
+     "section_total": 4,
+     "version": "v1.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/6825b8a756f0c40ef0be2a6a21f95ad7.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/16bb5c4c138422253aba0f84653dcc21.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/a0e9ef91fdd5627b33b59d4ee8709d59.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/2437d2616475dc7638475cb35eb6c7c2.jpg"
+     ],
+     "image_bytes": [
+      2710574,
+      1285447,
+      2445677,
+      2073149
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.2727
+      ],
+      [
+       0.2727,
+       0.4564
+      ],
+      [
+       0.4564,
+       0.7291
+      ],
+      [
+       0.7291,
+       1.0
+      ]
+     ],
+     "layout": {},
+     "image_bytes_total": 8514847,
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_exit": 2
+       },
+       "exit_events": 2,
+       "sum_seconds": 6,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_mono": {
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 3.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 2,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      },
+      "_all": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 2
+       },
+       "events": {
+        "pdp_exit": 2
+       },
+       "scroll_reach": {},
+       "zone_clicks": {},
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 2,
+       "sum_seconds": 6,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 2,
+       "section_reach_mono": {
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 3.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 2,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      }
+     },
+     "channels": {
+      "Paid Other": 2
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "ID 120253355889890414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     },
+     "by_channel": {
+      "Paid Other": {
+       "exit_hist": {
+        "0": 2
+       },
+       "exits": 2
+      }
+     }
+    },
+    "42": {
+     "name": "[베지셀] 베지셀 청귤 라이트 100ml",
+     "slug": "",
+     "url": "https://curaelmall.com/product/detail.html?product_no=42",
+     "section_total": 12,
+     "version": "v2.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p42_hero.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p42_cheonggyul_tree.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/청귤라이트/큐라엘_베지셀 청귤 라이트_03.gif",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p42_cheonggyul_box.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p42_ingredients_stack.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p42_glass.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p42_lineup.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/청귤라이트/큐라엘_베지셀 청귤 라이트_09.gif",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p42_board.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20260921/p42_pouch_yellow.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/청귤라이트/큐라엘_베지셀 청귤 라이트_12.gif",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251223/copy-1766467731-EB8BA4EC9AB4EBA19CEB939C2028129.jpeg"
+     ],
+     "image_bytes": [
+      167810,
+      44667,
+      0,
+      184132,
+      112296,
+      44710,
+      44213,
+      0,
+      125903,
+      85207,
+      0,
+      386501
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.2349
+      ],
+      [
+       0.2349,
+       0.2928
+      ],
+      [
+       0.2928,
+       0.2928
+      ],
+      [
+       0.2928,
+       0.4211
+      ],
+      [
+       0.4211,
+       0.566
+      ],
+      [
+       0.566,
+       0.6266
+      ],
+      [
+       0.6266,
+       0.6824
+      ],
+      [
+       0.6824,
+       0.6824
+      ],
+      [
+       0.6824,
+       0.7771
+      ],
+      [
+       0.7771,
+       0.8893
+      ],
+      [
+       0.8893,
+       0.8893
+      ],
+      [
+       0.8893,
+       1.0
+      ]
+     ],
+     "layout": {},
+     "image_bytes_total": 1195439,
+     "devices": {
+      "tablet": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 12,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 1,
+       "section_reach_mono": {
+        "12": 0,
+        "11": 0,
+        "10": 0,
+        "9": 0,
+        "8": 0,
+        "7": 0,
+        "6": 0,
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 12.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 1,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      },
+      "_all": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "scroll_reach": {},
+       "zone_clicks": {},
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 1,
+       "sum_seconds": 12,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 1,
+       "section_reach_mono": {
+        "12": 0,
+        "11": 0,
+        "10": 0,
+        "9": 0,
+        "8": 0,
+        "7": 0,
+        "6": 0,
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 12.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 1,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      }
+     },
+     "channels": {
+      "Paid Other": 1
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "ID 120253355889890414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Paid Other": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     }
+    },
+    "62": {
+     "name": "국산 유기농 귀리 혼합 10곡 잡곡쌀 800g",
+     "slug": "",
+     "url": "https://curaelmall.com/product/detail.html?product_no=62",
+     "section_total": 3,
+     "version": "v1.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/811771d9d4f53891af1e3e8425b59150.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/00c5c8dbebdbdaee194c311c28809175.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/d7c99447c265f975618ba898d849e577.jpg"
+     ],
+     "image_bytes": [
+      2504410,
+      1362109,
+      2101542
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.3143
+      ],
+      [
+       0.3143,
+       0.5409
+      ],
+      [
+       0.5409,
+       1.0
+      ]
+     ],
+     "layout": {},
+     "image_bytes_total": 5968061,
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 8,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 1,
+       "section_reach_mono": {
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 8.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 1,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      },
+      "_all": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "scroll_reach": {},
+       "zone_clicks": {},
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 1,
+       "sum_seconds": 8,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 1,
+       "section_reach_mono": {
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 8.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 1,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      }
+     },
+     "channels": {
+      "Paid Other": 1
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "ID 120253355889890414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Paid Other": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     }
+    },
+    "63": {
+     "name": "국산 유기농 현미 귀리 잡곡 즉석밥 180g",
+     "slug": "",
+     "url": "https://curaelmall.com/product/detail.html?product_no=63",
+     "section_total": 13,
+     "version": "v1.0",
+     "images": [
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057120-0001.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057129-0002.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057136-002.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057154-003.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057186-004.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057193-005.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057202-006.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057210-007.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057242-008.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057253-009.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/copy-1767057261-100.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/1111.jpg",
+      "https://ecimg.cafe24img.com/pg1672b41291237056/yulbangjyh/web/upload/NNEditor/20251230/11112.jpg"
+     ],
+     "image_bytes": [
+      696678,
+      506834,
+      994717,
+      785982,
+      765524,
+      257635,
+      1063035,
+      741006,
+      558439,
+      895576,
+      778359,
+      425025,
+      737282
+     ],
+     "section_spans": [
+      [
+       0.0,
+       0.0661
+      ],
+      [
+       0.0661,
+       0.096
+      ],
+      [
+       0.096,
+       0.2007
+      ],
+      [
+       0.2007,
+       0.3082
+      ],
+      [
+       0.3082,
+       0.3921
+      ],
+      [
+       0.3921,
+       0.4521
+      ],
+      [
+       0.4521,
+       0.5323
+      ],
+      [
+       0.5323,
+       0.638
+      ],
+      [
+       0.638,
+       0.7147
+      ],
+      [
+       0.7147,
+       0.8032
+      ],
+      [
+       0.8032,
+       0.895
+      ],
+      [
+       0.895,
+       0.9408
+      ],
+      [
+       0.9408,
+       1.0
+      ]
+     ],
+     "layout": {},
+     "image_bytes_total": 9206092,
+     "devices": {
+      "mobile": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "exit_events": 1,
+       "sum_seconds": 9,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 1,
+       "section_reach_mono": {
+        "13": 0,
+        "12": 0,
+        "11": 0,
+        "10": 0,
+        "9": 0,
+        "8": 0,
+        "7": 0,
+        "6": 0,
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 9.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 1,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      },
+      "_all": {
+       "section_reach": {},
+       "exit_hist": {
+        "0": 1
+       },
+       "events": {
+        "pdp_exit": 1
+       },
+       "scroll_reach": {},
+       "zone_clicks": {},
+       "zone_buys": {},
+       "buyer_depth": {},
+       "exit_events": 1,
+       "sum_seconds": 9,
+       "sum_bounce_3s": 0,
+       "sum_saw_cta": 0,
+       "sum_saw_review": 0,
+       "sum_clicked_cart": 0,
+       "sum_clicked_buy": 0,
+       "sessions": 1,
+       "section_reach_mono": {
+        "13": 0,
+        "12": 0,
+        "11": 0,
+        "10": 0,
+        "9": 0,
+        "8": 0,
+        "7": 0,
+        "6": 0,
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+       },
+       "reach_repaired_sections": 0,
+       "section_reach_pct": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0
+       },
+       "section_dropoff": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0
+       },
+       "reach_noise": 0,
+       "biggest_drop_section": null,
+       "biggest_drop_rate": 0.0,
+       "biggest_drop_people": 0,
+       "avg_seconds": 9.0,
+       "avg_bounce_3s": 0.0,
+       "avg_saw_cta": 0.0,
+       "avg_saw_review": 0.0,
+       "avg_clicked_cart": 0.0,
+       "avg_clicked_buy": 0.0,
+       "scroll_curve": {},
+       "scroll_curve_pct": {},
+       "exit_s00": 1,
+       "exit_s01": 0,
+       "completed": 0,
+       "s00_rate": 1.0,
+       "s01_rate": 0.0,
+       "done_rate": 0.0
+      }
+     },
+     "channels": {
+      "Paid Other": 1
+     },
+     "entry": {
+      "sessions": 1,
+      "engaged": 1
+     },
+     "clarity": null,
+     "sales": null,
+     "sample": "low",
+     "by_source": {
+      "ID 120253355889890414 (이름 미설정)": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     },
+     "by_channel": {
+      "Paid Other": {
+       "exit_hist": {
+        "0": 1
+       },
+       "exits": 1
+      }
+     }
     }
    },
    "unattributed": {
@@ -672963,7 +676027,7 @@
    }
   }
  },
- "built_at": "2026-10-16 07:02:57 KST",
+ "built_at": "2026-10-16 09:29:00 KST",
  "period": {
   "range": "2026-10-10 ~ 2026-10-16",
   "dates": [
@@ -673118,32 +676182,32 @@
     "devices": {
      "mobile": {
       "section_reach": {
-       "1": 743,
-       "4": 561,
-       "2": 639,
-       "3": 617,
-       "6": 451,
-       "7": 422,
-       "5": 487,
-       "8": 403,
-       "9": 387,
-       "10": 376,
-       "11": 358,
-       "12": 328,
-       "13": 318,
-       "14": 322,
-       "15": 310,
-       "17": 308,
-       "16": 312,
-       "18": 293,
-       "19": 293,
-       "20": 283,
+       "1": 748,
+       "4": 565,
+       "2": 644,
+       "3": 622,
+       "6": 454,
+       "7": 425,
+       "5": 490,
+       "8": 405,
+       "9": 389,
+       "10": 378,
+       "11": 360,
+       "12": 330,
+       "13": 320,
+       "14": 324,
+       "15": 312,
+       "17": 310,
+       "16": 314,
+       "18": 295,
+       "19": 295,
+       "20": 285,
        "21": 142
       },
       "exit_hist": {
-       "0": 4145,
+       "0": 4176,
        "21": 151,
-       "4": 78,
+       "4": 80,
        "1": 110,
        "8": 16,
        "9": 14,
@@ -673156,40 +676220,40 @@
        "12": 4,
        "13": 11,
        "15": 18,
-       "20": 156,
+       "20": 158,
        "16": 14,
        "5": 38,
        "10": 17,
        "14": 20,
        "17": 13,
-       "3": 64
+       "3": 66
       },
       "events": {
-       "pdp_section": 8353,
-       "pdp_scroll": 2999,
-       "pdp_exit": 5025,
-       "pdp_cta_view": 1196,
+       "pdp_section": 8407,
+       "pdp_scroll": 3016,
+       "pdp_exit": 5062,
+       "pdp_cta_view": 1205,
        "pdp_cta_click": 300,
-       "pdp_review": 269
+       "pdp_review": 270
       },
       "scroll_reach": {
-       "10": 772,
-       "25": 652,
-       "50": 495,
-       "75": 423,
-       "90": 367,
-       "100": 290
+       "10": 777,
+       "25": 657,
+       "50": 497,
+       "75": 425,
+       "90": 369,
+       "100": 291
       },
       "zone_clicks": {
        "옵션선택": 270,
        "썸네일": 183,
        "정기배송선택": 151,
-       "상단메뉴": 123,
+       "상단메뉴": 127,
        "바로구매": 155,
        "가격영역": 10,
        "장바구니": 47,
        "리뷰": 96,
-       "상세이미지": 26,
+       "상세이미지": 27,
        "네이버페이": 17,
        "상품문의": 30
       },
@@ -673213,71 +676277,71 @@
        "15": 1,
        "3": 1
       },
-      "exit_events": 5025,
-      "sum_seconds": 196163,
+      "exit_events": 5062,
+      "sum_seconds": 196877,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 1293,
+      "sum_saw_cta": 1304,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 5025,
+      "sessions": 5062,
       "section_reach_mono": {
-       "20": 283,
-       "19": 293,
-       "18": 293,
-       "17": 308,
-       "16": 312,
-       "15": 312,
-       "14": 322,
-       "13": 322,
-       "12": 328,
-       "11": 358,
-       "10": 376,
-       "9": 387,
-       "8": 403,
-       "7": 422,
-       "6": 451,
-       "5": 487,
-       "4": 561,
-       "3": 617,
-       "2": 639,
-       "1": 743
+       "20": 285,
+       "19": 295,
+       "18": 295,
+       "17": 310,
+       "16": 314,
+       "15": 314,
+       "14": 324,
+       "13": 324,
+       "12": 330,
+       "11": 360,
+       "10": 378,
+       "9": 389,
+       "8": 405,
+       "7": 425,
+       "6": 454,
+       "5": 490,
+       "4": 565,
+       "3": 622,
+       "2": 644,
+       "1": 748
       },
       "reach_repaired_sections": 2,
       "section_reach_pct": {
-       "1": 0.1479,
+       "1": 0.1478,
        "2": 0.1272,
-       "3": 0.1228,
+       "3": 0.1229,
        "4": 0.1116,
-       "5": 0.0969,
-       "6": 0.0898,
+       "5": 0.0968,
+       "6": 0.0897,
        "7": 0.084,
-       "8": 0.0802,
-       "9": 0.077,
-       "10": 0.0748,
-       "11": 0.0712,
-       "12": 0.0653,
-       "13": 0.0641,
-       "14": 0.0641,
-       "15": 0.0621,
-       "16": 0.0621,
-       "17": 0.0613,
+       "8": 0.08,
+       "9": 0.0768,
+       "10": 0.0747,
+       "11": 0.0711,
+       "12": 0.0652,
+       "13": 0.064,
+       "14": 0.064,
+       "15": 0.062,
+       "16": 0.062,
+       "17": 0.0612,
        "18": 0.0583,
        "19": 0.0583,
        "20": 0.0563
       },
       "section_dropoff": {
-       "2": 0.0207,
-       "3": 0.0044,
-       "4": 0.0111,
-       "5": 0.0147,
-       "6": 0.0072,
-       "7": 0.0058,
-       "8": 0.0038,
+       "2": 0.0205,
+       "3": 0.0043,
+       "4": 0.0113,
+       "5": 0.0148,
+       "6": 0.0071,
+       "7": 0.0057,
+       "8": 0.004,
        "9": 0.0032,
        "10": 0.0022,
        "11": 0.0036,
-       "12": 0.006,
+       "12": 0.0059,
        "13": 0.0012,
        "14": 0.0,
        "15": 0.002,
@@ -673289,36 +676353,36 @@
       },
       "reach_noise": 0,
       "biggest_drop_section": 4,
-      "biggest_drop_people": 78,
-      "biggest_drop_rate": 0.0155,
-      "avg_seconds": 39.0374,
+      "biggest_drop_people": 80,
+      "biggest_drop_rate": 0.0158,
+      "avg_seconds": 38.8931,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.2573,
+      "avg_saw_cta": 0.2576,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {
-       "10": 772,
-       "25": 652,
-       "50": 495,
-       "75": 423,
-       "90": 367,
-       "100": 290
+       "10": 777,
+       "25": 657,
+       "50": 497,
+       "75": 425,
+       "90": 369,
+       "100": 291
       },
       "scroll_curve_pct": {
-       "10": 0.1536,
+       "10": 0.1535,
        "25": 0.1298,
-       "50": 0.0985,
-       "75": 0.0842,
-       "90": 0.073,
-       "100": 0.0577
+       "50": 0.0982,
+       "75": 0.084,
+       "90": 0.0729,
+       "100": 0.0575
       },
-      "exit_s00": 4145,
+      "exit_s00": 4176,
       "exit_s01": 110,
-      "completed": 156,
-      "s00_rate": 0.8249,
-      "s01_rate": 0.0219,
-      "done_rate": 0.031
+      "completed": 158,
+      "s00_rate": 0.825,
+      "s01_rate": 0.0217,
+      "done_rate": 0.0312
      },
      "desktop": {
       "section_reach": {
@@ -673668,32 +676732,32 @@
      },
      "_all": {
       "section_reach": {
-       "1": 766,
-       "4": 579,
-       "2": 659,
-       "3": 638,
-       "6": 468,
-       "7": 438,
-       "5": 503,
-       "8": 419,
-       "9": 402,
-       "10": 389,
-       "11": 369,
-       "12": 336,
-       "13": 326,
-       "14": 329,
-       "15": 316,
-       "17": 314,
-       "16": 319,
-       "18": 300,
-       "19": 300,
-       "20": 291,
+       "1": 771,
+       "4": 583,
+       "2": 664,
+       "3": 643,
+       "6": 471,
+       "7": 441,
+       "5": 506,
+       "8": 421,
+       "9": 404,
+       "10": 391,
+       "11": 371,
+       "12": 338,
+       "13": 328,
+       "14": 331,
+       "15": 318,
+       "17": 316,
+       "16": 321,
+       "18": 302,
+       "19": 302,
+       "20": 293,
        "21": 145
       },
       "exit_hist": {
-       "0": 4228,
+       "0": 4259,
        "21": 154,
-       "4": 82,
+       "4": 84,
        "1": 114,
        "8": 18,
        "9": 15,
@@ -673706,40 +676770,40 @@
        "12": 4,
        "13": 12,
        "15": 18,
-       "20": 162,
+       "20": 164,
        "16": 14,
        "5": 41,
        "10": 17,
        "14": 20,
        "17": 13,
-       "3": 67
+       "3": 69
       },
       "events": {
-       "pdp_section": 8606,
-       "pdp_scroll": 3104,
-       "pdp_exit": 5136,
-       "pdp_cta_view": 1233,
+       "pdp_section": 8660,
+       "pdp_scroll": 3121,
+       "pdp_exit": 5173,
+       "pdp_cta_view": 1242,
        "pdp_cta_click": 304,
-       "pdp_review": 277
+       "pdp_review": 278
       },
       "scroll_reach": {
-       "10": 798,
-       "25": 677,
-       "50": 516,
-       "75": 436,
-       "90": 378,
-       "100": 299
+       "10": 803,
+       "25": 682,
+       "50": 518,
+       "75": 438,
+       "90": 380,
+       "100": 300
       },
       "zone_clicks": {
        "옵션선택": 283,
        "썸네일": 188,
        "정기배송선택": 158,
-       "상단메뉴": 130,
+       "상단메뉴": 134,
        "바로구매": 157,
        "가격영역": 10,
        "장바구니": 49,
        "리뷰": 97,
-       "상세이미지": 27,
+       "상세이미지": 28,
        "네이버페이": 17,
        "상품문의": 30
       },
@@ -673763,67 +676827,67 @@
        "15": 1,
        "3": 1
       },
-      "exit_events": 5136,
-      "sum_seconds": 215736,
+      "exit_events": 5173,
+      "sum_seconds": 216450,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 1331,
+      "sum_saw_cta": 1342,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 5136,
+      "sessions": 5173,
       "section_reach_mono": {
-       "20": 291,
-       "19": 300,
-       "18": 300,
-       "17": 314,
-       "16": 319,
-       "15": 319,
-       "14": 329,
-       "13": 329,
-       "12": 336,
-       "11": 369,
-       "10": 389,
-       "9": 402,
-       "8": 419,
-       "7": 438,
-       "6": 468,
-       "5": 503,
-       "4": 579,
-       "3": 638,
-       "2": 659,
-       "1": 766
+       "20": 293,
+       "19": 302,
+       "18": 302,
+       "17": 316,
+       "16": 321,
+       "15": 321,
+       "14": 331,
+       "13": 331,
+       "12": 338,
+       "11": 371,
+       "10": 391,
+       "9": 404,
+       "8": 421,
+       "7": 441,
+       "6": 471,
+       "5": 506,
+       "4": 583,
+       "3": 643,
+       "2": 664,
+       "1": 771
       },
       "reach_repaired_sections": 2,
       "section_reach_pct": {
-       "1": 0.1491,
-       "2": 0.1283,
-       "3": 0.1242,
+       "1": 0.149,
+       "2": 0.1284,
+       "3": 0.1243,
        "4": 0.1127,
-       "5": 0.0979,
-       "6": 0.0911,
+       "5": 0.0978,
+       "6": 0.091,
        "7": 0.0853,
-       "8": 0.0816,
-       "9": 0.0783,
-       "10": 0.0757,
-       "11": 0.0718,
-       "12": 0.0654,
-       "13": 0.0641,
-       "14": 0.0641,
+       "8": 0.0814,
+       "9": 0.0781,
+       "10": 0.0756,
+       "11": 0.0717,
+       "12": 0.0653,
+       "13": 0.064,
+       "14": 0.064,
        "15": 0.0621,
        "16": 0.0621,
        "17": 0.0611,
        "18": 0.0584,
        "19": 0.0584,
-       "20": 0.0567
+       "20": 0.0566
       },
       "section_dropoff": {
-       "2": 0.0208,
+       "2": 0.0207,
        "3": 0.0041,
-       "4": 0.0115,
-       "5": 0.0148,
+       "4": 0.0116,
+       "5": 0.0149,
        "6": 0.0068,
        "7": 0.0058,
-       "8": 0.0037,
+       "8": 0.0039,
        "9": 0.0033,
        "10": 0.0025,
        "11": 0.0039,
@@ -673835,49 +676899,49 @@
        "17": 0.001,
        "18": 0.0027,
        "19": 0.0,
-       "20": 0.0018
+       "20": 0.0017
       },
       "reach_noise": 0,
       "biggest_drop_section": 4,
-      "biggest_drop_people": 82,
-      "biggest_drop_rate": 0.016,
-      "avg_seconds": 42.0047,
+      "biggest_drop_people": 84,
+      "biggest_drop_rate": 0.0162,
+      "avg_seconds": 41.8423,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.2592,
+      "avg_saw_cta": 0.2594,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {
-       "10": 798,
-       "25": 677,
-       "50": 516,
-       "75": 436,
-       "90": 378,
-       "100": 299
+       "10": 803,
+       "25": 682,
+       "50": 518,
+       "75": 438,
+       "90": 380,
+       "100": 300
       },
       "scroll_curve_pct": {
-       "10": 0.1554,
+       "10": 0.1552,
        "25": 0.1318,
-       "50": 0.1005,
-       "75": 0.0849,
-       "90": 0.0736,
-       "100": 0.0582
+       "50": 0.1001,
+       "75": 0.0847,
+       "90": 0.0735,
+       "100": 0.058
       },
-      "exit_s00": 4228,
+      "exit_s00": 4259,
       "exit_s01": 114,
-      "completed": 162,
-      "s00_rate": 0.8232,
-      "s01_rate": 0.0222,
-      "done_rate": 0.0315
+      "completed": 164,
+      "s00_rate": 0.8233,
+      "s01_rate": 0.022,
+      "done_rate": 0.0317
      }
     },
     "channels": {
-     "Organic Search": 351,
-     "Organic Shopping": 240,
-     "Organic Social": 267,
+     "Organic Search": 352,
+     "Organic Shopping": 241,
+     "Organic Social": 270,
      "Unassigned": 155,
-     "Direct": 3677,
-     "Paid Social": 408,
+     "Direct": 3694,
+     "Paid Social": 423,
      "Organic Video": 7,
      "Paid Other": 5,
      "Referral": 14,
@@ -673886,14 +676950,14 @@
     "by_source": {
      "_비광고": {
       "exit_hist": {
-       "0": 3486,
+       "0": 3499,
        "21": 123,
        "4": 65,
        "1": 96,
        "8": 9,
        "18": 11,
        "2": 25,
-       "3": 48,
+       "3": 50,
        "6": 40,
        "13": 11,
        "19": 15,
@@ -673909,7 +676973,7 @@
        "17": 11,
        "12": 1
       },
-      "exits": 4192
+      "exits": 4207
      },
      "gif_만들기3분할_베지셀": {
       "exit_hist": {
@@ -673920,7 +676984,7 @@
        "8": 3,
        "1": 1,
        "6": 2,
-       "20": 17,
+       "20": 18,
        "4": 3,
        "5": 2,
        "16": 1,
@@ -673929,7 +676993,7 @@
        "3": 2,
        "10": 1
       },
-      "exits": 152
+      "exits": 153
      },
      "img_부담이었는데_베지셀": {
       "exit_hist": {
@@ -673938,11 +677002,11 @@
        "21": 4,
        "19": 1,
        "1": 2,
-       "4": 1,
+       "4": 3,
        "10": 1,
        "18": 1
       },
-      "exits": 39
+      "exits": 41
      },
      "YT3-e0RUUSW9_FNtgtT6h80Op8_TAUZQav7i1c6KfDz83WSoTfp-tbML3u0V08sX7Iw_v7O9gnjYdb_a-9hH810MOXCF3NwNtrh0": {
       "exit_hist": {
@@ -674448,7 +677512,7 @@
      },
      "ID 120253355785090414 (이름 미설정)": {
       "exit_hist": {
-       "0": 274,
+       "0": 280,
        "3": 8,
        "20": 9,
        "7": 3,
@@ -674462,18 +677526,18 @@
        "11": 1,
        "18": 2
       },
-      "exits": 314
+      "exits": 320
      },
      "ID 120253355862720414 (이름 미설정)": {
       "exit_hist": {
-       "0": 65,
+       "0": 76,
        "3": 5,
-       "20": 3,
+       "20": 4,
        "5": 1,
        "9": 1,
        "18": 1
       },
-      "exits": 76
+      "exits": 88
      },
      "YT3-eNhIjiXMU9O5gKsofFpTP7qZWwzb_VpjClXZMaIKE8X46WW7LM3cYNUWRt-zUStZH1WNLyJEhwcNopibj1vHp1QH1WTRawWk": {
       "exit_hist": {
@@ -674854,12 +677918,18 @@
        "0": 1
       },
       "exits": 1
+     },
+     "YT3-8Do5DlrM2Yz4gOm1zkbVfMj14VHvzVv48ycTX5-Jkv0Fjzh7Ww0FqIjd-OwHLJ3devNn3_vP6-CqbQhUWF89pv2NKxe0h2sy": {
+      "exit_hist": {
+       "0": 1
+      },
+      "exits": 1
      }
     },
     "by_channel": {
      "Organic Search": {
       "exit_hist": {
-       "0": 202,
+       "0": 203,
        "21": 29,
        "4": 15,
        "8": 2,
@@ -674881,11 +677951,11 @@
        "17": 1,
        "14": 1
       },
-      "exits": 351
+      "exits": 352
      },
      "Organic Shopping": {
       "exit_hist": {
-       "0": 166,
+       "0": 167,
        "21": 19,
        "1": 8,
        "4": 9,
@@ -674906,14 +677976,14 @@
        "5": 3,
        "16": 1
       },
-      "exits": 240
+      "exits": 241
      },
      "Organic Social": {
       "exit_hist": {
        "0": 160,
        "21": 26,
        "8": 6,
-       "4": 7,
+       "4": 9,
        "6": 4,
        "9": 1,
        "15": 3,
@@ -674926,11 +677996,11 @@
        "10": 3,
        "3": 3,
        "18": 4,
-       "20": 29,
+       "20": 30,
        "5": 2,
        "17": 1
       },
-      "exits": 267
+      "exits": 270
      },
      "Unassigned": {
       "exit_hist": {
@@ -674948,7 +678018,7 @@
      },
      "Direct": {
       "exit_hist": {
-       "0": 3176,
+       "0": 3191,
        "1": 74,
        "21": 76,
        "4": 48,
@@ -674963,7 +678033,7 @@
        "11": 11,
        "13": 8,
        "19": 12,
-       "3": 41,
+       "3": 43,
        "16": 4,
        "9": 9,
        "15": 6,
@@ -674971,14 +678041,14 @@
        "18": 5,
        "12": 1
       },
-      "exits": 3677
+      "exits": 3694
      },
      "Paid Social": {
       "exit_hist": {
-       "0": 352,
+       "0": 366,
        "21": 2,
        "3": 13,
-       "20": 13,
+       "20": 14,
        "1": 9,
        "7": 3,
        "2": 2,
@@ -674991,7 +678061,7 @@
        "18": 3,
        "9": 1
       },
-      "exits": 408
+      "exits": 423
      },
      "Organic Video": {
       "exit_hist": {
@@ -675026,8 +678096,8 @@
      }
     },
     "entry": {
-     "sessions": 3228,
-     "engaged": 3207
+     "sessions": 3256,
+     "engaged": 3235
     },
     "clarity": {
      "sessions": 2980,
@@ -675048,7 +678118,7 @@
     "sample": "ok",
     "derived": {
      "cvr": 0.0072,
-     "revenue_per_session": 853,
+     "revenue_per_session": 847,
      "aov": 118409
     }
    },
@@ -675279,7 +678349,7 @@
        "19": 80
       },
       "exit_hist": {
-       "0": 484,
+       "0": 488,
        "30": 60,
        "1": 30,
        "29": 46,
@@ -675310,8 +678380,8 @@
       "events": {
        "pdp_section": 2980,
        "pdp_scroll": 936,
-       "pdp_exit": 731,
-       "pdp_cta_view": 366,
+       "pdp_exit": 735,
+       "pdp_cta_view": 367,
        "pdp_cta_click": 155,
        "pdp_review": 106
       },
@@ -675355,14 +678425,14 @@
        "15": 2,
        "9": 2
       },
-      "exit_events": 731,
-      "sum_seconds": 81817,
+      "exit_events": 735,
+      "sum_seconds": 82030,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 432,
+      "sum_saw_cta": 433,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 731,
+      "sessions": 735,
       "section_reach_mono": {
        "29": 95,
        "28": 95,
@@ -675396,47 +678466,47 @@
       },
       "reach_repaired_sections": 16,
       "section_reach_pct": {
-       "1": 0.2285,
-       "2": 0.2093,
-       "3": 0.2093,
-       "4": 0.1915,
-       "5": 0.1806,
-       "6": 0.1696,
-       "7": 0.1683,
-       "8": 0.1683,
-       "9": 0.1573,
-       "10": 0.1546,
-       "11": 0.1368,
-       "12": 0.1341,
-       "13": 0.1341,
-       "14": 0.1313,
-       "15": 0.13,
-       "16": 0.13,
-       "17": 0.13,
-       "18": 0.13,
-       "19": 0.13,
-       "20": 0.13,
-       "21": 0.13,
-       "22": 0.13,
-       "23": 0.13,
-       "24": 0.13,
-       "25": 0.13,
-       "26": 0.13,
-       "27": 0.13,
-       "28": 0.13,
-       "29": 0.13
+       "1": 0.2272,
+       "2": 0.2082,
+       "3": 0.2082,
+       "4": 0.1905,
+       "5": 0.1796,
+       "6": 0.1687,
+       "7": 0.1673,
+       "8": 0.1673,
+       "9": 0.1565,
+       "10": 0.1537,
+       "11": 0.1361,
+       "12": 0.1333,
+       "13": 0.1333,
+       "14": 0.1306,
+       "15": 0.1293,
+       "16": 0.1293,
+       "17": 0.1293,
+       "18": 0.1293,
+       "19": 0.1293,
+       "20": 0.1293,
+       "21": 0.1293,
+       "22": 0.1293,
+       "23": 0.1293,
+       "24": 0.1293,
+       "25": 0.1293,
+       "26": 0.1293,
+       "27": 0.1293,
+       "28": 0.1293,
+       "29": 0.1293
       },
       "section_dropoff": {
-       "2": 0.0192,
+       "2": 0.019,
        "3": 0.0,
-       "4": 0.0178,
+       "4": 0.0177,
        "5": 0.0109,
        "6": 0.0109,
        "7": 0.0014,
        "8": 0.0,
        "9": 0.0109,
        "10": 0.0027,
-       "11": 0.0178,
+       "11": 0.0177,
        "12": 0.0027,
        "13": 0.0,
        "14": 0.0027,
@@ -675459,10 +678529,10 @@
       "reach_noise": 0,
       "biggest_drop_section": 3,
       "biggest_drop_people": 16,
-      "biggest_drop_rate": 0.0219,
-      "avg_seconds": 111.9248,
+      "biggest_drop_rate": 0.0218,
+      "avg_seconds": 111.6054,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.591,
+      "avg_saw_cta": 0.5891,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -675475,19 +678545,19 @@
        "100": 121
       },
       "scroll_curve_pct": {
-       "10": 0.2859,
-       "25": 0.2476,
-       "50": 0.2161,
-       "75": 0.1929,
-       "90": 0.1724,
-       "100": 0.1655
+       "10": 0.2844,
+       "25": 0.2463,
+       "50": 0.215,
+       "75": 0.1918,
+       "90": 0.1714,
+       "100": 0.1646
       },
-      "exit_s00": 484,
+      "exit_s00": 488,
       "exit_s01": 30,
       "completed": 46,
-      "s00_rate": 0.6621,
-      "s01_rate": 0.041,
-      "done_rate": 0.0629
+      "s00_rate": 0.6639,
+      "s01_rate": 0.0408,
+      "done_rate": 0.0626
      },
      "desktop": {
       "section_reach": {
@@ -675916,7 +678986,7 @@
        "19": 85
       },
       "exit_hist": {
-       "0": 502,
+       "0": 506,
        "30": 63,
        "1": 32,
        "29": 47,
@@ -675947,8 +679017,8 @@
       "events": {
        "pdp_section": 3140,
        "pdp_scroll": 972,
-       "pdp_exit": 755,
-       "pdp_cta_view": 379,
+       "pdp_exit": 759,
+       "pdp_cta_view": 380,
        "pdp_cta_click": 159,
        "pdp_review": 112
       },
@@ -675992,14 +679062,14 @@
        "15": 2,
        "9": 2
       },
-      "exit_events": 755,
-      "sum_seconds": 82500,
+      "exit_events": 759,
+      "sum_seconds": 82713,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 442,
+      "sum_saw_cta": 443,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 755,
+      "sessions": 759,
       "section_reach_mono": {
        "29": 100,
        "28": 100,
@@ -676033,47 +679103,47 @@
       },
       "reach_repaired_sections": 16,
       "section_reach_pct": {
-       "1": 0.2318,
-       "2": 0.2106,
-       "3": 0.2106,
-       "4": 0.1921,
-       "5": 0.1801,
-       "6": 0.1722,
-       "7": 0.1709,
-       "8": 0.1695,
-       "9": 0.1589,
-       "10": 0.1563,
-       "11": 0.1391,
-       "12": 0.1377,
-       "13": 0.1377,
-       "14": 0.1351,
-       "15": 0.1325,
-       "16": 0.1325,
-       "17": 0.1325,
-       "18": 0.1325,
-       "19": 0.1325,
-       "20": 0.1325,
-       "21": 0.1325,
-       "22": 0.1325,
-       "23": 0.1325,
-       "24": 0.1325,
-       "25": 0.1325,
-       "26": 0.1325,
-       "27": 0.1325,
-       "28": 0.1325,
-       "29": 0.1325
+       "1": 0.2306,
+       "2": 0.2095,
+       "3": 0.2095,
+       "4": 0.191,
+       "5": 0.1792,
+       "6": 0.1713,
+       "7": 0.17,
+       "8": 0.1686,
+       "9": 0.1581,
+       "10": 0.1555,
+       "11": 0.1383,
+       "12": 0.137,
+       "13": 0.137,
+       "14": 0.1344,
+       "15": 0.1318,
+       "16": 0.1318,
+       "17": 0.1318,
+       "18": 0.1318,
+       "19": 0.1318,
+       "20": 0.1318,
+       "21": 0.1318,
+       "22": 0.1318,
+       "23": 0.1318,
+       "24": 0.1318,
+       "25": 0.1318,
+       "26": 0.1318,
+       "27": 0.1318,
+       "28": 0.1318,
+       "29": 0.1318
       },
       "section_dropoff": {
-       "2": 0.0212,
+       "2": 0.0211,
        "3": 0.0,
-       "4": 0.0185,
+       "4": 0.0184,
        "5": 0.0119,
        "6": 0.0079,
        "7": 0.0013,
        "8": 0.0013,
-       "9": 0.0106,
+       "9": 0.0105,
        "10": 0.0026,
-       "11": 0.0172,
+       "11": 0.0171,
        "12": 0.0013,
        "13": 0.0,
        "14": 0.0026,
@@ -676096,10 +679166,10 @@
       "reach_noise": 0,
       "biggest_drop_section": 3,
       "biggest_drop_people": 16,
-      "biggest_drop_rate": 0.0212,
-      "avg_seconds": 109.2715,
+      "biggest_drop_rate": 0.0211,
+      "avg_seconds": 108.9763,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.5854,
+      "avg_saw_cta": 0.5837,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -676112,24 +679182,24 @@
        "100": 127
       },
       "scroll_curve_pct": {
-       "10": 0.2848,
-       "25": 0.2477,
-       "50": 0.2172,
-       "75": 0.1947,
-       "90": 0.1748,
-       "100": 0.1682
+       "10": 0.2833,
+       "25": 0.2464,
+       "50": 0.2161,
+       "75": 0.1937,
+       "90": 0.1739,
+       "100": 0.1673
       },
-      "exit_s00": 502,
+      "exit_s00": 506,
       "exit_s01": 32,
       "completed": 47,
-      "s00_rate": 0.6649,
-      "s01_rate": 0.0424,
-      "done_rate": 0.0623
+      "s00_rate": 0.6667,
+      "s01_rate": 0.0422,
+      "done_rate": 0.0619
      }
     },
     "channels": {
-     "Organic Shopping": 305,
-     "Organic Social": 130,
+     "Organic Shopping": 306,
+     "Organic Social": 131,
      "Unassigned": 37,
      "Paid Social": 36,
      "Organic Video": 20,
@@ -676137,7 +679207,7 @@
      "Referral": 4,
      "Organic Search": 70,
      "Paid Other": 5,
-     "Cross-network": 28
+     "Cross-network": 30
     },
     "by_source": {
      "_비광고": {
@@ -676303,10 +679373,10 @@
      },
      "img_담았습니다_베지셀": {
       "exit_hist": {
-       "0": 2,
+       "0": 3,
        "29": 1
       },
-      "exits": 3
+      "exits": 4
      },
      "ID 120253003323620414 (이름 미설정)": {
       "exit_hist": {
@@ -677135,12 +680205,24 @@
        "0": 1
       },
       "exits": 1
+     },
+     "YT3--mVz26QM5uvlrCpqD6t8-sTI7zXE8YuLUa7bVRmpy3PGrepWrkMRC6htxqShEyngK5nY5q9TdKH4D1beLraFcbLk8HmSAY-b": {
+      "exit_hist": {
+       "0": 2
+      },
+      "exits": 2
+     },
+     "YT3-luMbxl_yZyMYURs39lrGpGcGMzbb7-Le3-R3GAf57whWUPR73K26jBnHID-0OGztcw-3JKTHwUrjD8WSuzCLnKnY16rwpzjB": {
+      "exit_hist": {
+       "0": 1
+      },
+      "exits": 1
      }
     },
     "by_channel": {
      "Organic Shopping": {
       "exit_hist": {
-       "0": 228,
+       "0": 229,
        "30": 14,
        "1": 12,
        "29": 17,
@@ -677158,11 +680240,11 @@
        "9": 2,
        "28": 2
       },
-      "exits": 305
+      "exits": 306
      },
      "Organic Social": {
       "exit_hist": {
-       "0": 60,
+       "0": 61,
        "30": 28,
        "1": 5,
        "15": 3,
@@ -677187,7 +680269,7 @@
        "25": 1,
        "16": 1
       },
-      "exits": 130
+      "exits": 131
      },
      "Paid Social": {
       "exit_hist": {
@@ -677269,17 +680351,17 @@
      },
      "Cross-network": {
       "exit_hist": {
-       "0": 22,
+       "0": 24,
        "3": 3,
        "29": 2,
        "7": 1
       },
-      "exits": 28
+      "exits": 30
      }
     },
     "entry": {
-     "sessions": 318,
-     "engaged": 315
+     "sessions": 322,
+     "engaged": 318
     },
     "clarity": {
      "sessions": 441,
@@ -677299,8 +680381,8 @@
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0411,
-     "revenue_per_session": 1468,
+     "cvr": 0.0408,
+     "revenue_per_session": 1460,
      "aov": 35742
     }
    },
@@ -677386,7 +680468,7 @@
        "8": 89
       },
       "exit_hist": {
-       "0": 106,
+       "0": 108,
        "9": 63,
        "1": 8,
        "3": 3,
@@ -677398,7 +680480,7 @@
       "events": {
        "pdp_section": 835,
        "pdp_scroll": 619,
-       "pdp_exit": 190,
+       "pdp_exit": 192,
        "pdp_cta_view": 133,
        "pdp_review": 83,
        "pdp_cta_click": 25
@@ -677428,14 +680510,14 @@
        "3": 1,
        "9": 2
       },
-      "exit_events": 190,
-      "sum_seconds": 40006,
+      "exit_events": 192,
+      "sum_seconds": 40008,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 113,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 190,
+      "sessions": 192,
       "section_reach_mono": {
        "9": 89,
        "8": 89,
@@ -677449,33 +680531,33 @@
       },
       "reach_repaired_sections": 1,
       "section_reach_pct": {
-       "1": 0.5316,
-       "2": 0.5053,
-       "3": 0.5053,
-       "4": 0.5053,
-       "5": 0.4789,
-       "6": 0.4737,
-       "7": 0.4684,
-       "8": 0.4684,
-       "9": 0.4684
+       "1": 0.526,
+       "2": 0.5,
+       "3": 0.5,
+       "4": 0.5,
+       "5": 0.474,
+       "6": 0.4688,
+       "7": 0.4635,
+       "8": 0.4635,
+       "9": 0.4635
       },
       "section_dropoff": {
-       "2": 0.0263,
+       "2": 0.026,
        "3": 0.0,
        "4": 0.0,
-       "5": 0.0263,
-       "6": 0.0053,
-       "7": 0.0053,
+       "5": 0.026,
+       "6": 0.0052,
+       "7": 0.0052,
        "8": 0.0,
        "9": 0.0
       },
       "reach_noise": 0,
       "biggest_drop_section": 6,
       "biggest_drop_people": 4,
-      "biggest_drop_rate": 0.0211,
-      "avg_seconds": 210.5579,
+      "biggest_drop_rate": 0.0208,
+      "avg_seconds": 208.375,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.5947,
+      "avg_saw_cta": 0.5885,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -677488,19 +680570,19 @@
        "100": 88
       },
       "scroll_curve_pct": {
-       "10": 0.6421,
-       "25": 0.6053,
-       "50": 0.5526,
-       "75": 0.5158,
-       "90": 0.4789,
-       "100": 0.4632
+       "10": 0.6354,
+       "25": 0.599,
+       "50": 0.5469,
+       "75": 0.5104,
+       "90": 0.474,
+       "100": 0.4583
       },
-      "exit_s00": 106,
+      "exit_s00": 108,
       "exit_s01": 8,
       "completed": 63,
-      "s00_rate": 0.5579,
-      "s01_rate": 0.0421,
-      "done_rate": 0.3316
+      "s00_rate": 0.5625,
+      "s01_rate": 0.0417,
+      "done_rate": 0.3281
      },
      "tablet": {
       "section_reach": {
@@ -677696,7 +680778,7 @@
        "8": 89
       },
       "exit_hist": {
-       "0": 111,
+       "0": 113,
        "9": 64,
        "1": 8,
        "3": 3,
@@ -677708,7 +680790,7 @@
       "events": {
        "pdp_section": 836,
        "pdp_scroll": 625,
-       "pdp_exit": 196,
+       "pdp_exit": 198,
        "pdp_cta_view": 135,
        "pdp_review": 84,
        "pdp_cta_click": 26
@@ -677739,14 +680821,14 @@
        "9": 2,
        "0": 1
       },
-      "exit_events": 196,
-      "sum_seconds": 40107,
+      "exit_events": 198,
+      "sum_seconds": 40109,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 114,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 196,
+      "sessions": 198,
       "section_reach_mono": {
        "9": 90,
        "8": 90,
@@ -677760,21 +680842,21 @@
       },
       "reach_repaired_sections": 2,
       "section_reach_pct": {
-       "1": 0.5153,
-       "2": 0.4898,
-       "3": 0.4898,
-       "4": 0.4898,
-       "5": 0.4643,
-       "6": 0.4592,
-       "7": 0.4592,
-       "8": 0.4592,
-       "9": 0.4592
+       "1": 0.5101,
+       "2": 0.4848,
+       "3": 0.4848,
+       "4": 0.4848,
+       "5": 0.4596,
+       "6": 0.4545,
+       "7": 0.4545,
+       "8": 0.4545,
+       "9": 0.4545
       },
       "section_dropoff": {
-       "2": 0.0255,
+       "2": 0.0253,
        "3": 0.0,
        "4": 0.0,
-       "5": 0.0255,
+       "5": 0.0253,
        "6": 0.0051,
        "7": 0.0,
        "8": 0.0,
@@ -677783,10 +680865,10 @@
       "reach_noise": 0,
       "biggest_drop_section": 6,
       "biggest_drop_people": 4,
-      "biggest_drop_rate": 0.0204,
-      "avg_seconds": 204.6276,
+      "biggest_drop_rate": 0.0202,
+      "avg_seconds": 202.5707,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.5816,
+      "avg_saw_cta": 0.5758,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -677799,19 +680881,19 @@
        "100": 89
       },
       "scroll_curve_pct": {
-       "10": 0.6276,
-       "25": 0.5918,
-       "50": 0.5408,
-       "75": 0.5051,
-       "90": 0.4694,
-       "100": 0.4541
+       "10": 0.6212,
+       "25": 0.5859,
+       "50": 0.5354,
+       "75": 0.5,
+       "90": 0.4646,
+       "100": 0.4495
       },
-      "exit_s00": 111,
+      "exit_s00": 113,
       "exit_s01": 8,
       "completed": 64,
-      "s00_rate": 0.5663,
-      "s01_rate": 0.0408,
-      "done_rate": 0.3265
+      "s00_rate": 0.5707,
+      "s01_rate": 0.0404,
+      "done_rate": 0.3232
      }
     },
     "channels": {
@@ -677820,7 +680902,7 @@
      "Paid Other": 7,
      "Unassigned": 19,
      "Organic Shopping": 10,
-     "Direct": 5
+     "Direct": 7
     },
     "by_source": {
      "gif_만들기3분할_베지셀": {
@@ -677884,10 +680966,10 @@
      "_비광고": {
       "exit_hist": {
        "9": 4,
-       "0": 6,
+       "0": 8,
        "4": 2
       },
-      "exits": 12
+      "exits": 14
      },
      "img_배도라지환절기_숨촉촉": {
       "exit_hist": {
@@ -678009,15 +681091,15 @@
      },
      "Direct": {
       "exit_hist": {
-       "0": 2,
+       "0": 4,
        "9": 3
       },
-      "exits": 5
+      "exits": 7
      }
     },
     "entry": {
-     "sessions": 186,
-     "engaged": 186
+     "sessions": 187,
+     "engaged": 187
     },
     "clarity": {
      "sessions": 187,
@@ -678037,8 +681119,8 @@
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0102,
-     "revenue_per_session": 184,
+     "cvr": 0.0101,
+     "revenue_per_session": 182,
      "aov": 18000
     }
    },
@@ -678171,28 +681253,28 @@
     "devices": {
      "mobile": {
       "section_reach": {
-       "1": 71,
-       "2": 70,
-       "3": 68,
-       "4": 67,
-       "5": 58,
-       "6": 55,
-       "7": 51,
-       "12": 32,
-       "8": 39,
-       "9": 37,
-       "10": 32,
-       "11": 31,
-       "13": 28,
-       "16": 23,
-       "17": 18,
-       "14": 27,
-       "15": 24,
-       "18": 14
+       "1": 72,
+       "2": 71,
+       "3": 69,
+       "4": 68,
+       "5": 59,
+       "6": 56,
+       "7": 52,
+       "12": 33,
+       "8": 40,
+       "9": 38,
+       "10": 33,
+       "11": 32,
+       "13": 29,
+       "16": 24,
+       "17": 19,
+       "14": 28,
+       "15": 25,
+       "18": 15
       },
       "exit_hist": {
        "0": 87,
-       "18": 20,
+       "18": 22,
        "6": 6,
        "7": 12,
        "8": 5,
@@ -678211,20 +681293,20 @@
        "10": 1
       },
       "events": {
-       "pdp_section": 745,
-       "pdp_scroll": 387,
-       "pdp_exit": 168,
-       "pdp_cta_view": 95,
+       "pdp_section": 763,
+       "pdp_scroll": 393,
+       "pdp_exit": 170,
+       "pdp_cta_view": 96,
        "pdp_cta_click": 17,
-       "pdp_review": 20
+       "pdp_review": 21
       },
       "scroll_reach": {
-       "10": 80,
-       "25": 79,
-       "50": 72,
-       "75": 68,
-       "90": 59,
-       "100": 29
+       "10": 81,
+       "25": 80,
+       "50": 73,
+       "75": 69,
+       "90": 60,
+       "100": 30
       },
       "zone_clicks": {
        "상품문의": 5,
@@ -678234,7 +681316,7 @@
        "리뷰": 5,
        "장바구니": 1,
        "네이버페이": 1,
-       "상세이미지": 3
+       "상세이미지": 4
       },
       "zone_buys": {
        "바로구매": 1,
@@ -678243,106 +681325,106 @@
       "buyer_depth": {
        "18": 1
       },
-      "exit_events": 168,
-      "sum_seconds": 5369,
+      "exit_events": 170,
+      "sum_seconds": 5617,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 108,
+      "sum_saw_cta": 110,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 168,
+      "sessions": 170,
       "section_reach_mono": {
-       "18": 14,
-       "17": 18,
-       "16": 23,
-       "15": 24,
-       "14": 27,
-       "13": 28,
-       "12": 32,
-       "11": 32,
-       "10": 32,
-       "9": 37,
-       "8": 39,
-       "7": 51,
-       "6": 55,
-       "5": 58,
-       "4": 67,
-       "3": 68,
-       "2": 70,
-       "1": 71
+       "18": 15,
+       "17": 19,
+       "16": 24,
+       "15": 25,
+       "14": 28,
+       "13": 29,
+       "12": 33,
+       "11": 33,
+       "10": 33,
+       "9": 38,
+       "8": 40,
+       "7": 52,
+       "6": 56,
+       "5": 59,
+       "4": 68,
+       "3": 69,
+       "2": 71,
+       "1": 72
       },
       "reach_repaired_sections": 1,
       "section_reach_pct": {
-       "1": 0.4226,
-       "2": 0.4167,
-       "3": 0.4048,
-       "4": 0.3988,
-       "5": 0.3452,
-       "6": 0.3274,
-       "7": 0.3036,
-       "8": 0.2321,
-       "9": 0.2202,
-       "10": 0.1905,
-       "11": 0.1905,
-       "12": 0.1905,
-       "13": 0.1667,
-       "14": 0.1607,
-       "15": 0.1429,
-       "16": 0.1369,
-       "17": 0.1071,
-       "18": 0.0833
+       "1": 0.4235,
+       "2": 0.4176,
+       "3": 0.4059,
+       "4": 0.4,
+       "5": 0.3471,
+       "6": 0.3294,
+       "7": 0.3059,
+       "8": 0.2353,
+       "9": 0.2235,
+       "10": 0.1941,
+       "11": 0.1941,
+       "12": 0.1941,
+       "13": 0.1706,
+       "14": 0.1647,
+       "15": 0.1471,
+       "16": 0.1412,
+       "17": 0.1118,
+       "18": 0.0882
       },
       "section_dropoff": {
-       "2": 0.006,
-       "3": 0.0119,
-       "4": 0.006,
-       "5": 0.0536,
-       "6": 0.0179,
-       "7": 0.0238,
-       "8": 0.0714,
-       "9": 0.0119,
-       "10": 0.0298,
+       "2": 0.0059,
+       "3": 0.0118,
+       "4": 0.0059,
+       "5": 0.0529,
+       "6": 0.0176,
+       "7": 0.0235,
+       "8": 0.0706,
+       "9": 0.0118,
+       "10": 0.0294,
        "11": 0.0,
        "12": 0.0,
-       "13": 0.0238,
-       "14": 0.006,
-       "15": 0.0179,
-       "16": 0.006,
-       "17": 0.0298,
-       "18": 0.0238
+       "13": 0.0235,
+       "14": 0.0059,
+       "15": 0.0176,
+       "16": 0.0059,
+       "17": 0.0294,
+       "18": 0.0235
       },
       "reach_noise": 0,
       "biggest_drop_section": 7,
       "biggest_drop_people": 12,
-      "biggest_drop_rate": 0.0714,
-      "avg_seconds": 31.9583,
+      "biggest_drop_rate": 0.0706,
+      "avg_seconds": 33.0412,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.6429,
+      "avg_saw_cta": 0.6471,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {
-       "10": 80,
-       "25": 79,
-       "50": 72,
-       "75": 68,
-       "90": 59,
-       "100": 29
+       "10": 81,
+       "25": 80,
+       "50": 73,
+       "75": 69,
+       "90": 60,
+       "100": 30
       },
       "scroll_curve_pct": {
-       "10": 0.4762,
-       "25": 0.4702,
-       "50": 0.4286,
-       "75": 0.4048,
-       "90": 0.3512,
-       "100": 0.1726
+       "10": 0.4765,
+       "25": 0.4706,
+       "50": 0.4294,
+       "75": 0.4059,
+       "90": 0.3529,
+       "100": 0.1765
       },
       "exit_s00": 87,
       "exit_s01": 1,
-      "completed": 20,
-      "s00_rate": 0.5179,
-      "s01_rate": 0.006,
-      "done_rate": 0.119
+      "completed": 22,
+      "s00_rate": 0.5118,
+      "s01_rate": 0.0059,
+      "done_rate": 0.1294
      },
      "tablet": {
       "section_reach": {
@@ -678631,28 +681713,28 @@
      },
      "_all": {
       "section_reach": {
-       "1": 78,
-       "2": 77,
-       "3": 75,
-       "4": 74,
-       "5": 63,
-       "6": 60,
-       "7": 56,
-       "12": 36,
-       "8": 44,
-       "9": 42,
-       "10": 37,
-       "11": 36,
-       "13": 32,
-       "16": 27,
-       "17": 22,
-       "14": 31,
-       "15": 28,
-       "18": 18
+       "1": 79,
+       "2": 78,
+       "3": 76,
+       "4": 75,
+       "5": 64,
+       "6": 61,
+       "7": 57,
+       "12": 37,
+       "8": 45,
+       "9": 43,
+       "10": 38,
+       "11": 37,
+       "13": 33,
+       "16": 28,
+       "17": 23,
+       "14": 32,
+       "15": 29,
+       "18": 19
       },
       "exit_hist": {
        "0": 103,
-       "18": 24,
+       "18": 26,
        "6": 6,
        "7": 12,
        "8": 5,
@@ -678671,20 +681753,20 @@
        "10": 1
       },
       "events": {
-       "pdp_section": 836,
-       "pdp_scroll": 443,
-       "pdp_exit": 191,
-       "pdp_cta_view": 112,
+       "pdp_section": 854,
+       "pdp_scroll": 449,
+       "pdp_exit": 193,
+       "pdp_cta_view": 113,
        "pdp_cta_click": 17,
-       "pdp_review": 24
+       "pdp_review": 25
       },
       "scroll_reach": {
-       "10": 95,
-       "25": 93,
-       "50": 80,
-       "75": 75,
-       "90": 66,
-       "100": 34
+       "10": 96,
+       "25": 94,
+       "50": 81,
+       "75": 76,
+       "90": 67,
+       "100": 35
       },
       "zone_clicks": {
        "상품문의": 5,
@@ -678694,7 +681776,7 @@
        "리뷰": 6,
        "장바구니": 1,
        "네이버페이": 1,
-       "상세이미지": 3,
+       "상세이미지": 4,
        "썸네일": 1
       },
       "zone_buys": {
@@ -678704,110 +681786,110 @@
       "buyer_depth": {
        "18": 1
       },
-      "exit_events": 191,
-      "sum_seconds": 6542,
+      "exit_events": 193,
+      "sum_seconds": 6790,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 125,
+      "sum_saw_cta": 127,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 191,
+      "sessions": 193,
       "section_reach_mono": {
-       "18": 18,
-       "17": 22,
-       "16": 27,
-       "15": 28,
-       "14": 31,
-       "13": 32,
-       "12": 36,
-       "11": 36,
-       "10": 37,
-       "9": 42,
-       "8": 44,
-       "7": 56,
-       "6": 60,
-       "5": 63,
-       "4": 74,
-       "3": 75,
-       "2": 77,
-       "1": 78
+       "18": 19,
+       "17": 23,
+       "16": 28,
+       "15": 29,
+       "14": 32,
+       "13": 33,
+       "12": 37,
+       "11": 37,
+       "10": 38,
+       "9": 43,
+       "8": 45,
+       "7": 57,
+       "6": 61,
+       "5": 64,
+       "4": 75,
+       "3": 76,
+       "2": 78,
+       "1": 79
       },
       "reach_repaired_sections": 0,
       "section_reach_pct": {
-       "1": 0.4084,
-       "2": 0.4031,
-       "3": 0.3927,
-       "4": 0.3874,
-       "5": 0.3298,
-       "6": 0.3141,
-       "7": 0.2932,
-       "8": 0.2304,
-       "9": 0.2199,
-       "10": 0.1937,
-       "11": 0.1885,
-       "12": 0.1885,
-       "13": 0.1675,
-       "14": 0.1623,
-       "15": 0.1466,
-       "16": 0.1414,
-       "17": 0.1152,
-       "18": 0.0942
+       "1": 0.4093,
+       "2": 0.4041,
+       "3": 0.3938,
+       "4": 0.3886,
+       "5": 0.3316,
+       "6": 0.3161,
+       "7": 0.2953,
+       "8": 0.2332,
+       "9": 0.2228,
+       "10": 0.1969,
+       "11": 0.1917,
+       "12": 0.1917,
+       "13": 0.171,
+       "14": 0.1658,
+       "15": 0.1503,
+       "16": 0.1451,
+       "17": 0.1192,
+       "18": 0.0984
       },
       "section_dropoff": {
        "2": 0.0052,
-       "3": 0.0105,
+       "3": 0.0104,
        "4": 0.0052,
-       "5": 0.0576,
-       "6": 0.0157,
-       "7": 0.0209,
-       "8": 0.0628,
-       "9": 0.0105,
-       "10": 0.0262,
+       "5": 0.057,
+       "6": 0.0155,
+       "7": 0.0207,
+       "8": 0.0622,
+       "9": 0.0104,
+       "10": 0.0259,
        "11": 0.0052,
        "12": 0.0,
-       "13": 0.0209,
+       "13": 0.0207,
        "14": 0.0052,
-       "15": 0.0157,
+       "15": 0.0155,
        "16": 0.0052,
-       "17": 0.0262,
-       "18": 0.0209
+       "17": 0.0259,
+       "18": 0.0207
       },
       "reach_noise": 0,
       "biggest_drop_section": 7,
       "biggest_drop_people": 12,
-      "biggest_drop_rate": 0.0628,
-      "avg_seconds": 34.2513,
+      "biggest_drop_rate": 0.0622,
+      "avg_seconds": 35.1813,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.6545,
+      "avg_saw_cta": 0.658,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {
-       "10": 95,
-       "25": 93,
-       "50": 80,
-       "75": 75,
-       "90": 66,
-       "100": 34
+       "10": 96,
+       "25": 94,
+       "50": 81,
+       "75": 76,
+       "90": 67,
+       "100": 35
       },
       "scroll_curve_pct": {
        "10": 0.4974,
-       "25": 0.4869,
-       "50": 0.4188,
-       "75": 0.3927,
-       "90": 0.3455,
-       "100": 0.178
+       "25": 0.487,
+       "50": 0.4197,
+       "75": 0.3938,
+       "90": 0.3472,
+       "100": 0.1813
       },
       "exit_s00": 103,
       "exit_s01": 1,
-      "completed": 24,
-      "s00_rate": 0.5393,
+      "completed": 26,
+      "s00_rate": 0.5337,
       "s01_rate": 0.0052,
-      "done_rate": 0.1257
+      "done_rate": 0.1347
      }
     },
     "channels": {
-     "Organic Search": 83,
+     "Organic Search": 85,
      "Organic Social": 50,
      "Direct": 27,
      "Organic Shopping": 16,
@@ -678821,7 +681903,7 @@
      "_비광고": {
       "exit_hist": {
        "0": 74,
-       "18": 19,
+       "18": 21,
        "7": 9,
        "12": 4,
        "17": 5,
@@ -678839,7 +681921,7 @@
        "3": 1,
        "10": 1
       },
-      "exits": 145
+      "exits": 147
      },
      "gif_만들기3분할_베지셀": {
       "exit_hist": {
@@ -678951,7 +682033,7 @@
        "5": 2,
        "6": 4,
        "11": 1,
-       "18": 12,
+       "18": 14,
        "2": 1,
        "8": 3,
        "17": 2,
@@ -678961,7 +682043,7 @@
        "10": 1,
        "16": 1
       },
-      "exits": 83
+      "exits": 85
      },
      "Direct": {
       "exit_hist": {
@@ -679021,8 +682103,8 @@
      }
     },
     "entry": {
-     "sessions": 145,
-     "engaged": 145
+     "sessions": 147,
+     "engaged": 147
     },
     "clarity": {
      "sessions": 142,
@@ -679042,8 +682124,8 @@
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0157,
-     "revenue_per_session": 961,
+     "cvr": 0.0155,
+     "revenue_per_session": 951,
      "aov": 61210
     }
    },
@@ -679087,14 +682169,14 @@
        "3": 26
       },
       "exit_hist": {
-       "0": 65,
+       "0": 66,
        "3": 24,
        "1": 5,
        "2": 5
       },
       "events": {
        "pdp_scroll": 159,
-       "pdp_exit": 99,
+       "pdp_exit": 100,
        "pdp_section": 94,
        "pdp_cta_view": 49,
        "pdp_review": 23,
@@ -679125,14 +682207,14 @@
       "buyer_depth": {
        "3": 1
       },
-      "exit_events": 99,
-      "sum_seconds": 3595,
+      "exit_events": 100,
+      "sum_seconds": 3603,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 45,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 99,
+      "sessions": 100,
       "section_reach_mono": {
        "3": 26,
        "2": 31,
@@ -679140,21 +682222,21 @@
       },
       "reach_repaired_sections": 0,
       "section_reach_pct": {
-       "1": 0.3737,
-       "2": 0.3131,
-       "3": 0.2626
+       "1": 0.37,
+       "2": 0.31,
+       "3": 0.26
       },
       "section_dropoff": {
-       "2": 0.0606,
-       "3": 0.0505
+       "2": 0.06,
+       "3": 0.05
       },
       "reach_noise": 0,
       "biggest_drop_section": 2,
       "biggest_drop_people": 5,
-      "biggest_drop_rate": 0.0505,
-      "avg_seconds": 36.3131,
+      "biggest_drop_rate": 0.05,
+      "avg_seconds": 36.03,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.4545,
+      "avg_saw_cta": 0.45,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -679167,19 +682249,19 @@
        "100": 17
       },
       "scroll_curve_pct": {
-       "10": 0.3737,
-       "25": 0.3232,
-       "50": 0.303,
-       "75": 0.2323,
-       "90": 0.202,
-       "100": 0.1717
+       "10": 0.37,
+       "25": 0.32,
+       "50": 0.3,
+       "75": 0.23,
+       "90": 0.2,
+       "100": 0.17
       },
-      "exit_s00": 65,
+      "exit_s00": 66,
       "exit_s01": 5,
       "completed": 24,
-      "s00_rate": 0.6566,
-      "s01_rate": 0.0505,
-      "done_rate": 0.2424
+      "s00_rate": 0.66,
+      "s01_rate": 0.05,
+      "done_rate": 0.24
      },
      "desktop": {
       "section_reach": {
@@ -679271,14 +682353,14 @@
        "3": 27
       },
       "exit_hist": {
-       "0": 65,
+       "0": 66,
        "3": 24,
        "1": 5,
        "2": 6
       },
       "events": {
        "pdp_scroll": 165,
-       "pdp_exit": 100,
+       "pdp_exit": 101,
        "pdp_section": 97,
        "pdp_cta_view": 50,
        "pdp_review": 24,
@@ -679309,14 +682391,14 @@
       "buyer_depth": {
        "3": 1
       },
-      "exit_events": 100,
-      "sum_seconds": 3602,
+      "exit_events": 101,
+      "sum_seconds": 3610,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 46,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 100,
+      "sessions": 101,
       "section_reach_mono": {
        "3": 27,
        "2": 32,
@@ -679324,21 +682406,21 @@
       },
       "reach_repaired_sections": 0,
       "section_reach_pct": {
-       "1": 0.38,
-       "2": 0.32,
-       "3": 0.27
+       "1": 0.3762,
+       "2": 0.3168,
+       "3": 0.2673
       },
       "section_dropoff": {
-       "2": 0.06,
-       "3": 0.05
+       "2": 0.0594,
+       "3": 0.0495
       },
       "reach_noise": 0,
       "biggest_drop_section": 2,
       "biggest_drop_people": 6,
-      "biggest_drop_rate": 0.06,
-      "avg_seconds": 36.02,
+      "biggest_drop_rate": 0.0594,
+      "avg_seconds": 35.7426,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.46,
+      "avg_saw_cta": 0.4554,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -679351,19 +682433,19 @@
        "100": 18
       },
       "scroll_curve_pct": {
-       "10": 0.38,
-       "25": 0.33,
-       "50": 0.31,
-       "75": 0.24,
-       "90": 0.21,
-       "100": 0.18
+       "10": 0.3762,
+       "25": 0.3267,
+       "50": 0.3069,
+       "75": 0.2376,
+       "90": 0.2079,
+       "100": 0.1782
       },
-      "exit_s00": 65,
+      "exit_s00": 66,
       "exit_s01": 5,
       "completed": 24,
-      "s00_rate": 0.65,
-      "s01_rate": 0.05,
-      "done_rate": 0.24
+      "s00_rate": 0.6535,
+      "s01_rate": 0.0495,
+      "done_rate": 0.2376
      }
     },
     "channels": {
@@ -679372,7 +682454,7 @@
      "Direct": 5,
      "Paid Social": 14,
      "Unassigned": 1,
-     "Paid Other": 17
+     "Paid Other": 18
     },
     "by_source": {
      "gif_만들기3분할_베지셀": {
@@ -679453,10 +682535,10 @@
      },
      "ID 120253355889890414 (이름 미설정)": {
       "exit_hist": {
-       "0": 17,
+       "0": 18,
        "3": 2
       },
-      "exits": 19
+      "exits": 20
      },
      "ID 120253355899050414 (이름 미설정)": {
       "exit_hist": {
@@ -679529,15 +682611,15 @@
      },
      "Paid Other": {
       "exit_hist": {
-       "0": 15,
+       "0": 16,
        "3": 2
       },
-      "exits": 17
+      "exits": 18
      }
     },
     "entry": {
-     "sessions": 84,
-     "engaged": 82
+     "sessions": 85,
+     "engaged": 83
     },
     "clarity": {
      "sessions": 86,
@@ -679557,7 +682639,7 @@
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.01,
+     "cvr": 0.0099,
      "revenue_per_session": 0,
      "aov": 0
     }
@@ -679799,10 +682881,10 @@
      "tablet": {
       "section_reach": {},
       "exit_hist": {
-       "0": 6
+       "0": 7
       },
       "events": {
-       "pdp_exit": 6,
+       "pdp_exit": 7,
        "pdp_cta_view": 1
       },
       "scroll_reach": {},
@@ -679817,14 +682899,14 @@
       "buyer_depth": {
        "0": 1
       },
-      "exit_events": 6,
-      "sum_seconds": 78,
+      "exit_events": 7,
+      "sum_seconds": 90,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 1,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 6,
+      "sessions": 7,
       "section_reach_mono": {
        "12": 0,
        "11": 0,
@@ -679871,15 +682953,15 @@
       "biggest_drop_section": null,
       "biggest_drop_rate": 0.0,
       "biggest_drop_people": 0,
-      "avg_seconds": 13.0,
+      "avg_seconds": 12.8571,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.1667,
+      "avg_saw_cta": 0.1429,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {},
       "scroll_curve_pct": {},
-      "exit_s00": 6,
+      "exit_s00": 7,
       "exit_s01": 0,
       "completed": 0,
       "s00_rate": 1.0,
@@ -679995,7 +683077,7 @@
        "12": 15
       },
       "exit_hist": {
-       "0": 128,
+       "0": 129,
        "12": 19,
        "4": 4,
        "1": 11,
@@ -680010,7 +683092,7 @@
       "events": {
        "pdp_section": 271,
        "pdp_scroll": 175,
-       "pdp_exit": 180,
+       "pdp_exit": 181,
        "pdp_cta_view": 98,
        "pdp_cta_click": 15,
        "pdp_review": 19
@@ -680044,14 +683126,14 @@
        "0": 6,
        "9": 1
       },
-      "exit_events": 180,
-      "sum_seconds": 6218,
+      "exit_events": 181,
+      "sum_seconds": 6230,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 111,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 180,
+      "sessions": 181,
       "section_reach_mono": {
        "12": 15,
        "11": 15,
@@ -680068,39 +683150,39 @@
       },
       "reach_repaired_sections": 2,
       "section_reach_pct": {
-       "1": 0.2222,
-       "2": 0.1722,
-       "3": 0.15,
-       "4": 0.15,
-       "5": 0.1278,
-       "6": 0.1222,
-       "7": 0.1167,
-       "8": 0.1167,
-       "9": 0.0944,
-       "10": 0.0833,
-       "11": 0.0833,
-       "12": 0.0833
+       "1": 0.221,
+       "2": 0.1713,
+       "3": 0.1492,
+       "4": 0.1492,
+       "5": 0.1271,
+       "6": 0.1215,
+       "7": 0.116,
+       "8": 0.116,
+       "9": 0.0939,
+       "10": 0.0829,
+       "11": 0.0829,
+       "12": 0.0829
       },
       "section_dropoff": {
-       "2": 0.05,
-       "3": 0.0222,
+       "2": 0.0497,
+       "3": 0.0221,
        "4": 0.0,
-       "5": 0.0222,
-       "6": 0.0056,
-       "7": 0.0056,
+       "5": 0.0221,
+       "6": 0.0055,
+       "7": 0.0055,
        "8": 0.0,
-       "9": 0.0222,
-       "10": 0.0111,
+       "9": 0.0221,
+       "10": 0.011,
        "11": 0.0,
        "12": 0.0
       },
       "reach_noise": 0,
       "biggest_drop_section": 8,
       "biggest_drop_people": 5,
-      "biggest_drop_rate": 0.0278,
-      "avg_seconds": 34.5444,
+      "biggest_drop_rate": 0.0276,
+      "avg_seconds": 34.4199,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.6167,
+      "avg_saw_cta": 0.6133,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -680113,19 +683195,19 @@
        "100": 19
       },
       "scroll_curve_pct": {
-       "10": 0.2444,
-       "25": 0.2056,
-       "50": 0.1611,
-       "75": 0.1444,
-       "90": 0.1111,
-       "100": 0.1056
+       "10": 0.2431,
+       "25": 0.2044,
+       "50": 0.1602,
+       "75": 0.1436,
+       "90": 0.1105,
+       "100": 0.105
       },
-      "exit_s00": 128,
+      "exit_s00": 129,
       "exit_s01": 11,
       "completed": 19,
-      "s00_rate": 0.7111,
-      "s01_rate": 0.0611,
-      "done_rate": 0.1056
+      "s00_rate": 0.7127,
+      "s01_rate": 0.0608,
+      "done_rate": 0.105
      }
     },
     "channels": {
@@ -680137,7 +683219,7 @@
      "Organic Video": 4,
      "Paid Social": 8,
      "Referral": 2,
-     "Paid Other": 1
+     "Paid Other": 2
     },
     "by_source": {
      "_비광고": {
@@ -680438,9 +683520,9 @@
      },
      "ID 120253355889890414 (이름 미설정)": {
       "exit_hist": {
-       "0": 1
+       "0": 2
       },
-      "exits": 1
+      "exits": 2
      },
      "YT3-C0O2V1Jy3ckgJJEZR3CHgI39mHyCctCWpuzFaB8haGWDiySH-3M7yhIsALnqeZ6SVMH44ZHKizyJvquiuZ7R2UWTC726xSUP": {
       "exit_hist": {
@@ -680541,14 +683623,14 @@
      },
      "Paid Other": {
       "exit_hist": {
-       "0": 1
+       "0": 2
       },
-      "exits": 1
+      "exits": 2
      }
     },
     "entry": {
-     "sessions": 80,
-     "engaged": 80
+     "sessions": 81,
+     "engaged": 81
     },
     "clarity": {
      "sessions": 120,
@@ -680568,8 +683650,8 @@
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0278,
-     "revenue_per_session": 2196,
+     "cvr": 0.0276,
+     "revenue_per_session": 2184,
      "aov": 79065
     }
    },
@@ -683641,33 +686723,33 @@
       "section_reach": {
        "1": 40,
        "2": 22,
-       "3": 29,
-       "4": 31,
+       "3": 30,
+       "4": 32,
        "5": 22,
-       "6": 27,
-       "7": 26,
-       "8": 24,
-       "9": 25,
-       "10": 26,
-       "11": 26,
-       "12": 26,
-       "13": 25,
-       "14": 25,
-       "15": 26,
-       "16": 26,
-       "17": 26,
-       "18": 25,
-       "19": 26,
+       "6": 28,
+       "7": 27,
+       "8": 25,
+       "9": 26,
+       "10": 27,
+       "11": 27,
+       "12": 27,
+       "13": 26,
+       "14": 26,
+       "15": 27,
+       "16": 27,
+       "17": 27,
+       "18": 26,
+       "19": 27,
        "20": 25,
        "21": 24,
        "22": 24,
-       "23": 25,
-       "24": 23,
-       "25": 26,
-       "26": 22,
-       "27": 19,
-       "28": 20,
-       "29": 20,
+       "23": 26,
+       "24": 24,
+       "25": 27,
+       "26": 23,
+       "27": 20,
+       "28": 21,
+       "29": 21,
        "30": 15
       },
       "exit_hist": {
@@ -683679,24 +686761,24 @@
        "7": 3,
        "20": 1,
        "22": 1,
-       "29": 5,
+       "29": 7,
        "4": 5,
        "28": 1,
        "3": 2
       },
       "events": {
-       "pdp_section": 746,
-       "pdp_scroll": 195,
-       "pdp_cta_view": 62,
-       "pdp_exit": 143,
+       "pdp_section": 769,
+       "pdp_scroll": 200,
+       "pdp_cta_view": 63,
+       "pdp_exit": 145,
        "pdp_cta_click": 3,
        "pdp_review": 21
       },
       "scroll_reach": {
-       "10": 44,
-       "25": 40,
-       "50": 35,
-       "75": 29,
+       "10": 45,
+       "25": 41,
+       "50": 36,
+       "75": 31,
        "100": 23,
        "90": 24
       },
@@ -683720,84 +686802,84 @@
        "0": 1,
        "25": 1
       },
-      "exit_events": 143,
-      "sum_seconds": 6751,
+      "exit_events": 145,
+      "sum_seconds": 7043,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 78,
+      "sum_saw_cta": 80,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 143,
+      "sessions": 145,
       "section_reach_mono": {
-       "29": 20,
-       "28": 20,
-       "27": 20,
-       "26": 22,
-       "25": 26,
-       "24": 26,
-       "23": 26,
-       "22": 26,
-       "21": 26,
-       "20": 26,
-       "19": 26,
-       "18": 26,
-       "17": 26,
-       "16": 26,
-       "15": 26,
-       "14": 26,
-       "13": 26,
-       "12": 26,
-       "11": 26,
-       "10": 26,
-       "9": 26,
-       "8": 26,
-       "7": 26,
-       "6": 27,
-       "5": 27,
-       "4": 31,
-       "3": 31,
-       "2": 31,
+       "29": 21,
+       "28": 21,
+       "27": 21,
+       "26": 23,
+       "25": 27,
+       "24": 27,
+       "23": 27,
+       "22": 27,
+       "21": 27,
+       "20": 27,
+       "19": 27,
+       "18": 27,
+       "17": 27,
+       "16": 27,
+       "15": 27,
+       "14": 27,
+       "13": 27,
+       "12": 27,
+       "11": 27,
+       "10": 27,
+       "9": 27,
+       "8": 27,
+       "7": 27,
+       "6": 28,
+       "5": 28,
+       "4": 32,
+       "3": 32,
+       "2": 32,
        "1": 40
       },
       "reach_repaired_sections": 14,
       "section_reach_pct": {
-       "1": 0.2797,
-       "2": 0.2168,
-       "3": 0.2168,
-       "4": 0.2168,
-       "5": 0.1888,
-       "6": 0.1888,
-       "7": 0.1818,
-       "8": 0.1818,
-       "9": 0.1818,
-       "10": 0.1818,
-       "11": 0.1818,
-       "12": 0.1818,
-       "13": 0.1818,
-       "14": 0.1818,
-       "15": 0.1818,
-       "16": 0.1818,
-       "17": 0.1818,
-       "18": 0.1818,
-       "19": 0.1818,
-       "20": 0.1818,
-       "21": 0.1818,
-       "22": 0.1818,
-       "23": 0.1818,
-       "24": 0.1818,
-       "25": 0.1818,
-       "26": 0.1538,
-       "27": 0.1399,
-       "28": 0.1399,
-       "29": 0.1399
+       "1": 0.2759,
+       "2": 0.2207,
+       "3": 0.2207,
+       "4": 0.2207,
+       "5": 0.1931,
+       "6": 0.1931,
+       "7": 0.1862,
+       "8": 0.1862,
+       "9": 0.1862,
+       "10": 0.1862,
+       "11": 0.1862,
+       "12": 0.1862,
+       "13": 0.1862,
+       "14": 0.1862,
+       "15": 0.1862,
+       "16": 0.1862,
+       "17": 0.1862,
+       "18": 0.1862,
+       "19": 0.1862,
+       "20": 0.1862,
+       "21": 0.1862,
+       "22": 0.1862,
+       "23": 0.1862,
+       "24": 0.1862,
+       "25": 0.1862,
+       "26": 0.1586,
+       "27": 0.1448,
+       "28": 0.1448,
+       "29": 0.1448
       },
       "section_dropoff": {
-       "2": 0.0629,
+       "2": 0.0552,
        "3": 0.0,
        "4": 0.0,
-       "5": 0.028,
+       "5": 0.0276,
        "6": 0.0,
-       "7": 0.007,
+       "7": 0.0069,
        "8": 0.0,
        "9": 0.0,
        "10": 0.0,
@@ -683816,43 +686898,43 @@
        "23": 0.0,
        "24": 0.0,
        "25": 0.0,
-       "26": 0.028,
-       "27": 0.014,
+       "26": 0.0276,
+       "27": 0.0138,
        "28": 0.0,
        "29": 0.0
       },
       "reach_noise": 0,
       "biggest_drop_section": 26,
       "biggest_drop_people": 5,
-      "biggest_drop_rate": 0.035,
-      "avg_seconds": 47.2098,
+      "biggest_drop_rate": 0.0345,
+      "avg_seconds": 48.5724,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.5455,
+      "avg_saw_cta": 0.5517,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {
-       "10": 44,
-       "25": 40,
-       "50": 35,
-       "75": 29,
+       "10": 45,
+       "25": 41,
+       "50": 36,
+       "75": 31,
        "90": 24,
        "100": 23
       },
       "scroll_curve_pct": {
-       "10": 0.3077,
-       "25": 0.2797,
-       "50": 0.2448,
-       "75": 0.2028,
-       "90": 0.1678,
-       "100": 0.1608
+       "10": 0.3103,
+       "25": 0.2828,
+       "50": 0.2483,
+       "75": 0.2138,
+       "90": 0.1655,
+       "100": 0.1586
       },
       "exit_s00": 92,
       "exit_s01": 8,
-      "completed": 5,
-      "s00_rate": 0.6434,
-      "s01_rate": 0.0559,
-      "done_rate": 0.035
+      "completed": 7,
+      "s00_rate": 0.6345,
+      "s01_rate": 0.0552,
+      "done_rate": 0.0483
      },
      "tablet": {
       "section_reach": {},
@@ -684166,33 +687248,33 @@
       "section_reach": {
        "1": 40,
        "2": 23,
-       "3": 30,
-       "4": 32,
+       "3": 31,
+       "4": 33,
        "5": 23,
-       "6": 28,
-       "7": 27,
-       "8": 25,
-       "9": 25,
-       "10": 27,
-       "11": 26,
-       "12": 27,
-       "13": 25,
-       "14": 25,
-       "15": 26,
-       "16": 26,
-       "17": 26,
-       "18": 25,
-       "19": 26,
+       "6": 29,
+       "7": 28,
+       "8": 26,
+       "9": 26,
+       "10": 28,
+       "11": 27,
+       "12": 28,
+       "13": 26,
+       "14": 26,
+       "15": 27,
+       "16": 27,
+       "17": 27,
+       "18": 26,
+       "19": 27,
        "20": 25,
        "21": 25,
        "22": 24,
-       "23": 25,
-       "24": 24,
-       "25": 27,
-       "26": 22,
-       "27": 19,
-       "28": 21,
-       "29": 21,
+       "23": 26,
+       "24": 25,
+       "25": 28,
+       "26": 23,
+       "27": 20,
+       "28": 22,
+       "29": 22,
        "30": 16
       },
       "exit_hist": {
@@ -684204,24 +687286,24 @@
        "7": 3,
        "20": 1,
        "22": 1,
-       "29": 5,
+       "29": 7,
        "4": 5,
        "28": 1,
        "3": 2
       },
       "events": {
-       "pdp_section": 761,
-       "pdp_scroll": 201,
-       "pdp_cta_view": 63,
-       "pdp_exit": 147,
+       "pdp_section": 784,
+       "pdp_scroll": 206,
+       "pdp_cta_view": 64,
+       "pdp_exit": 149,
        "pdp_cta_click": 3,
        "pdp_review": 22
       },
       "scroll_reach": {
-       "10": 45,
-       "25": 41,
-       "50": 36,
-       "75": 30,
+       "10": 46,
+       "25": 42,
+       "50": 37,
+       "75": 32,
        "100": 24,
        "90": 25
       },
@@ -684245,84 +687327,84 @@
        "0": 1,
        "25": 1
       },
-      "exit_events": 147,
-      "sum_seconds": 6793,
+      "exit_events": 149,
+      "sum_seconds": 7085,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 79,
+      "sum_saw_cta": 81,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 147,
+      "sessions": 149,
       "section_reach_mono": {
-       "29": 21,
-       "28": 21,
-       "27": 21,
-       "26": 22,
-       "25": 27,
-       "24": 27,
-       "23": 27,
-       "22": 27,
-       "21": 27,
-       "20": 27,
-       "19": 27,
-       "18": 27,
-       "17": 27,
-       "16": 27,
-       "15": 27,
-       "14": 27,
-       "13": 27,
-       "12": 27,
-       "11": 27,
-       "10": 27,
-       "9": 27,
-       "8": 27,
-       "7": 27,
-       "6": 28,
-       "5": 28,
-       "4": 32,
-       "3": 32,
-       "2": 32,
+       "29": 22,
+       "28": 22,
+       "27": 22,
+       "26": 23,
+       "25": 28,
+       "24": 28,
+       "23": 28,
+       "22": 28,
+       "21": 28,
+       "20": 28,
+       "19": 28,
+       "18": 28,
+       "17": 28,
+       "16": 28,
+       "15": 28,
+       "14": 28,
+       "13": 28,
+       "12": 28,
+       "11": 28,
+       "10": 28,
+       "9": 28,
+       "8": 28,
+       "7": 28,
+       "6": 29,
+       "5": 29,
+       "4": 33,
+       "3": 33,
+       "2": 33,
        "1": 40
       },
       "reach_repaired_sections": 19,
       "section_reach_pct": {
-       "1": 0.2721,
-       "2": 0.2177,
-       "3": 0.2177,
-       "4": 0.2177,
-       "5": 0.1905,
-       "6": 0.1905,
-       "7": 0.1837,
-       "8": 0.1837,
-       "9": 0.1837,
-       "10": 0.1837,
-       "11": 0.1837,
-       "12": 0.1837,
-       "13": 0.1837,
-       "14": 0.1837,
-       "15": 0.1837,
-       "16": 0.1837,
-       "17": 0.1837,
-       "18": 0.1837,
-       "19": 0.1837,
-       "20": 0.1837,
-       "21": 0.1837,
-       "22": 0.1837,
-       "23": 0.1837,
-       "24": 0.1837,
-       "25": 0.1837,
-       "26": 0.1497,
-       "27": 0.1429,
-       "28": 0.1429,
-       "29": 0.1429
+       "1": 0.2685,
+       "2": 0.2215,
+       "3": 0.2215,
+       "4": 0.2215,
+       "5": 0.1946,
+       "6": 0.1946,
+       "7": 0.1879,
+       "8": 0.1879,
+       "9": 0.1879,
+       "10": 0.1879,
+       "11": 0.1879,
+       "12": 0.1879,
+       "13": 0.1879,
+       "14": 0.1879,
+       "15": 0.1879,
+       "16": 0.1879,
+       "17": 0.1879,
+       "18": 0.1879,
+       "19": 0.1879,
+       "20": 0.1879,
+       "21": 0.1879,
+       "22": 0.1879,
+       "23": 0.1879,
+       "24": 0.1879,
+       "25": 0.1879,
+       "26": 0.1544,
+       "27": 0.1477,
+       "28": 0.1477,
+       "29": 0.1477
       },
       "section_dropoff": {
-       "2": 0.0544,
+       "2": 0.047,
        "3": 0.0,
        "4": 0.0,
-       "5": 0.0272,
+       "5": 0.0268,
        "6": 0.0,
-       "7": 0.0068,
+       "7": 0.0067,
        "8": 0.0,
        "9": 0.0,
        "10": 0.0,
@@ -684341,49 +687423,49 @@
        "23": 0.0,
        "24": 0.0,
        "25": 0.0,
-       "26": 0.034,
-       "27": 0.0068,
+       "26": 0.0336,
+       "27": 0.0067,
        "28": 0.0,
        "29": 0.0
       },
       "reach_noise": 0,
       "biggest_drop_section": 26,
       "biggest_drop_people": 5,
-      "biggest_drop_rate": 0.034,
-      "avg_seconds": 46.2109,
+      "biggest_drop_rate": 0.0336,
+      "avg_seconds": 47.5503,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.5374,
+      "avg_saw_cta": 0.5436,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {
-       "10": 45,
-       "25": 41,
-       "50": 36,
-       "75": 30,
+       "10": 46,
+       "25": 42,
+       "50": 37,
+       "75": 32,
        "90": 25,
        "100": 24
       },
       "scroll_curve_pct": {
-       "10": 0.3061,
-       "25": 0.2789,
-       "50": 0.2449,
-       "75": 0.2041,
-       "90": 0.1701,
-       "100": 0.1633
+       "10": 0.3087,
+       "25": 0.2819,
+       "50": 0.2483,
+       "75": 0.2148,
+       "90": 0.1678,
+       "100": 0.1611
       },
       "exit_s00": 95,
       "exit_s01": 8,
-      "completed": 5,
-      "s00_rate": 0.6463,
-      "s01_rate": 0.0544,
-      "done_rate": 0.034
+      "completed": 7,
+      "s00_rate": 0.6376,
+      "s01_rate": 0.0537,
+      "done_rate": 0.047
      }
     },
     "channels": {
      "Unassigned": 5,
      "Organic Shopping": 43,
-     "Organic Social": 40,
+     "Organic Social": 42,
      "Direct": 31,
      "Organic Search": 21,
      "Paid Social": 6,
@@ -684399,11 +687481,11 @@
        "7": 3,
        "26": 4,
        "22": 1,
-       "29": 4,
+       "29": 6,
        "4": 4,
        "3": 2
       },
-      "exits": 83
+      "exits": 85
      },
      "YT3-T4GJCRM6HS82B8ZfscYq6858aj5Fr5Iv7JCiGDXj-IE7p33J0Qu259C5RuMKowhf2Uev917HrVLuOhxULHFlJnudhvN6LM-E": {
       "exit_hist": {
@@ -684608,9 +687690,9 @@
        "1": 2,
        "7": 1,
        "4": 1,
-       "29": 1
+       "29": 3
       },
-      "exits": 40
+      "exits": 42
      },
      "Direct": {
       "exit_hist": {
@@ -684672,8 +687754,8 @@
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.034,
-     "revenue_per_session": 4021,
+     "cvr": 0.0336,
+     "revenue_per_session": 3967,
      "aov": 118231
     }
    },
@@ -684776,19 +687858,19 @@
     "devices": {
      "mobile": {
       "section_reach": {
-       "1": 31,
-       "2": 31,
-       "3": 31,
-       "4": 28,
-       "5": 28,
-       "6": 27,
-       "7": 25,
-       "8": 25,
-       "9": 24,
-       "10": 24,
-       "11": 22,
-       "12": 24,
-       "13": 24,
+       "1": 32,
+       "2": 32,
+       "3": 32,
+       "4": 29,
+       "5": 29,
+       "6": 28,
+       "7": 26,
+       "8": 26,
+       "9": 25,
+       "10": 25,
+       "11": 23,
+       "12": 25,
+       "13": 25,
        "14": 15
       },
       "exit_hist": {
@@ -684798,24 +687880,24 @@
        "3": 5,
        "6": 2,
        "12": 2,
-       "13": 8,
+       "13": 10,
        "1": 4,
        "7": 3
       },
       "events": {
-       "pdp_section": 359,
-       "pdp_scroll": 164,
-       "pdp_exit": 96,
-       "pdp_cta_view": 40,
+       "pdp_section": 372,
+       "pdp_scroll": 168,
+       "pdp_exit": 98,
+       "pdp_cta_view": 41,
        "pdp_review": 14,
        "pdp_cta_click": 4
       },
       "scroll_reach": {
-       "10": 34,
+       "10": 35,
        "100": 20,
-       "25": 33,
-       "50": 30,
-       "75": 25,
+       "25": 34,
+       "50": 31,
+       "75": 26,
        "90": 22
       },
       "zone_clicks": {
@@ -684836,54 +687918,54 @@
       "buyer_depth": {
        "1": 1
       },
-      "exit_events": 96,
-      "sum_seconds": 2163,
+      "exit_events": 98,
+      "sum_seconds": 2223,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 54,
+      "sum_saw_cta": 56,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 96,
+      "sessions": 98,
       "section_reach_mono": {
-       "13": 24,
-       "12": 24,
-       "11": 24,
-       "10": 24,
-       "9": 24,
-       "8": 25,
-       "7": 25,
-       "6": 27,
-       "5": 28,
-       "4": 28,
-       "3": 31,
-       "2": 31,
-       "1": 31
+       "13": 25,
+       "12": 25,
+       "11": 25,
+       "10": 25,
+       "9": 25,
+       "8": 26,
+       "7": 26,
+       "6": 28,
+       "5": 29,
+       "4": 29,
+       "3": 32,
+       "2": 32,
+       "1": 32
       },
       "reach_repaired_sections": 1,
       "section_reach_pct": {
-       "1": 0.3229,
-       "2": 0.3229,
-       "3": 0.3229,
-       "4": 0.2917,
-       "5": 0.2917,
-       "6": 0.2812,
-       "7": 0.2604,
-       "8": 0.2604,
-       "9": 0.25,
-       "10": 0.25,
-       "11": 0.25,
-       "12": 0.25,
-       "13": 0.25
+       "1": 0.3265,
+       "2": 0.3265,
+       "3": 0.3265,
+       "4": 0.2959,
+       "5": 0.2959,
+       "6": 0.2857,
+       "7": 0.2653,
+       "8": 0.2653,
+       "9": 0.2551,
+       "10": 0.2551,
+       "11": 0.2551,
+       "12": 0.2551,
+       "13": 0.2551
       },
       "section_dropoff": {
        "2": 0.0,
        "3": 0.0,
-       "4": 0.0312,
+       "4": 0.0306,
        "5": 0.0,
-       "6": 0.0104,
-       "7": 0.0208,
+       "6": 0.0102,
+       "7": 0.0204,
        "8": 0.0,
-       "9": 0.0104,
+       "9": 0.0102,
        "10": 0.0,
        "11": 0.0,
        "12": 0.0,
@@ -684892,35 +687974,35 @@
       "reach_noise": 0,
       "biggest_drop_section": 3,
       "biggest_drop_people": 5,
-      "biggest_drop_rate": 0.0521,
-      "avg_seconds": 22.5312,
+      "biggest_drop_rate": 0.051,
+      "avg_seconds": 22.6837,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.5625,
+      "avg_saw_cta": 0.5714,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {
-       "10": 34,
-       "25": 33,
-       "50": 30,
-       "75": 25,
+       "10": 35,
+       "25": 34,
+       "50": 31,
+       "75": 26,
        "90": 22,
        "100": 20
       },
       "scroll_curve_pct": {
-       "10": 0.3542,
-       "25": 0.3438,
-       "50": 0.3125,
-       "75": 0.2604,
-       "90": 0.2292,
-       "100": 0.2083
+       "10": 0.3571,
+       "25": 0.3469,
+       "50": 0.3163,
+       "75": 0.2653,
+       "90": 0.2245,
+       "100": 0.2041
       },
       "exit_s00": 50,
       "exit_s01": 4,
-      "completed": 8,
-      "s00_rate": 0.5208,
-      "s01_rate": 0.0417,
-      "done_rate": 0.0833
+      "completed": 10,
+      "s00_rate": 0.5102,
+      "s01_rate": 0.0408,
+      "done_rate": 0.102
      },
      "tablet": {
       "section_reach": {},
@@ -685136,19 +688218,19 @@
      },
      "_all": {
       "section_reach": {
-       "1": 32,
-       "2": 32,
-       "3": 33,
-       "4": 29,
-       "5": 30,
-       "6": 28,
-       "7": 27,
-       "8": 26,
-       "9": 25,
-       "10": 26,
-       "11": 24,
-       "12": 26,
-       "13": 25,
+       "1": 33,
+       "2": 33,
+       "3": 34,
+       "4": 30,
+       "5": 31,
+       "6": 29,
+       "7": 28,
+       "8": 27,
+       "9": 26,
+       "10": 27,
+       "11": 25,
+       "12": 27,
+       "13": 26,
        "14": 15
       },
       "exit_hist": {
@@ -685158,24 +688240,24 @@
        "3": 5,
        "6": 2,
        "12": 3,
-       "13": 9,
+       "13": 11,
        "1": 4,
        "7": 3
       },
       "events": {
-       "pdp_section": 378,
-       "pdp_scroll": 176,
-       "pdp_exit": 101,
-       "pdp_cta_view": 41,
+       "pdp_section": 391,
+       "pdp_scroll": 180,
+       "pdp_exit": 103,
+       "pdp_cta_view": 42,
        "pdp_review": 16,
        "pdp_cta_click": 4
       },
       "scroll_reach": {
-       "10": 36,
+       "10": 37,
        "100": 22,
-       "25": 35,
-       "50": 32,
-       "75": 27,
+       "25": 36,
+       "50": 33,
+       "75": 28,
        "90": 24
       },
       "zone_clicks": {
@@ -685196,95 +688278,95 @@
       "buyer_depth": {
        "1": 1
       },
-      "exit_events": 101,
-      "sum_seconds": 2260,
+      "exit_events": 103,
+      "sum_seconds": 2320,
       "sum_bounce_3s": 0,
-      "sum_saw_cta": 55,
+      "sum_saw_cta": 57,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 101,
+      "sessions": 103,
       "section_reach_mono": {
-       "13": 25,
-       "12": 26,
-       "11": 26,
-       "10": 26,
-       "9": 26,
-       "8": 26,
-       "7": 27,
-       "6": 28,
-       "5": 30,
-       "4": 30,
-       "3": 33,
-       "2": 33,
-       "1": 33
+       "13": 26,
+       "12": 27,
+       "11": 27,
+       "10": 27,
+       "9": 27,
+       "8": 27,
+       "7": 28,
+       "6": 29,
+       "5": 31,
+       "4": 31,
+       "3": 34,
+       "2": 34,
+       "1": 34
       },
       "reach_repaired_sections": 5,
       "section_reach_pct": {
-       "1": 0.3267,
-       "2": 0.3267,
-       "3": 0.3267,
-       "4": 0.297,
-       "5": 0.297,
-       "6": 0.2772,
-       "7": 0.2673,
-       "8": 0.2574,
-       "9": 0.2574,
-       "10": 0.2574,
-       "11": 0.2574,
-       "12": 0.2574,
-       "13": 0.2475
+       "1": 0.3301,
+       "2": 0.3301,
+       "3": 0.3301,
+       "4": 0.301,
+       "5": 0.301,
+       "6": 0.2816,
+       "7": 0.2718,
+       "8": 0.2621,
+       "9": 0.2621,
+       "10": 0.2621,
+       "11": 0.2621,
+       "12": 0.2621,
+       "13": 0.2524
       },
       "section_dropoff": {
        "2": 0.0,
        "3": 0.0,
-       "4": 0.0297,
+       "4": 0.0291,
        "5": 0.0,
-       "6": 0.0198,
-       "7": 0.0099,
-       "8": 0.0099,
+       "6": 0.0194,
+       "7": 0.0097,
+       "8": 0.0097,
        "9": 0.0,
        "10": 0.0,
        "11": 0.0,
        "12": 0.0,
-       "13": 0.0099
+       "13": 0.0097
       },
       "reach_noise": 0,
       "biggest_drop_section": 3,
       "biggest_drop_people": 5,
-      "biggest_drop_rate": 0.0495,
-      "avg_seconds": 22.3762,
+      "biggest_drop_rate": 0.0485,
+      "avg_seconds": 22.5243,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.5446,
+      "avg_saw_cta": 0.5534,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
       "scroll_curve": {
-       "10": 36,
-       "25": 35,
-       "50": 32,
-       "75": 27,
+       "10": 37,
+       "25": 36,
+       "50": 33,
+       "75": 28,
        "90": 24,
        "100": 22
       },
       "scroll_curve_pct": {
-       "10": 0.3564,
-       "25": 0.3465,
-       "50": 0.3168,
-       "75": 0.2673,
-       "90": 0.2376,
-       "100": 0.2178
+       "10": 0.3592,
+       "25": 0.3495,
+       "50": 0.3204,
+       "75": 0.2718,
+       "90": 0.233,
+       "100": 0.2136
       },
       "exit_s00": 53,
       "exit_s01": 4,
-      "completed": 9,
-      "s00_rate": 0.5248,
-      "s01_rate": 0.0396,
-      "done_rate": 0.0891
+      "completed": 11,
+      "s00_rate": 0.5146,
+      "s01_rate": 0.0388,
+      "done_rate": 0.1068
      }
     },
     "channels": {
-     "Organic Social": 25,
+     "Organic Social": 27,
      "Organic Shopping": 22,
      "Direct": 27,
      "Paid Social": 2,
@@ -685318,9 +688400,10 @@
      "img_부담이었는데_베지셀": {
       "exit_hist": {
        "0": 3,
-       "14": 2
+       "14": 2,
+       "13": 2
       },
-      "exits": 5
+      "exits": 7
      },
      "img_담았습니다_베지셀": {
       "exit_hist": {
@@ -685387,10 +688470,10 @@
        "8": 1,
        "14": 6,
        "3": 3,
-       "13": 4,
+       "13": 6,
        "12": 1
       },
-      "exits": 25
+      "exits": 27
      },
      "Direct": {
       "exit_hist": {
@@ -685461,8 +688544,8 @@
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0099,
-     "revenue_per_session": 1287,
+     "cvr": 0.0097,
+     "revenue_per_session": 1262,
      "aov": 130000
     }
    },
@@ -687150,7 +690233,7 @@
        "4": 7
       },
       "exit_hist": {
-       "0": 11,
+       "0": 13,
        "2": 1,
        "4": 7,
        "3": 1
@@ -687159,7 +690242,7 @@
        "pdp_scroll": 46,
        "pdp_section": 32,
        "pdp_cta_view": 11,
-       "pdp_exit": 20,
+       "pdp_exit": 22,
        "pdp_review": 6,
        "pdp_cta_click": 1
       },
@@ -687183,14 +690266,14 @@
       "buyer_depth": {
        "4": 1
       },
-      "exit_events": 20,
-      "sum_seconds": 864,
+      "exit_events": 22,
+      "sum_seconds": 870,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 12,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 20,
+      "sessions": 22,
       "section_reach_mono": {
        "4": 7,
        "3": 8,
@@ -687199,23 +690282,23 @@
       },
       "reach_repaired_sections": 1,
       "section_reach_pct": {
-       "1": 0.45,
-       "2": 0.45,
-       "3": 0.4,
-       "4": 0.35
+       "1": 0.4091,
+       "2": 0.4091,
+       "3": 0.3636,
+       "4": 0.3182
       },
       "section_dropoff": {
        "2": 0.0,
-       "3": 0.05,
-       "4": 0.05
+       "3": 0.0455,
+       "4": 0.0455
       },
       "reach_noise": 0,
       "biggest_drop_section": 2,
       "biggest_drop_people": 1,
-      "biggest_drop_rate": 0.05,
-      "avg_seconds": 43.2,
+      "biggest_drop_rate": 0.0455,
+      "avg_seconds": 39.5455,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.6,
+      "avg_saw_cta": 0.5455,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -687228,19 +690311,19 @@
        "100": 6
       },
       "scroll_curve_pct": {
-       "10": 0.45,
-       "25": 0.45,
-       "50": 0.4,
-       "75": 0.4,
-       "90": 0.3,
-       "100": 0.3
+       "10": 0.4091,
+       "25": 0.4091,
+       "50": 0.3636,
+       "75": 0.3636,
+       "90": 0.2727,
+       "100": 0.2727
       },
-      "exit_s00": 11,
+      "exit_s00": 13,
       "exit_s01": 0,
       "completed": 7,
-      "s00_rate": 0.55,
+      "s00_rate": 0.5909,
       "s01_rate": 0.0,
-      "done_rate": 0.35
+      "done_rate": 0.3182
      },
      "_all": {
       "section_reach": {
@@ -687250,7 +690333,7 @@
        "4": 7
       },
       "exit_hist": {
-       "0": 11,
+       "0": 13,
        "2": 1,
        "4": 7,
        "3": 1
@@ -687259,7 +690342,7 @@
        "pdp_scroll": 46,
        "pdp_section": 32,
        "pdp_cta_view": 11,
-       "pdp_exit": 20,
+       "pdp_exit": 22,
        "pdp_review": 6,
        "pdp_cta_click": 1
       },
@@ -687283,14 +690366,14 @@
       "buyer_depth": {
        "4": 1
       },
-      "exit_events": 20,
-      "sum_seconds": 864,
+      "exit_events": 22,
+      "sum_seconds": 870,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 12,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 20,
+      "sessions": 22,
       "section_reach_mono": {
        "4": 7,
        "3": 8,
@@ -687299,23 +690382,23 @@
       },
       "reach_repaired_sections": 1,
       "section_reach_pct": {
-       "1": 0.45,
-       "2": 0.45,
-       "3": 0.4,
-       "4": 0.35
+       "1": 0.4091,
+       "2": 0.4091,
+       "3": 0.3636,
+       "4": 0.3182
       },
       "section_dropoff": {
        "2": 0.0,
-       "3": 0.05,
-       "4": 0.05
+       "3": 0.0455,
+       "4": 0.0455
       },
       "reach_noise": 0,
       "biggest_drop_section": 2,
       "biggest_drop_people": 1,
-      "biggest_drop_rate": 0.05,
-      "avg_seconds": 43.2,
+      "biggest_drop_rate": 0.0455,
+      "avg_seconds": 39.5455,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.6,
+      "avg_saw_cta": 0.5455,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -687328,19 +690411,19 @@
        "100": 6
       },
       "scroll_curve_pct": {
-       "10": 0.45,
-       "25": 0.45,
-       "50": 0.4,
-       "75": 0.4,
-       "90": 0.3,
-       "100": 0.3
+       "10": 0.4091,
+       "25": 0.4091,
+       "50": 0.3636,
+       "75": 0.3636,
+       "90": 0.2727,
+       "100": 0.2727
       },
-      "exit_s00": 11,
+      "exit_s00": 13,
       "exit_s01": 0,
       "completed": 7,
-      "s00_rate": 0.55,
+      "s00_rate": 0.5909,
       "s01_rate": 0.0,
-      "done_rate": 0.35
+      "done_rate": 0.3182
      }
     },
     "channels": {
@@ -687348,7 +690431,8 @@
      "Paid Social": 3,
      "Organic Video": 1,
      "Organic Search": 3,
-     "Organic Shopping": 2
+     "Organic Shopping": 2,
+     "Paid Other": 2
     },
     "by_source": {
      "gif_만들기3분할_베지셀": {
@@ -687397,6 +690481,12 @@
        "4": 1
       },
       "exits": 1
+     },
+     "ID 120253355889890414 (이름 미설정)": {
+      "exit_hist": {
+       "0": 2
+      },
+      "exits": 2
      }
     },
     "by_channel": {
@@ -687431,11 +690521,17 @@
        "0": 2
       },
       "exits": 2
+     },
+     "Paid Other": {
+      "exit_hist": {
+       "0": 2
+      },
+      "exits": 2
      }
     },
     "entry": {
-     "sessions": 13,
-     "engaged": 13
+     "sessions": 14,
+     "engaged": 14
     },
     "clarity": {
      "sessions": 17,
@@ -687455,8 +690551,8 @@
     },
     "sample": "low",
     "derived": {
-     "cvr": 0.05,
-     "revenue_per_session": 995,
+     "cvr": 0.0455,
+     "revenue_per_session": 905,
      "aov": 19900
     }
    },
@@ -689292,13 +692388,13 @@
        "3": 3
       },
       "exit_hist": {
-       "0": 2,
+       "0": 3,
        "1": 1,
        "3": 3
       },
       "events": {
        "pdp_cta_view": 4,
-       "pdp_exit": 6,
+       "pdp_exit": 7,
        "pdp_section": 8,
        "pdp_scroll": 4
       },
@@ -689312,14 +692408,14 @@
       },
       "zone_buys": {},
       "buyer_depth": {},
-      "exit_events": 6,
-      "sum_seconds": 71,
+      "exit_events": 7,
+      "sum_seconds": 80,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 5,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 6,
+      "sessions": 7,
       "section_reach_mono": {
        "13": 0,
        "12": 0,
@@ -689337,9 +692433,9 @@
       },
       "reach_repaired_sections": 1,
       "section_reach_pct": {
-       "1": 0.5,
-       "2": 0.5,
-       "3": 0.5,
+       "1": 0.4286,
+       "2": 0.4286,
+       "3": 0.4286,
        "4": 0.0,
        "5": 0.0,
        "6": 0.0,
@@ -689354,7 +692450,7 @@
       "section_dropoff": {
        "2": 0.0,
        "3": 0.0,
-       "4": 0.5,
+       "4": 0.4286,
        "5": 0.0,
        "6": 0.0,
        "7": 0.0,
@@ -689368,10 +692464,10 @@
       "reach_noise": 0,
       "biggest_drop_section": 3,
       "biggest_drop_people": 3,
-      "biggest_drop_rate": 0.5,
-      "avg_seconds": 11.8333,
+      "biggest_drop_rate": 0.4286,
+      "avg_seconds": 11.4286,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.8333,
+      "avg_saw_cta": 0.7143,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -689384,18 +692480,18 @@
        "100": 0
       },
       "scroll_curve_pct": {
-       "10": 0.3333,
-       "25": 0.1667,
-       "50": 0.1667,
+       "10": 0.2857,
+       "25": 0.1429,
+       "50": 0.1429,
        "75": 0.0,
        "90": 0.0,
        "100": 0.0
       },
-      "exit_s00": 2,
+      "exit_s00": 3,
       "exit_s01": 1,
       "completed": 0,
-      "s00_rate": 0.3333,
-      "s01_rate": 0.1667,
+      "s00_rate": 0.4286,
+      "s01_rate": 0.1429,
       "done_rate": 0.0
      },
      "desktop": {
@@ -689490,13 +692586,13 @@
        "3": 3
       },
       "exit_hist": {
-       "0": 3,
+       "0": 4,
        "1": 1,
        "3": 3
       },
       "events": {
        "pdp_cta_view": 5,
-       "pdp_exit": 7,
+       "pdp_exit": 8,
        "pdp_section": 8,
        "pdp_scroll": 4
       },
@@ -689510,14 +692606,14 @@
       },
       "zone_buys": {},
       "buyer_depth": {},
-      "exit_events": 7,
-      "sum_seconds": 72,
+      "exit_events": 8,
+      "sum_seconds": 81,
       "sum_bounce_3s": 0,
       "sum_saw_cta": 6,
       "sum_saw_review": 0,
       "sum_clicked_cart": 0,
       "sum_clicked_buy": 0,
-      "sessions": 7,
+      "sessions": 8,
       "section_reach_mono": {
        "13": 0,
        "12": 0,
@@ -689535,9 +692631,9 @@
       },
       "reach_repaired_sections": 1,
       "section_reach_pct": {
-       "1": 0.4286,
-       "2": 0.4286,
-       "3": 0.4286,
+       "1": 0.375,
+       "2": 0.375,
+       "3": 0.375,
        "4": 0.0,
        "5": 0.0,
        "6": 0.0,
@@ -689552,7 +692648,7 @@
       "section_dropoff": {
        "2": 0.0,
        "3": 0.0,
-       "4": 0.4286,
+       "4": 0.375,
        "5": 0.0,
        "6": 0.0,
        "7": 0.0,
@@ -689566,10 +692662,10 @@
       "reach_noise": 0,
       "biggest_drop_section": 3,
       "biggest_drop_people": 3,
-      "biggest_drop_rate": 0.4286,
-      "avg_seconds": 10.2857,
+      "biggest_drop_rate": 0.375,
+      "avg_seconds": 10.125,
       "avg_bounce_3s": 0.0,
-      "avg_saw_cta": 0.8571,
+      "avg_saw_cta": 0.75,
       "avg_saw_review": 0.0,
       "avg_clicked_cart": 0.0,
       "avg_clicked_buy": 0.0,
@@ -689582,25 +692678,26 @@
        "100": 0
       },
       "scroll_curve_pct": {
-       "10": 0.2857,
-       "25": 0.1429,
-       "50": 0.1429,
+       "10": 0.25,
+       "25": 0.125,
+       "50": 0.125,
        "75": 0.0,
        "90": 0.0,
        "100": 0.0
       },
-      "exit_s00": 3,
+      "exit_s00": 4,
       "exit_s01": 1,
       "completed": 0,
-      "s00_rate": 0.4286,
-      "s01_rate": 0.1429,
+      "s00_rate": 0.5,
+      "s01_rate": 0.125,
       "done_rate": 0.0
      }
     },
     "channels": {
      "Organic Social": 5,
      "Referral": 1,
-     "Direct": 1
+     "Direct": 1,
+     "Paid Other": 1
     },
     "by_source": {
      "img_부담이었는데_베지셀": {
@@ -689632,6 +692729,12 @@
        "0": 2
       },
       "exits": 2
+     },
+     "ID 120253355889890414 (이름 미설정)": {
+      "exit_hist": {
+       "0": 1
+      },
+      "exits": 1
      }
     },
     "by_channel": {
@@ -689654,11 +692757,17 @@
        "0": 1
       },
       "exits": 1
+     },
+     "Paid Other": {
+      "exit_hist": {
+       "0": 1
+      },
+      "exits": 1
      }
     },
     "entry": {
-     "sessions": 2,
-     "engaged": 2
+     "sessions": 3,
+     "engaged": 3
     },
     "clarity": {
      "sessions": 7,
