@@ -681988,7 +681988,7 @@
   "2026-10-17": {
    "sources": {
     "ga4": "ok",
-    "clarity": "missing",
+    "clarity": "ok",
     "cafe24": "ok"
    },
    "products": {
@@ -682414,8 +682414,23 @@
       "sessions": 13,
       "engaged": 13
      },
-     "clarity": null,
-     "sales": null,
+     "clarity": {
+      "sessions": 450,
+      "avg_scroll_depth": 15.5,
+      "dead_click_sessions": 3,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 8,
+      "active_ratio": 0.647,
+      "truncated": false
+     },
+     "sales": {
+      "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+      "orders": 2,
+      "units": 2,
+      "gross": 311920,
+      "net": 311920,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "ID 120253355862720414 (이름 미설정)": {
@@ -682450,6 +682465,11 @@
        },
        "exits": 4
       }
+     },
+     "derived": {
+      "cvr": 0.1429,
+      "revenue_per_session": 22280,
+      "aov": 155960
      }
     },
     "31": {
@@ -683013,7 +683033,15 @@
       "Direct": 2
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 7,
+      "avg_scroll_depth": 6.3,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.969,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -683274,7 +683302,15 @@
       "sessions": 1,
       "engaged": 0
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 12,
+      "avg_scroll_depth": 11.7,
+      "dead_click_sessions": 2,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 0.881,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {},
@@ -683458,7 +683494,15 @@
       "sessions": 1,
       "engaged": 1
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 21,
+      "avg_scroll_depth": 41.9,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {},
@@ -683467,11 +683511,11 @@
    },
    "unattributed": {
     "ga4_unknown_exit_events": 0,
-    "clarity_unmatched_sessions": 0
+    "clarity_unmatched_sessions": 157
    }
   }
  },
- "built_at": "2026-10-17 09:34:30 KST",
+ "built_at": "2026-10-18 07:00:07 KST",
  "period": {
   "range": "2026-10-11 ~ 2026-10-17",
   "dates": [
@@ -685512,26 +685556,26 @@
      "engaged": 3557
     },
     "clarity": {
-     "sessions": 3310,
-     "avg_scroll_depth": 19.3,
-     "active_ratio": 0.539,
-     "dead_click_sessions": 58,
+     "sessions": 3760,
+     "avg_scroll_depth": 18.9,
+     "active_ratio": 0.552,
+     "dead_click_sessions": 61,
      "rage_click_sessions": 1,
-     "quickback_sessions": 84,
+     "quickback_sessions": 92,
      "truncated": false
     },
     "sales": {
-     "orders": 31,
-     "units": 31,
-     "gross": 3904466,
-     "net": 3904466,
+     "orders": 33,
+     "units": 33,
+     "gross": 4216386,
+     "net": 4216386,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0054,
-     "revenue_per_session": 679,
-     "aov": 125951
+     "cvr": 0.0057,
+     "revenue_per_session": 733,
+     "aov": 127769
     }
    },
    "28": {
@@ -689403,9 +689447,9 @@
      "engaged": 156
     },
     "clarity": {
-     "sessions": 144,
-     "avg_scroll_depth": 43.1,
-     "active_ratio": 0.683,
+     "sessions": 165,
+     "avg_scroll_depth": 43.0,
+     "active_ratio": 0.724,
      "dead_click_sessions": 3,
      "rage_click_sessions": 0,
      "quickback_sessions": 6,
@@ -690639,9 +690683,9 @@
      "engaged": 37
     },
     "clarity": {
-     "sessions": 81,
-     "avg_scroll_depth": 32.4,
-     "active_ratio": 0.788,
+     "sessions": 88,
+     "avg_scroll_depth": 30.3,
+     "active_ratio": 0.802,
      "dead_click_sessions": 2,
      "rage_click_sessions": 0,
      "quickback_sessions": 4,
@@ -694807,12 +694851,12 @@
      "engaged": 132
     },
     "clarity": {
-     "sessions": 175,
-     "avg_scroll_depth": 23.0,
-     "active_ratio": 0.85,
-     "dead_click_sessions": 6,
+     "sessions": 187,
+     "avg_scroll_depth": 22.3,
+     "active_ratio": 0.852,
+     "dead_click_sessions": 8,
      "rage_click_sessions": 0,
-     "quickback_sessions": 7,
+     "quickback_sessions": 8,
      "truncated": false
     },
     "sales": {
@@ -702043,11 +702087,11 @@
    "ga4": {
     "last": "2026-10-17",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    },
    "clarity": {
-    "last": "2026-10-16",
+    "last": "2026-10-17",
     "stale_days": 0,
     "raw_gap": 1,
     "normal_lag": 1
@@ -702055,13 +702099,13 @@
    "cafe24": {
     "last": "2026-10-17",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    }
   },
   "unattributed": {
    "ga4_unknown_exit_events": 0,
-   "clarity_unmatched_sessions": 1508
+   "clarity_unmatched_sessions": 1665
   }
  }
 }
