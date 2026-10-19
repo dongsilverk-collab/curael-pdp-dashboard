@@ -698758,17 +698758,17 @@
   "2026-10-19": {
    "sources": {
     "ga4": "ok",
-    "clarity": "missing",
+    "clarity": "ok",
     "cafe24": "ok"
    },
    "products": {},
    "unattributed": {
     "ga4_unknown_exit_events": 0,
-    "clarity_unmatched_sessions": 0
+    "clarity_unmatched_sessions": 270
    }
   }
  },
- "built_at": "2026-10-19 09:15:50 KST",
+ "built_at": "2026-10-20 07:00:07 KST",
  "period": {
   "range": "2026-10-12 ~ 2026-10-18",
   "dates": [
@@ -716891,11 +716891,11 @@
    "ga4": {
     "last": "2026-10-19",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    },
    "clarity": {
-    "last": "2026-10-18",
+    "last": "2026-10-19",
     "stale_days": 0,
     "raw_gap": 1,
     "normal_lag": 1
@@ -716903,7 +716903,7 @@
    "cafe24": {
     "last": "2026-10-19",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    }
   },
