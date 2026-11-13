@@ -873050,7 +873050,7 @@
   "2026-11-13": {
    "sources": {
     "ga4": "ok",
-    "clarity": "missing",
+    "clarity": "ok",
     "cafe24": "ok"
    },
    "products": {
@@ -873467,8 +873467,23 @@
       "sessions": 11,
       "engaged": 10
      },
-     "clarity": null,
-     "sales": null,
+     "clarity": {
+      "sessions": 242,
+      "avg_scroll_depth": 17.5,
+      "dead_click_sessions": 7,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 8,
+      "active_ratio": 0.528,
+      "truncated": false
+     },
+     "sales": {
+      "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+      "orders": 3,
+      "units": 3,
+      "gross": 327360,
+      "net": 327360,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -873525,6 +873540,11 @@
        },
        "exits": 2
       }
+     },
+     "derived": {
+      "cvr": 0.2308,
+      "revenue_per_session": 25182,
+      "aov": 109120
      }
     },
     "28": {
@@ -873832,8 +873852,23 @@
       "sessions": 3,
       "engaged": 3
      },
-     "clarity": null,
-     "sales": null,
+     "clarity": {
+      "sessions": 47,
+      "avg_scroll_depth": 34.2,
+      "dead_click_sessions": 2,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 4,
+      "active_ratio": 0.919,
+      "truncated": false
+     },
+     "sales": {
+      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+      "orders": 4,
+      "units": 5,
+      "gross": 200000,
+      "net": 200000,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "img_부담이었는데_베지셀": {
@@ -873881,6 +873916,11 @@
        },
        "exits": 1
       }
+     },
+     "derived": {
+      "cvr": 0.6667,
+      "revenue_per_session": 33333,
+      "aov": 50000
      }
     },
     "46": {
@@ -874127,7 +874167,15 @@
       "sessions": 2,
       "engaged": 1
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 1,
+      "avg_scroll_depth": 5.0,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -874421,7 +874469,15 @@
       "sessions": 1,
       "engaged": 1
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 8,
+      "avg_scroll_depth": 28.9,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 1,
+      "active_ratio": 0.685,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -874808,7 +874864,15 @@
       "sessions": 2,
       "engaged": 2
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 17,
+      "avg_scroll_depth": 51.2,
+      "dead_click_sessions": 1,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 2,
+      "active_ratio": 0.718,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -875104,7 +875168,15 @@
       "Unassigned": 2
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 2,
+      "avg_scroll_depth": 10.0,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -875817,7 +875889,15 @@
       "Unassigned": 2
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 1,
+      "avg_scroll_depth": 2.0,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -876072,7 +876152,15 @@
       "sessions": 2,
       "engaged": 2
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 3,
+      "avg_scroll_depth": 44.0,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.953,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -876413,7 +876501,15 @@
       "sessions": 1,
       "engaged": 1
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 12,
+      "avg_scroll_depth": 45.8,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -876689,7 +876785,15 @@
       "Organic Video": 1
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 10,
+      "avg_scroll_depth": 42.3,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.641,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -876876,7 +876980,15 @@
       "Unassigned": 1
      },
      "entry": {},
-     "clarity": null,
+     "clarity": {
+      "sessions": 5,
+      "avg_scroll_depth": 35.6,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 0.03,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -877329,7 +877441,15 @@
       "sessions": 1,
       "engaged": 1
      },
-     "clarity": null,
+     "clarity": {
+      "sessions": 9,
+      "avg_scroll_depth": 15.0,
+      "dead_click_sessions": 0,
+      "rage_click_sessions": 0,
+      "quickback_sessions": 0,
+      "active_ratio": 1.0,
+      "truncated": false
+     },
      "sales": null,
      "sample": "low",
      "by_source": {
@@ -877352,11 +877472,11 @@
    },
    "unattributed": {
     "ga4_unknown_exit_events": 0,
-    "clarity_unmatched_sessions": 0
+    "clarity_unmatched_sessions": 170
    }
   }
  },
- "built_at": "2026-11-13 11:41:26 KST",
+ "built_at": "2026-11-14 07:00:08 KST",
  "period": {
   "range": "2026-11-07 ~ 2026-11-13",
   "dates": [
@@ -879241,26 +879361,26 @@
      "engaged": 1414
     },
     "clarity": {
-     "sessions": 1530,
-     "avg_scroll_depth": 21.1,
-     "active_ratio": 0.684,
-     "dead_click_sessions": 45,
+     "sessions": 1772,
+     "avg_scroll_depth": 20.6,
+     "active_ratio": 0.663,
+     "dead_click_sessions": 52,
      "rage_click_sessions": 0,
-     "quickback_sessions": 77,
+     "quickback_sessions": 85,
      "truncated": false
     },
     "sales": {
-     "orders": 43,
-     "units": 43,
-     "gross": 5199826,
-     "net": 5199826,
+     "orders": 46,
+     "units": 46,
+     "gross": 5527186,
+     "net": 5527186,
      "canceled_units": 1
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0192,
-     "revenue_per_session": 2327,
-     "aov": 120926
+     "cvr": 0.0206,
+     "revenue_per_session": 2473,
+     "aov": 120156
     }
    },
    "28": {
@@ -880827,26 +880947,26 @@
      "engaged": 169
     },
     "clarity": {
-     "sessions": 249,
-     "avg_scroll_depth": 38.9,
-     "active_ratio": 0.969,
-     "dead_click_sessions": 18,
+     "sessions": 296,
+     "avg_scroll_depth": 38.2,
+     "active_ratio": 0.961,
+     "dead_click_sessions": 20,
      "rage_click_sessions": 0,
-     "quickback_sessions": 25,
+     "quickback_sessions": 29,
      "truncated": false
     },
     "sales": {
-     "orders": 16,
-     "units": 18,
-     "gross": 570798,
-     "net": 570798,
+     "orders": 20,
+     "units": 23,
+     "gross": 770798,
+     "net": 770798,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0406,
-     "revenue_per_session": 1449,
-     "aov": 35675
+     "cvr": 0.0508,
+     "revenue_per_session": 1956,
+     "aov": 38540
     }
    },
    "47": {
@@ -881532,12 +881652,12 @@
      "engaged": 109
     },
     "clarity": {
-     "sessions": 127,
-     "avg_scroll_depth": 47.5,
-     "active_ratio": 0.579,
-     "dead_click_sessions": 5,
+     "sessions": 144,
+     "avg_scroll_depth": 47.9,
+     "active_ratio": 0.595,
+     "dead_click_sessions": 6,
      "rage_click_sessions": 0,
-     "quickback_sessions": 6,
+     "quickback_sessions": 8,
      "truncated": false
     },
     "sales": {
@@ -882681,9 +882801,9 @@
      "engaged": 59
     },
     "clarity": {
-     "sessions": 75,
-     "avg_scroll_depth": 39.8,
-     "active_ratio": 0.939,
+     "sessions": 87,
+     "avg_scroll_depth": 40.6,
+     "active_ratio": 0.947,
      "dead_click_sessions": 0,
      "rage_click_sessions": 0,
      "quickback_sessions": 3,
@@ -884176,9 +884296,9 @@
      "engaged": 24
     },
     "clarity": {
-     "sessions": 50,
-     "avg_scroll_depth": 41.3,
-     "active_ratio": 0.903,
+     "sessions": 60,
+     "avg_scroll_depth": 41.5,
+     "active_ratio": 0.859,
      "dead_click_sessions": 3,
      "rage_click_sessions": 0,
      "quickback_sessions": 2,
@@ -885643,9 +885763,9 @@
      "engaged": 6
     },
     "clarity": {
-     "sessions": 12,
-     "avg_scroll_depth": 53.4,
-     "active_ratio": 0.906,
+     "sessions": 14,
+     "avg_scroll_depth": 47.2,
+     "active_ratio": 0.919,
      "dead_click_sessions": 0,
      "rage_click_sessions": 0,
      "quickback_sessions": 2,
@@ -886126,9 +886246,9 @@
      "engaged": 10
     },
     "clarity": {
-     "sessions": 38,
-     "avg_scroll_depth": 48.3,
-     "active_ratio": 0.929,
+     "sessions": 43,
+     "avg_scroll_depth": 46.8,
+     "active_ratio": 0.824,
      "dead_click_sessions": 4,
      "rage_click_sessions": 0,
      "quickback_sessions": 6,
@@ -887072,9 +887192,9 @@
      "engaged": 13
     },
     "clarity": {
-     "sessions": 27,
+     "sessions": 30,
      "avg_scroll_depth": 44.4,
-     "active_ratio": 0.844,
+     "active_ratio": 0.855,
      "dead_click_sessions": 1,
      "rage_click_sessions": 0,
      "quickback_sessions": 1,
@@ -887900,12 +888020,12 @@
      "engaged": 37
     },
     "clarity": {
-     "sessions": 69,
-     "avg_scroll_depth": 38.4,
-     "active_ratio": 0.975,
+     "sessions": 77,
+     "avg_scroll_depth": 37.4,
+     "active_ratio": 0.944,
      "dead_click_sessions": 1,
      "rage_click_sessions": 0,
-     "quickback_sessions": 5,
+     "quickback_sessions": 6,
      "truncated": false
     },
     "sales": {
@@ -888400,9 +888520,9 @@
      "engaged": 8
     },
     "clarity": {
-     "sessions": 15,
-     "avg_scroll_depth": 49.4,
-     "active_ratio": 0.821,
+     "sessions": 16,
+     "avg_scroll_depth": 46.6,
+     "active_ratio": 0.832,
      "dead_click_sessions": 1,
      "rage_click_sessions": 0,
      "quickback_sessions": 1,
@@ -890329,9 +890449,9 @@
      "engaged": 2
     },
     "clarity": {
-     "sessions": 7,
-     "avg_scroll_depth": 40.9,
-     "active_ratio": 0.849,
+     "sessions": 8,
+     "avg_scroll_depth": 36.0,
+     "active_ratio": 0.867,
      "dead_click_sessions": 1,
      "rage_click_sessions": 0,
      "quickback_sessions": 0,
@@ -891949,9 +892069,9 @@
      "engaged": 72
     },
     "clarity": {
-     "sessions": 74,
-     "avg_scroll_depth": 6.1,
-     "active_ratio": 0.978,
+     "sessions": 83,
+     "avg_scroll_depth": 7.1,
+     "active_ratio": 0.98,
      "dead_click_sessions": 0,
      "rage_click_sessions": 0,
      "quickback_sessions": 4,
@@ -894393,11 +894513,11 @@
    "ga4": {
     "last": "2026-11-13",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    },
    "clarity": {
-    "last": "2026-11-12",
+    "last": "2026-11-13",
     "stale_days": 0,
     "raw_gap": 1,
     "normal_lag": 1
@@ -894405,13 +894525,13 @@
    "cafe24": {
     "last": "2026-11-13",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    }
   },
   "unattributed": {
    "ga4_unknown_exit_events": 0,
-   "clarity_unmatched_sessions": 1175
+   "clarity_unmatched_sessions": 1345
   }
  }
 }
