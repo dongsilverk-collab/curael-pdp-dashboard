@@ -978955,7 +978955,14 @@
       "engaged": 47
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+      "orders": 8,
+      "units": 8,
+      "gross": 803730,
+      "net": 803730,
+      "canceled_units": 0
+     },
      "sample": "ok",
      "by_source": {
       "찌고갈았_베지셀": {
@@ -979071,6 +979078,11 @@
        },
        "exits": 4
       }
+     },
+     "derived": {
+      "cvr": 0.1194,
+      "revenue_per_session": 11996,
+      "aov": 100466
      }
     },
     "47": {
@@ -979789,7 +979801,14 @@
       "engaged": 13
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+      "orders": 1,
+      "units": 1,
+      "gross": 52000,
+      "net": 52000,
+      "canceled_units": 0
+     },
      "sample": "ok",
      "by_source": {
       "YT3-DMyhWsn4Jp08oOihPquGxdwDR42IT6IPGMYrvJnAh3tPyJd2l2uTc-mUlzRcCjnrCOxPzhq2ZlvUwHOwHOierQD4cAdlyoGF": {
@@ -979904,6 +979923,11 @@
        },
        "exits": 1
       }
+     },
+     "derived": {
+      "cvr": 0.0333,
+      "revenue_per_session": 1733,
+      "aov": 52000
      }
     },
     "62": {
@@ -980137,7 +980161,14 @@
       "engaged": 5
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "국산 유기농 귀리 혼합 10곡 잡곡쌀 800g",
+      "orders": 2,
+      "units": 2,
+      "gross": 0,
+      "net": 0,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "img_찌고갈았_베지셀": {
@@ -980170,6 +980201,11 @@
        },
        "exits": 1
       }
+     },
+     "derived": {
+      "cvr": 0.2,
+      "revenue_per_session": 0,
+      "aov": 0
      }
     },
     "31": {
@@ -980620,7 +980656,14 @@
      },
      "entry": {},
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[자연하] 커큐진 2g x 30포",
+      "orders": 4,
+      "units": 6,
+      "gross": 709690,
+      "net": 709690,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -980667,6 +980710,11 @@
        },
        "exits": 1
       }
+     },
+     "derived": {
+      "cvr": 0.5,
+      "revenue_per_session": 88711,
+      "aov": 177422
      }
     },
     "63": {
@@ -981803,10 +981851,10 @@
      "clarity": null,
      "sales": {
       "name": "[자연하] 베리베라진 20ml x 30포",
-      "orders": 1,
-      "units": 1,
-      "gross": 0,
-      "net": 0,
+      "orders": 2,
+      "units": 2,
+      "gross": 127400,
+      "net": 127400,
       "canceled_units": 0
      },
      "sample": "low",
@@ -981827,9 +981875,9 @@
       }
      },
      "derived": {
-      "cvr": 1.0,
-      "revenue_per_session": 0,
-      "aov": 0
+      "cvr": 2.0,
+      "revenue_per_session": 127400,
+      "aov": 63700
      }
     },
     "42": {
@@ -982218,7 +982266,14 @@
       "engaged": 5
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[베지셀] 베지셀 청귤 라이트 100ml",
+      "orders": 1,
+      "units": 1,
+      "gross": 103706,
+      "net": 103706,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "YT3-2AhhSxfAyiKoi2xGYNU-3Gl_SDr7331SVOoj6IvFPojD-Hc6C01Ls0eRgoj9THnoAT8Y8F1exv-pDwthAPYcstV4bu45HkLR": {
@@ -982279,6 +982334,11 @@
        },
        "exits": 2
       }
+     },
+     "derived": {
+      "cvr": 0.1,
+      "revenue_per_session": 10371,
+      "aov": 103706
      }
     },
     "55": {
@@ -985281,7 +985341,14 @@
      },
      "entry": {},
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[자연하] 스텔라진 3g x 30포",
+      "orders": 1,
+      "units": 3,
+      "gross": 180000,
+      "net": 180000,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -985298,6 +985365,11 @@
        },
        "exits": 1
       }
+     },
+     "derived": {
+      "cvr": 1.0,
+      "revenue_per_session": 180000,
+      "aov": 180000
      }
     },
     "44": {
@@ -986237,7 +986309,7 @@
    }
   }
  },
- "built_at": "2026-11-24 15:08:02 KST",
+ "built_at": "2026-11-25 07:00:08 KST",
  "period": {
   "range": "2026-11-18 ~ 2026-11-24",
   "dates": [
@@ -987764,17 +987836,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 13,
-     "units": 16,
-     "gross": 393579,
-     "net": 393579,
+     "orders": 14,
+     "units": 17,
+     "gross": 445579,
+     "net": 445579,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0327,
-     "revenue_per_session": 991,
-     "aov": 30275
+     "cvr": 0.0353,
+     "revenue_per_session": 1122,
+     "aov": 31827
     }
    },
    "26": {
@@ -989536,17 +989608,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 30,
-     "units": 31,
-     "gross": 3449664,
-     "net": 3449664,
+     "orders": 38,
+     "units": 39,
+     "gross": 4253394,
+     "net": 4253394,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0192,
-     "revenue_per_session": 2210,
-     "aov": 114989
+     "cvr": 0.0243,
+     "revenue_per_session": 2725,
+     "aov": 111931
     }
    },
    "47": {
@@ -991871,17 +991943,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 2,
-     "units": 2,
-     "gross": 238016,
-     "net": 238016,
+     "orders": 6,
+     "units": 8,
+     "gross": 947706,
+     "net": 947706,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0253,
-     "revenue_per_session": 3013,
-     "aov": 119008
+     "cvr": 0.0759,
+     "revenue_per_session": 11996,
+     "aov": 157951
     }
    },
    "42": {
@@ -993016,17 +993088,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 5,
-     "units": 5,
-     "gross": 177655,
-     "net": 177655,
+     "orders": 6,
+     "units": 6,
+     "gross": 281361,
+     "net": 281361,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0481,
-     "revenue_per_session": 1708,
-     "aov": 35531
+     "cvr": 0.0577,
+     "revenue_per_session": 2705,
+     "aov": 46894
     }
    },
    "44": {
@@ -994415,17 +994487,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 3,
-     "units": 3,
-     "gross": 256434,
-     "net": 256434,
+     "orders": 4,
+     "units": 4,
+     "gross": 383834,
+     "net": 383834,
      "canceled_units": 0
     },
     "sample": "low",
     "derived": {
-     "cvr": 0.125,
-     "revenue_per_session": 10685,
-     "aov": 85478
+     "cvr": 0.1667,
+     "revenue_per_session": 15993,
+     "aov": 95958
     }
    },
    "49": {
@@ -996803,17 +996875,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 4,
-     "units": 5,
+     "orders": 6,
+     "units": 7,
      "gross": 43230,
      "net": 43230,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.05,
+     "cvr": 0.075,
      "revenue_per_session": 540,
-     "aov": 10808
+     "aov": 7205
     }
    },
    "73": {
@@ -998104,17 +998176,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 2,
-     "units": 3,
-     "gross": 179388,
-     "net": 179388,
+     "orders": 3,
+     "units": 6,
+     "gross": 359388,
+     "net": 359388,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0588,
-     "revenue_per_session": 5276,
-     "aov": 89694
+     "cvr": 0.0882,
+     "revenue_per_session": 10570,
+     "aov": 119796
     }
    },
    "46": {
@@ -1003470,19 +1003542,19 @@
    "ga4": {
     "last": "2026-11-24",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    },
    "clarity": {
     "last": "2026-11-23",
-    "stale_days": 0,
-    "raw_gap": 1,
+    "stale_days": 1,
+    "raw_gap": 2,
     "normal_lag": 1
    },
    "cafe24": {
     "last": "2026-11-24",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    }
   },
