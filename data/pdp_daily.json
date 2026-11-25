@@ -991076,7 +991076,14 @@
       "engaged": 47
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+      "orders": 6,
+      "units": 6,
+      "gross": 792051,
+      "net": 792051,
+      "canceled_units": 0
+     },
      "sample": "ok",
      "by_source": {
       "_비광고": {
@@ -991225,6 +991232,11 @@
        },
        "exits": 2
       }
+     },
+     "derived": {
+      "cvr": 0.0845,
+      "revenue_per_session": 11156,
+      "aov": 132008
      }
     },
     "28": {
@@ -991567,7 +991579,14 @@
       "engaged": 13
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+      "orders": 4,
+      "units": 4,
+      "gross": 108813,
+      "net": 108813,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -991677,6 +991696,11 @@
        },
        "exits": 1
       }
+     },
+     "derived": {
+      "cvr": 0.1379,
+      "revenue_per_session": 3752,
+      "aov": 27203
      }
     },
     "31": {
@@ -992049,7 +992073,14 @@
       "engaged": 2
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[자연하] 커큐진 2g x 30포",
+      "orders": 2,
+      "units": 6,
+      "gross": 717889,
+      "net": 717889,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -992090,6 +992121,11 @@
        },
        "exits": 2
       }
+     },
+     "derived": {
+      "cvr": 0.1667,
+      "revenue_per_session": 59824,
+      "aov": 358944
      }
     },
     "62": {
@@ -993049,7 +993085,14 @@
      },
      "entry": {},
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[자연하] 스텔라진 3g x 30포",
+      "orders": 2,
+      "units": 8,
+      "gross": 478944,
+      "net": 478944,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -993082,6 +993125,11 @@
        },
        "exits": 2
       }
+     },
+     "derived": {
+      "cvr": 0.3333,
+      "revenue_per_session": 79824,
+      "aov": 239472
      }
     },
     "47": {
@@ -997472,7 +997520,7 @@
    }
   }
  },
- "built_at": "2026-11-25 13:56:50 KST",
+ "built_at": "2026-11-26 07:00:08 KST",
  "period": {
   "range": "2026-11-19 ~ 2026-11-25",
   "dates": [
@@ -999276,17 +999324,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 35,
-     "units": 36,
-     "gross": 3941934,
-     "net": 3941934,
+     "orders": 41,
+     "units": 42,
+     "gross": 4733985,
+     "net": 4733985,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.021,
-     "revenue_per_session": 2362,
-     "aov": 112627
+     "cvr": 0.0246,
+     "revenue_per_session": 2836,
+     "aov": 115463
     }
    },
    "28": {
@@ -1000818,17 +1000866,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 12,
-     "units": 14,
-     "gross": 392154,
-     "net": 392154,
+     "orders": 16,
+     "units": 18,
+     "gross": 500967,
+     "net": 500967,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0303,
-     "revenue_per_session": 990,
-     "aov": 32680
+     "cvr": 0.0404,
+     "revenue_per_session": 1265,
+     "aov": 31310
     }
    },
    "47": {
@@ -1002832,17 +1002880,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 6,
-     "units": 8,
-     "gross": 947706,
-     "net": 947706,
+     "orders": 8,
+     "units": 14,
+     "gross": 1665595,
+     "net": 1665595,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0674,
-     "revenue_per_session": 10648,
-     "aov": 157951
+     "cvr": 0.0899,
+     "revenue_per_session": 18715,
+     "aov": 208199
     }
    },
    "44": {
@@ -1004760,17 +1004808,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 3,
-     "units": 6,
-     "gross": 359388,
-     "net": 359388,
+     "orders": 5,
+     "units": 14,
+     "gross": 838332,
+     "net": 838332,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0682,
-     "revenue_per_session": 8168,
-     "aov": 119796
+     "cvr": 0.1136,
+     "revenue_per_session": 19053,
+     "aov": 167666
     }
    },
    "42": {
@@ -1015353,19 +1015401,19 @@
    "ga4": {
     "last": "2026-11-25",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    },
    "clarity": {
     "last": "2026-11-24",
-    "stale_days": 0,
-    "raw_gap": 1,
+    "stale_days": 1,
+    "raw_gap": 2,
     "normal_lag": 1
    },
    "cafe24": {
     "last": "2026-11-25",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    }
   },
