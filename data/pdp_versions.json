@@ -930,30 +930,14 @@
      ]
     },
     "to": "2026-10-25"
-   }
-  ],
-  "current": {
-   "version": 6,
-   "minor": 0,
-   "since": "2026-10-25",
-   "struct_hash": "7477350bde22",
-   "image_count": 11,
-   "images": [
-    "web/product/detail_page_curcujin_1000_01.jpg",
-    "web/product/detail_page_curcujin_1000_02.jpg",
-    "web/product/detail_page_curcujin_1000_03.jpg",
-    "web/product/detail_page_curcujin_1000_04.jpg",
-    "web/product/detail_page_curcujin_1000_05.jpg",
-    "web/product/detail_page_curcujin_1000_06.jpg",
-    "web/product/detail_page_curcujin_1000_07.jpg",
-    "web/product/detail_page_curcujin_1000_08.jpg",
-    "web/product/detail_page_curcujin_1000_09.jpg",
-    "web/product/detail_page_curcujin_1000_10.jpg",
-    "web/product/detail_page_curcujin_1000_11.jpg"
-   ],
-   "reason": "image_count 29→11",
-   "diff": {
-    "added": [
+   },
+   {
+    "version": 6,
+    "minor": 0,
+    "since": "2026-10-25",
+    "struct_hash": "7477350bde22",
+    "image_count": 11,
+    "images": [
      "web/product/detail_page_curcujin_1000_01.jpg",
      "web/product/detail_page_curcujin_1000_02.jpg",
      "web/product/detail_page_curcujin_1000_03.jpg",
@@ -966,36 +950,81 @@
      "web/product/detail_page_curcujin_1000_10.jpg",
      "web/product/detail_page_curcujin_1000_11.jpg"
     ],
-    "removed": [
-     "NNEditor/20260925/p31_box_small.jpg",
-     "NNEditor/20260925/p31_box_turmeric.jpg",
-     "NNEditor/20260925/p31_c1_turmeric_bot.jpg",
-     "NNEditor/20260925/p31_c1_turmeric_top.jpg",
-     "NNEditor/20260925/p31_c2_water_bot.jpg",
-     "NNEditor/20260925/p31_c2_water_top.jpg",
-     "NNEditor/20260925/p31_c3_micelle_bot.jpg",
-     "NNEditor/20260925/p31_c3_micelle_top.jpg",
-     "NNEditor/20260925/p31_c4_yeast_bot.jpg",
-     "NNEditor/20260925/p31_c4_yeast_top.jpg",
-     "NNEditor/20260925/p31_c5_haccp_bot.jpg",
-     "NNEditor/20260925/p31_c5_haccp_top.jpg",
-     "NNEditor/20260925/p31_c6_fire_bot.jpg",
-     "NNEditor/20260925/p31_c6_fire_top.jpg",
-     "NNEditor/20260925/p31_glasses.jpg",
-     "NNEditor/20260925/p31_haccp.jpg",
-     "NNEditor/20260925/p31_hero_photo.jpg",
-     "NNEditor/20260925/p31_pepper.jpg",
-     "NNEditor/20260925/p31_pharmacist.jpg",
-     "NNEditor/20260925/p31_pharmacist_point.jpg",
-     "NNEditor/20260925/p31_pk_chart.jpg",
-     "NNEditor/20260925/p31_point01_turmeric.jpg",
-     "NNEditor/20260925/p31_seal.jpg",
-     "NNEditor/20260925/p31_sec2_photo.jpg",
-     "NNEditor/20260925/p31_sign.jpg",
-     "NNEditor/20260925/p31_team.jpg",
-     "NNEditor/20260925/p31_yeast_bowl.jpg",
-     "NNEditor/20260925/p31_yeast_chart.jpg"
-    ]
+    "reason": "image_count 29→11",
+    "diff": {
+     "added": [
+      "web/product/detail_page_curcujin_1000_01.jpg",
+      "web/product/detail_page_curcujin_1000_02.jpg",
+      "web/product/detail_page_curcujin_1000_03.jpg",
+      "web/product/detail_page_curcujin_1000_04.jpg",
+      "web/product/detail_page_curcujin_1000_05.jpg",
+      "web/product/detail_page_curcujin_1000_06.jpg",
+      "web/product/detail_page_curcujin_1000_07.jpg",
+      "web/product/detail_page_curcujin_1000_08.jpg",
+      "web/product/detail_page_curcujin_1000_09.jpg",
+      "web/product/detail_page_curcujin_1000_10.jpg",
+      "web/product/detail_page_curcujin_1000_11.jpg"
+     ],
+     "removed": [
+      "NNEditor/20260925/p31_box_small.jpg",
+      "NNEditor/20260925/p31_box_turmeric.jpg",
+      "NNEditor/20260925/p31_c1_turmeric_bot.jpg",
+      "NNEditor/20260925/p31_c1_turmeric_top.jpg",
+      "NNEditor/20260925/p31_c2_water_bot.jpg",
+      "NNEditor/20260925/p31_c2_water_top.jpg",
+      "NNEditor/20260925/p31_c3_micelle_bot.jpg",
+      "NNEditor/20260925/p31_c3_micelle_top.jpg",
+      "NNEditor/20260925/p31_c4_yeast_bot.jpg",
+      "NNEditor/20260925/p31_c4_yeast_top.jpg",
+      "NNEditor/20260925/p31_c5_haccp_bot.jpg",
+      "NNEditor/20260925/p31_c5_haccp_top.jpg",
+      "NNEditor/20260925/p31_c6_fire_bot.jpg",
+      "NNEditor/20260925/p31_c6_fire_top.jpg",
+      "NNEditor/20260925/p31_glasses.jpg",
+      "NNEditor/20260925/p31_haccp.jpg",
+      "NNEditor/20260925/p31_hero_photo.jpg",
+      "NNEditor/20260925/p31_pepper.jpg",
+      "NNEditor/20260925/p31_pharmacist.jpg",
+      "NNEditor/20260925/p31_pharmacist_point.jpg",
+      "NNEditor/20260925/p31_pk_chart.jpg",
+      "NNEditor/20260925/p31_point01_turmeric.jpg",
+      "NNEditor/20260925/p31_seal.jpg",
+      "NNEditor/20260925/p31_sec2_photo.jpg",
+      "NNEditor/20260925/p31_sign.jpg",
+      "NNEditor/20260925/p31_team.jpg",
+      "NNEditor/20260925/p31_yeast_bowl.jpg",
+      "NNEditor/20260925/p31_yeast_chart.jpg"
+     ]
+    },
+    "to": "2026-11-26"
+   }
+  ],
+  "current": {
+   "version": 7,
+   "minor": 0,
+   "since": "2026-11-26",
+   "struct_hash": "7f43287d6f07",
+   "image_count": 12,
+   "images": [
+    "promotion/261125_cur_soldout/renewal_curcujin_banner_2.jpg",
+    "web/product/detail_page_curcujin_1000_01.jpg",
+    "web/product/detail_page_curcujin_1000_02.jpg",
+    "web/product/detail_page_curcujin_1000_03.jpg",
+    "web/product/detail_page_curcujin_1000_04.jpg",
+    "web/product/detail_page_curcujin_1000_05.jpg",
+    "web/product/detail_page_curcujin_1000_06.jpg",
+    "web/product/detail_page_curcujin_1000_07.jpg",
+    "web/product/detail_page_curcujin_1000_08.jpg",
+    "web/product/detail_page_curcujin_1000_09.jpg",
+    "web/product/detail_page_curcujin_1000_10.jpg",
+    "web/product/detail_page_curcujin_1000_11.jpg"
+   ],
+   "reason": "image_count 11→12",
+   "diff": {
+    "added": [
+     "promotion/261125_cur_soldout/renewal_curcujin_banner_2.jpg"
+    ],
+    "removed": []
    }
   },
   "display_urls": [
@@ -1082,26 +1111,7 @@
     1775
    ]
   ],
-  "title_name": "자연하 커큐진 1박스",
-  "pending": {
-   "struct_hash": "7f43287d6f07",
-   "images": [
-    "promotion/261125_cur_soldout/renewal_curcujin_banner_2.jpg",
-    "web/product/detail_page_curcujin_1000_01.jpg",
-    "web/product/detail_page_curcujin_1000_02.jpg",
-    "web/product/detail_page_curcujin_1000_03.jpg",
-    "web/product/detail_page_curcujin_1000_04.jpg",
-    "web/product/detail_page_curcujin_1000_05.jpg",
-    "web/product/detail_page_curcujin_1000_06.jpg",
-    "web/product/detail_page_curcujin_1000_07.jpg",
-    "web/product/detail_page_curcujin_1000_08.jpg",
-    "web/product/detail_page_curcujin_1000_09.jpg",
-    "web/product/detail_page_curcujin_1000_10.jpg",
-    "web/product/detail_page_curcujin_1000_11.jpg"
-   ],
-   "first_seen": "2026-11-25",
-   "seen_count": 1
-  }
+  "title_name": "자연하 커큐진 1박스"
  },
  "32": {
   "history": [
@@ -2843,7 +2853,7 @@
   ],
   "title_name": "자연하 숨촉촉365 매일 가벼운 수분 습관"
  },
- "_crawled_at": "2026-11-25T13:56:49+09:00",
+ "_crawled_at": "2026-11-26T07:03:07+09:00",
  "_shared_banners": [
   "NNEditor/20260709/notice_banner_1080.jpg",
   "product/notice_banner_1080.jpg"
