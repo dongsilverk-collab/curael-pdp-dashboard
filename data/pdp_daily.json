@@ -1010789,7 +1010789,14 @@
       "engaged": 10
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[자연하] 그린진 원스틱 1.5g x 30포",
+      "orders": 1,
+      "units": 1,
+      "gross": 55000,
+      "net": 55000,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -1010896,6 +1010903,11 @@
        },
        "exits": 1
       }
+     },
+     "derived": {
+      "cvr": 0.0625,
+      "revenue_per_session": 3438,
+      "aov": 55000
      }
     },
     "26": {
@@ -1011463,7 +1011475,14 @@
       "engaged": 37
      },
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[베지셀] 내몸에 베지셀 메이킹 7.4 180ml",
+      "orders": 5,
+      "units": 5,
+      "gross": 581440,
+      "net": 581440,
+      "canceled_units": 0
+     },
      "sample": "ok",
      "by_source": {
       "img_부담이었는데_베지셀": {
@@ -1011617,6 +1011636,11 @@
        },
        "exits": 4
       }
+     },
+     "derived": {
+      "cvr": 0.119,
+      "revenue_per_session": 13844,
+      "aov": 116288
      }
     },
     "46": {
@@ -1012986,7 +1013010,14 @@
      },
      "entry": {},
      "clarity": null,
-     "sales": null,
+     "sales": {
+      "name": "[자연하] 베리베라진 20ml x 30포",
+      "orders": 1,
+      "units": 1,
+      "gross": 128700,
+      "net": 128700,
+      "canceled_units": 0
+     },
      "sample": "low",
      "by_source": {
       "_비광고": {
@@ -1013003,6 +1013034,11 @@
        },
        "exits": 3
       }
+     },
+     "derived": {
+      "cvr": 0.3333,
+      "revenue_per_session": 42900,
+      "aov": 128700
      }
     },
     "49": {
@@ -1014041,7 +1014077,7 @@
    }
   }
  },
- "built_at": "2026-11-27 13:19:32 KST",
+ "built_at": "2026-11-28 07:00:07 KST",
  "period": {
   "range": "2026-11-21 ~ 2026-11-27",
   "dates": [
@@ -1015962,21 +1015998,21 @@
      "truncated": false
     },
     "sales": {
-     "orders": 36,
-     "units": 36,
-     "gross": 4137600,
-     "net": 4137600,
+     "orders": 41,
+     "units": 41,
+     "gross": 4719040,
+     "net": 4719040,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0223,
-     "revenue_per_session": 2568,
-     "aov": 114933
+     "cvr": 0.0255,
+     "revenue_per_session": 2929,
+     "aov": 115099
     }
    },
    "28": {
-    "name": "자연하 그린진 원스틱 1박스 – 유기농 동결건조 야채 건강분말",
+    "name": "[자연하] 그린진 원스틱 1.5g x 30포",
     "slug": "자연하-그린진-원스틱-15g-x-30포",
     "url": "https://curaelmall.com/product/detail.html?product_no=28",
     "section_total": 9,
@@ -1017670,17 +1017706,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 13,
-     "units": 13,
-     "gross": 480370,
-     "net": 480370,
+     "orders": 14,
+     "units": 14,
+     "gross": 535370,
+     "net": 535370,
      "canceled_units": 0
     },
     "sample": "ok",
     "derived": {
-     "cvr": 0.0304,
-     "revenue_per_session": 1125,
-     "aov": 36952
+     "cvr": 0.0328,
+     "revenue_per_session": 1254,
+     "aov": 38241
     }
    },
    "47": {
@@ -1028382,17 +1028418,17 @@
      "truncated": false
     },
     "sales": {
-     "orders": 4,
-     "units": 4,
-     "gross": 383834,
-     "net": 383834,
+     "orders": 5,
+     "units": 5,
+     "gross": 512534,
+     "net": 512534,
      "canceled_units": 0
     },
     "sample": "low",
     "derived": {
-     "cvr": 0.1667,
-     "revenue_per_session": 15993,
-     "aov": 95958
+     "cvr": 0.2083,
+     "revenue_per_session": 21356,
+     "aov": 102507
     }
    },
    "81": {
@@ -1032269,19 +1032305,19 @@
    "ga4": {
     "last": "2026-11-27",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    },
    "clarity": {
     "last": "2026-11-26",
-    "stale_days": 0,
-    "raw_gap": 1,
+    "stale_days": 1,
+    "raw_gap": 2,
     "normal_lag": 1
    },
    "cafe24": {
     "last": "2026-11-27",
     "stale_days": 0,
-    "raw_gap": 0,
+    "raw_gap": 1,
     "normal_lag": 1
    }
   },
